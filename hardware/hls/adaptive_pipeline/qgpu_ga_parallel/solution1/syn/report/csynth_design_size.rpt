@@ -1,0 +1,87 @@
+================================================================
+== Design Size Report
+================================================================
+
+* Total Instructions per Compilation Phase
++---------------+----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Phase         | Step                       | Instructions | Description                                                                            |
++---------------+----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Compile/Link  |                            | 10,338       | After all functions are compiled and linked into a single design                       |
+|               |                            |              |                                                                                        |
+| Unroll/Inline |                            |              | After user unroll and inline pragmas are applied                                       |
+|               | (1) unroll                 | 10,293       | user unroll pragmas are applied                                                        |
+|               | (2) simplification         |  6,450       | simplification of applied user unroll pragmas                                          |
+|               | (3) inline                 |  6,188       | user inline pragmas are applied                                                        |
+|               | (4) simplification         |  5,796       | simplification of applied user inline pragmas                                          |
+|               |                            |              |                                                                                        |
+| Array/Struct  |                            |              | After user array partition and struct aggregate/disaggregate pragmas are applied       |
+|               | (1) array partition        |  6,737       | user array partition pragmas are applied                                               |
+|               | (2) simplification         |  6,635       | simplification of applied user array partition & struct aggregate/disaggregate pragmas |
+|               | (3) aggregate/disaggregate |  6,635       | user struct aggregate/disaggregate pragmas are applied                                 |
+|               | (4) array reshape          |  6,635       | apply array reshape pragmas                                                            |
+|               | (5) access patterns        |  6,732       | array access pattern optmizations                                                      |
+|               |                            |              |                                                                                        |
+| Performance   |                            |              | After transformations are applied to meet performance pragma targets                   |
+|               | (1) loop simplification    |  6,451       | loop and instruction simplification                                                    |
+|               | (2) parallelization        |  6,424       | loops are unrolled or pipelined to meet performance targets                            |
+|               | (3) array partition        |  6,739       | arrays are partitioned to meet performance targets                                     |
+|               | (4) simplification         |  6,339       | simplification of design after performance transformations                             |
+|               |                            |              |                                                                                        |
+| HW Transforms |                            |              | After hardware transfomations                                                          |
+|               | (1) lowering               |  6,391       | initial conversion to HW specific instructions                                         |
+|               | (2) optimizations          |  6,413       | high level synthesis optimizations                                                     |
++---------------+----------------------------+--------------+----------------------------------------------------------------------------------------+
+
+* Instructions per Function for each Compilation Phase
++--------------------------------+---------------------------------+-----------------+-----------------+-----------------+-----------------+-----------------+
+| Function                       | Location                        | Compile/Link    | Unroll/Inline   | Array/Struct    | Performance     | HW Transforms   |
++--------------------------------+---------------------------------+-----------------+-----------------+-----------------+-----------------+-----------------+
+| + qgpu_ga_parallel_top         | qgpu_ga_parallel_top.cpp:4      | 10,338          | 5,796           | 6,732           | 6,339           | 6,413           |
+|  + qgpu_ga_engine_parallel     | qgpu_ga_engine_parallel.cpp:312 | 10,330          | 5,788           | 6,703           | 6,294           | 6,315           |
+|   + ga_op_rotor_norm           | qgpu_ga_engine_parallel.cpp:288 | 1,020           |   85            |   71            |   59            |   60            |
+|      rescale_and_saturate      | hls_compat.h:68                 |   726           |                 |                 |                 |                 |
+|   + ga_op_rotor_sandwich       | qgpu_ga_engine_parallel.cpp:263 | 2,813           | 1,894           | 2,237           | 2,179           | 2,191           |
+|    + compute_gp_core           | qgpu_ga_engine_parallel.cpp:30  | 2,472 (2 calls) | 1,800 (2 calls) | 2,148 (2 calls) | 2,082 (2 calls) | 2,092 (2 calls) |
+|       mask_to_index            | hls_compat.h:35                 |    52 (4 calls) |  384 (32 calls) |  384 (32 calls) |  384 (32 calls) |  384 (32 calls) |
+|       blade_product_sign       | hls_compat.h:50                 |    84 (2 calls) |  368 (16 calls) |  368 (16 calls) |  368 (16 calls) |  368 (16 calls) |
+|       rescale_and_saturate     | hls_compat.h:68                 | 1,452 (2 calls) |  384 (16 calls) |  384 (16 calls) |  384 (16 calls) |  384 (16 calls) |
+|    + ga_op_reverse             | qgpu_ga_engine_parallel.cpp:209 |   318           |   83            |   69            |   61            |   62            |
+|       sat_sub_q16              | hls_compat.h:123                |   279           |                 |                 |                 |                 |
+|   + ga_op_clifford_conjugation | qgpu_ga_engine_parallel.cpp:245 |   318           |  109            |   95            |   87            |   88            |
+|      sat_sub_q16               | hls_compat.h:123                |   279           |                 |                 |                 |                 |
+|   + ga_op_grade_involution     | qgpu_ga_engine_parallel.cpp:227 |   318           |   83            |   69            |   61            |   62            |
+|      sat_sub_q16               | hls_compat.h:123                |   279           |                 |                 |                 |                 |
+|   + ga_op_reverse              | qgpu_ga_engine_parallel.cpp:209 |   318           |   83            |   69            |   61            |   62            |
+|      sat_sub_q16               | hls_compat.h:123                |   279           |                 |                 |                 |                 |
+|     ga_op_grade_project        | qgpu_ga_engine_parallel.cpp:186 |    46           |   77            |   48            |   34            |   35            |
+|   + ga_op_scalar_mul           | qgpu_ga_engine_parallel.cpp:170 |   964           |  256            |  242            |  234            |  235            |
+|      rescale_and_saturate      | hls_compat.h:68                 |   726           |  192 (8 calls)  |  192 (8 calls)  |  192 (8 calls)  |  192 (8 calls)  |
+|   + ga_op_subtraction          | qgpu_ga_engine_parallel.cpp:154 |   302           |  158            |  137            |  121            |  122            |
+|      sat_sub_q16               | hls_compat.h:123                |   279           |                 |                 |                 |                 |
+|   + ga_op_addition             | qgpu_ga_engine_parallel.cpp:138 |   302           |  158            |  137            |  121            |  122            |
+|      sat_add_q16               | hls_compat.h:104                |   279           |                 |                 |                 |                 |
+|   + ga_op_inner_product        | qgpu_ga_engine_parallel.cpp:125 | 1,241           |  902            | 1,076           | 1,043           | 1,049           |
+|    + compute_gp_core           | qgpu_ga_engine_parallel.cpp:30  | 1,236           |  900            | 1,074           | 1,041           | 1,046           |
+|       mask_to_index            | hls_compat.h:35                 |    26 (2 calls) |  192 (16 calls) |  192 (16 calls) |  192 (16 calls) |  192 (16 calls) |
+|       blade_product_sign       | hls_compat.h:50                 |    42           |  184 (8 calls)  |  184 (8 calls)  |  184 (8 calls)  |  184 (8 calls)  |
+|       rescale_and_saturate     | hls_compat.h:68                 |   726           |  192 (8 calls)  |  192 (8 calls)  |  192 (8 calls)  |  192 (8 calls)  |
+|   + ga_op_wedge_product        | qgpu_ga_engine_parallel.cpp:112 | 1,241           |  902            | 1,076           | 1,043           | 1,049           |
+|    + compute_gp_core           | qgpu_ga_engine_parallel.cpp:30  | 1,236           |  900            | 1,074           | 1,041           | 1,046           |
+|       mask_to_index            | hls_compat.h:35                 |    26 (2 calls) |  192 (16 calls) |  192 (16 calls) |  192 (16 calls) |  192 (16 calls) |
+|       blade_product_sign       | hls_compat.h:50                 |    42           |  184 (8 calls)  |  184 (8 calls)  |  184 (8 calls)  |  184 (8 calls)  |
+|       rescale_and_saturate     | hls_compat.h:68                 |   726           |  192 (8 calls)  |  192 (8 calls)  |  192 (8 calls)  |  192 (8 calls)  |
+|   + ga_op_geometric_product    | qgpu_ga_engine_parallel.cpp:99  | 1,241           |  902            | 1,076           | 1,043           | 1,049           |
+|    + compute_gp_core           | qgpu_ga_engine_parallel.cpp:30  | 1,236           |  900            | 1,074           | 1,041           | 1,046           |
+|       mask_to_index            | hls_compat.h:35                 |    26 (2 calls) |  192 (16 calls) |  192 (16 calls) |  192 (16 calls) |  192 (16 calls) |
+|       blade_product_sign       | hls_compat.h:50                 |    42           |  184 (8 calls)  |  184 (8 calls)  |  184 (8 calls)  |  184 (8 calls)  |
+|       rescale_and_saturate     | hls_compat.h:68                 |   726           |  192 (8 calls)  |  192 (8 calls)  |  192 (8 calls)  |  192 (8 calls)  |
++--------------------------------+---------------------------------+-----------------+-----------------+-----------------+-----------------+-----------------+
+
+* Design Size Message Settings
++---------------------------------------------+--------+------------------------------------------------------------------+
+| Message Setting                             | Value  | Description                                                      |
++---------------------------------------------+--------+------------------------------------------------------------------+
+| config_compile -design_size_maximum_warning | 100000 | Show a warning when total design instructions exceeds this value |
++---------------------------------------------+--------+------------------------------------------------------------------+
+
+

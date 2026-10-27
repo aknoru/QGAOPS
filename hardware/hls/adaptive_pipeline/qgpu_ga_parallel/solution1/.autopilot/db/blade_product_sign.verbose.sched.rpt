@@ -1,0 +1,127 @@
+
+
+================================================================
+== Vitis HLS Report for 'blade_product_sign'
+================================================================
+* Date:           Tue Oct 27 05:13:09 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Project:        qgpu_ga_parallel
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  2.964 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        0|        0|      0 ns|      0 ns|    1|    1|      yes|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 1
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 1, States = { 1 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 2.96>
+ST_1 : Operation 2 [1/1] (0.00ns)   --->   "%right_mask_read = read i2 @_ssdm_op_Read.ap_auto.i2, i2 %right_mask" [../ga_engine/include\hls_compat.h:50]   --->   Operation 2 'read' 'right_mask_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%left_mask_read = read i3 @_ssdm_op_Read.ap_auto.i3, i3 %left_mask" [../ga_engine/include\hls_compat.h:50]   --->   Operation 3 'read' 'left_mask_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%swaps = trunc i2 %right_mask_read" [../ga_engine/include\hls_compat.h:53]   --->   Operation 4 'trunc' 'swaps' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%tmp = bitselect i1 @_ssdm_op_BitSelect.i1.i3.i32, i3 %left_mask_read, i32 1" [../ga_engine/include\hls_compat.h:53]   --->   Operation 5 'bitselect' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.97ns)   --->   "%swaps_1 = and i1 %tmp, i1 %swaps" [../ga_engine/include\hls_compat.h:53]   --->   Operation 6 'and' 'swaps_1' <Predicate = true> <Delay = 0.97> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 7 [1/1] (0.00ns) (grouped into LUT with out node select_ln61)   --->   "%tmp_49 = bitselect i1 @_ssdm_op_BitSelect.i1.i3.i32, i3 %left_mask_read, i32 2" [../ga_engine/include\hls_compat.h:53]   --->   Operation 7 'bitselect' 'tmp_49' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns) (grouped into LUT with out node swaps_3)   --->   "%swaps_2 = xor i1 %swaps_1, i1 1" [../ga_engine/include\hls_compat.h:56]   --->   Operation 8 'xor' 'swaps_2' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 9 [1/1] (0.99ns) (out node of the LUT)   --->   "%swaps_3 = select i1 %swaps, i1 %swaps_2, i1 %swaps_1" [../ga_engine/include\hls_compat.h:55]   --->   Operation 9 'select' 'swaps_3' <Predicate = true> <Delay = 0.99> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 10 [1/1] (0.00ns) (grouped into LUT with out node select_ln61)   --->   "%tmp_50 = bitselect i1 @_ssdm_op_BitSelect.i1.i2.i32, i2 %right_mask_read, i32 1" [../ga_engine/include\hls_compat.h:55]   --->   Operation 10 'bitselect' 'tmp_50' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns) (grouped into LUT with out node select_ln61)   --->   "%swaps_4 = xor i1 %swaps_3, i1 1" [../ga_engine/include\hls_compat.h:56]   --->   Operation 11 'xor' 'swaps_4' <Predicate = true> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 12 [1/1] (0.00ns) (grouped into LUT with out node select_ln61)   --->   "%swaps_5 = select i1 %tmp_50, i1 %swaps_4, i1 %swaps_3" [../ga_engine/include\hls_compat.h:55]   --->   Operation 12 'select' 'swaps_5' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 13 [1/1] (0.00ns) (grouped into LUT with out node select_ln61)   --->   "%swaps_6 = select i1 %tmp_49, i1 %swaps_5, i1 %swaps_1" [../ga_engine/include\hls_compat.h:53]   --->   Operation 13 'select' 'swaps_6' <Predicate = true> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 14 [1/1] (0.99ns) (out node of the LUT)   --->   "%select_ln61 = select i1 %swaps_6, i2 3, i2 1" [../ga_engine/include\hls_compat.h:61]   --->   Operation 14 'select' 'select_ln61' <Predicate = true> <Delay = 0.99> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%ret_ln61 = ret i2 %select_ln61" [../ga_engine/include\hls_compat.h:61]   --->   Operation 15 'ret' 'ret_ln61' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 2.964ns
+The critical path consists of the following:
+	wire read operation ('right_mask', ../ga_engine/include\hls_compat.h:50) on port 'right_mask' (../ga_engine/include\hls_compat.h:50) [3]  (0.000 ns)
+	'and' operation 1 bit ('swaps', ../ga_engine/include\hls_compat.h:53) [7]  (0.978 ns)
+	'select' operation 1 bit ('swaps', ../ga_engine/include\hls_compat.h:55) [10]  (0.993 ns)
+	'select' operation 1 bit ('swaps', ../ga_engine/include\hls_compat.h:55) [13]  (0.000 ns)
+	'select' operation 1 bit ('swaps', ../ga_engine/include\hls_compat.h:53) [14]  (0.000 ns)
+	'select' operation 2 bit ('select_ln61', ../ga_engine/include\hls_compat.h:61) [15]  (0.993 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

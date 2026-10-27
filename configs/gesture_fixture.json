@@ -1,0 +1,14 @@
+{
+  "synthetic_fixture": {
+    "path": "software/gesture_pipeline/fixtures.json",
+    "description": "Synthetic two-class landmark fixture for fast unit testing."
+  },
+  "real_dataset_features": {
+    "path": "dataset/features/extracted_features.npz",
+    "description": "Real pre-extracted Leap Hand Gesture features (1200 image samples, 409 landmark samples).",
+    "landmark_classes": 27,
+    "image_classes": 10,
+    "test_accuracy": 0.9839,
+    "macro_f1": 0.9575
+  }
+}

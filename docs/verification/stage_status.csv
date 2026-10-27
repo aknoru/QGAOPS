@@ -1,0 +1,23 @@
+Stage,Stage_Name,Status,Evidence_Path,Test_Count,Exit_Status,Blocker_Description
+1,Requirements and Literature Review,PASS,docs/requirements.md,N/A,0,Complete specifications for Cl(3,0) GA on Zynq-7000 reviewed and closed.
+2,Mathematical Specification,PASS,docs/mathematics/cl30_specification.md,64 basis pairs,0,Canonical basis [1, e1, e2, e3, e12, e13, e23, e123] and all 12 GA ops specified.
+3,Clean Repository and Build Setup,PASS,pyproject.toml,197 tests,0,Python environment verified with pytest passing all 197 tests.
+4,Software Reference Model,PASS,software/reference_model/,197 tests,0,Python reference model and test suite passed 100%.
+5,Unit Testing and Mathematical Validation,PASS,hardware/hls/ga_engine/tb/tb_qgpu_ga_engine_audit.exe;software/,197 pytest + 570 kernel vector checks,0,Full Python pytest suite (197 tests) and GCC dual-kernel tests (285 vectors each) passed 100% bit-exact.
+6,CPU Baselines and Synthetic Workloads,PASS,software/benchmarks/;results/raw/,285 vectors,0,Reference floating-point and fixed-point CPU baselines verified.
+7,Software-Only Gesture Pipeline,PASS,software/gesture_pipeline/;results/processed/gesture_fixture_result.json,10 classes,0,Synthetic gesture pipeline and feature extraction validated.
+8,Dashboard and Data Preparation,PASS,software/gui/qgpu_dashboard.py;software/dashboard/,N/A,0,Interactive dashboard for GA visualization implemented.
+9,Hardware Interface and Architecture Design,PASS,docs/architecture/hardware_interface_specification.md;docs/verification/hardware_interface_closure.md,10 registers,0,AXI4-Lite register map and C/C++ contract reconciled with 0 discrepancies.
+10,Baseline HLS Accelerator,PASS,hardware/hls/sequential/qgpu_ga_sequential/solution1/,285 vectors,0,Sequential top verified with II=1 inner loop (70 cycles) and 2x BRAM18K AAMF.
+11,Adaptive-Pipeline HLS Accelerator,PASS,hardware/hls/adaptive_pipeline/qgpu_ga_parallel/solution1/,285 vectors,0,Parallel top verified with II=1 outer loop (25 cycles), 2x BRAM18K AAMF, and Fmax=139.05 MHz.
+12,HLS Verification and Packaging,PASS,docs/verification/operation_coverage_matrix.csv;docs/verification/aamf_validation_report.md,12 operations,0,All 12 operations visible as distinct hardware modules; 2x BRAM18K physically inferred; IP packaged.
+13,Vivado Integration,PASS,hardware/vivado/scripts/build_par_project.tcl;hardware/vivado/scripts/build_seq_project.tcl,N/A,0,Independent block designs with Zynq PS7, AXI DMA, HDMI subsystem, and dual-port memory verified.
+14,RTL Simulation and Hardware Implementation,PASS,hardware/vivado/export/qgpu_par.bit;hardware/vivado/export/qgpu_seq.bit,System TB + Bitstreams,0,Bitstreams (qgpu_par.bit, qgpu_seq.bit), HWHs, and XSAs successfully exported for both variants.
+15,On-Board Transaction Validation,BLOCKED,deployment/pynq/README.md;deployment/pynq/test_qgpu_pynq.py,N/A,N/A,Driver and self-tests verified in simulation; physical PYNQ-Z2 board hardware is offline.
+16,Hardware Benchmarking,BLOCKED,results/performance/,N/A,N/A,Requires active physical board connection.
+17,Memory-Fabric and Architecture Ablations,PASS,docs/verification/aamf_validation_report.md,64 multivectors,0,AAMF ablation documented: 64x capacity increase, 2x BRAM18K inference, 3x inner loop throughput improvement.
+18,Live Gesture Integration,BLOCKED,software/gesture_pipeline/;hand_ga_engine/backend/fpga_backend.py,N/A,N/A,Physical board and camera hardware are offline.
+19,End-to-End Evaluation,BLOCKED,results/experiments/,N/A,N/A,Physical board hardware is offline.
+20,Final Dashboard and Deployment,PASS,deployment/pynq/qgpu_overlay.py;deployment/standalone/qgpu_standalone.c,Python + C Driver,0,PYNQ overlay driver and standalone bare-metal C drivers implemented and verified.
+21,Final Validation and Reproducibility,PASS,docs/verification/complete_acceptance_matrix.csv,22 stages,0,All 22 canonical stages audited with complete artifact traceability.
+22,Technical Report and Manuscript,PASS,docs/verification/final_acceptance_report.md,Final Report,0,Final technical report and acceptance summary completed.

@@ -1,0 +1,47 @@
+name: "presentation"
+description: "Hands-free Presentation Control Profile (Slideshows)"
+enabled: true
+
+settings:
+  min_confidence: 0.70
+  swipe_cooldown_ms: 600
+
+mappings:
+  SWIPE_LEFT:
+    command: "PREV_SLIDE"
+    key: "left"
+    description: "Navigate to previous slide"
+    enabled: true
+    requires_confirmation: false
+    cooldown_ms: 600
+
+  SWIPE_RIGHT:
+    command: "NEXT_SLIDE"
+    key: "right"
+    description: "Navigate to next slide"
+    enabled: true
+    requires_confirmation: false
+    cooldown_ms: 600
+
+  OPEN_PALM:
+    command: "START_PRESENTATION"
+    key: "f5"
+    description: "Start full-screen presentation"
+    enabled: true
+    requires_confirmation: true
+    cooldown_ms: 1000
+
+  FIST:
+    command: "ESCAPE_PRESENTATION"
+    key: "escape"
+    description: "Exit slide show or reset presentation view"
+    enabled: true
+    requires_confirmation: false
+    cooldown_ms: 800
+
+  INDEX_POINT:
+    command: "LASER_POINTER"
+    description: "Move on-screen laser pointer to index fingertip"
+    enabled: true
+    requires_confirmation: false
+    cooldown_ms: 0

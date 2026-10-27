@@ -1,0 +1,48 @@
+{
+  "test": "gate_S",
+  "description": "S gate on |0\u27e9 in Cl(3,0)",
+  "gate": {
+    "metric": "G(3,0,0)",
+    "coefficients": {
+      "0": 0.7071067811865475,
+      "6": 0.7071067811865475
+    },
+    "num_active": 2,
+    "density": 0.25
+  },
+  "input_state": {
+    "metric": "G(3,0,0)",
+    "coefficients": {
+      "4": 1.0
+    },
+    "num_active": 1,
+    "density": 0.125
+  },
+  "expected_float32": {
+    "metric": "G(3,0,0)",
+    "coefficients": {
+      "2": 0.9999999999999998
+    },
+    "num_active": 1,
+    "density": 0.125
+  },
+  "expected_fix16": {
+    "format": "Fix16Format(Q1.14, scale=16384.0)",
+    "fixed_values": {
+      "2": 16384
+    },
+    "dequantized": {
+      "metric": "G(3,0,0)",
+      "coefficients": {
+        "2": 1.0
+      },
+      "num_active": 1,
+      "density": 0.125
+    },
+    "max_abs_error": 2.220446049250313e-16,
+    "mean_abs_error": 2.220446049250313e-16,
+    "rms_error": 2.220446049250313e-16,
+    "norm_error": 0.0
+  },
+  "notes": "[GOLDEN] Classical Cl(3,0) simulation of gate S. [LIMITATION] Classical computation only."
+}

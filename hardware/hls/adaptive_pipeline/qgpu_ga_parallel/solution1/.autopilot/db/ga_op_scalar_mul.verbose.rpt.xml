@@ -1,0 +1,179 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'ga_op_scalar_mul'" level="0">
+<item name = "Date">Tue Oct 27 05:13:21 2026
+</item>
+<item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
+<item name = "Project">qgpu_ga_parallel</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 6.912 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">25, 25, 0.250 us, 0.250 us, 25, 25, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_rescale_and_saturate_fu_80">rescale_and_saturate, 1, 1, 10.000 ns, 10.000 ns, 1, 1, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, -, -, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, -, 193, 336, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, 0, 332, -</column>
+<column name="Register">-, -, 1171, -, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 0, 1, 1, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="grp_rescale_and_saturate_fu_80">rescale_and_saturate, 0, 0, 193, 336, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">93, 19, 1, 19</column>
+<column name="ap_return_0">9, 2, 32, 64</column>
+<column name="ap_return_1">9, 2, 32, 64</column>
+<column name="ap_return_2">9, 2, 32, 64</column>
+<column name="ap_return_3">9, 2, 32, 64</column>
+<column name="ap_return_4">9, 2, 32, 64</column>
+<column name="ap_return_5">9, 2, 32, 64</column>
+<column name="ap_return_6">9, 2, 32, 64</column>
+<column name="ap_return_7">9, 2, 32, 64</column>
+<column name="ap_return_8">9, 2, 1, 2</column>
+<column name="grp_fu_87_p0">14, 3, 32, 96</column>
+<column name="grp_fu_87_p1">48, 9, 32, 288</column>
+<column name="grp_rescale_and_saturate_fu_80_overflow_flag_read">48, 9, 1, 9</column>
+<column name="grp_rescale_and_saturate_fu_80_sum_val">48, 9, 67, 603</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">18, 0, 18, 0</column>
+<column name="ap_return_0_preg">32, 0, 32, 0</column>
+<column name="ap_return_1_preg">32, 0, 32, 0</column>
+<column name="ap_return_2_preg">32, 0, 32, 0</column>
+<column name="ap_return_3_preg">32, 0, 32, 0</column>
+<column name="ap_return_4_preg">32, 0, 32, 0</column>
+<column name="ap_return_5_preg">32, 0, 32, 0</column>
+<column name="ap_return_6_preg">32, 0, 32, 0</column>
+<column name="ap_return_7_preg">32, 0, 32, 0</column>
+<column name="ap_return_8_preg">1, 0, 1, 0</column>
+<column name="c_write_assign_1_reg_335">32, 0, 32, 0</column>
+<column name="c_write_assign_2_reg_355">32, 0, 32, 0</column>
+<column name="c_write_assign_3_reg_375">32, 0, 32, 0</column>
+<column name="c_write_assign_8_reg_275">32, 0, 32, 0</column>
+<column name="c_write_assign_9_reg_295">32, 0, 32, 0</column>
+<column name="c_write_assign_reg_255">32, 0, 32, 0</column>
+<column name="c_write_assign_s_reg_315">32, 0, 32, 0</column>
+<column name="grp_rescale_and_saturate_fu_80_ap_start_reg">1, 0, 1, 0</column>
+<column name="overflow_assign_2_reg_260">1, 0, 1, 0</column>
+<column name="overflow_assign_3_reg_280">1, 0, 1, 0</column>
+<column name="overflow_assign_4_reg_300">1, 0, 1, 0</column>
+<column name="overflow_assign_5_reg_320">1, 0, 1, 0</column>
+<column name="overflow_assign_6_reg_340">1, 0, 1, 0</column>
+<column name="overflow_assign_7_reg_360">1, 0, 1, 0</column>
+<column name="overflow_assign_8_reg_380">1, 0, 1, 0</column>
+<column name="reg_99">64, 0, 64, 0</column>
+<column name="sext_ln181_reg_235">64, 0, 64, 0</column>
+<column name="sext_ln182_1_reg_265">67, 0, 67, 0</column>
+<column name="sext_ln182_2_reg_285">67, 0, 67, 0</column>
+<column name="sext_ln182_3_reg_305">67, 0, 67, 0</column>
+<column name="sext_ln182_4_reg_325">67, 0, 67, 0</column>
+<column name="sext_ln182_5_reg_345">67, 0, 67, 0</column>
+<column name="sext_ln182_6_reg_365">67, 0, 67, 0</column>
+<column name="sext_ln182_7_reg_385">67, 0, 67, 0</column>
+<column name="sext_ln182_reg_245">67, 0, 67, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, ga_op_scalar_mul, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, ga_op_scalar_mul, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, ga_op_scalar_mul, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, ga_op_scalar_mul, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, ga_op_scalar_mul, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, ga_op_scalar_mul, return value</column>
+<column name="ap_return_0">out, 32, ap_ctrl_hs, ga_op_scalar_mul, return value</column>
+<column name="ap_return_1">out, 32, ap_ctrl_hs, ga_op_scalar_mul, return value</column>
+<column name="ap_return_2">out, 32, ap_ctrl_hs, ga_op_scalar_mul, return value</column>
+<column name="ap_return_3">out, 32, ap_ctrl_hs, ga_op_scalar_mul, return value</column>
+<column name="ap_return_4">out, 32, ap_ctrl_hs, ga_op_scalar_mul, return value</column>
+<column name="ap_return_5">out, 32, ap_ctrl_hs, ga_op_scalar_mul, return value</column>
+<column name="ap_return_6">out, 32, ap_ctrl_hs, ga_op_scalar_mul, return value</column>
+<column name="ap_return_7">out, 32, ap_ctrl_hs, ga_op_scalar_mul, return value</column>
+<column name="ap_return_8">out, 1, ap_ctrl_hs, ga_op_scalar_mul, return value</column>
+<column name="grp_fu_2387_p_din0">out, 32, ap_ctrl_hs, ga_op_scalar_mul, return value</column>
+<column name="grp_fu_2387_p_din1">out, 32, ap_ctrl_hs, ga_op_scalar_mul, return value</column>
+<column name="grp_fu_2387_p_dout0">in, 64, ap_ctrl_hs, ga_op_scalar_mul, return value</column>
+<column name="grp_fu_2387_p_ce">out, 1, ap_ctrl_hs, ga_op_scalar_mul, return value</column>
+<column name="a_0_val">in, 32, ap_none, a_0_val, scalar</column>
+<column name="a_1_val">in, 32, ap_none, a_1_val, scalar</column>
+<column name="a_2_val">in, 32, ap_none, a_2_val, scalar</column>
+<column name="a_3_val">in, 32, ap_none, a_3_val, scalar</column>
+<column name="a_4_val">in, 32, ap_none, a_4_val, scalar</column>
+<column name="a_5_val">in, 32, ap_none, a_5_val, scalar</column>
+<column name="a_6_val">in, 32, ap_none, a_6_val, scalar</column>
+<column name="a_7_val">in, 32, ap_none, a_7_val, scalar</column>
+<column name="scalar_val">in, 32, ap_none, scalar_val, scalar</column>
+</table>
+</item>
+</section>
+</profile>

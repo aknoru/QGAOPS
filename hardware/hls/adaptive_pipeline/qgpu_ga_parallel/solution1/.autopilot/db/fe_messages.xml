@@ -1,0 +1,374 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:37:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="compute_gp_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:39:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="compute_gp_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=accum complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:42:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="compute_gp_core" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:48:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="compute_gp_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:49:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="compute_gp_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=accum inter false" ARG_PragmaType="dependence" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:57:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="compute_gp_core" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:89:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="compute_gp_core" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:105:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="ga_op_geometric_product" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:106:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="ga_op_geometric_product" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=a complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:107:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="ga_op_geometric_product" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=b complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:108:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="ga_op_geometric_product" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=c complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:118:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="ga_op_wedge_product" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:119:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="ga_op_wedge_product" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=a complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:120:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="ga_op_wedge_product" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=b complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:121:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="ga_op_wedge_product" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=c complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:131:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="ga_op_inner_product" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:132:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="ga_op_inner_product" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=a complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:133:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="ga_op_inner_product" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=b complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:134:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="ga_op_inner_product" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=c complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:144:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="ga_op_addition" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:145:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="ga_op_addition" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=a complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:146:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="ga_op_addition" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=b complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:147:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="ga_op_addition" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=c complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:149:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="ga_op_addition" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:160:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="ga_op_subtraction" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:161:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="ga_op_subtraction" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=a complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:162:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="ga_op_subtraction" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=b complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:163:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="ga_op_subtraction" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=c complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:165:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="ga_op_subtraction" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:176:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="ga_op_scalar_mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:177:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="ga_op_scalar_mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=a complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:178:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="ga_op_scalar_mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=c complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:180:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="ga_op_scalar_mul" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:192:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="ga_op_grade_project" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:193:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="ga_op_grade_project" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=a complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:194:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="ga_op_grade_project" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=c complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:198:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="ga_op_grade_project" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:203:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="ga_op_grade_project" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:214:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="ga_op_reverse" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:215:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="ga_op_reverse" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=a complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:216:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="ga_op_reverse" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=c complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:218:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="ga_op_reverse" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:232:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="ga_op_grade_involution" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:233:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="ga_op_grade_involution" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=a complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:234:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="ga_op_grade_involution" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=c complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:236:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="ga_op_grade_involution" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:250:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="ga_op_clifford_conjugation" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:251:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="ga_op_clifford_conjugation" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=a complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:252:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="ga_op_clifford_conjugation" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=c complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:254:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="ga_op_clifford_conjugation" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:269:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="ga_op_rotor_sandwich" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:270:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="ga_op_rotor_sandwich" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=a complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:271:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="ga_op_rotor_sandwich" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=b complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:272:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="ga_op_rotor_sandwich" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=c complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:275:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="ga_op_rotor_sandwich" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=t complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:276:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="ga_op_rotor_sandwich" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=a_rev complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:293:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="ga_op_rotor_norm" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:294:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="ga_op_rotor_norm" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=a complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:295:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="ga_op_rotor_norm" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=c complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:298:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="ga_op_rotor_norm" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:304:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="ga_op_rotor_norm" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:319:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="qgpu_ga_engine_parallel" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:320:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="qgpu_ga_engine_parallel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=a complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:321:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="qgpu_ga_engine_parallel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=b complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:322:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="qgpu_ga_engine_parallel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=c complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:325:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="qgpu_ga_engine_parallel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=aamf_bank_a type=ram_2p impl=bram" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:326:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="qgpu_ga_engine_parallel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=aamf_bank_b type=ram_2p impl=bram" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:327:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="qgpu_ga_engine_parallel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=aamf_bank_c type=ram_2p impl=bram" ARG_PragmaType="bind_storage" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:345:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="qgpu_ga_engine_parallel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=a_reg complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:346:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="qgpu_ga_engine_parallel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=b_reg complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:347:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="qgpu_ga_engine_parallel" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=c_reg complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:415:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="qgpu_ga_engine_parallel" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="D:/QGPU/hardware/hls/adaptive_pipeline/run_hls_synthesis.tcl:4:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="qgpu_ga_parallel_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=qgpu_ga_parallel_top" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_parallel_top.cpp:7:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="qgpu_ga_parallel_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_parallel_top.cpp:8:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="qgpu_ga_parallel_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=a bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_parallel_top.cpp:9:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="qgpu_ga_parallel_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=b bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_parallel_top.cpp:10:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="qgpu_ga_parallel_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=c bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_parallel_top.cpp:11:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="qgpu_ga_parallel_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=opcode bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_parallel_top.cpp:12:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="qgpu_ga_parallel_top" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=status bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:56:9" msg_body="Loop 'PARALLEL_INNER_LOOP' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="PARALLEL_INNER_LOOP"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../ga_engine/include\hls_compat.h:52:22" msg_body="Loop 'VITIS_LOOP_52_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_52_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="../ga_engine/include\hls_compat.h:54:30" msg_body="Loop 'VITIS_LOOP_54_2' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_54_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:318:0" msg_body="Unrolling loop 'VITIS_LOOP_414_1' (../ga_engine/src/qgpu_ga_engine_parallel.cpp:414:31) in function 'qgpu_ga_engine_parallel' completely with a factor of 8">
+        <args Factor="8" LoopLoc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:414:31" LoopName="VITIS_LOOP_414_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:292:0" msg_body="Unrolling loop 'VITIS_LOOP_303_2' (../ga_engine/src/qgpu_ga_engine_parallel.cpp:303:23) in function 'ga_op_rotor_norm' completely with a factor of 7">
+        <args Factor="7" LoopLoc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:303:23" LoopName="VITIS_LOOP_303_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:292:0" msg_body="Unrolling loop 'VITIS_LOOP_297_1' (../ga_engine/src/qgpu_ga_engine_parallel.cpp:297:23) in function 'ga_op_rotor_norm' completely with a factor of 8">
+        <args Factor="8" LoopLoc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:297:23" LoopName="VITIS_LOOP_297_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:249:0" msg_body="Unrolling loop 'VITIS_LOOP_253_1' (../ga_engine/src/qgpu_ga_engine_parallel.cpp:253:23) in function 'ga_op_clifford_conjugation' completely with a factor of 8">
+        <args Factor="8" LoopLoc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:253:23" LoopName="VITIS_LOOP_253_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:231:0" msg_body="Unrolling loop 'VITIS_LOOP_235_1' (../ga_engine/src/qgpu_ga_engine_parallel.cpp:235:23) in function 'ga_op_grade_involution' completely with a factor of 8">
+        <args Factor="8" LoopLoc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:235:23" LoopName="VITIS_LOOP_235_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:213:0" msg_body="Unrolling loop 'VITIS_LOOP_217_1' (../ga_engine/src/qgpu_ga_engine_parallel.cpp:217:23) in function 'ga_op_reverse' completely with a factor of 8">
+        <args Factor="8" LoopLoc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:217:23" LoopName="VITIS_LOOP_217_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:191:0" msg_body="Unrolling loop 'VITIS_LOOP_197_1' (../ga_engine/src/qgpu_ga_engine_parallel.cpp:197:27) in function 'ga_op_grade_project' completely with a factor of 8">
+        <args Factor="8" LoopLoc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:197:27" LoopName="VITIS_LOOP_197_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:191:0" msg_body="Unrolling loop 'VITIS_LOOP_202_2' (../ga_engine/src/qgpu_ga_engine_parallel.cpp:202:27) in function 'ga_op_grade_project' completely with a factor of 8">
+        <args Factor="8" LoopLoc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:202:27" LoopName="VITIS_LOOP_202_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:175:0" msg_body="Unrolling loop 'VITIS_LOOP_179_1' (../ga_engine/src/qgpu_ga_engine_parallel.cpp:179:23) in function 'ga_op_scalar_mul' completely with a factor of 8">
+        <args Factor="8" LoopLoc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:179:23" LoopName="VITIS_LOOP_179_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:159:0" msg_body="Unrolling loop 'VITIS_LOOP_164_1' (../ga_engine/src/qgpu_ga_engine_parallel.cpp:164:23) in function 'ga_op_subtraction' completely with a factor of 8">
+        <args Factor="8" LoopLoc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:164:23" LoopName="VITIS_LOOP_164_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:143:0" msg_body="Unrolling loop 'VITIS_LOOP_148_1' (../ga_engine/src/qgpu_ga_engine_parallel.cpp:148:23) in function 'ga_op_addition' completely with a factor of 8">
+        <args Factor="8" LoopLoc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:148:23" LoopName="VITIS_LOOP_148_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:36:0" msg_body="Unrolling loop 'VITIS_LOOP_88_2' (../ga_engine/src/qgpu_ga_engine_parallel.cpp:88:22) in function 'compute_gp_core' completely with a factor of 8">
+        <args Factor="8" LoopLoc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:88:22" LoopName="VITIS_LOOP_88_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:36:0" msg_body="Unrolling loop 'PARALLEL_INNER_LOOP' (../ga_engine/src/qgpu_ga_engine_parallel.cpp:56:9) in function 'compute_gp_core' completely with a factor of 8">
+        <args Factor="8" LoopLoc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:56:9" LoopName="PARALLEL_INNER_LOOP"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:36:0" msg_body="Unrolling loop 'VITIS_LOOP_41_1' (../ga_engine/src/qgpu_ga_engine_parallel.cpp:41:22) in function 'compute_gp_core' completely with a factor of 8">
+        <args Factor="8" LoopLoc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:41:22" LoopName="VITIS_LOOP_41_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../ga_engine/include\hls_compat.h:50:0" msg_body="Unrolling loop 'VITIS_LOOP_52_1' (../ga_engine/include\hls_compat.h:52:22) in function 'blade_product_sign' completely with a factor of 3">
+        <args Factor="3" LoopLoc="../ga_engine/include\hls_compat.h:52:22" LoopName="VITIS_LOOP_52_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="../ga_engine/include\hls_compat.h:50:0" msg_body="Unrolling loop 'VITIS_LOOP_54_2' (../ga_engine/include\hls_compat.h:54:30) in function 'blade_product_sign' completely with a factor of 3">
+        <args Factor="3" LoopLoc="../ga_engine/include\hls_compat.h:54:30" LoopName="VITIS_LOOP_54_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:143:0" msg_body="Inlining function 'sat_add_q16(int, int, bool*)' into 'ga_op_addition(int const*, int const*, int*, bool*)'">
+        <args Callee="sat_add_q16(int, int, bool*)" Callee-DebugLoc="File {../ga_engine/include\hls_compat.h} Line 104 Column 0" Caller="ga_op_addition(int const*, int const*, int*, bool*)" Caller-DebugLoc="File ../ga_engine/src/qgpu_ga_engine_parallel.cpp Line 143 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:159:0" msg_body="Inlining function 'sat_sub_q16(int, int, bool*)' into 'ga_op_subtraction(int const*, int const*, int*, bool*)'">
+        <args Callee="sat_sub_q16(int, int, bool*)" Callee-DebugLoc="File {../ga_engine/include\hls_compat.h} Line 123 Column 0" Caller="ga_op_subtraction(int const*, int const*, int*, bool*)" Caller-DebugLoc="File ../ga_engine/src/qgpu_ga_engine_parallel.cpp Line 159 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:213:0" msg_body="Inlining function 'sat_sub_q16(int, int, bool*)' into 'ga_op_reverse(int const*, int*, bool*)'">
+        <args Callee="sat_sub_q16(int, int, bool*)" Callee-DebugLoc="File {../ga_engine/include\hls_compat.h} Line 123 Column 0" Caller="ga_op_reverse(int const*, int*, bool*)" Caller-DebugLoc="File ../ga_engine/src/qgpu_ga_engine_parallel.cpp Line 213 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:231:0" msg_body="Inlining function 'sat_sub_q16(int, int, bool*)' into 'ga_op_grade_involution(int const*, int*, bool*)'">
+        <args Callee="sat_sub_q16(int, int, bool*)" Callee-DebugLoc="File {../ga_engine/include\hls_compat.h} Line 123 Column 0" Caller="ga_op_grade_involution(int const*, int*, bool*)" Caller-DebugLoc="File ../ga_engine/src/qgpu_ga_engine_parallel.cpp Line 231 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:249:0" msg_body="Inlining function 'sat_sub_q16(int, int, bool*)' into 'ga_op_clifford_conjugation(int const*, int*, bool*)'">
+        <args Callee="sat_sub_q16(int, int, bool*)" Callee-DebugLoc="File {../ga_engine/include\hls_compat.h} Line 123 Column 0" Caller="ga_op_clifford_conjugation(int const*, int*, bool*)" Caller-DebugLoc="File ../ga_engine/src/qgpu_ga_engine_parallel.cpp Line 249 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:292:0" msg_body="Inlining function 'rescale_and_saturate(ap_int&lt;67&gt;, bool*)' into 'ga_op_rotor_norm(int const*, int*, bool*)'">
+        <args Callee="rescale_and_saturate(ap_int&lt;67&gt;, bool*)" Callee-DebugLoc="File {../ga_engine/include\hls_compat.h} Line 68 Column 0" Caller="ga_op_rotor_norm(int const*, int*, bool*)" Caller-DebugLoc="File ../ga_engine/src/qgpu_ga_engine_parallel.cpp Line 292 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-464" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_parallel_top.cpp:6:0" msg_body="Skipping array undecay on variable length array 'status'.">
+        <args ArrayName="status"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-464" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:268:0" msg_body="Skipping array undecay on variable length array 'overflow'.">
+        <args ArrayName="overflow"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-464" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:130:0" msg_body="Skipping array undecay on variable length array 'overflow'.">
+        <args ArrayName="overflow"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-464" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:117:0" msg_body="Skipping array undecay on variable length array 'overflow'.">
+        <args ArrayName="overflow"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-464" msg_severity="WARNING" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:104:0" msg_body="Skipping array undecay on variable length array 'overflow'.">
+        <args ArrayName="overflow"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:38:13" msg_body="Applying array_partition to 'accum': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="accum"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:273:13" msg_body="Applying array_partition to 't': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="t"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:274:13" msg_body="Applying array_partition to 'a_rev': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="a_rev"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:342:13" msg_body="Applying array_partition to 'a_reg': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="a_reg"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:343:13" msg_body="Applying array_partition to 'b_reg': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="b_reg"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:344:13" msg_body="Applying array_partition to 'c_reg': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="c_reg"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../ga_engine/src/qgpu_ga_parallel_top.cpp:6:0" msg_body="Applying array_partition to 'a': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="a"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../ga_engine/src/qgpu_ga_parallel_top.cpp:6:0" msg_body="Applying array_partition to 'b': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="b"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../ga_engine/src/qgpu_ga_parallel_top.cpp:6:0" msg_body="Applying array_partition to 'c': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="c"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:336:5" msg_body="pipeline   1 qgpu_ga_engine_parallel config_compile -pipeline_loops 64AAMF_STAGE_IN ../ga_engine/src/qgpu_ga_engine_parallel.cpp:336:5">
+        <args LoopLoc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:336:5" LoopLoc-DebugLoc="File ../ga_engine/src/qgpu_ga_engine_parallel.cpp Line 336 Column 5" LoopName="AAMF_STAGE_IN" PragmaFunction="qgpu_ga_engine_parallel" PragmaInferReason="config_compile -pipeline_loops 64" PragmaIsAuto="1" PragmaType="pipeline"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:350:5" msg_body="pipeline   1 qgpu_ga_engine_parallel config_compile -pipeline_loops 64AAMF_FETCH ../ga_engine/src/qgpu_ga_engine_parallel.cpp:350:5">
+        <args LoopLoc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:350:5" LoopLoc-DebugLoc="File ../ga_engine/src/qgpu_ga_engine_parallel.cpp Line 350 Column 5" LoopName="AAMF_FETCH" PragmaFunction="qgpu_ga_engine_parallel" PragmaInferReason="config_compile -pipeline_loops 64" PragmaIsAuto="1" PragmaType="pipeline"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:423:5" msg_body="pipeline   1 qgpu_ga_engine_parallel config_compile -pipeline_loops 64AAMF_COMMIT_OUT ../ga_engine/src/qgpu_ga_engine_parallel.cpp:423:5">
+        <args LoopLoc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:423:5" LoopLoc-DebugLoc="File ../ga_engine/src/qgpu_ga_engine_parallel.cpp Line 423 Column 5" LoopName="AAMF_COMMIT_OUT" PragmaFunction="qgpu_ga_engine_parallel" PragmaInferReason="config_compile -pipeline_loops 64" PragmaIsAuto="1" PragmaType="pipeline"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="../ga_engine/include\hls_compat.h:32:0" msg_body="array_partition dim=1 type=complete  variable=BASIS_GRADES 1 qgpu_ga_parallel_top ../ga_engine/include\hls_compat.h:32:0 ../ga_engine/src/qgpu_ga_engine_parallel.cpp:48:1BASIS_GRADES">
+        <args PragmaFunction="qgpu_ga_parallel_top" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=BASIS_GRADES" PragmaSrcLoc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:48:1" PragmaSrcLoc-DebugLoc="File ../ga_engine/src/qgpu_ga_engine_parallel.cpp Line 48 Column 1" PragmaType="array_partition" VarLoc="../ga_engine/include\hls_compat.h:32:0" VarName="BASIS_GRADES"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="../ga_engine/src/qgpu_ga_engine_parallel.cpp:48:1" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'BASIS_GRADES' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="BASIS_GRADES" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="../ga_engine/include\hls_compat.h:32:0" msg_body="Applying array_partition to '_ZL12BASIS_GRADES': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL12BASIS_GRADES"/>
+    </msg>
+</xilinx:hls_fe_msgs>

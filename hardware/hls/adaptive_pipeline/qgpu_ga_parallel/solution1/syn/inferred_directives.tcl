@@ -1,0 +1,6 @@
+# Inferred from syn.compile.pipeline_loops=64
+set_directive_pipeline qgpu_ga_engine_parallel/AAMF_STAGE_IN
+set_directive_pipeline qgpu_ga_engine_parallel/AAMF_FETCH
+set_directive_pipeline qgpu_ga_engine_parallel/AAMF_COMMIT_OUT
+# Inferred from performance & pipeline pragmas/directives
+set_directive_array_partition qgpu_ga_parallel_top/BASIS_GRADES -dim=1 -type=complete BASIS_GRADES

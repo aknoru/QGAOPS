@@ -1,0 +1,144 @@
+
+
+================================================================
+== Vitis HLS Report for 'qgpu_ga_sequential_top'
+================================================================
+* Date:           Tue Oct 27 05:17:59 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Project:        qgpu_ga_sequential
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.137 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       51|      226|  0.510 us|  2.260 us|   52|  227|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        +---------------------------------+-----------------------+---------+---------+----------+----------+-----+-----+---------+
+        |                                 |                       |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+        |             Instance            |         Module        |   min   |   max   |    min   |    max   | min | max |   Type  |
+        +---------------------------------+-----------------------+---------+---------+----------+----------+-----+-----+---------+
+        |grp_qgpu_ga_engine_shared_fu_79  |qgpu_ga_engine_shared  |       50|      225|  0.500 us|  2.250 us|   50|  225|       no|
+        +---------------------------------+-----------------------+---------+---------+----------+----------+-----+-----+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       -|      -|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        2|   20|    7472|  10378|    0|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       0|     14|    -|
+|Register         |        -|    -|      25|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        2|   20|    7497|  10392|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |       ~0|    9|       7|     19|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +---------------------------------+-----------------------+---------+----+------+------+-----+
+    |             Instance            |         Module        | BRAM_18K| DSP|  FF  |  LUT | URAM|
+    +---------------------------------+-----------------------+---------+----+------+------+-----+
+    |control_s_axi_U                  |control_s_axi          |        0|   0|   544|   390|    0|
+    |grp_qgpu_ga_engine_shared_fu_79  |qgpu_ga_engine_shared  |        2|  20|  6928|  9988|    0|
+    +---------------------------------+-----------------------+---------+----+------+------+-----+
+    |Total                            |                       |        2|  20|  7472| 10378|    0|
+    +---------------------------------+-----------------------+---------+----+------+------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    N/A
+
+    * Multiplexer: 
+    +-----------+----+-----------+-----+-----------+
+    |    Name   | LUT| Input Size| Bits| Total Bits|
+    +-----------+----+-----------+-----+-----------+
+    |ap_NS_fsm  |  14|          3|    1|          3|
+    +-----------+----+-----------+-----+-----------+
+    |Total      |  14|          3|    1|          3|
+    +-----------+----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------------------------------+----+----+-----+-----------+
+    |                     Name                     | FF | LUT| Bits| Const Bits|
+    +----------------------------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                                     |   2|   0|    2|          0|
+    |grp_qgpu_ga_engine_shared_fu_79_ap_start_reg  |   1|   0|    1|          0|
+    |trunc_ln4_reg_106                             |  22|   0|   22|          0|
+    +----------------------------------------------+----+----+-----+-----------+
+    |Total                                         |  25|   0|   25|          0|
+    +----------------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------------+-----+-----+------------+------------------------+--------------+
+|       RTL Ports       | Dir | Bits|  Protocol  |      Source Object     |    C Type    |
++-----------------------+-----+-----+------------+------------------------+--------------+
+|s_axi_control_AWVALID  |   in|    1|       s_axi|                 control|       pointer|
+|s_axi_control_AWREADY  |  out|    1|       s_axi|                 control|       pointer|
+|s_axi_control_AWADDR   |   in|    8|       s_axi|                 control|       pointer|
+|s_axi_control_WVALID   |   in|    1|       s_axi|                 control|       pointer|
+|s_axi_control_WREADY   |  out|    1|       s_axi|                 control|       pointer|
+|s_axi_control_WDATA    |   in|   32|       s_axi|                 control|       pointer|
+|s_axi_control_WSTRB    |   in|    4|       s_axi|                 control|       pointer|
+|s_axi_control_ARVALID  |   in|    1|       s_axi|                 control|       pointer|
+|s_axi_control_ARREADY  |  out|    1|       s_axi|                 control|       pointer|
+|s_axi_control_ARADDR   |   in|    8|       s_axi|                 control|       pointer|
+|s_axi_control_RVALID   |  out|    1|       s_axi|                 control|       pointer|
+|s_axi_control_RREADY   |   in|    1|       s_axi|                 control|       pointer|
+|s_axi_control_RDATA    |  out|   32|       s_axi|                 control|       pointer|
+|s_axi_control_RRESP    |  out|    2|       s_axi|                 control|       pointer|
+|s_axi_control_BVALID   |  out|    1|       s_axi|                 control|       pointer|
+|s_axi_control_BREADY   |   in|    1|       s_axi|                 control|       pointer|
+|s_axi_control_BRESP    |  out|    2|       s_axi|                 control|       pointer|
+|ap_clk                 |   in|    1|  ap_ctrl_hs|  qgpu_ga_sequential_top|  return value|
+|ap_rst_n               |   in|    1|  ap_ctrl_hs|  qgpu_ga_sequential_top|  return value|
+|interrupt              |  out|    1|  ap_ctrl_hs|  qgpu_ga_sequential_top|  return value|
++-----------------------+-----+-----+------------+------------------------+--------------+
+

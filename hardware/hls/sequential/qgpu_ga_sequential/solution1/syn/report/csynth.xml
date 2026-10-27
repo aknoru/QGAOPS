@@ -1,0 +1,2558 @@
+<profile>
+    <ReportVersion>
+        <Version>2025.2</Version>
+    </ReportVersion>
+    <UserAssignments>
+        <unit>ns</unit>
+        <ProductFamily>zynq</ProductFamily>
+        <Part>xc7z020-clg400-1</Part>
+        <TopModelName>qgpu_ga_sequential_top</TopModelName>
+        <TargetClockPeriod>10.00</TargetClockPeriod>
+        <ClockUncertainty>2.70</ClockUncertainty>
+        <FlowTarget>vivado</FlowTarget>
+    </UserAssignments>
+    <PerformanceEstimates>
+        <PipelineType>no</PipelineType>
+        <SummaryOfTimingAnalysis>
+            <unit>ns</unit>
+            <EstimatedClockPeriod>7.137</EstimatedClockPeriod>
+        </SummaryOfTimingAnalysis>
+        <SummaryOfOverallLatency>
+            <unit>clock cycles</unit>
+            <Best-caseLatency>51</Best-caseLatency>
+            <Average-caseLatency>84</Average-caseLatency>
+            <Worst-caseLatency>226</Worst-caseLatency>
+            <Best-caseRealTimeLatency>0.510 us</Best-caseRealTimeLatency>
+            <Average-caseRealTimeLatency>0.840 us</Average-caseRealTimeLatency>
+            <Worst-caseRealTimeLatency>2.260 us</Worst-caseRealTimeLatency>
+            <Interval-min>52</Interval-min>
+            <Interval-max>227</Interval-max>
+            <PerformancePragma>-</PerformancePragma>
+        </SummaryOfOverallLatency>
+        <SummaryOfViolations>
+            <IssueType>-</IssueType>
+            <ViolationType>-</ViolationType>
+            <SourceLocation>../ga_engine/src/qgpu_ga_sequential_top.cpp:4</SourceLocation>
+        </SummaryOfViolations>
+    </PerformanceEstimates>
+    <AreaEstimates>
+        <Resources>
+            <BRAM_18K>2</BRAM_18K>
+            <DSP>20</DSP>
+            <FF>7497</FF>
+            <LUT>10392</LUT>
+            <URAM>0</URAM>
+        </Resources>
+        <AvailableResources>
+            <BRAM_18K>280</BRAM_18K>
+            <DSP>220</DSP>
+            <FF>106400</FF>
+            <LUT>53200</LUT>
+            <URAM>0</URAM>
+        </AvailableResources>
+    </AreaEstimates>
+    <InterfaceSummary>
+        <RtlPorts>
+            <name>s_axi_control_AWVALID</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_AWREADY</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_AWADDR</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>8</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_WVALID</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_WREADY</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_WDATA</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>32</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_WSTRB</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>4</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_ARVALID</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_ARREADY</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_ARADDR</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>8</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_RVALID</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_RREADY</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_RDATA</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>32</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_RRESP</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>2</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_BVALID</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_BREADY</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>s_axi_control_BRESP</name>
+            <Object>control</Object>
+            <Type>pointer</Type>
+            <IOProtocol>s_axi</IOProtocol>
+            <Dir>out</Dir>
+            <Bits>2</Bits>
+            <Attribute>unknown</Attribute>
+            <CType>int</CType>
+            <HasCtrl>1</HasCtrl>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_clk</name>
+            <Object>qgpu_ga_sequential_top</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>ap_rst_n</name>
+            <Object>qgpu_ga_sequential_top</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>in</Dir>
+            <Bits>1</Bits>
+            <Attribute>control</Attribute>
+        </RtlPorts>
+        <RtlPorts>
+            <name>interrupt</name>
+            <Object>qgpu_ga_sequential_top</Object>
+            <Type>return value</Type>
+            <Scope/>
+            <IOProtocol>ap_ctrl_hs</IOProtocol>
+            <IOConfig/>
+            <Dir>out</Dir>
+            <Bits>1</Bits>
+            <Attribute>unknown</Attribute>
+        </RtlPorts>
+    </InterfaceSummary>
+    <RTLDesignHierarchy>
+        <TopModule MAX_DEPTH="6">
+            <ModuleName>qgpu_ga_sequential_top</ModuleName>
+            <InstancesList>
+                <Instance>
+                    <InstName>grp_qgpu_ga_engine_shared_fu_79</InstName>
+                    <ModuleName>qgpu_ga_engine_shared</ModuleName>
+                    <IsCompInst>true</IsCompInst>
+                    <ID>79</ID>
+                    <InstancesList>
+                        <Instance>
+                            <InstName>grp_qgpu_ga_engine_shared_Pipeline_VITIS_LOOP_287_1_fu_247</InstName>
+                            <ModuleName>qgpu_ga_engine_shared_Pipeline_VITIS_LOOP_287_1</ModuleName>
+                            <IsCompInst>true</IsCompInst>
+                            <ID>247</ID>
+                            <BindInstances>icmp_ln287_fu_136_p2 add_ln287_fu_142_p2 add_ln288_fu_162_p2</BindInstances>
+                        </Instance>
+                        <Instance>
+                            <InstName>grp_qgpu_ga_engine_shared_Pipeline_VITIS_LOOP_297_2_fu_260</InstName>
+                            <ModuleName>qgpu_ga_engine_shared_Pipeline_VITIS_LOOP_297_2</ModuleName>
+                            <IsCompInst>true</IsCompInst>
+                            <ID>260</ID>
+                            <BindInstances>icmp_ln297_fu_136_p2 add_ln297_fu_142_p2 add_ln298_fu_157_p2</BindInstances>
+                        </Instance>
+                        <Instance>
+                            <InstName>grp_ga_seq_op_rotor_norm_fu_272</InstName>
+                            <ModuleName>ga_seq_op_rotor_norm</ModuleName>
+                            <IsCompInst>true</IsCompInst>
+                            <ID>272</ID>
+                            <InstancesList>
+                                <Instance>
+                                    <InstName>grp_ga_seq_op_rotor_norm_Pipeline_VITIS_LOOP_255_1_fu_68</InstName>
+                                    <ModuleName>ga_seq_op_rotor_norm_Pipeline_VITIS_LOOP_255_1</ModuleName>
+                                    <IsCompInst>true</IsCompInst>
+                                    <ID>68</ID>
+                                    <BindInstances>icmp_ln255_fu_79_p2 add_ln255_fu_85_p2 norm_accum_1_fu_112_p2</BindInstances>
+                                </Instance>
+                                <Instance>
+                                    <InstName>grp_ga_seq_op_rotor_norm_Pipeline_VITIS_LOOP_260_2_fu_75</InstName>
+                                    <ModuleName>ga_seq_op_rotor_norm_Pipeline_VITIS_LOOP_260_2</ModuleName>
+                                    <IsCompInst>true</IsCompInst>
+                                    <ID>75</ID>
+                                    <BindInstances>icmp_ln260_fu_52_p2 add_ln260_fu_63_p2</BindInstances>
+                                </Instance>
+                            </InstancesList>
+                            <BindInstances>xor_ln74_fu_118_p2 icmp_ln76_fu_124_p2 add_ln77_fu_130_p2 rounded_3_fu_158_p6 and_ln76_fu_144_p2 sparsemux_7_2_52_1_1_U16 icmp_ln90_fu_192_p2 select_ln90_fu_197_p3</BindInstances>
+                        </Instance>
+                        <Instance>
+                            <InstName>grp_ga_seq_op_rotor_sandwich_fu_278</InstName>
+                            <ModuleName>ga_seq_op_rotor_sandwich</ModuleName>
+                            <IsCompInst>true</IsCompInst>
+                            <ID>278</ID>
+                            <InstancesList>
+                                <Instance>
+                                    <InstName>grp_compute_gp_seq_core_fu_26</InstName>
+                                    <ModuleName>compute_gp_seq_core</ModuleName>
+                                    <IsCompInst>true</IsCompInst>
+                                    <ID>26</ID>
+                                    <InstancesList>
+                                        <Instance>
+                                            <InstName>grp_compute_gp_seq_core_Pipeline_SHARED_OUTER_LOOP_SHARED_INNER_LOOP_fu_74</InstName>
+                                            <ModuleName>compute_gp_seq_core_Pipeline_SHARED_OUTER_LOOP_SHARED_INNER_LOOP</ModuleName>
+                                            <IsCompInst>true</IsCompInst>
+                                            <ID>74</ID>
+                                            <BindInstances>icmp_ln46_fu_333_p2 add_ln46_fu_339_p2 icmp_ln52_fu_364_p2 select_ln46_fu_370_p3 add_ln46_1_fu_378_p2 select_ln46_1_fu_384_p3 sparsemux_17_3_2_1_1_U22 sparsemux_17_3_2_1_1_U23 out_mask_fu_560_p2 icmp_ln36_fu_564_p2 icmp_ln36_1_fu_570_p2 sparsemux_7_2_3_1_1_U24 sparsemux_17_3_2_1_1_U25 icmp_ln68_fu_496_p2 sub_ln68_fu_506_p2 icmp_ln68_1_fu_648_p2 and_ln62_fu_544_p2 include_term_fu_550_p2 xor_ln74_fu_653_p2 sparsemux_5_8_3_1_1_U26 swaps_1_fu_660_p2 swaps_2_fu_665_p2 swaps_3_fu_671_p3 swaps_4_fu_686_p2 swaps_5_fu_692_p3 swaps_6_fu_700_p3 mul_32s_32s_64_2_1_U21 sparsemux_17_3_67_1_1_U27 add_ln80_fu_814_p2 sub_ln78_fu_819_p2 accum_8_fu_824_p3 add_ln52_fu_512_p2 BASIS_MASKS_U</BindInstances>
+                                        </Instance>
+                                        <Instance>
+                                            <InstName>grp_compute_gp_seq_core_Pipeline_RESCALE_LOOP_fu_94</InstName>
+                                            <ModuleName>compute_gp_seq_core_Pipeline_RESCALE_LOOP</ModuleName>
+                                            <IsCompInst>true</IsCompInst>
+                                            <ID>94</ID>
+                                            <BindInstances>icmp_ln87_fu_219_p2 add_ln87_fu_225_p2 sparsemux_17_3_67_1_1_U44 xor_ln74_fu_329_p2 icmp_ln76_fu_309_p2 add_ln77_fu_315_p2 rounded_5_fu_351_p6 and_ln76_fu_339_p2 sparsemux_7_2_52_1_1_x_U45 icmp_ln90_fu_379_p2 icmp_ln93_fu_385_p2 or_ln93_fu_395_p2 or_ln93_2_fu_401_p2 write_flag_1_fu_407_p2 overflow_1_fu_413_p2 select_ln93_fu_419_p3 empty_fu_427_p2 retval_0_i109_fu_433_p3</BindInstances>
+                                        </Instance>
+                                    </InstancesList>
+                                    <BindInstances>select_ln90_fu_148_p3</BindInstances>
+                                </Instance>
+                                <Instance>
+                                    <InstName>grp_ga_seq_op_reverse_fu_43</InstName>
+                                    <ModuleName>ga_seq_op_reverse</ModuleName>
+                                    <IsCompInst>true</IsCompInst>
+                                    <ID>43</ID>
+                                    <BindInstances>icmp_ln189_fu_146_p2 add_ln189_fu_152_p2 sparsemux_17_3_2_1_1_U63 diff_fu_229_p2 icmp_ln128_fu_245_p2 or_ln128_fu_255_p2 or_ln128_1_fu_261_p2 select_ln128_fu_267_p3 ap_return</BindInstances>
+                                </Instance>
+                            </InstancesList>
+                            <BindInstances>t_U a_rev_U</BindInstances>
+                        </Instance>
+                        <Instance>
+                            <InstName>grp_ga_seq_op_clifford_conjugation_fu_287</InstName>
+                            <ModuleName>ga_seq_op_clifford_conjugation</ModuleName>
+                            <IsCompInst>true</IsCompInst>
+                            <ID>287</ID>
+                            <BindInstances>icmp_ln219_fu_138_p2 add_ln219_fu_144_p2 sparsemux_17_3_2_1_1_U72 add_ln220_fu_203_p2 icmp_ln220_fu_219_p2 diff_fu_239_p2 icmp_ln128_fu_255_p2 or_ln128_fu_265_p2 or_ln128_3_fu_271_p2 select_ln128_fu_277_p3 ap_return</BindInstances>
+                        </Instance>
+                        <Instance>
+                            <InstName>grp_ga_seq_op_grade_involution_fu_293</InstName>
+                            <ModuleName>ga_seq_op_grade_involution</ModuleName>
+                            <IsCompInst>true</IsCompInst>
+                            <ID>293</ID>
+                            <BindInstances>icmp_ln204_fu_134_p2 add_ln204_fu_140_p2 sparsemux_17_3_2_1_1_U75 icmp_ln203_fu_195_p2 icmp_ln203_1_fu_201_p2 or_ln203_fu_207_p2 diff_fu_227_p2 icmp_ln128_fu_243_p2 or_ln128_fu_253_p2 or_ln128_2_fu_259_p2 select_ln128_fu_265_p3 ap_return</BindInstances>
+                        </Instance>
+                        <Instance>
+                            <InstName>grp_ga_seq_op_reverse_fu_299</InstName>
+                            <ModuleName>ga_seq_op_reverse</ModuleName>
+                            <IsCompInst>true</IsCompInst>
+                            <ID>299</ID>
+                            <BindInstances>icmp_ln189_fu_146_p2 add_ln189_fu_152_p2 sparsemux_17_3_2_1_1_U63 diff_fu_229_p2 icmp_ln128_fu_245_p2 or_ln128_fu_255_p2 or_ln128_1_fu_261_p2 select_ln128_fu_267_p3 ap_return</BindInstances>
+                        </Instance>
+                        <Instance>
+                            <InstName>grp_ga_seq_op_grade_project_fu_307</InstName>
+                            <ModuleName>ga_seq_op_grade_project</ModuleName>
+                            <IsCompInst>true</IsCompInst>
+                            <ID>307</ID>
+                            <InstancesList>
+                                <Instance>
+                                    <InstName>grp_ga_seq_op_grade_project_Pipeline_VITIS_LOOP_173_1_fu_41</InstName>
+                                    <ModuleName>ga_seq_op_grade_project_Pipeline_VITIS_LOOP_173_1</ModuleName>
+                                    <IsCompInst>true</IsCompInst>
+                                    <ID>41</ID>
+                                    <BindInstances>icmp_ln173_fu_54_p2 add_ln173_fu_60_p2</BindInstances>
+                                </Instance>
+                                <Instance>
+                                    <InstName>grp_ga_seq_op_grade_project_Pipeline_VITIS_LOOP_177_2_fu_47</InstName>
+                                    <ModuleName>ga_seq_op_grade_project_Pipeline_VITIS_LOOP_177_2</ModuleName>
+                                    <IsCompInst>true</IsCompInst>
+                                    <ID>47</ID>
+                                    <BindInstances>icmp_ln177_fu_106_p2 add_ln177_fu_112_p2 sparsemux_17_3_2_1_1_U79 icmp_ln178_fu_171_p2 cond_fu_182_p3</BindInstances>
+                                </Instance>
+                            </InstancesList>
+                            <BindInstances>icmp_ln171_fu_67_p2</BindInstances>
+                        </Instance>
+                        <Instance>
+                            <InstName>grp_ga_seq_op_scalar_mul_fu_314</InstName>
+                            <ModuleName>ga_seq_op_scalar_mul</ModuleName>
+                            <IsCompInst>true</IsCompInst>
+                            <ID>314</ID>
+                            <BindInstances>icmp_ln158_fu_156_p2 add_ln158_fu_162_p2 xor_ln74_fu_215_p2 icmp_ln76_fu_220_p2 add_ln77_fu_225_p2 rounded_2_fu_251_p6 and_ln76_fu_238_p2 sparsemux_7_2_49_1_1_U87 icmp_ln90_fu_281_p2 icmp_ln93_fu_286_p2 or_ln93_fu_294_p2 or_ln93_1_fu_300_p2 write_flag_1_fu_306_p2 overflow_1_fu_312_p2 select_ln93_fu_318_p3 empty_fu_326_p2 retval_0_i_fu_332_p3 and_ln162_fu_341_p2</BindInstances>
+                        </Instance>
+                        <Instance>
+                            <InstName>grp_ga_seq_op_subtraction_fu_322</InstName>
+                            <ModuleName>ga_seq_op_subtraction</ModuleName>
+                            <IsCompInst>true</IsCompInst>
+                            <ID>322</ID>
+                            <BindInstances>icmp_ln146_fu_125_p2 add_ln146_fu_131_p2 diff_fu_156_p2 icmp_ln128_fu_172_p2 icmp_ln131_fu_178_p2 or_ln131_fu_186_p2 or_ln131_1_fu_192_p2 write_flag_1_fu_198_p2 overflow_1_fu_203_p2 select_ln131_fu_208_p3 empty_fu_215_p2 retval_0_i_fu_220_p3 and_ln149_fu_229_p2</BindInstances>
+                        </Instance>
+                        <Instance>
+                            <InstName>grp_ga_seq_op_addition_fu_329</InstName>
+                            <ModuleName>ga_seq_op_addition</ModuleName>
+                            <IsCompInst>true</IsCompInst>
+                            <ID>329</ID>
+                            <BindInstances>icmp_ln134_fu_125_p2 add_ln134_fu_131_p2 add_ln105_fu_156_p2 sum_fu_162_p2 icmp_ln109_fu_178_p2 icmp_ln112_fu_184_p2 or_ln112_fu_189_p2 or_ln112_1_fu_195_p2 write_flag_1_fu_201_p2 overflow_1_fu_206_p2 select_ln112_fu_211_p3 empty_fu_218_p2 retval_0_i_fu_223_p3 and_ln137_fu_231_p2</BindInstances>
+                        </Instance>
+                        <Instance>
+                            <InstName>grp_ga_seq_op_inner_product_fu_336</InstName>
+                            <ModuleName>ga_seq_op_inner_product</ModuleName>
+                            <IsCompInst>true</IsCompInst>
+                            <ID>336</ID>
+                            <InstancesList>
+                                <Instance>
+                                    <InstName>grp_compute_gp_seq_core_fu_14</InstName>
+                                    <ModuleName>compute_gp_seq_core</ModuleName>
+                                    <IsCompInst>true</IsCompInst>
+                                    <ID>14</ID>
+                                    <InstancesList>
+                                        <Instance>
+                                            <InstName>grp_compute_gp_seq_core_Pipeline_SHARED_OUTER_LOOP_SHARED_INNER_LOOP_fu_74</InstName>
+                                            <ModuleName>compute_gp_seq_core_Pipeline_SHARED_OUTER_LOOP_SHARED_INNER_LOOP</ModuleName>
+                                            <IsCompInst>true</IsCompInst>
+                                            <ID>74</ID>
+                                            <BindInstances>icmp_ln46_fu_333_p2 add_ln46_fu_339_p2 icmp_ln52_fu_364_p2 select_ln46_fu_370_p3 add_ln46_1_fu_378_p2 select_ln46_1_fu_384_p3 sparsemux_17_3_2_1_1_U22 sparsemux_17_3_2_1_1_U23 out_mask_fu_560_p2 icmp_ln36_fu_564_p2 icmp_ln36_1_fu_570_p2 sparsemux_7_2_3_1_1_U24 sparsemux_17_3_2_1_1_U25 icmp_ln68_fu_496_p2 sub_ln68_fu_506_p2 icmp_ln68_1_fu_648_p2 and_ln62_fu_544_p2 include_term_fu_550_p2 xor_ln74_fu_653_p2 sparsemux_5_8_3_1_1_U26 swaps_1_fu_660_p2 swaps_2_fu_665_p2 swaps_3_fu_671_p3 swaps_4_fu_686_p2 swaps_5_fu_692_p3 swaps_6_fu_700_p3 mul_32s_32s_64_2_1_U21 sparsemux_17_3_67_1_1_U27 add_ln80_fu_814_p2 sub_ln78_fu_819_p2 accum_8_fu_824_p3 add_ln52_fu_512_p2 BASIS_MASKS_U</BindInstances>
+                                        </Instance>
+                                        <Instance>
+                                            <InstName>grp_compute_gp_seq_core_Pipeline_RESCALE_LOOP_fu_94</InstName>
+                                            <ModuleName>compute_gp_seq_core_Pipeline_RESCALE_LOOP</ModuleName>
+                                            <IsCompInst>true</IsCompInst>
+                                            <ID>94</ID>
+                                            <BindInstances>icmp_ln87_fu_219_p2 add_ln87_fu_225_p2 sparsemux_17_3_67_1_1_U44 xor_ln74_fu_329_p2 icmp_ln76_fu_309_p2 add_ln77_fu_315_p2 rounded_5_fu_351_p6 and_ln76_fu_339_p2 sparsemux_7_2_52_1_1_x_U45 icmp_ln90_fu_379_p2 icmp_ln93_fu_385_p2 or_ln93_fu_395_p2 or_ln93_2_fu_401_p2 write_flag_1_fu_407_p2 overflow_1_fu_413_p2 select_ln93_fu_419_p3 empty_fu_427_p2 retval_0_i109_fu_433_p3</BindInstances>
+                                        </Instance>
+                                    </InstancesList>
+                                    <BindInstances>select_ln90_fu_148_p3</BindInstances>
+                                </Instance>
+                            </InstancesList>
+                        </Instance>
+                        <Instance>
+                            <InstName>grp_ga_seq_op_wedge_product_fu_345</InstName>
+                            <ModuleName>ga_seq_op_wedge_product</ModuleName>
+                            <IsCompInst>true</IsCompInst>
+                            <ID>345</ID>
+                            <InstancesList>
+                                <Instance>
+                                    <InstName>grp_compute_gp_seq_core_fu_14</InstName>
+                                    <ModuleName>compute_gp_seq_core</ModuleName>
+                                    <IsCompInst>true</IsCompInst>
+                                    <ID>14</ID>
+                                    <InstancesList>
+                                        <Instance>
+                                            <InstName>grp_compute_gp_seq_core_Pipeline_SHARED_OUTER_LOOP_SHARED_INNER_LOOP_fu_74</InstName>
+                                            <ModuleName>compute_gp_seq_core_Pipeline_SHARED_OUTER_LOOP_SHARED_INNER_LOOP</ModuleName>
+                                            <IsCompInst>true</IsCompInst>
+                                            <ID>74</ID>
+                                            <BindInstances>icmp_ln46_fu_333_p2 add_ln46_fu_339_p2 icmp_ln52_fu_364_p2 select_ln46_fu_370_p3 add_ln46_1_fu_378_p2 select_ln46_1_fu_384_p3 sparsemux_17_3_2_1_1_U22 sparsemux_17_3_2_1_1_U23 out_mask_fu_560_p2 icmp_ln36_fu_564_p2 icmp_ln36_1_fu_570_p2 sparsemux_7_2_3_1_1_U24 sparsemux_17_3_2_1_1_U25 icmp_ln68_fu_496_p2 sub_ln68_fu_506_p2 icmp_ln68_1_fu_648_p2 and_ln62_fu_544_p2 include_term_fu_550_p2 xor_ln74_fu_653_p2 sparsemux_5_8_3_1_1_U26 swaps_1_fu_660_p2 swaps_2_fu_665_p2 swaps_3_fu_671_p3 swaps_4_fu_686_p2 swaps_5_fu_692_p3 swaps_6_fu_700_p3 mul_32s_32s_64_2_1_U21 sparsemux_17_3_67_1_1_U27 add_ln80_fu_814_p2 sub_ln78_fu_819_p2 accum_8_fu_824_p3 add_ln52_fu_512_p2 BASIS_MASKS_U</BindInstances>
+                                        </Instance>
+                                        <Instance>
+                                            <InstName>grp_compute_gp_seq_core_Pipeline_RESCALE_LOOP_fu_94</InstName>
+                                            <ModuleName>compute_gp_seq_core_Pipeline_RESCALE_LOOP</ModuleName>
+                                            <IsCompInst>true</IsCompInst>
+                                            <ID>94</ID>
+                                            <BindInstances>icmp_ln87_fu_219_p2 add_ln87_fu_225_p2 sparsemux_17_3_67_1_1_U44 xor_ln74_fu_329_p2 icmp_ln76_fu_309_p2 add_ln77_fu_315_p2 rounded_5_fu_351_p6 and_ln76_fu_339_p2 sparsemux_7_2_52_1_1_x_U45 icmp_ln90_fu_379_p2 icmp_ln93_fu_385_p2 or_ln93_fu_395_p2 or_ln93_2_fu_401_p2 write_flag_1_fu_407_p2 overflow_1_fu_413_p2 select_ln93_fu_419_p3 empty_fu_427_p2 retval_0_i109_fu_433_p3</BindInstances>
+                                        </Instance>
+                                    </InstancesList>
+                                    <BindInstances>select_ln90_fu_148_p3</BindInstances>
+                                </Instance>
+                            </InstancesList>
+                        </Instance>
+                        <Instance>
+                            <InstName>grp_ga_seq_op_geometric_product_fu_354</InstName>
+                            <ModuleName>ga_seq_op_geometric_product</ModuleName>
+                            <IsCompInst>true</IsCompInst>
+                            <ID>354</ID>
+                            <InstancesList>
+                                <Instance>
+                                    <InstName>grp_compute_gp_seq_core_fu_14</InstName>
+                                    <ModuleName>compute_gp_seq_core</ModuleName>
+                                    <IsCompInst>true</IsCompInst>
+                                    <ID>14</ID>
+                                    <InstancesList>
+                                        <Instance>
+                                            <InstName>grp_compute_gp_seq_core_Pipeline_SHARED_OUTER_LOOP_SHARED_INNER_LOOP_fu_74</InstName>
+                                            <ModuleName>compute_gp_seq_core_Pipeline_SHARED_OUTER_LOOP_SHARED_INNER_LOOP</ModuleName>
+                                            <IsCompInst>true</IsCompInst>
+                                            <ID>74</ID>
+                                            <BindInstances>icmp_ln46_fu_333_p2 add_ln46_fu_339_p2 icmp_ln52_fu_364_p2 select_ln46_fu_370_p3 add_ln46_1_fu_378_p2 select_ln46_1_fu_384_p3 sparsemux_17_3_2_1_1_U22 sparsemux_17_3_2_1_1_U23 out_mask_fu_560_p2 icmp_ln36_fu_564_p2 icmp_ln36_1_fu_570_p2 sparsemux_7_2_3_1_1_U24 sparsemux_17_3_2_1_1_U25 icmp_ln68_fu_496_p2 sub_ln68_fu_506_p2 icmp_ln68_1_fu_648_p2 and_ln62_fu_544_p2 include_term_fu_550_p2 xor_ln74_fu_653_p2 sparsemux_5_8_3_1_1_U26 swaps_1_fu_660_p2 swaps_2_fu_665_p2 swaps_3_fu_671_p3 swaps_4_fu_686_p2 swaps_5_fu_692_p3 swaps_6_fu_700_p3 mul_32s_32s_64_2_1_U21 sparsemux_17_3_67_1_1_U27 add_ln80_fu_814_p2 sub_ln78_fu_819_p2 accum_8_fu_824_p3 add_ln52_fu_512_p2 BASIS_MASKS_U</BindInstances>
+                                        </Instance>
+                                        <Instance>
+                                            <InstName>grp_compute_gp_seq_core_Pipeline_RESCALE_LOOP_fu_94</InstName>
+                                            <ModuleName>compute_gp_seq_core_Pipeline_RESCALE_LOOP</ModuleName>
+                                            <IsCompInst>true</IsCompInst>
+                                            <ID>94</ID>
+                                            <BindInstances>icmp_ln87_fu_219_p2 add_ln87_fu_225_p2 sparsemux_17_3_67_1_1_U44 xor_ln74_fu_329_p2 icmp_ln76_fu_309_p2 add_ln77_fu_315_p2 rounded_5_fu_351_p6 and_ln76_fu_339_p2 sparsemux_7_2_52_1_1_x_U45 icmp_ln90_fu_379_p2 icmp_ln93_fu_385_p2 or_ln93_fu_395_p2 or_ln93_2_fu_401_p2 write_flag_1_fu_407_p2 overflow_1_fu_413_p2 select_ln93_fu_419_p3 empty_fu_427_p2 retval_0_i109_fu_433_p3</BindInstances>
+                                        </Instance>
+                                    </InstancesList>
+                                    <BindInstances>select_ln90_fu_148_p3</BindInstances>
+                                </Instance>
+                            </InstancesList>
+                        </Instance>
+                        <Instance>
+                            <InstName>grp_qgpu_ga_engine_shared_Pipeline_VITIS_LOOP_361_3_fu_363</InstName>
+                            <ModuleName>qgpu_ga_engine_shared_Pipeline_VITIS_LOOP_361_3</ModuleName>
+                            <IsCompInst>true</IsCompInst>
+                            <ID>363</ID>
+                            <BindInstances>icmp_ln361_fu_54_p2 add_ln361_fu_60_p2</BindInstances>
+                        </Instance>
+                        <Instance>
+                            <InstName>grp_qgpu_ga_engine_shared_Pipeline_VITIS_LOOP_368_4_fu_368</InstName>
+                            <ModuleName>qgpu_ga_engine_shared_Pipeline_VITIS_LOOP_368_4</ModuleName>
+                            <IsCompInst>true</IsCompInst>
+                            <ID>368</ID>
+                            <BindInstances>icmp_ln368_fu_83_p2 add_ln368_fu_89_p2</BindInstances>
+                        </Instance>
+                    </InstancesList>
+                    <BindInstances>a_reg_U b_reg_U c_reg_U icmp_ln334_fu_435_p2 target_grade_fu_455_p3 select_ln373_fu_463_p3 aamf_seq_bank_a_U aamf_seq_bank_b_U</BindInstances>
+                </Instance>
+            </InstancesList>
+            <BindInstances>control_s_axi_U</BindInstances>
+        </TopModule>
+    </RTLDesignHierarchy>
+    <ModuleInformation>
+        <Module>
+            <Name>qgpu_ga_engine_shared_Pipeline_VITIS_LOOP_287_1</Name>
+            <Loops>
+                <VITIS_LOOP_287_1/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>5.077</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>10</Best-caseLatency>
+                    <Average-caseLatency>10</Average-caseLatency>
+                    <Worst-caseLatency>10</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.100 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.100 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.100 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>9</PipelineInitiationInterval>
+                    <PipelineType>loop pipeline stpstp (delay=0 clock cycles(s))</PipelineType>
+                    <PerformancePragma>-</PerformancePragma>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_287_1>
+                        <Name>VITIS_LOOP_287_1</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>8</TripCount>
+                        <isPerfectNested>0</isPerfectNested>
+                        <Latency>8</Latency>
+                        <AbsoluteTimeLatency>80.000 ns</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>2</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <PerformancePragma>-</PerformancePragma>
+                        <InstanceList/>
+                    </VITIS_LOOP_287_1>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>../ga_engine/src/qgpu_ga_engine_shared.cpp:287</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <VITIS_LOOP_287_1>
+                            <Name>VITIS_LOOP_287_1</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>../ga_engine/src/qgpu_ga_engine_shared.cpp:287</SourceLocation>
+                        </VITIS_LOOP_287_1>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>11</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>78</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_287_1" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln287_fu_136_p2" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:287" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln287" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_287_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln287_fu_142_p2" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:287" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln287" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_287_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln288_fu_162_p2" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:288" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln288" VISIBLE="true"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>qgpu_ga_engine_shared_Pipeline_VITIS_LOOP_297_2</Name>
+            <Loops>
+                <VITIS_LOOP_297_2/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>6.665</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>10</Best-caseLatency>
+                    <Average-caseLatency>10</Average-caseLatency>
+                    <Worst-caseLatency>10</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.100 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.100 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.100 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>9</PipelineInitiationInterval>
+                    <PipelineType>loop pipeline stpstp (delay=0 clock cycles(s))</PipelineType>
+                    <PerformancePragma>-</PerformancePragma>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_297_2>
+                        <Name>VITIS_LOOP_297_2</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>8</TripCount>
+                        <isPerfectNested>0</isPerfectNested>
+                        <Latency>8</Latency>
+                        <AbsoluteTimeLatency>80.000 ns</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>2</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <PerformancePragma>-</PerformancePragma>
+                        <InstanceList/>
+                    </VITIS_LOOP_297_2>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>../ga_engine/src/qgpu_ga_engine_shared.cpp:297</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <VITIS_LOOP_297_2>
+                            <Name>VITIS_LOOP_297_2</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>../ga_engine/src/qgpu_ga_engine_shared.cpp:297</SourceLocation>
+                        </VITIS_LOOP_297_2>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>11</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>78</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_297_2" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln297_fu_136_p2" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:297" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln297" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_297_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln297_fu_142_p2" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:297" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln297" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_297_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln298_fu_157_p2" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:298" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln298" VISIBLE="true"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>ga_seq_op_rotor_norm_Pipeline_VITIS_LOOP_255_1</Name>
+            <Loops>
+                <VITIS_LOOP_255_1/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>6.912</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>13</Best-caseLatency>
+                    <Average-caseLatency>13</Average-caseLatency>
+                    <Worst-caseLatency>13</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.130 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.130 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.130 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>9</PipelineInitiationInterval>
+                    <PipelineType>loop pipeline stpstp (delay=0 clock cycles(s))</PipelineType>
+                    <PerformancePragma>-</PerformancePragma>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_255_1>
+                        <Name>VITIS_LOOP_255_1</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>8</TripCount>
+                        <isPerfectNested>0</isPerfectNested>
+                        <Latency>11</Latency>
+                        <AbsoluteTimeLatency>0.110 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>5</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <PerformancePragma>-</PerformancePragma>
+                        <InstanceList/>
+                    </VITIS_LOOP_255_1>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>../ga_engine/src/qgpu_ga_engine_shared.cpp:254</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <VITIS_LOOP_255_1>
+                            <Name>VITIS_LOOP_255_1</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>../ga_engine/src/qgpu_ga_engine_shared.cpp:255</SourceLocation>
+                        </VITIS_LOOP_255_1>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>241</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>179</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_255_1" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln255_fu_79_p2" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:255" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln255" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_255_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln255_fu_85_p2" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:255" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln255" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_255_1" OPTYPE="add" PRAGMA="" RTLNAME="norm_accum_1_fu_112_p2" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:257" STORAGESUBTYPE="" URAM="0" VARIABLE="norm_accum_1" VISIBLE="true"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>ga_seq_op_rotor_norm_Pipeline_VITIS_LOOP_260_2</Name>
+            <Loops>
+                <VITIS_LOOP_260_2/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>5.645</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>9</Best-caseLatency>
+                    <Average-caseLatency>9</Average-caseLatency>
+                    <Worst-caseLatency>9</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>90.000 ns</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>90.000 ns</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>90.000 ns</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>8</PipelineInitiationInterval>
+                    <PipelineType>loop pipeline stpstp (delay=0 clock cycles(s))</PipelineType>
+                    <PerformancePragma>-</PerformancePragma>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_260_2>
+                        <Name>VITIS_LOOP_260_2</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>7</TripCount>
+                        <isPerfectNested>0</isPerfectNested>
+                        <Latency>7</Latency>
+                        <AbsoluteTimeLatency>70.000 ns</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>1</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <PerformancePragma>-</PerformancePragma>
+                        <InstanceList/>
+                    </VITIS_LOOP_260_2>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>../ga_engine/src/qgpu_ga_engine_shared.cpp:260</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <VITIS_LOOP_260_2>
+                            <Name>VITIS_LOOP_260_2</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>../ga_engine/src/qgpu_ga_engine_shared.cpp:260</SourceLocation>
+                        </VITIS_LOOP_260_2>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>6</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>53</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_260_2" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln260_fu_52_p2" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:260" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln260" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_260_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln260_fu_63_p2" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:260" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln260" VISIBLE="true"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>ga_seq_op_rotor_norm</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>6.912</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>27</Best-caseLatency>
+                    <Average-caseLatency>27</Average-caseLatency>
+                    <Worst-caseLatency>27</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.270 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.270 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.270 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>27</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                    <PerformancePragma>-</PerformancePragma>
+                </SummaryOfOverallLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>../ga_engine/src/qgpu_ga_engine_shared.cpp:255</SourceLocation>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>308</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>523</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln74_fu_118_p2" SOURCE="../ga_engine/include\hls_compat.h:74" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln74" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op setgt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="setgt" PRAGMA="" RTLNAME="icmp_ln76_fu_124_p2" SOURCE="../ga_engine/include\hls_compat.h:76" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln76" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="" OPTYPE="add" PRAGMA="" RTLNAME="add_ln77_fu_130_p2" SOURCE="../ga_engine/include\hls_compat.h:77" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln77" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="rounded_3_fu_158_p6" SOURCE="../ga_engine/include\hls_compat.h:82" STORAGESUBTYPE="" URAM="0" VARIABLE="rounded" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="and" PRAGMA="" RTLNAME="and_ln76_fu_144_p2" SOURCE="../ga_engine/include\hls_compat.h:76" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln76" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sparsemux" DSP="0" ID="" IMPL="onehotencoding_realdef" LATENCY="0" LOOP="" OPTYPE="sparsemux" PRAGMA="" RTLNAME="sparsemux_7_2_52_1_1_U16" SOURCE="../ga_engine/include\hls_compat.h:70" STORAGESUBTYPE="" URAM="0" VARIABLE="rounded_3" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op setne" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="setne" PRAGMA="" RTLNAME="icmp_ln90_fu_192_p2" SOURCE="../ga_engine/include\hls_compat.h:90" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln90" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="select_ln90_fu_197_p3" SOURCE="../ga_engine/include\hls_compat.h:90" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln90" VISIBLE="false"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>compute_gp_seq_core_Pipeline_SHARED_OUTER_LOOP_SHARED_INNER_LOOP</Name>
+            <Loops>
+                <SHARED_OUTER_LOOP_SHARED_INNER_LOOP/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>6.912</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>70</Best-caseLatency>
+                    <Average-caseLatency>70</Average-caseLatency>
+                    <Worst-caseLatency>70</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.700 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.700 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.700 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>65</PipelineInitiationInterval>
+                    <PipelineType>loop pipeline stpstp (delay=0 clock cycles(s))</PipelineType>
+                    <PerformancePragma>-</PerformancePragma>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <SHARED_OUTER_LOOP_SHARED_INNER_LOOP>
+                        <Name>SHARED_OUTER_LOOP_SHARED_INNER_LOOP</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>64</TripCount>
+                        <isPerfectNested>0</isPerfectNested>
+                        <Latency>68</Latency>
+                        <AbsoluteTimeLatency>0.680 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>6</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <PerformancePragma>-</PerformancePragma>
+                        <InstanceList/>
+                    </SHARED_OUTER_LOOP_SHARED_INNER_LOOP>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>../ga_engine/src/qgpu_ga_engine_shared.cpp:52</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <SHARED_OUTER_LOOP_SHARED_INNER_LOOP>
+                            <Name>SHARED_OUTER_LOOP_SHARED_INNER_LOOP</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>../ga_engine/src/qgpu_ga_engine_shared.cpp:46</SourceLocation>
+                        </SHARED_OUTER_LOOP_SHARED_INNER_LOOP>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>4</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>1</UTIL_DSP>
+                    <FF>1147</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>1</UTIL_FF>
+                    <LUT>928</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>1</UTIL_LUT>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="SHARED_OUTER_LOOP_SHARED_INNER_LOOP" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln46_fu_333_p2" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:46" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln46" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="SHARED_OUTER_LOOP_SHARED_INNER_LOOP" OPTYPE="add" PRAGMA="" RTLNAME="add_ln46_fu_339_p2" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:46" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln46" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="SHARED_OUTER_LOOP_SHARED_INNER_LOOP" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln52_fu_364_p2" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:52" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln52" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="SHARED_OUTER_LOOP_SHARED_INNER_LOOP" OPTYPE="select" PRAGMA="" RTLNAME="select_ln46_fu_370_p3" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:46" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln46" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="SHARED_OUTER_LOOP_SHARED_INNER_LOOP" OPTYPE="add" PRAGMA="" RTLNAME="add_ln46_1_fu_378_p2" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:46" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln46_1" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="SHARED_OUTER_LOOP_SHARED_INNER_LOOP" OPTYPE="select" PRAGMA="" RTLNAME="select_ln46_1_fu_384_p3" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:46" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln46_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sparsemux" DSP="0" ID="" IMPL="compactencoding_dontcare" LATENCY="0" LOOP="SHARED_OUTER_LOOP_SHARED_INNER_LOOP" OPTYPE="sparsemux" PRAGMA="" RTLNAME="sparsemux_17_3_2_1_1_U22" SOURCE="../ga_engine/include\hls_compat.h:53" STORAGESUBTYPE="" URAM="0" VARIABLE="left_grade" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sparsemux" DSP="0" ID="" IMPL="compactencoding_dontcare" LATENCY="0" LOOP="SHARED_OUTER_LOOP_SHARED_INNER_LOOP" OPTYPE="sparsemux" PRAGMA="" RTLNAME="sparsemux_17_3_2_1_1_U23" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:68" STORAGESUBTYPE="" URAM="0" VARIABLE="right_grade" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="SHARED_OUTER_LOOP_SHARED_INNER_LOOP" OPTYPE="xor" PRAGMA="" RTLNAME="out_mask_fu_560_p2" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:66" STORAGESUBTYPE="" URAM="0" VARIABLE="out_mask" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="SHARED_OUTER_LOOP_SHARED_INNER_LOOP" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln36_fu_564_p2" SOURCE="../ga_engine/include\hls_compat.h:36" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln36" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="SHARED_OUTER_LOOP_SHARED_INNER_LOOP" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln36_1_fu_570_p2" SOURCE="../ga_engine/include\hls_compat.h:36" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln36_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sparsemux" DSP="0" ID="" IMPL="onehotencoding_realdef" LATENCY="0" LOOP="SHARED_OUTER_LOOP_SHARED_INNER_LOOP" OPTYPE="sparsemux" PRAGMA="" RTLNAME="sparsemux_7_2_3_1_1_U24" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:66" STORAGESUBTYPE="" URAM="0" VARIABLE="retval_0_i" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sparsemux" DSP="0" ID="" IMPL="compactencoding_dontcare" LATENCY="0" LOOP="SHARED_OUTER_LOOP_SHARED_INNER_LOOP" OPTYPE="sparsemux" PRAGMA="" RTLNAME="sparsemux_17_3_2_1_1_U25" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:67" STORAGESUBTYPE="" URAM="0" VARIABLE="out_grade" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op setgt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="SHARED_OUTER_LOOP_SHARED_INNER_LOOP" OPTYPE="setgt" PRAGMA="" RTLNAME="icmp_ln68_fu_496_p2" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:68" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln68" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="SHARED_OUTER_LOOP_SHARED_INNER_LOOP" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln68_fu_506_p2" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:68" STORAGESUBTYPE="" URAM="0" VARIABLE="sub_ln68" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="SHARED_OUTER_LOOP_SHARED_INNER_LOOP" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln68_1_fu_648_p2" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:68" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln68_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="SHARED_OUTER_LOOP_SHARED_INNER_LOOP" OPTYPE="and" PRAGMA="" RTLNAME="and_ln62_fu_544_p2" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:62" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln62" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="SHARED_OUTER_LOOP_SHARED_INNER_LOOP" OPTYPE="seteq" PRAGMA="" RTLNAME="include_term_fu_550_p2" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:62" STORAGESUBTYPE="" URAM="0" VARIABLE="include_term" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="SHARED_OUTER_LOOP_SHARED_INNER_LOOP" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln74_fu_653_p2" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:74" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln74" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sparsemux" DSP="0" ID="" IMPL="compactencoding_realdef" LATENCY="0" LOOP="SHARED_OUTER_LOOP_SHARED_INNER_LOOP" OPTYPE="sparsemux" PRAGMA="" RTLNAME="sparsemux_5_8_3_1_1_U26" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:74" STORAGESUBTYPE="" URAM="0" VARIABLE="out_idx" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="SHARED_OUTER_LOOP_SHARED_INNER_LOOP" OPTYPE="and" PRAGMA="" RTLNAME="swaps_1_fu_660_p2" SOURCE="../ga_engine/include\hls_compat.h:53" STORAGESUBTYPE="" URAM="0" VARIABLE="swaps_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="SHARED_OUTER_LOOP_SHARED_INNER_LOOP" OPTYPE="xor" PRAGMA="" RTLNAME="swaps_2_fu_665_p2" SOURCE="../ga_engine/include\hls_compat.h:56" STORAGESUBTYPE="" URAM="0" VARIABLE="swaps_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="SHARED_OUTER_LOOP_SHARED_INNER_LOOP" OPTYPE="select" PRAGMA="" RTLNAME="swaps_3_fu_671_p3" SOURCE="../ga_engine/include\hls_compat.h:55" STORAGESUBTYPE="" URAM="0" VARIABLE="swaps_3" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="SHARED_OUTER_LOOP_SHARED_INNER_LOOP" OPTYPE="xor" PRAGMA="" RTLNAME="swaps_4_fu_686_p2" SOURCE="../ga_engine/include\hls_compat.h:56" STORAGESUBTYPE="" URAM="0" VARIABLE="swaps_4" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="SHARED_OUTER_LOOP_SHARED_INNER_LOOP" OPTYPE="select" PRAGMA="" RTLNAME="swaps_5_fu_692_p3" SOURCE="../ga_engine/include\hls_compat.h:55" STORAGESUBTYPE="" URAM="0" VARIABLE="swaps_5" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="SHARED_OUTER_LOOP_SHARED_INNER_LOOP" OPTYPE="select" PRAGMA="" RTLNAME="swaps_6_fu_700_p3" SOURCE="../ga_engine/include\hls_compat.h:53" STORAGESUBTYPE="" URAM="0" VARIABLE="swaps_6" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op mul" DSP="4" ID="" IMPL="auto" LATENCY="1" LOOP="SHARED_OUTER_LOOP_SHARED_INNER_LOOP" OPTYPE="mul" PRAGMA="" RTLNAME="mul_32s_32s_64_2_1_U21" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:76" STORAGESUBTYPE="" URAM="0" VARIABLE="p" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sparsemux" DSP="0" ID="" IMPL="compactencoding_dontcare" LATENCY="0" LOOP="SHARED_OUTER_LOOP_SHARED_INNER_LOOP" OPTYPE="sparsemux" PRAGMA="" RTLNAME="sparsemux_17_3_67_1_1_U27" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:78" STORAGESUBTYPE="" URAM="0" VARIABLE="tmp_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="SHARED_OUTER_LOOP_SHARED_INNER_LOOP" OPTYPE="add" PRAGMA="" RTLNAME="add_ln80_fu_814_p2" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:80" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln80" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="SHARED_OUTER_LOOP_SHARED_INNER_LOOP" OPTYPE="sub" PRAGMA="" RTLNAME="sub_ln78_fu_819_p2" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:78" STORAGESUBTYPE="" URAM="0" VARIABLE="sub_ln78" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="SHARED_OUTER_LOOP_SHARED_INNER_LOOP" OPTYPE="select" PRAGMA="" RTLNAME="accum_8_fu_824_p3" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:77" STORAGESUBTYPE="" URAM="0" VARIABLE="accum_8" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="SHARED_OUTER_LOOP_SHARED_INNER_LOOP" OPTYPE="add" PRAGMA="" RTLNAME="add_ln52_fu_512_p2" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:52" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln52" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage rom_2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="rom_2p" PRAGMA="" RTLNAME="BASIS_MASKS_U" SOURCE="" STORAGESIZE="3 8 1" STORAGESUBTYPE="" STORAGEUSAGE="rom_2p" URAM="0" VARIABLE="BASIS_MASKS" VISIBLE="true"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>compute_gp_seq_core_Pipeline_RESCALE_LOOP</Name>
+            <Loops>
+                <RESCALE_LOOP/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>7.077</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>11</Best-caseLatency>
+                    <Average-caseLatency>11</Average-caseLatency>
+                    <Worst-caseLatency>11</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.110 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.110 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.110 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>9</PipelineInitiationInterval>
+                    <PipelineType>loop pipeline stpstp (delay=0 clock cycles(s))</PipelineType>
+                    <PerformancePragma>-</PerformancePragma>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <RESCALE_LOOP>
+                        <Name>RESCALE_LOOP</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>8</TripCount>
+                        <isPerfectNested>0</isPerfectNested>
+                        <Latency>9</Latency>
+                        <AbsoluteTimeLatency>90.000 ns</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>3</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <PerformancePragma>-</PerformancePragma>
+                        <InstanceList/>
+                    </RESCALE_LOOP>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>../ga_engine/src/qgpu_ga_engine_shared.cpp:87</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <RESCALE_LOOP>
+                            <Name>RESCALE_LOOP</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>../ga_engine/include\hls_compat.h:90~../ga_engine/src/qgpu_ga_engine_shared.cpp:88</SourceLocation>
+                        </RESCALE_LOOP>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>160</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>427</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="RESCALE_LOOP" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln87_fu_219_p2" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:87" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln87" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="RESCALE_LOOP" OPTYPE="add" PRAGMA="" RTLNAME="add_ln87_fu_225_p2" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:87" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln87" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sparsemux" DSP="0" ID="" IMPL="compactencoding_dontcare" LATENCY="0" LOOP="RESCALE_LOOP" OPTYPE="sparsemux" PRAGMA="" RTLNAME="sparsemux_17_3_67_1_1_U44" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:88" STORAGESUBTYPE="" URAM="0" VARIABLE="sum_val" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="RESCALE_LOOP" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln74_fu_329_p2" SOURCE="../ga_engine/include\hls_compat.h:74" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln74" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op setgt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="RESCALE_LOOP" OPTYPE="setgt" PRAGMA="" RTLNAME="icmp_ln76_fu_309_p2" SOURCE="../ga_engine/include\hls_compat.h:76" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln76" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="RESCALE_LOOP" OPTYPE="add" PRAGMA="" RTLNAME="add_ln77_fu_315_p2" SOURCE="../ga_engine/include\hls_compat.h:77" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln77" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="RESCALE_LOOP" OPTYPE="select" PRAGMA="" RTLNAME="rounded_5_fu_351_p6" SOURCE="../ga_engine/include\hls_compat.h:82" STORAGESUBTYPE="" URAM="0" VARIABLE="rounded_4" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="RESCALE_LOOP" OPTYPE="and" PRAGMA="" RTLNAME="and_ln76_fu_339_p2" SOURCE="../ga_engine/include\hls_compat.h:76" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln76" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sparsemux" DSP="0" ID="" IMPL="onehotencoding_realdef" LATENCY="0" LOOP="RESCALE_LOOP" OPTYPE="sparsemux" PRAGMA="" RTLNAME="sparsemux_7_2_52_1_1_x_U45" SOURCE="../ga_engine/include\hls_compat.h:70" STORAGESUBTYPE="" URAM="0" VARIABLE="rounded_5" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op setgt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="RESCALE_LOOP" OPTYPE="setgt" PRAGMA="" RTLNAME="icmp_ln90_fu_379_p2" SOURCE="../ga_engine/include\hls_compat.h:90" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln90" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op setlt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="RESCALE_LOOP" OPTYPE="setlt" PRAGMA="" RTLNAME="icmp_ln93_fu_385_p2" SOURCE="../ga_engine/include\hls_compat.h:93" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln93" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="RESCALE_LOOP" OPTYPE="or" PRAGMA="" RTLNAME="or_ln93_fu_395_p2" SOURCE="../ga_engine/include\hls_compat.h:93" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln93" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="RESCALE_LOOP" OPTYPE="or" PRAGMA="" RTLNAME="or_ln93_2_fu_401_p2" SOURCE="../ga_engine/include\hls_compat.h:93" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln93_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="RESCALE_LOOP" OPTYPE="or" PRAGMA="" RTLNAME="write_flag_1_fu_407_p2" SOURCE="../ga_engine/include\hls_compat.h:90" STORAGESUBTYPE="" URAM="0" VARIABLE="write_flag_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="RESCALE_LOOP" OPTYPE="or" PRAGMA="" RTLNAME="overflow_1_fu_413_p2" SOURCE="../ga_engine/include\hls_compat.h:90" STORAGESUBTYPE="" URAM="0" VARIABLE="overflow_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="RESCALE_LOOP" OPTYPE="select" PRAGMA="" RTLNAME="select_ln93_fu_419_p3" SOURCE="../ga_engine/include\hls_compat.h:90" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln93" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="RESCALE_LOOP" OPTYPE="or" PRAGMA="" RTLNAME="empty_fu_427_p2" SOURCE="../ga_engine/include\hls_compat.h:90" STORAGESUBTYPE="" URAM="0" VARIABLE="empty" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="RESCALE_LOOP" OPTYPE="select" PRAGMA="" RTLNAME="retval_0_i109_fu_433_p3" SOURCE="../ga_engine/include\hls_compat.h:90" STORAGESUBTYPE="" URAM="0" VARIABLE="retval_0_i109" VISIBLE="false"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>compute_gp_seq_core</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>7.077</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>85</Best-caseLatency>
+                    <Average-caseLatency>85</Average-caseLatency>
+                    <Worst-caseLatency>85</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.850 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.850 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.850 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>85</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                    <PerformancePragma>-</PerformancePragma>
+                </SummaryOfOverallLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>../ga_engine/src/qgpu_ga_engine_shared.cpp:90</SourceLocation>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>4</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>1</UTIL_DSP>
+                    <FF>1315</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>1</UTIL_FF>
+                    <LUT>1397</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>2</UTIL_LUT>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="select_ln90_fu_148_p3" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:90" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln90" VISIBLE="false"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>ga_seq_op_reverse</Name>
+            <Loops>
+                <VITIS_LOOP_189_1/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>7.137</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>11</Best-caseLatency>
+                    <Average-caseLatency>11</Average-caseLatency>
+                    <Worst-caseLatency>11</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.110 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.110 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.110 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>9</PipelineInitiationInterval>
+                    <PipelineType>loop pipeline stpstp (delay=0 clock cycles(s))</PipelineType>
+                    <PerformancePragma>-</PerformancePragma>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_189_1>
+                        <Name>VITIS_LOOP_189_1</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>8</TripCount>
+                        <isPerfectNested>0</isPerfectNested>
+                        <Latency>9</Latency>
+                        <AbsoluteTimeLatency>90.000 ns</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>3</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <PerformancePragma>-</PerformancePragma>
+                        <InstanceList/>
+                    </VITIS_LOOP_189_1>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>../ga_engine/src/qgpu_ga_engine_shared.cpp:189</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <VITIS_LOOP_189_1>
+                            <Name>VITIS_LOOP_189_1</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>../ga_engine/src/qgpu_ga_engine_shared.cpp:189</SourceLocation>
+                        </VITIS_LOOP_189_1>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>53</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>221</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_189_1" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln189_fu_146_p2" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:189" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln189" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_189_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln189_fu_152_p2" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:189" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln189" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sparsemux" DSP="0" ID="" IMPL="compactencoding_dontcare" LATENCY="0" LOOP="VITIS_LOOP_189_1" OPTYPE="sparsemux" PRAGMA="" RTLNAME="sparsemux_17_3_2_1_1_U63" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:190" STORAGESUBTYPE="" URAM="0" VARIABLE="tmp" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_189_1" OPTYPE="sub" PRAGMA="" RTLNAME="diff_fu_229_p2" SOURCE="../ga_engine/include\hls_compat.h:124" STORAGESUBTYPE="" URAM="0" VARIABLE="diff" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_189_1" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln128_fu_245_p2" SOURCE="../ga_engine/include\hls_compat.h:128" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln128" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_189_1" OPTYPE="or" PRAGMA="" RTLNAME="or_ln128_fu_255_p2" SOURCE="../ga_engine/include\hls_compat.h:128" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln128" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_189_1" OPTYPE="or" PRAGMA="" RTLNAME="or_ln128_1_fu_261_p2" SOURCE="../ga_engine/include\hls_compat.h:128" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln128_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_189_1" OPTYPE="select" PRAGMA="" RTLNAME="select_ln128_fu_267_p3" SOURCE="../ga_engine/include\hls_compat.h:128" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln128" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="ap_return" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:196" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln196" VISIBLE="false"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>ga_seq_op_rotor_sandwich</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>7.137</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>186</Best-caseLatency>
+                    <Average-caseLatency>186</Average-caseLatency>
+                    <Worst-caseLatency>186</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>1.860 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>1.860 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>1.860 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>186</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                    <PerformancePragma>-</PerformancePragma>
+                </SummaryOfOverallLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>../ga_engine/src/qgpu_ga_engine_shared.cpp:235</SourceLocation>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>4</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>1</UTIL_DSP>
+                    <FF>1475</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>1</UTIL_FF>
+                    <LUT>1861</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>3</UTIL_LUT>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="t_U" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:235" STORAGESIZE="32 8 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="t" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="" RTLNAME="a_rev_U" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:236" STORAGESIZE="32 8 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_t2p array" URAM="0" VARIABLE="a_rev" VISIBLE="true"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>ga_seq_op_clifford_conjugation</Name>
+            <Loops>
+                <VITIS_LOOP_219_1/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>7.137</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>11</Best-caseLatency>
+                    <Average-caseLatency>11</Average-caseLatency>
+                    <Worst-caseLatency>11</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.110 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.110 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.110 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>9</PipelineInitiationInterval>
+                    <PipelineType>loop pipeline stpstp (delay=0 clock cycles(s))</PipelineType>
+                    <PerformancePragma>-</PerformancePragma>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_219_1>
+                        <Name>VITIS_LOOP_219_1</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>8</TripCount>
+                        <isPerfectNested>0</isPerfectNested>
+                        <Latency>9</Latency>
+                        <AbsoluteTimeLatency>90.000 ns</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>3</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <PerformancePragma>-</PerformancePragma>
+                        <InstanceList/>
+                    </VITIS_LOOP_219_1>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>../ga_engine/src/qgpu_ga_engine_shared.cpp:219</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <VITIS_LOOP_219_1>
+                            <Name>VITIS_LOOP_219_1</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>../ga_engine/src/qgpu_ga_engine_shared.cpp:219</SourceLocation>
+                        </VITIS_LOOP_219_1>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>53</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>242</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_219_1" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln219_fu_138_p2" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:219" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln219" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_219_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln219_fu_144_p2" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:219" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln219" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sparsemux" DSP="0" ID="" IMPL="compactencoding_dontcare" LATENCY="0" LOOP="VITIS_LOOP_219_1" OPTYPE="sparsemux" PRAGMA="" RTLNAME="sparsemux_17_3_2_1_1_U72" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:220" STORAGESUBTYPE="" URAM="0" VARIABLE="zext_ln220_cast" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_219_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln220_fu_203_p2" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:220" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln220" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_219_1" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln220_fu_219_p2" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:220" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln220" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_219_1" OPTYPE="sub" PRAGMA="" RTLNAME="diff_fu_239_p2" SOURCE="../ga_engine/include\hls_compat.h:124" STORAGESUBTYPE="" URAM="0" VARIABLE="diff" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_219_1" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln128_fu_255_p2" SOURCE="../ga_engine/include\hls_compat.h:128" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln128" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_219_1" OPTYPE="or" PRAGMA="" RTLNAME="or_ln128_fu_265_p2" SOURCE="../ga_engine/include\hls_compat.h:128" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln128" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_219_1" OPTYPE="or" PRAGMA="" RTLNAME="or_ln128_3_fu_271_p2" SOURCE="../ga_engine/include\hls_compat.h:128" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln128_3" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_219_1" OPTYPE="select" PRAGMA="" RTLNAME="select_ln128_fu_277_p3" SOURCE="../ga_engine/include\hls_compat.h:128" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln128" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="and" PRAGMA="" RTLNAME="ap_return" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:226" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln226" VISIBLE="false"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>ga_seq_op_grade_involution</Name>
+            <Loops>
+                <VITIS_LOOP_204_1/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>7.137</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>11</Best-caseLatency>
+                    <Average-caseLatency>11</Average-caseLatency>
+                    <Worst-caseLatency>11</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.110 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.110 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.110 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>9</PipelineInitiationInterval>
+                    <PipelineType>loop pipeline stpstp (delay=0 clock cycles(s))</PipelineType>
+                    <PerformancePragma>-</PerformancePragma>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_204_1>
+                        <Name>VITIS_LOOP_204_1</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>8</TripCount>
+                        <isPerfectNested>0</isPerfectNested>
+                        <Latency>9</Latency>
+                        <AbsoluteTimeLatency>90.000 ns</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>3</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <PerformancePragma>-</PerformancePragma>
+                        <InstanceList/>
+                    </VITIS_LOOP_204_1>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>../ga_engine/src/qgpu_ga_engine_shared.cpp:204</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <VITIS_LOOP_204_1>
+                            <Name>VITIS_LOOP_204_1</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>../ga_engine/src/qgpu_ga_engine_shared.cpp:204</SourceLocation>
+                        </VITIS_LOOP_204_1>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>53</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>243</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_204_1" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln204_fu_134_p2" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:204" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln204" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_204_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln204_fu_140_p2" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:204" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln204" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sparsemux" DSP="0" ID="" IMPL="compactencoding_dontcare" LATENCY="0" LOOP="VITIS_LOOP_204_1" OPTYPE="sparsemux" PRAGMA="" RTLNAME="sparsemux_17_3_2_1_1_U75" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:205" STORAGESUBTYPE="" URAM="0" VARIABLE="tmp" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_204_1" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln203_fu_195_p2" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:203" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln203" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_204_1" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln203_1_fu_201_p2" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:203" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln203_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_204_1" OPTYPE="or" PRAGMA="" RTLNAME="or_ln203_fu_207_p2" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:203" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln203" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_204_1" OPTYPE="sub" PRAGMA="" RTLNAME="diff_fu_227_p2" SOURCE="../ga_engine/include\hls_compat.h:124" STORAGESUBTYPE="" URAM="0" VARIABLE="diff" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_204_1" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln128_fu_243_p2" SOURCE="../ga_engine/include\hls_compat.h:128" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln128" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_204_1" OPTYPE="or" PRAGMA="" RTLNAME="or_ln128_fu_253_p2" SOURCE="../ga_engine/include\hls_compat.h:128" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln128" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_204_1" OPTYPE="or" PRAGMA="" RTLNAME="or_ln128_2_fu_259_p2" SOURCE="../ga_engine/include\hls_compat.h:128" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln128_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_204_1" OPTYPE="select" PRAGMA="" RTLNAME="select_ln128_fu_265_p3" SOURCE="../ga_engine/include\hls_compat.h:128" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln128" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="and" PRAGMA="" RTLNAME="ap_return" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:211" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln211" VISIBLE="false"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>ga_seq_op_grade_project_Pipeline_VITIS_LOOP_173_1</Name>
+            <Loops>
+                <VITIS_LOOP_173_1/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>5.645</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>10</Best-caseLatency>
+                    <Average-caseLatency>10</Average-caseLatency>
+                    <Worst-caseLatency>10</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.100 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.100 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.100 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>9</PipelineInitiationInterval>
+                    <PipelineType>loop pipeline stpstp (delay=0 clock cycles(s))</PipelineType>
+                    <PerformancePragma>-</PerformancePragma>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_173_1>
+                        <Name>VITIS_LOOP_173_1</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>8</TripCount>
+                        <isPerfectNested>0</isPerfectNested>
+                        <Latency>8</Latency>
+                        <AbsoluteTimeLatency>80.000 ns</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>1</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <PerformancePragma>-</PerformancePragma>
+                        <InstanceList/>
+                    </VITIS_LOOP_173_1>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>../ga_engine/src/qgpu_ga_engine_shared.cpp:173</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <VITIS_LOOP_173_1>
+                            <Name>VITIS_LOOP_173_1</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>../ga_engine/src/qgpu_ga_engine_shared.cpp:173</SourceLocation>
+                        </VITIS_LOOP_173_1>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>6</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>53</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_173_1" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln173_fu_54_p2" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:173" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln173" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_173_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln173_fu_60_p2" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:173" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln173" VISIBLE="true"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>ga_seq_op_grade_project_Pipeline_VITIS_LOOP_177_2</Name>
+            <Loops>
+                <VITIS_LOOP_177_2/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>5.342</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>10</Best-caseLatency>
+                    <Average-caseLatency>10</Average-caseLatency>
+                    <Worst-caseLatency>10</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.100 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.100 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.100 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>9</PipelineInitiationInterval>
+                    <PipelineType>loop pipeline stpstp (delay=0 clock cycles(s))</PipelineType>
+                    <PerformancePragma>-</PerformancePragma>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_177_2>
+                        <Name>VITIS_LOOP_177_2</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>8</TripCount>
+                        <isPerfectNested>0</isPerfectNested>
+                        <Latency>8</Latency>
+                        <AbsoluteTimeLatency>80.000 ns</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>2</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <PerformancePragma>-</PerformancePragma>
+                        <InstanceList/>
+                    </VITIS_LOOP_177_2>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>../ga_engine/src/qgpu_ga_engine_shared.cpp:177</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <VITIS_LOOP_177_2>
+                            <Name>VITIS_LOOP_177_2</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>../ga_engine/src/qgpu_ga_engine_shared.cpp:177</SourceLocation>
+                        </VITIS_LOOP_177_2>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>12</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>161</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_177_2" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln177_fu_106_p2" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:177" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln177" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_177_2" OPTYPE="add" PRAGMA="" RTLNAME="add_ln177_fu_112_p2" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:177" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln177" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sparsemux" DSP="0" ID="" IMPL="compactencoding_dontcare" LATENCY="0" LOOP="VITIS_LOOP_177_2" OPTYPE="sparsemux" PRAGMA="" RTLNAME="sparsemux_17_3_2_1_1_U79" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:178" STORAGESUBTYPE="" URAM="0" VARIABLE="zext_ln178_cast" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_177_2" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln178_fu_171_p2" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:178" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln178" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_177_2" OPTYPE="select" PRAGMA="" RTLNAME="cond_fu_182_p3" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:178" STORAGESUBTYPE="" URAM="0" VARIABLE="cond" VISIBLE="false"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>ga_seq_op_grade_project</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>5.645</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>11</Best-caseLatency>
+                    <Average-caseLatency>11</Average-caseLatency>
+                    <Worst-caseLatency>11</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.110 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.110 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.110 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>11</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                    <PerformancePragma>-</PerformancePragma>
+                </SummaryOfOverallLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>../ga_engine/src/qgpu_ga_engine_shared.cpp:170</SourceLocation>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>24</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>326</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln171_fu_67_p2" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:171" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln171" VISIBLE="false"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>ga_seq_op_scalar_mul</Name>
+            <Loops>
+                <VITIS_LOOP_158_1/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>6.912</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>14</Best-caseLatency>
+                    <Average-caseLatency>14</Average-caseLatency>
+                    <Worst-caseLatency>14</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.140 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.140 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.140 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>9</PipelineInitiationInterval>
+                    <PipelineType>loop pipeline stpstp (delay=0 clock cycles(s))</PipelineType>
+                    <PerformancePragma>-</PerformancePragma>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_158_1>
+                        <Name>VITIS_LOOP_158_1</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>8</TripCount>
+                        <isPerfectNested>0</isPerfectNested>
+                        <Latency>12</Latency>
+                        <AbsoluteTimeLatency>0.120 us</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>6</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <PerformancePragma>-</PerformancePragma>
+                        <InstanceList/>
+                    </VITIS_LOOP_158_1>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>../ga_engine/src/qgpu_ga_engine_shared.cpp:158</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <VITIS_LOOP_158_1>
+                            <Name>VITIS_LOOP_158_1</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>../ga_engine/include\hls_compat.h:90~../ga_engine/src/qgpu_ga_engine_shared.cpp:160</SourceLocation>
+                        </VITIS_LOOP_158_1>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>380</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>455</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_158_1" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln158_fu_156_p2" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:158" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln158" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_158_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln158_fu_162_p2" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:158" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln158" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op xor" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_158_1" OPTYPE="xor" PRAGMA="" RTLNAME="xor_ln74_fu_215_p2" SOURCE="../ga_engine/include\hls_compat.h:74" STORAGESUBTYPE="" URAM="0" VARIABLE="xor_ln74" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op setgt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_158_1" OPTYPE="setgt" PRAGMA="" RTLNAME="icmp_ln76_fu_220_p2" SOURCE="../ga_engine/include\hls_compat.h:76" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln76" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_158_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln77_fu_225_p2" SOURCE="../ga_engine/include\hls_compat.h:77" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln77" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_158_1" OPTYPE="select" PRAGMA="" RTLNAME="rounded_2_fu_251_p6" SOURCE="../ga_engine/include\hls_compat.h:82" STORAGESUBTYPE="" URAM="0" VARIABLE="rounded_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_158_1" OPTYPE="and" PRAGMA="" RTLNAME="and_ln76_fu_238_p2" SOURCE="../ga_engine/include\hls_compat.h:76" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln76" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sparsemux" DSP="0" ID="" IMPL="onehotencoding_realdef" LATENCY="0" LOOP="VITIS_LOOP_158_1" OPTYPE="sparsemux" PRAGMA="" RTLNAME="sparsemux_7_2_49_1_1_U87" SOURCE="../ga_engine/include\hls_compat.h:70" STORAGESUBTYPE="" URAM="0" VARIABLE="rounded_2" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op setgt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_158_1" OPTYPE="setgt" PRAGMA="" RTLNAME="icmp_ln90_fu_281_p2" SOURCE="../ga_engine/include\hls_compat.h:90" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln90" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op setlt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_158_1" OPTYPE="setlt" PRAGMA="" RTLNAME="icmp_ln93_fu_286_p2" SOURCE="../ga_engine/include\hls_compat.h:93" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln93" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_158_1" OPTYPE="or" PRAGMA="" RTLNAME="or_ln93_fu_294_p2" SOURCE="../ga_engine/include\hls_compat.h:93" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln93" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_158_1" OPTYPE="or" PRAGMA="" RTLNAME="or_ln93_1_fu_300_p2" SOURCE="../ga_engine/include\hls_compat.h:93" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln93_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_158_1" OPTYPE="or" PRAGMA="" RTLNAME="write_flag_1_fu_306_p2" SOURCE="../ga_engine/include\hls_compat.h:90" STORAGESUBTYPE="" URAM="0" VARIABLE="write_flag_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_158_1" OPTYPE="or" PRAGMA="" RTLNAME="overflow_1_fu_312_p2" SOURCE="../ga_engine/include\hls_compat.h:90" STORAGESUBTYPE="" URAM="0" VARIABLE="overflow_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_158_1" OPTYPE="select" PRAGMA="" RTLNAME="select_ln93_fu_318_p3" SOURCE="../ga_engine/include\hls_compat.h:90" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln93" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_158_1" OPTYPE="or" PRAGMA="" RTLNAME="empty_fu_326_p2" SOURCE="../ga_engine/include\hls_compat.h:90" STORAGESUBTYPE="" URAM="0" VARIABLE="empty" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_158_1" OPTYPE="select" PRAGMA="" RTLNAME="retval_0_i_fu_332_p3" SOURCE="../ga_engine/include\hls_compat.h:90" STORAGESUBTYPE="" URAM="0" VARIABLE="retval_0_i" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="and" PRAGMA="" RTLNAME="and_ln162_fu_341_p2" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:162" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln162" VISIBLE="false"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>ga_seq_op_subtraction</Name>
+            <Loops>
+                <VITIS_LOOP_146_1/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>6.439</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>11</Best-caseLatency>
+                    <Average-caseLatency>11</Average-caseLatency>
+                    <Worst-caseLatency>11</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.110 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.110 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.110 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>9</PipelineInitiationInterval>
+                    <PipelineType>loop pipeline stpstp (delay=0 clock cycles(s))</PipelineType>
+                    <PerformancePragma>-</PerformancePragma>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_146_1>
+                        <Name>VITIS_LOOP_146_1</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>8</TripCount>
+                        <isPerfectNested>0</isPerfectNested>
+                        <Latency>9</Latency>
+                        <AbsoluteTimeLatency>90.000 ns</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>3</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <PerformancePragma>-</PerformancePragma>
+                        <InstanceList/>
+                    </VITIS_LOOP_146_1>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>../ga_engine/src/qgpu_ga_engine_shared.cpp:146</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <VITIS_LOOP_146_1>
+                            <Name>VITIS_LOOP_146_1</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>../ga_engine/include\hls_compat.h:128~../ga_engine/src/qgpu_ga_engine_shared.cpp:147</SourceLocation>
+                        </VITIS_LOOP_146_1>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>56</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>258</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_146_1" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln146_fu_125_p2" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:146" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln146" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_146_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln146_fu_131_p2" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:146" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln146" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op sub" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_146_1" OPTYPE="sub" PRAGMA="" RTLNAME="diff_fu_156_p2" SOURCE="../ga_engine/include\hls_compat.h:124" STORAGESUBTYPE="" URAM="0" VARIABLE="diff" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_146_1" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln128_fu_172_p2" SOURCE="../ga_engine/include\hls_compat.h:128" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln128" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op setlt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_146_1" OPTYPE="setlt" PRAGMA="" RTLNAME="icmp_ln131_fu_178_p2" SOURCE="../ga_engine/include\hls_compat.h:131" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln131" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_146_1" OPTYPE="or" PRAGMA="" RTLNAME="or_ln131_fu_186_p2" SOURCE="../ga_engine/include\hls_compat.h:131" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln131" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_146_1" OPTYPE="or" PRAGMA="" RTLNAME="or_ln131_1_fu_192_p2" SOURCE="../ga_engine/include\hls_compat.h:131" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln131_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_146_1" OPTYPE="or" PRAGMA="" RTLNAME="write_flag_1_fu_198_p2" SOURCE="../ga_engine/include\hls_compat.h:128" STORAGESUBTYPE="" URAM="0" VARIABLE="write_flag_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_146_1" OPTYPE="or" PRAGMA="" RTLNAME="overflow_1_fu_203_p2" SOURCE="../ga_engine/include\hls_compat.h:128" STORAGESUBTYPE="" URAM="0" VARIABLE="overflow_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_146_1" OPTYPE="select" PRAGMA="" RTLNAME="select_ln131_fu_208_p3" SOURCE="../ga_engine/include\hls_compat.h:128" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln131" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_146_1" OPTYPE="or" PRAGMA="" RTLNAME="empty_fu_215_p2" SOURCE="../ga_engine/include\hls_compat.h:128" STORAGESUBTYPE="" URAM="0" VARIABLE="empty" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_146_1" OPTYPE="select" PRAGMA="" RTLNAME="retval_0_i_fu_220_p3" SOURCE="../ga_engine/include\hls_compat.h:128" STORAGESUBTYPE="" URAM="0" VARIABLE="retval_0_i" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="and" PRAGMA="" RTLNAME="and_ln149_fu_229_p2" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:149" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln149" VISIBLE="false"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>ga_seq_op_addition</Name>
+            <Loops>
+                <VITIS_LOOP_134_1/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>6.439</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>11</Best-caseLatency>
+                    <Average-caseLatency>11</Average-caseLatency>
+                    <Worst-caseLatency>11</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.110 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.110 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.110 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>9</PipelineInitiationInterval>
+                    <PipelineType>loop pipeline stpstp (delay=0 clock cycles(s))</PipelineType>
+                    <PerformancePragma>-</PerformancePragma>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_134_1>
+                        <Name>VITIS_LOOP_134_1</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>8</TripCount>
+                        <isPerfectNested>0</isPerfectNested>
+                        <Latency>9</Latency>
+                        <AbsoluteTimeLatency>90.000 ns</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>3</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <PerformancePragma>-</PerformancePragma>
+                        <InstanceList/>
+                    </VITIS_LOOP_134_1>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>../ga_engine/src/qgpu_ga_engine_shared.cpp:134</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <VITIS_LOOP_134_1>
+                            <Name>VITIS_LOOP_134_1</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>../ga_engine/include\hls_compat.h:109~../ga_engine/src/qgpu_ga_engine_shared.cpp:135</SourceLocation>
+                        </VITIS_LOOP_134_1>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>88</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>297</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_134_1" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln134_fu_125_p2" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:134" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln134" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_134_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln134_fu_131_p2" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:134" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln134" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_134_1" OPTYPE="add" PRAGMA="" RTLNAME="add_ln105_fu_156_p2" SOURCE="../ga_engine/include\hls_compat.h:105" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln105" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_134_1" OPTYPE="add" PRAGMA="" RTLNAME="sum_fu_162_p2" SOURCE="../ga_engine/include\hls_compat.h:105" STORAGESUBTYPE="" URAM="0" VARIABLE="sum" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_134_1" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln109_fu_178_p2" SOURCE="../ga_engine/include\hls_compat.h:109" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln109" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op setlt" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_134_1" OPTYPE="setlt" PRAGMA="" RTLNAME="icmp_ln112_fu_184_p2" SOURCE="../ga_engine/include\hls_compat.h:112" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln112" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_134_1" OPTYPE="or" PRAGMA="" RTLNAME="or_ln112_fu_189_p2" SOURCE="../ga_engine/include\hls_compat.h:112" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln112" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_134_1" OPTYPE="or" PRAGMA="" RTLNAME="or_ln112_1_fu_195_p2" SOURCE="../ga_engine/include\hls_compat.h:112" STORAGESUBTYPE="" URAM="0" VARIABLE="or_ln112_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_134_1" OPTYPE="or" PRAGMA="" RTLNAME="write_flag_1_fu_201_p2" SOURCE="../ga_engine/include\hls_compat.h:109" STORAGESUBTYPE="" URAM="0" VARIABLE="write_flag_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_134_1" OPTYPE="or" PRAGMA="" RTLNAME="overflow_1_fu_206_p2" SOURCE="../ga_engine/include\hls_compat.h:109" STORAGESUBTYPE="" URAM="0" VARIABLE="overflow_1" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_134_1" OPTYPE="select" PRAGMA="" RTLNAME="select_ln112_fu_211_p3" SOURCE="../ga_engine/include\hls_compat.h:109" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln112" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op or" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_134_1" OPTYPE="or" PRAGMA="" RTLNAME="empty_fu_218_p2" SOURCE="../ga_engine/include\hls_compat.h:109" STORAGESUBTYPE="" URAM="0" VARIABLE="empty" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="VITIS_LOOP_134_1" OPTYPE="select" PRAGMA="" RTLNAME="retval_0_i_fu_223_p3" SOURCE="../ga_engine/include\hls_compat.h:109" STORAGESUBTYPE="" URAM="0" VARIABLE="retval_0_i" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op and" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="and" PRAGMA="" RTLNAME="and_ln137_fu_231_p2" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:137" STORAGESUBTYPE="" URAM="0" VARIABLE="and_ln137" VISIBLE="false"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>ga_seq_op_inner_product</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>7.077</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>86</Best-caseLatency>
+                    <Average-caseLatency>86</Average-caseLatency>
+                    <Worst-caseLatency>86</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.860 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.860 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.860 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>86</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                    <PerformancePragma>-</PerformancePragma>
+                </SummaryOfOverallLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>../ga_engine/src/qgpu_ga_engine_shared.cpp:124</SourceLocation>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>4</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>1</UTIL_DSP>
+                    <FF>1319</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>1</UTIL_FF>
+                    <LUT>1420</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>2</UTIL_LUT>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+        </Module>
+        <Module>
+            <Name>ga_seq_op_wedge_product</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>7.077</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>86</Best-caseLatency>
+                    <Average-caseLatency>86</Average-caseLatency>
+                    <Worst-caseLatency>86</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.860 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.860 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.860 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>86</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                    <PerformancePragma>-</PerformancePragma>
+                </SummaryOfOverallLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>../ga_engine/src/qgpu_ga_engine_shared.cpp:114</SourceLocation>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>4</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>1</UTIL_DSP>
+                    <FF>1319</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>1</UTIL_FF>
+                    <LUT>1420</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>2</UTIL_LUT>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+        </Module>
+        <Module>
+            <Name>ga_seq_op_geometric_product</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>7.077</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>86</Best-caseLatency>
+                    <Average-caseLatency>86</Average-caseLatency>
+                    <Worst-caseLatency>86</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.860 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.860 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.860 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>86</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                    <PerformancePragma>-</PerformancePragma>
+                </SummaryOfOverallLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>../ga_engine/src/qgpu_ga_engine_shared.cpp:104</SourceLocation>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>4</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>1</UTIL_DSP>
+                    <FF>1319</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>1</UTIL_FF>
+                    <LUT>1420</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>2</UTIL_LUT>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+        </Module>
+        <Module>
+            <Name>qgpu_ga_engine_shared_Pipeline_VITIS_LOOP_361_3</Name>
+            <Loops>
+                <VITIS_LOOP_361_3/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>5.645</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>10</Best-caseLatency>
+                    <Average-caseLatency>10</Average-caseLatency>
+                    <Worst-caseLatency>10</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.100 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.100 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.100 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>9</PipelineInitiationInterval>
+                    <PipelineType>loop pipeline stpstp (delay=0 clock cycles(s))</PipelineType>
+                    <PerformancePragma>-</PerformancePragma>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_361_3>
+                        <Name>VITIS_LOOP_361_3</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>8</TripCount>
+                        <isPerfectNested>0</isPerfectNested>
+                        <Latency>8</Latency>
+                        <AbsoluteTimeLatency>80.000 ns</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>1</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <PerformancePragma>-</PerformancePragma>
+                        <InstanceList/>
+                    </VITIS_LOOP_361_3>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>../ga_engine/src/qgpu_ga_engine_shared.cpp:361</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <VITIS_LOOP_361_3>
+                            <Name>VITIS_LOOP_361_3</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>../ga_engine/src/qgpu_ga_engine_shared.cpp:361</SourceLocation>
+                        </VITIS_LOOP_361_3>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>6</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>53</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_361_3" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln361_fu_54_p2" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:361" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln361" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_361_3" OPTYPE="add" PRAGMA="" RTLNAME="add_ln361_fu_60_p2" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:361" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln361" VISIBLE="true"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>qgpu_ga_engine_shared_Pipeline_VITIS_LOOP_368_4</Name>
+            <Loops>
+                <VITIS_LOOP_368_4/>
+            </Loops>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>4.911</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>11</Best-caseLatency>
+                    <Average-caseLatency>11</Average-caseLatency>
+                    <Worst-caseLatency>11</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.110 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.110 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>0.110 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>9</PipelineInitiationInterval>
+                    <PipelineType>loop pipeline stpstp (delay=0 clock cycles(s))</PipelineType>
+                    <PerformancePragma>-</PerformancePragma>
+                </SummaryOfOverallLatency>
+                <SummaryOfLoopLatency>
+                    <VITIS_LOOP_368_4>
+                        <Name>VITIS_LOOP_368_4</Name>
+                        <Slack>7.30</Slack>
+                        <TripCount>8</TripCount>
+                        <isPerfectNested>0</isPerfectNested>
+                        <Latency>9</Latency>
+                        <AbsoluteTimeLatency>90.000 ns</AbsoluteTimeLatency>
+                        <PipelineII>1</PipelineII>
+                        <PipelineDepth>3</PipelineDepth>
+                        <PipelineType>yes</PipelineType>
+                        <PerformancePragma>-</PerformancePragma>
+                        <InstanceList/>
+                    </VITIS_LOOP_368_4>
+                </SummaryOfLoopLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>../ga_engine/src/qgpu_ga_engine_shared.cpp:368</SourceLocation>
+                    <SummaryOfLoopViolations>
+                        <VITIS_LOOP_368_4>
+                            <Name>VITIS_LOOP_368_4</Name>
+                            <IssueType>-</IssueType>
+                            <ViolationType>-</ViolationType>
+                            <SourceLocation>../ga_engine/src/qgpu_ga_engine_shared.cpp:368</SourceLocation>
+                        </VITIS_LOOP_368_4>
+                    </SummaryOfLoopViolations>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <FF>13</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>~0</UTIL_FF>
+                    <LUT>64</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>~0</UTIL_LUT>
+                    <BRAM_18K>0</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>0</UTIL_BRAM>
+                    <DSP>0</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>0</UTIL_DSP>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="VITIS_LOOP_368_4" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln368_fu_83_p2" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:368" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln368" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op add" DSP="0" ID="" IMPL="fabric" LATENCY="0" LOOP="VITIS_LOOP_368_4" OPTYPE="add" PRAGMA="" RTLNAME="add_ln368_fu_89_p2" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:368" STORAGESUBTYPE="" URAM="0" VARIABLE="add_ln368" VISIBLE="true"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>qgpu_ga_engine_shared</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>7.137</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>50</Best-caseLatency>
+                    <Average-caseLatency>83</Average-caseLatency>
+                    <Worst-caseLatency>225</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.500 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.830 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>2.250 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>50 ~ 225</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                    <PerformancePragma>-</PerformancePragma>
+                </SummaryOfOverallLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>../ga_engine/src/qgpu_ga_engine_shared.cpp:293</SourceLocation>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>2</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>~0</UTIL_BRAM>
+                    <DSP>20</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>9</UTIL_DSP>
+                    <FF>6928</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>6</UTIL_FF>
+                    <LUT>9988</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>18</UTIL_LUT>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="a_reg_U" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:293" STORAGESIZE="32 8 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="a_reg" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_1p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_1p" PRAGMA="" RTLNAME="b_reg_U" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:294" STORAGESIZE="32 8 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_1p array" URAM="0" VARIABLE="b_reg" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_storage ram_t2p" DSP="0" ID="" IMPL="auto" LATENCY="1" LOOP="" OPTYPE="ram_t2p" PRAGMA="" RTLNAME="c_reg_U" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:295" STORAGESIZE="32 8 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_t2p array" URAM="0" VARIABLE="c_reg" VISIBLE="true"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op seteq" DSP="0" ID="" IMPL="auto" LATENCY="0" LOOP="" OPTYPE="seteq" PRAGMA="" RTLNAME="icmp_ln334_fu_435_p2" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:334" STORAGESUBTYPE="" URAM="0" VARIABLE="icmp_ln334" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="target_grade_fu_455_p3" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:334" STORAGESUBTYPE="" URAM="0" VARIABLE="target_grade" VISIBLE="false"/>
+                <BindNode BINDTYPE="op" BRAM="0" BUNDLEDNAME="" DISPNAME="bind_op select" DSP="0" ID="" IMPL="auto_sel" LATENCY="0" LOOP="" OPTYPE="select" PRAGMA="" RTLNAME="select_ln373_fu_463_p3" SOURCE="../ga_engine/src/qgpu_ga_engine_shared.cpp:373" STORAGESUBTYPE="" URAM="0" VARIABLE="select_ln373" VISIBLE="false"/>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="bram" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="pragma" RTLNAME="aamf_seq_bank_a_U" SOURCE="" STORAGESIZE="32 512 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p" URAM="0" VARIABLE="aamf_seq_bank_a" VISIBLE="true"/>
+                <BindNode BINDTYPE="storage" BRAM="1" BUNDLEDNAME="" DISPNAME="bind_storage ram_2p" DSP="0" ID="" IMPL="bram" LATENCY="1" LOOP="" OPTYPE="ram_2p" PRAGMA="pragma" RTLNAME="aamf_seq_bank_b_U" SOURCE="" STORAGESIZE="32 512 1" STORAGESUBTYPE="" STORAGEUSAGE="ram_2p" URAM="0" VARIABLE="aamf_seq_bank_b" VISIBLE="true"/>
+            </BindNodes>
+        </Module>
+        <Module>
+            <Name>qgpu_ga_sequential_top</Name>
+            <PerformanceEstimates>
+                <SummaryOfTimingAnalysis>
+                    <TargetClockPeriod>10.00</TargetClockPeriod>
+                    <ClockUncertainty>2.70</ClockUncertainty>
+                    <EstimatedClockPeriod>7.137</EstimatedClockPeriod>
+                </SummaryOfTimingAnalysis>
+                <SummaryOfOverallLatency>
+                    <Best-caseLatency>51</Best-caseLatency>
+                    <Average-caseLatency>84</Average-caseLatency>
+                    <Worst-caseLatency>226</Worst-caseLatency>
+                    <Best-caseRealTimeLatency>0.510 us</Best-caseRealTimeLatency>
+                    <Average-caseRealTimeLatency>0.840 us</Average-caseRealTimeLatency>
+                    <Worst-caseRealTimeLatency>2.260 us</Worst-caseRealTimeLatency>
+                    <PipelineInitiationInterval>52 ~ 227</PipelineInitiationInterval>
+                    <PipelineType>no</PipelineType>
+                    <PerformancePragma>-</PerformancePragma>
+                </SummaryOfOverallLatency>
+                <SummaryOfViolations>
+                    <IssueType>-</IssueType>
+                    <ViolationType>-</ViolationType>
+                    <SourceLocation>../ga_engine/src/qgpu_ga_sequential_top.cpp:4</SourceLocation>
+                </SummaryOfViolations>
+            </PerformanceEstimates>
+            <AreaEstimates>
+                <Resources>
+                    <BRAM_18K>2</BRAM_18K>
+                    <AVAIL_BRAM>280</AVAIL_BRAM>
+                    <UTIL_BRAM>~0</UTIL_BRAM>
+                    <DSP>20</DSP>
+                    <AVAIL_DSP>220</AVAIL_DSP>
+                    <UTIL_DSP>9</UTIL_DSP>
+                    <FF>7497</FF>
+                    <AVAIL_FF>106400</AVAIL_FF>
+                    <UTIL_FF>7</UTIL_FF>
+                    <LUT>10392</LUT>
+                    <AVAIL_LUT>53200</AVAIL_LUT>
+                    <UTIL_LUT>19</UTIL_LUT>
+                    <URAM>0</URAM>
+                    <AVAIL_URAM>0</AVAIL_URAM>
+                    <UTIL_URAM>0</UTIL_URAM>
+                </Resources>
+            </AreaEstimates>
+            <BindNodes>
+                <BindNode BINDTYPE="adapter" BRAM="0" BUNDLEDNAME="control" DISPNAME="bind_adapter " DSP="0" ID="" IMPL="" LATENCY="" LOOP="" OPTYPE="" PRAGMA="" RTLNAME="control_s_axi_U" SOURCE="" STORAGESIZE="" STORAGESUBTYPE="s_axilite" STORAGEUSAGE="interface" URAM="0" VARIABLE=""/>
+            </BindNodes>
+        </Module>
+    </ModuleInformation>
+    <FIFOInformation/>
+    <UserConfigCommands>
+        <config_export display_name="qgpu_ga_sequential_ip" library="hls" vendor="qgpu" version="1.0"/>
+    </UserConfigCommands>
+    <Args>
+        <Arg ArgName="a" index="0" direction="in" srcType="int const *" srcSize="32">
+            <hwRefs>
+                <hwRef type="memory" interface="s_axi_control" name="a" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="b" index="1" direction="in" srcType="int const *" srcSize="32">
+            <hwRefs>
+                <hwRef type="memory" interface="s_axi_control" name="b" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="c" index="2" direction="out" srcType="int*" srcSize="32">
+            <hwRefs>
+                <hwRef type="memory" interface="s_axi_control" name="c" usage="data" direction="out"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="opcode" index="3" direction="in" srcType="unsigned int" srcSize="32">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_control" name="opcode" usage="data" direction="in"/>
+            </hwRefs>
+        </Arg>
+        <Arg ArgName="status" index="4" direction="out" srcType="unsigned int*" srcSize="32">
+            <hwRefs>
+                <hwRef type="register" interface="s_axi_control" name="status" usage="data" direction="out"/>
+                <hwRef type="register" interface="s_axi_control" name="status_ctrl" usage="control" direction="out"/>
+            </hwRefs>
+        </Arg>
+    </Args>
+    <Interfaces>
+        <Interface InterfaceName="s_axi_control" type="axi4lite" busTypeName="aximm" mode="slave" dataWidth="32" addrWidth="8" portPrefix="s_axi_control_" paramPrefix="C_S_AXI_CONTROL_">
+            <ports>
+                <port>s_axi_control_ARADDR</port>
+                <port>s_axi_control_ARREADY</port>
+                <port>s_axi_control_ARVALID</port>
+                <port>s_axi_control_AWADDR</port>
+                <port>s_axi_control_AWREADY</port>
+                <port>s_axi_control_AWVALID</port>
+                <port>s_axi_control_BREADY</port>
+                <port>s_axi_control_BRESP</port>
+                <port>s_axi_control_BVALID</port>
+                <port>s_axi_control_RDATA</port>
+                <port>s_axi_control_RREADY</port>
+                <port>s_axi_control_RRESP</port>
+                <port>s_axi_control_RVALID</port>
+                <port>s_axi_control_WDATA</port>
+                <port>s_axi_control_WREADY</port>
+                <port>s_axi_control_WSTRB</port>
+                <port>s_axi_control_WVALID</port>
+            </ports>
+            <memories>
+                <memorie memorieName="a" offset="32" range="32"/>
+                <memorie memorieName="b" offset="64" range="32"/>
+                <memorie memorieName="c" offset="96" range="32"/>
+            </memories>
+            <registers>
+                <register offset="0x00" name="CTRL" access="RW" description="Control signals" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="AP_START" access="RW" description="Control signal Register for 'ap_start'."/>
+                        <field offset="1" width="1" name="AP_DONE" access="R" description="Control signal Register for 'ap_done'."/>
+                        <field offset="2" width="1" name="AP_IDLE" access="R" description="Control signal Register for 'ap_idle'."/>
+                        <field offset="3" width="1" name="AP_READY" access="R" description="Control signal Register for 'ap_ready'."/>
+                        <field offset="4" width="3" name="RESERVED_1" access="R" description="Reserved.  0s on read."/>
+                        <field offset="7" width="1" name="AUTO_RESTART" access="RW" description="Control signal Register for 'auto_restart'."/>
+                        <field offset="8" width="1" name="RESERVED_2" access="R" description="Reserved.  0s on read."/>
+                        <field offset="9" width="1" name="INTERRUPT" access="R" description="Control signal Register for 'interrupt'."/>
+                        <field offset="10" width="22" name="RESERVED_3" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x04" name="GIER" access="RW" description="Global Interrupt Enable Register" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="Enable" access="RW" description="Master enable for the device interrupt output to the system interrupt controller: 0 = Disabled, 1 = Enabled"/>
+                        <field offset="1" width="31" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x08" name="IP_IER" access="RW" description="IP Interrupt Enable Register" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="CHAN0_INT_EN" access="RW" description="Enable Channel 0 (ap_done) Interrupt.  0 = Disabled, 1 = Enabled."/>
+                        <field offset="1" width="1" name="CHAN1_INT_EN" access="RW" description="Enable Channel 1 (ap_ready) Interrupt.  0 = Disabled, 1 = Enabled."/>
+                        <field offset="2" width="30" name="RESERVED_0" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x0c" name="IP_ISR" access="RW" description="IP Interrupt Status Register" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="CHAN0_INT_ST" access="RTOW" description="Channel 0 (ap_done) Interrupt Status. 0 = No Channel 0 interrupt, 1 = Channel 0 interrupt."/>
+                        <field offset="1" width="1" name="CHAN1_INT_ST" access="RTOW" description="Channel 1 (ap_ready) Interrupt Status. 0 = No Channel 1 interrupt, 1 = Channel 1 interrupt."/>
+                        <field offset="2" width="30" name="RESERVED_0" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+                <register offset="0x10" name="opcode" access="W" description="Data signal of opcode" range="32">
+                    <fields>
+                        <field offset="0" width="32" name="opcode" access="W" description="Bit 31 to 0 of opcode"/>
+                    </fields>
+                </register>
+                <register offset="0x80" name="status" access="R" description="Data signal of status" range="32">
+                    <fields>
+                        <field offset="0" width="32" name="status" access="R" description="Bit 31 to 0 of status"/>
+                    </fields>
+                </register>
+                <register offset="0x84" name="status_ctrl" access="R" description="Control signal of status" range="32">
+                    <fields>
+                        <field offset="0" width="1" name="status_ap_vld" access="R" description="Control signal status_ap_vld"/>
+                        <field offset="1" width="31" name="RESERVED" access="R" description="Reserved.  0s on read."/>
+                    </fields>
+                </register>
+            </registers>
+            <constraints>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="32" argName="a"/>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="64" argName="b"/>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="96" argName="c"/>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="16" argName="opcode"/>
+                <constraint constraint_type="pragma interface" mode="s_axilite" register_option="0" offset="128" argName="status"/>
+            </constraints>
+        </Interface>
+        <Interface InterfaceName="ap_clk" type="clock" busTypeName="clock" mode="slave">
+            <busParams>
+                <busParam busParamName="ASSOCIATED_BUSIF">s_axi_control</busParam>
+                <busParam busParamName="ASSOCIATED_RESET">ap_rst_n</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_clk">CLK</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_clk</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="ap_rst_n" type="reset" busTypeName="reset" mode="slave">
+            <busParams>
+                <busParam busParamName="POLARITY">ACTIVE_LOW</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="ap_rst_n">RST</portMap>
+            </portMaps>
+            <ports>
+                <port>ap_rst_n</port>
+            </ports>
+        </Interface>
+        <Interface InterfaceName="interrupt" type="interrupt" busTypeName="interrupt" mode="master" dataWidth="1">
+            <busParams>
+                <busParam busParamName="SENSITIVITY">LEVEL_HIGH</busParam>
+            </busParams>
+            <portMaps>
+                <portMap portMapName="interrupt">INTERRUPT</portMap>
+            </portMaps>
+            <ports>
+                <port>interrupt</port>
+            </ports>
+        </Interface>
+    </Interfaces>
+    <ReportHWInterface>
+        <section name="HW Interfaces" level="0">
+            <item name="S_AXILITE Interfaces">
+                <table>
+                    <keys size="5">Interface, Data Width, Address Width, Offset, Register</keys>
+                    <column name="s_axi_control">32, 8, 32, 0</column>
+                </table>
+            </item>
+            <item name="S_AXILITE Registers">
+                <table>
+                    <keys size="7">Interface, Register, Offset, Width, Access, Description, Bit Fields</keys>
+                    <column name="s_axi_control">CTRL, 0x00, 32, RW, Control signals, 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT</column>
+                    <column name="s_axi_control">GIER, 0x04, 32, RW, Global Interrupt Enable Register, 0=Enable</column>
+                    <column name="s_axi_control">IP_IER, 0x08, 32, RW, IP Interrupt Enable Register, 0=CHAN0_INT_EN 1=CHAN1_INT_EN</column>
+                    <column name="s_axi_control">IP_ISR, 0x0c, 32, RW, IP Interrupt Status Register, 0=CHAN0_INT_ST 1=CHAN1_INT_ST</column>
+                    <column name="s_axi_control">opcode, 0x10, 32, W, Data signal of opcode, </column>
+                    <column name="s_axi_control">status, 0x80, 32, R, Data signal of status, </column>
+                    <column name="s_axi_control">status_ctrl, 0x84, 32, R, Control signal of status, 0=status_ap_vld</column>
+                </table>
+            </item>
+            <item name="TOP LEVEL CONTROL">
+                <table>
+                    <keys size="3">Interface, Type, Ports</keys>
+                    <column name="ap_clk">clock, ap_clk</column>
+                    <column name="ap_rst_n">reset, ap_rst_n</column>
+                    <column name="interrupt">interrupt, interrupt</column>
+                    <column name="ap_ctrl">ap_ctrl_hs, </column>
+                </table>
+            </item>
+        </section>
+    </ReportHWInterface>
+    <ReportSWInterface>
+        <section name="SW I/O Information" level="0">
+            <item name="Top Function Arguments">
+                <table>
+                    <keys size="3">Argument, Direction, Datatype</keys>
+                    <column name="a">in, int const *</column>
+                    <column name="b">in, int const *</column>
+                    <column name="c">out, int*</column>
+                    <column name="opcode">in, unsigned int</column>
+                    <column name="status">out, unsigned int*</column>
+                </table>
+            </item>
+            <item name="SW-to-HW Mapping">
+                <table>
+                    <keys size="4">Argument, HW Interface, HW Type, HW Info</keys>
+                    <column name="a">s_axi_control, memory, name=a offset=32 range=32</column>
+                    <column name="b">s_axi_control, memory, name=b offset=64 range=32</column>
+                    <column name="c">s_axi_control, memory, name=c offset=96 range=32</column>
+                    <column name="opcode">s_axi_control, register, name=opcode offset=0x10 range=32</column>
+                    <column name="status">s_axi_control, register, name=status offset=0x80 range=32</column>
+                    <column name="status">s_axi_control, register, name=status_ctrl offset=0x84 range=32</column>
+                </table>
+            </item>
+        </section>
+    </ReportSWInterface>
+    <ResolutionUrl key="ZZZ">docs.amd.com/access/sources/dita/topic?Doc_Version=2025.2%20English&amp;url=ug1448-hls-guidance&amp;resourceid=ZZZ.html</ResolutionUrl>
+    <PragmaReport>
+        <Pragma type="inline" location="../ga_engine/src/qgpu_ga_engine_shared.cpp:36" status="valid" parentFunction="compute_gp_seq_core" variable="" isDirective="0" options="off"/>
+        <Pragma type="array_partition" location="../ga_engine/src/qgpu_ga_engine_shared.cpp:38" status="valid" parentFunction="compute_gp_seq_core" variable="accum" isDirective="0" options="variable=accum complete dim=1"/>
+        <Pragma type="unroll" location="../ga_engine/src/qgpu_ga_engine_shared.cpp:41" status="valid" parentFunction="compute_gp_seq_core" variable="" isDirective="0" options=""/>
+        <Pragma type="pipeline" location="../ga_engine/src/qgpu_ga_engine_shared.cpp:53" status="valid" parentFunction="compute_gp_seq_core" variable="" isDirective="0" options="ii=1"/>
+        <Pragma type="dependence" location="../ga_engine/src/qgpu_ga_engine_shared.cpp:54" status="valid" parentFunction="compute_gp_seq_core" variable="accum" isDirective="0" options="variable=accum inter false"/>
+        <Pragma type="inline" location="../ga_engine/src/qgpu_ga_engine_shared.cpp:103" status="valid" parentFunction="ga_seq_op_geometric_product" variable="" isDirective="0" options="off"/>
+        <Pragma type="inline" location="../ga_engine/src/qgpu_ga_engine_shared.cpp:113" status="valid" parentFunction="ga_seq_op_wedge_product" variable="" isDirective="0" options="off"/>
+        <Pragma type="inline" location="../ga_engine/src/qgpu_ga_engine_shared.cpp:123" status="valid" parentFunction="ga_seq_op_inner_product" variable="" isDirective="0" options="off"/>
+        <Pragma type="inline" location="../ga_engine/src/qgpu_ga_engine_shared.cpp:133" status="valid" parentFunction="ga_seq_op_addition" variable="" isDirective="0" options="off"/>
+        <Pragma type="inline" location="../ga_engine/src/qgpu_ga_engine_shared.cpp:145" status="valid" parentFunction="ga_seq_op_subtraction" variable="" isDirective="0" options="off"/>
+        <Pragma type="inline" location="../ga_engine/src/qgpu_ga_engine_shared.cpp:157" status="valid" parentFunction="ga_seq_op_scalar_mul" variable="" isDirective="0" options="off"/>
+        <Pragma type="inline" location="../ga_engine/src/qgpu_ga_engine_shared.cpp:170" status="valid" parentFunction="ga_seq_op_grade_project" variable="" isDirective="0" options="off"/>
+        <Pragma type="inline" location="../ga_engine/src/qgpu_ga_engine_shared.cpp:188" status="valid" parentFunction="ga_seq_op_reverse" variable="" isDirective="0" options="off"/>
+        <Pragma type="inline" location="../ga_engine/src/qgpu_ga_engine_shared.cpp:203" status="valid" parentFunction="ga_seq_op_grade_involution" variable="" isDirective="0" options="off"/>
+        <Pragma type="inline" location="../ga_engine/src/qgpu_ga_engine_shared.cpp:218" status="valid" parentFunction="ga_seq_op_clifford_conjugation" variable="" isDirective="0" options="off"/>
+        <Pragma type="inline" location="../ga_engine/src/qgpu_ga_engine_shared.cpp:234" status="valid" parentFunction="ga_seq_op_rotor_sandwich" variable="" isDirective="0" options="off"/>
+        <Pragma type="inline" location="../ga_engine/src/qgpu_ga_engine_shared.cpp:253" status="valid" parentFunction="ga_seq_op_rotor_norm" variable="" isDirective="0" options="off"/>
+        <Pragma type="inline" location="../ga_engine/src/qgpu_ga_engine_shared.cpp:275" status="valid" parentFunction="qgpu_ga_engine_shared" variable="" isDirective="0" options="off"/>
+        <Pragma type="bind_storage" location="../ga_engine/src/qgpu_ga_engine_shared.cpp:278" status="valid" parentFunction="qgpu_ga_engine_shared" variable="aamf_seq_bank_a" isDirective="0" options="variable=aamf_seq_bank_a type=ram_2p impl=bram"/>
+        <Pragma type="bind_storage" location="../ga_engine/src/qgpu_ga_engine_shared.cpp:279" status="valid" parentFunction="qgpu_ga_engine_shared" variable="aamf_seq_bank_b" isDirective="0" options="variable=aamf_seq_bank_b type=ram_2p impl=bram"/>
+        <Pragma type="bind_storage" location="../ga_engine/src/qgpu_ga_engine_shared.cpp:280" status="valid" parentFunction="qgpu_ga_engine_shared" variable="aamf_seq_bank_c" isDirective="0" options="variable=aamf_seq_bank_c type=ram_2p impl=bram"/>
+        <Pragma type="interface" location="qgpu_ga_sequential/solution1/directives.tcl:2" status="valid" parentFunction="qgpu_ga_sequential_top" variable="a" isDirective="1" options="s_axilite bundle=control port=a"/>
+        <Pragma type="interface" location="qgpu_ga_sequential/solution1/directives.tcl:3" status="valid" parentFunction="qgpu_ga_sequential_top" variable="b" isDirective="1" options="s_axilite bundle=control port=b"/>
+        <Pragma type="interface" location="qgpu_ga_sequential/solution1/directives.tcl:4" status="valid" parentFunction="qgpu_ga_sequential_top" variable="c" isDirective="1" options="s_axilite bundle=control port=c"/>
+        <Pragma type="interface" location="qgpu_ga_sequential/solution1/directives.tcl:5" status="valid" parentFunction="qgpu_ga_sequential_top" variable="opcode" isDirective="1" options="s_axilite bundle=control port=opcode"/>
+        <Pragma type="interface" location="qgpu_ga_sequential/solution1/directives.tcl:1" status="valid" parentFunction="qgpu_ga_sequential_top" variable="return" isDirective="1" options="s_axilite bundle=control port=return"/>
+        <Pragma type="interface" location="qgpu_ga_sequential/solution1/directives.tcl:6" status="valid" parentFunction="qgpu_ga_sequential_top" variable="status" isDirective="1" options="s_axilite bundle=control port=status"/>
+        <Pragma type="array_partition" location="../ga_engine/src/qgpu_ga_engine_shared.cpp:46" status="valid" parentFunction="qgpu_ga_sequential_top" variable="BASIS_GRADES" isDirective="0" options="dim=1 type=complete variable=BASIS_GRADES"/>
+        <Pragma type="loop_flatten" location="../ga_engine/src/qgpu_ga_engine_shared.cpp:46" status="valid" parentFunction="compute_gp_seq_core" variable="" isDirective="0" options=" "/>
+    </PragmaReport>
+    <AutoPragmaReport>
+        <AutoPragma type="array_partition" parentFunction="qgpu_ga_sequential_top" options="dim=1 type=complete variable=BASIS_GRADES" pragmaLocId="../ga_engine/include/hls_compat.h:32:0" pragmaLocOpt="qgpu_ga_sequential_top/BASIS_GRADES" srcPragmaType="pipeline" srcPragmaLoc="../ga_engine/src/qgpu_ga_engine_shared.cpp:53" srcPragmaSource="source-pragma" srcPragmaSourceDesc="pipeline ../ga_engine/src/qgpu_ga_engine_shared.cpp:53" srcIsDirective="0" srcIsSlxDirective="0" srcIsCsimDirective="0" directiveIni="syn.directive.array_partition=qgpu_ga_sequential_top/BASIS_GRADES dim=1 type=complete variable=BASIS_GRADES" variable="BASIS_GRADES" varLoc="../ga_engine/include\hls_compat.h:32"/>
+        <AutoPragma type="loop_flatten" parentFunction="compute_gp_seq_core" options=" " pragmaLocId="../ga_engine/src/qgpu_ga_engine_shared.cpp:46:0" pragmaLocOpt="compute_gp_seq_core/SHARED_OUTER_LOOP" srcPragmaType="pipeline" srcPragmaLoc="../ga_engine/src/qgpu_ga_engine_shared.cpp:53" srcPragmaSource="source-pragma" srcPragmaSourceDesc="pipeline ../ga_engine/src/qgpu_ga_engine_shared.cpp:53" srcIsDirective="0" srcIsSlxDirective="0" srcIsCsimDirective="0" directiveIni="syn.directive.loop_flatten=compute_gp_seq_core/SHARED_OUTER_LOOP  " loopName="SHARED_OUTER_LOOP" loopLoc="../ga_engine/src/qgpu_ga_engine_shared.cpp:46:5"/>
+        <AutoPragma type="pipeline" parentFunction="ga_seq_op_rotor_norm" options="" pragmaLocId="../ga_engine/src/qgpu_ga_engine_shared.cpp:255:0" pragmaLocOpt="ga_seq_op_rotor_norm/VITIS_LOOP_255_1" srcTcl="config_compile -pipeline_loops 64" srcIni="syn.compile.pipeline_loops=64" srcPragmaType="" srcPragmaLoc="syn.compile.pipeline_loops=64" srcPragmaSource="config" srcPragmaSourceDesc="syn.compile.pipeline_loops=64" srcIsDirective="0" srcIsSlxDirective="0" srcIsCsimDirective="0" directiveIni="syn.directive.pipeline=ga_seq_op_rotor_norm/VITIS_LOOP_255_1 " loopName="VITIS_LOOP_255_1" loopLoc="../ga_engine/src/qgpu_ga_engine_shared.cpp:255:23"/>
+        <AutoPragma type="pipeline" parentFunction="ga_seq_op_rotor_norm" options="" pragmaLocId="../ga_engine/src/qgpu_ga_engine_shared.cpp:260:0" pragmaLocOpt="ga_seq_op_rotor_norm/VITIS_LOOP_260_2" srcTcl="config_compile -pipeline_loops 64" srcIni="syn.compile.pipeline_loops=64" srcPragmaType="" srcPragmaLoc="syn.compile.pipeline_loops=64" srcPragmaSource="config" srcPragmaSourceDesc="syn.compile.pipeline_loops=64" srcIsDirective="0" srcIsSlxDirective="0" srcIsCsimDirective="0" directiveIni="syn.directive.pipeline=ga_seq_op_rotor_norm/VITIS_LOOP_260_2 " loopName="VITIS_LOOP_260_2" loopLoc="../ga_engine/src/qgpu_ga_engine_shared.cpp:260:23"/>
+        <AutoPragma type="pipeline" parentFunction="ga_seq_op_clifford_conjugation" options="" pragmaLocId="../ga_engine/src/qgpu_ga_engine_shared.cpp:219:0" pragmaLocOpt="ga_seq_op_clifford_conjugation/VITIS_LOOP_219_1" srcTcl="config_compile -pipeline_loops 64" srcIni="syn.compile.pipeline_loops=64" srcPragmaType="" srcPragmaLoc="syn.compile.pipeline_loops=64" srcPragmaSource="config" srcPragmaSourceDesc="syn.compile.pipeline_loops=64" srcIsDirective="0" srcIsSlxDirective="0" srcIsCsimDirective="0" directiveIni="syn.directive.pipeline=ga_seq_op_clifford_conjugation/VITIS_LOOP_219_1 " loopName="VITIS_LOOP_219_1" loopLoc="../ga_engine/src/qgpu_ga_engine_shared.cpp:219:23"/>
+        <AutoPragma type="pipeline" parentFunction="ga_seq_op_grade_involution" options="" pragmaLocId="../ga_engine/src/qgpu_ga_engine_shared.cpp:204:0" pragmaLocOpt="ga_seq_op_grade_involution/VITIS_LOOP_204_1" srcTcl="config_compile -pipeline_loops 64" srcIni="syn.compile.pipeline_loops=64" srcPragmaType="" srcPragmaLoc="syn.compile.pipeline_loops=64" srcPragmaSource="config" srcPragmaSourceDesc="syn.compile.pipeline_loops=64" srcIsDirective="0" srcIsSlxDirective="0" srcIsCsimDirective="0" directiveIni="syn.directive.pipeline=ga_seq_op_grade_involution/VITIS_LOOP_204_1 " loopName="VITIS_LOOP_204_1" loopLoc="../ga_engine/src/qgpu_ga_engine_shared.cpp:204:23"/>
+        <AutoPragma type="pipeline" parentFunction="ga_seq_op_reverse" options="" pragmaLocId="../ga_engine/src/qgpu_ga_engine_shared.cpp:189:0" pragmaLocOpt="ga_seq_op_reverse/VITIS_LOOP_189_1" srcTcl="config_compile -pipeline_loops 64" srcIni="syn.compile.pipeline_loops=64" srcPragmaType="" srcPragmaLoc="syn.compile.pipeline_loops=64" srcPragmaSource="config" srcPragmaSourceDesc="syn.compile.pipeline_loops=64" srcIsDirective="0" srcIsSlxDirective="0" srcIsCsimDirective="0" directiveIni="syn.directive.pipeline=ga_seq_op_reverse/VITIS_LOOP_189_1 " loopName="VITIS_LOOP_189_1" loopLoc="../ga_engine/src/qgpu_ga_engine_shared.cpp:189:23"/>
+        <AutoPragma type="pipeline" parentFunction="ga_seq_op_grade_project" options="" pragmaLocId="../ga_engine/src/qgpu_ga_engine_shared.cpp:177:0" pragmaLocOpt="ga_seq_op_grade_project/VITIS_LOOP_177_2" srcTcl="config_compile -pipeline_loops 64" srcIni="syn.compile.pipeline_loops=64" srcPragmaType="" srcPragmaLoc="syn.compile.pipeline_loops=64" srcPragmaSource="config" srcPragmaSourceDesc="syn.compile.pipeline_loops=64" srcIsDirective="0" srcIsSlxDirective="0" srcIsCsimDirective="0" directiveIni="syn.directive.pipeline=ga_seq_op_grade_project/VITIS_LOOP_177_2 " loopName="VITIS_LOOP_177_2" loopLoc="../ga_engine/src/qgpu_ga_engine_shared.cpp:177:27"/>
+        <AutoPragma type="pipeline" parentFunction="ga_seq_op_grade_project" options="" pragmaLocId="../ga_engine/src/qgpu_ga_engine_shared.cpp:173:0" pragmaLocOpt="ga_seq_op_grade_project/VITIS_LOOP_173_1" srcTcl="config_compile -pipeline_loops 64" srcIni="syn.compile.pipeline_loops=64" srcPragmaType="" srcPragmaLoc="syn.compile.pipeline_loops=64" srcPragmaSource="config" srcPragmaSourceDesc="syn.compile.pipeline_loops=64" srcIsDirective="0" srcIsSlxDirective="0" srcIsCsimDirective="0" directiveIni="syn.directive.pipeline=ga_seq_op_grade_project/VITIS_LOOP_173_1 " loopName="VITIS_LOOP_173_1" loopLoc="../ga_engine/src/qgpu_ga_engine_shared.cpp:173:27"/>
+        <AutoPragma type="pipeline" parentFunction="ga_seq_op_scalar_mul" options="" pragmaLocId="../ga_engine/src/qgpu_ga_engine_shared.cpp:158:0" pragmaLocOpt="ga_seq_op_scalar_mul/VITIS_LOOP_158_1" srcTcl="config_compile -pipeline_loops 64" srcIni="syn.compile.pipeline_loops=64" srcPragmaType="" srcPragmaLoc="syn.compile.pipeline_loops=64" srcPragmaSource="config" srcPragmaSourceDesc="syn.compile.pipeline_loops=64" srcIsDirective="0" srcIsSlxDirective="0" srcIsCsimDirective="0" directiveIni="syn.directive.pipeline=ga_seq_op_scalar_mul/VITIS_LOOP_158_1 " loopName="VITIS_LOOP_158_1" loopLoc="../ga_engine/src/qgpu_ga_engine_shared.cpp:158:23"/>
+        <AutoPragma type="pipeline" parentFunction="ga_seq_op_subtraction" options="" pragmaLocId="../ga_engine/src/qgpu_ga_engine_shared.cpp:146:0" pragmaLocOpt="ga_seq_op_subtraction/VITIS_LOOP_146_1" srcTcl="config_compile -pipeline_loops 64" srcIni="syn.compile.pipeline_loops=64" srcPragmaType="" srcPragmaLoc="syn.compile.pipeline_loops=64" srcPragmaSource="config" srcPragmaSourceDesc="syn.compile.pipeline_loops=64" srcIsDirective="0" srcIsSlxDirective="0" srcIsCsimDirective="0" directiveIni="syn.directive.pipeline=ga_seq_op_subtraction/VITIS_LOOP_146_1 " loopName="VITIS_LOOP_146_1" loopLoc="../ga_engine/src/qgpu_ga_engine_shared.cpp:146:23"/>
+        <AutoPragma type="pipeline" parentFunction="ga_seq_op_addition" options="" pragmaLocId="../ga_engine/src/qgpu_ga_engine_shared.cpp:134:0" pragmaLocOpt="ga_seq_op_addition/VITIS_LOOP_134_1" srcTcl="config_compile -pipeline_loops 64" srcIni="syn.compile.pipeline_loops=64" srcPragmaType="" srcPragmaLoc="syn.compile.pipeline_loops=64" srcPragmaSource="config" srcPragmaSourceDesc="syn.compile.pipeline_loops=64" srcIsDirective="0" srcIsSlxDirective="0" srcIsCsimDirective="0" directiveIni="syn.directive.pipeline=ga_seq_op_addition/VITIS_LOOP_134_1 " loopName="VITIS_LOOP_134_1" loopLoc="../ga_engine/src/qgpu_ga_engine_shared.cpp:134:23"/>
+        <AutoPragma type="pipeline" parentFunction="compute_gp_seq_core" options="" pragmaLocId="../ga_engine/src/qgpu_ga_engine_shared.cpp:87:0" pragmaLocOpt="compute_gp_seq_core/RESCALE_LOOP" srcTcl="config_compile -pipeline_loops 64" srcIni="syn.compile.pipeline_loops=64" srcPragmaType="" srcPragmaLoc="syn.compile.pipeline_loops=64" srcPragmaSource="config" srcPragmaSourceDesc="syn.compile.pipeline_loops=64" srcIsDirective="0" srcIsSlxDirective="0" srcIsCsimDirective="0" directiveIni="syn.directive.pipeline=compute_gp_seq_core/RESCALE_LOOP " loopName="RESCALE_LOOP" loopLoc="../ga_engine/src/qgpu_ga_engine_shared.cpp:87:5"/>
+        <AutoPragma type="pipeline" parentFunction="qgpu_ga_engine_shared" options="" pragmaLocId="../ga_engine/src/qgpu_ga_engine_shared.cpp:287:0" pragmaLocOpt="qgpu_ga_engine_shared/VITIS_LOOP_287_1" srcTcl="config_compile -pipeline_loops 64" srcIni="syn.compile.pipeline_loops=64" srcPragmaType="" srcPragmaLoc="syn.compile.pipeline_loops=64" srcPragmaSource="config" srcPragmaSourceDesc="syn.compile.pipeline_loops=64" srcIsDirective="0" srcIsSlxDirective="0" srcIsCsimDirective="0" directiveIni="syn.directive.pipeline=qgpu_ga_engine_shared/VITIS_LOOP_287_1 " loopName="VITIS_LOOP_287_1" loopLoc="../ga_engine/src/qgpu_ga_engine_shared.cpp:287:23"/>
+        <AutoPragma type="pipeline" parentFunction="qgpu_ga_engine_shared" options="" pragmaLocId="../ga_engine/src/qgpu_ga_engine_shared.cpp:297:0" pragmaLocOpt="qgpu_ga_engine_shared/VITIS_LOOP_297_2" srcTcl="config_compile -pipeline_loops 64" srcIni="syn.compile.pipeline_loops=64" srcPragmaType="" srcPragmaLoc="syn.compile.pipeline_loops=64" srcPragmaSource="config" srcPragmaSourceDesc="syn.compile.pipeline_loops=64" srcIsDirective="0" srcIsSlxDirective="0" srcIsCsimDirective="0" directiveIni="syn.directive.pipeline=qgpu_ga_engine_shared/VITIS_LOOP_297_2 " loopName="VITIS_LOOP_297_2" loopLoc="../ga_engine/src/qgpu_ga_engine_shared.cpp:297:23"/>
+        <AutoPragma type="pipeline" parentFunction="qgpu_ga_engine_shared" options="" pragmaLocId="../ga_engine/src/qgpu_ga_engine_shared.cpp:361:0" pragmaLocOpt="qgpu_ga_engine_shared/VITIS_LOOP_361_3" srcTcl="config_compile -pipeline_loops 64" srcIni="syn.compile.pipeline_loops=64" srcPragmaType="" srcPragmaLoc="syn.compile.pipeline_loops=64" srcPragmaSource="config" srcPragmaSourceDesc="syn.compile.pipeline_loops=64" srcIsDirective="0" srcIsSlxDirective="0" srcIsCsimDirective="0" directiveIni="syn.directive.pipeline=qgpu_ga_engine_shared/VITIS_LOOP_361_3 " loopName="VITIS_LOOP_361_3" loopLoc="../ga_engine/src/qgpu_ga_engine_shared.cpp:361:31"/>
+        <AutoPragma type="pipeline" parentFunction="qgpu_ga_engine_shared" options="" pragmaLocId="../ga_engine/src/qgpu_ga_engine_shared.cpp:368:0" pragmaLocOpt="qgpu_ga_engine_shared/VITIS_LOOP_368_4" srcTcl="config_compile -pipeline_loops 64" srcIni="syn.compile.pipeline_loops=64" srcPragmaType="" srcPragmaLoc="syn.compile.pipeline_loops=64" srcPragmaSource="config" srcPragmaSourceDesc="syn.compile.pipeline_loops=64" srcIsDirective="0" srcIsSlxDirective="0" srcIsCsimDirective="0" directiveIni="syn.directive.pipeline=qgpu_ga_engine_shared/VITIS_LOOP_368_4 " loopName="VITIS_LOOP_368_4" loopLoc="../ga_engine/src/qgpu_ga_engine_shared.cpp:368:23"/>
+    </AutoPragmaReport>
+</profile>

@@ -1,0 +1,102 @@
+<design_size title="Design Size Report">
+    <item name="Total Instructions per Compilation Phase">
+        <table>
+            <keys size="4">Phase, Step, Instructions, Description</keys>
+            <column name="Compile/Link">, 10298, After all functions are compiled and linked into a single design</column>
+            <column name="">, , </column>
+            <column name="Unroll/Inline">, , After user unroll and inline pragmas are applied</column>
+            <column name="">(1) unroll,  1957, user unroll pragmas are applied</column>
+            <column name="">(2) simplification,  1379, simplification of applied user unroll pragmas</column>
+            <column name="">(3) inline,  1266, user inline pragmas are applied</column>
+            <column name="">(4) simplification,  1197, simplification of applied user inline pragmas</column>
+            <column name="">, , </column>
+            <column name="Array/Struct">, , After user array partition and struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(1) array partition,  1347, user array partition pragmas are applied</column>
+            <column name="">(2) simplification,  1337, simplification of applied user array partition &amp; struct aggregate/disaggregate pragmas</column>
+            <column name="">(3) aggregate/disaggregate,  1337, user struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(4) array reshape,  1332, apply array reshape pragmas</column>
+            <column name="">(5) access patterns,  1336, array access pattern optmizations</column>
+            <column name="">, , </column>
+            <column name="Performance">, , After transformations are applied to meet performance pragma targets</column>
+            <column name="">(1) loop simplification,  1336, loop and instruction simplification</column>
+            <column name="">(2) parallelization,  1335, loops are unrolled or pipelined to meet performance targets</column>
+            <column name="">(3) array partition,  1472, arrays are partitioned to meet performance targets</column>
+            <column name="">(4) simplification,  1307, simplification of design after performance transformations</column>
+            <column name="">, , </column>
+            <column name="HW Transforms">, , After hardware transfomations</column>
+            <column name="">(1) lowering,  1317, initial conversion to HW specific instructions</column>
+            <column name="">(2) optimizations,  1440, high level synthesis optimizations</column>
+        </table>
+    </item>
+    <item name="Instructions per Function for each Compilation Phase">
+        <hiertable>
+            <header size="7" col0="Function" col1="Location" col2="Compile/Link" col3="Unroll/Inline" col4="Array/Struct" col5="Performance" col6="HW Transforms"/>
+            <rows>
+                <row id="0" col0="qgpu_ga_sequential_top" col1="qgpu_ga_sequential_top.cpp:4" col2="10298" col3="1197" col4="1336" col5="1307" col6="1440">
+                    <row id="14" col0="qgpu_ga_engine_shared" col1="qgpu_ga_engine_shared.cpp:268" col2="10290" col3="1189" col4="1325" col5="1296" col6="1418">
+                        <row id="5" col0="ga_seq_op_rotor_norm" col1="qgpu_ga_engine_shared.cpp:248" col2="1018" col3="40" col4="42" col5="41" col6="50">
+                            <row id="16" col0="rescale_and_saturate" col1="hls_compat.h:68" col2="726" col3="" col4="" col5="" col6=""/>
+                        </row>
+                        <row id="1" col0="ga_seq_op_rotor_sandwich" col1="qgpu_ga_engine_shared.cpp:228" col2="2806" col3="336" col4="402" col5="393" col6="423">
+                            <row id="3" col0="compute_gp_seq_core" col1="qgpu_ga_engine_shared.cpp:29" col2="2472" col2_disp="2,472 (2 calls)" col3="296" col3_disp=" 296 (2 calls)" col4="364" col4_disp=" 364 (2 calls)" col5="356" col5_disp=" 356 (2 calls)" col6="380" col6_disp=" 380 (2 calls)">
+                                <row id="11" col0="mask_to_index" col1="hls_compat.h:35" col2="52" col2_disp="   52 (4 calls)" col3="" col4="" col5="" col6=""/>
+                                <row id="12" col0="blade_product_sign" col1="hls_compat.h:50" col2="84" col2_disp="   84 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                <row id="16" col0="rescale_and_saturate" col1="hls_compat.h:68" col2="1452" col2_disp="1,452 (2 calls)" col3="" col4="" col5="" col6=""/>
+                            </row>
+                            <row id="2" col0="ga_seq_op_reverse" col1="qgpu_ga_engine_shared.cpp:183" col2="316" col3="32" col4="32" col5="31" col6="36">
+                                <row id="10" col0="sat_sub_q16" col1="hls_compat.h:123" col2="279" col3="" col4="" col5="" col6=""/>
+                            </row>
+                        </row>
+                        <row id="18" col0="ga_seq_op_clifford_conjugation" col1="qgpu_ga_engine_shared.cpp:213" col2="316" col3="32" col4="32" col5="31" col6="36">
+                            <row id="10" col0="sat_sub_q16" col1="hls_compat.h:123" col2="279" col3="" col4="" col5="" col6=""/>
+                        </row>
+                        <row id="17" col0="ga_seq_op_grade_involution" col1="qgpu_ga_engine_shared.cpp:198" col2="316" col3="32" col4="32" col5="31" col6="36">
+                            <row id="10" col0="sat_sub_q16" col1="hls_compat.h:123" col2="279" col3="" col4="" col5="" col6=""/>
+                        </row>
+                        <row id="2" col0="ga_seq_op_reverse" col1="qgpu_ga_engine_shared.cpp:183" col2="316" col3="32" col4="32" col5="31" col6="36">
+                            <row id="10" col0="sat_sub_q16" col1="hls_compat.h:123" col2="279" col3="" col4="" col5="" col6=""/>
+                        </row>
+                        <row id="13" col0="ga_seq_op_grade_project" col1="qgpu_ga_engine_shared.cpp:164" col2="44" col3="29" col4="29" col5="26" col6="37"/>
+                        <row id="4" col0="ga_seq_op_scalar_mul" col1="qgpu_ga_engine_shared.cpp:151" col2="962" col3="37" col4="37" col5="37" col6="42">
+                            <row id="16" col0="rescale_and_saturate" col1="hls_compat.h:68" col2="726" col3="" col4="" col5="" col6=""/>
+                        </row>
+                        <row id="8" col0="ga_seq_op_subtraction" col1="qgpu_ga_engine_shared.cpp:139" col2="299" col3="26" col4="26" col5="26" col6="31">
+                            <row id="10" col0="sat_sub_q16" col1="hls_compat.h:123" col2="279" col3="" col4="" col5="" col6=""/>
+                        </row>
+                        <row id="9" col0="ga_seq_op_addition" col1="qgpu_ga_engine_shared.cpp:127" col2="299" col3="26" col4="26" col5="26" col6="31">
+                            <row id="19" col0="sat_add_q16" col1="hls_compat.h:104" col2="279" col3="" col4="" col5="" col6=""/>
+                        </row>
+                        <row id="15" col0="ga_seq_op_inner_product" col1="qgpu_ga_engine_shared.cpp:117" col2="1238" col3="150" col4="184" col5="180" col6="193">
+                            <row id="3" col0="compute_gp_seq_core" col1="qgpu_ga_engine_shared.cpp:29" col2="1236" col3="148" col4="182" col5="178" col6="190">
+                                <row id="11" col0="mask_to_index" col1="hls_compat.h:35" col2="26" col2_disp="   26 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                <row id="12" col0="blade_product_sign" col1="hls_compat.h:50" col2="42" col3="" col4="" col5="" col6=""/>
+                                <row id="16" col0="rescale_and_saturate" col1="hls_compat.h:68" col2="726" col3="" col4="" col5="" col6=""/>
+                            </row>
+                        </row>
+                        <row id="6" col0="ga_seq_op_wedge_product" col1="qgpu_ga_engine_shared.cpp:107" col2="1238" col3="150" col4="184" col5="180" col6="193">
+                            <row id="3" col0="compute_gp_seq_core" col1="qgpu_ga_engine_shared.cpp:29" col2="1236" col3="148" col4="182" col5="178" col6="190">
+                                <row id="11" col0="mask_to_index" col1="hls_compat.h:35" col2="26" col2_disp="   26 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                <row id="12" col0="blade_product_sign" col1="hls_compat.h:50" col2="42" col3="" col4="" col5="" col6=""/>
+                                <row id="16" col0="rescale_and_saturate" col1="hls_compat.h:68" col2="726" col3="" col4="" col5="" col6=""/>
+                            </row>
+                        </row>
+                        <row id="7" col0="ga_seq_op_geometric_product" col1="qgpu_ga_engine_shared.cpp:97" col2="1238" col3="150" col4="184" col5="180" col6="193">
+                            <row id="3" col0="compute_gp_seq_core" col1="qgpu_ga_engine_shared.cpp:29" col2="1236" col3="148" col4="182" col5="178" col6="190">
+                                <row id="11" col0="mask_to_index" col1="hls_compat.h:35" col2="26" col2_disp="   26 (2 calls)" col3="" col4="" col5="" col6=""/>
+                                <row id="12" col0="blade_product_sign" col1="hls_compat.h:50" col2="42" col3="" col4="" col5="" col6=""/>
+                                <row id="16" col0="rescale_and_saturate" col1="hls_compat.h:68" col2="726" col3="" col4="" col5="" col6=""/>
+                            </row>
+                        </row>
+                    </row>
+                </row>
+            </rows>
+            <notes/>
+        </hiertable>
+    </item>
+    <item name="Design Size Message Settings">
+        <table>
+            <keys size="3">Message Setting, Value, Description</keys>
+            <column name="config_compile -design_size_maximum_warning">100000, Show a warning when total design instructions exceeds this value</column>
+        </table>
+    </item>
+</design_size>

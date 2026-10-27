@@ -1,0 +1,1017 @@
+{
+  "metadata": {
+    "generated_at": "2026-10-01 20:43:30",
+    "source": "ga/ Python golden model",
+    "fix16_format": "Q1.14 signed, scale=16384",
+    "error_budget": 0.000244140625,
+    "algebra": "G3 (3D Euclidean GA)",
+    "label": "GOLDEN_MODEL"
+  },
+  "tests": [
+    {
+      "id": "gp_e0_e0",
+      "name": "e0 * e0 = scalar(+1.0)",
+      "opcode": "GP",
+      "section": "BASIS_PRODUCTS",
+      "A": [
+        0,
+        16384,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "B": [
+        0,
+        16384,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        16384,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_float": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mandatory": true
+    },
+    {
+      "id": "gp_e0_e1",
+      "name": "e0 * e1 = +e01",
+      "opcode": "GP",
+      "section": "BASIS_PRODUCTS",
+      "A": [
+        0,
+        16384,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "B": [
+        0,
+        0,
+        16384,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        16384,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_float": [
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mandatory": true
+    },
+    {
+      "id": "gp_e1_e0",
+      "name": "e1 * e0 = -e01 (anticommutation)",
+      "opcode": "GP",
+      "section": "BASIS_PRODUCTS",
+      "A": [
+        0,
+        0,
+        16384,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "B": [
+        0,
+        16384,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        -16384,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_float": [
+        0.0,
+        0.0,
+        0.0,
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mandatory": true
+    },
+    {
+      "id": "gp_e1_e1",
+      "name": "e1 * e1 = scalar(+1.0)",
+      "opcode": "GP",
+      "section": "BASIS_PRODUCTS",
+      "A": [
+        0,
+        0,
+        16384,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "B": [
+        0,
+        0,
+        16384,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        16384,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_float": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mandatory": true
+    },
+    {
+      "id": "gp_e2_e2",
+      "name": "e2 * e2 = scalar(+1.0)",
+      "opcode": "GP",
+      "section": "BASIS_PRODUCTS",
+      "A": [
+        0,
+        0,
+        0,
+        0,
+        16384,
+        0,
+        0,
+        0
+      ],
+      "B": [
+        0,
+        0,
+        0,
+        0,
+        16384,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        16384,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_float": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mandatory": true
+    },
+    {
+      "id": "wedge_e0_e1",
+      "name": "e0 ^ e1 = +e01",
+      "opcode": "WEDGE",
+      "section": "WEDGE",
+      "A": [
+        0,
+        16384,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "B": [
+        0,
+        0,
+        16384,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        16384,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_float": [
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mandatory": true
+    },
+    {
+      "id": "wedge_e0_e0",
+      "name": "e0 ^ e0 = 0",
+      "opcode": "WEDGE",
+      "section": "WEDGE",
+      "A": [
+        0,
+        16384,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "B": [
+        0,
+        16384,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_float": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mandatory": true
+    },
+    {
+      "id": "wedge_area",
+      "name": "unit vectors 90deg wedge = e01 magnitude 1",
+      "opcode": "WEDGE",
+      "section": "WEDGE",
+      "A": [
+        0,
+        9830,
+        13107,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "B": [
+        0,
+        13107,
+        -9830,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        -16384,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_float": [
+        0.0,
+        0.0,
+        0.0,
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mandatory": false
+    },
+    {
+      "id": "inner_e0_e0",
+      "name": "e0 . e0 = scalar(1)",
+      "opcode": "INNER",
+      "section": "INNER",
+      "A": [
+        0,
+        16384,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "B": [
+        0,
+        16384,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        16384,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_float": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mandatory": false
+    },
+    {
+      "id": "inner_e0_e1",
+      "name": "e0 . e1 = 0 (orthogonal)",
+      "opcode": "INNER",
+      "section": "INNER",
+      "A": [
+        0,
+        16384,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "B": [
+        0,
+        0,
+        16384,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_float": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mandatory": false
+    },
+    {
+      "id": "norm_e0",
+      "name": "norm(e0) = 1.0",
+      "opcode": "NORM",
+      "section": "NORM",
+      "A": [
+        0,
+        16384,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "B": null,
+      "expected_scalar_float": 1.0,
+      "expected_scalar_fix16": 16384,
+      "mandatory": true
+    },
+    {
+      "id": "norm_unit_vector",
+      "name": "norm(0.6*e0 + 0.8*e1) = 1.0",
+      "opcode": "NORM",
+      "section": "NORM",
+      "A": [
+        0,
+        9830,
+        13107,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "B": null,
+      "expected_scalar_float": 1.0,
+      "expected_scalar_fix16": 16384,
+      "mandatory": false
+    },
+    {
+      "id": "rotor_z90",
+      "name": "rotor_from_axis_angle([0,0,1], pi/2)",
+      "opcode": "ROTOR",
+      "section": "ROTOR",
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "angle_rad": 1.5707963267948966,
+      "half_angle_fix16": 12868,
+      "expected": [
+        11585,
+        0,
+        0,
+        -11585,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_float": [
+        0.7071067690849304,
+        0.0,
+        0.0,
+        -0.7071067690849304,
+        0.0,
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "mandatory": true,
+      "notes": "R[0] \u2248 0.7071 (cos(pi/4)), R[3] \u2248 -0.7071 (-sin(pi/4)*1)"
+    },
+    {
+      "id": "sandwich_z90_e0",
+      "name": "R_z90 * e0 * ~R_z90 = e1 (90\u00b0 rotation about z)",
+      "opcode": "SANDWICH",
+      "section": "SANDWICH",
+      "A": [
+        11585,
+        0,
+        0,
+        -11585,
+        0,
+        0,
+        0,
+        0
+      ],
+      "B": [
+        0,
+        16384,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        16384,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_float": [
+        0.0,
+        0.0,
+        0.9999999403953552,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mandatory": true
+    },
+    {
+      "id": "sandwich_z90_e1",
+      "name": "R_z90 * e1 * ~R_z90 = -e0",
+      "opcode": "SANDWICH",
+      "section": "SANDWICH",
+      "A": [
+        11585,
+        0,
+        0,
+        -11585,
+        0,
+        0,
+        0,
+        0
+      ],
+      "B": [
+        0,
+        0,
+        16384,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        -16384,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_float": [
+        0.0,
+        -0.9999999403953552,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mandatory": true
+    },
+    {
+      "id": "sandwich_x45_e1",
+      "name": "R_x45 * e1 * ~R_x45 (45\u00b0 rotation about x)",
+      "opcode": "SANDWICH",
+      "section": "SANDWICH",
+      "A": [
+        15137,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -6270,
+        0
+      ],
+      "B": [
+        0,
+        0,
+        16384,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        11585,
+        0,
+        11585,
+        0,
+        0,
+        0
+      ],
+      "expected_float": [
+        0.0,
+        0.0,
+        0.7071067690849304,
+        0.0,
+        0.7071067690849304,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mandatory": false
+    },
+    {
+      "id": "reverse_all_ones",
+      "name": "reverse([1,1,1,1,1,1,1,1]) = [1,1,1,-1,1,-1,-1,-1]",
+      "opcode": "REVERSE",
+      "section": "REVERSE",
+      "A": [
+        16384,
+        16384,
+        16384,
+        16384,
+        16384,
+        16384,
+        16384,
+        16384
+      ],
+      "B": null,
+      "expected": [
+        16384,
+        16384,
+        16384,
+        -16384,
+        16384,
+        -16384,
+        -16384,
+        -16384
+      ],
+      "expected_float": [
+        1.0,
+        1.0,
+        1.0,
+        -1.0,
+        1.0,
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "mandatory": true
+    },
+    {
+      "id": "distance_vectors",
+      "name": "distance(p1, p2) = 0.5",
+      "opcode": "DISTANCE",
+      "section": "DISTANCE",
+      "A": [
+        0,
+        8192,
+        8192,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "B": [
+        0,
+        8192,
+        16384,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_scalar_float": 0.5,
+      "expected_scalar_fix16": 8192,
+      "mandatory": false
+    },
+    {
+      "id": "qgate_x_0",
+      "name": "X|0> = |1>",
+      "opcode": "QGATE_X",
+      "section": "QUANTUM",
+      "A": [
+        16384,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "B": null,
+      "expected": [
+        0,
+        0,
+        0,
+        16384,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_float": [
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mandatory": true
+    },
+    {
+      "id": "qgate_z_1",
+      "name": "Z|1> = -|1>",
+      "opcode": "QGATE_Z",
+      "section": "QUANTUM",
+      "A": [
+        0,
+        0,
+        0,
+        16384,
+        0,
+        0,
+        0,
+        0
+      ],
+      "B": null,
+      "expected": [
+        0,
+        0,
+        0,
+        -16384,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_float": [
+        0.0,
+        0.0,
+        0.0,
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mandatory": true
+    },
+    {
+      "id": "qgate_h_0",
+      "name": "H|0> = (|0>+|1>)/sqrt(2)",
+      "opcode": "QGATE_H",
+      "section": "QUANTUM",
+      "A": [
+        16384,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "B": null,
+      "expected": [
+        11585,
+        0,
+        0,
+        11585,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_float": [
+        0.7071067690849304,
+        0.0,
+        0.0,
+        0.7071067690849304,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "expected_scalar_coeffs": [
+        0.7071067811865475,
+        0.7071067811865475
+      ],
+      "mandatory": true
+    },
+    {
+      "id": "qgate_y_0",
+      "name": "Y|0> = |1> (real GA encoding of i|1>)",
+      "opcode": "QGATE_Y",
+      "section": "QUANTUM",
+      "A": [
+        16384,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "B": null,
+      "expected": [
+        0,
+        0,
+        0,
+        16384,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_float": [
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mandatory": true
+    },
+    {
+      "id": "qgate_t_1",
+      "name": "T|1> = (1/sqrt(2))|1> (real GA encoding)",
+      "opcode": "QGATE_T",
+      "section": "QUANTUM",
+      "A": [
+        0,
+        0,
+        0,
+        16384,
+        0,
+        0,
+        0,
+        0
+      ],
+      "B": null,
+      "expected": [
+        0,
+        0,
+        0,
+        11585,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_float": [
+        0.0,
+        0.0,
+        0.0,
+        0.7071067690849304,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mandatory": true
+    },
+    {
+      "id": "gp_decomp",
+      "name": "GP(a,b) = INNER(a,b) + WEDGE(a,b) for grade-1 vectors",
+      "opcode": "GP",
+      "section": "ALGEBRAIC_IDENTITY",
+      "A": [
+        0,
+        8192,
+        4915,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "B": [
+        0,
+        11469,
+        6554,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        7700,
+        0,
+        0,
+        -164,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_float": [
+        0.4699999988079071,
+        0.0,
+        0.0,
+        -0.01000000536441803,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "decomp_inner": [
+        0.4699999988079071,
+        0.0,
+        0.0,
+        -0.01000000536441803,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "mandatory": false,
+      "notes": "gp_ab == ip_ab + op_ab must hold"
+    }
+  ]
+}

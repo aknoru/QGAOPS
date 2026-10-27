@@ -1,0 +1,98 @@
+<pragmas>
+<pragma file="../ga_engine/src/qgpu_ga_engine_shared.cpp" line="234" pragmaType="inline" parentfunction="ga_seq_op_rotor_sandwich" off="1" region="0" recursive="0"/>
+<pragma file="../ga_engine/src/qgpu_ga_engine_shared.cpp" line="145" pragmaType="inline" parentfunction="ga_seq_op_subtraction" off="1" region="0" recursive="0"/>
+<pragma file="C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\etc/ap_common.h" line="522" pragmaType="inline" parentfunction="ssdm_int<64, true>::ssdm_int(long)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<33, true>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<33>::ap_int<34>(ap_int<34> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<33, true>::operator long long() const" off="0" region="0" recursive="0"/>
+<pragma file="../ga_engine/src/qgpu_ga_engine_shared.cpp" line="203" pragmaType="inline" parentfunction="ga_seq_op_grade_involution" off="1" region="0" recursive="0"/>
+<pragma file="../ga_engine/src/qgpu_ga_engine_shared.cpp" line="275" pragmaType="inline" parentfunction="qgpu_ga_engine_shared" off="1" region="0" recursive="0"/>
+<pragma file="../ga_engine/src/qgpu_ga_engine_shared.cpp" line="278" pragmaType="bind_storage" parentfunction="qgpu_ga_engine_shared" op="666" impl="22" latency="-1" variable="_ZL15aamf_seq_bank_a"/>
+<pragma file="../ga_engine/src/qgpu_ga_engine_shared.cpp" line="279" pragmaType="bind_storage" parentfunction="qgpu_ga_engine_shared" op="666" impl="22" latency="-1" variable="_ZL15aamf_seq_bank_b"/>
+<pragma file="../ga_engine/src/qgpu_ga_engine_shared.cpp" line="280" pragmaType="bind_storage" parentfunction="qgpu_ga_engine_shared" op="666" impl="22" latency="-1" variable="_ZL15aamf_seq_bank_c"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<34, true>::ap_int_base<33, true>(ap_int_base<33, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\etc/ap_common.h" line="522" pragmaType="inline" parentfunction="ssdm_int<128, true>::ssdm_int(__int128)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<33, true>::RType<33, true>::plus operator+<33, true, 33, true>(ap_int_base<33, true> const&, ap_int_base<33, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<128>::ap_int<128, true>(ap_int_base<128, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<128, true>::ap_int_base<64, true>(ap_int_base<64, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\etc/ap_common.h" line="522" pragmaType="inline" parentfunction="_ZN8ssdm_intILi33ELb1EEC2EDB33_" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<34, true>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<33, true>::RType<33, true>::minus operator-<33, true, 33, true>(ap_int_base<33, true> const&, ap_int_base<33, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="../ga_engine/src/qgpu_ga_engine_shared.cpp" line="123" pragmaType="inline" parentfunction="ga_seq_op_inner_product" off="1" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<64, true>::ap_int_base<128, true>(ap_int_base<128, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<33, true>::ap_int_base(long long)" off="0" region="0" recursive="0"/>
+<pragma file="../ga_engine/src/qgpu_ga_engine_shared.cpp" line="170" pragmaType="inline" parentfunction="ga_seq_op_grade_project" off="1" region="0" recursive="0"/>
+<pragma file="../ga_engine/src/qgpu_ga_engine_shared.cpp" line="218" pragmaType="inline" parentfunction="ga_seq_op_clifford_conjugation" off="1" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<33>::ap_int(long long)" off="0" region="0" recursive="0"/>
+<pragma file="../ga_engine/src/qgpu_ga_sequential_top.cpp" line="1" pragmaType="interface" parentfunction="qgpu_ga_sequential_top" mode="s_axilite" port="" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="../ga_engine/src/qgpu_ga_sequential_top.cpp" line="2" pragmaType="interface" parentfunction="qgpu_ga_sequential_top" mode="s_axilite" port="a" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="../ga_engine/src/qgpu_ga_sequential_top.cpp" line="3" pragmaType="interface" parentfunction="qgpu_ga_sequential_top" mode="s_axilite" port="b" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="../ga_engine/src/qgpu_ga_sequential_top.cpp" line="4" pragmaType="interface" parentfunction="qgpu_ga_sequential_top" mode="s_axilite" port="c" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="../ga_engine/src/qgpu_ga_sequential_top.cpp" line="5" pragmaType="interface" parentfunction="qgpu_ga_sequential_top" mode="s_axilite" port="opcode" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="../ga_engine/src/qgpu_ga_sequential_top.cpp" line="6" pragmaType="interface" parentfunction="qgpu_ga_sequential_top" mode="s_axilite" port="status" bundle="control" offset="-1" name="" clock="" impl="" register="0"/>
+<pragma file="../ga_engine/src/qgpu_ga_engine_shared.cpp" line="253" pragmaType="inline" parentfunction="ga_seq_op_rotor_norm" off="1" region="0" recursive="0"/>
+<pragma file="../ga_engine/src/qgpu_ga_engine_shared.cpp" line="113" pragmaType="inline" parentfunction="ga_seq_op_wedge_product" off="1" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<33>::ap_int(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="bool ap_int_base<33, true>::operator><33, true>(ap_int_base<33, true> const&) const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="bool ap_int_base<33, true>::operator<<33, true>(ap_int_base<33, true> const&) const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<34>::ap_int<34, true>(ap_int_base<34, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\etc/ap_common.h" line="522" pragmaType="inline" parentfunction="_ZN8ssdm_intILi34ELb1EEC2EDB34_" off="0" region="0" recursive="0"/>
+<pragma file="../ga_engine/src/qgpu_ga_engine_shared.cpp" line="188" pragmaType="inline" parentfunction="ga_seq_op_reverse" off="1" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<128, true>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="../ga_engine/src/qgpu_ga_engine_shared.cpp" line="157" pragmaType="inline" parentfunction="ga_seq_op_scalar_mul" off="1" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<33, true>::ap_int_base<34, true>(ap_int_base<34, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="../ga_engine/src/qgpu_ga_engine_shared.cpp" line="133" pragmaType="inline" parentfunction="ga_seq_op_addition" off="1" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<64, true>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<64>::ap_int(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<67, true>::operator long long() const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="bool ap_int_base<67, true>::operator!=<32, true>(ap_int_base<32, true> const&) const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<67, true>::ap_int_base<68, true>(ap_int_base<68, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<67, true>::RType<32, true>::plus operator+<67, true, 32, true>(ap_int_base<67, true> const&, ap_int_base<32, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<67, true>::RType<67, true>::arg1 operator>><67, true>(ap_int_base<67, true> const&, int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<64, true>::RType<64, true>::mult operator*<64, true, 64, true>(ap_int_base<64, true> const&, ap_int_base<64, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\etc/ap_common.h" line="522" pragmaType="inline" parentfunction="ssdm_int<32, true>::ssdm_int(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="bool operator<<67, true>(ap_int_base<67, true> const&, int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<67, true>::RType<($_0)32, true>::logic operator&<67, true>(ap_int_base<67, true> const&, int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<67, true>::ap_int_base(long long)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="bool operator><67, true>(ap_int_base<67, true> const&, int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<67>::ap_int<68>(ap_int<68> const&)" off="0" region="0" recursive="0"/>
+<pragma file="C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\etc/ap_common.h" line="522" pragmaType="inline" parentfunction="_ZN8ssdm_intILi67ELb1EEC2EDB67_" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="bool ap_int_base<67, true>::operator><67, true>(ap_int_base<67, true> const&) const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<68, true>::ap_int_base<67, true>(ap_int_base<67, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<68, true>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<67, true>::RType<($_0)32, true>::plus operator+<67, true>(ap_int_base<67, true> const&, int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<68, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="../ga_engine/src/qgpu_ga_engine_shared.cpp" line="36" pragmaType="inline" parentfunction="compute_gp_seq_core" off="1" region="0" recursive="0"/>
+<pragma file="../ga_engine/src/qgpu_ga_engine_shared.cpp" line="53" pragmaType="pipeline" parentfunction="compute_gp_seq_core" off="0" ii="1" rewind="0" style=""/>
+<pragma file="../ga_engine/src/qgpu_ga_engine_shared.cpp" line="41" pragmaType="unroll" parentfunction="compute_gp_seq_core" factor="-1" skip_exit_check="0"/>
+<pragma file="../ga_engine/src/qgpu_ga_engine_shared.cpp" line="38" pragmaType="array_partition" parentfunction="compute_gp_seq_core" dim="1" factor="0" mode="complete" dynamic="0" variable="accum"/>
+<pragma file="../ga_engine/src/qgpu_ga_engine_shared.cpp" line="54" pragmaType="dependence" parentfunction="compute_gp_seq_core" class="" direction="NODIR" type="inter" distance="0" variable="accum"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<67>::ap_int<64>(ap_int<64> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<68>::ap_int<68, true>(ap_int_base<68, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="bool operator!=<67, true>(ap_int_base<67, true> const&, int)" off="0" region="0" recursive="0"/>
+<pragma file="C:/AMDDesignTools/2025.2/Vitis/common/technology/autopilot\etc/ap_common.h" line="522" pragmaType="inline" parentfunction="_ZN8ssdm_intILi68ELb1EEC2EDB68_" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="bool ap_int_base<67, true>::operator><32, true>(ap_int_base<32, true> const&) const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="bool ap_int_base<67, true>::operator<<32, true>(ap_int_base<32, true> const&) const" off="0" region="0" recursive="0"/>
+<pragma file="../ga_engine/src/qgpu_ga_engine_shared.cpp" line="103" pragmaType="inline" parentfunction="ga_seq_op_geometric_product" off="1" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<67, true>::RType<32, true>::logic operator&<67, true, 32, true>(ap_int_base<67, true> const&, ap_int_base<32, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<67, true>::ap_int_base<32, true>(ap_int_base<32, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<67, true>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<67>::ap_int(long long)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<67>::ap_int<67, true>(ap_int_base<67, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<64>::ap_int<128>(ap_int<128> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="bool ap_int_base<67, true>::operator<<67, true>(ap_int_base<67, true> const&) const" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<67, true>::ap_int_base<64, true>(ap_int_base<64, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<32, true>::ap_int_base(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int<67>::ap_int(int)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowCsim" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowCsim" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<67, true>& ap_int_base<67, true>::operator+=<67, true>(ap_int_base<67, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowCsim" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="ap_int_base<67, true>& ap_int_base<67, true>::operator-=<67, true>(ap_int_base<67, true> const&)" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowBaseC" off="0" region="0" recursive="0"/>
+<pragma file="" line="0" pragmaType="inline" parentfunction="checkOverflowCsim" off="0" region="0" recursive="0"/>
+</pragmas>

@@ -1,0 +1,55 @@
+# Dataset Configuration for Kaggle LeapGestRecog Integration
+# [IMPLEMENTED] Static 6-class expression model for QGAOPS-QGPU Demonstrator
+
+dataset:
+  name: "LeapGestRecog_1"
+  path: "LeapGestRecog_1/LeapGestRecog_1"
+  total_images_per_class: 200
+  total_classes: 6
+  total_images: 1200
+  image_size: [640, 240]  # Leap Motion IR frame dimensions
+
+classes:
+  raw_folders:
+    "01_palm": "PALM"
+    "02_l": "L_GESTURE"
+    "03_fist": "FIST"
+    "05_thumb": "THUMB"
+    "06_index": "INDEX"
+    "07_ok": "OK"
+
+  class_to_id:
+    "PALM": 0
+    "L_GESTURE": 1
+    "FIST": 2
+    "THUMB": 3
+    "INDEX": 4
+    "OK": 5
+
+  id_to_class:
+    0: "PALM"
+    1: "L_GESTURE"
+    2: "FIST"
+    3: "THUMB"
+    4: "INDEX"
+    5: "OK"
+
+split:
+  train_ratio: 0.70
+  val_ratio: 0.15
+  test_ratio: 0.15
+  random_seed: 42
+  stratified: true
+
+classification:
+  confidence_threshold: 0.65
+  unknown_class_label: "UNKNOWN"
+  models:
+    - "random_forest"
+    - "svm"
+    - "image_baseline"
+
+temporal_smoothing:
+  window_size: 5
+  min_majority_votes: 3
+  cooldown_frames: 4

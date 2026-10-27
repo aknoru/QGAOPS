@@ -1,0 +1,189 @@
+{
+	"version": "1.0",
+	"modules": {
+		"qgpu_ga_sequential_top": {
+			"proto_instances": {
+				"/AESL_inst_qgpu_ga_sequential_top_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst_n"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_qgpu_ga_engine_shared_fu_77/grp_compute_gp_shared_fu_302/grp_compute_gp_shared_Pipeline_RESCALE_LOOP_fu_139/grp_compute_gp_shared_Pipeline_RESCALE_LOOP_fu_139_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_qgpu_ga_engine_shared_fu_77/grp_compute_gp_shared_fu_302/grp_compute_gp_shared_Pipeline_SHARED_INNER_LOOP_fu_148/grp_compute_gp_shared_Pipeline_SHARED_INNER_LOOP_fu_148_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_qgpu_ga_engine_shared_fu_77/grp_compute_gp_shared_fu_302/grp_compute_gp_shared_Pipeline_VITIS_LOOP_24_1_fu_133/grp_compute_gp_shared_Pipeline_VITIS_LOOP_24_1_fu_133_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_qgpu_ga_engine_shared_fu_77/grp_compute_gp_shared_fu_302/grp_compute_gp_shared_fu_302_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_qgpu_ga_engine_shared_fu_77/grp_qgpu_ga_engine_shared_Pipeline_VITIS_LOOP_113_3_fu_393/grp_qgpu_ga_engine_shared_Pipeline_VITIS_LOOP_113_3_fu_393_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_qgpu_ga_engine_shared_fu_77/grp_qgpu_ga_engine_shared_Pipeline_VITIS_LOOP_125_4_fu_376/grp_qgpu_ga_engine_shared_Pipeline_VITIS_LOOP_125_4_fu_376_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_qgpu_ga_engine_shared_fu_77/grp_qgpu_ga_engine_shared_Pipeline_VITIS_LOOP_129_5_fu_382/grp_qgpu_ga_engine_shared_Pipeline_VITIS_LOOP_129_5_fu_382_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_qgpu_ga_engine_shared_fu_77/grp_qgpu_ga_engine_shared_Pipeline_VITIS_LOOP_138_6_fu_365/grp_qgpu_ga_engine_shared_Pipeline_VITIS_LOOP_138_6_fu_365_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_qgpu_ga_engine_shared_fu_77/grp_qgpu_ga_engine_shared_Pipeline_VITIS_LOOP_150_7_fu_354/grp_qgpu_ga_engine_shared_Pipeline_VITIS_LOOP_150_7_fu_354_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_qgpu_ga_engine_shared_fu_77/grp_qgpu_ga_engine_shared_Pipeline_VITIS_LOOP_162_8_fu_343/grp_qgpu_ga_engine_shared_Pipeline_VITIS_LOOP_162_8_fu_343_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_qgpu_ga_engine_shared_fu_77/grp_qgpu_ga_engine_shared_Pipeline_VITIS_LOOP_181_9_fu_332/grp_qgpu_ga_engine_shared_Pipeline_VITIS_LOOP_181_9_fu_332_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_qgpu_ga_engine_shared_fu_77/grp_qgpu_ga_engine_shared_Pipeline_VITIS_LOOP_197_10_fu_295/grp_qgpu_ga_engine_shared_Pipeline_VITIS_LOOP_197_10_fu_295_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_qgpu_ga_engine_shared_fu_77/grp_qgpu_ga_engine_shared_Pipeline_VITIS_LOOP_202_11_fu_326/grp_qgpu_ga_engine_shared_Pipeline_VITIS_LOOP_202_11_fu_326_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_qgpu_ga_engine_shared_fu_77/grp_qgpu_ga_engine_shared_Pipeline_VITIS_LOOP_210_12_fu_320/grp_qgpu_ga_engine_shared_Pipeline_VITIS_LOOP_210_12_fu_320_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_qgpu_ga_engine_shared_fu_77/grp_qgpu_ga_engine_shared_Pipeline_VITIS_LOOP_90_1_fu_415/grp_qgpu_ga_engine_shared_Pipeline_VITIS_LOOP_90_1_fu_415_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_qgpu_ga_engine_shared_fu_77/grp_qgpu_ga_engine_shared_Pipeline_VITIS_LOOP_97_2_fu_404/grp_qgpu_ga_engine_shared_Pipeline_VITIS_LOOP_97_2_fu_404_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				},
+				"grp_qgpu_ga_engine_shared_fu_77/grp_qgpu_ga_engine_shared_fu_77_activity": {
+					"interface": "xilinx.com:interface:internal_hls_dataflow:1.0",
+					"ports": {
+						"AP_CLK": { "actual": "ap_clk"},
+						"AP_DONE": { "actual": "ap_done"},
+						"AP_READY": { "actual": "ap_ready"},
+						"AP_RESET": { "actual": "ap_rst"},
+						"AP_START": { "actual": "ap_start"}
+					}
+				}
+			}
+		}
+	}
+}

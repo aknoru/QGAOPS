@@ -1,0 +1,47 @@
+name: "media"
+description: "Media Player Hands-free Control Profile"
+enabled: false  # Disabled by default as requested
+
+settings:
+  min_confidence: 0.75
+  command_cooldown_ms: 800
+
+mappings:
+  THUMBS_UP:
+    command: "PLAY_PAUSE"
+    key: "space"
+    description: "Toggle audio/video playback"
+    enabled: true
+    requires_confirmation: false
+    cooldown_ms: 800
+
+  SWIPE_LEFT:
+    command: "MEDIA_PREVIOUS"
+    key: "prevtrack"
+    description: "Previous media track"
+    enabled: true
+    requires_confirmation: false
+    cooldown_ms: 800
+
+  SWIPE_RIGHT:
+    command: "MEDIA_NEXT"
+    key: "nexttrack"
+    description: "Next media track"
+    enabled: true
+    requires_confirmation: false
+    cooldown_ms: 800
+
+  FIST:
+    command: "MEDIA_STOP"
+    key: "stop"
+    description: "Stop media playback"
+    enabled: true
+    requires_confirmation: false
+    cooldown_ms: 800
+
+  OK_SIGN:
+    command: "CONFIRM_ACTION"
+    description: "Confirm pending media action"
+    enabled: true
+    requires_confirmation: false
+    cooldown_ms: 500

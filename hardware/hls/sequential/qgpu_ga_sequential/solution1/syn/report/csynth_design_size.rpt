@@ -1,0 +1,87 @@
+================================================================
+== Design Size Report
+================================================================
+
+* Total Instructions per Compilation Phase
++---------------+----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Phase         | Step                       | Instructions | Description                                                                            |
++---------------+----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Compile/Link  |                            | 10,298       | After all functions are compiled and linked into a single design                       |
+|               |                            |              |                                                                                        |
+| Unroll/Inline |                            |              | After user unroll and inline pragmas are applied                                       |
+|               | (1) unroll                 |  1,957       | user unroll pragmas are applied                                                        |
+|               | (2) simplification         |  1,379       | simplification of applied user unroll pragmas                                          |
+|               | (3) inline                 |  1,266       | user inline pragmas are applied                                                        |
+|               | (4) simplification         |  1,197       | simplification of applied user inline pragmas                                          |
+|               |                            |              |                                                                                        |
+| Array/Struct  |                            |              | After user array partition and struct aggregate/disaggregate pragmas are applied       |
+|               | (1) array partition        |  1,347       | user array partition pragmas are applied                                               |
+|               | (2) simplification         |  1,337       | simplification of applied user array partition & struct aggregate/disaggregate pragmas |
+|               | (3) aggregate/disaggregate |  1,337       | user struct aggregate/disaggregate pragmas are applied                                 |
+|               | (4) array reshape          |  1,332       | apply array reshape pragmas                                                            |
+|               | (5) access patterns        |  1,336       | array access pattern optmizations                                                      |
+|               |                            |              |                                                                                        |
+| Performance   |                            |              | After transformations are applied to meet performance pragma targets                   |
+|               | (1) loop simplification    |  1,336       | loop and instruction simplification                                                    |
+|               | (2) parallelization        |  1,335       | loops are unrolled or pipelined to meet performance targets                            |
+|               | (3) array partition        |  1,472       | arrays are partitioned to meet performance targets                                     |
+|               | (4) simplification         |  1,307       | simplification of design after performance transformations                             |
+|               |                            |              |                                                                                        |
+| HW Transforms |                            |              | After hardware transfomations                                                          |
+|               | (1) lowering               |  1,317       | initial conversion to HW specific instructions                                         |
+|               | (2) optimizations          |  1,440       | high level synthesis optimizations                                                     |
++---------------+----------------------------+--------------+----------------------------------------------------------------------------------------+
+
+* Instructions per Function for each Compilation Phase
++-------------------------------------+-------------------------------+-----------------+----------------+----------------+----------------+----------------+
+| Function                            | Location                      | Compile/Link    | Unroll/Inline  | Array/Struct   | Performance    | HW Transforms  |
++-------------------------------------+-------------------------------+-----------------+----------------+----------------+----------------+----------------+
+| + qgpu_ga_sequential_top            | qgpu_ga_sequential_top.cpp:4  | 10,298          | 1,197          | 1,336          | 1,307          | 1,440          |
+|  + qgpu_ga_engine_shared            | qgpu_ga_engine_shared.cpp:268 | 10,290          | 1,189          | 1,325          | 1,296          | 1,418          |
+|   + ga_seq_op_rotor_norm            | qgpu_ga_engine_shared.cpp:248 | 1,018           |   40           |   42           |   41           |   50           |
+|      rescale_and_saturate           | hls_compat.h:68               |   726           |                |                |                |                |
+|   + ga_seq_op_rotor_sandwich        | qgpu_ga_engine_shared.cpp:228 | 2,806           |  336           |  402           |  393           |  423           |
+|    + compute_gp_seq_core            | qgpu_ga_engine_shared.cpp:29  | 2,472 (2 calls) |  296 (2 calls) |  364 (2 calls) |  356 (2 calls) |  380 (2 calls) |
+|       mask_to_index                 | hls_compat.h:35               |    52 (4 calls) |                |                |                |                |
+|       blade_product_sign            | hls_compat.h:50               |    84 (2 calls) |                |                |                |                |
+|       rescale_and_saturate          | hls_compat.h:68               | 1,452 (2 calls) |                |                |                |                |
+|    + ga_seq_op_reverse              | qgpu_ga_engine_shared.cpp:183 |   316           |   32           |   32           |   31           |   36           |
+|       sat_sub_q16                   | hls_compat.h:123              |   279           |                |                |                |                |
+|   + ga_seq_op_clifford_conjugati... | qgpu_ga_engine_shared.cpp:213 |   316           |   32           |   32           |   31           |   36           |
+|      sat_sub_q16                    | hls_compat.h:123              |   279           |                |                |                |                |
+|   + ga_seq_op_grade_involution      | qgpu_ga_engine_shared.cpp:198 |   316           |   32           |   32           |   31           |   36           |
+|      sat_sub_q16                    | hls_compat.h:123              |   279           |                |                |                |                |
+|   + ga_seq_op_reverse               | qgpu_ga_engine_shared.cpp:183 |   316           |   32           |   32           |   31           |   36           |
+|      sat_sub_q16                    | hls_compat.h:123              |   279           |                |                |                |                |
+|     ga_seq_op_grade_project         | qgpu_ga_engine_shared.cpp:164 |    44           |   29           |   29           |   26           |   37           |
+|   + ga_seq_op_scalar_mul            | qgpu_ga_engine_shared.cpp:151 |   962           |   37           |   37           |   37           |   42           |
+|      rescale_and_saturate           | hls_compat.h:68               |   726           |                |                |                |                |
+|   + ga_seq_op_subtraction           | qgpu_ga_engine_shared.cpp:139 |   299           |   26           |   26           |   26           |   31           |
+|      sat_sub_q16                    | hls_compat.h:123              |   279           |                |                |                |                |
+|   + ga_seq_op_addition              | qgpu_ga_engine_shared.cpp:127 |   299           |   26           |   26           |   26           |   31           |
+|      sat_add_q16                    | hls_compat.h:104              |   279           |                |                |                |                |
+|   + ga_seq_op_inner_product         | qgpu_ga_engine_shared.cpp:117 | 1,238           |  150           |  184           |  180           |  193           |
+|    + compute_gp_seq_core            | qgpu_ga_engine_shared.cpp:29  | 1,236           |  148           |  182           |  178           |  190           |
+|       mask_to_index                 | hls_compat.h:35               |    26 (2 calls) |                |                |                |                |
+|       blade_product_sign            | hls_compat.h:50               |    42           |                |                |                |                |
+|       rescale_and_saturate          | hls_compat.h:68               |   726           |                |                |                |                |
+|   + ga_seq_op_wedge_product         | qgpu_ga_engine_shared.cpp:107 | 1,238           |  150           |  184           |  180           |  193           |
+|    + compute_gp_seq_core            | qgpu_ga_engine_shared.cpp:29  | 1,236           |  148           |  182           |  178           |  190           |
+|       mask_to_index                 | hls_compat.h:35               |    26 (2 calls) |                |                |                |                |
+|       blade_product_sign            | hls_compat.h:50               |    42           |                |                |                |                |
+|       rescale_and_saturate          | hls_compat.h:68               |   726           |                |                |                |                |
+|   + ga_seq_op_geometric_product     | qgpu_ga_engine_shared.cpp:97  | 1,238           |  150           |  184           |  180           |  193           |
+|    + compute_gp_seq_core            | qgpu_ga_engine_shared.cpp:29  | 1,236           |  148           |  182           |  178           |  190           |
+|       mask_to_index                 | hls_compat.h:35               |    26 (2 calls) |                |                |                |                |
+|       blade_product_sign            | hls_compat.h:50               |    42           |                |                |                |                |
+|       rescale_and_saturate          | hls_compat.h:68               |   726           |                |                |                |                |
++-------------------------------------+-------------------------------+-----------------+----------------+----------------+----------------+----------------+
+
+* Design Size Message Settings
++---------------------------------------------+--------+------------------------------------------------------------------+
+| Message Setting                             | Value  | Description                                                      |
++---------------------------------------------+--------+------------------------------------------------------------------+
+| config_compile -design_size_maximum_warning | 100000 | Show a warning when total design instructions exceeds this value |
++---------------------------------------------+--------+------------------------------------------------------------------+
+
+

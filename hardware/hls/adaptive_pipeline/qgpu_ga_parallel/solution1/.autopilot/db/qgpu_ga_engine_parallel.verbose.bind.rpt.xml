@@ -1,0 +1,60 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'qgpu_ga_engine_parallel'" level="0">
+<item name = "Date">Tue Oct 27 05:13:16 2026
+</item>
+<item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
+<item name = "Project">qgpu_ga_parallel</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 7.192 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">36, 141, 0.360 us, 1.410 us, 36, 141, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_qgpu_ga_engine_parallel_Pipeline_AAMF_STAGE_IN_fu_686">qgpu_ga_engine_parallel_Pipeline_AAMF_STAGE_IN, 10, 10, 0.100 us, 0.100 us, 0, 0, loop pipeline stp</column>
+<column name="grp_qgpu_ga_engine_parallel_Pipeline_AAMF_FETCH_fu_727">qgpu_ga_engine_parallel_Pipeline_AAMF_FETCH, 10, 10, 0.100 us, 0.100 us, 0, 0, loop pipeline stp</column>
+<column name="grp_ga_op_rotor_sandwich_fu_753">ga_op_rotor_sandwich, 103, 103, 1.030 us, 1.030 us, 103, 103, no</column>
+<column name="grp_ga_op_inner_product_fu_775">ga_op_inner_product, 51, 51, 0.510 us, 0.510 us, 51, 51, no</column>
+<column name="grp_ga_op_wedge_product_fu_797">ga_op_wedge_product, 51, 51, 0.510 us, 0.510 us, 51, 51, no</column>
+<column name="grp_ga_op_geometric_product_fu_819">ga_op_geometric_product, 51, 51, 0.510 us, 0.510 us, 51, 51, no</column>
+<column name="grp_ga_op_rotor_norm_fu_841">ga_op_rotor_norm, 4, 4, 40.000 ns, 40.000 ns, 4, 4, no</column>
+<column name="grp_qgpu_ga_engine_parallel_Pipeline_AAMF_COMMIT_OUT_fu_853">qgpu_ga_engine_parallel_Pipeline_AAMF_COMMIT_OUT, 10, 10, 0.100 us, 0.100 us, 0, 0, loop pipeline stp</column>
+<column name="call_ret9_ga_op_clifford_conjugation_fu_889">ga_op_clifford_conjugation, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
+<column name="call_ret8_ga_op_grade_involution_fu_901">ga_op_grade_involution, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
+<column name="call_ret7_ga_op_reverse_fu_913">ga_op_reverse, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
+<column name="call_ret6_ga_op_grade_project_fu_927">ga_op_grade_project, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
+<column name="grp_ga_op_scalar_mul_fu_940">ga_op_scalar_mul, 25, 25, 0.250 us, 0.250 us, 25, 25, no</column>
+<column name="grp_ga_op_subtraction_fu_953">ga_op_subtraction, 1, 1, 10.000 ns, 10.000 ns, 1, 1, no</column>
+<column name="grp_ga_op_addition_fu_973">ga_op_addition, 1, 1, 10.000 ns, 10.000 ns, 1, 1, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+</profile>

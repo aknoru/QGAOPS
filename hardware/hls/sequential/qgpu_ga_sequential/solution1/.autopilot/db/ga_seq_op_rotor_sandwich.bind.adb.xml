@@ -1,0 +1,300 @@
+<stg><name>ga_seq_op_rotor_sandwich</name>
+
+
+<trans_list>
+
+<trans id="16" from="1" to="2">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="17" from="2" to="3">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="18" from="3" to="4">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="19" from="4" to="5">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+
+<trans id="20" from="5" to="6">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+</trans_list>
+
+
+
+<state_list>
+
+<state id="1" st_id="1">
+
+<operation id="7" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="5" bw="32" op_0_bw="64">
+<![CDATA[
+entry:0 %t = alloca i64 1
+
+]]></Node>
+<StgValue><ssdm name="t"/><MemPortTyVec>2 3 </MemPortTyVec>
+</StgValue>
+</operation>
+
+<operation id="8" st_id="1" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="6" bw="32" op_0_bw="64">
+<![CDATA[
+entry:1 %a_rev = alloca i64 1
+
+]]></Node>
+<StgValue><ssdm name="a_rev"/><MemPortTyVec>2 0 </MemPortTyVec>
+</StgValue>
+</operation>
+
+<operation id="9" st_id="1" stage="2" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="7" bw="1" op_0_bw="1" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="2" op_5_bw="1" op_6_bw="3">
+<![CDATA[
+entry:2 %overflow_assign_1 = call i1 @compute_gp_seq_core, i32 %a, i32 %b, i32 %t, i2 1, i1 0, i3 %BASIS_MASKS
+
+]]></Node>
+<StgValue><ssdm name="overflow_assign_1"/></StgValue>
+</operation>
+</state>
+
+<state id="2" st_id="2">
+
+<operation id="10" st_id="2" stage="1" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="7" bw="1" op_0_bw="1" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="2" op_5_bw="1" op_6_bw="3">
+<![CDATA[
+entry:2 %overflow_assign_1 = call i1 @compute_gp_seq_core, i32 %a, i32 %b, i32 %t, i2 1, i1 0, i3 %BASIS_MASKS
+
+]]></Node>
+<StgValue><ssdm name="overflow_assign_1"/></StgValue>
+</operation>
+</state>
+
+<state id="3" st_id="3">
+
+<operation id="11" st_id="3" stage="2" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="8" bw="1" op_0_bw="1" op_1_bw="32" op_2_bw="32" op_3_bw="1" op_4_bw="0" op_5_bw="0">
+<![CDATA[
+entry:3 %overflow_assign_3 = call i1 @ga_seq_op_reverse, i32 %a, i32 %a_rev, i1 %overflow_assign_1
+
+]]></Node>
+<StgValue><ssdm name="overflow_assign_3"/></StgValue>
+</operation>
+</state>
+
+<state id="4" st_id="4">
+
+<operation id="12" st_id="4" stage="1" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="8" bw="1" op_0_bw="1" op_1_bw="32" op_2_bw="32" op_3_bw="1" op_4_bw="0" op_5_bw="0">
+<![CDATA[
+entry:3 %overflow_assign_3 = call i1 @ga_seq_op_reverse, i32 %a, i32 %a_rev, i1 %overflow_assign_1
+
+]]></Node>
+<StgValue><ssdm name="overflow_assign_3"/></StgValue>
+</operation>
+</state>
+
+<state id="5" st_id="5">
+
+<operation id="13" st_id="5" stage="2" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="9" bw="1" op_0_bw="1" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="2" op_5_bw="1" op_6_bw="3" op_7_bw="0" op_8_bw="0">
+<![CDATA[
+entry:4 %overflow = call i1 @compute_gp_seq_core, i32 %t, i32 %a_rev, i32 %c, i2 1, i1 %overflow_assign_3, i3 %BASIS_MASKS
+
+]]></Node>
+<StgValue><ssdm name="overflow"/></StgValue>
+</operation>
+</state>
+
+<state id="6" st_id="6">
+
+<operation id="14" st_id="6" stage="1" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="9" bw="1" op_0_bw="1" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="2" op_5_bw="1" op_6_bw="3" op_7_bw="0" op_8_bw="0">
+<![CDATA[
+entry:4 %overflow = call i1 @compute_gp_seq_core, i32 %t, i32 %a_rev, i32 %c, i2 1, i1 %overflow_assign_3, i3 %BASIS_MASKS
+
+]]></Node>
+<StgValue><ssdm name="overflow"/></StgValue>
+</operation>
+
+<operation id="15" st_id="6" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="10" bw="0" op_0_bw="1">
+<![CDATA[
+entry:5 %ret_ln246 = ret i1 %overflow
+
+]]></Node>
+<StgValue><ssdm name="ret_ln246"/></StgValue>
+</operation>
+</state>
+</state_list>
+
+
+<ports>
+<port id="21" name="a" dir="0" iftype="1">
+<core>RAM</core><StgValue><ssdm name="a"/><MemPortTyVec>1 3 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="22" name="b" dir="0" iftype="1">
+<core>RAM</core><StgValue><ssdm name="b"/><MemPortTyVec>1 3 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="23" name="c" dir="1" iftype="1">
+<core>RAM</core><StgValue><ssdm name="c"/><MemPortTyVec>0 3 </MemPortTyVec>
+</StgValue>
+</port>
+<port id="24" name="BASIS_MASKS" dir="0" iftype="1">
+<core>ROM</core><StgValue><ssdm name="BASIS_MASKS"/><MemPortTyVec>1 1 </MemPortTyVec>
+</StgValue>
+</port>
+</ports>
+
+
+<dataflows>
+<dataflow id="26" from="StgValue_25" to="t" fromId="25" toId="7">
+</dataflow>
+<dataflow id="27" from="StgValue_25" to="a_rev" fromId="25" toId="8">
+</dataflow>
+<dataflow id="29" from="compute_gp_seq_core" to="overflow_assign_1" fromId="28" toId="9">
+</dataflow>
+<dataflow id="30" from="a" to="overflow_assign_1" fromId="21" toId="9">
+</dataflow>
+<dataflow id="31" from="b" to="overflow_assign_1" fromId="22" toId="9">
+</dataflow>
+<dataflow id="32" from="t" to="overflow_assign_1" fromId="7" toId="9">
+</dataflow>
+<dataflow id="34" from="StgValue_33" to="overflow_assign_1" fromId="33" toId="9">
+</dataflow>
+<dataflow id="36" from="StgValue_35" to="overflow_assign_1" fromId="35" toId="9">
+</dataflow>
+<dataflow id="37" from="BASIS_MASKS" to="overflow_assign_1" fromId="24" toId="9">
+</dataflow>
+<dataflow id="38" from="compute_gp_seq_core" to="overflow_assign_1" fromId="28" toId="10">
+</dataflow>
+<dataflow id="39" from="a" to="overflow_assign_1" fromId="21" toId="10">
+</dataflow>
+<dataflow id="40" from="b" to="overflow_assign_1" fromId="22" toId="10">
+</dataflow>
+<dataflow id="41" from="t" to="overflow_assign_1" fromId="7" toId="10">
+</dataflow>
+<dataflow id="42" from="StgValue_33" to="overflow_assign_1" fromId="33" toId="10">
+</dataflow>
+<dataflow id="43" from="StgValue_35" to="overflow_assign_1" fromId="35" toId="10">
+</dataflow>
+<dataflow id="44" from="BASIS_MASKS" to="overflow_assign_1" fromId="24" toId="10">
+</dataflow>
+<dataflow id="46" from="ga_seq_op_reverse" to="overflow_assign_3" fromId="45" toId="11">
+</dataflow>
+<dataflow id="47" from="a" to="overflow_assign_3" fromId="21" toId="11">
+</dataflow>
+<dataflow id="48" from="a_rev" to="overflow_assign_3" fromId="8" toId="11">
+</dataflow>
+<dataflow id="49" from="overflow_assign_1" to="overflow_assign_3" fromId="10" toId="11">
+</dataflow>
+<dataflow id="50" from="ga_seq_op_reverse" to="overflow_assign_3" fromId="45" toId="12">
+</dataflow>
+<dataflow id="51" from="a" to="overflow_assign_3" fromId="21" toId="12">
+</dataflow>
+<dataflow id="52" from="a_rev" to="overflow_assign_3" fromId="8" toId="12">
+</dataflow>
+<dataflow id="53" from="overflow_assign_1" to="overflow_assign_3" fromId="10" toId="12">
+</dataflow>
+<dataflow id="54" from="compute_gp_seq_core" to="overflow" fromId="28" toId="13">
+</dataflow>
+<dataflow id="55" from="t" to="overflow" fromId="7" toId="13">
+</dataflow>
+<dataflow id="56" from="a_rev" to="overflow" fromId="8" toId="13">
+</dataflow>
+<dataflow id="57" from="c" to="overflow" fromId="23" toId="13">
+</dataflow>
+<dataflow id="58" from="StgValue_33" to="overflow" fromId="33" toId="13">
+</dataflow>
+<dataflow id="59" from="overflow_assign_3" to="overflow" fromId="12" toId="13">
+</dataflow>
+<dataflow id="60" from="BASIS_MASKS" to="overflow" fromId="24" toId="13">
+</dataflow>
+<dataflow id="61" from="compute_gp_seq_core" to="overflow" fromId="28" toId="14">
+</dataflow>
+<dataflow id="62" from="t" to="overflow" fromId="7" toId="14">
+</dataflow>
+<dataflow id="63" from="a_rev" to="overflow" fromId="8" toId="14">
+</dataflow>
+<dataflow id="64" from="c" to="overflow" fromId="23" toId="14">
+</dataflow>
+<dataflow id="65" from="StgValue_33" to="overflow" fromId="33" toId="14">
+</dataflow>
+<dataflow id="66" from="overflow_assign_3" to="overflow" fromId="12" toId="14">
+</dataflow>
+<dataflow id="67" from="BASIS_MASKS" to="overflow" fromId="24" toId="14">
+</dataflow>
+<dataflow id="68" from="overflow" to="ret_ln246" fromId="14" toId="15">
+</dataflow>
+</dataflows>
+
+
+</stg>

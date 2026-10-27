@@ -1,0 +1,80 @@
+name: "object3d"
+description: "GA-Driven Virtual 3D Object Manipulation Profile"
+enabled: true
+
+settings:
+  min_confidence: 0.65
+  rotation_speed: 1.0
+  translation_gain: 1.5
+  zoom_gain: 0.08
+
+mappings:
+  INDEX_POINT:
+    command: "OBJECT_POINT_SELECT"
+    description: "Ray-cast point and select virtual 3D vertex/face"
+    enabled: true
+    requires_confirmation: false
+    cooldown_ms: 0
+
+  PINCH:
+    command: "OBJECT_GRAB"
+    description: "Grab object at cursor position"
+    enabled: true
+    requires_confirmation: false
+    cooldown_ms: 150
+
+  PINCH_HOLD:
+    command: "OBJECT_TRANSLATE"
+    description: "Translate object position in 3D coordinate space"
+    enabled: true
+    requires_confirmation: false
+    cooldown_ms: 0
+
+  ROTATE_CLOCKWISE:
+    command: "OBJECT_ROTATE_CW"
+    description: "Rotate object via GA Rotor R = exp(-theta/2 B) and sandwich product R v ~R"
+    enabled: true
+    requires_confirmation: false
+    cooldown_ms: 100
+
+  ROTATE_COUNTERCLOCKWISE:
+    command: "OBJECT_ROTATE_CCW"
+    description: "Rotate object via inverse GA Rotor ~R v R"
+    enabled: true
+    requires_confirmation: false
+    cooldown_ms: 100
+
+  HAND_APPROACH:
+    command: "OBJECT_ZOOM_IN"
+    description: "Dilate object scale (zoom in)"
+    enabled: true
+    requires_confirmation: false
+    cooldown_ms: 150
+
+  HAND_RETRACT:
+    command: "OBJECT_ZOOM_OUT"
+    description: "Contract object scale (zoom out)"
+    enabled: true
+    requires_confirmation: false
+    cooldown_ms: 150
+
+  SWIPE_LEFT:
+    command: "OBJECT_PAN_LEFT"
+    description: "Pan virtual object leftward in viewport"
+    enabled: true
+    requires_confirmation: false
+    cooldown_ms: 300
+
+  SWIPE_RIGHT:
+    command: "OBJECT_PAN_RIGHT"
+    description: "Pan virtual object rightward in viewport"
+    enabled: true
+    requires_confirmation: false
+    cooldown_ms: 300
+
+  FIST:
+    command: "OBJECT_RESET"
+    description: "Reset virtual object orientation, position, and scale"
+    enabled: true
+    requires_confirmation: false
+    cooldown_ms: 800

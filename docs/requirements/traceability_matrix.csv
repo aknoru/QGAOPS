@@ -1,0 +1,17 @@
+id,source,requirement,planned_artifact,acceptance_criterion,status
+FR-01,master prompt,Define Cl(3,0) with fixed basis order,docs/mathematics/cl30_specification.md,Order and metric are explicit,complete
+FR-02,master prompt,Specify required GA operations,docs/mathematics/product_conventions.md,Definitions and conventions are testable,complete
+FR-03,master prompt,Specify signed 32-bit Q16.16 behavior,docs/mathematics/fixed_point_specification.md,Encoding and overflow policy are explicit,complete
+FR-04,master prompt,Separate software reference and hardware,docs/architecture/system_architecture.md,Distinct future components shown,complete
+FR-05,master prompt,Compare resource-shared and adaptive variants,docs/architecture/implementation_variants.md,Same contract and fair comparison stated,complete
+FR-06,master prompt,Provide future PS/PL interfaces,docs/architecture/hardware_transaction_flow.md,Control/data/status path documented,complete
+FR-07,master prompt,Do not fabricate measurements,docs/research/citation_audit.md,Published and proposed evidence separated,complete
+SRC-01,workspace,Review supplied PDFs,references/paper_manifest.csv,All nine files listed with provenance,complete
+SRC-02,workspace,Named project requirement documents absent,docs/planning/decisions_log.md,Absence recorded as dependency,complete
+FR-08,Stage 4 prompt,Implement independent floating and fixed-point reference models,software/reference_model/,All required operations and fixed-point tests pass,complete
+FR-09,Stages 5-9 prompt,Validate arithmetic boundaries and accumulator proposal,docs/verification/accumulator_width_analysis.md,Bounded width justified and tests pass,complete
+FR-10,Stages 5-9 prompt,Generate reproducible CPU workloads and observations,software/benchmarks/,Seeded workloads and schema-valid results,complete
+FR-11,Stages 5-9 prompt,Run software-only gesture fixture,software/gesture_pipeline/,Fixture loads and classifier smoke test passes,complete
+FR-12,Stages 5-9 prompt,Provide software-only dashboard,software/dashboard/,Backend serves actual stored results and hardware is marked absent,complete
+FR-13,Stages 5-9 prompt,Define proposed hardware contract,docs/architecture/hardware_interface_specification.md,Serialization and interface tests pass,complete
+FR-14,Stages 5-9 prompt,Provide deterministic software-only end-to-end artifacts,docs/verification/stage5_9_acceptance_report.md,Combined acceptance evidence recorded,complete

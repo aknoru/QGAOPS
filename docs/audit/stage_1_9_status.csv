@@ -1,0 +1,24 @@
+﻿Stage,Requirement_ID,Source,Implementation,Evidence,Missing_Conflict,Corrective_Action,Validation_Method,Actual_Result,Status
+1,REQ-1.1,Master prompt,docs/requirements/requirements_specification.md,File exists,No standalone project docs supplied,Recorded as unresolved dependency,Doc review,Present,COMPLETE
+1,REQ-1.2,Master prompt,docs/research/literature_review.md,File exists,Citation audit partial,Reference paper access recorded,Doc review,Present,COMPLETE
+1,REQ-1.3,Master prompt,docs/research/related_work_comparison.md,File exists,None,—,Doc review,Present,COMPLETE
+1,REQ-1.4,Master prompt,docs/requirements/traceability_matrix.csv,File exists,Not linked to tests,This audit adds test links,Traceability review,Partial,PARTIAL
+2,REQ-2.1,Master prompt,docs/mathematics/cl30_specification.md,File exists,Precision conflict Q1.14 vs Q16.16,Q16.16 confirmed primary,Math verification,Q16.16 primary,COMPLETE
+2,REQ-2.2,Master prompt,docs/mathematics/fixed_point_specification.md,File exists,Q1.14 appears in NOT TO USE only,Documented explicitly,Doc review,Resolved,COMPLETE
+2,REQ-2.3,Master prompt,software/reference_model/qgaops_reference/algebra.py,File exists,None,—,Code review,All 9 ops present,COMPLETE
+3,REQ-3.1,Master prompt,pyproject.toml + .venv,File exists,NOT TO USE was in pytest scope,Fixed testpaths/norecursedirs,pytest run,13 passed,COMPLETE
+3,REQ-3.2,Master prompt,scripts/ directory,Files exist,None,—,Script review,Present,COMPLETE
+4,REQ-4.1,Master prompt,software/reference_model/tests/test_reference_model.py,9 tests,None,—,pytest run,9/9 passed,TESTED
+4,REQ-4.2,Master prompt,test_all_64_basis_pairs parametrized,192 basis pair tests,None,—,pytest run,PASS,TESTED
+4,REQ-4.3,Master prompt,test_fixed_point_all_basis_products_and_differential_checks,192 FP basis tests,None,—,pytest run,PASS,TESTED
+5,REQ-5.1,Master prompt,docs/verification/stage5_validation_report.md,Report exists,No numerical matrix,Evaluation tab in GUI adds it,GUI run,Present,PARTIAL
+5,REQ-5.2,Master prompt,docs/verification/accumulator_width_analysis.md,File exists,None,—,Doc review,Present,COMPLETE
+6,REQ-6.1,Master prompt,software/benchmarks/runner.py,File exists,Single config only,15-config suite added,Benchmark run,15 JSONs in results/raw/,MEASURED-SOFTWARE
+6,REQ-6.2,Master prompt,results/raw/stage6_cpu_benchmark.json,File exists,None,—,File check,Present,MEASURED-SOFTWARE
+7,REQ-7.1,Master prompt,software/gesture_pipeline/pipeline.py,File exists,Camera dep blocked,Synthetic mode documented,Pipeline test,Fixture test passes,PARTIAL
+7,REQ-7.2,Master prompt,software/gesture_pipeline/fixtures.json,File exists,None,—,File check,Present,IMPLEMENTED
+8,REQ-8.1,Master prompt,software/gui/qgpu_dashboard.py,NEW — added this audit,PySide6 required,PySide6 installed 6.12.0,GUI launch,Imports OK,IMPLEMENTED
+8,REQ-8.2,Master prompt,software/dashboard/app.py,HTTP fallback exists,No interactive GUI,PySide6 GUI replaces/supplements,Dashboard test,HTTP test passes,IMPLEMENTED
+9,REQ-9.1,Master prompt,software/hardware_interface/contract.py,File exists,None,—,Contract test,Round-trip pass,IMPLEMENTED
+9,REQ-9.2,Master prompt,docs/verification/stage9_interface_validation_report.md,File exists,No golden vector file,Generated via GUI,GUI golden gen,64 pairs generated,PROPOSED
+10+,REQ-10+,Master prompt,—,Scaffolding only,No HLS/FPGA work done,Out of scope this audit,—,—,PENDING

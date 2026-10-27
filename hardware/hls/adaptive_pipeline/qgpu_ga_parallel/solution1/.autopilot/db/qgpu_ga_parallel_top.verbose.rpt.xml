@@ -1,0 +1,159 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'qgpu_ga_parallel_top'" level="0">
+<item name = "Date">Tue Oct 27 05:13:24 2026
+</item>
+<item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
+<item name = "Project">qgpu_ga_parallel</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 7.192 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">37, 142, 0.370 us, 1.420 us, 38, 143, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_qgpu_ga_engine_parallel_fu_247">qgpu_ga_engine_parallel, 36, 141, 0.360 us, 1.410 us, 36, 141, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, -, -, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">2, 128, 29393, 32194, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, 0, 86, -</column>
+<column name="Register">-, -, 793, -, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
+<specialColumn name="Utilization (%)">~0, 58, 28, 60, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="control_s_axi_U">control_s_axi, 0, 0, 1024, 1704, 0</column>
+<column name="grp_qgpu_ga_engine_parallel_fu_247">qgpu_ga_engine_parallel, 2, 128, 28369, 30490, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">14, 3, 1, 3</column>
+<column name="c_0">9, 2, 32, 64</column>
+<column name="c_1">9, 2, 32, 64</column>
+<column name="c_2">9, 2, 32, 64</column>
+<column name="c_3">9, 2, 32, 64</column>
+<column name="c_4">9, 2, 32, 64</column>
+<column name="c_5">9, 2, 32, 64</column>
+<column name="c_6">9, 2, 32, 64</column>
+<column name="c_7">9, 2, 32, 64</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="a_0_read_reg_317">32, 0, 32, 0</column>
+<column name="a_1_read_reg_322">32, 0, 32, 0</column>
+<column name="a_2_read_reg_327">32, 0, 32, 0</column>
+<column name="a_3_read_reg_332">32, 0, 32, 0</column>
+<column name="a_4_read_reg_337">32, 0, 32, 0</column>
+<column name="a_5_read_reg_342">32, 0, 32, 0</column>
+<column name="a_6_read_reg_347">32, 0, 32, 0</column>
+<column name="a_7_read_reg_352">32, 0, 32, 0</column>
+<column name="ap_CS_fsm">2, 0, 2, 0</column>
+<column name="b_0_read_reg_357">32, 0, 32, 0</column>
+<column name="b_1_read_reg_362">32, 0, 32, 0</column>
+<column name="b_2_read_reg_367">32, 0, 32, 0</column>
+<column name="b_3_read_reg_372">32, 0, 32, 0</column>
+<column name="b_4_read_reg_377">32, 0, 32, 0</column>
+<column name="b_5_read_reg_382">32, 0, 32, 0</column>
+<column name="b_6_read_reg_387">32, 0, 32, 0</column>
+<column name="b_7_read_reg_392">32, 0, 32, 0</column>
+<column name="c_0_reg">32, 0, 32, 0</column>
+<column name="c_1_reg">32, 0, 32, 0</column>
+<column name="c_2_reg">32, 0, 32, 0</column>
+<column name="c_3_reg">32, 0, 32, 0</column>
+<column name="c_4_reg">32, 0, 32, 0</column>
+<column name="c_5_reg">32, 0, 32, 0</column>
+<column name="c_6_reg">32, 0, 32, 0</column>
+<column name="c_7_reg">32, 0, 32, 0</column>
+<column name="grp_qgpu_ga_engine_parallel_fu_247_ap_start_reg">1, 0, 1, 0</column>
+<column name="trunc_ln4_reg_312">22, 0, 22, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="s_axi_control_AWVALID">in, 1, s_axi, control, pointer</column>
+<column name="s_axi_control_AWREADY">out, 1, s_axi, control, pointer</column>
+<column name="s_axi_control_AWADDR">in, 9, s_axi, control, pointer</column>
+<column name="s_axi_control_WVALID">in, 1, s_axi, control, pointer</column>
+<column name="s_axi_control_WREADY">out, 1, s_axi, control, pointer</column>
+<column name="s_axi_control_WDATA">in, 32, s_axi, control, pointer</column>
+<column name="s_axi_control_WSTRB">in, 4, s_axi, control, pointer</column>
+<column name="s_axi_control_ARVALID">in, 1, s_axi, control, pointer</column>
+<column name="s_axi_control_ARREADY">out, 1, s_axi, control, pointer</column>
+<column name="s_axi_control_ARADDR">in, 9, s_axi, control, pointer</column>
+<column name="s_axi_control_RVALID">out, 1, s_axi, control, pointer</column>
+<column name="s_axi_control_RREADY">in, 1, s_axi, control, pointer</column>
+<column name="s_axi_control_RDATA">out, 32, s_axi, control, pointer</column>
+<column name="s_axi_control_RRESP">out, 2, s_axi, control, pointer</column>
+<column name="s_axi_control_BVALID">out, 1, s_axi, control, pointer</column>
+<column name="s_axi_control_BREADY">in, 1, s_axi, control, pointer</column>
+<column name="s_axi_control_BRESP">out, 2, s_axi, control, pointer</column>
+<column name="ap_clk">in, 1, ap_ctrl_hs, qgpu_ga_parallel_top, return value</column>
+<column name="ap_rst_n">in, 1, ap_ctrl_hs, qgpu_ga_parallel_top, return value</column>
+<column name="interrupt">out, 1, ap_ctrl_hs, qgpu_ga_parallel_top, return value</column>
+</table>
+</item>
+</section>
+</profile>

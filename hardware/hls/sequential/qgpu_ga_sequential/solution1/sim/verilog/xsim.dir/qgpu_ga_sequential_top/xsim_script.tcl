@@ -1,0 +1,1 @@
+xsim {qgpu_ga_sequential_top} -testplusarg UVM_VERBOSITY=UVM_NONE -testplusarg UVM_TESTNAME=qgpu_ga_sequential_top_test_lib -testplusarg UVM_TIMEOUT=20000000000000 -autoloadwcfg -tclbatch {qgpu_ga_sequential_top.tcl}

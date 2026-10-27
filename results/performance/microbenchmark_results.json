@@ -1,0 +1,58 @@
+[
+  {
+    "primitive": "GP",
+    "iterations": 20000,
+    "mean_latency_us": 15.853,
+    "p95_latency_us": 24.0,
+    "throughput_ops_s": 63079.1,
+    "classification": "[MEASURED SOFTWARE]"
+  },
+  {
+    "primitive": "WEDGE",
+    "iterations": 20000,
+    "mean_latency_us": 20.754,
+    "p95_latency_us": 31.4,
+    "throughput_ops_s": 48183.0,
+    "classification": "[MEASURED SOFTWARE]"
+  },
+  {
+    "primitive": "DOT",
+    "iterations": 20000,
+    "mean_latency_us": 12.068,
+    "p95_latency_us": 18.3,
+    "throughput_ops_s": 82865.0,
+    "classification": "[MEASURED SOFTWARE]"
+  },
+  {
+    "primitive": "NORM",
+    "iterations": 20000,
+    "mean_latency_us": 8.763,
+    "p95_latency_us": 12.8,
+    "throughput_ops_s": 114111.4,
+    "classification": "[MEASURED SOFTWARE]"
+  },
+  {
+    "primitive": "REVERSE",
+    "iterations": 20000,
+    "mean_latency_us": 11.336,
+    "p95_latency_us": 17.0,
+    "throughput_ops_s": 88215.7,
+    "classification": "[MEASURED SOFTWARE]"
+  },
+  {
+    "primitive": "ROTOR_GEN",
+    "iterations": 20000,
+    "mean_latency_us": 9.234,
+    "p95_latency_us": 14.1,
+    "throughput_ops_s": 108297.1,
+    "classification": "[MEASURED SOFTWARE]"
+  },
+  {
+    "primitive": "SANDWICH",
+    "iterations": 20000,
+    "mean_latency_us": 31.005,
+    "p95_latency_us": 47.7,
+    "throughput_ops_s": 32253.4,
+    "classification": "[MEASURED SOFTWARE]"
+  }
+]

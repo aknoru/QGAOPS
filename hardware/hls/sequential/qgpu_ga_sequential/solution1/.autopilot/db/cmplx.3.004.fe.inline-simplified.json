@@ -1,0 +1,249 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "2",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "qgpu_ga_sequential_top.cpp",
+    "fileloc": 4,
+    "instructions": 8,
+    "memory_accesses": 0,
+    "name": "qgpu_ga_sequential_top",
+    "total_instructions": 1197
+  },
+  "1": {
+    "basicblocks": 11,
+    "calls": "",
+    "control_depth": 6,
+    "def_use_depth": 9,
+    "file": "qgpu_ga_engine_shared.cpp",
+    "fileloc": 151,
+    "instructions": 37,
+    "loads": {
+      "L": 1
+    },
+    "memory_accesses": 4,
+    "name": "ga_seq_op_scalar_mul",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 37
+  },
+  "10": {
+    "basicblocks": 11,
+    "calls": "",
+    "control_depth": 3,
+    "def_use_depth": 4,
+    "file": "qgpu_ga_engine_shared.cpp",
+    "fileloc": 183,
+    "instructions": 32,
+    "loads": {
+      "G": 1,
+      "L": 1
+    },
+    "memory_accesses": 6,
+    "name": "ga_seq_op_reverse",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 32
+  },
+  "11": {
+    "basicblocks": 8,
+    "calls": "",
+    "control_depth": 3,
+    "def_use_depth": 4,
+    "file": "qgpu_ga_engine_shared.cpp",
+    "fileloc": 139,
+    "instructions": 26,
+    "loads": {
+      "L": 2
+    },
+    "memory_accesses": 5,
+    "name": "ga_seq_op_subtraction",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 26
+  },
+  "12": {
+    "basicblocks": 8,
+    "calls": "",
+    "control_depth": 3,
+    "def_use_depth": 4,
+    "file": "qgpu_ga_engine_shared.cpp",
+    "fileloc": 127,
+    "instructions": 26,
+    "loads": {
+      "L": 2
+    },
+    "memory_accesses": 5,
+    "name": "ga_seq_op_addition",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 26
+  },
+  "13": {
+    "basicblocks": 1,
+    "calls": "14 10 14",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "qgpu_ga_engine_shared.cpp",
+    "fileloc": 228,
+    "instructions": 8,
+    "memory_accesses": 0,
+    "name": "ga_seq_op_rotor_sandwich",
+    "total_instructions": 336
+  },
+  "14": {
+    "basicblocks": 41,
+    "calls": "",
+    "control_depth": 6,
+    "def_use_depth": 14,
+    "file": "qgpu_ga_engine_shared.cpp",
+    "fileloc": 29,
+    "instructions": 148,
+    "loads": {
+      "G": 5,
+      "L": 4
+    },
+    "memory_accesses": 10,
+    "name": "compute_gp_seq_core",
+    "stores": {
+      "L": 12
+    },
+    "total_instructions": 148
+  },
+  "2": {
+    "basicblocks": 23,
+    "calls": "5 13 7 6 10 3 1 11 12 4 8 9",
+    "control_depth": 0,
+    "def_use_depth": 4,
+    "file": "qgpu_ga_engine_shared.cpp",
+    "fileloc": 268,
+    "instructions": 149,
+    "loads": {
+      "G": 2,
+      "L": 7
+    },
+    "memory_accesses": 13,
+    "name": "qgpu_ga_engine_shared",
+    "stores": {
+      "G": 3,
+      "L": 9
+    },
+    "total_instructions": 1189
+  },
+  "3": {
+    "basicblocks": 10,
+    "calls": "",
+    "control_depth": 2,
+    "def_use_depth": 3,
+    "file": "qgpu_ga_engine_shared.cpp",
+    "fileloc": 164,
+    "instructions": 29,
+    "loads": {
+      "G": 1,
+      "L": 1
+    },
+    "memory_accesses": 4,
+    "name": "ga_seq_op_grade_project",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 29
+  },
+  "4": {
+    "basicblocks": 1,
+    "calls": "14",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "qgpu_ga_engine_shared.cpp",
+    "fileloc": 117,
+    "instructions": 2,
+    "memory_accesses": 0,
+    "name": "ga_seq_op_inner_product",
+    "total_instructions": 150
+  },
+  "5": {
+    "basicblocks": 11,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "qgpu_ga_engine_shared.cpp",
+    "fileloc": 248,
+    "instructions": 40,
+    "loads": {
+      "L": 1
+    },
+    "memory_accesses": 2,
+    "name": "ga_seq_op_rotor_norm",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 40
+  },
+  "6": {
+    "basicblocks": 11,
+    "calls": "",
+    "control_depth": 3,
+    "def_use_depth": 4,
+    "file": "qgpu_ga_engine_shared.cpp",
+    "fileloc": 198,
+    "instructions": 32,
+    "loads": {
+      "G": 1,
+      "L": 2
+    },
+    "memory_accesses": 7,
+    "name": "ga_seq_op_grade_involution",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 32
+  },
+  "7": {
+    "basicblocks": 11,
+    "calls": "",
+    "control_depth": 3,
+    "def_use_depth": 4,
+    "file": "qgpu_ga_engine_shared.cpp",
+    "fileloc": 213,
+    "instructions": 32,
+    "loads": {
+      "G": 1,
+      "L": 1
+    },
+    "memory_accesses": 6,
+    "name": "ga_seq_op_clifford_conjugation",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 32
+  },
+  "8": {
+    "basicblocks": 1,
+    "calls": "14",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "qgpu_ga_engine_shared.cpp",
+    "fileloc": 107,
+    "instructions": 2,
+    "memory_accesses": 0,
+    "name": "ga_seq_op_wedge_product",
+    "total_instructions": 150
+  },
+  "9": {
+    "basicblocks": 1,
+    "calls": "14",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "qgpu_ga_engine_shared.cpp",
+    "fileloc": 97,
+    "instructions": 2,
+    "memory_accesses": 0,
+    "name": "ga_seq_op_geometric_product",
+    "total_instructions": 150
+  }
+}

@@ -1,0 +1,173 @@
+
+
+================================================================
+== Vitis HLS Report for 'qgpu_ga_engine_shared_Pipeline_VITIS_LOOP_197_10'
+================================================================
+* Date:           Tue Oct 27 04:28:27 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Project:        qgpu_ga_sequential
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.912 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+-------------------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval |      Pipeline     |
+    |   min   |   max   |    min   |    max   | min | max |        Type       |
+    +---------+---------+----------+----------+-----+-----+-------------------+
+    |       12|       12|  0.120 us|  0.120 us|    0|    0|  loop pipeline stp|
+    +---------+---------+----------+----------+-----+-----+-------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +---------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                     |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name      |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +---------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_197_10  |       10|       10|         4|          1|          1|     8|       yes|
+        +---------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 4
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 4
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 4, States = { 1 2 3 4 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 4.91>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%norm_accum = alloca i32 1" [../ga_engine/src/qgpu_ga_engine_shared.cpp:196]   --->   Operation 7 'alloca' 'norm_accum' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%k = alloca i32 1" [../ga_engine/src/qgpu_ga_engine_shared.cpp:197]   --->   Operation 8 'alloca' 'k' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %a, i64 666, i64 207, i64 1, i1 0"   --->   Operation 9 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %a, void @empty_3, i32 0, i32 0, void @empty_0, i32 1, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 10 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (1.58ns)   --->   "%store_ln197 = store i4 0, i4 %k" [../ga_engine/src/qgpu_ga_engine_shared.cpp:197]   --->   Operation 11 'store' 'store_ln197' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 12 [1/1] (1.58ns)   --->   "%store_ln196 = store i67 0, i67 %norm_accum" [../ga_engine/src/qgpu_ga_engine_shared.cpp:196]   --->   Operation 12 'store' 'store_ln196' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%br_ln0 = br void %for.inc215"   --->   Operation 13 'br' 'br_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%k_4 = load i4 %k" [../ga_engine/src/qgpu_ga_engine_shared.cpp:197]   --->   Operation 14 'load' 'k_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (1.73ns)   --->   "%icmp_ln197 = icmp_eq  i4 %k_4, i4 8" [../ga_engine/src/qgpu_ga_engine_shared.cpp:197]   --->   Operation 15 'icmp' 'icmp_ln197' <Predicate = true> <Delay = 1.73> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 16 [1/1] (1.73ns)   --->   "%add_ln197 = add i4 %k_4, i4 1" [../ga_engine/src/qgpu_ga_engine_shared.cpp:197]   --->   Operation 16 'add' 'add_ln197' <Predicate = true> <Delay = 1.73> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%br_ln197 = br i1 %icmp_ln197, void %for.inc215.split, void %for.end217_ifconv.exitStub" [../ga_engine/src/qgpu_ga_engine_shared.cpp:197]   --->   Operation 17 'br' 'br_ln197' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%zext_ln197 = zext i4 %k_4" [../ga_engine/src/qgpu_ga_engine_shared.cpp:197]   --->   Operation 18 'zext' 'zext_ln197' <Predicate = (!icmp_ln197)> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%a_addr = getelementptr i32 %a, i64 0, i64 %zext_ln197" [../ga_engine/src/qgpu_ga_engine_shared.cpp:198]   --->   Operation 19 'getelementptr' 'a_addr' <Predicate = (!icmp_ln197)> <Delay = 0.00>
+ST_1 : Operation 20 [2/2] (0.00ns)   --->   "%a_load = load i3 %a_addr" [../ga_engine/src/qgpu_ga_engine_shared.cpp:198]   --->   Operation 20 'load' 'a_load' <Predicate = (!icmp_ln197)> <Delay = 0.00> <CoreInst = "RAM_1P">   --->   Core 85 'RAM_1P' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 32> <Depth = 8> <RAM>
+ST_1 : Operation 21 [1/1] (1.58ns)   --->   "%store_ln197 = store i4 %add_ln197, i4 %k" [../ga_engine/src/qgpu_ga_engine_shared.cpp:197]   --->   Operation 21 'store' 'store_ln197' <Predicate = (!icmp_ln197)> <Delay = 1.58>
+
+State 2 <SV = 1> <Delay = 6.91>
+ST_2 : Operation 22 [1/2] ( I:0.00ns O:0.00ns )   --->   "%a_load = load i3 %a_addr" [../ga_engine/src/qgpu_ga_engine_shared.cpp:198]   --->   Operation 22 'load' 'a_load' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P">   --->   Core 85 'RAM_1P' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 32> <Depth = 8> <RAM>
+ST_2 : Operation 23 [1/1] (0.00ns)   --->   "%sext_ln198 = sext i32 %a_load" [../ga_engine/src/qgpu_ga_engine_shared.cpp:198]   --->   Operation 23 'sext' 'sext_ln198' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 24 [2/2] (6.91ns)   --->   "%p = mul i64 %sext_ln198, i64 %sext_ln198" [../ga_engine/src/qgpu_ga_engine_shared.cpp:198]   --->   Operation 24 'mul' 'p' <Predicate = true> <Delay = 6.91> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 1> <II = 1> <Delay = 6.91> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 3 <SV = 2> <Delay = 6.91>
+ST_3 : Operation 25 [1/2] (6.91ns)   --->   "%p = mul i64 %sext_ln198, i64 %sext_ln198" [../ga_engine/src/qgpu_ga_engine_shared.cpp:198]   --->   Operation 25 'mul' 'p' <Predicate = true> <Delay = 6.91> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 1> <II = 1> <Delay = 6.91> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 34 [1/1] (0.00ns)   --->   "%norm_accum_load_1 = load i67 %norm_accum"   --->   Operation 34 'load' 'norm_accum_load_1' <Predicate = (icmp_ln197)> <Delay = 0.00>
+ST_3 : Operation 35 [1/1] (0.00ns)   --->   "%write_ln0 = write void @_ssdm_op_Write.ap_auto.i67P0A, i67 %norm_accum_out, i67 %norm_accum_load_1"   --->   Operation 35 'write' 'write_ln0' <Predicate = (icmp_ln197)> <Delay = 0.00>
+ST_3 : Operation 36 [1/1] (1.58ns)   --->   "%ret_ln0 = ret"   --->   Operation 36 'ret' 'ret_ln0' <Predicate = (icmp_ln197)> <Delay = 1.58>
+
+State 4 <SV = 3> <Delay = 5.19>
+ST_4 : Operation 26 [1/1] (0.00ns)   --->   "%norm_accum_load = load i67 %norm_accum" [../ga_engine/src/qgpu_ga_engine_shared.cpp:199]   --->   Operation 26 'load' 'norm_accum_load' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 27 [1/1] (0.00ns)   --->   "%specpipeline_ln196 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, i32 4294967295, void @empty_0" [../ga_engine/src/qgpu_ga_engine_shared.cpp:196]   --->   Operation 27 'specpipeline' 'specpipeline_ln196' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 28 [1/1] (0.00ns)   --->   "%speclooptripcount_ln196 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 8, i64 8, i64 8" [../ga_engine/src/qgpu_ga_engine_shared.cpp:196]   --->   Operation 28 'speclooptripcount' 'speclooptripcount_ln196' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 29 [1/1] (0.00ns)   --->   "%specloopname_ln197 = specloopname void @_ssdm_op_SpecLoopName, void @empty_21" [../ga_engine/src/qgpu_ga_engine_shared.cpp:197]   --->   Operation 29 'specloopname' 'specloopname_ln197' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 30 [1/1] (0.00ns)   --->   "%sext_ln199 = sext i64 %p" [../ga_engine/src/qgpu_ga_engine_shared.cpp:199]   --->   Operation 30 'sext' 'sext_ln199' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 31 [1/1] (3.60ns)   --->   "%norm_accum_1 = add i67 %sext_ln199, i67 %norm_accum_load" [../ga_engine/src/qgpu_ga_engine_shared.cpp:199]   --->   Operation 31 'add' 'norm_accum_1' <Predicate = true> <Delay = 3.60> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 3.60> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 32 [1/1] (1.58ns)   --->   "%store_ln196 = store i67 %norm_accum_1, i67 %norm_accum" [../ga_engine/src/qgpu_ga_engine_shared.cpp:196]   --->   Operation 32 'store' 'store_ln196' <Predicate = true> <Delay = 1.58>
+ST_4 : Operation 33 [1/1] (0.00ns)   --->   "%br_ln197 = br void %for.inc215" [../ga_engine/src/qgpu_ga_engine_shared.cpp:197]   --->   Operation 33 'br' 'br_ln197' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 4.911ns
+The critical path consists of the following:
+	'store' operation ('store_ln197', ../ga_engine/src/qgpu_ga_engine_shared.cpp:197) of constant 0 4 bit on local variable 'k', ../ga_engine/src/qgpu_ga_engine_shared.cpp:197 [7]  (1.588 ns)
+	'load' operation 4 bit ('k', ../ga_engine/src/qgpu_ga_engine_shared.cpp:197) on local variable 'k', ../ga_engine/src/qgpu_ga_engine_shared.cpp:197 [11]  (0.000 ns)
+	'add' operation 4 bit ('add_ln197', ../ga_engine/src/qgpu_ga_engine_shared.cpp:197) [13]  (1.735 ns)
+	'store' operation ('store_ln197', ../ga_engine/src/qgpu_ga_engine_shared.cpp:197) of variable 'add_ln197', ../ga_engine/src/qgpu_ga_engine_shared.cpp:197 4 bit on local variable 'k', ../ga_engine/src/qgpu_ga_engine_shared.cpp:197 [27]  (1.588 ns)
+
+ <State 2>: 6.912ns
+The critical path consists of the following:
+	'load' operation 32 bit ('a_load', ../ga_engine/src/qgpu_ga_engine_shared.cpp:198) on array 'a' [22]  (0.000 ns)
+	'mul' operation 64 bit ('p', ../ga_engine/src/qgpu_ga_engine_shared.cpp:198) [24]  (6.912 ns)
+
+ <State 3>: 6.912ns
+The critical path consists of the following:
+	'mul' operation 64 bit ('p', ../ga_engine/src/qgpu_ga_engine_shared.cpp:198) [24]  (6.912 ns)
+
+ <State 4>: 5.194ns
+The critical path consists of the following:
+	'load' operation 67 bit ('norm_accum_load', ../ga_engine/src/qgpu_ga_engine_shared.cpp:199) on local variable 'norm_accum', ../ga_engine/src/qgpu_ga_engine_shared.cpp:196 [16]  (0.000 ns)
+	'add' operation 67 bit ('norm_accum', ../ga_engine/src/qgpu_ga_engine_shared.cpp:199) [26]  (3.606 ns)
+	'store' operation ('store_ln196', ../ga_engine/src/qgpu_ga_engine_shared.cpp:196) of variable 'norm_accum', ../ga_engine/src/qgpu_ga_engine_shared.cpp:199 67 bit on local variable 'norm_accum', ../ga_engine/src/qgpu_ga_engine_shared.cpp:196 [28]  (1.588 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

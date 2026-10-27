@@ -1,0 +1,123 @@
+{
+  "timestamp": "2026-09-11 08:19:35",
+  "random_seed": 42,
+  "models": {
+    "landmark_geometry": {
+      "model_type": "random_forest",
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "inference_latency_us": 593.3,
+      "confusion_matrix": [
+        [
+          28,
+          0,
+          0
+        ],
+        [
+          0,
+          4,
+          0
+        ],
+        [
+          0,
+          0,
+          30
+        ]
+      ],
+      "labels_present": [
+        0,
+        1,
+        5
+      ],
+      "target_names": [
+        "PALM",
+        "L_GESTURE",
+        "OK"
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n        PALM       1.00      1.00      1.00        28\n   L_GESTURE       1.00      1.00      1.00         4\n          OK       1.00      1.00      1.00        30\n\n    accuracy                           1.00        62\n   macro avg       1.00      1.00      1.00        62\nweighted avg       1.00      1.00      1.00        62\n",
+      "test_samples": 62,
+      "cv_5fold_mean": 0.993,
+      "cv_5fold_std": 0.0086
+    },
+    "image_baseline": {
+      "model_type": "random_forest",
+      "accuracy": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1": 1.0,
+      "inference_latency_us": 232.08,
+      "confusion_matrix": [
+        [
+          30,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          30,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          30,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          30,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          30,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          30
+        ]
+      ],
+      "labels_present": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "target_names": [
+        "PALM",
+        "L_GESTURE",
+        "FIST",
+        "THUMB",
+        "INDEX",
+        "OK"
+      ],
+      "classification_report": "              precision    recall  f1-score   support\n\n        PALM       1.00      1.00      1.00        30\n   L_GESTURE       1.00      1.00      1.00        30\n        FIST       1.00      1.00      1.00        30\n       THUMB       1.00      1.00      1.00        30\n       INDEX       1.00      1.00      1.00        30\n          OK       1.00      1.00      1.00        30\n\n    accuracy                           1.00       180\n   macro avg       1.00      1.00      1.00       180\nweighted avg       1.00      1.00      1.00       180\n",
+      "test_samples": 180,
+      "cv_5fold_mean": 1.0,
+      "cv_5fold_std": 0.0
+    }
+  }
+}

@@ -1,0 +1,212 @@
+
+
+================================================================
+== Vitis HLS Report for 'qgpu_ga_engine_shared_Pipeline_VITIS_LOOP_113_3'
+================================================================
+* Date:           Tue Oct 27 04:28:33 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Project:        qgpu_ga_sequential
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.912 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+-------------------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval |      Pipeline     |
+    |   min   |   max   |    min   |    max   | min | max |        Type       |
+    +---------+---------+----------+----------+-----+-----+-------------------+
+    |       14|       14|  0.140 us|  0.140 us|    0|    0|  loop pipeline stp|
+    +---------+---------+----------+----------+-----+-----+-------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_113_3  |       12|       12|         6|          1|          1|     8|       yes|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 6
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 6
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 6, States = { 1 2 3 4 5 6 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 4.91>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%k_3 = alloca i32 1" [../ga_engine/src/qgpu_ga_engine_shared.cpp:113]   --->   Operation 9 'alloca' 'k_3' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%sext_ln114_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %sext_ln114"   --->   Operation 10 'read' 'sext_ln114_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%sext_ln114_cast = sext i32 %sext_ln114_read"   --->   Operation 11 'sext' 'sext_ln114_cast' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %a, i64 666, i64 207, i64 1, i1 0"   --->   Operation 12 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %c, i64 666, i64 207, i64 1, i1 0"   --->   Operation 13 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %a, void @empty_3, i32 0, i32 0, void @empty_0, i32 1, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 14 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %c, void @empty_3, i32 0, i32 0, void @empty_0, i32 1, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 15 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (1.58ns)   --->   "%store_ln113 = store i4 0, i4 %k_3" [../ga_engine/src/qgpu_ga_engine_shared.cpp:113]   --->   Operation 16 'store' 'store_ln113' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 17 [1/1] (1.58ns)   --->   "%br_ln0 = br void %for.inc36"   --->   Operation 17 'br' 'br_ln0' <Predicate = true> <Delay = 1.58>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%k = load i4 %k_3" [../ga_engine/src/qgpu_ga_engine_shared.cpp:113]   --->   Operation 18 'load' 'k' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (1.73ns)   --->   "%icmp_ln113 = icmp_eq  i4 %k, i4 8" [../ga_engine/src/qgpu_ga_engine_shared.cpp:113]   --->   Operation 19 'icmp' 'icmp_ln113' <Predicate = true> <Delay = 1.73> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 20 [1/1] (1.73ns)   --->   "%add_ln113 = add i4 %k, i4 1" [../ga_engine/src/qgpu_ga_engine_shared.cpp:113]   --->   Operation 20 'add' 'add_ln113' <Predicate = true> <Delay = 1.73> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 1.73> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%br_ln113 = br i1 %icmp_ln113, void %for.inc36.split_ifconv, void %sw.epilog.loopexit16.exitStub" [../ga_engine/src/qgpu_ga_engine_shared.cpp:113]   --->   Operation 21 'br' 'br_ln113' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "%zext_ln91 = zext i4 %k" [../ga_engine/include\hls_compat.h:91->../ga_engine/src/qgpu_ga_engine_shared.cpp:115]   --->   Operation 22 'zext' 'zext_ln91' <Predicate = (!icmp_ln113)> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%a_addr = getelementptr i32 %a, i64 0, i64 %zext_ln91" [../ga_engine/src/qgpu_ga_engine_shared.cpp:114]   --->   Operation 23 'getelementptr' 'a_addr' <Predicate = (!icmp_ln113)> <Delay = 0.00>
+ST_1 : Operation 24 [2/2] (0.00ns)   --->   "%a_load = load i3 %a_addr" [../ga_engine/src/qgpu_ga_engine_shared.cpp:114]   --->   Operation 24 'load' 'a_load' <Predicate = (!icmp_ln113)> <Delay = 0.00> <CoreInst = "RAM_1P">   --->   Core 85 'RAM_1P' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 32> <Depth = 8> <RAM>
+ST_1 : Operation 25 [1/1] (1.58ns)   --->   "%store_ln113 = store i4 %add_ln113, i4 %k_3" [../ga_engine/src/qgpu_ga_engine_shared.cpp:113]   --->   Operation 25 'store' 'store_ln113' <Predicate = (!icmp_ln113)> <Delay = 1.58>
+
+State 2 <SV = 1> <Delay = 6.91>
+ST_2 : Operation 26 [1/2] ( I:0.00ns O:0.00ns )   --->   "%a_load = load i3 %a_addr" [../ga_engine/src/qgpu_ga_engine_shared.cpp:114]   --->   Operation 26 'load' 'a_load' <Predicate = (!icmp_ln113)> <Delay = 0.00> <CoreInst = "RAM_1P">   --->   Core 85 'RAM_1P' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 32> <Depth = 8> <RAM>
+ST_2 : Operation 27 [1/1] (0.00ns)   --->   "%sext_ln114_1 = sext i32 %a_load" [../ga_engine/src/qgpu_ga_engine_shared.cpp:114]   --->   Operation 27 'sext' 'sext_ln114_1' <Predicate = (!icmp_ln113)> <Delay = 0.00>
+ST_2 : Operation 28 [2/2] (6.91ns)   --->   "%p = mul i64 %sext_ln114_1, i64 %sext_ln114_cast" [../ga_engine/src/qgpu_ga_engine_shared.cpp:114]   --->   Operation 28 'mul' 'p' <Predicate = (!icmp_ln113)> <Delay = 6.91> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 1> <II = 1> <Delay = 6.91> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 3 <SV = 2> <Delay = 6.91>
+ST_3 : Operation 29 [1/2] (6.91ns)   --->   "%p = mul i64 %sext_ln114_1, i64 %sext_ln114_cast" [../ga_engine/src/qgpu_ga_engine_shared.cpp:114]   --->   Operation 29 'mul' 'p' <Predicate = (!icmp_ln113)> <Delay = 6.91> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 1> <II = 1> <Delay = 6.91> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 30 [1/1] (0.00ns)   --->   "%r = trunc i64 %p" [../ga_engine/include\hls_compat.h:70->../ga_engine/src/qgpu_ga_engine_shared.cpp:115]   --->   Operation 30 'trunc' 'r' <Predicate = (!icmp_ln113)> <Delay = 0.00>
+ST_3 : Operation 31 [1/1] (0.00ns)   --->   "%q = partselect i48 @_ssdm_op_PartSelect.i48.i64.i32.i32, i64 %p, i32 16, i32 63" [../ga_engine/include\hls_compat.h:70->../ga_engine/src/qgpu_ga_engine_shared.cpp:115]   --->   Operation 31 'partselect' 'q' <Predicate = (!icmp_ln113)> <Delay = 0.00>
+ST_3 : Operation 32 [1/1] (0.00ns)   --->   "%tmp = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %p, i32 16" [../ga_engine/include\hls_compat.h:70->../ga_engine/src/qgpu_ga_engine_shared.cpp:115]   --->   Operation 32 'bitselect' 'tmp' <Predicate = (!icmp_ln113)> <Delay = 0.00>
+ST_3 : Operation 33 [1/1] (0.00ns)   --->   "%tmp_4 = bitselect i1 @_ssdm_op_BitSelect.i1.i64.i32, i64 %p, i32 15" [../ga_engine/include\hls_compat.h:74->../ga_engine/src/qgpu_ga_engine_shared.cpp:115]   --->   Operation 33 'bitselect' 'tmp_4' <Predicate = (!icmp_ln113)> <Delay = 0.00>
+
+State 4 <SV = 3> <Delay = 3.10>
+ST_4 : Operation 34 [1/1] (0.00ns)   --->   "%sext_ln70 = sext i48 %q" [../ga_engine/include\hls_compat.h:70->../ga_engine/src/qgpu_ga_engine_shared.cpp:115]   --->   Operation 34 'sext' 'sext_ln70' <Predicate = (!icmp_ln113)> <Delay = 0.00>
+ST_4 : Operation 35 [1/1] (2.07ns)   --->   "%icmp_ln76 = icmp_ugt  i16 %r, i16 32768" [../ga_engine/include\hls_compat.h:76->../ga_engine/src/qgpu_ga_engine_shared.cpp:115]   --->   Operation 35 'icmp' 'icmp_ln76' <Predicate = (!icmp_ln113)> <Delay = 2.07> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 36 [1/1] (3.10ns)   --->   "%add_ln77 = add i49 %sext_ln70, i49 1" [../ga_engine/include\hls_compat.h:77->../ga_engine/src/qgpu_ga_engine_shared.cpp:115]   --->   Operation 36 'add' 'add_ln77' <Predicate = (!icmp_ln113)> <Delay = 3.10> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 3.10> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+
+State 5 <SV = 4> <Delay = 6.67>
+ST_5 : Operation 37 [1/1] (0.00ns)   --->   "%overflow_2 = phi i1 0, void %newFuncRoot, i1 %empty, void %for.inc36.split_ifconv" [../ga_engine/include\hls_compat.h:90->../ga_engine/src/qgpu_ga_engine_shared.cpp:115]   --->   Operation 37 'phi' 'overflow_2' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 38 [1/1] (0.97ns)   --->   "%xor_ln74 = xor i1 %tmp_4, i1 1" [../ga_engine/include\hls_compat.h:74->../ga_engine/src/qgpu_ga_engine_shared.cpp:115]   --->   Operation 38 'xor' 'xor_ln74' <Predicate = (!icmp_ln113)> <Delay = 0.97> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 39 [1/1] (0.96ns)   --->   "%rounded_1 = select i1 %tmp, i49 %add_ln77, i49 %sext_ln70" [../ga_engine/include\hls_compat.h:82->../ga_engine/src/qgpu_ga_engine_shared.cpp:115]   --->   Operation 39 'select' 'rounded_1' <Predicate = (!icmp_ln113)> <Delay = 0.96> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.96> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_5 : Operation 40 [1/1] (0.97ns)   --->   "%and_ln76 = and i1 %icmp_ln76, i1 %tmp_4" [../ga_engine/include\hls_compat.h:76->../ga_engine/src/qgpu_ga_engine_shared.cpp:115]   --->   Operation 40 'and' 'and_ln76' <Predicate = (!icmp_ln113)> <Delay = 0.97> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 41 [1/1] (0.00ns)   --->   "%sel_tmp2 = bitconcatenate i2 @_ssdm_op_BitConcatenate.i2.i1.i1, i1 %xor_ln74, i1 %and_ln76" [../ga_engine/include\hls_compat.h:74->../ga_engine/src/qgpu_ga_engine_shared.cpp:115]   --->   Operation 41 'bitconcatenate' 'sel_tmp2' <Predicate = (!icmp_ln113)> <Delay = 0.00>
+ST_5 : Operation 42 [1/1] (1.58ns)   --->   "%rounded_2 = sparsemux i49 @_ssdm_op_SparseMux.ap_auto.3i49.i49.i2, i2 2, i49 %sext_ln70, i2 1, i49 %add_ln77, i2 0, i49 %rounded_1, i49 0, i2 %sel_tmp2" [../ga_engine/include\hls_compat.h:70->../ga_engine/src/qgpu_ga_engine_shared.cpp:115]   --->   Operation 42 'sparsemux' 'rounded_2' <Predicate = (!icmp_ln113)> <Delay = 1.58> <CoreInst = "OneHotSparseMux_HasDef">   --->   Core 140 'OneHotSparseMux_HasDef' <Latency = 0> <II = 1> <Delay = 1.58> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 43 [1/1] (0.00ns)   --->   "%tmp_5 = partselect i18 @_ssdm_op_PartSelect.i18.i49.i32.i32, i49 %rounded_2, i32 31, i32 48" [../ga_engine/include\hls_compat.h:90->../ga_engine/src/qgpu_ga_engine_shared.cpp:115]   --->   Operation 43 'partselect' 'tmp_5' <Predicate = (!icmp_ln113)> <Delay = 0.00>
+ST_5 : Operation 44 [1/1] (2.13ns)   --->   "%icmp_ln90 = icmp_sgt  i18 %tmp_5, i18 0" [../ga_engine/include\hls_compat.h:90->../ga_engine/src/qgpu_ga_engine_shared.cpp:115]   --->   Operation 44 'icmp' 'icmp_ln90' <Predicate = (!icmp_ln113)> <Delay = 2.13> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.13> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 45 [1/1] (3.13ns)   --->   "%icmp_ln93 = icmp_slt  i49 %rounded_2, i49 562947805937664" [../ga_engine/include\hls_compat.h:93->../ga_engine/src/qgpu_ga_engine_shared.cpp:115]   --->   Operation 45 'icmp' 'icmp_ln93' <Predicate = (!icmp_ln113)> <Delay = 3.13> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 3.13> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 46 [1/1] (0.00ns) (grouped into LUT with out node retval_0_i225)   --->   "%trunc_ln97 = trunc i49 %rounded_2" [../ga_engine/include\hls_compat.h:97->../ga_engine/src/qgpu_ga_engine_shared.cpp:115]   --->   Operation 46 'trunc' 'trunc_ln97' <Predicate = (!icmp_ln113)> <Delay = 0.00>
+ST_5 : Operation 47 [1/1] (0.00ns) (grouped into LUT with out node empty)   --->   "%or_ln93 = or i1 %icmp_ln93, i1 %overflow_2" [../ga_engine/include\hls_compat.h:93->../ga_engine/src/qgpu_ga_engine_shared.cpp:115]   --->   Operation 47 'or' 'or_ln93' <Predicate = (!icmp_ln113)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 48 [1/1] (0.97ns) (out node of the LUT)   --->   "%empty = or i1 %icmp_ln90, i1 %or_ln93" [../ga_engine/include\hls_compat.h:90->../ga_engine/src/qgpu_ga_engine_shared.cpp:115]   --->   Operation 48 'or' 'empty' <Predicate = (!icmp_ln113)> <Delay = 0.97> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 49 [1/1] (0.00ns) (grouped into LUT with out node retval_0_i225)   --->   "%select_ln93 = select i1 %icmp_ln90, i32 2147483647, i32 2147483648" [../ga_engine/include\hls_compat.h:90->../ga_engine/src/qgpu_ga_engine_shared.cpp:115]   --->   Operation 49 'select' 'select_ln93' <Predicate = (!icmp_ln113)> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_5 : Operation 50 [1/1] (0.00ns) (grouped into LUT with out node retval_0_i225)   --->   "%empty_50 = or i1 %icmp_ln90, i1 %icmp_ln93" [../ga_engine/include\hls_compat.h:90->../ga_engine/src/qgpu_ga_engine_shared.cpp:115]   --->   Operation 50 'or' 'empty_50' <Predicate = (!icmp_ln113)> <Delay = 0.00> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 51 [1/1] (0.97ns) (out node of the LUT)   --->   "%retval_0_i225 = select i1 %empty_50, i32 %select_ln93, i32 %trunc_ln97" [../ga_engine/include\hls_compat.h:90->../ga_engine/src/qgpu_ga_engine_shared.cpp:115]   --->   Operation 51 'select' 'retval_0_i225' <Predicate = (!icmp_ln113)> <Delay = 0.97> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_5 : Operation 52 [1/1] (0.00ns)   --->   "%c_addr = getelementptr i32 %c, i64 0, i64 %zext_ln91" [../ga_engine/src/qgpu_ga_engine_shared.cpp:115]   --->   Operation 52 'getelementptr' 'c_addr' <Predicate = (!icmp_ln113)> <Delay = 0.00>
+ST_5 : Operation 53 [2/2] (0.00ns)   --->   "%store_ln115 = store i32 %retval_0_i225, i3 %c_addr" [../ga_engine/src/qgpu_ga_engine_shared.cpp:115]   --->   Operation 53 'store' 'store_ln115' <Predicate = (!icmp_ln113)> <Delay = 0.00> <CoreInst = "RAM_1P">   --->   Core 85 'RAM_1P' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 32> <Depth = 8> <RAM>
+ST_5 : Operation 59 [1/1] (0.00ns)   --->   "%write_ln90 = write void @_ssdm_op_Write.ap_auto.i1P0A, i1 %overflow_2_out, i1 %overflow_2" [../ga_engine/include\hls_compat.h:90->../ga_engine/src/qgpu_ga_engine_shared.cpp:115]   --->   Operation 59 'write' 'write_ln90' <Predicate = (icmp_ln113)> <Delay = 0.00>
+ST_5 : Operation 60 [1/1] (1.58ns)   --->   "%ret_ln0 = ret"   --->   Operation 60 'ret' 'ret_ln0' <Predicate = (icmp_ln113)> <Delay = 1.58>
+
+State 6 <SV = 5> <Delay = 0.00>
+ST_6 : Operation 54 [1/1] (0.00ns)   --->   "%specpipeline_ln113 = specpipeline void @_ssdm_op_SpecPipeline, i32 4294967295, i32 0, i32 0, i32 0, i32 4294967295, void @empty_0" [../ga_engine/src/qgpu_ga_engine_shared.cpp:113]   --->   Operation 54 'specpipeline' 'specpipeline_ln113' <Predicate = (!icmp_ln113)> <Delay = 0.00>
+ST_6 : Operation 55 [1/1] (0.00ns)   --->   "%speclooptripcount_ln113 = speclooptripcount void @_ssdm_op_SpecLoopTripCount, i64 8, i64 8, i64 8" [../ga_engine/src/qgpu_ga_engine_shared.cpp:113]   --->   Operation 55 'speclooptripcount' 'speclooptripcount_ln113' <Predicate = (!icmp_ln113)> <Delay = 0.00>
+ST_6 : Operation 56 [1/1] (0.00ns)   --->   "%specloopname_ln113 = specloopname void @_ssdm_op_SpecLoopName, void @empty_13" [../ga_engine/src/qgpu_ga_engine_shared.cpp:113]   --->   Operation 56 'specloopname' 'specloopname_ln113' <Predicate = (!icmp_ln113)> <Delay = 0.00>
+ST_6 : Operation 57 [1/2] ( I:0.00ns O:0.00ns )   --->   "%store_ln115 = store i32 %retval_0_i225, i3 %c_addr" [../ga_engine/src/qgpu_ga_engine_shared.cpp:115]   --->   Operation 57 'store' 'store_ln115' <Predicate = (!icmp_ln113)> <Delay = 0.00> <CoreInst = "RAM_1P">   --->   Core 85 'RAM_1P' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 32> <Depth = 8> <RAM>
+ST_6 : Operation 58 [1/1] (0.00ns)   --->   "%br_ln113 = br void %for.inc36" [../ga_engine/src/qgpu_ga_engine_shared.cpp:113]   --->   Operation 58 'br' 'br_ln113' <Predicate = (!icmp_ln113)> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 4.911ns
+The critical path consists of the following:
+	'store' operation ('store_ln113', ../ga_engine/src/qgpu_ga_engine_shared.cpp:113) of constant 0 4 bit on local variable 'k', ../ga_engine/src/qgpu_ga_engine_shared.cpp:113 [12]  (1.588 ns)
+	'load' operation 4 bit ('k', ../ga_engine/src/qgpu_ga_engine_shared.cpp:113) on local variable 'k', ../ga_engine/src/qgpu_ga_engine_shared.cpp:113 [16]  (0.000 ns)
+	'icmp' operation 1 bit ('icmp_ln113', ../ga_engine/src/qgpu_ga_engine_shared.cpp:113) [17]  (1.735 ns)
+	'store' operation ('store_ln113', ../ga_engine/src/qgpu_ga_engine_shared.cpp:113) of variable 'add_ln113', ../ga_engine/src/qgpu_ga_engine_shared.cpp:113 4 bit on local variable 'k', ../ga_engine/src/qgpu_ga_engine_shared.cpp:113 [52]  (1.588 ns)
+
+ <State 2>: 6.912ns
+The critical path consists of the following:
+	'load' operation 32 bit ('a_load', ../ga_engine/src/qgpu_ga_engine_shared.cpp:114) on array 'a' [26]  (0.000 ns)
+	'mul' operation 64 bit ('p', ../ga_engine/src/qgpu_ga_engine_shared.cpp:114) [28]  (6.912 ns)
+
+ <State 3>: 6.912ns
+The critical path consists of the following:
+	'mul' operation 64 bit ('p', ../ga_engine/src/qgpu_ga_engine_shared.cpp:114) [28]  (6.912 ns)
+
+ <State 4>: 3.103ns
+The critical path consists of the following:
+	'add' operation 49 bit ('add_ln77', ../ga_engine/include\hls_compat.h:77->../ga_engine/src/qgpu_ga_engine_shared.cpp:115) [36]  (3.103 ns)
+
+ <State 5>: 6.675ns
+The critical path consists of the following:
+	'xor' operation 1 bit ('xor_ln74', ../ga_engine/include\hls_compat.h:74->../ga_engine/src/qgpu_ga_engine_shared.cpp:115) [34]  (0.978 ns)
+	'sparsemux' operation 49 bit ('rounded', ../ga_engine/include\hls_compat.h:70->../ga_engine/src/qgpu_ga_engine_shared.cpp:115) [40]  (1.588 ns)
+	'icmp' operation 1 bit ('icmp_ln93', ../ga_engine/include\hls_compat.h:93->../ga_engine/src/qgpu_ga_engine_shared.cpp:115) [43]  (3.131 ns)
+	'or' operation 1 bit ('or_ln93', ../ga_engine/include\hls_compat.h:93->../ga_engine/src/qgpu_ga_engine_shared.cpp:115) [45]  (0.000 ns)
+	'or' operation 1 bit ('empty', ../ga_engine/include\hls_compat.h:90->../ga_engine/src/qgpu_ga_engine_shared.cpp:115) [46]  (0.978 ns)
+
+ <State 6>: 0.000ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

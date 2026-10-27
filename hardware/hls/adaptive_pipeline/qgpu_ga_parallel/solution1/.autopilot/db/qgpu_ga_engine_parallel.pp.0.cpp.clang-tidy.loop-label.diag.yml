@@ -1,0 +1,232 @@
+---
+MainSourceFile:  'D:/QGPU/hardware/hls/adaptive_pipeline/qgpu_ga_parallel/solution1/.autopilot/db/qgpu_ga_engine_parallel.pp.0.cpp'
+Diagnostics:
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_676_1:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\ap_int_ref.h'
+      FileOffset:      676
+      Replacements:
+        - FilePath:        'D:\QGPU\hardware\hls\adaptive_pipeline\qgpu_ga_parallel\solution1\.autopilot\db\qgpu_ga_engine_parallel.pp.0.cpp'
+          Offset:          288971
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_676_1: '
+    Level:           Remark
+    BuildDirectory:  'D:\QGPU\hardware\hls\adaptive_pipeline'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_690_1:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\ap_int_ref.h'
+      FileOffset:      690
+      Replacements:
+        - FilePath:        'D:\QGPU\hardware\hls\adaptive_pipeline\qgpu_ga_parallel\solution1\.autopilot\db\qgpu_ga_engine_parallel.pp.0.cpp'
+          Offset:          289442
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_690_1: '
+    Level:           Remark
+    BuildDirectory:  'D:\QGPU\hardware\hls\adaptive_pipeline'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_704_1:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\ap_int_ref.h'
+      FileOffset:      704
+      Replacements:
+        - FilePath:        'D:\QGPU\hardware\hls\adaptive_pipeline\qgpu_ga_parallel\solution1\.autopilot\db\qgpu_ga_engine_parallel.pp.0.cpp'
+          Offset:          289914
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_704_1: '
+    Level:           Remark
+    BuildDirectory:  'D:\QGPU\hardware\hls\adaptive_pipeline'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_1251_1:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\ap_fixed_base.h'
+      FileOffset:      1251
+      Replacements:
+        - FilePath:        'D:\QGPU\hardware\hls\adaptive_pipeline\qgpu_ga_parallel\solution1\.autopilot\db\qgpu_ga_engine_parallel.pp.0.cpp'
+          Offset:          635317
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_1251_1: '
+    Level:           Remark
+    BuildDirectory:  'D:\QGPU\hardware\hls\adaptive_pipeline'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_52_1:  '
+      FilePath:        'D:\QGPU\hardware\hls\ga_engine\include\hls_compat.h'
+      FileOffset:      52
+      Replacements:
+        - FilePath:        'D:\QGPU\hardware\hls\adaptive_pipeline\qgpu_ga_parallel\solution1\.autopilot\db\qgpu_ga_engine_parallel.pp.0.cpp'
+          Offset:          2230690
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_52_1: '
+    Level:           Remark
+    BuildDirectory:  'D:\QGPU\hardware\hls\adaptive_pipeline'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_54_2:  '
+      FilePath:        'D:\QGPU\hardware\hls\ga_engine\include\hls_compat.h'
+      FileOffset:      54
+      Replacements:
+        - FilePath:        'D:\QGPU\hardware\hls\adaptive_pipeline\qgpu_ga_parallel\solution1\.autopilot\db\qgpu_ga_engine_parallel.pp.0.cpp'
+          Offset:          2230796
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_54_2: '
+    Level:           Remark
+    BuildDirectory:  'D:\QGPU\hardware\hls\adaptive_pipeline'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_41_1:  '
+      FilePath:        'D:\QGPU\hardware\hls\ga_engine\src\qgpu_ga_engine_parallel.cpp'
+      FileOffset:      41
+      Replacements:
+        - FilePath:        'D:\QGPU\hardware\hls\adaptive_pipeline\qgpu_ga_parallel\solution1\.autopilot\db\qgpu_ga_engine_parallel.pp.0.cpp'
+          Offset:          2233125
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_41_1: '
+    Level:           Remark
+    BuildDirectory:  'D:\QGPU\hardware\hls\adaptive_pipeline'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_88_2:  '
+      FilePath:        'D:\QGPU\hardware\hls\ga_engine\src\qgpu_ga_engine_parallel.cpp'
+      FileOffset:      88
+      Replacements:
+        - FilePath:        'D:\QGPU\hardware\hls\adaptive_pipeline\qgpu_ga_parallel\solution1\.autopilot\db\qgpu_ga_engine_parallel.pp.0.cpp'
+          Offset:          2234684
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_88_2: '
+    Level:           Remark
+    BuildDirectory:  'D:\QGPU\hardware\hls\adaptive_pipeline'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_148_1:  '
+      FilePath:        'D:\QGPU\hardware\hls\ga_engine\src\qgpu_ga_engine_parallel.cpp'
+      FileOffset:      148
+      Replacements:
+        - FilePath:        'D:\QGPU\hardware\hls\adaptive_pipeline\qgpu_ga_parallel\solution1\.autopilot\db\qgpu_ga_engine_parallel.pp.0.cpp'
+          Offset:          2236154
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_148_1: '
+    Level:           Remark
+    BuildDirectory:  'D:\QGPU\hardware\hls\adaptive_pipeline'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_164_1:  '
+      FilePath:        'D:\QGPU\hardware\hls\ga_engine\src\qgpu_ga_engine_parallel.cpp'
+      FileOffset:      164
+      Replacements:
+        - FilePath:        'D:\QGPU\hardware\hls\adaptive_pipeline\qgpu_ga_parallel\solution1\.autopilot\db\qgpu_ga_engine_parallel.pp.0.cpp'
+          Offset:          2236564
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_164_1: '
+    Level:           Remark
+    BuildDirectory:  'D:\QGPU\hardware\hls\adaptive_pipeline'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_179_1:  '
+      FilePath:        'D:\QGPU\hardware\hls\ga_engine\src\qgpu_ga_engine_parallel.cpp'
+      FileOffset:      179
+      Replacements:
+        - FilePath:        'D:\QGPU\hardware\hls\adaptive_pipeline\qgpu_ga_parallel\solution1\.autopilot\db\qgpu_ga_engine_parallel.pp.0.cpp'
+          Offset:          2236919
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_179_1: '
+    Level:           Remark
+    BuildDirectory:  'D:\QGPU\hardware\hls\adaptive_pipeline'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_197_1:  '
+      FilePath:        'D:\QGPU\hardware\hls\ga_engine\src\qgpu_ga_engine_parallel.cpp'
+      FileOffset:      197
+      Replacements:
+        - FilePath:        'D:\QGPU\hardware\hls\adaptive_pipeline\qgpu_ga_parallel\solution1\.autopilot\db\qgpu_ga_engine_parallel.pp.0.cpp'
+          Offset:          2237420
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_197_1: '
+    Level:           Remark
+    BuildDirectory:  'D:\QGPU\hardware\hls\adaptive_pipeline'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_202_2:  '
+      FilePath:        'D:\QGPU\hardware\hls\ga_engine\src\qgpu_ga_engine_parallel.cpp'
+      FileOffset:      202
+      Replacements:
+        - FilePath:        'D:\QGPU\hardware\hls\adaptive_pipeline\qgpu_ga_parallel\solution1\.autopilot\db\qgpu_ga_engine_parallel.pp.0.cpp'
+          Offset:          2237522
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_202_2: '
+    Level:           Remark
+    BuildDirectory:  'D:\QGPU\hardware\hls\adaptive_pipeline'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_217_1:  '
+      FilePath:        'D:\QGPU\hardware\hls\ga_engine\src\qgpu_ga_engine_parallel.cpp'
+      FileOffset:      217
+      Replacements:
+        - FilePath:        'D:\QGPU\hardware\hls\adaptive_pipeline\qgpu_ga_parallel\solution1\.autopilot\db\qgpu_ga_engine_parallel.pp.0.cpp'
+          Offset:          2237875
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_217_1: '
+    Level:           Remark
+    BuildDirectory:  'D:\QGPU\hardware\hls\adaptive_pipeline'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_235_1:  '
+      FilePath:        'D:\QGPU\hardware\hls\ga_engine\src\qgpu_ga_engine_parallel.cpp'
+      FileOffset:      235
+      Replacements:
+        - FilePath:        'D:\QGPU\hardware\hls\adaptive_pipeline\qgpu_ga_parallel\solution1\.autopilot\db\qgpu_ga_engine_parallel.pp.0.cpp'
+          Offset:          2238325
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_235_1: '
+    Level:           Remark
+    BuildDirectory:  'D:\QGPU\hardware\hls\adaptive_pipeline'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_253_1:  '
+      FilePath:        'D:\QGPU\hardware\hls\ga_engine\src\qgpu_ga_engine_parallel.cpp'
+      FileOffset:      253
+      Replacements:
+        - FilePath:        'D:\QGPU\hardware\hls\adaptive_pipeline\qgpu_ga_parallel\solution1\.autopilot\db\qgpu_ga_engine_parallel.pp.0.cpp'
+          Offset:          2238779
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_253_1: '
+    Level:           Remark
+    BuildDirectory:  'D:\QGPU\hardware\hls\adaptive_pipeline'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_297_1:  '
+      FilePath:        'D:\QGPU\hardware\hls\ga_engine\src\qgpu_ga_engine_parallel.cpp'
+      FileOffset:      297
+      Replacements:
+        - FilePath:        'D:\QGPU\hardware\hls\adaptive_pipeline\qgpu_ga_parallel\solution1\.autopilot\db\qgpu_ga_engine_parallel.pp.0.cpp'
+          Offset:          2239848
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_297_1: '
+    Level:           Remark
+    BuildDirectory:  'D:\QGPU\hardware\hls\adaptive_pipeline'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_303_2:  '
+      FilePath:        'D:\QGPU\hardware\hls\ga_engine\src\qgpu_ga_engine_parallel.cpp'
+      FileOffset:      303
+      Replacements:
+        - FilePath:        'D:\QGPU\hardware\hls\adaptive_pipeline\qgpu_ga_parallel\solution1\.autopilot\db\qgpu_ga_engine_parallel.pp.0.cpp'
+          Offset:          2240044
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_303_2: '
+    Level:           Remark
+    BuildDirectory:  'D:\QGPU\hardware\hls\adaptive_pipeline'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_414_1:  '
+      FilePath:        'D:\QGPU\hardware\hls\ga_engine\src\qgpu_ga_engine_parallel.cpp'
+      FileOffset:      414
+      Replacements:
+        - FilePath:        'D:\QGPU\hardware\hls\adaptive_pipeline\qgpu_ga_parallel\solution1\.autopilot\db\qgpu_ga_engine_parallel.pp.0.cpp'
+          Offset:          2242802
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_414_1: '
+    Level:           Remark
+    BuildDirectory:  'D:\QGPU\hardware\hls\adaptive_pipeline'
+...

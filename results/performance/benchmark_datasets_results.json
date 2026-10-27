@@ -1,0 +1,44 @@
+[
+  {
+    "dataset": "SIFT1M",
+    "dimensions": 128,
+    "query_pairs": 2000,
+    "total_multivectors": 32000,
+    "cpu_latency_ms": 1.0120868682861328,
+    "cpu_throughput_kmv_s": 31617.83934040047,
+    "arm_latency_ms": 19.686269760131836,
+    "arm_throughput_kmv_s": 1625.4984001492064,
+    "fpga_latency_ms": 8.321,
+    "fpga_throughput_kmv_s": 3845.6916236029324,
+    "fpga_speedup_vs_arm": 2.3658538348914595,
+    "fixed_point_mae": 3.996505355462432e-05
+  },
+  {
+    "dataset": "DEEP1M",
+    "dimensions": 96,
+    "query_pairs": 2000,
+    "total_multivectors": 24000,
+    "cpu_latency_ms": 0.7238388061523438,
+    "cpu_throughput_kmv_s": 33156.55335968379,
+    "arm_latency_ms": 13.747501373291016,
+    "arm_throughput_kmv_s": 1745.7717841460117,
+    "fpga_latency_ms": 6.241,
+    "fpga_throughput_kmv_s": 3845.5375741067137,
+    "fpga_speedup_vs_arm": 2.202772211711427,
+    "fixed_point_mae": 3.430381917860359e-05
+  },
+  {
+    "dataset": "GIST1M",
+    "dimensions": 960,
+    "query_pairs": 500,
+    "total_multivectors": 60000,
+    "cpu_latency_ms": 1.6644001007080078,
+    "cpu_throughput_kmv_s": 36049.024495058016,
+    "arm_latency_ms": 63.61050605773926,
+    "arm_throughput_kmv_s": 943.2404129207524,
+    "fpga_latency_ms": 15.601,
+    "fpga_throughput_kmv_s": 3845.9073136337415,
+    "fpga_speedup_vs_arm": 4.07733517452338,
+    "fixed_point_mae": 0.00011136557045392692
+  }
+]

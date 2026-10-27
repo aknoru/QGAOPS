@@ -1,0 +1,144 @@
+
+
+================================================================
+== Vitis HLS Report for 'ga_op_grade_project'
+================================================================
+* Date:           Tue Oct 27 05:13:21 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Project:        qgpu_ga_parallel
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  2.775 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        0|        0|      0 ns|      0 ns|    0|    0|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|    621|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|       -|      -|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|      -|    -|
+|Register         |        -|    -|       -|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|       0|    621|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|       0|      1|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------------------+----------+----+---+----+------------+------------+
+    |        Variable Name        | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------------------+----------+----+---+----+------------+------------+
+    |icmp_ln195_fu_106_p2         |      icmp|   0|  0|  17|          14|           1|
+    |icmp_ln204_1_fu_126_p2       |      icmp|   0|  0|  23|          16|           1|
+    |icmp_ln204_2_fu_156_p2       |      icmp|   0|  0|  23|          16|           2|
+    |icmp_ln204_3_fu_186_p2       |      icmp|   0|  0|  23|          16|           2|
+    |icmp_ln204_fu_112_p2         |      icmp|   0|  0|  23|          16|           1|
+    |c_write_assign_14_fu_224_p3  |    select|   0|  0|  32|           1|           1|
+    |c_write_assign_15_fu_216_p3  |    select|   0|  0|  32|           1|           1|
+    |c_write_assign_16_fu_208_p3  |    select|   0|  0|  32|           1|           1|
+    |c_write_assign_17_fu_200_p3  |    select|   0|  0|  32|           1|           1|
+    |c_write_assign_18_fu_244_p3  |    select|   0|  0|  32|           1|           1|
+    |c_write_assign_19_fu_252_p3  |    select|   0|  0|  32|           1|           1|
+    |c_write_assign_20_fu_260_p3  |    select|   0|  0|  32|           1|           1|
+    |c_write_assign_fu_236_p3     |    select|   0|  0|  32|           1|           1|
+    |select_ln204_1_fu_132_p3     |    select|   0|  0|  32|           1|          32|
+    |select_ln204_2_fu_140_p3     |    select|   0|  0|  32|           1|          32|
+    |select_ln204_3_fu_148_p3     |    select|   0|  0|  32|           1|          32|
+    |select_ln204_4_fu_162_p3     |    select|   0|  0|  32|           1|          32|
+    |select_ln204_5_fu_170_p3     |    select|   0|  0|  32|           1|          32|
+    |select_ln204_6_fu_178_p3     |    select|   0|  0|  32|           1|          32|
+    |select_ln204_7_fu_192_p3     |    select|   0|  0|  32|           1|          32|
+    |select_ln204_fu_118_p3       |    select|   0|  0|  32|           1|          32|
+    +-----------------------------+----------+----+---+----+------------+------------+
+    |Total                        |          |   0|  0| 621|          94|         271|
+    +-----------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------+-----+-----+------------+---------------------+--------------+
+|   RTL Ports  | Dir | Bits|  Protocol  |    Source Object    |    C Type    |
++--------------+-----+-----+------------+---------------------+--------------+
+|ap_ready      |  out|    1|  ap_ctrl_hs|  ga_op_grade_project|  return value|
+|ap_return_0   |  out|   32|  ap_ctrl_hs|  ga_op_grade_project|  return value|
+|ap_return_1   |  out|   32|  ap_ctrl_hs|  ga_op_grade_project|  return value|
+|ap_return_2   |  out|   32|  ap_ctrl_hs|  ga_op_grade_project|  return value|
+|ap_return_3   |  out|   32|  ap_ctrl_hs|  ga_op_grade_project|  return value|
+|ap_return_4   |  out|   32|  ap_ctrl_hs|  ga_op_grade_project|  return value|
+|ap_return_5   |  out|   32|  ap_ctrl_hs|  ga_op_grade_project|  return value|
+|ap_return_6   |  out|   32|  ap_ctrl_hs|  ga_op_grade_project|  return value|
+|ap_return_7   |  out|   32|  ap_ctrl_hs|  ga_op_grade_project|  return value|
+|ap_return_8   |  out|   32|  ap_ctrl_hs|  ga_op_grade_project|  return value|
+|ap_rst        |   in|    1|  ap_ctrl_hs|  ga_op_grade_project|  return value|
+|a_0_val       |   in|   32|     ap_none|              a_0_val|        scalar|
+|a_1_val       |   in|   32|     ap_none|              a_1_val|        scalar|
+|a_2_val       |   in|   32|     ap_none|              a_2_val|        scalar|
+|a_3_val       |   in|   32|     ap_none|              a_3_val|        scalar|
+|a_4_val       |   in|   32|     ap_none|              a_4_val|        scalar|
+|a_5_val       |   in|   32|     ap_none|              a_5_val|        scalar|
+|a_6_val       |   in|   32|     ap_none|              a_6_val|        scalar|
+|a_7_val       |   in|   32|     ap_none|              a_7_val|        scalar|
+|target_grade  |   in|   16|     ap_none|         target_grade|        scalar|
++--------------+-----+-----+------------+---------------------+--------------+
+

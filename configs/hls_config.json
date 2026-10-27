@@ -1,0 +1,61 @@
+{
+  "project_name": "qgpu_ga_hls",
+  "top_function": "qgpu_ga_engine",
+  "target": {
+    "board": "PYNQ-Z2",
+    "part": "xc7z020clg400-1",
+    "clock_period_ns": 10.0,
+    "clock_uncertainty_ns": 1.25,
+    "flow_target": "vivado"
+  },
+  "interface": {
+    "protocol": "s_axilite",
+    "bundle_name": "control",
+    "base_address": "0x43C00000",
+    "registers": {
+      "control": "0x00",
+      "opcode": "0x10",
+      "status": "0x18",
+      "arch_variant": "0x1C",
+      "operand_a": "0x20",
+      "operand_b": "0x40",
+      "result_c": "0x60"
+    }
+  },
+  "arithmetic": {
+    "algebra": "Cl(3,0)",
+    "coefficients": 8,
+    "format": "Q16.16",
+    "operand_width": 32,
+    "product_width": 64,
+    "accumulator_width": 67,
+    "addition_width": 33,
+    "rounding_mode": "round_to_nearest_even",
+    "saturation": true
+  },
+  "variants": [
+    {
+      "id": 0,
+      "name": "resource_shared",
+      "source": "hardware/hls/ga_engine/src/qgpu_ga_engine_shared.cpp",
+      "estimated_latency_cycles": 68,
+      "initiation_interval": 64,
+      "dsp_usage": 4
+    },
+    {
+      "id": 1,
+      "name": "parallel_pipelined",
+      "source": "hardware/hls/ga_engine/src/qgpu_ga_engine_parallel.cpp",
+      "estimated_latency_cycles": 3,
+      "initiation_interval": 1,
+      "dsp_usage": 64
+    }
+  ],
+  "verification": {
+    "testbench_source": "hardware/hls/ga_engine/tb/tb_qgpu_ga_engine.cpp",
+    "golden_vectors_csv": "hardware/hls/ga_engine/vectors/golden_vectors.csv",
+    "golden_vectors_json": "hardware/hls/ga_engine/vectors/golden_vectors.json",
+    "total_golden_vectors": 271,
+    "host_cpp_verification": "PASS_100_PERCENT"
+  }
+}

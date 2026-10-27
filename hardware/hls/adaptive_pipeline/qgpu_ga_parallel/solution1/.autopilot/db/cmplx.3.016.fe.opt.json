@@ -1,0 +1,266 @@
+{
+  "0": {
+    "basicblocks": 1,
+    "calls": "11",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "qgpu_ga_parallel_top.cpp",
+    "fileloc": 4,
+    "instructions": 98,
+    "loads": {
+      "T": 16
+    },
+    "memory_accesses": 0,
+    "name": "qgpu_ga_parallel_top",
+    "total_instructions": 6413
+  },
+  "1": {
+    "basicblocks": 1,
+    "calls": "5",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "qgpu_ga_engine_parallel.cpp",
+    "fileloc": 125,
+    "instructions": 3,
+    "memory_accesses": 0,
+    "name": "ga_op_inner_product",
+    "total_instructions": 1049
+  },
+  "10": {
+    "basicblocks": 21,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "qgpu_ga_engine_parallel.cpp",
+    "fileloc": 227,
+    "instructions": 62,
+    "memory_accesses": 0,
+    "name": "ga_op_grade_involution",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 62
+  },
+  "11": {
+    "basicblocks": 41,
+    "calls": "9 7 4 10 12 15 17 8 3 1 14 2",
+    "control_depth": 2,
+    "def_use_depth": 3,
+    "file": "qgpu_ga_engine_parallel.cpp",
+    "fileloc": 312,
+    "instructions": 191,
+    "loads": {
+      "G": 2,
+      "L": 10
+    },
+    "memory_accesses": 14,
+    "name": "qgpu_ga_engine_parallel",
+    "stores": {
+      "G": 2,
+      "L": 28
+    },
+    "total_instructions": 6315
+  },
+  "12": {
+    "basicblocks": 21,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "qgpu_ga_engine_parallel.cpp",
+    "fileloc": 209,
+    "instructions": 62,
+    "memory_accesses": 0,
+    "name": "ga_op_reverse",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 62
+  },
+  "13": {
+    "basicblocks": 10,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "hls_compat.h",
+    "fileloc": 35,
+    "instructions": 12,
+    "memory_accesses": 0,
+    "name": "mask_to_index",
+    "total_instructions": 12
+  },
+  "14": {
+    "basicblocks": 1,
+    "calls": "5",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "qgpu_ga_engine_parallel.cpp",
+    "fileloc": 112,
+    "instructions": 3,
+    "memory_accesses": 0,
+    "name": "ga_op_wedge_product",
+    "total_instructions": 1049
+  },
+  "15": {
+    "basicblocks": 4,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 2,
+    "file": "qgpu_ga_engine_parallel.cpp",
+    "fileloc": 186,
+    "instructions": 35,
+    "memory_accesses": 0,
+    "name": "ga_op_grade_project",
+    "stores": {
+      "L": 14
+    },
+    "total_instructions": 35
+  },
+  "16": {
+    "basicblocks": 9,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 2,
+    "file": "hls_compat.h",
+    "fileloc": 68,
+    "instructions": 24,
+    "memory_accesses": 0,
+    "name": "rescale_and_saturate",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 24
+  },
+  "17": {
+    "basicblocks": 1,
+    "calls": "16 16 16 16 16 16 16 16",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "qgpu_ga_engine_parallel.cpp",
+    "fileloc": 170,
+    "instructions": 43,
+    "memory_accesses": 0,
+    "name": "ga_op_scalar_mul",
+    "stores": {
+      "L": 8
+    },
+    "total_instructions": 235
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "5",
+    "control_depth": 0,
+    "def_use_depth": 0,
+    "file": "qgpu_ga_engine_parallel.cpp",
+    "fileloc": 99,
+    "instructions": 3,
+    "memory_accesses": 0,
+    "name": "ga_op_geometric_product",
+    "total_instructions": 1049
+  },
+  "3": {
+    "basicblocks": 41,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "qgpu_ga_engine_parallel.cpp",
+    "fileloc": 138,
+    "instructions": 122,
+    "memory_accesses": 0,
+    "name": "ga_op_addition",
+    "stores": {
+      "L": 24
+    },
+    "total_instructions": 122
+  },
+  "4": {
+    "basicblocks": 31,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "qgpu_ga_engine_parallel.cpp",
+    "fileloc": 245,
+    "instructions": 88,
+    "memory_accesses": 0,
+    "name": "ga_op_clifford_conjugation",
+    "stores": {
+      "L": 20
+    },
+    "total_instructions": 88
+  },
+  "5": {
+    "basicblocks": 116,
+    "calls": "13 6 13 6 13 6 13 6 13 6 13 6 13 6 13 6 13 13 13 13 13 13 13 13 16 16 16 16 16 16 16 16",
+    "control_depth": 6,
+    "def_use_depth": 7,
+    "file": "qgpu_ga_engine_parallel.cpp",
+    "fileloc": 30,
+    "instructions": 478,
+    "loads": {
+      "G": 1,
+      "L": 72
+    },
+    "memory_accesses": 129,
+    "name": "compute_gp_core",
+    "stores": {
+      "L": 80
+    },
+    "total_instructions": 1046
+  },
+  "6": {
+    "basicblocks": 3,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 4,
+    "file": "hls_compat.h",
+    "fileloc": 50,
+    "instructions": 23,
+    "memory_accesses": 0,
+    "name": "blade_product_sign",
+    "total_instructions": 23
+  },
+  "7": {
+    "basicblocks": 1,
+    "calls": "5 12 5",
+    "control_depth": 0,
+    "def_use_depth": 2,
+    "file": "qgpu_ga_engine_parallel.cpp",
+    "fileloc": 263,
+    "instructions": 37,
+    "loads": {
+      "L": 16
+    },
+    "memory_accesses": 0,
+    "name": "ga_op_rotor_sandwich",
+    "total_instructions": 2191
+  },
+  "8": {
+    "basicblocks": 41,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "qgpu_ga_engine_parallel.cpp",
+    "fileloc": 154,
+    "instructions": 122,
+    "memory_accesses": 0,
+    "name": "ga_op_subtraction",
+    "stores": {
+      "L": 24
+    },
+    "total_instructions": 122
+  },
+  "9": {
+    "basicblocks": 7,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 7,
+    "file": "qgpu_ga_engine_parallel.cpp",
+    "fileloc": 288,
+    "instructions": 60,
+    "memory_accesses": 0,
+    "name": "ga_op_rotor_norm",
+    "stores": {
+      "L": 9
+    },
+    "total_instructions": 60
+  }
+}

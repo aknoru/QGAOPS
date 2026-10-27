@@ -1,0 +1,10848 @@
+{
+  "schema_version": "2.0",
+  "precision": "Q16.16",
+  "algebra": "Cl(3,0)",
+  "blade_order": [
+    "1",
+    "e1",
+    "e2",
+    "e3",
+    "e12",
+    "e13",
+    "e23",
+    "e123"
+  ],
+  "total_vectors": 285,
+  "vectors": [
+    {
+      "test_id": 1,
+      "category": "EXHAUSTIVE_GP",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "GP basis pair 1 * 1"
+    },
+    {
+      "test_id": 2,
+      "category": "EXHAUSTIVE_GP",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "GP basis pair 1 * e1"
+    },
+    {
+      "test_id": 3,
+      "category": "EXHAUSTIVE_GP",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "GP basis pair 1 * e2"
+    },
+    {
+      "test_id": 4,
+      "category": "EXHAUSTIVE_GP",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "GP basis pair 1 * e3"
+    },
+    {
+      "test_id": 5,
+      "category": "EXHAUSTIVE_GP",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "GP basis pair 1 * e12"
+    },
+    {
+      "test_id": 6,
+      "category": "EXHAUSTIVE_GP",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "GP basis pair 1 * e13"
+    },
+    {
+      "test_id": 7,
+      "category": "EXHAUSTIVE_GP",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0
+      ],
+      "expected_status": 0,
+      "description": "GP basis pair 1 * e23"
+    },
+    {
+      "test_id": 8,
+      "category": "EXHAUSTIVE_GP",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536
+      ],
+      "expected_status": 0,
+      "description": "GP basis pair 1 * e123"
+    },
+    {
+      "test_id": 9,
+      "category": "EXHAUSTIVE_GP",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "GP basis pair e1 * 1"
+    },
+    {
+      "test_id": 10,
+      "category": "EXHAUSTIVE_GP",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "GP basis pair e1 * e1"
+    },
+    {
+      "test_id": 11,
+      "category": "EXHAUSTIVE_GP",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "GP basis pair e1 * e2"
+    },
+    {
+      "test_id": 12,
+      "category": "EXHAUSTIVE_GP",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "GP basis pair e1 * e3"
+    },
+    {
+      "test_id": 13,
+      "category": "EXHAUSTIVE_GP",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "GP basis pair e1 * e12"
+    },
+    {
+      "test_id": 14,
+      "category": "EXHAUSTIVE_GP",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "GP basis pair e1 * e13"
+    },
+    {
+      "test_id": 15,
+      "category": "EXHAUSTIVE_GP",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536
+      ],
+      "expected_status": 0,
+      "description": "GP basis pair e1 * e23"
+    },
+    {
+      "test_id": 16,
+      "category": "EXHAUSTIVE_GP",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0
+      ],
+      "expected_status": 0,
+      "description": "GP basis pair e1 * e123"
+    },
+    {
+      "test_id": 17,
+      "category": "EXHAUSTIVE_GP",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "GP basis pair e2 * 1"
+    },
+    {
+      "test_id": 18,
+      "category": "EXHAUSTIVE_GP",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        -65536,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "GP basis pair e2 * e1"
+    },
+    {
+      "test_id": 19,
+      "category": "EXHAUSTIVE_GP",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "GP basis pair e2 * e2"
+    },
+    {
+      "test_id": 20,
+      "category": "EXHAUSTIVE_GP",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0
+      ],
+      "expected_status": 0,
+      "description": "GP basis pair e2 * e3"
+    },
+    {
+      "test_id": 21,
+      "category": "EXHAUSTIVE_GP",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        -65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "GP basis pair e2 * e12"
+    },
+    {
+      "test_id": 22,
+      "category": "EXHAUSTIVE_GP",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -65536
+      ],
+      "expected_status": 0,
+      "description": "GP basis pair e2 * e13"
+    },
+    {
+      "test_id": 23,
+      "category": "EXHAUSTIVE_GP",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "GP basis pair e2 * e23"
+    },
+    {
+      "test_id": 24,
+      "category": "EXHAUSTIVE_GP",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        -65536,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "GP basis pair e2 * e123"
+    },
+    {
+      "test_id": 25,
+      "category": "EXHAUSTIVE_GP",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "GP basis pair e3 * 1"
+    },
+    {
+      "test_id": 26,
+      "category": "EXHAUSTIVE_GP",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        -65536,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "GP basis pair e3 * e1"
+    },
+    {
+      "test_id": 27,
+      "category": "EXHAUSTIVE_GP",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -65536,
+        0
+      ],
+      "expected_status": 0,
+      "description": "GP basis pair e3 * e2"
+    },
+    {
+      "test_id": 28,
+      "category": "EXHAUSTIVE_GP",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "GP basis pair e3 * e3"
+    },
+    {
+      "test_id": 29,
+      "category": "EXHAUSTIVE_GP",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536
+      ],
+      "expected_status": 0,
+      "description": "GP basis pair e3 * e12"
+    },
+    {
+      "test_id": 30,
+      "category": "EXHAUSTIVE_GP",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        -65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "GP basis pair e3 * e13"
+    },
+    {
+      "test_id": 31,
+      "category": "EXHAUSTIVE_GP",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        -65536,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "GP basis pair e3 * e23"
+    },
+    {
+      "test_id": 32,
+      "category": "EXHAUSTIVE_GP",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "GP basis pair e3 * e123"
+    },
+    {
+      "test_id": 33,
+      "category": "EXHAUSTIVE_GP",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "GP basis pair e12 * 1"
+    },
+    {
+      "test_id": 34,
+      "category": "EXHAUSTIVE_GP",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        -65536,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "GP basis pair e12 * e1"
+    },
+    {
+      "test_id": 35,
+      "category": "EXHAUSTIVE_GP",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "GP basis pair e12 * e2"
+    },
+    {
+      "test_id": 36,
+      "category": "EXHAUSTIVE_GP",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536
+      ],
+      "expected_status": 0,
+      "description": "GP basis pair e12 * e3"
+    },
+    {
+      "test_id": 37,
+      "category": "EXHAUSTIVE_GP",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        -65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "GP basis pair e12 * e12"
+    },
+    {
+      "test_id": 38,
+      "category": "EXHAUSTIVE_GP",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -65536,
+        0
+      ],
+      "expected_status": 0,
+      "description": "GP basis pair e12 * e13"
+    },
+    {
+      "test_id": 39,
+      "category": "EXHAUSTIVE_GP",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "GP basis pair e12 * e23"
+    },
+    {
+      "test_id": 40,
+      "category": "EXHAUSTIVE_GP",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        -65536,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "GP basis pair e12 * e123"
+    },
+    {
+      "test_id": 41,
+      "category": "EXHAUSTIVE_GP",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0
+      ],
+      "right": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "GP basis pair e13 * 1"
+    },
+    {
+      "test_id": 42,
+      "category": "EXHAUSTIVE_GP",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        -65536,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "GP basis pair e13 * e1"
+    },
+    {
+      "test_id": 43,
+      "category": "EXHAUSTIVE_GP",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -65536
+      ],
+      "expected_status": 0,
+      "description": "GP basis pair e13 * e2"
+    },
+    {
+      "test_id": 44,
+      "category": "EXHAUSTIVE_GP",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "GP basis pair e13 * e3"
+    },
+    {
+      "test_id": 45,
+      "category": "EXHAUSTIVE_GP",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0
+      ],
+      "expected_status": 0,
+      "description": "GP basis pair e13 * e12"
+    },
+    {
+      "test_id": 46,
+      "category": "EXHAUSTIVE_GP",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0
+      ],
+      "expected": [
+        -65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "GP basis pair e13 * e13"
+    },
+    {
+      "test_id": 47,
+      "category": "EXHAUSTIVE_GP",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        -65536,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "GP basis pair e13 * e23"
+    },
+    {
+      "test_id": 48,
+      "category": "EXHAUSTIVE_GP",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536
+      ],
+      "expected": [
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "GP basis pair e13 * e123"
+    },
+    {
+      "test_id": 49,
+      "category": "EXHAUSTIVE_GP",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0
+      ],
+      "right": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0
+      ],
+      "expected_status": 0,
+      "description": "GP basis pair e23 * 1"
+    },
+    {
+      "test_id": 50,
+      "category": "EXHAUSTIVE_GP",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0
+      ],
+      "right": [
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536
+      ],
+      "expected_status": 0,
+      "description": "GP basis pair e23 * e1"
+    },
+    {
+      "test_id": 51,
+      "category": "EXHAUSTIVE_GP",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        -65536,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "GP basis pair e23 * e2"
+    },
+    {
+      "test_id": 52,
+      "category": "EXHAUSTIVE_GP",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "GP basis pair e23 * e3"
+    },
+    {
+      "test_id": 53,
+      "category": "EXHAUSTIVE_GP",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        -65536,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "GP basis pair e23 * e12"
+    },
+    {
+      "test_id": 54,
+      "category": "EXHAUSTIVE_GP",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "GP basis pair e23 * e13"
+    },
+    {
+      "test_id": 55,
+      "category": "EXHAUSTIVE_GP",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0
+      ],
+      "expected": [
+        -65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "GP basis pair e23 * e23"
+    },
+    {
+      "test_id": 56,
+      "category": "EXHAUSTIVE_GP",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536
+      ],
+      "expected": [
+        0,
+        -65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "GP basis pair e23 * e123"
+    },
+    {
+      "test_id": 57,
+      "category": "EXHAUSTIVE_GP",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536
+      ],
+      "right": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536
+      ],
+      "expected_status": 0,
+      "description": "GP basis pair e123 * 1"
+    },
+    {
+      "test_id": 58,
+      "category": "EXHAUSTIVE_GP",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536
+      ],
+      "right": [
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0
+      ],
+      "expected_status": 0,
+      "description": "GP basis pair e123 * e1"
+    },
+    {
+      "test_id": 59,
+      "category": "EXHAUSTIVE_GP",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536
+      ],
+      "right": [
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        -65536,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "GP basis pair e123 * e2"
+    },
+    {
+      "test_id": 60,
+      "category": "EXHAUSTIVE_GP",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "GP basis pair e123 * e3"
+    },
+    {
+      "test_id": 61,
+      "category": "EXHAUSTIVE_GP",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        -65536,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "GP basis pair e123 * e12"
+    },
+    {
+      "test_id": 62,
+      "category": "EXHAUSTIVE_GP",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "GP basis pair e123 * e13"
+    },
+    {
+      "test_id": 63,
+      "category": "EXHAUSTIVE_GP",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0
+      ],
+      "expected": [
+        0,
+        -65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "GP basis pair e123 * e23"
+    },
+    {
+      "test_id": 64,
+      "category": "EXHAUSTIVE_GP",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536
+      ],
+      "expected": [
+        -65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "GP basis pair e123 * e123"
+    },
+    {
+      "test_id": 65,
+      "category": "EXHAUSTIVE_WEDGE",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Wedge basis pair 1 ^ 1"
+    },
+    {
+      "test_id": 66,
+      "category": "EXHAUSTIVE_WEDGE",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Wedge basis pair 1 ^ e1"
+    },
+    {
+      "test_id": 67,
+      "category": "EXHAUSTIVE_WEDGE",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Wedge basis pair 1 ^ e2"
+    },
+    {
+      "test_id": 68,
+      "category": "EXHAUSTIVE_WEDGE",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Wedge basis pair 1 ^ e3"
+    },
+    {
+      "test_id": 69,
+      "category": "EXHAUSTIVE_WEDGE",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Wedge basis pair 1 ^ e12"
+    },
+    {
+      "test_id": 70,
+      "category": "EXHAUSTIVE_WEDGE",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Wedge basis pair 1 ^ e13"
+    },
+    {
+      "test_id": 71,
+      "category": "EXHAUSTIVE_WEDGE",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Wedge basis pair 1 ^ e23"
+    },
+    {
+      "test_id": 72,
+      "category": "EXHAUSTIVE_WEDGE",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536
+      ],
+      "expected_status": 0,
+      "description": "Wedge basis pair 1 ^ e123"
+    },
+    {
+      "test_id": 73,
+      "category": "EXHAUSTIVE_WEDGE",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Wedge basis pair e1 ^ 1"
+    },
+    {
+      "test_id": 74,
+      "category": "EXHAUSTIVE_WEDGE",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Wedge basis pair e1 ^ e1"
+    },
+    {
+      "test_id": 75,
+      "category": "EXHAUSTIVE_WEDGE",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Wedge basis pair e1 ^ e2"
+    },
+    {
+      "test_id": 76,
+      "category": "EXHAUSTIVE_WEDGE",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Wedge basis pair e1 ^ e3"
+    },
+    {
+      "test_id": 77,
+      "category": "EXHAUSTIVE_WEDGE",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Wedge basis pair e1 ^ e12"
+    },
+    {
+      "test_id": 78,
+      "category": "EXHAUSTIVE_WEDGE",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Wedge basis pair e1 ^ e13"
+    },
+    {
+      "test_id": 79,
+      "category": "EXHAUSTIVE_WEDGE",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536
+      ],
+      "expected_status": 0,
+      "description": "Wedge basis pair e1 ^ e23"
+    },
+    {
+      "test_id": 80,
+      "category": "EXHAUSTIVE_WEDGE",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Wedge basis pair e1 ^ e123"
+    },
+    {
+      "test_id": 81,
+      "category": "EXHAUSTIVE_WEDGE",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Wedge basis pair e2 ^ 1"
+    },
+    {
+      "test_id": 82,
+      "category": "EXHAUSTIVE_WEDGE",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        -65536,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Wedge basis pair e2 ^ e1"
+    },
+    {
+      "test_id": 83,
+      "category": "EXHAUSTIVE_WEDGE",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Wedge basis pair e2 ^ e2"
+    },
+    {
+      "test_id": 84,
+      "category": "EXHAUSTIVE_WEDGE",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Wedge basis pair e2 ^ e3"
+    },
+    {
+      "test_id": 85,
+      "category": "EXHAUSTIVE_WEDGE",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Wedge basis pair e2 ^ e12"
+    },
+    {
+      "test_id": 86,
+      "category": "EXHAUSTIVE_WEDGE",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -65536
+      ],
+      "expected_status": 0,
+      "description": "Wedge basis pair e2 ^ e13"
+    },
+    {
+      "test_id": 87,
+      "category": "EXHAUSTIVE_WEDGE",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Wedge basis pair e2 ^ e23"
+    },
+    {
+      "test_id": 88,
+      "category": "EXHAUSTIVE_WEDGE",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Wedge basis pair e2 ^ e123"
+    },
+    {
+      "test_id": 89,
+      "category": "EXHAUSTIVE_WEDGE",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Wedge basis pair e3 ^ 1"
+    },
+    {
+      "test_id": 90,
+      "category": "EXHAUSTIVE_WEDGE",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        -65536,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Wedge basis pair e3 ^ e1"
+    },
+    {
+      "test_id": 91,
+      "category": "EXHAUSTIVE_WEDGE",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -65536,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Wedge basis pair e3 ^ e2"
+    },
+    {
+      "test_id": 92,
+      "category": "EXHAUSTIVE_WEDGE",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Wedge basis pair e3 ^ e3"
+    },
+    {
+      "test_id": 93,
+      "category": "EXHAUSTIVE_WEDGE",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536
+      ],
+      "expected_status": 0,
+      "description": "Wedge basis pair e3 ^ e12"
+    },
+    {
+      "test_id": 94,
+      "category": "EXHAUSTIVE_WEDGE",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Wedge basis pair e3 ^ e13"
+    },
+    {
+      "test_id": 95,
+      "category": "EXHAUSTIVE_WEDGE",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Wedge basis pair e3 ^ e23"
+    },
+    {
+      "test_id": 96,
+      "category": "EXHAUSTIVE_WEDGE",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Wedge basis pair e3 ^ e123"
+    },
+    {
+      "test_id": 97,
+      "category": "EXHAUSTIVE_WEDGE",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Wedge basis pair e12 ^ 1"
+    },
+    {
+      "test_id": 98,
+      "category": "EXHAUSTIVE_WEDGE",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Wedge basis pair e12 ^ e1"
+    },
+    {
+      "test_id": 99,
+      "category": "EXHAUSTIVE_WEDGE",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Wedge basis pair e12 ^ e2"
+    },
+    {
+      "test_id": 100,
+      "category": "EXHAUSTIVE_WEDGE",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536
+      ],
+      "expected_status": 0,
+      "description": "Wedge basis pair e12 ^ e3"
+    },
+    {
+      "test_id": 101,
+      "category": "EXHAUSTIVE_WEDGE",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Wedge basis pair e12 ^ e12"
+    },
+    {
+      "test_id": 102,
+      "category": "EXHAUSTIVE_WEDGE",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Wedge basis pair e12 ^ e13"
+    },
+    {
+      "test_id": 103,
+      "category": "EXHAUSTIVE_WEDGE",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Wedge basis pair e12 ^ e23"
+    },
+    {
+      "test_id": 104,
+      "category": "EXHAUSTIVE_WEDGE",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Wedge basis pair e12 ^ e123"
+    },
+    {
+      "test_id": 105,
+      "category": "EXHAUSTIVE_WEDGE",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0
+      ],
+      "right": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Wedge basis pair e13 ^ 1"
+    },
+    {
+      "test_id": 106,
+      "category": "EXHAUSTIVE_WEDGE",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Wedge basis pair e13 ^ e1"
+    },
+    {
+      "test_id": 107,
+      "category": "EXHAUSTIVE_WEDGE",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -65536
+      ],
+      "expected_status": 0,
+      "description": "Wedge basis pair e13 ^ e2"
+    },
+    {
+      "test_id": 108,
+      "category": "EXHAUSTIVE_WEDGE",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Wedge basis pair e13 ^ e3"
+    },
+    {
+      "test_id": 109,
+      "category": "EXHAUSTIVE_WEDGE",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Wedge basis pair e13 ^ e12"
+    },
+    {
+      "test_id": 110,
+      "category": "EXHAUSTIVE_WEDGE",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Wedge basis pair e13 ^ e13"
+    },
+    {
+      "test_id": 111,
+      "category": "EXHAUSTIVE_WEDGE",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Wedge basis pair e13 ^ e23"
+    },
+    {
+      "test_id": 112,
+      "category": "EXHAUSTIVE_WEDGE",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Wedge basis pair e13 ^ e123"
+    },
+    {
+      "test_id": 113,
+      "category": "EXHAUSTIVE_WEDGE",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0
+      ],
+      "right": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Wedge basis pair e23 ^ 1"
+    },
+    {
+      "test_id": 114,
+      "category": "EXHAUSTIVE_WEDGE",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0
+      ],
+      "right": [
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536
+      ],
+      "expected_status": 0,
+      "description": "Wedge basis pair e23 ^ e1"
+    },
+    {
+      "test_id": 115,
+      "category": "EXHAUSTIVE_WEDGE",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Wedge basis pair e23 ^ e2"
+    },
+    {
+      "test_id": 116,
+      "category": "EXHAUSTIVE_WEDGE",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Wedge basis pair e23 ^ e3"
+    },
+    {
+      "test_id": 117,
+      "category": "EXHAUSTIVE_WEDGE",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Wedge basis pair e23 ^ e12"
+    },
+    {
+      "test_id": 118,
+      "category": "EXHAUSTIVE_WEDGE",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Wedge basis pair e23 ^ e13"
+    },
+    {
+      "test_id": 119,
+      "category": "EXHAUSTIVE_WEDGE",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Wedge basis pair e23 ^ e23"
+    },
+    {
+      "test_id": 120,
+      "category": "EXHAUSTIVE_WEDGE",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Wedge basis pair e23 ^ e123"
+    },
+    {
+      "test_id": 121,
+      "category": "EXHAUSTIVE_WEDGE",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536
+      ],
+      "right": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536
+      ],
+      "expected_status": 0,
+      "description": "Wedge basis pair e123 ^ 1"
+    },
+    {
+      "test_id": 122,
+      "category": "EXHAUSTIVE_WEDGE",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536
+      ],
+      "right": [
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Wedge basis pair e123 ^ e1"
+    },
+    {
+      "test_id": 123,
+      "category": "EXHAUSTIVE_WEDGE",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536
+      ],
+      "right": [
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Wedge basis pair e123 ^ e2"
+    },
+    {
+      "test_id": 124,
+      "category": "EXHAUSTIVE_WEDGE",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Wedge basis pair e123 ^ e3"
+    },
+    {
+      "test_id": 125,
+      "category": "EXHAUSTIVE_WEDGE",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Wedge basis pair e123 ^ e12"
+    },
+    {
+      "test_id": 126,
+      "category": "EXHAUSTIVE_WEDGE",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Wedge basis pair e123 ^ e13"
+    },
+    {
+      "test_id": 127,
+      "category": "EXHAUSTIVE_WEDGE",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Wedge basis pair e123 ^ e23"
+    },
+    {
+      "test_id": 128,
+      "category": "EXHAUSTIVE_WEDGE",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Wedge basis pair e123 ^ e123"
+    },
+    {
+      "test_id": 129,
+      "category": "EXHAUSTIVE_INNER",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Hestenes inner basis pair 1 . 1"
+    },
+    {
+      "test_id": 130,
+      "category": "EXHAUSTIVE_INNER",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Hestenes inner basis pair 1 . e1"
+    },
+    {
+      "test_id": 131,
+      "category": "EXHAUSTIVE_INNER",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Hestenes inner basis pair 1 . e2"
+    },
+    {
+      "test_id": 132,
+      "category": "EXHAUSTIVE_INNER",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Hestenes inner basis pair 1 . e3"
+    },
+    {
+      "test_id": 133,
+      "category": "EXHAUSTIVE_INNER",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Hestenes inner basis pair 1 . e12"
+    },
+    {
+      "test_id": 134,
+      "category": "EXHAUSTIVE_INNER",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Hestenes inner basis pair 1 . e13"
+    },
+    {
+      "test_id": 135,
+      "category": "EXHAUSTIVE_INNER",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Hestenes inner basis pair 1 . e23"
+    },
+    {
+      "test_id": 136,
+      "category": "EXHAUSTIVE_INNER",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536
+      ],
+      "expected_status": 0,
+      "description": "Hestenes inner basis pair 1 . e123"
+    },
+    {
+      "test_id": 137,
+      "category": "EXHAUSTIVE_INNER",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Hestenes inner basis pair e1 . 1"
+    },
+    {
+      "test_id": 138,
+      "category": "EXHAUSTIVE_INNER",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Hestenes inner basis pair e1 . e1"
+    },
+    {
+      "test_id": 139,
+      "category": "EXHAUSTIVE_INNER",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Hestenes inner basis pair e1 . e2"
+    },
+    {
+      "test_id": 140,
+      "category": "EXHAUSTIVE_INNER",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Hestenes inner basis pair e1 . e3"
+    },
+    {
+      "test_id": 141,
+      "category": "EXHAUSTIVE_INNER",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Hestenes inner basis pair e1 . e12"
+    },
+    {
+      "test_id": 142,
+      "category": "EXHAUSTIVE_INNER",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Hestenes inner basis pair e1 . e13"
+    },
+    {
+      "test_id": 143,
+      "category": "EXHAUSTIVE_INNER",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Hestenes inner basis pair e1 . e23"
+    },
+    {
+      "test_id": 144,
+      "category": "EXHAUSTIVE_INNER",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Hestenes inner basis pair e1 . e123"
+    },
+    {
+      "test_id": 145,
+      "category": "EXHAUSTIVE_INNER",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Hestenes inner basis pair e2 . 1"
+    },
+    {
+      "test_id": 146,
+      "category": "EXHAUSTIVE_INNER",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Hestenes inner basis pair e2 . e1"
+    },
+    {
+      "test_id": 147,
+      "category": "EXHAUSTIVE_INNER",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Hestenes inner basis pair e2 . e2"
+    },
+    {
+      "test_id": 148,
+      "category": "EXHAUSTIVE_INNER",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Hestenes inner basis pair e2 . e3"
+    },
+    {
+      "test_id": 149,
+      "category": "EXHAUSTIVE_INNER",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        -65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Hestenes inner basis pair e2 . e12"
+    },
+    {
+      "test_id": 150,
+      "category": "EXHAUSTIVE_INNER",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Hestenes inner basis pair e2 . e13"
+    },
+    {
+      "test_id": 151,
+      "category": "EXHAUSTIVE_INNER",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Hestenes inner basis pair e2 . e23"
+    },
+    {
+      "test_id": 152,
+      "category": "EXHAUSTIVE_INNER",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        -65536,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Hestenes inner basis pair e2 . e123"
+    },
+    {
+      "test_id": 153,
+      "category": "EXHAUSTIVE_INNER",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Hestenes inner basis pair e3 . 1"
+    },
+    {
+      "test_id": 154,
+      "category": "EXHAUSTIVE_INNER",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Hestenes inner basis pair e3 . e1"
+    },
+    {
+      "test_id": 155,
+      "category": "EXHAUSTIVE_INNER",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Hestenes inner basis pair e3 . e2"
+    },
+    {
+      "test_id": 156,
+      "category": "EXHAUSTIVE_INNER",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Hestenes inner basis pair e3 . e3"
+    },
+    {
+      "test_id": 157,
+      "category": "EXHAUSTIVE_INNER",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Hestenes inner basis pair e3 . e12"
+    },
+    {
+      "test_id": 158,
+      "category": "EXHAUSTIVE_INNER",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        -65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Hestenes inner basis pair e3 . e13"
+    },
+    {
+      "test_id": 159,
+      "category": "EXHAUSTIVE_INNER",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        -65536,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Hestenes inner basis pair e3 . e23"
+    },
+    {
+      "test_id": 160,
+      "category": "EXHAUSTIVE_INNER",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Hestenes inner basis pair e3 . e123"
+    },
+    {
+      "test_id": 161,
+      "category": "EXHAUSTIVE_INNER",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Hestenes inner basis pair e12 . 1"
+    },
+    {
+      "test_id": 162,
+      "category": "EXHAUSTIVE_INNER",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Hestenes inner basis pair e12 . e1"
+    },
+    {
+      "test_id": 163,
+      "category": "EXHAUSTIVE_INNER",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Hestenes inner basis pair e12 . e2"
+    },
+    {
+      "test_id": 164,
+      "category": "EXHAUSTIVE_INNER",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Hestenes inner basis pair e12 . e3"
+    },
+    {
+      "test_id": 165,
+      "category": "EXHAUSTIVE_INNER",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        -65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Hestenes inner basis pair e12 . e12"
+    },
+    {
+      "test_id": 166,
+      "category": "EXHAUSTIVE_INNER",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Hestenes inner basis pair e12 . e13"
+    },
+    {
+      "test_id": 167,
+      "category": "EXHAUSTIVE_INNER",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Hestenes inner basis pair e12 . e23"
+    },
+    {
+      "test_id": 168,
+      "category": "EXHAUSTIVE_INNER",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        -65536,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Hestenes inner basis pair e12 . e123"
+    },
+    {
+      "test_id": 169,
+      "category": "EXHAUSTIVE_INNER",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0
+      ],
+      "right": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Hestenes inner basis pair e13 . 1"
+    },
+    {
+      "test_id": 170,
+      "category": "EXHAUSTIVE_INNER",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Hestenes inner basis pair e13 . e1"
+    },
+    {
+      "test_id": 171,
+      "category": "EXHAUSTIVE_INNER",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Hestenes inner basis pair e13 . e2"
+    },
+    {
+      "test_id": 172,
+      "category": "EXHAUSTIVE_INNER",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Hestenes inner basis pair e13 . e3"
+    },
+    {
+      "test_id": 173,
+      "category": "EXHAUSTIVE_INNER",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Hestenes inner basis pair e13 . e12"
+    },
+    {
+      "test_id": 174,
+      "category": "EXHAUSTIVE_INNER",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0
+      ],
+      "expected": [
+        -65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Hestenes inner basis pair e13 . e13"
+    },
+    {
+      "test_id": 175,
+      "category": "EXHAUSTIVE_INNER",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Hestenes inner basis pair e13 . e23"
+    },
+    {
+      "test_id": 176,
+      "category": "EXHAUSTIVE_INNER",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536
+      ],
+      "expected": [
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Hestenes inner basis pair e13 . e123"
+    },
+    {
+      "test_id": 177,
+      "category": "EXHAUSTIVE_INNER",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0
+      ],
+      "right": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Hestenes inner basis pair e23 . 1"
+    },
+    {
+      "test_id": 178,
+      "category": "EXHAUSTIVE_INNER",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0
+      ],
+      "right": [
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Hestenes inner basis pair e23 . e1"
+    },
+    {
+      "test_id": 179,
+      "category": "EXHAUSTIVE_INNER",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Hestenes inner basis pair e23 . e2"
+    },
+    {
+      "test_id": 180,
+      "category": "EXHAUSTIVE_INNER",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Hestenes inner basis pair e23 . e3"
+    },
+    {
+      "test_id": 181,
+      "category": "EXHAUSTIVE_INNER",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Hestenes inner basis pair e23 . e12"
+    },
+    {
+      "test_id": 182,
+      "category": "EXHAUSTIVE_INNER",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Hestenes inner basis pair e23 . e13"
+    },
+    {
+      "test_id": 183,
+      "category": "EXHAUSTIVE_INNER",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0
+      ],
+      "expected": [
+        -65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Hestenes inner basis pair e23 . e23"
+    },
+    {
+      "test_id": 184,
+      "category": "EXHAUSTIVE_INNER",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536
+      ],
+      "expected": [
+        0,
+        -65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Hestenes inner basis pair e23 . e123"
+    },
+    {
+      "test_id": 185,
+      "category": "EXHAUSTIVE_INNER",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536
+      ],
+      "right": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Hestenes inner basis pair e123 . 1"
+    },
+    {
+      "test_id": 186,
+      "category": "EXHAUSTIVE_INNER",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536
+      ],
+      "right": [
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Hestenes inner basis pair e123 . e1"
+    },
+    {
+      "test_id": 187,
+      "category": "EXHAUSTIVE_INNER",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536
+      ],
+      "right": [
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Hestenes inner basis pair e123 . e2"
+    },
+    {
+      "test_id": 188,
+      "category": "EXHAUSTIVE_INNER",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Hestenes inner basis pair e123 . e3"
+    },
+    {
+      "test_id": 189,
+      "category": "EXHAUSTIVE_INNER",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Hestenes inner basis pair e123 . e12"
+    },
+    {
+      "test_id": 190,
+      "category": "EXHAUSTIVE_INNER",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Hestenes inner basis pair e123 . e13"
+    },
+    {
+      "test_id": 191,
+      "category": "EXHAUSTIVE_INNER",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Hestenes inner basis pair e123 . e23"
+    },
+    {
+      "test_id": 192,
+      "category": "EXHAUSTIVE_INNER",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536
+      ],
+      "expected": [
+        -65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Hestenes inner basis pair e123 . e123"
+    },
+    {
+      "test_id": 193,
+      "category": "ARITHMETIC_ADD",
+      "opcode": 4,
+      "op_name": "add",
+      "left": [
+        65536,
+        65536,
+        65536,
+        65536,
+        65536,
+        65536,
+        65536,
+        65536
+      ],
+      "right": [
+        131072,
+        131072,
+        131072,
+        131072,
+        131072,
+        131072,
+        131072,
+        131072
+      ],
+      "expected": [
+        196608,
+        196608,
+        196608,
+        196608,
+        196608,
+        196608,
+        196608,
+        196608
+      ],
+      "expected_status": 0,
+      "description": "Add uniform_positive"
+    },
+    {
+      "test_id": 194,
+      "category": "ARITHMETIC_SUB",
+      "opcode": 5,
+      "op_name": "subtract",
+      "left": [
+        65536,
+        65536,
+        65536,
+        65536,
+        65536,
+        65536,
+        65536,
+        65536
+      ],
+      "right": [
+        131072,
+        131072,
+        131072,
+        131072,
+        131072,
+        131072,
+        131072,
+        131072
+      ],
+      "expected": [
+        -65536,
+        -65536,
+        -65536,
+        -65536,
+        -65536,
+        -65536,
+        -65536,
+        -65536
+      ],
+      "expected_status": 0,
+      "description": "Subtract uniform_positive"
+    },
+    {
+      "test_id": 195,
+      "category": "ARITHMETIC_ADD",
+      "opcode": 4,
+      "op_name": "add",
+      "left": [
+        -65536,
+        -65536,
+        -65536,
+        -65536,
+        -65536,
+        -65536,
+        -65536,
+        -65536
+      ],
+      "right": [
+        65536,
+        65536,
+        65536,
+        65536,
+        65536,
+        65536,
+        65536,
+        65536
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Add cancellation_to_zero"
+    },
+    {
+      "test_id": 196,
+      "category": "ARITHMETIC_SUB",
+      "opcode": 5,
+      "op_name": "subtract",
+      "left": [
+        -65536,
+        -65536,
+        -65536,
+        -65536,
+        -65536,
+        -65536,
+        -65536,
+        -65536
+      ],
+      "right": [
+        65536,
+        65536,
+        65536,
+        65536,
+        65536,
+        65536,
+        65536,
+        65536
+      ],
+      "expected": [
+        -131072,
+        -131072,
+        -131072,
+        -131072,
+        -131072,
+        -131072,
+        -131072,
+        -131072
+      ],
+      "expected_status": 0,
+      "description": "Subtract cancellation_to_zero"
+    },
+    {
+      "test_id": 197,
+      "category": "ARITHMETIC_ADD",
+      "opcode": 4,
+      "op_name": "add",
+      "left": [
+        2147418112,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        2147483647,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 4,
+      "description": "Add near_max_scalar"
+    },
+    {
+      "test_id": 198,
+      "category": "ARITHMETIC_SUB",
+      "opcode": 5,
+      "op_name": "subtract",
+      "left": [
+        2147418112,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        2147352576,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Subtract near_max_scalar"
+    },
+    {
+      "test_id": 199,
+      "category": "ARITHMETIC_ADD",
+      "opcode": 4,
+      "op_name": "add",
+      "left": [
+        -2147418112,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        -2147352576,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Add near_min_scalar"
+    },
+    {
+      "test_id": 200,
+      "category": "ARITHMETIC_SUB",
+      "opcode": 5,
+      "op_name": "subtract",
+      "left": [
+        -2147418112,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        -2147483648,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Subtract near_min_scalar"
+    },
+    {
+      "test_id": 201,
+      "category": "ARITHMETIC_ADD",
+      "opcode": 4,
+      "op_name": "add",
+      "left": [
+        32768,
+        -16384,
+        98304,
+        -131072,
+        8192,
+        -4096,
+        196608,
+        -81920
+      ],
+      "right": [
+        32768,
+        16384,
+        -98304,
+        131072,
+        -8192,
+        4096,
+        -196608,
+        81920
+      ],
+      "expected": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Add mixed_grade_cancellation"
+    },
+    {
+      "test_id": 202,
+      "category": "ARITHMETIC_SUB",
+      "opcode": 5,
+      "op_name": "subtract",
+      "left": [
+        32768,
+        -16384,
+        98304,
+        -131072,
+        8192,
+        -4096,
+        196608,
+        -81920
+      ],
+      "right": [
+        32768,
+        16384,
+        -98304,
+        131072,
+        -8192,
+        4096,
+        -196608,
+        81920
+      ],
+      "expected": [
+        0,
+        -32768,
+        196608,
+        -262144,
+        16384,
+        -8192,
+        393216,
+        -163840
+      ],
+      "expected_status": 0,
+      "description": "Subtract mixed_grade_cancellation"
+    },
+    {
+      "test_id": 203,
+      "category": "SCALAR_MUL",
+      "opcode": 6,
+      "op_name": "scalar_mul",
+      "left": [
+        65536,
+        131072,
+        -196608,
+        262144,
+        -32768,
+        98304,
+        -163840,
+        49152
+      ],
+      "right": [
+        131072,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        131072,
+        262144,
+        -393216,
+        524288,
+        -65536,
+        196608,
+        -327680,
+        98304
+      ],
+      "expected_status": 0,
+      "description": "Scalar mul scale_by_positive_2"
+    },
+    {
+      "test_id": 204,
+      "category": "SCALAR_MUL",
+      "opcode": 6,
+      "op_name": "scalar_mul",
+      "left": [
+        65536,
+        131072,
+        -196608,
+        262144,
+        -32768,
+        98304,
+        -163840,
+        49152
+      ],
+      "right": [
+        -65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        -65536,
+        -131072,
+        196608,
+        -262144,
+        32768,
+        -98304,
+        163840,
+        -49152
+      ],
+      "expected_status": 0,
+      "description": "Scalar mul scale_by_negative_1"
+    },
+    {
+      "test_id": 205,
+      "category": "SCALAR_MUL",
+      "opcode": 6,
+      "op_name": "scalar_mul",
+      "left": [
+        65536,
+        131072,
+        -196608,
+        262144,
+        -32768,
+        98304,
+        -163840,
+        49152
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Scalar mul scale_by_zero"
+    },
+    {
+      "test_id": 206,
+      "category": "SCALAR_MUL",
+      "opcode": 6,
+      "op_name": "scalar_mul",
+      "left": [
+        65536,
+        131072,
+        -196608,
+        262144,
+        -32768,
+        98304,
+        -163840,
+        49152
+      ],
+      "right": [
+        16384,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        16384,
+        32768,
+        -49152,
+        65536,
+        -8192,
+        24576,
+        -40960,
+        12288
+      ],
+      "expected_status": 0,
+      "description": "Scalar mul scale_by_fraction_quarter"
+    },
+    {
+      "test_id": 207,
+      "category": "SCALAR_MUL",
+      "opcode": 6,
+      "op_name": "scalar_mul",
+      "left": [
+        65536000,
+        65536000,
+        65536000,
+        65536000,
+        65536000,
+        65536000,
+        65536000,
+        65536000
+      ],
+      "right": [
+        65536000,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        2147483647,
+        2147483647,
+        2147483647,
+        2147483647,
+        2147483647,
+        2147483647,
+        2147483647,
+        2147483647
+      ],
+      "expected_status": 4,
+      "description": "Scalar mul scale_large_overflow"
+    },
+    {
+      "test_id": 208,
+      "category": "GRADE_PROJECTION",
+      "opcode": 7,
+      "op_name": "grade_proj",
+      "left": [
+        65536,
+        131072,
+        196608,
+        262144,
+        327680,
+        393216,
+        458752,
+        524288
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Project onto grade 0"
+    },
+    {
+      "test_id": 209,
+      "category": "GRADE_PROJECTION",
+      "opcode": 7,
+      "op_name": "grade_proj",
+      "left": [
+        65536,
+        131072,
+        196608,
+        262144,
+        327680,
+        393216,
+        458752,
+        524288
+      ],
+      "right": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        131072,
+        196608,
+        262144,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Project onto grade 1"
+    },
+    {
+      "test_id": 210,
+      "category": "GRADE_PROJECTION",
+      "opcode": 7,
+      "op_name": "grade_proj",
+      "left": [
+        65536,
+        131072,
+        196608,
+        262144,
+        327680,
+        393216,
+        458752,
+        524288
+      ],
+      "right": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        327680,
+        393216,
+        458752,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Project onto grade 2"
+    },
+    {
+      "test_id": 211,
+      "category": "GRADE_PROJECTION",
+      "opcode": 7,
+      "op_name": "grade_proj",
+      "left": [
+        65536,
+        131072,
+        196608,
+        262144,
+        327680,
+        393216,
+        458752,
+        524288
+      ],
+      "right": [
+        3,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        524288
+      ],
+      "expected_status": 0,
+      "description": "Project onto grade 3"
+    },
+    {
+      "test_id": 212,
+      "category": "REVERSION",
+      "opcode": 8,
+      "op_name": "reverse",
+      "left": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Reversion of basis blade 1"
+    },
+    {
+      "test_id": 213,
+      "category": "REVERSION",
+      "opcode": 8,
+      "op_name": "reverse",
+      "left": [
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Reversion of basis blade e1"
+    },
+    {
+      "test_id": 214,
+      "category": "REVERSION",
+      "opcode": 8,
+      "op_name": "reverse",
+      "left": [
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Reversion of basis blade e2"
+    },
+    {
+      "test_id": 215,
+      "category": "REVERSION",
+      "opcode": 8,
+      "op_name": "reverse",
+      "left": [
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Reversion of basis blade e3"
+    },
+    {
+      "test_id": 216,
+      "category": "REVERSION",
+      "opcode": 8,
+      "op_name": "reverse",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        -65536,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Reversion of basis blade e12"
+    },
+    {
+      "test_id": 217,
+      "category": "REVERSION",
+      "opcode": 8,
+      "op_name": "reverse",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        -65536,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Reversion of basis blade e13"
+    },
+    {
+      "test_id": 218,
+      "category": "REVERSION",
+      "opcode": 8,
+      "op_name": "reverse",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -65536,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Reversion of basis blade e23"
+    },
+    {
+      "test_id": 219,
+      "category": "REVERSION",
+      "opcode": 8,
+      "op_name": "reverse",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -65536
+      ],
+      "expected_status": 0,
+      "description": "Reversion of basis blade e123"
+    },
+    {
+      "test_id": 220,
+      "category": "REVERSION",
+      "opcode": 8,
+      "op_name": "reverse",
+      "left": [
+        98304,
+        -131072,
+        212992,
+        -294912,
+        49152,
+        -81920,
+        163840,
+        -32768
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        98304,
+        -131072,
+        212992,
+        -294912,
+        -49152,
+        81920,
+        -163840,
+        32768
+      ],
+      "expected_status": 0,
+      "description": "Reversion of mixed multivector"
+    },
+    {
+      "test_id": 221,
+      "category": "GRADE_INVOLUTION",
+      "opcode": 9,
+      "op_name": "grade_involution",
+      "left": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Grade involution of basis blade 1"
+    },
+    {
+      "test_id": 222,
+      "category": "GRADE_INVOLUTION",
+      "opcode": 9,
+      "op_name": "grade_involution",
+      "left": [
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        -65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Grade involution of basis blade e1"
+    },
+    {
+      "test_id": 223,
+      "category": "GRADE_INVOLUTION",
+      "opcode": 9,
+      "op_name": "grade_involution",
+      "left": [
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        -65536,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Grade involution of basis blade e2"
+    },
+    {
+      "test_id": 224,
+      "category": "GRADE_INVOLUTION",
+      "opcode": 9,
+      "op_name": "grade_involution",
+      "left": [
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        -65536,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Grade involution of basis blade e3"
+    },
+    {
+      "test_id": 225,
+      "category": "GRADE_INVOLUTION",
+      "opcode": 9,
+      "op_name": "grade_involution",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Grade involution of basis blade e12"
+    },
+    {
+      "test_id": 226,
+      "category": "GRADE_INVOLUTION",
+      "opcode": 9,
+      "op_name": "grade_involution",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Grade involution of basis blade e13"
+    },
+    {
+      "test_id": 227,
+      "category": "GRADE_INVOLUTION",
+      "opcode": 9,
+      "op_name": "grade_involution",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Grade involution of basis blade e23"
+    },
+    {
+      "test_id": 228,
+      "category": "GRADE_INVOLUTION",
+      "opcode": 9,
+      "op_name": "grade_involution",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -65536
+      ],
+      "expected_status": 0,
+      "description": "Grade involution of basis blade e123"
+    },
+    {
+      "test_id": 229,
+      "category": "GRADE_INVOLUTION",
+      "opcode": 9,
+      "op_name": "grade_involution",
+      "left": [
+        98304,
+        -131072,
+        212992,
+        -294912,
+        49152,
+        -81920,
+        163840,
+        -32768
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        98304,
+        131072,
+        -212992,
+        294912,
+        49152,
+        -81920,
+        163840,
+        32768
+      ],
+      "expected_status": 0,
+      "description": "Grade involution of mixed multivector"
+    },
+    {
+      "test_id": 230,
+      "category": "CLIFFORD_CONJUGATION",
+      "opcode": 10,
+      "op_name": "clifford_conj",
+      "left": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Clifford conjugation of basis blade 1"
+    },
+    {
+      "test_id": 231,
+      "category": "CLIFFORD_CONJUGATION",
+      "opcode": 10,
+      "op_name": "clifford_conj",
+      "left": [
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        -65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Clifford conjugation of basis blade e1"
+    },
+    {
+      "test_id": 232,
+      "category": "CLIFFORD_CONJUGATION",
+      "opcode": 10,
+      "op_name": "clifford_conj",
+      "left": [
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        -65536,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Clifford conjugation of basis blade e2"
+    },
+    {
+      "test_id": 233,
+      "category": "CLIFFORD_CONJUGATION",
+      "opcode": 10,
+      "op_name": "clifford_conj",
+      "left": [
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        -65536,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Clifford conjugation of basis blade e3"
+    },
+    {
+      "test_id": 234,
+      "category": "CLIFFORD_CONJUGATION",
+      "opcode": 10,
+      "op_name": "clifford_conj",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        -65536,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Clifford conjugation of basis blade e12"
+    },
+    {
+      "test_id": 235,
+      "category": "CLIFFORD_CONJUGATION",
+      "opcode": 10,
+      "op_name": "clifford_conj",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        -65536,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Clifford conjugation of basis blade e13"
+    },
+    {
+      "test_id": 236,
+      "category": "CLIFFORD_CONJUGATION",
+      "opcode": 10,
+      "op_name": "clifford_conj",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -65536,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Clifford conjugation of basis blade e23"
+    },
+    {
+      "test_id": 237,
+      "category": "CLIFFORD_CONJUGATION",
+      "opcode": 10,
+      "op_name": "clifford_conj",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        65536
+      ],
+      "expected_status": 0,
+      "description": "Clifford conjugation of basis blade e123"
+    },
+    {
+      "test_id": 238,
+      "category": "CLIFFORD_CONJUGATION",
+      "opcode": 10,
+      "op_name": "clifford_conj",
+      "left": [
+        98304,
+        -131072,
+        212992,
+        -294912,
+        49152,
+        -81920,
+        163840,
+        -32768
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        98304,
+        131072,
+        -212992,
+        294912,
+        -49152,
+        81920,
+        -163840,
+        -32768
+      ],
+      "expected_status": 0,
+      "description": "Clifford conjugation of mixed multivector"
+    },
+    {
+      "test_id": 239,
+      "category": "ROTOR_SANDWICH",
+      "opcode": 11,
+      "op_name": "sandwich",
+      "left": [
+        46341,
+        0,
+        0,
+        0,
+        -46341,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Rotor 90 deg rotation of e1 in xy-plane -> e2"
+    },
+    {
+      "test_id": 240,
+      "category": "ROTOR_SANDWICH",
+      "opcode": 11,
+      "op_name": "sandwich",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        -65536,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        -65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Rotor 180 deg rotation of e1 -> -e1"
+    },
+    {
+      "test_id": 241,
+      "category": "ROTOR_SANDWICH",
+      "opcode": 11,
+      "op_name": "sandwich",
+      "left": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        98304,
+        -131072,
+        229376,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        98304,
+        -131072,
+        229376,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Identity rotor rotation R=1"
+    },
+    {
+      "test_id": 242,
+      "category": "ROTOR_NORM",
+      "opcode": 12,
+      "op_name": "rotor_norm",
+      "left": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Rotor norm squared unit_scalar"
+    },
+    {
+      "test_id": 243,
+      "category": "ROTOR_NORM",
+      "opcode": 12,
+      "op_name": "rotor_norm",
+      "left": [
+        0,
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Rotor norm squared basis_e1"
+    },
+    {
+      "test_id": 244,
+      "category": "ROTOR_NORM",
+      "opcode": 12,
+      "op_name": "rotor_norm",
+      "left": [
+        0,
+        0,
+        0,
+        0,
+        65536,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Rotor norm squared basis_e12"
+    },
+    {
+      "test_id": 245,
+      "category": "ROTOR_NORM",
+      "opcode": 12,
+      "op_name": "rotor_norm",
+      "left": [
+        32768,
+        32768,
+        32768,
+        32768,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Rotor norm squared four_halves_norm_1"
+    },
+    {
+      "test_id": 246,
+      "category": "ROTOR_NORM",
+      "opcode": 12,
+      "op_name": "rotor_norm",
+      "left": [
+        65536,
+        -131072,
+        196608,
+        -262144,
+        32768,
+        -98304,
+        131072,
+        -32768
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        2408448,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "Rotor norm squared mixed_multivector_norm"
+    },
+    {
+      "test_id": 247,
+      "category": "FIXED_POINT_ROUNDING",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "rounding_tie_down_to_even_0"
+    },
+    {
+      "test_id": 248,
+      "category": "FIXED_POINT_ROUNDING",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        196608,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 0,
+      "description": "rounding_tie_up_to_even_2"
+    },
+    {
+      "test_id": 249,
+      "category": "FIXED_POINT_SATURATION",
+      "opcode": 4,
+      "op_name": "add",
+      "left": [
+        2147483647,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        2147483647,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 4,
+      "description": "Addition positive overflow saturating to MAX"
+    },
+    {
+      "test_id": 250,
+      "category": "FIXED_POINT_SATURATION",
+      "opcode": 5,
+      "op_name": "subtract",
+      "left": [
+        -2147483648,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        -2147483648,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 4,
+      "description": "Subtraction negative underflow saturating to MIN"
+    },
+    {
+      "test_id": 251,
+      "category": "FIXED_POINT_ACCUMULATOR_STRESS",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        65536000,
+        65536000,
+        65536000,
+        65536000,
+        65536000,
+        65536000,
+        65536000,
+        65536000
+      ],
+      "right": [
+        65536000,
+        65536000,
+        65536000,
+        65536000,
+        65536000,
+        65536000,
+        65536000,
+        65536000
+      ],
+      "expected": [
+        0,
+        0,
+        2147483647,
+        0,
+        2147483647,
+        0,
+        2147483647,
+        2147483647
+      ],
+      "expected_status": 4,
+      "description": "Large multivector product stress testing 67-bit accumulator"
+    },
+    {
+      "test_id": 252,
+      "category": "RANDOMIZED_VERIFICATION",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        237536,
+        -55251,
+        -309034,
+        -71917,
+        -117317,
+        -206497,
+        -4161,
+        205569
+      ],
+      "right": [
+        -224538,
+        48360,
+        112670,
+        -249102,
+        -244595,
+        -234571,
+        -106893,
+        -215324
+      ],
+      "expected": [
+        -1620883,
+        -141388,
+        1601150,
+        586643,
+        -1218528,
+        -1072584,
+        1609106,
+        -1434486
+      ],
+      "expected_status": 0,
+      "description": "Randomized geometric_product seed 4242 rep 0"
+    },
+    {
+      "test_id": 253,
+      "category": "RANDOMIZED_VERIFICATION",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        237536,
+        -55251,
+        -309034,
+        -71917,
+        -117317,
+        -206497,
+        -4161,
+        205569
+      ],
+      "right": [
+        -224538,
+        48360,
+        112670,
+        -249102,
+        -244595,
+        -234571,
+        -106893,
+        -215324
+      ],
+      "expected": [
+        -813841,
+        364581,
+        1467179,
+        -656473,
+        -351536,
+        120368,
+        925098,
+        -1434486
+      ],
+      "expected_status": 0,
+      "description": "Randomized wedge seed 4242 rep 0"
+    },
+    {
+      "test_id": 254,
+      "category": "RANDOMIZED_VERIFICATION",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        237536,
+        -55251,
+        -309034,
+        -71917,
+        -117317,
+        -206497,
+        -4161,
+        205569
+      ],
+      "right": [
+        -224538,
+        48360,
+        112670,
+        -249102,
+        -244595,
+        -234571,
+        -106893,
+        -215324
+      ],
+      "expected": [
+        -1620883,
+        -1249184,
+        1175745,
+        -586517,
+        -650248,
+        -1865562,
+        -205903,
+        -780444
+      ],
+      "expected_status": 0,
+      "description": "Randomized hestenes_inner seed 4242 rep 0"
+    },
+    {
+      "test_id": 255,
+      "category": "RANDOMIZED_VERIFICATION",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        -171884,
+        123568,
+        110334,
+        -174518,
+        -35672,
+        270444,
+        -107178,
+        -118641
+      ],
+      "right": [
+        -217427,
+        -107328,
+        -94665,
+        -69122,
+        -117426,
+        -126457,
+        -217740,
+        66404
+      ],
+      "expected": [
+        614627,
+        -786813,
+        -361428,
+        266924,
+        1482177,
+        -1338407,
+        324294,
+        938297
+      ],
+      "expected_status": 0,
+      "description": "Randomized geometric_product seed 4242 rep 1"
+    },
+    {
+      "test_id": 256,
+      "category": "RANDOMIZED_VERIFICATION",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        -171884,
+        123568,
+        110334,
+        -174518,
+        -35672,
+        270444,
+        -107178,
+        -118641
+      ],
+      "right": [
+        -217427,
+        -107328,
+        -94665,
+        -69122,
+        -117426,
+        -126457,
+        -217740,
+        66404
+      ],
+      "expected": [
+        570255,
+        -128465,
+        -117770,
+        760283,
+        428529,
+        -981717,
+        558199,
+        938297
+      ],
+      "expected_status": 0,
+      "description": "Randomized wedge seed 4242 rep 1"
+    },
+    {
+      "test_id": 257,
+      "category": "RANDOMIZED_VERIFICATION",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        -171884,
+        123568,
+        110334,
+        -174518,
+        -35672,
+        270444,
+        -107178,
+        -118641
+      ],
+      "right": [
+        -217427,
+        -107328,
+        -94665,
+        -69122,
+        -117426,
+        -126457,
+        -217740,
+        66404
+      ],
+      "expected": [
+        614627,
+        251039,
+        -278926,
+        -387580,
+        131149,
+        219869,
+        696280,
+        -174161
+      ],
+      "expected_status": 0,
+      "description": "Randomized hestenes_inner seed 4242 rep 1"
+    },
+    {
+      "test_id": 258,
+      "category": "RANDOMIZED_VERIFICATION",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        -9908,
+        -38895,
+        202842,
+        146516,
+        -14265,
+        -218205,
+        72923,
+        269208
+      ],
+      "right": [
+        -12743,
+        274842,
+        251050,
+        148967,
+        214254,
+        108735,
+        -22004,
+        -177719
+      ],
+      "expected": [
+        2112070,
+        -1202724,
+        1108605,
+        -466691,
+        -766950,
+        -1391686,
+        433724,
+        1239310
+      ],
+      "expected_status": 0,
+      "description": "Randomized geometric_product seed 4242 rep 2"
+    },
+    {
+      "test_id": 259,
+      "category": "RANDOMIZED_VERIFICATION",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        -9908,
+        -38895,
+        202842,
+        146516,
+        -14265,
+        -218205,
+        72923,
+        269208
+      ],
+      "right": [
+        -12743,
+        274842,
+        251050,
+        148967,
+        214254,
+        108735,
+        -22004,
+        -177719
+      ],
+      "expected": [
+        1927,
+        -33989,
+        -77396,
+        -51010,
+        -1029284,
+        -676874,
+        -111043,
+        1239310
+      ],
+      "expected_status": 0,
+      "description": "Randomized wedge seed 4242 rep 2"
+    },
+    {
+      "test_id": 260,
+      "category": "RANDOMIZED_VERIFICATION",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        -9908,
+        -38895,
+        202842,
+        146516,
+        -14265,
+        -218205,
+        72923,
+        269208
+      ],
+      "right": [
+        -12743,
+        274842,
+        251050,
+        148967,
+        214254,
+        108735,
+        -22004,
+        -177719
+      ],
+      "expected": [
+        2112070,
+        -750038,
+        475804,
+        -193843,
+        -429710,
+        533623,
+        108801,
+        26868
+      ],
+      "expected_status": 0,
+      "description": "Randomized hestenes_inner seed 4242 rep 2"
+    },
+    {
+      "test_id": 261,
+      "category": "RANDOMIZED_VERIFICATION",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        -180833,
+        79036,
+        -55781,
+        240216,
+        -182525,
+        -165040,
+        140319,
+        18834
+      ],
+      "right": [
+        -272397,
+        -124801,
+        188200,
+        22580,
+        -261296,
+        -322033,
+        -312295,
+        36101
+      ],
+      "expected": [
+        -356746,
+        405264,
+        59419,
+        -1724915,
+        263245,
+        3465119,
+        -661765,
+        -1642529
+      ],
+      "expected_status": 0,
+      "description": "Randomized geometric_product seed 4242 rep 3"
+    },
+    {
+      "test_id": 262,
+      "category": "RANDOMIZED_VERIFICATION",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        -180833,
+        79036,
+        -55781,
+        240216,
+        -182525,
+        -165040,
+        140319,
+        18834
+      ],
+      "right": [
+        -272397,
+        -124801,
+        188200,
+        22580,
+        -261296,
+        -322033,
+        -312295,
+        36101
+      ],
+      "expected": [
+        751623,
+        15853,
+        -287448,
+        -1060750,
+        1600391,
+        2059241,
+        -430564,
+        -1642529
+      ],
+      "expected_status": 0,
+      "description": "Randomized wedge seed 4242 rep 3"
+    },
+    {
+      "test_id": 263,
+      "category": "RANDOMIZED_VERIFICATION",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        -180833,
+        79036,
+        -55781,
+        240216,
+        -182525,
+        -165040,
+        140319,
+        18834
+      ],
+      "right": [
+        -272397,
+        -124801,
+        188200,
+        22580,
+        -261296,
+        -322033,
+        -312295,
+        36101
+      ],
+      "expected": [
+        -356746,
+        1225046,
+        219354,
+        -84319,
+        853317,
+        919311,
+        905251,
+        -99613
+      ],
+      "expected_status": 0,
+      "description": "Randomized hestenes_inner seed 4242 rep 3"
+    },
+    {
+      "test_id": 264,
+      "category": "RANDOMIZED_VERIFICATION",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        63565,
+        50695,
+        192187,
+        -162208,
+        207468,
+        -8891,
+        -185310,
+        -50647
+      ],
+      "right": [
+        -167593,
+        198374,
+        216586,
+        198530,
+        318067,
+        3248,
+        -79316,
+        -254691
+      ],
+      "expected": [
+        -1292905,
+        -984685,
+        -1388994,
+        2068700,
+        -179237,
+        2233002,
+        1111472,
+        -878691
+      ],
+      "expected_status": 0,
+      "description": "Randomized geometric_product seed 4242 rep 4"
+    },
+    {
+      "test_id": 265,
+      "category": "RANDOMIZED_VERIFICATION",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        63565,
+        50695,
+        192187,
+        -162208,
+        207468,
+        -8891,
+        -185310,
+        -50647
+      ],
+      "right": [
+        -167593,
+        198374,
+        216586,
+        198530,
+        318067,
+        3248,
+        -79316,
+        -254691
+      ],
+      "expected": [
+        -162553,
+        62767,
+        -281401,
+        607368,
+        -636251,
+        670454,
+        1515225,
+        -878691
+      ],
+      "expected_status": 0,
+      "description": "Randomized wedge seed 4242 rep 4"
+    },
+    {
+      "test_id": 266,
+      "category": "RANDOMIZED_VERIFICATION",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        63565,
+        50695,
+        192187,
+        -162208,
+        207468,
+        -8891,
+        -185310,
+        -50647
+      ],
+      "right": [
+        -167593,
+        198374,
+        216586,
+        198530,
+        318067,
+        3248,
+        -79316,
+        -254691
+      ],
+      "expected": [
+        -1292905,
+        -1452463,
+        294349,
+        768752,
+        938886,
+        750042,
+        -273945,
+        -247031
+      ],
+      "expected_status": 0,
+      "description": "Randomized hestenes_inner seed 4242 rep 4"
+    },
+    {
+      "test_id": 267,
+      "category": "RANDOMIZED_VERIFICATION",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        -10171,
+        298943,
+        -181791,
+        -82584,
+        -133279,
+        21057,
+        126795,
+        237374
+      ],
+      "right": [
+        -311032,
+        269332,
+        233611,
+        -295215,
+        -22828,
+        -191609,
+        -116265,
+        202300
+      ],
+      "expected": [
+        508169,
+        -2305574,
+        -76565,
+        -158177,
+        791241,
+        -1081805,
+        2030878,
+        -1144652
+      ],
+      "expected_status": 0,
+      "description": "Randomized geometric_product seed 4242 rep 5"
+    },
+    {
+      "test_id": 268,
+      "category": "RANDOMIZED_VERIFICATION",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        -10171,
+        298943,
+        -181791,
+        -82584,
+        -133279,
+        21057,
+        126795,
+        237374
+      ],
+      "right": [
+        -311032,
+        269332,
+        233611,
+        -295215,
+        -22828,
+        -191609,
+        -116265,
+        202300
+      ],
+      "expected": [
+        48271,
+        -1460575,
+        826519,
+        437758,
+        2448803,
+        -1077431,
+        529559,
+        -1144652
+      ],
+      "expected_status": 0,
+      "description": "Randomized wedge seed 4242 rep 5"
+    },
+    {
+      "test_id": 269,
+      "category": "RANDOMIZED_VERIFICATION",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        -10171,
+        298943,
+        -181791,
+        -82584,
+        -133279,
+        21057,
+        126795,
+        237374
+      ],
+      "right": [
+        -311032,
+        269332,
+        233611,
+        -295215,
+        -22828,
+        -191609,
+        -116265,
+        202300
+      ],
+      "expected": [
+        508169,
+        -737973,
+        -221895,
+        -94288,
+        -251382,
+        590899,
+        940837,
+        -31396
+      ],
+      "expected_status": 0,
+      "description": "Randomized hestenes_inner seed 4242 rep 5"
+    },
+    {
+      "test_id": 270,
+      "category": "RANDOMIZED_VERIFICATION",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        -121532,
+        -194075,
+        -27870,
+        257347,
+        76363,
+        264158,
+        321273,
+        -166029
+      ],
+      "right": [
+        306447,
+        -264949,
+        110283,
+        114071,
+        51323,
+        -237223,
+        -280583,
+        -277580
+      ],
+      "expected": [
+        2186000,
+        1775412,
+        965031,
+        2794407,
+        -1588319,
+        1960530,
+        3517545,
+        -940490
+      ],
+      "expected_status": 0,
+      "description": "Randomized geometric_product seed 4242 rep 6"
+    },
+    {
+      "test_id": 271,
+      "category": "RANDOMIZED_VERIFICATION",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        -121532,
+        -194075,
+        -27870,
+        257347,
+        76363,
+        264158,
+        321273,
+        -166029
+      ],
+      "right": [
+        306447,
+        -264949,
+        110283,
+        114071,
+        51323,
+        -237223,
+        -280583,
+        -277580
+      ],
+      "expected": [
+        -568285,
+        -416167,
+        -334833,
+        991820,
+        -177360,
+        2377718,
+        1541028,
+        -940490
+      ],
+      "expected_status": 0,
+      "description": "Randomized wedge seed 4242 rep 6"
+    },
+    {
+      "test_id": 272,
+      "category": "RANDOMIZED_VERIFICATION",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        -121532,
+        -194075,
+        -27870,
+        257347,
+        76363,
+        264158,
+        321273,
+        -166029
+      ],
+      "right": [
+        306447,
+        -264949,
+        110283,
+        114071,
+        51323,
+        -237223,
+        -280583,
+        -277580
+      ],
+      "expected": [
+        2186000,
+        2805446,
+        -373554,
+        933723,
+        -1185177,
+        321869,
+        1342333,
+        514753
+      ],
+      "expected_status": 0,
+      "description": "Randomized hestenes_inner seed 4242 rep 6"
+    },
+    {
+      "test_id": 273,
+      "category": "RANDOMIZED_VERIFICATION",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        -83111,
+        -261174,
+        163377,
+        237162,
+        -148602,
+        -196619,
+        36225,
+        -215861
+      ],
+      "right": [
+        218859,
+        25382,
+        315913,
+        -63496,
+        232630,
+        -261650,
+        -254764,
+        -170011
+      ],
+      "expected": [
+        -497599,
+        -1808449,
+        1534168,
+        1562412,
+        -3428583,
+        1749857,
+        -1554752,
+        3109933
+      ],
+      "expected_status": 0,
+      "description": "Randomized geometric_product seed 4242 rep 7"
+    },
+    {
+      "test_id": 274,
+      "category": "RANDOMIZED_VERIFICATION",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        -83111,
+        -261174,
+        163377,
+        237162,
+        -148602,
+        -196619,
+        36225,
+        -215861
+      ],
+      "right": [
+        218859,
+        25382,
+        315913,
+        -63496,
+        232630,
+        -261650,
+        -254764,
+        -170011
+      ],
+      "expected": [
+        -277551,
+        -904385,
+        144969,
+        872532,
+        -2113527,
+        -163605,
+        -857460,
+        3109933
+      ],
+      "expected_status": 0,
+      "description": "Randomized wedge seed 4242 rep 7"
+    },
+    {
+      "test_id": 275,
+      "category": "RANDOMIZED_VERIFICATION",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        -83111,
+        -261174,
+        163377,
+        237162,
+        -148602,
+        -196619,
+        36225,
+        -215861
+      ],
+      "right": [
+        218859,
+        25382,
+        315913,
+        -63496,
+        232630,
+        -261650,
+        -254764,
+        -170011
+      ],
+      "expected": [
+        -497599,
+        428714,
+        104294,
+        102643,
+        -910252,
+        755644,
+        1000613,
+        215603
+      ],
+      "expected_status": 0,
+      "description": "Randomized hestenes_inner seed 4242 rep 7"
+    },
+    {
+      "test_id": 276,
+      "category": "RANDOMIZED_VERIFICATION",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        249191,
+        88,
+        133672,
+        -288232,
+        -126484,
+        -72438,
+        290104,
+        -48692
+      ],
+      "right": [
+        239207,
+        169858,
+        -162092,
+        -242616,
+        188918,
+        97533,
+        -300563,
+        283980
+      ],
+      "expected": [
+        3660095,
+        -209577,
+        -2582572,
+        -993769,
+        -1059187,
+        -102667,
+        -1438110,
+        912836
+      ],
+      "expected_status": 0,
+      "description": "Randomized geometric_product seed 4242 rep 8"
+    },
+    {
+      "test_id": 277,
+      "category": "RANDOMIZED_VERIFICATION",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        249191,
+        88,
+        133672,
+        -288232,
+        -126484,
+        -72438,
+        290104,
+        -48692
+      ],
+      "right": [
+        239207,
+        169858,
+        -162092,
+        -242616,
+        188918,
+        97533,
+        -300563,
+        283980
+      ],
+      "expected": [
+        909549,
+        646181,
+        -128427,
+        -1974561,
+        -90007,
+        853177,
+        -1291714,
+        912836
+      ],
+      "expected_status": 0,
+      "description": "Randomized wedge seed 4242 rep 8"
+    },
+    {
+      "test_id": 278,
+      "category": "RANDOMIZED_VERIFICATION",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        249191,
+        88,
+        133672,
+        -288232,
+        -126484,
+        -72438,
+        290104,
+        -48692
+      ],
+      "right": [
+        239207,
+        169858,
+        -162092,
+        -242616,
+        188918,
+        97533,
+        -300563,
+        283980
+      ],
+      "expected": [
+        3660095,
+        -567590,
+        -2251862,
+        -987352,
+        -530631,
+        -208371,
+        -1142465,
+        1079792
+      ],
+      "expected_status": 0,
+      "description": "Randomized hestenes_inner seed 4242 rep 8"
+    },
+    {
+      "test_id": 279,
+      "category": "RANDOMIZED_VERIFICATION",
+      "opcode": 1,
+      "op_name": "geometric_product",
+      "left": [
+        38138,
+        -219726,
+        -241347,
+        -234135,
+        267166,
+        319037,
+        -183448,
+        -182916
+      ],
+      "right": [
+        -4147,
+        -138555,
+        313638,
+        115269,
+        220451,
+        -171508,
+        255916,
+        155861
+      ],
+      "expected": [
+        -17105,
+        3122683,
+        1852581,
+        1246811,
+        -3094720,
+        2108263,
+        2493058,
+        -2844015
+      ],
+      "expected_status": 0,
+      "description": "Randomized geometric_product seed 4242 rep 9"
+    },
+    {
+      "test_id": 280,
+      "category": "RANDOMIZED_VERIFICATION",
+      "opcode": 2,
+      "op_name": "wedge",
+      "left": [
+        38138,
+        -219726,
+        -241347,
+        -234135,
+        267166,
+        319037,
+        -183448,
+        -182916
+      ],
+      "right": [
+        -4147,
+        -138555,
+        313638,
+        115269,
+        220451,
+        -171508,
+        255916,
+        155861
+      ],
+      "expected": [
+        -2413,
+        -66727,
+        197790,
+        81895,
+        -1450419,
+        -1001468,
+        856547,
+        -2844015
+      ],
+      "expected_status": 0,
+      "description": "Randomized wedge seed 4242 rep 9"
+    },
+    {
+      "test_id": 281,
+      "category": "RANDOMIZED_VERIFICATION",
+      "opcode": 3,
+      "op_name": "hestenes_inner",
+      "left": [
+        38138,
+        -219726,
+        -241347,
+        -234135,
+        267166,
+        319037,
+        -183448,
+        -182916
+      ],
+      "right": [
+        -4147,
+        -138555,
+        313638,
+        115269,
+        220451,
+        -171508,
+        255916,
+        155861
+      ],
+      "expected": [
+        -17105,
+        554769,
+        1116440,
+        -935736,
+        -428542,
+        474176,
+        -373636,
+        90702
+      ],
+      "expected_status": 0,
+      "description": "Randomized hestenes_inner seed 4242 rep 9"
+    },
+    {
+      "test_id": 282,
+      "category": "INVALID_OPCODE",
+      "opcode": 0,
+      "op_name": "INVALID_0",
+      "left": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 1,
+      "description": "Invalid opcode 0 expected to trigger STATUS_ERR_OP"
+    },
+    {
+      "test_id": 283,
+      "category": "INVALID_OPCODE",
+      "opcode": 13,
+      "op_name": "INVALID_13",
+      "left": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 1,
+      "description": "Invalid opcode 13 expected to trigger STATUS_ERR_OP"
+    },
+    {
+      "test_id": 284,
+      "category": "INVALID_OPCODE",
+      "opcode": 99,
+      "op_name": "INVALID_99",
+      "left": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 1,
+      "description": "Invalid opcode 99 expected to trigger STATUS_ERR_OP"
+    },
+    {
+      "test_id": 285,
+      "category": "INVALID_OPCODE",
+      "opcode": 255,
+      "op_name": "INVALID_255",
+      "left": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "right": [
+        65536,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "expected_status": 1,
+      "description": "Invalid opcode 255 expected to trigger STATUS_ERR_OP"
+    }
+  ]
+}

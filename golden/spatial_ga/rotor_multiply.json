@@ -1,0 +1,52 @@
+{
+  "test": "rotor_multiply",
+  "description": "Compose two pi/4 rotors = pi/2 rotor",
+  "input_a": {
+    "metric": "G(3,0,0)",
+    "coefficients": {
+      "0": 0.9238795325112867,
+      "3": -0.3826834323650898
+    },
+    "num_active": 2,
+    "density": 0.25
+  },
+  "input_b": {
+    "metric": "G(3,0,0)",
+    "coefficients": {
+      "0": 0.9238795325112867,
+      "3": -0.3826834323650898
+    },
+    "num_active": 2,
+    "density": 0.25
+  },
+  "expected_float32": {
+    "metric": "G(3,0,0)",
+    "coefficients": {
+      "0": 0.7071067811865475,
+      "3": -0.7071067811865476
+    },
+    "num_active": 2,
+    "density": 0.25
+  },
+  "expected_fix16": {
+    "format": "Fix16Format(Q1.14, scale=16384.0)",
+    "fixed_values": {
+      "0": 11585,
+      "3": -11585
+    },
+    "dequantized": {
+      "metric": "G(3,0,0)",
+      "coefficients": {
+        "0": 0.70709228515625,
+        "3": -0.70709228515625
+      },
+      "num_active": 2,
+      "density": 0.25
+    },
+    "max_abs_error": 1.4496030297572737e-05,
+    "mean_abs_error": 1.4496030297517226e-05,
+    "rms_error": 1.4496030297517226e-05,
+    "norm_error": 2.0500482647320155e-05
+  },
+  "notes": "[GOLDEN] R(\u03c0/4) * R(\u03c0/4) = R(\u03c0/2) in e01 plane"
+}

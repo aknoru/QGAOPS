@@ -1,0 +1,195 @@
+
+
+================================================================
+== Vitis HLS Report for 'qgpu_ga_engine_parallel_Pipeline_AAMF_FETCH'
+================================================================
+* Date:           Tue Oct 27 05:13:17 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Project:        qgpu_ga_parallel
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.665 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+-------------------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval |      Pipeline     |
+    |   min   |   max   |    min   |    max   | min | max |        Type       |
+    +---------+---------+----------+----------+-----+-----+-------------------+
+    |       10|       10|  0.100 us|  0.100 us|    0|    0|  loop pipeline stp|
+    +---------+---------+----------+----------+-----+-----+-------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------+---------+---------+----------+-----------+-----------+------+----------+
+        |              |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |   Loop Name  |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- AAMF_FETCH  |        8|        8|         2|          1|          1|     8|       yes|
+        +--------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|     42|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|       -|      -|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       0|     36|    -|
+|Register         |        -|    -|     554|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|     554|     78|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------+----------+----+---+----+------------+------------+
+    |     Variable Name    | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------+----------+----+---+----+------------+------------+
+    |add_ln350_fu_331_p2   |         +|   0|  0|  13|           4|           1|
+    |add_ln351_fu_345_p2   |         +|   0|  0|  14|           9|           9|
+    |icmp_ln350_fu_325_p2  |      icmp|   0|  0|  13|           4|           5|
+    |ap_enable_pp0         |       xor|   0|  0|   2|           1|           2|
+    +----------------------+----------+----+---+----+------------+------------+
+    |Total                 |          |   0|  0|  42|          18|          17|
+    +----------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------+----+-----------+-----+-----------+
+    |           Name          | LUT| Input Size| Bits| Total Bits|
+    +-------------------------+----+-----------+-----+-----------+
+    |ap_done_int              |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
+    |ap_sig_allocacmp_k       |   9|          2|    4|          8|
+    |k_1_fu_94                |   9|          2|    4|          8|
+    +-------------------------+----+-----------+-----+-----------+
+    |Total                    |  36|          8|   10|         20|
+    +-------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------+----+----+-----+-----------+
+    |           Name          | FF | LUT| Bits| Const Bits|
+    +-------------------------+----+----+-----+-----------+
+    |ap_CS_fsm                |   1|   0|    1|          0|
+    |ap_done_reg              |   1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1  |   1|   0|    1|          0|
+    |empty_51_fu_102          |  32|   0|   32|          0|
+    |empty_52_fu_106          |  32|   0|   32|          0|
+    |empty_53_fu_110          |  32|   0|   32|          0|
+    |empty_54_fu_114          |  32|   0|   32|          0|
+    |empty_55_fu_118          |  32|   0|   32|          0|
+    |empty_56_fu_122          |  32|   0|   32|          0|
+    |empty_57_fu_126          |  32|   0|   32|          0|
+    |empty_58_fu_130          |  32|   0|   32|          0|
+    |empty_59_fu_134          |  32|   0|   32|          0|
+    |empty_60_fu_138          |  32|   0|   32|          0|
+    |empty_61_fu_142          |  32|   0|   32|          0|
+    |empty_62_fu_146          |  32|   0|   32|          0|
+    |empty_63_fu_150          |  32|   0|   32|          0|
+    |empty_64_fu_154          |  32|   0|   32|          0|
+    |empty_65_fu_158          |  32|   0|   32|          0|
+    |empty_66_fu_162          |  32|   0|   32|          0|
+    |empty_fu_98              |  32|   0|   32|          0|
+    |k_1_fu_94                |   4|   0|    4|          0|
+    |trunc_ln350_reg_645      |   3|   0|    3|          0|
+    +-------------------------+----+----+-----+-----------+
+    |Total                    | 554|   0|  554|          0|
+    +-------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++----------------------+-----+-----+------------+---------------------------------------------+--------------+
+|       RTL Ports      | Dir | Bits|  Protocol  |                Source Object                |    C Type    |
++----------------------+-----+-----+------------+---------------------------------------------+--------------+
+|ap_clk                |   in|    1|  ap_ctrl_hs|  qgpu_ga_engine_parallel_Pipeline_AAMF_FETCH|  return value|
+|ap_rst                |   in|    1|  ap_ctrl_hs|  qgpu_ga_engine_parallel_Pipeline_AAMF_FETCH|  return value|
+|ap_start              |   in|    1|  ap_ctrl_hs|  qgpu_ga_engine_parallel_Pipeline_AAMF_FETCH|  return value|
+|ap_done               |  out|    1|  ap_ctrl_hs|  qgpu_ga_engine_parallel_Pipeline_AAMF_FETCH|  return value|
+|ap_idle               |  out|    1|  ap_ctrl_hs|  qgpu_ga_engine_parallel_Pipeline_AAMF_FETCH|  return value|
+|ap_ready              |  out|    1|  ap_ctrl_hs|  qgpu_ga_engine_parallel_Pipeline_AAMF_FETCH|  return value|
+|base_addr             |   in|    9|     ap_none|                                    base_addr|        scalar|
+|p_out                 |  out|   32|      ap_vld|                                        p_out|       pointer|
+|p_out_ap_vld          |  out|    1|      ap_vld|                                        p_out|       pointer|
+|p_out1                |  out|   32|      ap_vld|                                       p_out1|       pointer|
+|p_out1_ap_vld         |  out|    1|      ap_vld|                                       p_out1|       pointer|
+|p_out2                |  out|   32|      ap_vld|                                       p_out2|       pointer|
+|p_out2_ap_vld         |  out|    1|      ap_vld|                                       p_out2|       pointer|
+|p_out3                |  out|   32|      ap_vld|                                       p_out3|       pointer|
+|p_out3_ap_vld         |  out|    1|      ap_vld|                                       p_out3|       pointer|
+|p_out4                |  out|   32|      ap_vld|                                       p_out4|       pointer|
+|p_out4_ap_vld         |  out|    1|      ap_vld|                                       p_out4|       pointer|
+|p_out5                |  out|   32|      ap_vld|                                       p_out5|       pointer|
+|p_out5_ap_vld         |  out|    1|      ap_vld|                                       p_out5|       pointer|
+|p_out6                |  out|   32|      ap_vld|                                       p_out6|       pointer|
+|p_out6_ap_vld         |  out|    1|      ap_vld|                                       p_out6|       pointer|
+|p_out7                |  out|   32|      ap_vld|                                       p_out7|       pointer|
+|p_out7_ap_vld         |  out|    1|      ap_vld|                                       p_out7|       pointer|
+|p_out8                |  out|   32|      ap_vld|                                       p_out8|       pointer|
+|p_out8_ap_vld         |  out|    1|      ap_vld|                                       p_out8|       pointer|
+|p_out9                |  out|   32|      ap_vld|                                       p_out9|       pointer|
+|p_out9_ap_vld         |  out|    1|      ap_vld|                                       p_out9|       pointer|
+|p_out10               |  out|   32|      ap_vld|                                      p_out10|       pointer|
+|p_out10_ap_vld        |  out|    1|      ap_vld|                                      p_out10|       pointer|
+|p_out11               |  out|   32|      ap_vld|                                      p_out11|       pointer|
+|p_out11_ap_vld        |  out|    1|      ap_vld|                                      p_out11|       pointer|
+|p_out12               |  out|   32|      ap_vld|                                      p_out12|       pointer|
+|p_out12_ap_vld        |  out|    1|      ap_vld|                                      p_out12|       pointer|
+|p_out13               |  out|   32|      ap_vld|                                      p_out13|       pointer|
+|p_out13_ap_vld        |  out|    1|      ap_vld|                                      p_out13|       pointer|
+|p_out14               |  out|   32|      ap_vld|                                      p_out14|       pointer|
+|p_out14_ap_vld        |  out|    1|      ap_vld|                                      p_out14|       pointer|
+|p_out15               |  out|   32|      ap_vld|                                      p_out15|       pointer|
+|p_out15_ap_vld        |  out|    1|      ap_vld|                                      p_out15|       pointer|
+|p_out16               |  out|   32|      ap_vld|                                      p_out16|       pointer|
+|p_out16_ap_vld        |  out|    1|      ap_vld|                                      p_out16|       pointer|
+|aamf_bank_a_address0  |  out|    9|   ap_memory|                                  aamf_bank_a|         array|
+|aamf_bank_a_ce0       |  out|    1|   ap_memory|                                  aamf_bank_a|         array|
+|aamf_bank_a_q0        |   in|   32|   ap_memory|                                  aamf_bank_a|         array|
+|aamf_bank_b_address0  |  out|    9|   ap_memory|                                  aamf_bank_b|         array|
+|aamf_bank_b_ce0       |  out|    1|   ap_memory|                                  aamf_bank_b|         array|
+|aamf_bank_b_q0        |   in|   32|   ap_memory|                                  aamf_bank_b|         array|
++----------------------+-----+-----+------------+---------------------------------------------+--------------+
+

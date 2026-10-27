@@ -1,0 +1,162 @@
+
+
+================================================================
+== Vitis HLS Report for 'qgpu_ga_engine_parallel_Pipeline_AAMF_COMMIT_OUT'
+================================================================
+* Date:           Tue Oct 27 05:13:23 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Project:        qgpu_ga_parallel
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  4.911 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+-------------------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval |      Pipeline     |
+    |   min   |   max   |    min   |    max   | min | max |        Type       |
+    +---------+---------+----------+----------+-----+-----+-------------------+
+    |       10|       10|  0.100 us|  0.100 us|    0|    0|  loop pipeline stp|
+    +---------+---------+----------+----------+-----+-----+-------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |     Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- AAMF_COMMIT_OUT  |        8|        8|         1|          1|          1|     8|       yes|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|     26|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|       0|     42|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       0|     27|    -|
+|Register         |        -|    -|       6|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|       6|     95|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +----------------------------+-----------------------+---------+----+---+----+-----+
+    |          Instance          |         Module        | BRAM_18K| DSP| FF| LUT| URAM|
+    +----------------------------+-----------------------+---------+----+---+----+-----+
+    |sparsemux_17_3_32_1_1_U272  |sparsemux_17_3_32_1_1  |        0|   0|  0|  42|    0|
+    +----------------------------+-----------------------+---------+----+---+----+-----+
+    |Total                       |                       |        0|   0|  0|  42|    0|
+    +----------------------------+-----------------------+---------+----+---+----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------+----------+----+---+----+------------+------------+
+    |     Variable Name    | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------+----------+----+---+----+------------+------------+
+    |add_ln423_fu_202_p2   |         +|   0|  0|  13|           4|           1|
+    |icmp_ln423_fu_196_p2  |      icmp|   0|  0|  13|           4|           5|
+    +----------------------+----------+----+---+----+------------+------------+
+    |Total                 |          |   0|  0|  26|           8|           6|
+    +----------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------------+----+-----------+-----+-----------+
+    |         Name         | LUT| Input Size| Bits| Total Bits|
+    +----------------------+----+-----------+-----+-----------+
+    |ap_done_int           |   9|          2|    1|          2|
+    |ap_sig_allocacmp_k_2  |   9|          2|    4|          8|
+    |k_fu_80               |   9|          2|    4|          8|
+    +----------------------+----+-----------+-----+-----------+
+    |Total                 |  27|          6|    9|         18|
+    +----------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------+---+----+-----+-----------+
+    |     Name    | FF| LUT| Bits| Const Bits|
+    +-------------+---+----+-----+-----------+
+    |ap_CS_fsm    |  1|   0|    1|          0|
+    |ap_done_reg  |  1|   0|    1|          0|
+    |k_fu_80      |  4|   0|    4|          0|
+    +-------------+---+----+-----+-----------+
+    |Total        |  6|   0|    6|          0|
+    +-------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------+-----+-----+------------+--------------------------------------------------+--------------+
+|  RTL Ports | Dir | Bits|  Protocol  |                   Source Object                  |    C Type    |
++------------+-----+-----+------------+--------------------------------------------------+--------------+
+|ap_clk      |   in|    1|  ap_ctrl_hs|  qgpu_ga_engine_parallel_Pipeline_AAMF_COMMIT_OUT|  return value|
+|ap_rst      |   in|    1|  ap_ctrl_hs|  qgpu_ga_engine_parallel_Pipeline_AAMF_COMMIT_OUT|  return value|
+|ap_start    |   in|    1|  ap_ctrl_hs|  qgpu_ga_engine_parallel_Pipeline_AAMF_COMMIT_OUT|  return value|
+|ap_done     |  out|    1|  ap_ctrl_hs|  qgpu_ga_engine_parallel_Pipeline_AAMF_COMMIT_OUT|  return value|
+|ap_idle     |  out|    1|  ap_ctrl_hs|  qgpu_ga_engine_parallel_Pipeline_AAMF_COMMIT_OUT|  return value|
+|ap_ready    |  out|    1|  ap_ctrl_hs|  qgpu_ga_engine_parallel_Pipeline_AAMF_COMMIT_OUT|  return value|
+|c_0         |  out|   32|      ap_vld|                                               c_0|       pointer|
+|c_0_ap_vld  |  out|    1|      ap_vld|                                               c_0|       pointer|
+|c_7         |  out|   32|      ap_vld|                                               c_7|       pointer|
+|c_7_ap_vld  |  out|    1|      ap_vld|                                               c_7|       pointer|
+|c_6         |  out|   32|      ap_vld|                                               c_6|       pointer|
+|c_6_ap_vld  |  out|    1|      ap_vld|                                               c_6|       pointer|
+|c_5         |  out|   32|      ap_vld|                                               c_5|       pointer|
+|c_5_ap_vld  |  out|    1|      ap_vld|                                               c_5|       pointer|
+|c_4         |  out|   32|      ap_vld|                                               c_4|       pointer|
+|c_4_ap_vld  |  out|    1|      ap_vld|                                               c_4|       pointer|
+|c_3         |  out|   32|      ap_vld|                                               c_3|       pointer|
+|c_3_ap_vld  |  out|    1|      ap_vld|                                               c_3|       pointer|
+|c_2         |  out|   32|      ap_vld|                                               c_2|       pointer|
+|c_2_ap_vld  |  out|    1|      ap_vld|                                               c_2|       pointer|
+|c_1         |  out|   32|      ap_vld|                                               c_1|       pointer|
+|c_1_ap_vld  |  out|    1|      ap_vld|                                               c_1|       pointer|
+|c_reg_0     |   in|   32|     ap_none|                                           c_reg_0|        scalar|
+|c_reg_1_0   |   in|   32|     ap_none|                                         c_reg_1_0|        scalar|
+|c_reg_2_0   |   in|   32|     ap_none|                                         c_reg_2_0|        scalar|
+|c_reg_3_0   |   in|   32|     ap_none|                                         c_reg_3_0|        scalar|
+|c_reg_4_0   |   in|   32|     ap_none|                                         c_reg_4_0|        scalar|
+|c_reg_5_0   |   in|   32|     ap_none|                                         c_reg_5_0|        scalar|
+|c_reg_6_0   |   in|   32|     ap_none|                                         c_reg_6_0|        scalar|
+|c_reg_7_0   |   in|   32|     ap_none|                                         c_reg_7_0|        scalar|
++------------+-----+-----+------------+--------------------------------------------------+--------------+
+

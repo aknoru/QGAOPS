@@ -1,0 +1,152 @@
+
+
+================================================================
+== Vitis HLS Report for 'qgpu_ga_engine_shared_Pipeline_VITIS_LOOP_287_1'
+================================================================
+* Date:           Tue Oct 27 05:17:51 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Project:        qgpu_ga_sequential
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  5.077 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+-------------------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval |      Pipeline     |
+    |   min   |   max   |    min   |    max   | min | max |        Type       |
+    +---------+---------+----------+----------+-----+-----+-------------------+
+    |       10|       10|  0.100 us|  0.100 us|    0|    0|  loop pipeline stp|
+    +---------+---------+----------+----------+-----+-----+-------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                    |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_287_1  |        8|        8|         2|          1|          1|     8|       yes|
+        +--------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|     42|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|       -|      -|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       0|     36|    -|
+|Register         |        -|    -|      11|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|      11|     78|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------+----------+----+---+----+------------+------------+
+    |     Variable Name    | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------+----------+----+---+----+------------+------------+
+    |add_ln287_fu_142_p2   |         +|   0|  0|  13|           4|           1|
+    |add_ln288_fu_162_p2   |         +|   0|  0|  14|           9|           9|
+    |icmp_ln287_fu_136_p2  |      icmp|   0|  0|  13|           4|           5|
+    |ap_enable_pp0         |       xor|   0|  0|   2|           1|           2|
+    +----------------------+----------+----+---+----+------------+------------+
+    |Total                 |          |   0|  0|  42|          18|          17|
+    +----------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-------------------------+----+-----------+-----+-----------+
+    |           Name          | LUT| Input Size| Bits| Total Bits|
+    +-------------------------+----+-----------+-----+-----------+
+    |ap_done_int              |   9|          2|    1|          2|
+    |ap_enable_reg_pp0_iter1  |   9|          2|    1|          2|
+    |ap_sig_allocacmp_k_3     |   9|          2|    4|          8|
+    |k_fu_56                  |   9|          2|    4|          8|
+    +-------------------------+----+-----------+-----+-----------+
+    |Total                    |  36|          8|   10|         20|
+    +-------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------------------+---+----+-----+-----------+
+    |           Name          | FF| LUT| Bits| Const Bits|
+    +-------------------------+---+----+-----+-----------+
+    |ap_CS_fsm                |  1|   0|    1|          0|
+    |ap_done_reg              |  1|   0|    1|          0|
+    |ap_enable_reg_pp0_iter1  |  1|   0|    1|          0|
+    |k_3_reg_185              |  4|   0|    4|          0|
+    |k_fu_56                  |  4|   0|    4|          0|
+    +-------------------------+---+----+-----+-----------+
+    |Total                    | 11|   0|   11|          0|
+    +-------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------------------+-----+-----+------------+-------------------------------------------------+--------------+
+|         RTL Ports        | Dir | Bits|  Protocol  |                  Source Object                  |    C Type    |
++--------------------------+-----+-----+------------+-------------------------------------------------+--------------+
+|ap_clk                    |   in|    1|  ap_ctrl_hs|  qgpu_ga_engine_shared_Pipeline_VITIS_LOOP_287_1|  return value|
+|ap_rst                    |   in|    1|  ap_ctrl_hs|  qgpu_ga_engine_shared_Pipeline_VITIS_LOOP_287_1|  return value|
+|ap_start                  |   in|    1|  ap_ctrl_hs|  qgpu_ga_engine_shared_Pipeline_VITIS_LOOP_287_1|  return value|
+|ap_done                   |  out|    1|  ap_ctrl_hs|  qgpu_ga_engine_shared_Pipeline_VITIS_LOOP_287_1|  return value|
+|ap_idle                   |  out|    1|  ap_ctrl_hs|  qgpu_ga_engine_shared_Pipeline_VITIS_LOOP_287_1|  return value|
+|ap_ready                  |  out|    1|  ap_ctrl_hs|  qgpu_ga_engine_shared_Pipeline_VITIS_LOOP_287_1|  return value|
+|a_address0                |  out|    3|   ap_memory|                                                a|         array|
+|a_ce0                     |  out|    1|   ap_memory|                                                a|         array|
+|a_q0                      |   in|   32|   ap_memory|                                                a|         array|
+|base_addr                 |   in|    9|     ap_none|                                        base_addr|        scalar|
+|b_address0                |  out|    3|   ap_memory|                                                b|         array|
+|b_ce0                     |  out|    1|   ap_memory|                                                b|         array|
+|b_q0                      |   in|   32|   ap_memory|                                                b|         array|
+|aamf_seq_bank_a_address1  |  out|    9|   ap_memory|                                  aamf_seq_bank_a|         array|
+|aamf_seq_bank_a_ce1       |  out|    1|   ap_memory|                                  aamf_seq_bank_a|         array|
+|aamf_seq_bank_a_we1       |  out|    1|   ap_memory|                                  aamf_seq_bank_a|         array|
+|aamf_seq_bank_a_d1        |  out|   32|   ap_memory|                                  aamf_seq_bank_a|         array|
+|aamf_seq_bank_b_address1  |  out|    9|   ap_memory|                                  aamf_seq_bank_b|         array|
+|aamf_seq_bank_b_ce1       |  out|    1|   ap_memory|                                  aamf_seq_bank_b|         array|
+|aamf_seq_bank_b_we1       |  out|    1|   ap_memory|                                  aamf_seq_bank_b|         array|
+|aamf_seq_bank_b_d1        |  out|   32|   ap_memory|                                  aamf_seq_bank_b|         array|
++--------------------------+-----+-----+------------+-------------------------------------------------+--------------+
+

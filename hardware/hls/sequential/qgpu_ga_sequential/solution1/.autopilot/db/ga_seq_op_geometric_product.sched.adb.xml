@@ -1,0 +1,78 @@
+<stg><name>ga_seq_op_geometric_product</name>
+
+
+<trans_list>
+
+<trans id="6" from="1" to="2">
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+</trans>
+</trans_list>
+
+
+
+<state_list>
+
+<state id="1" st_id="1">
+
+<operation id="3" st_id="1" stage="2" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="5" bw="1" op_0_bw="1" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="2" op_5_bw="1" op_6_bw="3">
+<![CDATA[
+entry:0 %overflow_write_assign = call i1 @compute_gp_seq_core, i32 %a, i32 %b, i32 %c, i2 1, i1 0, i3 %BASIS_MASKS
+
+]]></Node>
+<StgValue><ssdm name="overflow_write_assign"/></StgValue>
+</operation>
+</state>
+
+<state id="2" st_id="2">
+
+<operation id="4" st_id="2" stage="1" lat="2">
+<core></core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="5" bw="1" op_0_bw="1" op_1_bw="32" op_2_bw="32" op_3_bw="32" op_4_bw="2" op_5_bw="1" op_6_bw="3">
+<![CDATA[
+entry:0 %overflow_write_assign = call i1 @compute_gp_seq_core, i32 %a, i32 %b, i32 %c, i2 1, i1 0, i3 %BASIS_MASKS
+
+]]></Node>
+<StgValue><ssdm name="overflow_write_assign"/></StgValue>
+</operation>
+
+<operation id="5" st_id="2" stage="1" lat="1">
+<core>NULL</core>
+<MemPortIdVec></MemPortIdVec>
+<condition id="-1">
+<or_exp><and_exp></and_exp></or_exp>
+</condition>
+
+<Node id="6" bw="0" op_0_bw="1">
+<![CDATA[
+entry:1 %ret_ln105 = ret i1 %overflow_write_assign
+
+]]></Node>
+<StgValue><ssdm name="ret_ln105"/></StgValue>
+</operation>
+</state>
+</state_list>
+
+
+<ports>
+</ports>
+
+
+<dataflows>
+</dataflows>
+
+
+</stg>

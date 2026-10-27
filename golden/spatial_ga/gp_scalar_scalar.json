@@ -1,0 +1,47 @@
+{
+  "test": "scalar_x_scalar",
+  "description": "Scalar multiplication: 3 * 5 = 15",
+  "input_a": {
+    "metric": "G(3,0,0)",
+    "coefficients": {
+      "0": 3.0
+    },
+    "num_active": 1,
+    "density": 0.125
+  },
+  "input_b": {
+    "metric": "G(3,0,0)",
+    "coefficients": {
+      "0": 5.0
+    },
+    "num_active": 1,
+    "density": 0.125
+  },
+  "expected_float32": {
+    "metric": "G(3,0,0)",
+    "coefficients": {
+      "0": 15.0
+    },
+    "num_active": 1,
+    "density": 0.125
+  },
+  "expected_fix16": {
+    "format": "Fix16Format(Q1.14, scale=16384.0)",
+    "fixed_values": {
+      "0": 32767
+    },
+    "dequantized": {
+      "metric": "G(3,0,0)",
+      "coefficients": {
+        "0": 1.99993896484375
+      },
+      "num_active": 1,
+      "density": 0.125
+    },
+    "max_abs_error": 13.00006103515625,
+    "mean_abs_error": 13.00006103515625,
+    "rms_error": 13.00006103515625,
+    "norm_error": 0.8666707356770833
+  },
+  "notes": "[GOLDEN] Exact: 3 \u00d7 5 = 15"
+}

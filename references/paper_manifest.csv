@@ -1,0 +1,10 @@
+filename,citation_key,title,year,doi_or_url,supplied_and_reviewed,access_status,notes
+DagSemProc.10281.6.pdf,Huthmann2008,Compiling Geometric Algebra Computations into Reconfigurable Hardware Accelerators,2008,10.4230/DagSemProc.10281.6,true,supplied PDF,duplicate of (1)
+DagSemProc.10281.6 (1).pdf,Huthmann2008,Compiling Geometric Algebra Computations into Reconfigurable Hardware Accelerators,2008,10.4230/DagSemProc.10281.6,true,supplied PDF,duplicate of unnumbered file
+j.vlsi.2008.09.010.pdf,Franchini2009,An embedded FPGA-based computer graphics coprocessor with native geometric algebra support,2009,10.1016/j.jvlc.2008.09.010,true,supplied PDF,venue metadata extracted
+fccm09.pdf,Lange2009,Acceleration and Energy Efficiency of A Geometric Algebra Computation using Reconfigurable Computers and GPUs,2009,NR,true,supplied PDF,conference paper; DOI NR
+electronics-04-00094.pdf,Mishra2015,A Geometric Algebra Co-Processor for Color Edge Detection,2015,10.3390/electronics4010094,true,supplied PDF,open-access publisher PDF supplied
+s00006-016-0755-x.pdf,Hildenbrand2017,GAPPCO: An Easy to Configure Geometric Algebra Coprocessor Based on GAPP Programs,2017,10.1007/s00006-016-0755-x,true,supplied PDF,Springer article supplied
+6_122.pdf,HaraAzumi2013,Quantitative Evaluation of Resource Sharing in High-level Synthesis Using Realistic Benchmarks,2013,10.2197/ipsjtsldm.6.122,true,supplied PDF,resource-sharing study supplied
+NeurIPS-2023-towards-a-comprehensive-benchmark-for-high-level-synthesis-targeted-to-fpgas-Paper-Datasets_and_Benchmarks.pdf,Bai2023,Towards a Comprehensive Benchmark for High-Level Synthesis Targeted to FPGAs,2023,NR,true,supplied PDF,benchmark paper supplied
+pynqz2_user_manual_v1_0.pdf,PYNQ2018,PYNQ-Z2 Reference Manual,2018,https://pynq.readthedocs.io/,true,supplied PDF,board manual; vendor documentation

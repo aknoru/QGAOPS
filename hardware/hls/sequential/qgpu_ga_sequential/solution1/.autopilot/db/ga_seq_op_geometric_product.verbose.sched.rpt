@@ -1,0 +1,115 @@
+
+
+================================================================
+== Vitis HLS Report for 'ga_seq_op_geometric_product'
+================================================================
+* Date:           Tue Oct 27 05:17:49 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Project:        qgpu_ga_sequential
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.077 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       86|       86|  0.860 us|  0.860 us|   86|   86|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.56>
+ST_1 : Operation 3 [2/2] (1.56ns)   --->   "%overflow_write_assign = call i1 @compute_gp_seq_core, i32 %a, i32 %b, i32 %c, i2 1, i1 0, i3 %BASIS_MASKS" [../ga_engine/src/qgpu_ga_engine_shared.cpp:104]   --->   Operation 3 'call' 'overflow_write_assign' <Predicate = true> <Delay = 1.56> <CoreType = "Generic">   --->   Generic Core
+
+State 2 <SV = 1> <Delay = 0.99>
+ST_2 : Operation 4 [1/2] (0.99ns)   --->   "%overflow_write_assign = call i1 @compute_gp_seq_core, i32 %a, i32 %b, i32 %c, i2 1, i1 0, i3 %BASIS_MASKS" [../ga_engine/src/qgpu_ga_engine_shared.cpp:104]   --->   Operation 4 'call' 'overflow_write_assign' <Predicate = true> <Delay = 0.99> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 5 [1/1] (0.00ns)   --->   "%ret_ln105 = ret i1 %overflow_write_assign" [../ga_engine/src/qgpu_ga_engine_shared.cpp:105]   --->   Operation 5 'ret' 'ret_ln105' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 1.565ns
+The critical path consists of the following:
+	'call' operation 1 bit ('overflow', ../ga_engine/src/qgpu_ga_engine_shared.cpp:104) to 'compute_gp_seq_core' [5]  (1.565 ns)
+
+ <State 2>: 0.993ns
+The critical path consists of the following:
+	'call' operation 1 bit ('overflow', ../ga_engine/src/qgpu_ga_engine_shared.cpp:104) to 'compute_gp_seq_core' [5]  (0.993 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

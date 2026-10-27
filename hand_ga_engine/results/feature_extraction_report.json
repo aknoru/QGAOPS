@@ -1,0 +1,48 @@
+{
+  "dataset_dir": "LeapGestRecog_1/LeapGestRecog_1",
+  "total_images_processed": 1200,
+  "landmark_samples_extracted": 409,
+  "overall_detection_rate_pct": 34.08,
+  "overall_failure_rate_pct": 65.92,
+  "image_feature_dim": 384,
+  "landmark_feature_dim": 107,
+  "detection_by_class": {
+    "PALM": {
+      "total": 200,
+      "detected": 182,
+      "failed": 18,
+      "success_rate_pct": 91.0
+    },
+    "L_GESTURE": {
+      "total": 200,
+      "detected": 28,
+      "failed": 172,
+      "success_rate_pct": 14.0
+    },
+    "FIST": {
+      "total": 200,
+      "detected": 0,
+      "failed": 200,
+      "success_rate_pct": 0.0
+    },
+    "THUMB": {
+      "total": 200,
+      "detected": 0,
+      "failed": 200,
+      "success_rate_pct": 0.0
+    },
+    "INDEX": {
+      "total": 200,
+      "detected": 0,
+      "failed": 200,
+      "success_rate_pct": 0.0
+    },
+    "OK": {
+      "total": 200,
+      "detected": 199,
+      "failed": 1,
+      "success_rate_pct": 99.5
+    }
+  },
+  "extraction_time_s": 37.17
+}

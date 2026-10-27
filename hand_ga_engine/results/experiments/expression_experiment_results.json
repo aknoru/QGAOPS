@@ -1,0 +1,160 @@
+{
+  "timestamp": "2026-10-27 01:17:04",
+  "dataset_statistics": {
+    "total_images": 1200,
+    "classes": [
+      "PALM",
+      "L_GESTURE",
+      "FIST",
+      "THUMB",
+      "INDEX",
+      "OK"
+    ],
+    "corrupted_images": 0
+  },
+  "landmark_detection": {
+    "detected_samples": 409,
+    "detection_success_rate_pct": 34.08,
+    "detection_failure_rate_pct": 65.92,
+    "by_class": {
+      "PALM": {
+        "total": 200,
+        "detected": 182,
+        "failed": 18,
+        "success_rate_pct": 91.0
+      },
+      "L_GESTURE": {
+        "total": 200,
+        "detected": 28,
+        "failed": 172,
+        "success_rate_pct": 14.0
+      },
+      "FIST": {
+        "total": 200,
+        "detected": 0,
+        "failed": 200,
+        "success_rate_pct": 0.0
+      },
+      "THUMB": {
+        "total": 200,
+        "detected": 0,
+        "failed": 200,
+        "success_rate_pct": 0.0
+      },
+      "INDEX": {
+        "total": 200,
+        "detected": 0,
+        "failed": 200,
+        "success_rate_pct": 0.0
+      },
+      "OK": {
+        "total": 200,
+        "detected": 199,
+        "failed": 1,
+        "success_rate_pct": 99.5
+      }
+    }
+  },
+  "landmark_classifier_metrics": {
+    "model_type": "random_forest",
+    "accuracy": 0.0161,
+    "precision": 0.0215,
+    "recall": 0.0161,
+    "f1": 0.0184,
+    "inference_latency_us": 777.77,
+    "confusion_matrix": [
+      [
+        1,
+        0,
+        7,
+        0,
+        20,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0,
+        2,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        19,
+        0,
+        0,
+        0,
+        11,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "target_names": [
+      "OPEN_PALM",
+      "FIST",
+      "THUMBS_UP",
+      "TWO_FINGER",
+      "OK_SIGN",
+      "ROCK_SIGN"
+    ]
+  },
+  "image_baseline_metrics": {
+    "model_type": "random_forest",
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "inference_latency_us": 235.62
+  },
+  "ga_operation_benchmarks": {
+    "GP": {
+      "mean_latency_us": 13.853,
+      "ops_per_second": 72188.5
+    },
+    "WEDGE": {
+      "mean_latency_us": 18.486,
+      "ops_per_second": 54095.5
+    },
+    "DOT": {
+      "mean_latency_us": 9.568,
+      "ops_per_second": 104514.3
+    },
+    "NORM": {
+      "mean_latency_us": 5.928,
+      "ops_per_second": 168693.5
+    },
+    "DISTANCE": {
+      "mean_latency_us": 9.827,
+      "ops_per_second": 101758.6
+    }
+  },
+  "fix16_numerical_error": {
+    "max_absolute_error": 4.398822784423828e-05,
+    "mean_absolute_error": 8.247792720794678e-06,
+    "rms_error": 1.6731489343726492e-05
+  },
+  "classification": "[MEASURED SOFTWARE]"
+}

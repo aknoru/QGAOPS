@@ -1,0 +1,139 @@
+
+
+================================================================
+== Vitis HLS Report for 'ga_op_reverse'
+================================================================
+* Date:           Tue Oct 27 05:13:20 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Project:        qgpu_ga_parallel
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  5.095 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        0|        0|      0 ns|      0 ns|    0|    0|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|    336|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|       -|      -|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|      -|    -|
+|Register         |        -|    -|       -|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|       0|    336|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|       0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +--------------------------+----------+----+---+----+------------+------------+
+    |       Variable Name      | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------------------+----------+----+---+----+------------+------------+
+    |diff_10_fu_208_p2         |         -|   0|  0|  40|           1|          33|
+    |diff_8_fu_132_p2          |         -|   0|  0|  40|           1|          33|
+    |diff_9_fu_170_p2          |         -|   0|  0|  40|           1|          33|
+    |diff_fu_94_p2             |         -|   0|  0|  40|           1|          33|
+    |icmp_ln128_10_fu_224_p2   |      icmp|   0|  0|  10|           2|           1|
+    |icmp_ln128_8_fu_148_p2    |      icmp|   0|  0|  10|           2|           1|
+    |icmp_ln128_9_fu_186_p2    |      icmp|   0|  0|  10|           2|           1|
+    |icmp_ln128_fu_110_p2      |      icmp|   0|  0|  10|           2|           1|
+    |or_ln225_1_fu_248_p2      |        or|   0|  0|   2|           1|           1|
+    |or_ln225_2_fu_254_p2      |        or|   0|  0|   2|           1|           1|
+    |or_ln225_3_fu_260_p2      |        or|   0|  0|   2|           1|           1|
+    |or_ln225_fu_242_p2        |        or|   0|  0|   2|           1|           1|
+    |select_ln128_1_fu_158_p3  |    select|   0|  0|  32|           1|          31|
+    |select_ln128_2_fu_196_p3  |    select|   0|  0|  32|           1|          31|
+    |select_ln128_3_fu_234_p3  |    select|   0|  0|  32|           1|          31|
+    |select_ln128_fu_120_p3    |    select|   0|  0|  32|           1|          31|
+    +--------------------------+----------+----+---+----+------------+------------+
+    |Total                     |          |   0|  0| 336|          20|         264|
+    +--------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------+-----+-----+------------+---------------+--------------+
+|   RTL Ports   | Dir | Bits|  Protocol  | Source Object |    C Type    |
++---------------+-----+-----+------------+---------------+--------------+
+|ap_ready       |  out|    1|  ap_ctrl_hs|  ga_op_reverse|  return value|
+|ap_return_0    |  out|   32|  ap_ctrl_hs|  ga_op_reverse|  return value|
+|ap_return_1    |  out|   32|  ap_ctrl_hs|  ga_op_reverse|  return value|
+|ap_return_2    |  out|   32|  ap_ctrl_hs|  ga_op_reverse|  return value|
+|ap_return_3    |  out|   32|  ap_ctrl_hs|  ga_op_reverse|  return value|
+|ap_return_4    |  out|   32|  ap_ctrl_hs|  ga_op_reverse|  return value|
+|ap_return_5    |  out|   32|  ap_ctrl_hs|  ga_op_reverse|  return value|
+|ap_return_6    |  out|   32|  ap_ctrl_hs|  ga_op_reverse|  return value|
+|ap_return_7    |  out|   32|  ap_ctrl_hs|  ga_op_reverse|  return value|
+|ap_return_8    |  out|    1|  ap_ctrl_hs|  ga_op_reverse|  return value|
+|ap_rst         |   in|    1|  ap_ctrl_hs|  ga_op_reverse|  return value|
+|c_write        |   in|   32|     ap_none|        c_write|        scalar|
+|c_write_4      |   in|   32|     ap_none|      c_write_4|        scalar|
+|c_write_5      |   in|   32|     ap_none|      c_write_5|        scalar|
+|c_write_6      |   in|   32|     ap_none|      c_write_6|        scalar|
+|a_4_val        |   in|   32|     ap_none|        a_4_val|        scalar|
+|a_5_val        |   in|   32|     ap_none|        a_5_val|        scalar|
+|a_6_val        |   in|   32|     ap_none|        a_6_val|        scalar|
+|a_7_val        |   in|   32|     ap_none|        a_7_val|        scalar|
+|overflow_read  |   in|    1|     ap_none|  overflow_read|        scalar|
++---------------+-----+-----+------------+---------------+--------------+
+

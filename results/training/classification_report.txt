@@ -1,0 +1,47 @@
+=================================================================
+  STATIC HAND EXPRESSION CLASSIFIER EVALUATION REPORT
+=================================================================
+
+--- MODEL: LANDMARK_GEOMETRY ---
+Accuracy:  100.00%
+Precision: 100.00%
+Recall:    100.00%
+F1-Score:  100.00%
+5-Fold CV: 99.30% ± 0.86%
+Inference: 593.3 µs
+
+Classification Report:
+              precision    recall  f1-score   support
+
+        PALM       1.00      1.00      1.00        28
+   L_GESTURE       1.00      1.00      1.00         4
+          OK       1.00      1.00      1.00        30
+
+    accuracy                           1.00        62
+   macro avg       1.00      1.00      1.00        62
+weighted avg       1.00      1.00      1.00        62
+
+
+--- MODEL: IMAGE_BASELINE ---
+Accuracy:  100.00%
+Precision: 100.00%
+Recall:    100.00%
+F1-Score:  100.00%
+5-Fold CV: 100.00% ± 0.00%
+Inference: 232.08 µs
+
+Classification Report:
+              precision    recall  f1-score   support
+
+        PALM       1.00      1.00      1.00        30
+   L_GESTURE       1.00      1.00      1.00        30
+        FIST       1.00      1.00      1.00        30
+       THUMB       1.00      1.00      1.00        30
+       INDEX       1.00      1.00      1.00        30
+          OK       1.00      1.00      1.00        30
+
+    accuracy                           1.00       180
+   macro avg       1.00      1.00      1.00       180
+weighted avg       1.00      1.00      1.00       180
+
+

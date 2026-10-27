@@ -1,0 +1,22 @@
+{
+  "test": "cga_point_encoding",
+  "description": "Embed 3D point (1,2,3) into G(4,1,0)",
+  "euclidean_point": [
+    1.0,
+    2.0,
+    3.0
+  ],
+  "cga_multivector": {
+    "metric": "G(4,1,0)",
+    "coefficients": {
+      "1": 1.0,
+      "2": 2.0,
+      "4": 3.0,
+      "8": 6.5,
+      "16": 7.5
+    },
+    "num_active": 5,
+    "density": 0.15625
+  },
+  "notes": "[GOLDEN] CGA embedding: P = eo + x*e0+y*e1+z*e2 + 0.5*r^2*ei"
+}

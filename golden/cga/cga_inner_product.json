@@ -1,0 +1,40 @@
+{
+  "test": "cga_inner_product_points",
+  "description": "Inner product of two CGA points P\u00b7Q",
+  "point_P": [
+    1.0,
+    2.0,
+    3.0
+  ],
+  "point_Q": [
+    4.0,
+    5.0,
+    6.0
+  ],
+  "cga_mv_P": {
+    "metric": "G(4,1,0)",
+    "coefficients": {
+      "1": 1.0,
+      "2": 2.0,
+      "4": 3.0,
+      "8": 6.5,
+      "16": 7.5
+    },
+    "num_active": 5,
+    "density": 0.15625
+  },
+  "cga_mv_Q": {
+    "metric": "G(4,1,0)",
+    "coefficients": {
+      "1": 4.0,
+      "2": 5.0,
+      "4": 6.0,
+      "8": 38.0,
+      "16": 39.0
+    },
+    "num_active": 5,
+    "density": 0.15625
+  },
+  "scalar_inner_product": -13.5,
+  "notes": "[GOLDEN] P\u00b7Q = -0.5 * |P-Q|^2 in CGA"
+}

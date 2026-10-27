@@ -1,0 +1,204 @@
+[
+  {
+    "csim": false,
+    "functionLabel": "",
+    "functionName": "qgpu_ga_sequential_top",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "INTERFACE",
+      "option": [
+        {
+          "name": "s_axilite",
+          "value": ""
+        },
+        {
+          "name": "bundle",
+          "value": "control"
+        },
+        {
+          "name": "port",
+          "value": "return"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "D:/QGPU/hardware/hls/sequential/qgpu_ga_sequential/solution1/directives.tcl",
+    "sourceLine": 1,
+    "success": true
+  },
+  {
+    "csim": false,
+    "functionLabel": "",
+    "functionName": "qgpu_ga_sequential_top",
+    "id": 1,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "INTERFACE",
+      "option": [
+        {
+          "name": "s_axilite",
+          "value": ""
+        },
+        {
+          "name": "bundle",
+          "value": "control"
+        },
+        {
+          "name": "port",
+          "value": "a"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "D:/QGPU/hardware/hls/sequential/qgpu_ga_sequential/solution1/directives.tcl",
+    "sourceLine": 2,
+    "success": true
+  },
+  {
+    "csim": false,
+    "functionLabel": "",
+    "functionName": "qgpu_ga_sequential_top",
+    "id": 2,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "INTERFACE",
+      "option": [
+        {
+          "name": "s_axilite",
+          "value": ""
+        },
+        {
+          "name": "bundle",
+          "value": "control"
+        },
+        {
+          "name": "port",
+          "value": "b"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "D:/QGPU/hardware/hls/sequential/qgpu_ga_sequential/solution1/directives.tcl",
+    "sourceLine": 3,
+    "success": true
+  },
+  {
+    "csim": false,
+    "functionLabel": "",
+    "functionName": "qgpu_ga_sequential_top",
+    "id": 3,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "INTERFACE",
+      "option": [
+        {
+          "name": "s_axilite",
+          "value": ""
+        },
+        {
+          "name": "bundle",
+          "value": "control"
+        },
+        {
+          "name": "port",
+          "value": "c"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "D:/QGPU/hardware/hls/sequential/qgpu_ga_sequential/solution1/directives.tcl",
+    "sourceLine": 4,
+    "success": true
+  },
+  {
+    "csim": false,
+    "functionLabel": "",
+    "functionName": "qgpu_ga_sequential_top",
+    "id": 4,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "INTERFACE",
+      "option": [
+        {
+          "name": "s_axilite",
+          "value": ""
+        },
+        {
+          "name": "bundle",
+          "value": "control"
+        },
+        {
+          "name": "port",
+          "value": "opcode"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "D:/QGPU/hardware/hls/sequential/qgpu_ga_sequential/solution1/directives.tcl",
+    "sourceLine": 5,
+    "success": true
+  },
+  {
+    "csim": false,
+    "functionLabel": "",
+    "functionName": "qgpu_ga_sequential_top",
+    "id": 5,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "INTERFACE",
+      "option": [
+        {
+          "name": "s_axilite",
+          "value": ""
+        },
+        {
+          "name": "bundle",
+          "value": "control"
+        },
+        {
+          "name": "port",
+          "value": "status"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "D:/QGPU/hardware/hls/sequential/qgpu_ga_sequential/solution1/directives.tcl",
+    "sourceLine": 6,
+    "success": true
+  },
+  {
+    "csim": false,
+    "functionLabel": "",
+    "functionName": "qgpu_ga_sequential_top",
+    "id": 6,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "qgpu_ga_sequential_top"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "D:/QGPU/hardware/hls/sequential/run_hls_export.tcl",
+    "sourceLine": 5,
+    "success": true
+  }
+]

@@ -1,0 +1,63 @@
+name: "mouse"
+description: "Computer Vision Mouse Control Profile via Hand Geometry"
+enabled: true
+
+# Control settings
+settings:
+  smoothing_alpha: 0.35
+  dead_zone: 0.015
+  max_velocity: 80.0
+  edge_margin: 10
+  scroll_amount: 5
+  pinch_click_threshold: 0.04
+  min_confidence: 0.70
+
+mappings:
+  INDEX_POINT:
+    command: "CURSOR_MOVE"
+    description: "Move mouse cursor to normalized index fingertip position"
+    enabled: true
+    requires_confirmation: false
+    cooldown_ms: 0
+
+  PINCH_START:
+    command: "MOUSE_DOWN"
+    description: "Left mouse button press / drag start"
+    enabled: true
+    requires_confirmation: false
+    cooldown_ms: 250
+
+  PINCH_HOLD:
+    command: "MOUSE_DRAG"
+    description: "Sustained mouse button hold with cursor movement"
+    enabled: true
+    requires_confirmation: false
+    cooldown_ms: 0
+
+  PINCH_RELEASE:
+    command: "MOUSE_UP"
+    description: "Left mouse button release"
+    enabled: true
+    requires_confirmation: false
+    cooldown_ms: 200
+
+  TWO_FINGER:
+    command: "RIGHT_CLICK"
+    description: "Right mouse click"
+    enabled: true
+    requires_confirmation: false
+    cooldown_ms: 500
+
+  SWIPE_UP:
+    command: "SCROLL_UP"
+    description: "Scroll page up"
+    enabled: true
+    requires_confirmation: false
+    cooldown_ms: 350
+
+  SWIPE_DOWN:
+    command: "SCROLL_DOWN"
+    description: "Scroll page down"
+    enabled: true
+    requires_confirmation: false
+    cooldown_ms: 350

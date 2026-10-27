@@ -1,0 +1,47 @@
+{
+  "test": "gate_Y",
+  "description": "Y gate on |0\u27e9 in Cl(3,0)",
+  "gate": {
+    "metric": "G(3,0,0)",
+    "coefficients": {
+      "2": 1.0
+    },
+    "num_active": 1,
+    "density": 0.125
+  },
+  "input_state": {
+    "metric": "G(3,0,0)",
+    "coefficients": {
+      "4": 1.0
+    },
+    "num_active": 1,
+    "density": 0.125
+  },
+  "expected_float32": {
+    "metric": "G(3,0,0)",
+    "coefficients": {
+      "4": -1.0
+    },
+    "num_active": 1,
+    "density": 0.125
+  },
+  "expected_fix16": {
+    "format": "Fix16Format(Q1.14, scale=16384.0)",
+    "fixed_values": {
+      "4": -16384
+    },
+    "dequantized": {
+      "metric": "G(3,0,0)",
+      "coefficients": {
+        "4": -1.0
+      },
+      "num_active": 1,
+      "density": 0.125
+    },
+    "max_abs_error": 0.0,
+    "mean_abs_error": 0.0,
+    "rms_error": 0.0,
+    "norm_error": 0.0
+  },
+  "notes": "[GOLDEN] Classical Cl(3,0) simulation of gate Y. [LIMITATION] Classical computation only."
+}

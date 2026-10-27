@@ -1,0 +1,47 @@
+{
+  "test": "vector_x_self_e0",
+  "description": "e0 * e0 = 1 (metric G(3,0,0))",
+  "input_a": {
+    "metric": "G(3,0,0)",
+    "coefficients": {
+      "1": 1.0
+    },
+    "num_active": 1,
+    "density": 0.125
+  },
+  "input_b": {
+    "metric": "G(3,0,0)",
+    "coefficients": {
+      "1": 1.0
+    },
+    "num_active": 1,
+    "density": 0.125
+  },
+  "expected_float32": {
+    "metric": "G(3,0,0)",
+    "coefficients": {
+      "0": 1.0
+    },
+    "num_active": 1,
+    "density": 0.125
+  },
+  "expected_fix16": {
+    "format": "Fix16Format(Q1.14, scale=16384.0)",
+    "fixed_values": {
+      "0": 16384
+    },
+    "dequantized": {
+      "metric": "G(3,0,0)",
+      "coefficients": {
+        "0": 1.0
+      },
+      "num_active": 1,
+      "density": 0.125
+    },
+    "max_abs_error": 0.0,
+    "mean_abs_error": 0.0,
+    "rms_error": 0.0,
+    "norm_error": 0.0
+  },
+  "notes": "[GOLDEN] e0*e0 = +1 in G(3,0,0)"
+}

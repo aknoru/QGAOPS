@@ -1,0 +1,9 @@
+id,risk,likelihood,impact,mitigation,owner,status
+R-01,Missing named project requirement documents,high,high,Obtain authoritative copies and reconcile against baseline prompt,project lead,open
+R-02,Q16.16 range insufficient for workloads,medium,high,Measure reference distribution and compare configurable formats,verification lead,open
+R-03,HLS directives do not produce actual sharing,medium,high,Use synthesis and implementation reports as evidence,hardware lead,open
+R-04,Transfer overhead dominates kernel time,high,medium,Report kernel and end-to-end boundaries separately,benchmark lead,open
+R-05,AAMF benefit is unproven,medium,high,Run controlled ablation against identical baseline,architecture lead,open
+R-06,Third-party PDF redistribution restrictions,medium,medium,Use manifest and landing links; do not redistribute by default,documentation lead,open
+R-07,Proposed accumulator width may not cover future fused operations,medium,high,Recompute bounds when the hardware operation set changes,hardware lead,open
+R-08,Synthetic gesture fixture is not representative evidence,high,medium,Keep it as a pipeline smoke test and obtain licensed data before accuracy claims,application lead,open

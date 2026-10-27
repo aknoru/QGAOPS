@@ -1,0 +1,125 @@
+
+
+================================================================
+== Vitis HLS Report for 'sat_sub_q16'
+================================================================
+* Date:           Tue Oct 27 04:59:15 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Project:        qgpu_ga_parallel
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.101 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        0|        0|      0 ns|      0 ns|    0|    0|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 0
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 1
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 7.10>
+ST_1 : Operation 2 [1/1] (0.00ns)   --->   "%overflow_flag_read_1 = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %overflow_flag_read" [../ga_engine/include\hls_compat.h:123]   --->   Operation 2 'read' 'overflow_flag_read_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%b_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %b" [../ga_engine/include\hls_compat.h:123]   --->   Operation 3 'read' 'b_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%a_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %a" [../ga_engine/include\hls_compat.h:123]   --->   Operation 4 'read' 'a_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%sext_ln124 = sext i32 %a_read" [../ga_engine/include\hls_compat.h:124]   --->   Operation 5 'sext' 'sext_ln124' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%sext_ln124_1 = sext i32 %b_read" [../ga_engine/include\hls_compat.h:124]   --->   Operation 6 'sext' 'sext_ln124_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (2.55ns)   --->   "%diff = sub i33 %sext_ln124, i33 %sext_ln124_1" [../ga_engine/include\hls_compat.h:124]   --->   Operation 7 'sub' 'diff' <Predicate = true> <Delay = 2.55> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 2.55> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%tmp = partselect i2 @_ssdm_op_PartSelect.i2.i33.i32.i32, i33 %diff, i32 31, i32 32" [../ga_engine/include\hls_compat.h:128]   --->   Operation 8 'partselect' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (1.56ns)   --->   "%icmp_ln128 = icmp_eq  i2 %tmp, i2 1" [../ga_engine/include\hls_compat.h:128]   --->   Operation 9 'icmp' 'icmp_ln128' <Predicate = true> <Delay = 1.56> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 1.56> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 10 [1/1] (2.59ns)   --->   "%icmp_ln131 = icmp_slt  i33 %diff, i33 6442450944" [../ga_engine/include\hls_compat.h:131]   --->   Operation 10 'icmp' 'icmp_ln131' <Predicate = true> <Delay = 2.59> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.59> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 11 [1/1] (0.00ns) (grouped into LUT with out node retval_0)   --->   "%trunc_ln135 = trunc i33 %diff" [../ga_engine/include\hls_compat.h:135]   --->   Operation 11 'trunc' 'trunc_ln135' <Predicate = (!write_flag_0)> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.97ns)   --->   "%write_flag_0 = or i1 %icmp_ln128, i1 %icmp_ln131" [../ga_engine/include\hls_compat.h:128]   --->   Operation 12 'or' 'write_flag_0' <Predicate = true> <Delay = 0.97> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 13 [1/1] (0.00ns) (grouped into LUT with out node retval_0)   --->   "%select_ln131 = select i1 %icmp_ln128, i32 2147483647, i32 2147483648" [../ga_engine/include\hls_compat.h:128]   --->   Operation 13 'select' 'select_ln131' <Predicate = (write_flag_0)> <Delay = 0.00> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 14 [1/1] (0.69ns) (out node of the LUT)   --->   "%retval_0 = select i1 %write_flag_0, i32 %select_ln131, i32 %trunc_ln135" [../ga_engine/include\hls_compat.h:128]   --->   Operation 14 'select' 'retval_0' <Predicate = true> <Delay = 0.69> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_1 : Operation 15 [1/1] (0.97ns)   --->   "%or_ln137 = or i1 %write_flag_0, i1 %overflow_flag_read_1" [../ga_engine/include\hls_compat.h:137]   --->   Operation 15 'or' 'or_ln137' <Predicate = true> <Delay = 0.97> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%mrv = insertvalue i33 <undef>, i32 %retval_0" [../ga_engine/include\hls_compat.h:137]   --->   Operation 16 'insertvalue' 'mrv' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%mrv_1 = insertvalue i33 %mrv, i1 %or_ln137" [../ga_engine/include\hls_compat.h:137]   --->   Operation 17 'insertvalue' 'mrv_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%ret_ln137 = ret i33 %mrv_1" [../ga_engine/include\hls_compat.h:137]   --->   Operation 18 'ret' 'ret_ln137' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 7.101ns
+The critical path consists of the following:
+	wire read operation ('b', ../ga_engine/include\hls_compat.h:123) on port 'b' (../ga_engine/include\hls_compat.h:123) [5]  (0.000 ns)
+	'sub' operation 33 bit ('diff', ../ga_engine/include\hls_compat.h:124) [9]  (2.552 ns)
+	'icmp' operation 1 bit ('icmp_ln131', ../ga_engine/include\hls_compat.h:131) [12]  (2.593 ns)
+	'or' operation 1 bit ('write_flag_0', ../ga_engine/include\hls_compat.h:128) [14]  (0.978 ns)
+	'or' operation 1 bit ('overflow_flag', ../ga_engine/include\hls_compat.h:137) [17]  (0.978 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

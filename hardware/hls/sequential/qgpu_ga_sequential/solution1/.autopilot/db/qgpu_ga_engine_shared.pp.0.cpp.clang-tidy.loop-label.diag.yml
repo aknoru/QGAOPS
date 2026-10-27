@@ -1,0 +1,256 @@
+---
+MainSourceFile:  'D:/QGPU/hardware/hls/sequential/qgpu_ga_sequential/solution1/.autopilot/db/qgpu_ga_engine_shared.pp.0.cpp'
+Diagnostics:
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_676_1:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\ap_int_ref.h'
+      FileOffset:      676
+      Replacements:
+        - FilePath:        'D:\QGPU\hardware\hls\sequential\qgpu_ga_sequential\solution1\.autopilot\db\qgpu_ga_engine_shared.pp.0.cpp'
+          Offset:          288963
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_676_1: '
+    Level:           Remark
+    BuildDirectory:  'D:\QGPU\hardware\hls\sequential'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_690_1:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\ap_int_ref.h'
+      FileOffset:      690
+      Replacements:
+        - FilePath:        'D:\QGPU\hardware\hls\sequential\qgpu_ga_sequential\solution1\.autopilot\db\qgpu_ga_engine_shared.pp.0.cpp'
+          Offset:          289434
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_690_1: '
+    Level:           Remark
+    BuildDirectory:  'D:\QGPU\hardware\hls\sequential'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_704_1:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\ap_int_ref.h'
+      FileOffset:      704
+      Replacements:
+        - FilePath:        'D:\QGPU\hardware\hls\sequential\qgpu_ga_sequential\solution1\.autopilot\db\qgpu_ga_engine_shared.pp.0.cpp'
+          Offset:          289906
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_704_1: '
+    Level:           Remark
+    BuildDirectory:  'D:\QGPU\hardware\hls\sequential'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_1251_1:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\ap_fixed_base.h'
+      FileOffset:      1251
+      Replacements:
+        - FilePath:        'D:\QGPU\hardware\hls\sequential\qgpu_ga_sequential\solution1\.autopilot\db\qgpu_ga_engine_shared.pp.0.cpp'
+          Offset:          635309
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_1251_1: '
+    Level:           Remark
+    BuildDirectory:  'D:\QGPU\hardware\hls\sequential'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_52_1:  '
+      FilePath:        'D:\QGPU\hardware\hls\ga_engine\include\hls_compat.h'
+      FileOffset:      52
+      Replacements:
+        - FilePath:        'D:\QGPU\hardware\hls\sequential\qgpu_ga_sequential\solution1\.autopilot\db\qgpu_ga_engine_shared.pp.0.cpp'
+          Offset:          2230682
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_52_1: '
+    Level:           Remark
+    BuildDirectory:  'D:\QGPU\hardware\hls\sequential'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_54_2:  '
+      FilePath:        'D:\QGPU\hardware\hls\ga_engine\include\hls_compat.h'
+      FileOffset:      54
+      Replacements:
+        - FilePath:        'D:\QGPU\hardware\hls\sequential\qgpu_ga_sequential\solution1\.autopilot\db\qgpu_ga_engine_shared.pp.0.cpp'
+          Offset:          2230788
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_54_2: '
+    Level:           Remark
+    BuildDirectory:  'D:\QGPU\hardware\hls\sequential'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_40_1:  '
+      FilePath:        'D:\QGPU\hardware\hls\ga_engine\src\qgpu_ga_engine_shared.cpp'
+      FileOffset:      40
+      Replacements:
+        - FilePath:        'D:\QGPU\hardware\hls\sequential\qgpu_ga_sequential\solution1\.autopilot\db\qgpu_ga_engine_shared.pp.0.cpp'
+          Offset:          2233131
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_40_1: '
+    Level:           Remark
+    BuildDirectory:  'D:\QGPU\hardware\hls\sequential'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_134_1:  '
+      FilePath:        'D:\QGPU\hardware\hls\ga_engine\src\qgpu_ga_engine_shared.cpp'
+      FileOffset:      134
+      Replacements:
+        - FilePath:        'D:\QGPU\hardware\hls\sequential\qgpu_ga_sequential\solution1\.autopilot\db\qgpu_ga_engine_shared.pp.0.cpp'
+          Offset:          2235516
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_134_1: '
+    Level:           Remark
+    BuildDirectory:  'D:\QGPU\hardware\hls\sequential'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_146_1:  '
+      FilePath:        'D:\QGPU\hardware\hls\ga_engine\src\qgpu_ga_engine_shared.cpp'
+      FileOffset:      146
+      Replacements:
+        - FilePath:        'D:\QGPU\hardware\hls\sequential\qgpu_ga_sequential\solution1\.autopilot\db\qgpu_ga_engine_shared.pp.0.cpp'
+          Offset:          2235749
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_146_1: '
+    Level:           Remark
+    BuildDirectory:  'D:\QGPU\hardware\hls\sequential'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_158_1:  '
+      FilePath:        'D:\QGPU\hardware\hls\ga_engine\src\qgpu_ga_engine_shared.cpp'
+      FileOffset:      158
+      Replacements:
+        - FilePath:        'D:\QGPU\hardware\hls\sequential\qgpu_ga_sequential\solution1\.autopilot\db\qgpu_ga_engine_shared.pp.0.cpp'
+          Offset:          2235981
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_158_1: '
+    Level:           Remark
+    BuildDirectory:  'D:\QGPU\hardware\hls\sequential'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_173_1:  '
+      FilePath:        'D:\QGPU\hardware\hls\ga_engine\src\qgpu_ga_engine_shared.cpp'
+      FileOffset:      173
+      Replacements:
+        - FilePath:        'D:\QGPU\hardware\hls\sequential\qgpu_ga_sequential\solution1\.autopilot\db\qgpu_ga_engine_shared.pp.0.cpp'
+          Offset:          2236359
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_173_1: '
+    Level:           Remark
+    BuildDirectory:  'D:\QGPU\hardware\hls\sequential'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_177_2:  '
+      FilePath:        'D:\QGPU\hardware\hls\ga_engine\src\qgpu_ga_engine_shared.cpp'
+      FileOffset:      177
+      Replacements:
+        - FilePath:        'D:\QGPU\hardware\hls\sequential\qgpu_ga_sequential\solution1\.autopilot\db\qgpu_ga_engine_shared.pp.0.cpp'
+          Offset:          2236442
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_177_2: '
+    Level:           Remark
+    BuildDirectory:  'D:\QGPU\hardware\hls\sequential'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_189_1:  '
+      FilePath:        'D:\QGPU\hardware\hls\ga_engine\src\qgpu_ga_engine_shared.cpp'
+      FileOffset:      189
+      Replacements:
+        - FilePath:        'D:\QGPU\hardware\hls\sequential\qgpu_ga_sequential\solution1\.autopilot\db\qgpu_ga_engine_shared.pp.0.cpp'
+          Offset:          2236672
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_189_1: '
+    Level:           Remark
+    BuildDirectory:  'D:\QGPU\hardware\hls\sequential'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_204_1:  '
+      FilePath:        'D:\QGPU\hardware\hls\ga_engine\src\qgpu_ga_engine_shared.cpp'
+      FileOffset:      204
+      Replacements:
+        - FilePath:        'D:\QGPU\hardware\hls\sequential\qgpu_ga_sequential\solution1\.autopilot\db\qgpu_ga_engine_shared.pp.0.cpp'
+          Offset:          2236999
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_204_1: '
+    Level:           Remark
+    BuildDirectory:  'D:\QGPU\hardware\hls\sequential'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_219_1:  '
+      FilePath:        'D:\QGPU\hardware\hls\ga_engine\src\qgpu_ga_engine_shared.cpp'
+      FileOffset:      219
+      Replacements:
+        - FilePath:        'D:\QGPU\hardware\hls\sequential\qgpu_ga_sequential\solution1\.autopilot\db\qgpu_ga_engine_shared.pp.0.cpp'
+          Offset:          2237330
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_219_1: '
+    Level:           Remark
+    BuildDirectory:  'D:\QGPU\hardware\hls\sequential'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_255_1:  '
+      FilePath:        'D:\QGPU\hardware\hls\ga_engine\src\qgpu_ga_engine_shared.cpp'
+      FileOffset:      255
+      Replacements:
+        - FilePath:        'D:\QGPU\hardware\hls\sequential\qgpu_ga_sequential\solution1\.autopilot\db\qgpu_ga_engine_shared.pp.0.cpp'
+          Offset:          2238018
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_255_1: '
+    Level:           Remark
+    BuildDirectory:  'D:\QGPU\hardware\hls\sequential'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_260_2:  '
+      FilePath:        'D:\QGPU\hardware\hls\ga_engine\src\qgpu_ga_engine_shared.cpp'
+      FileOffset:      260
+      Replacements:
+        - FilePath:        'D:\QGPU\hardware\hls\sequential\qgpu_ga_sequential\solution1\.autopilot\db\qgpu_ga_engine_shared.pp.0.cpp'
+          Offset:          2238195
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_260_2: '
+    Level:           Remark
+    BuildDirectory:  'D:\QGPU\hardware\hls\sequential'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_287_1:  '
+      FilePath:        'D:\QGPU\hardware\hls\ga_engine\src\qgpu_ga_engine_shared.cpp'
+      FileOffset:      287
+      Replacements:
+        - FilePath:        'D:\QGPU\hardware\hls\sequential\qgpu_ga_sequential\solution1\.autopilot\db\qgpu_ga_engine_shared.pp.0.cpp'
+          Offset:          2238721
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_287_1: '
+    Level:           Remark
+    BuildDirectory:  'D:\QGPU\hardware\hls\sequential'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_297_2:  '
+      FilePath:        'D:\QGPU\hardware\hls\ga_engine\src\qgpu_ga_engine_shared.cpp'
+      FileOffset:      297
+      Replacements:
+        - FilePath:        'D:\QGPU\hardware\hls\sequential\qgpu_ga_sequential\solution1\.autopilot\db\qgpu_ga_engine_shared.pp.0.cpp'
+          Offset:          2238924
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_297_2: '
+    Level:           Remark
+    BuildDirectory:  'D:\QGPU\hardware\hls\sequential'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_361_3:  '
+      FilePath:        'D:\QGPU\hardware\hls\ga_engine\src\qgpu_ga_engine_shared.cpp'
+      FileOffset:      361
+      Replacements:
+        - FilePath:        'D:\QGPU\hardware\hls\sequential\qgpu_ga_sequential\solution1\.autopilot\db\qgpu_ga_engine_shared.pp.0.cpp'
+          Offset:          2240636
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_361_3: '
+    Level:           Remark
+    BuildDirectory:  'D:\QGPU\hardware\hls\sequential'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_368_4:  '
+      FilePath:        'D:\QGPU\hardware\hls\ga_engine\src\qgpu_ga_engine_shared.cpp'
+      FileOffset:      368
+      Replacements:
+        - FilePath:        'D:\QGPU\hardware\hls\sequential\qgpu_ga_sequential\solution1\.autopilot\db\qgpu_ga_engine_shared.pp.0.cpp'
+          Offset:          2240741
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_368_4: '
+    Level:           Remark
+    BuildDirectory:  'D:\QGPU\hardware\hls\sequential'
+...

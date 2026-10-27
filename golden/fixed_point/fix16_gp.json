@@ -1,0 +1,61 @@
+{
+  "test": "fix16_gp",
+  "description": "Geometric product in FIX16 Q1.14",
+  "format": "Fix16Format(Q1.14, scale=16384.0)",
+  "input_a": {
+    "metric": "G(3,0,0)",
+    "coefficients": {
+      "1": 0.5,
+      "2": 0.25
+    },
+    "num_active": 2,
+    "density": 0.25
+  },
+  "input_b": {
+    "metric": "G(3,0,0)",
+    "coefficients": {
+      "1": 0.5,
+      "4": 0.25
+    },
+    "num_active": 2,
+    "density": 0.25
+  },
+  "float32_result": {
+    "metric": "G(3,0,0)",
+    "coefficients": {
+      "0": 0.25,
+      "3": -0.125,
+      "5": 0.125,
+      "6": 0.0625
+    },
+    "num_active": 4,
+    "density": 0.5
+  },
+  "fix16_result": {
+    "format": "Fix16Format(Q1.14, scale=16384.0)",
+    "fixed_values": {
+      "0": 4096,
+      "3": -2048,
+      "5": 2048,
+      "6": 1024
+    },
+    "dequantized": {
+      "metric": "G(3,0,0)",
+      "coefficients": {
+        "0": 0.25,
+        "3": -0.125,
+        "5": 0.125,
+        "6": 0.0625
+      },
+      "num_active": 4,
+      "density": 0.5
+    },
+    "max_abs_error": 0.0,
+    "mean_abs_error": 0.0,
+    "rms_error": 0.0,
+    "norm_error": 0.0
+  },
+  "max_abs_error": 0.0,
+  "rms_error": 0.0,
+  "notes": "[GOLDEN] FIX16 GP reference. Use for RTL comparison."
+}

@@ -1,0 +1,397 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'qgpu_ga_engine_parallel'" level="0">
+<item name = "Date">Tue Oct 27 05:13:23 2026
+</item>
+<item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
+<item name = "Project">qgpu_ga_parallel</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 7.192 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">36, 141, 0.360 us, 1.410 us, 36, 141, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_qgpu_ga_engine_parallel_Pipeline_AAMF_STAGE_IN_fu_686">qgpu_ga_engine_parallel_Pipeline_AAMF_STAGE_IN, 10, 10, 0.100 us, 0.100 us, 0, 0, loop pipeline stp</column>
+<column name="grp_qgpu_ga_engine_parallel_Pipeline_AAMF_FETCH_fu_727">qgpu_ga_engine_parallel_Pipeline_AAMF_FETCH, 10, 10, 0.100 us, 0.100 us, 0, 0, loop pipeline stp</column>
+<column name="grp_ga_op_rotor_sandwich_fu_753">ga_op_rotor_sandwich, 103, 103, 1.030 us, 1.030 us, 103, 103, no</column>
+<column name="grp_ga_op_inner_product_fu_775">ga_op_inner_product, 51, 51, 0.510 us, 0.510 us, 51, 51, no</column>
+<column name="grp_ga_op_wedge_product_fu_797">ga_op_wedge_product, 51, 51, 0.510 us, 0.510 us, 51, 51, no</column>
+<column name="grp_ga_op_geometric_product_fu_819">ga_op_geometric_product, 51, 51, 0.510 us, 0.510 us, 51, 51, no</column>
+<column name="grp_ga_op_rotor_norm_fu_841">ga_op_rotor_norm, 4, 4, 40.000 ns, 40.000 ns, 4, 4, no</column>
+<column name="grp_qgpu_ga_engine_parallel_Pipeline_AAMF_COMMIT_OUT_fu_853">qgpu_ga_engine_parallel_Pipeline_AAMF_COMMIT_OUT, 10, 10, 0.100 us, 0.100 us, 0, 0, loop pipeline stp</column>
+<column name="call_ret9_ga_op_clifford_conjugation_fu_889">ga_op_clifford_conjugation, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
+<column name="call_ret8_ga_op_grade_involution_fu_901">ga_op_grade_involution, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
+<column name="call_ret7_ga_op_reverse_fu_913">ga_op_reverse, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
+<column name="call_ret6_ga_op_grade_project_fu_927">ga_op_grade_project, 0, 0, 0 ns, 0 ns, 0, 0, no</column>
+<column name="grp_ga_op_scalar_mul_fu_940">ga_op_scalar_mul, 25, 25, 0.250 us, 0.250 us, 25, 25, no</column>
+<column name="grp_ga_op_subtraction_fu_953">ga_op_subtraction, 1, 1, 10.000 ns, 10.000 ns, 1, 1, no</column>
+<column name="grp_ga_op_addition_fu_973">ga_op_addition, 1, 1, 10.000 ns, 10.000 ns, 1, 1, no</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 72, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">0, 128, 25093, 29152, -</column>
+<column name="Memory">2, -, 0, 0, -</column>
+<column name="Multiplexer">-, -, 0, 1266, -</column>
+<column name="Register">-, -, 3276, -, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
+<specialColumn name="Utilization (%)">~0, 58, 26, 57, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="grp_compute_gp_core_fu_2391">compute_gp_core, 0, 32, 6240, 7118, 0</column>
+<column name="grp_ga_op_addition_fu_973">ga_op_addition, 0, 0, 389, 1691, 0</column>
+<column name="call_ret9_ga_op_clifford_conjugation_fu_889">ga_op_clifford_conjugation, 0, 0, 0, 502, 0</column>
+<column name="grp_ga_op_geometric_product_fu_819">ga_op_geometric_product, 0, 0, 260, 95, 0</column>
+<column name="call_ret8_ga_op_grade_involution_fu_901">ga_op_grade_involution, 0, 0, 0, 334, 0</column>
+<column name="call_ret6_ga_op_grade_project_fu_927">ga_op_grade_project, 0, 0, 0, 621, 0</column>
+<column name="grp_ga_op_inner_product_fu_775">ga_op_inner_product, 0, 32, 6500, 7213, 0</column>
+<column name="call_ret7_ga_op_reverse_fu_913">ga_op_reverse, 0, 0, 0, 336, 0</column>
+<column name="grp_ga_op_rotor_norm_fu_841">ga_op_rotor_norm, 0, 28, 1944, 1264, 0</column>
+<column name="grp_ga_op_rotor_sandwich_fu_753">ga_op_rotor_sandwich, 0, 0, 776, 344, 0</column>
+<column name="grp_ga_op_scalar_mul_fu_940">ga_op_scalar_mul, 0, 0, 1364, 668, 0</column>
+<column name="grp_ga_op_subtraction_fu_953">ga_op_subtraction, 0, 0, 389, 1379, 0</column>
+<column name="grp_ga_op_wedge_product_fu_797">ga_op_wedge_product, 0, 32, 6500, 7213, 0</column>
+<column name="mul_32s_32s_64_2_1_U289">mul_32s_32s_64_2_1, 0, 4, 165, 50, 0</column>
+<column name="grp_qgpu_ga_engine_parallel_Pipeline_AAMF_COMMIT_OUT_fu_853">qgpu_ga_engine_parallel_Pipeline_AAMF_COMMIT_OUT, 0, 0, 6, 95, 0</column>
+<column name="grp_qgpu_ga_engine_parallel_Pipeline_AAMF_FETCH_fu_727">qgpu_ga_engine_parallel_Pipeline_AAMF_FETCH, 0, 0, 554, 78, 0</column>
+<column name="grp_qgpu_ga_engine_parallel_Pipeline_AAMF_STAGE_IN_fu_686">qgpu_ga_engine_parallel_Pipeline_AAMF_STAGE_IN, 0, 0, 6, 151, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+<column name="aamf_bank_a_U">qgpu_ga_engine_parallel_aamf_bank_a_RAM_2P_BRAM_1R1W, 1, 0, 0, 0, 512, 32, 1, 16384</column>
+<column name="aamf_bank_b_U">qgpu_ga_engine_parallel_aamf_bank_a_RAM_2P_BRAM_1R1W, 1, 0, 0, 0, 512, 32, 1, 16384</column>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="ap_predicate_pred1010_state5">and, 0, 0, 2, 1, 1</column>
+<column name="icmp_ln387_fu_1319_p2">icmp, 0, 0, 37, 30, 1</column>
+<column name="ap_block_state14_on_subcall_done">or, 0, 0, 2, 1, 1</column>
+<column name="ap_block_state15_on_subcall_done">or, 0, 0, 2, 1, 1</column>
+<column name="ap_predicate_pred2375_state5">or, 0, 0, 2, 1, 1</column>
+<column name="ap_predicate_pred2380_state14">or, 0, 0, 2, 1, 1</column>
+<column name="ap_predicate_pred2385_state15">or, 0, 0, 2, 1, 1</column>
+<column name="or_ln428_1_fu_1609_p2">or, 0, 0, 3, 3, 3</column>
+<column name="select_ln428_fu_1597_p3">select, 0, 0, 4, 1, 4</column>
+<column name="target_grade_fu_1337_p3">select, 0, 0, 16, 1, 16</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="aamf_bank_a_ce0">9, 2, 1, 2</column>
+<column name="aamf_bank_a_ce1">9, 2, 1, 2</column>
+<column name="aamf_bank_a_we1">9, 2, 1, 2</column>
+<column name="aamf_bank_b_ce0">9, 2, 1, 2</column>
+<column name="aamf_bank_b_ce1">9, 2, 1, 2</column>
+<column name="aamf_bank_b_we1">9, 2, 1, 2</column>
+<column name="ap_NS_fsm">87, 18, 1, 18</column>
+<column name="ap_return">9, 2, 32, 64</column>
+<column name="c_0">9, 2, 32, 64</column>
+<column name="c_1">9, 2, 32, 64</column>
+<column name="c_2">9, 2, 32, 64</column>
+<column name="c_3">9, 2, 32, 64</column>
+<column name="c_4">9, 2, 32, 64</column>
+<column name="c_5">9, 2, 32, 64</column>
+<column name="c_6">9, 2, 32, 64</column>
+<column name="c_7">9, 2, 32, 64</column>
+<column name="c_reg_0_reg_573">65, 13, 32, 416</column>
+<column name="c_reg_1_0_reg_538">65, 12, 32, 384</column>
+<column name="c_reg_2_0_reg_503">65, 12, 32, 384</column>
+<column name="c_reg_3_0_reg_468">65, 12, 32, 384</column>
+<column name="c_reg_4_0_reg_433">65, 12, 32, 384</column>
+<column name="c_reg_5_0_reg_398">65, 12, 32, 384</column>
+<column name="c_reg_6_0_reg_363">65, 12, 32, 384</column>
+<column name="c_reg_7_0_reg_328">65, 12, 32, 384</column>
+<column name="call_ret7_ga_op_reverse_fu_913_a_4_val">14, 3, 32, 96</column>
+<column name="call_ret7_ga_op_reverse_fu_913_a_5_val">14, 3, 32, 96</column>
+<column name="call_ret7_ga_op_reverse_fu_913_a_6_val">14, 3, 32, 96</column>
+<column name="call_ret7_ga_op_reverse_fu_913_a_7_val">14, 3, 32, 96</column>
+<column name="call_ret7_ga_op_reverse_fu_913_c_write">14, 3, 32, 96</column>
+<column name="call_ret7_ga_op_reverse_fu_913_c_write_4">14, 3, 32, 96</column>
+<column name="call_ret7_ga_op_reverse_fu_913_c_write_5">14, 3, 32, 96</column>
+<column name="call_ret7_ga_op_reverse_fu_913_c_write_6">14, 3, 32, 96</column>
+<column name="call_ret7_ga_op_reverse_fu_913_overflow_read">14, 3, 1, 3</column>
+<column name="err_code_0_reg_641">14, 3, 32, 96</column>
+<column name="grp_compute_gp_core_fu_2391_a_0_val">14, 3, 32, 96</column>
+<column name="grp_compute_gp_core_fu_2391_a_1_val">14, 3, 32, 96</column>
+<column name="grp_compute_gp_core_fu_2391_a_2_val">14, 3, 32, 96</column>
+<column name="grp_compute_gp_core_fu_2391_a_3_val">14, 3, 32, 96</column>
+<column name="grp_compute_gp_core_fu_2391_a_4_val">14, 3, 32, 96</column>
+<column name="grp_compute_gp_core_fu_2391_a_5_val">14, 3, 32, 96</column>
+<column name="grp_compute_gp_core_fu_2391_a_6_val">14, 3, 32, 96</column>
+<column name="grp_compute_gp_core_fu_2391_a_7_val">14, 3, 32, 96</column>
+<column name="grp_compute_gp_core_fu_2391_ap_start">14, 3, 1, 3</column>
+<column name="grp_compute_gp_core_fu_2391_b_0_val">14, 3, 32, 96</column>
+<column name="grp_compute_gp_core_fu_2391_b_1_val">14, 3, 32, 96</column>
+<column name="grp_compute_gp_core_fu_2391_b_2_val">14, 3, 32, 96</column>
+<column name="grp_compute_gp_core_fu_2391_b_3_val">14, 3, 32, 96</column>
+<column name="grp_compute_gp_core_fu_2391_b_4_val">14, 3, 32, 96</column>
+<column name="grp_compute_gp_core_fu_2391_b_5_val">14, 3, 32, 96</column>
+<column name="grp_compute_gp_core_fu_2391_b_6_val">14, 3, 32, 96</column>
+<column name="grp_compute_gp_core_fu_2391_b_7_val">14, 3, 32, 96</column>
+<column name="grp_compute_gp_core_fu_2391_opcode">25, 5, 2, 10</column>
+<column name="grp_compute_gp_core_fu_2391_overflow_read">14, 3, 1, 3</column>
+<column name="grp_fu_2387_ce">14, 3, 1, 3</column>
+<column name="grp_fu_2387_p0">14, 3, 32, 96</column>
+<column name="grp_fu_2387_p1">14, 3, 32, 96</column>
+<column name="overflow_0_reg_607">65, 12, 1, 12</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">17, 0, 17, 0</column>
+<column name="ap_predicate_pred1006_state5">1, 0, 1, 0</column>
+<column name="ap_predicate_pred1010_state5">1, 0, 1, 0</column>
+<column name="ap_predicate_pred2375_state5">1, 0, 1, 0</column>
+<column name="ap_predicate_pred2380_state14">1, 0, 1, 0</column>
+<column name="ap_predicate_pred2380_state5">1, 0, 1, 0</column>
+<column name="ap_predicate_pred2385_state15">1, 0, 1, 0</column>
+<column name="ap_predicate_pred2385_state5">1, 0, 1, 0</column>
+<column name="ap_predicate_pred920_state11">1, 0, 1, 0</column>
+<column name="ap_predicate_pred920_state12">1, 0, 1, 0</column>
+<column name="ap_predicate_pred925_state11">1, 0, 1, 0</column>
+<column name="ap_predicate_pred925_state12">1, 0, 1, 0</column>
+<column name="ap_predicate_pred930_state11">1, 0, 1, 0</column>
+<column name="ap_predicate_pred930_state12">1, 0, 1, 0</column>
+<column name="ap_predicate_pred935_state11">1, 0, 1, 0</column>
+<column name="ap_predicate_pred935_state12">1, 0, 1, 0</column>
+<column name="ap_predicate_pred940_state13">1, 0, 1, 0</column>
+<column name="ap_predicate_pred940_state14">1, 0, 1, 0</column>
+<column name="ap_predicate_pred943_state13">1, 0, 1, 0</column>
+<column name="ap_predicate_pred943_state14">1, 0, 1, 0</column>
+<column name="ap_predicate_pred946_state13">1, 0, 1, 0</column>
+<column name="ap_predicate_pred946_state14">1, 0, 1, 0</column>
+<column name="ap_predicate_pred954_state15">1, 0, 1, 0</column>
+<column name="ap_predicate_pred954_state16">1, 0, 1, 0</column>
+<column name="ap_predicate_pred954_state5">1, 0, 1, 0</column>
+<column name="ap_predicate_pred959_state15">1, 0, 1, 0</column>
+<column name="ap_predicate_pred959_state16">1, 0, 1, 0</column>
+<column name="ap_predicate_pred959_state5">1, 0, 1, 0</column>
+<column name="ap_predicate_pred964_state15">1, 0, 1, 0</column>
+<column name="ap_predicate_pred964_state16">1, 0, 1, 0</column>
+<column name="ap_predicate_pred964_state5">1, 0, 1, 0</column>
+<column name="ap_return_preg">32, 0, 32, 0</column>
+<column name="base_addr_reg_1820">6, 0, 9, 3</column>
+<column name="c_0_reg">32, 0, 32, 0</column>
+<column name="c_1_reg">32, 0, 32, 0</column>
+<column name="c_2_reg">32, 0, 32, 0</column>
+<column name="c_3_reg">32, 0, 32, 0</column>
+<column name="c_4_reg">32, 0, 32, 0</column>
+<column name="c_5_reg">32, 0, 32, 0</column>
+<column name="c_6_reg">32, 0, 32, 0</column>
+<column name="c_7_reg">32, 0, 32, 0</column>
+<column name="c_reg_0_reg_573">32, 0, 32, 0</column>
+<column name="c_reg_10_reg_2322">32, 0, 32, 0</column>
+<column name="c_reg_11_reg_2317">32, 0, 32, 0</column>
+<column name="c_reg_12_reg_2312">32, 0, 32, 0</column>
+<column name="c_reg_13_reg_2307">32, 0, 32, 0</column>
+<column name="c_reg_14_reg_2302">32, 0, 32, 0</column>
+<column name="c_reg_15_reg_2297">32, 0, 32, 0</column>
+<column name="c_reg_16_reg_2287">32, 0, 32, 0</column>
+<column name="c_reg_17_reg_2282">32, 0, 32, 0</column>
+<column name="c_reg_18_reg_2277">32, 0, 32, 0</column>
+<column name="c_reg_19_reg_2272">32, 0, 32, 0</column>
+<column name="c_reg_1_0_reg_538">32, 0, 32, 0</column>
+<column name="c_reg_1_reg_2372">32, 0, 32, 0</column>
+<column name="c_reg_20_reg_2267">32, 0, 32, 0</column>
+<column name="c_reg_21_reg_2262">32, 0, 32, 0</column>
+<column name="c_reg_22_reg_2257">32, 0, 32, 0</column>
+<column name="c_reg_23_reg_2252">32, 0, 32, 0</column>
+<column name="c_reg_24_reg_2207">32, 0, 32, 0</column>
+<column name="c_reg_25_reg_2212">32, 0, 32, 0</column>
+<column name="c_reg_26_reg_2217">32, 0, 32, 0</column>
+<column name="c_reg_27_reg_2222">32, 0, 32, 0</column>
+<column name="c_reg_28_reg_2227">32, 0, 32, 0</column>
+<column name="c_reg_29_reg_2232">32, 0, 32, 0</column>
+<column name="c_reg_2_0_reg_503">32, 0, 32, 0</column>
+<column name="c_reg_2_reg_2367">32, 0, 32, 0</column>
+<column name="c_reg_30_reg_2237">32, 0, 32, 0</column>
+<column name="c_reg_31_reg_2242">32, 0, 32, 0</column>
+<column name="c_reg_32_reg_2162">32, 0, 32, 0</column>
+<column name="c_reg_33_reg_2167">32, 0, 32, 0</column>
+<column name="c_reg_34_reg_2172">32, 0, 32, 0</column>
+<column name="c_reg_35_reg_2177">32, 0, 32, 0</column>
+<column name="c_reg_36_reg_2182">32, 0, 32, 0</column>
+<column name="c_reg_37_reg_2187">32, 0, 32, 0</column>
+<column name="c_reg_38_reg_2192">32, 0, 32, 0</column>
+<column name="c_reg_39_reg_2197">32, 0, 32, 0</column>
+<column name="c_reg_3_0_reg_468">32, 0, 32, 0</column>
+<column name="c_reg_3_reg_2362">32, 0, 32, 0</column>
+<column name="c_reg_40_reg_2152">32, 0, 32, 0</column>
+<column name="c_reg_41_reg_2147">32, 0, 32, 0</column>
+<column name="c_reg_42_reg_2142">32, 0, 32, 0</column>
+<column name="c_reg_43_reg_2137">32, 0, 32, 0</column>
+<column name="c_reg_44_reg_2132">32, 0, 32, 0</column>
+<column name="c_reg_45_reg_2127">32, 0, 32, 0</column>
+<column name="c_reg_46_reg_2122">32, 0, 32, 0</column>
+<column name="c_reg_47_reg_2117">32, 0, 32, 0</column>
+<column name="c_reg_4_0_reg_433">32, 0, 32, 0</column>
+<column name="c_reg_4_reg_2357">32, 0, 32, 0</column>
+<column name="c_reg_56_reg_2022">32, 0, 32, 0</column>
+<column name="c_reg_57_reg_2027">32, 0, 32, 0</column>
+<column name="c_reg_58_reg_2032">32, 0, 32, 0</column>
+<column name="c_reg_59_reg_2037">32, 0, 32, 0</column>
+<column name="c_reg_5_0_reg_398">32, 0, 32, 0</column>
+<column name="c_reg_5_reg_2352">32, 0, 32, 0</column>
+<column name="c_reg_60_reg_2042">32, 0, 32, 0</column>
+<column name="c_reg_61_reg_2047">32, 0, 32, 0</column>
+<column name="c_reg_62_reg_2052">32, 0, 32, 0</column>
+<column name="c_reg_63_reg_2057">32, 0, 32, 0</column>
+<column name="c_reg_64_reg_1977">32, 0, 32, 0</column>
+<column name="c_reg_65_reg_1982">32, 0, 32, 0</column>
+<column name="c_reg_66_reg_1987">32, 0, 32, 0</column>
+<column name="c_reg_67_reg_1992">32, 0, 32, 0</column>
+<column name="c_reg_68_reg_1997">32, 0, 32, 0</column>
+<column name="c_reg_69_reg_2002">32, 0, 32, 0</column>
+<column name="c_reg_6_0_reg_363">32, 0, 32, 0</column>
+<column name="c_reg_6_reg_2347">32, 0, 32, 0</column>
+<column name="c_reg_70_reg_2007">32, 0, 32, 0</column>
+<column name="c_reg_71_reg_2012">32, 0, 32, 0</column>
+<column name="c_reg_72_reg_1932">32, 0, 32, 0</column>
+<column name="c_reg_73_reg_1937">32, 0, 32, 0</column>
+<column name="c_reg_74_reg_1942">32, 0, 32, 0</column>
+<column name="c_reg_75_reg_1947">32, 0, 32, 0</column>
+<column name="c_reg_76_reg_1952">32, 0, 32, 0</column>
+<column name="c_reg_77_reg_1957">32, 0, 32, 0</column>
+<column name="c_reg_78_reg_1962">32, 0, 32, 0</column>
+<column name="c_reg_79_reg_1967">32, 0, 32, 0</column>
+<column name="c_reg_7_0_reg_328">32, 0, 32, 0</column>
+<column name="c_reg_7_reg_2342">32, 0, 32, 0</column>
+<column name="c_reg_80_reg_1887">32, 0, 32, 0</column>
+<column name="c_reg_81_reg_1892">32, 0, 32, 0</column>
+<column name="c_reg_82_reg_1897">32, 0, 32, 0</column>
+<column name="c_reg_83_reg_1902">32, 0, 32, 0</column>
+<column name="c_reg_84_reg_1907">32, 0, 32, 0</column>
+<column name="c_reg_85_reg_1912">32, 0, 32, 0</column>
+<column name="c_reg_86_reg_1917">32, 0, 32, 0</column>
+<column name="c_reg_87_reg_1922">32, 0, 32, 0</column>
+<column name="c_reg_88_reg_1877">32, 0, 32, 0</column>
+<column name="c_reg_8_reg_2332">32, 0, 32, 0</column>
+<column name="c_reg_9_reg_2327">32, 0, 32, 0</column>
+<column name="c_reg_reg_2377">32, 0, 32, 0</column>
+<column name="err_code_0_reg_641">32, 0, 32, 0</column>
+<column name="grp_ga_op_addition_fu_973_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_ga_op_geometric_product_fu_819_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_ga_op_inner_product_fu_775_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_ga_op_rotor_norm_fu_841_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_ga_op_rotor_sandwich_fu_753_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_ga_op_scalar_mul_fu_940_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_ga_op_subtraction_fu_953_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_ga_op_wedge_product_fu_797_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_qgpu_ga_engine_parallel_Pipeline_AAMF_COMMIT_OUT_fu_853_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_qgpu_ga_engine_parallel_Pipeline_AAMF_FETCH_fu_727_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_qgpu_ga_engine_parallel_Pipeline_AAMF_STAGE_IN_fu_686_ap_start_reg">1, 0, 1, 0</column>
+<column name="overflow_0_reg_607">1, 0, 1, 0</column>
+<column name="overflow_10_reg_1882">1, 0, 1, 0</column>
+<column name="overflow_1_reg_2337">1, 0, 1, 0</column>
+<column name="overflow_2_reg_2292">1, 0, 1, 0</column>
+<column name="overflow_3_reg_2247">1, 0, 1, 0</column>
+<column name="overflow_4_reg_2202">1, 0, 1, 0</column>
+<column name="overflow_5_reg_2157">1, 0, 1, 0</column>
+<column name="overflow_6_reg_2062">1, 0, 1, 0</column>
+<column name="overflow_7_reg_2017">1, 0, 1, 0</column>
+<column name="overflow_8_reg_1972">1, 0, 1, 0</column>
+<column name="overflow_9_reg_1927">1, 0, 1, 0</column>
+<column name="overflow_reg_2382">1, 0, 1, 0</column>
+<column name="target_grade_reg_2067">16, 0, 16, 0</column>
+<column name="trunc_ln315_reg_1815">16, 0, 16, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, qgpu_ga_engine_parallel, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, qgpu_ga_engine_parallel, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, qgpu_ga_engine_parallel, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, qgpu_ga_engine_parallel, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, qgpu_ga_engine_parallel, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, qgpu_ga_engine_parallel, return value</column>
+<column name="ap_return">out, 32, ap_ctrl_hs, qgpu_ga_engine_parallel, return value</column>
+<column name="a_0_val">in, 32, ap_none, a_0_val, scalar</column>
+<column name="a_1_val">in, 32, ap_none, a_1_val, scalar</column>
+<column name="a_2_val">in, 32, ap_none, a_2_val, scalar</column>
+<column name="a_3_val">in, 32, ap_none, a_3_val, scalar</column>
+<column name="a_4_val">in, 32, ap_none, a_4_val, scalar</column>
+<column name="a_5_val">in, 32, ap_none, a_5_val, scalar</column>
+<column name="a_6_val">in, 32, ap_none, a_6_val, scalar</column>
+<column name="a_7_val">in, 32, ap_none, a_7_val, scalar</column>
+<column name="b_0_val">in, 32, ap_none, b_0_val, scalar</column>
+<column name="b_1_val">in, 32, ap_none, b_1_val, scalar</column>
+<column name="b_2_val">in, 32, ap_none, b_2_val, scalar</column>
+<column name="b_3_val">in, 32, ap_none, b_3_val, scalar</column>
+<column name="b_4_val">in, 32, ap_none, b_4_val, scalar</column>
+<column name="b_5_val">in, 32, ap_none, b_5_val, scalar</column>
+<column name="b_6_val">in, 32, ap_none, b_6_val, scalar</column>
+<column name="b_7_val">in, 32, ap_none, b_7_val, scalar</column>
+<column name="c_0">out, 32, ap_vld, c_0, pointer</column>
+<column name="c_0_ap_vld">out, 1, ap_vld, c_0, pointer</column>
+<column name="c_1">out, 32, ap_vld, c_1, pointer</column>
+<column name="c_1_ap_vld">out, 1, ap_vld, c_1, pointer</column>
+<column name="c_2">out, 32, ap_vld, c_2, pointer</column>
+<column name="c_2_ap_vld">out, 1, ap_vld, c_2, pointer</column>
+<column name="c_3">out, 32, ap_vld, c_3, pointer</column>
+<column name="c_3_ap_vld">out, 1, ap_vld, c_3, pointer</column>
+<column name="c_4">out, 32, ap_vld, c_4, pointer</column>
+<column name="c_4_ap_vld">out, 1, ap_vld, c_4, pointer</column>
+<column name="c_5">out, 32, ap_vld, c_5, pointer</column>
+<column name="c_5_ap_vld">out, 1, ap_vld, c_5, pointer</column>
+<column name="c_6">out, 32, ap_vld, c_6, pointer</column>
+<column name="c_6_ap_vld">out, 1, ap_vld, c_6, pointer</column>
+<column name="c_7">out, 32, ap_vld, c_7, pointer</column>
+<column name="c_7_ap_vld">out, 1, ap_vld, c_7, pointer</column>
+<column name="opcode">in, 22, ap_none, opcode, scalar</column>
+</table>
+</item>
+</section>
+</profile>

@@ -1,0 +1,2126 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 88, 
+                   Column: 16 }
+Function:        _ZL19compute_gp_seq_corePKiS0_PijPb
+Args:            
+  - Callee:          'rescale_and_saturate(ap_int<67>, bool*)'
+    DebugLoc:        { File: '../ga_engine/include\hls_compat.h', Line: 68, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'compute_gp_seq_core(int const*, int const*, int*, unsigned int, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 35, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 67, 
+                   Column: 46 }
+Function:        _ZL19compute_gp_seq_corePKiS0_PijPb
+Args:            
+  - Callee:          'mask_to_index(unsigned char)'
+    DebugLoc:        { File: '../ga_engine/include\hls_compat.h', Line: 35, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'compute_gp_seq_core(int const*, int const*, int*, unsigned int, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 35, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 75, 
+                   Column: 28 }
+Function:        _ZL19compute_gp_seq_corePKiS0_PijPb
+Args:            
+  - Callee:          'blade_product_sign(unsigned char, unsigned char)'
+    DebugLoc:        { File: '../ga_engine/include\hls_compat.h', Line: 50, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'compute_gp_seq_core(int const*, int const*, int*, unsigned int, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 35, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 104, 
+                   Column: 5 }
+Function:        _Z27ga_seq_op_geometric_productPKiS0_PiPb
+Args:            
+  - Callee:          'compute_gp_seq_core(int const*, int const*, int*, unsigned int, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 35, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ga_seq_op_geometric_product(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 102, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 114, 
+                   Column: 5 }
+Function:        _Z23ga_seq_op_wedge_productPKiS0_PiPb
+Args:            
+  - Callee:          'compute_gp_seq_core(int const*, int const*, int*, unsigned int, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 35, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ga_seq_op_wedge_product(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 112, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 124, 
+                   Column: 5 }
+Function:        _Z23ga_seq_op_inner_productPKiS0_PiPb
+Args:            
+  - Callee:          'compute_gp_seq_core(int const*, int const*, int*, unsigned int, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 35, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ga_seq_op_inner_product(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 122, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 135, 
+                   Column: 16 }
+Function:        _Z18ga_seq_op_additionPKiS0_PiPb
+Args:            
+  - Callee:          'sat_add_q16(int, int, bool*)'
+    DebugLoc:        { File: '../ga_engine/include\hls_compat.h', Line: 104, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ga_seq_op_addition(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 132, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 147, 
+                   Column: 16 }
+Function:        _Z21ga_seq_op_subtractionPKiS0_PiPb
+Args:            
+  - Callee:          'sat_sub_q16(int, int, bool*)'
+    DebugLoc:        { File: '../ga_engine/include\hls_compat.h', Line: 123, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ga_seq_op_subtraction(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 144, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 160, 
+                   Column: 16 }
+Function:        _Z20ga_seq_op_scalar_mulPKiiPiPb
+Args:            
+  - Callee:          'rescale_and_saturate(ap_int<67>, bool*)'
+    DebugLoc:        { File: '../ga_engine/include\hls_compat.h', Line: 68, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ga_seq_op_scalar_mul(int const*, int, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 156, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 191, 
+                   Column: 20 }
+Function:        _Z17ga_seq_op_reversePKiPiPb
+Args:            
+  - Callee:          'sat_sub_q16(int, int, bool*)'
+    DebugLoc:        { File: '../ga_engine/include\hls_compat.h', Line: 123, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ga_seq_op_reverse(int const*, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 187, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 206, 
+                   Column: 20 }
+Function:        _Z26ga_seq_op_grade_involutionPKiPiPb
+Args:            
+  - Callee:          'sat_sub_q16(int, int, bool*)'
+    DebugLoc:        { File: '../ga_engine/include\hls_compat.h', Line: 123, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ga_seq_op_grade_involution(int const*, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 202, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 221, 
+                   Column: 20 }
+Function:        _Z30ga_seq_op_clifford_conjugationPKiPiPb
+Args:            
+  - Callee:          'sat_sub_q16(int, int, bool*)'
+    DebugLoc:        { File: '../ga_engine/include\hls_compat.h', Line: 123, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ga_seq_op_clifford_conjugation(int const*, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 217, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 239, 
+                   Column: 5 }
+Function:        _Z24ga_seq_op_rotor_sandwichPKiS0_PiPb
+Args:            
+  - Callee:          'compute_gp_seq_core(int const*, int const*, int*, unsigned int, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 35, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ga_seq_op_rotor_sandwich(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 233, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 242, 
+                   Column: 5 }
+Function:        _Z24ga_seq_op_rotor_sandwichPKiS0_PiPb
+Args:            
+  - Callee:          'ga_seq_op_reverse(int const*, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 187, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ga_seq_op_rotor_sandwich(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 233, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 259, 
+                   Column: 12 }
+Function:        _Z20ga_seq_op_rotor_normPKiPiPb
+Args:            
+  - Callee:          'rescale_and_saturate(ap_int<67>, bool*)'
+    DebugLoc:        { File: '../ga_engine/include\hls_compat.h', Line: 68, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ga_seq_op_rotor_norm(int const*, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 252, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 310, 
+                   Column: 13 }
+Function:        qgpu_ga_engine_shared
+Args:            
+  - Callee:          'ga_seq_op_geometric_product(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 102, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          qgpu_ga_engine_shared
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 274, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 314, 
+                   Column: 13 }
+Function:        qgpu_ga_engine_shared
+Args:            
+  - Callee:          'ga_seq_op_wedge_product(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 112, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          qgpu_ga_engine_shared
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 274, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 318, 
+                   Column: 13 }
+Function:        qgpu_ga_engine_shared
+Args:            
+  - Callee:          'ga_seq_op_inner_product(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 122, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          qgpu_ga_engine_shared
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 274, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 322, 
+                   Column: 13 }
+Function:        qgpu_ga_engine_shared
+Args:            
+  - Callee:          'ga_seq_op_addition(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 132, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          qgpu_ga_engine_shared
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 274, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 326, 
+                   Column: 13 }
+Function:        qgpu_ga_engine_shared
+Args:            
+  - Callee:          'ga_seq_op_subtraction(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 144, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          qgpu_ga_engine_shared
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 274, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 330, 
+                   Column: 13 }
+Function:        qgpu_ga_engine_shared
+Args:            
+  - Callee:          'ga_seq_op_scalar_mul(int const*, int, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 156, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          qgpu_ga_engine_shared
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 274, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 335, 
+                   Column: 13 }
+Function:        qgpu_ga_engine_shared
+Args:            
+  - Callee:          'ga_seq_op_grade_project(int const*, int, int*, unsigned int*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 169, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          qgpu_ga_engine_shared
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 274, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 340, 
+                   Column: 13 }
+Function:        qgpu_ga_engine_shared
+Args:            
+  - Callee:          'ga_seq_op_reverse(int const*, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 187, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          qgpu_ga_engine_shared
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 274, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 344, 
+                   Column: 13 }
+Function:        qgpu_ga_engine_shared
+Args:            
+  - Callee:          'ga_seq_op_grade_involution(int const*, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 202, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          qgpu_ga_engine_shared
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 274, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 348, 
+                   Column: 13 }
+Function:        qgpu_ga_engine_shared
+Args:            
+  - Callee:          'ga_seq_op_clifford_conjugation(int const*, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 217, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          qgpu_ga_engine_shared
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 274, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 352, 
+                   Column: 13 }
+Function:        qgpu_ga_engine_shared
+Args:            
+  - Callee:          'ga_seq_op_rotor_sandwich(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 233, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          qgpu_ga_engine_shared
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 274, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 356, 
+                   Column: 13 }
+Function:        qgpu_ga_engine_shared
+Args:            
+  - Callee:          'ga_seq_op_rotor_norm(int const*, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 252, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          qgpu_ga_engine_shared
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 274, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_sequential_top.cpp, Line: 7, 
+                   Column: 5 }
+Function:        qgpu_ga_sequential_top
+Args:            
+  - Callee:          qgpu_ga_engine_shared
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 274, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          qgpu_ga_sequential_top
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_sequential_top.cpp, 
+                       Line: 6, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: '../ga_engine/include\hls_compat.h', Line: 52, 
+                   Column: 22 }
+Function:        _ZL18blade_product_signhh
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_52_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: '../ga_engine/include\hls_compat.h', Line: 54, 
+                   Column: 30 }
+Function:        _ZL18blade_product_signhh
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_54_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 35, 
+                   Column: 0 }
+Function:        _ZL19compute_gp_seq_corePKiS0_PijPb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_40_1
+  - String:          ''' ('
+  - LoopLoc:         '../ga_engine/src/qgpu_ga_engine_shared.cpp:40:22'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          compute_gp_seq_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: '../ga_engine/include\hls_compat.h', Line: 50, 
+                   Column: 0 }
+Function:        _ZL18blade_product_signhh
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_52_1
+  - String:          ''' ('
+  - LoopLoc:         '../ga_engine/include\hls_compat.h:52:22'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          blade_product_sign
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: '../ga_engine/include\hls_compat.h', Line: 50, 
+                   Column: 0 }
+Function:        _ZL18blade_product_signhh
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_54_2
+  - String:          ''' ('
+  - LoopLoc:         '../ga_engine/include\hls_compat.h:54:30'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          blade_product_sign
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: '../ga_engine/include\hls_compat.h', Line: 50, 
+                   Column: 0 }
+Function:        _ZL18blade_product_signhh
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_54_2
+  - String:          ''' ('
+  - LoopLoc:         '../ga_engine/include\hls_compat.h:54:30'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          blade_product_sign
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: '../ga_engine/include\hls_compat.h', Line: 50, 
+                   Column: 0 }
+Function:        _ZL18blade_product_signhh
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_54_2
+  - String:          ''' ('
+  - LoopLoc:         '../ga_engine/include\hls_compat.h:54:30'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          blade_product_sign
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 67, 
+                   Column: 46 }
+Function:        _ZL19compute_gp_seq_corePKiS0_PijPb
+Args:            
+  - Callee:          'mask_to_index(unsigned char)'
+    DebugLoc:        { File: '../ga_engine/include\hls_compat.h', Line: 35, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'compute_gp_seq_core(int const*, int const*, int*, unsigned int, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 35, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 75, 
+                   Column: 28 }
+Function:        _ZL19compute_gp_seq_corePKiS0_PijPb
+Args:            
+  - Callee:          'blade_product_sign(unsigned char, unsigned char)'
+    DebugLoc:        { File: '../ga_engine/include\hls_compat.h', Line: 50, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'compute_gp_seq_core(int const*, int const*, int*, unsigned int, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 35, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 88, 
+                   Column: 16 }
+Function:        _ZL19compute_gp_seq_corePKiS0_PijPb
+Args:            
+  - Callee:          'rescale_and_saturate(ap_int<67>, bool*)'
+    DebugLoc:        { File: '../ga_engine/include\hls_compat.h', Line: 68, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'compute_gp_seq_core(int const*, int const*, int*, unsigned int, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 35, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 104, 
+                   Column: 5 }
+Function:        _Z27ga_seq_op_geometric_productPKiS0_PiPb
+Args:            
+  - Callee:          'compute_gp_seq_core(int const*, int const*, int*, unsigned int, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 35, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ga_seq_op_geometric_product(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 102, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 114, 
+                   Column: 5 }
+Function:        _Z23ga_seq_op_wedge_productPKiS0_PiPb
+Args:            
+  - Callee:          'compute_gp_seq_core(int const*, int const*, int*, unsigned int, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 35, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ga_seq_op_wedge_product(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 112, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 124, 
+                   Column: 5 }
+Function:        _Z23ga_seq_op_inner_productPKiS0_PiPb
+Args:            
+  - Callee:          'compute_gp_seq_core(int const*, int const*, int*, unsigned int, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 35, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ga_seq_op_inner_product(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 122, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 135, 
+                   Column: 16 }
+Function:        _Z18ga_seq_op_additionPKiS0_PiPb
+Args:            
+  - Callee:          'sat_add_q16(int, int, bool*)'
+    DebugLoc:        { File: '../ga_engine/include\hls_compat.h', Line: 104, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ga_seq_op_addition(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 132, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 147, 
+                   Column: 16 }
+Function:        _Z21ga_seq_op_subtractionPKiS0_PiPb
+Args:            
+  - Callee:          'sat_sub_q16(int, int, bool*)'
+    DebugLoc:        { File: '../ga_engine/include\hls_compat.h', Line: 123, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ga_seq_op_subtraction(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 144, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 160, 
+                   Column: 16 }
+Function:        _Z20ga_seq_op_scalar_mulPKiiPiPb
+Args:            
+  - Callee:          'rescale_and_saturate(ap_int<67>, bool*)'
+    DebugLoc:        { File: '../ga_engine/include\hls_compat.h', Line: 68, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ga_seq_op_scalar_mul(int const*, int, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 156, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 191, 
+                   Column: 20 }
+Function:        _Z17ga_seq_op_reversePKiPiPb
+Args:            
+  - Callee:          'sat_sub_q16(int, int, bool*)'
+    DebugLoc:        { File: '../ga_engine/include\hls_compat.h', Line: 123, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ga_seq_op_reverse(int const*, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 187, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 206, 
+                   Column: 20 }
+Function:        _Z26ga_seq_op_grade_involutionPKiPiPb
+Args:            
+  - Callee:          'sat_sub_q16(int, int, bool*)'
+    DebugLoc:        { File: '../ga_engine/include\hls_compat.h', Line: 123, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ga_seq_op_grade_involution(int const*, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 202, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 221, 
+                   Column: 20 }
+Function:        _Z30ga_seq_op_clifford_conjugationPKiPiPb
+Args:            
+  - Callee:          'sat_sub_q16(int, int, bool*)'
+    DebugLoc:        { File: '../ga_engine/include\hls_compat.h', Line: 123, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ga_seq_op_clifford_conjugation(int const*, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 217, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 239, 
+                   Column: 5 }
+Function:        _Z24ga_seq_op_rotor_sandwichPKiS0_PiPb
+Args:            
+  - Callee:          'compute_gp_seq_core(int const*, int const*, int*, unsigned int, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 35, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ga_seq_op_rotor_sandwich(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 233, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 242, 
+                   Column: 5 }
+Function:        _Z24ga_seq_op_rotor_sandwichPKiS0_PiPb
+Args:            
+  - Callee:          'ga_seq_op_reverse(int const*, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 187, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ga_seq_op_rotor_sandwich(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 233, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 259, 
+                   Column: 12 }
+Function:        _Z20ga_seq_op_rotor_normPKiPiPb
+Args:            
+  - Callee:          'rescale_and_saturate(ap_int<67>, bool*)'
+    DebugLoc:        { File: '../ga_engine/include\hls_compat.h', Line: 68, 
+                       Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ga_seq_op_rotor_norm(int const*, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 252, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 310, 
+                   Column: 13 }
+Function:        qgpu_ga_engine_shared
+Args:            
+  - Callee:          'ga_seq_op_geometric_product(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 102, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          qgpu_ga_engine_shared
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 274, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 314, 
+                   Column: 13 }
+Function:        qgpu_ga_engine_shared
+Args:            
+  - Callee:          'ga_seq_op_wedge_product(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 112, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          qgpu_ga_engine_shared
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 274, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 318, 
+                   Column: 13 }
+Function:        qgpu_ga_engine_shared
+Args:            
+  - Callee:          'ga_seq_op_inner_product(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 122, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          qgpu_ga_engine_shared
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 274, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 322, 
+                   Column: 13 }
+Function:        qgpu_ga_engine_shared
+Args:            
+  - Callee:          'ga_seq_op_addition(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 132, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          qgpu_ga_engine_shared
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 274, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 326, 
+                   Column: 13 }
+Function:        qgpu_ga_engine_shared
+Args:            
+  - Callee:          'ga_seq_op_subtraction(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 144, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          qgpu_ga_engine_shared
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 274, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 330, 
+                   Column: 13 }
+Function:        qgpu_ga_engine_shared
+Args:            
+  - Callee:          'ga_seq_op_scalar_mul(int const*, int, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 156, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          qgpu_ga_engine_shared
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 274, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 335, 
+                   Column: 13 }
+Function:        qgpu_ga_engine_shared
+Args:            
+  - Callee:          'ga_seq_op_grade_project(int const*, int, int*, unsigned int*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 169, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          qgpu_ga_engine_shared
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 274, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 340, 
+                   Column: 13 }
+Function:        qgpu_ga_engine_shared
+Args:            
+  - Callee:          'ga_seq_op_reverse(int const*, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 187, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          qgpu_ga_engine_shared
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 274, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 344, 
+                   Column: 13 }
+Function:        qgpu_ga_engine_shared
+Args:            
+  - Callee:          'ga_seq_op_grade_involution(int const*, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 202, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          qgpu_ga_engine_shared
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 274, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 348, 
+                   Column: 13 }
+Function:        qgpu_ga_engine_shared
+Args:            
+  - Callee:          'ga_seq_op_clifford_conjugation(int const*, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 217, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          qgpu_ga_engine_shared
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 274, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 352, 
+                   Column: 13 }
+Function:        qgpu_ga_engine_shared
+Args:            
+  - Callee:          'ga_seq_op_rotor_sandwich(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 233, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          qgpu_ga_engine_shared
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 274, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 356, 
+                   Column: 13 }
+Function:        qgpu_ga_engine_shared
+Args:            
+  - Callee:          'ga_seq_op_rotor_norm(int const*, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 252, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          qgpu_ga_engine_shared
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 274, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_sequential_top.cpp, Line: 7, 
+                   Column: 5 }
+Function:        qgpu_ga_sequential_top
+Args:            
+  - Callee:          qgpu_ga_engine_shared
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 274, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          qgpu_ga_sequential_top
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_sequential_top.cpp, 
+                       Line: 6, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_qgpu_ga_sequential_top_ir
+Args:            
+  - Callee:          qgpu_ga_sequential_top
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_sequential_top.cpp, 
+                       Line: 6, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_qgpu_ga_sequential_top_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 35, 
+                   Column: 0 }
+Function:        _ZL19compute_gp_seq_corePKiS0_PijPb
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'mask_to_index(unsigned char)'
+    DebugLoc:        { File: '../ga_engine/include\hls_compat.h', Line: 35, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'compute_gp_seq_core(int const*, int const*, int*, unsigned int, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 35, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 35, 
+                   Column: 0 }
+Function:        _ZL19compute_gp_seq_corePKiS0_PijPb
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'blade_product_sign(unsigned char, unsigned char)'
+    DebugLoc:        { File: '../ga_engine/include\hls_compat.h', Line: 50, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'compute_gp_seq_core(int const*, int const*, int*, unsigned int, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 35, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 35, 
+                   Column: 0 }
+Function:        _ZL19compute_gp_seq_corePKiS0_PijPb
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'rescale_and_saturate(ap_int<67>, bool*)'
+    DebugLoc:        { File: '../ga_engine/include\hls_compat.h', Line: 68, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'compute_gp_seq_core(int const*, int const*, int*, unsigned int, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 35, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 132, 
+                   Column: 0 }
+Function:        _Z18ga_seq_op_additionPKiS0_PiPb
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'sat_add_q16(int, int, bool*)'
+    DebugLoc:        { File: '../ga_engine/include\hls_compat.h', Line: 104, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ga_seq_op_addition(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 132, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 144, 
+                   Column: 0 }
+Function:        _Z21ga_seq_op_subtractionPKiS0_PiPb
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'sat_sub_q16(int, int, bool*)'
+    DebugLoc:        { File: '../ga_engine/include\hls_compat.h', Line: 123, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ga_seq_op_subtraction(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 144, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 156, 
+                   Column: 0 }
+Function:        _Z20ga_seq_op_scalar_mulPKiiPiPb
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'rescale_and_saturate(ap_int<67>, bool*)'
+    DebugLoc:        { File: '../ga_engine/include\hls_compat.h', Line: 68, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ga_seq_op_scalar_mul(int const*, int, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 156, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 187, 
+                   Column: 0 }
+Function:        _Z17ga_seq_op_reversePKiPiPb
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'sat_sub_q16(int, int, bool*)'
+    DebugLoc:        { File: '../ga_engine/include\hls_compat.h', Line: 123, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ga_seq_op_reverse(int const*, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 187, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 202, 
+                   Column: 0 }
+Function:        _Z26ga_seq_op_grade_involutionPKiPiPb
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'sat_sub_q16(int, int, bool*)'
+    DebugLoc:        { File: '../ga_engine/include\hls_compat.h', Line: 123, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ga_seq_op_grade_involution(int const*, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 202, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 217, 
+                   Column: 0 }
+Function:        _Z30ga_seq_op_clifford_conjugationPKiPiPb
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'sat_sub_q16(int, int, bool*)'
+    DebugLoc:        { File: '../ga_engine/include\hls_compat.h', Line: 123, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ga_seq_op_clifford_conjugation(int const*, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 217, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 252, 
+                   Column: 0 }
+Function:        _Z20ga_seq_op_rotor_normPKiPiPb
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'rescale_and_saturate(ap_int<67>, bool*)'
+    DebugLoc:        { File: '../ga_engine/include\hls_compat.h', Line: 68, 
+                       Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'ga_seq_op_rotor_norm(int const*, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 252, Column: 0 }
+  - String:          ''''
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_sequential_top.cpp, Line: 6, 
+                   Column: 0 }
+Function:        qgpu_ga_sequential_top
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       status
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 233, 
+                   Column: 0 }
+Function:        _Z24ga_seq_op_rotor_sandwichPKiS0_PiPb
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       overflow
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 233, 
+                   Column: 0 }
+Function:        _Z24ga_seq_op_rotor_sandwichPKiS0_PiPb
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       overflow
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 233, 
+                   Column: 0 }
+Function:        _Z24ga_seq_op_rotor_sandwichPKiS0_PiPb
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       overflow
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 122, 
+                   Column: 0 }
+Function:        _Z23ga_seq_op_inner_productPKiS0_PiPb
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       overflow
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 112, 
+                   Column: 0 }
+Function:        _Z23ga_seq_op_wedge_productPKiS0_PiPb
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       overflow
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 102, 
+                   Column: 0 }
+Function:        _Z27ga_seq_op_geometric_productPKiS0_PiPb
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       overflow
+  - String:          '''.'
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 37, 
+                   Column: 13 }
+Function:        _ZL19compute_gp_seq_corePKiS0_PijPb
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          accum
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !HLSReportInfo
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'Pipelining loop< '
+  - LoopName:        VITIS_LOOP_255_1
+  - String:          '> at '
+  - LoopLoc:         '../ga_engine/src/qgpu_ga_engine_shared.cpp:255:23'
+  - String:          ' due to pipeline_loops threshold'
+...
+--- !Passed
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 255, 
+                   Column: 23 }
+Function:        _Z20ga_seq_op_rotor_normPKiPiPb
+Args:            
+  - PragmaType:      pipeline
+  - String:          ' '
+  - PragmaOptions:   ' '
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  ga_seq_op_rotor_norm
+  - String:          ' '
+  - PragmaInferReason: config_compile -pipeline_loops 64
+  - LoopName:        VITIS_LOOP_255_1
+  - String:          ' '
+  - LoopLoc:         '../ga_engine/src/qgpu_ga_engine_shared.cpp:255:23'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 255, Column: 23 }
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'Pipelining loop< '
+  - LoopName:        VITIS_LOOP_260_2
+  - String:          '> at '
+  - LoopLoc:         '../ga_engine/src/qgpu_ga_engine_shared.cpp:260:23'
+  - String:          ' due to pipeline_loops threshold'
+...
+--- !Passed
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 260, 
+                   Column: 23 }
+Function:        _Z20ga_seq_op_rotor_normPKiPiPb
+Args:            
+  - PragmaType:      pipeline
+  - String:          ' '
+  - PragmaOptions:   ' '
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  ga_seq_op_rotor_norm
+  - String:          ' '
+  - PragmaInferReason: config_compile -pipeline_loops 64
+  - LoopName:        VITIS_LOOP_260_2
+  - String:          ' '
+  - LoopLoc:         '../ga_engine/src/qgpu_ga_engine_shared.cpp:260:23'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 260, Column: 23 }
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'Pipelining loop< '
+  - LoopName:        VITIS_LOOP_219_1
+  - String:          '> at '
+  - LoopLoc:         '../ga_engine/src/qgpu_ga_engine_shared.cpp:219:23'
+  - String:          ' due to pipeline_loops threshold'
+...
+--- !Passed
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 219, 
+                   Column: 23 }
+Function:        _Z30ga_seq_op_clifford_conjugationPKiPiPb
+Args:            
+  - PragmaType:      pipeline
+  - String:          ' '
+  - PragmaOptions:   ' '
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  ga_seq_op_clifford_conjugation
+  - String:          ' '
+  - PragmaInferReason: config_compile -pipeline_loops 64
+  - LoopName:        VITIS_LOOP_219_1
+  - String:          ' '
+  - LoopLoc:         '../ga_engine/src/qgpu_ga_engine_shared.cpp:219:23'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 219, Column: 23 }
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'Pipelining loop< '
+  - LoopName:        VITIS_LOOP_204_1
+  - String:          '> at '
+  - LoopLoc:         '../ga_engine/src/qgpu_ga_engine_shared.cpp:204:23'
+  - String:          ' due to pipeline_loops threshold'
+...
+--- !Passed
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 204, 
+                   Column: 23 }
+Function:        _Z26ga_seq_op_grade_involutionPKiPiPb
+Args:            
+  - PragmaType:      pipeline
+  - String:          ' '
+  - PragmaOptions:   ' '
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  ga_seq_op_grade_involution
+  - String:          ' '
+  - PragmaInferReason: config_compile -pipeline_loops 64
+  - LoopName:        VITIS_LOOP_204_1
+  - String:          ' '
+  - LoopLoc:         '../ga_engine/src/qgpu_ga_engine_shared.cpp:204:23'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 204, Column: 23 }
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'Pipelining loop< '
+  - LoopName:        VITIS_LOOP_189_1
+  - String:          '> at '
+  - LoopLoc:         '../ga_engine/src/qgpu_ga_engine_shared.cpp:189:23'
+  - String:          ' due to pipeline_loops threshold'
+...
+--- !Passed
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 189, 
+                   Column: 23 }
+Function:        _Z17ga_seq_op_reversePKiPiPb
+Args:            
+  - PragmaType:      pipeline
+  - String:          ' '
+  - PragmaOptions:   ' '
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  ga_seq_op_reverse
+  - String:          ' '
+  - PragmaInferReason: config_compile -pipeline_loops 64
+  - LoopName:        VITIS_LOOP_189_1
+  - String:          ' '
+  - LoopLoc:         '../ga_engine/src/qgpu_ga_engine_shared.cpp:189:23'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 189, Column: 23 }
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'Pipelining loop< '
+  - LoopName:        VITIS_LOOP_177_2
+  - String:          '> at '
+  - LoopLoc:         '../ga_engine/src/qgpu_ga_engine_shared.cpp:177:27'
+  - String:          ' due to pipeline_loops threshold'
+...
+--- !Passed
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 177, 
+                   Column: 27 }
+Function:        _Z23ga_seq_op_grade_projectPKiiPiPj
+Args:            
+  - PragmaType:      pipeline
+  - String:          ' '
+  - PragmaOptions:   ' '
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  ga_seq_op_grade_project
+  - String:          ' '
+  - PragmaInferReason: config_compile -pipeline_loops 64
+  - LoopName:        VITIS_LOOP_177_2
+  - String:          ' '
+  - LoopLoc:         '../ga_engine/src/qgpu_ga_engine_shared.cpp:177:27'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 177, Column: 27 }
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'Pipelining loop< '
+  - LoopName:        VITIS_LOOP_173_1
+  - String:          '> at '
+  - LoopLoc:         '../ga_engine/src/qgpu_ga_engine_shared.cpp:173:27'
+  - String:          ' due to pipeline_loops threshold'
+...
+--- !Passed
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 173, 
+                   Column: 27 }
+Function:        _Z23ga_seq_op_grade_projectPKiiPiPj
+Args:            
+  - PragmaType:      pipeline
+  - String:          ' '
+  - PragmaOptions:   ' '
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  ga_seq_op_grade_project
+  - String:          ' '
+  - PragmaInferReason: config_compile -pipeline_loops 64
+  - LoopName:        VITIS_LOOP_173_1
+  - String:          ' '
+  - LoopLoc:         '../ga_engine/src/qgpu_ga_engine_shared.cpp:173:27'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 173, Column: 27 }
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'Pipelining loop< '
+  - LoopName:        VITIS_LOOP_158_1
+  - String:          '> at '
+  - LoopLoc:         '../ga_engine/src/qgpu_ga_engine_shared.cpp:158:23'
+  - String:          ' due to pipeline_loops threshold'
+...
+--- !Passed
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 158, 
+                   Column: 23 }
+Function:        _Z20ga_seq_op_scalar_mulPKiiPiPb
+Args:            
+  - PragmaType:      pipeline
+  - String:          ' '
+  - PragmaOptions:   ' '
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  ga_seq_op_scalar_mul
+  - String:          ' '
+  - PragmaInferReason: config_compile -pipeline_loops 64
+  - LoopName:        VITIS_LOOP_158_1
+  - String:          ' '
+  - LoopLoc:         '../ga_engine/src/qgpu_ga_engine_shared.cpp:158:23'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 158, Column: 23 }
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'Pipelining loop< '
+  - LoopName:        VITIS_LOOP_146_1
+  - String:          '> at '
+  - LoopLoc:         '../ga_engine/src/qgpu_ga_engine_shared.cpp:146:23'
+  - String:          ' due to pipeline_loops threshold'
+...
+--- !Passed
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 146, 
+                   Column: 23 }
+Function:        _Z21ga_seq_op_subtractionPKiS0_PiPb
+Args:            
+  - PragmaType:      pipeline
+  - String:          ' '
+  - PragmaOptions:   ' '
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  ga_seq_op_subtraction
+  - String:          ' '
+  - PragmaInferReason: config_compile -pipeline_loops 64
+  - LoopName:        VITIS_LOOP_146_1
+  - String:          ' '
+  - LoopLoc:         '../ga_engine/src/qgpu_ga_engine_shared.cpp:146:23'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 146, Column: 23 }
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'Pipelining loop< '
+  - LoopName:        VITIS_LOOP_134_1
+  - String:          '> at '
+  - LoopLoc:         '../ga_engine/src/qgpu_ga_engine_shared.cpp:134:23'
+  - String:          ' due to pipeline_loops threshold'
+...
+--- !Passed
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 134, 
+                   Column: 23 }
+Function:        _Z18ga_seq_op_additionPKiS0_PiPb
+Args:            
+  - PragmaType:      pipeline
+  - String:          ' '
+  - PragmaOptions:   ' '
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  ga_seq_op_addition
+  - String:          ' '
+  - PragmaInferReason: config_compile -pipeline_loops 64
+  - LoopName:        VITIS_LOOP_134_1
+  - String:          ' '
+  - LoopLoc:         '../ga_engine/src/qgpu_ga_engine_shared.cpp:134:23'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 134, Column: 23 }
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'Pipelining loop< '
+  - LoopName:        RESCALE_LOOP
+  - String:          '> at '
+  - LoopLoc:         '../ga_engine/src/qgpu_ga_engine_shared.cpp:87:5'
+  - String:          ' due to pipeline_loops threshold'
+...
+--- !Passed
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 87, 
+                   Column: 5 }
+Function:        _ZL19compute_gp_seq_corePKiS0_PijPb
+Args:            
+  - PragmaType:      pipeline
+  - String:          ' '
+  - PragmaOptions:   ' '
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  compute_gp_seq_core
+  - String:          ' '
+  - PragmaInferReason: config_compile -pipeline_loops 64
+  - LoopName:        RESCALE_LOOP
+  - String:          ' '
+  - LoopLoc:         '../ga_engine/src/qgpu_ga_engine_shared.cpp:87:5'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 87, Column: 5 }
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'Pipelining loop< '
+  - LoopName:        VITIS_LOOP_287_1
+  - String:          '> at '
+  - LoopLoc:         '../ga_engine/src/qgpu_ga_engine_shared.cpp:287:23'
+  - String:          ' due to pipeline_loops threshold'
+...
+--- !Passed
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 287, 
+                   Column: 23 }
+Function:        qgpu_ga_engine_shared
+Args:            
+  - PragmaType:      pipeline
+  - String:          ' '
+  - PragmaOptions:   ' '
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  qgpu_ga_engine_shared
+  - String:          ' '
+  - PragmaInferReason: config_compile -pipeline_loops 64
+  - LoopName:        VITIS_LOOP_287_1
+  - String:          ' '
+  - LoopLoc:         '../ga_engine/src/qgpu_ga_engine_shared.cpp:287:23'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 287, Column: 23 }
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'Pipelining loop< '
+  - LoopName:        VITIS_LOOP_297_2
+  - String:          '> at '
+  - LoopLoc:         '../ga_engine/src/qgpu_ga_engine_shared.cpp:297:23'
+  - String:          ' due to pipeline_loops threshold'
+...
+--- !Passed
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 297, 
+                   Column: 23 }
+Function:        qgpu_ga_engine_shared
+Args:            
+  - PragmaType:      pipeline
+  - String:          ' '
+  - PragmaOptions:   ' '
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  qgpu_ga_engine_shared
+  - String:          ' '
+  - PragmaInferReason: config_compile -pipeline_loops 64
+  - LoopName:        VITIS_LOOP_297_2
+  - String:          ' '
+  - LoopLoc:         '../ga_engine/src/qgpu_ga_engine_shared.cpp:297:23'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 297, Column: 23 }
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'Pipelining loop< '
+  - LoopName:        VITIS_LOOP_361_3
+  - String:          '> at '
+  - LoopLoc:         '../ga_engine/src/qgpu_ga_engine_shared.cpp:361:31'
+  - String:          ' due to pipeline_loops threshold'
+...
+--- !Passed
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 361, 
+                   Column: 31 }
+Function:        qgpu_ga_engine_shared
+Args:            
+  - PragmaType:      pipeline
+  - String:          ' '
+  - PragmaOptions:   ' '
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  qgpu_ga_engine_shared
+  - String:          ' '
+  - PragmaInferReason: config_compile -pipeline_loops 64
+  - LoopName:        VITIS_LOOP_361_3
+  - String:          ' '
+  - LoopLoc:         '../ga_engine/src/qgpu_ga_engine_shared.cpp:361:31'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 361, Column: 31 }
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'Pipelining loop< '
+  - LoopName:        VITIS_LOOP_368_4
+  - String:          '> at '
+  - LoopLoc:         '../ga_engine/src/qgpu_ga_engine_shared.cpp:368:23'
+  - String:          ' due to pipeline_loops threshold'
+...
+--- !Passed
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 368, 
+                   Column: 23 }
+Function:        qgpu_ga_engine_shared
+Args:            
+  - PragmaType:      pipeline
+  - String:          ' '
+  - PragmaOptions:   ' '
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  qgpu_ga_engine_shared
+  - String:          ' '
+  - PragmaInferReason: config_compile -pipeline_loops 64
+  - LoopName:        VITIS_LOOP_368_4
+  - String:          ' '
+  - LoopLoc:         '../ga_engine/src/qgpu_ga_engine_shared.cpp:368:23'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 368, Column: 23 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: '../ga_engine/include\hls_compat.h', Line: 32, 
+                   Column: 0 }
+Function:        qgpu_ga_sequential_top
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=BASIS_GRADES'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  qgpu_ga_sequential_top
+  - String:          ' '
+  - VarLoc:          '../ga_engine/include\hls_compat.h:32:0'
+  - String:          ' '
+  - PragmaSrcLoc:    '../ga_engine/src/qgpu_ga_engine_shared.cpp:53:1'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 53, Column: 1 }
+  - VarName:         BASIS_GRADES
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 53, 
+                   Column: 1 }
+Function:        qgpu_ga_sequential_top
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            BASIS_GRADES
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: '../ga_engine/include\hls_compat.h', Line: 32, 
+                   Column: 0 }
+Function:        qgpu_ga_sequential_top
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZL12BASIS_GRADES
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 104, 
+                   Column: 5 }
+Function:        _Z27ga_seq_op_geometric_productPKiS0_PiPb
+Args:            
+  - Callee:          'compute_gp_seq_core(int const*, int const*, int*, unsigned int, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 35, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ga_seq_op_geometric_product(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 102, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 114, 
+                   Column: 5 }
+Function:        _Z23ga_seq_op_wedge_productPKiS0_PiPb
+Args:            
+  - Callee:          'compute_gp_seq_core(int const*, int const*, int*, unsigned int, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 35, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ga_seq_op_wedge_product(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 112, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 124, 
+                   Column: 5 }
+Function:        _Z23ga_seq_op_inner_productPKiS0_PiPb
+Args:            
+  - Callee:          'compute_gp_seq_core(int const*, int const*, int*, unsigned int, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 35, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ga_seq_op_inner_product(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 122, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 239, 
+                   Column: 5 }
+Function:        _Z24ga_seq_op_rotor_sandwichPKiS0_PiPb
+Args:            
+  - Callee:          'compute_gp_seq_core(int const*, int const*, int*, unsigned int, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 35, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ga_seq_op_rotor_sandwich(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 233, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 242, 
+                   Column: 5 }
+Function:        _Z24ga_seq_op_rotor_sandwichPKiS0_PiPb
+Args:            
+  - Callee:          'ga_seq_op_reverse(int const*, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 187, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'ga_seq_op_rotor_sandwich(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 233, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 310, 
+                   Column: 13 }
+Function:        qgpu_ga_engine_shared
+Args:            
+  - Callee:          'ga_seq_op_geometric_product(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 102, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          qgpu_ga_engine_shared
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 274, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 314, 
+                   Column: 13 }
+Function:        qgpu_ga_engine_shared
+Args:            
+  - Callee:          'ga_seq_op_wedge_product(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 112, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          qgpu_ga_engine_shared
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 274, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 318, 
+                   Column: 13 }
+Function:        qgpu_ga_engine_shared
+Args:            
+  - Callee:          'ga_seq_op_inner_product(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 122, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          qgpu_ga_engine_shared
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 274, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 322, 
+                   Column: 13 }
+Function:        qgpu_ga_engine_shared
+Args:            
+  - Callee:          'ga_seq_op_addition(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 132, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          qgpu_ga_engine_shared
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 274, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 326, 
+                   Column: 13 }
+Function:        qgpu_ga_engine_shared
+Args:            
+  - Callee:          'ga_seq_op_subtraction(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 144, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          qgpu_ga_engine_shared
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 274, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 330, 
+                   Column: 13 }
+Function:        qgpu_ga_engine_shared
+Args:            
+  - Callee:          'ga_seq_op_scalar_mul(int const*, int, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 156, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          qgpu_ga_engine_shared
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 274, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 335, 
+                   Column: 13 }
+Function:        qgpu_ga_engine_shared
+Args:            
+  - Callee:          'ga_seq_op_grade_project(int const*, int, int*, unsigned int*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 169, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          qgpu_ga_engine_shared
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 274, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 340, 
+                   Column: 13 }
+Function:        qgpu_ga_engine_shared
+Args:            
+  - Callee:          'ga_seq_op_reverse(int const*, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 187, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          qgpu_ga_engine_shared
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 274, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 344, 
+                   Column: 13 }
+Function:        qgpu_ga_engine_shared
+Args:            
+  - Callee:          'ga_seq_op_grade_involution(int const*, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 202, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          qgpu_ga_engine_shared
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 274, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 348, 
+                   Column: 13 }
+Function:        qgpu_ga_engine_shared
+Args:            
+  - Callee:          'ga_seq_op_clifford_conjugation(int const*, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 217, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          qgpu_ga_engine_shared
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 274, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 352, 
+                   Column: 13 }
+Function:        qgpu_ga_engine_shared
+Args:            
+  - Callee:          'ga_seq_op_rotor_sandwich(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 233, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          qgpu_ga_engine_shared
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 274, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, Line: 356, 
+                   Column: 13 }
+Function:        qgpu_ga_engine_shared
+Args:            
+  - Callee:          'ga_seq_op_rotor_norm(int const*, int*, bool*)'
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 252, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          qgpu_ga_engine_shared
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 274, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: ../ga_engine/src/qgpu_ga_sequential_top.cpp, Line: 7, 
+                   Column: 5 }
+Function:        qgpu_ga_sequential_top
+Args:            
+  - Callee:          qgpu_ga_engine_shared
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_engine_shared.cpp, 
+                       Line: 274, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          qgpu_ga_sequential_top
+    DebugLoc:        { File: ../ga_engine/src/qgpu_ga_sequential_top.cpp, 
+                       Line: 6, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...

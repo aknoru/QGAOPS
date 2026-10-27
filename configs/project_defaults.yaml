@@ -1,0 +1,87 @@
+project: QGAOPS-QGPU
+version: "0.1.0"
+target:
+  board: PYNQ-Z2
+  device: XC7Z020
+  part: xc7z020clg400-1
+  family: Zynq-7000
+  pl_clock_mhz: 100
+  pl_clock_period_ns: 10.0
+
+algebra:
+  name: Cl(3,0)
+  metric: Euclidean (e1^2 = e2^2 = e3^2 = +1)
+  basis_order: [1, e1, e2, e3, e12, e13, e23, e123]
+  coefficient_count: 8
+  operations:
+    - add
+    - subtract
+    - geometric_product
+    - wedge
+    - hestenes_inner
+    - scalar_mul
+    - grade_projection
+    - reverse
+    - grade_involution
+    - clifford_conjugation
+    - rotor_generation
+    - sandwich_product
+
+fixed_point:
+  format: Q16.16
+  width: 32
+  integer_bits: 16
+  fractional_bits: 16
+  scale: 65536
+  range_min: -2147483648
+  range_max: 2147483647
+  rounding: round-to-nearest-even
+  overflow: saturate-and-report
+  metric: signed_absolute_and_relative_error
+
+hardware_datapath:
+  operand_width: 32
+  multiplication_width: 64
+  accumulator_width: 67
+  addition_subtraction_width: 33
+  accumulator_derivation: "8 * (+2^62) = 2^65 <= 2^66 - 1 (unconditional guarantee)"
+  hls_top_function: qgpu_ga_engine
+  interface: AXI4-Lite (s_axilite bundle=control)
+  architectural_variants:
+    - name: shared
+      variant_id: 0
+      description: "Resource-shared time-multiplexed loop (4 DSPs, II=64)"
+    - name: parallel
+      variant_id: 1
+      description: "Parallel pipelined unrolled adder-trees (64 DSPs, II=1)"
+
+interface_protocol:
+  request_size_bytes: 76
+  header_size_bytes: 12
+  operand_array_bytes: 64
+  alignment: 64-bit DMA aligned
+  response_size_bytes: 44
+  version: 1
+
+datasets:
+  leap_hand_gesture:
+    features_path: "dataset/features/extracted_features.npz"
+    landmark_dim: 107
+    image_dim: 384
+    accuracy: 0.9839
+    macro_f1: 0.9575
+    status: verified_real
+  deep1m:
+    dimension: 96
+    format: fvecs
+    status: synthetic_adapter_verified
+  sift1m:
+    dimension: 128
+    format: bvecs/fvecs
+    status: synthetic_adapter_verified
+  gist1m:
+    dimension: 960
+    format: fvecs
+    status: synthetic_adapter_verified
+
+status: verified_software_and_hls_csim

@@ -1,0 +1,165 @@
+
+
+================================================================
+== Vitis HLS Report for 'qgpu_ga_engine_parallel_Pipeline_AAMF_STAGE_IN'
+================================================================
+* Date:           Tue Oct 27 05:13:17 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Project:        qgpu_ga_parallel
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.146 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+-------------------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval |      Pipeline     |
+    |   min   |   max   |    min   |    max   | min | max |        Type       |
+    +---------+---------+----------+----------+-----+-----+-------------------+
+    |       10|       10|  0.100 us|  0.100 us|    0|    0|  loop pipeline stp|
+    +---------+---------+----------+----------+-----+-----+-------------------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-----------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                 |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |    Loop Name    |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-----------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- AAMF_STAGE_IN  |        8|        8|         1|          1|          1|     8|       yes|
+        +-----------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|     40|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|       0|     84|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       0|     27|    -|
+|Register         |        -|    -|       6|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|       6|    151|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|      ~0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +--------------------------+-----------------------+---------+----+---+----+-----+
+    |         Instance         |         Module        | BRAM_18K| DSP| FF| LUT| URAM|
+    +--------------------------+-----------------------+---------+----+---+----+-----+
+    |sparsemux_17_3_32_1_1_U1  |sparsemux_17_3_32_1_1  |        0|   0|  0|  42|    0|
+    |sparsemux_17_3_32_1_1_U2  |sparsemux_17_3_32_1_1  |        0|   0|  0|  42|    0|
+    +--------------------------+-----------------------+---------+----+---+----+-----+
+    |Total                     |                       |        0|   0|  0|  84|    0|
+    +--------------------------+-----------------------+---------+----+---+----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------+----------+----+---+----+------------+------------+
+    |     Variable Name    | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------+----------+----+---+----+------------+------------+
+    |add_ln336_fu_252_p2   |         +|   0|  0|  13|           4|           1|
+    |add_ln337_fu_307_p2   |         +|   0|  0|  14|           9|           9|
+    |icmp_ln336_fu_246_p2  |      icmp|   0|  0|  13|           4|           5|
+    +----------------------+----------+----+---+----+------------+------------+
+    |Total                 |          |   0|  0|  40|          17|          15|
+    +----------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +----------------------+----+-----------+-----+-----------+
+    |         Name         | LUT| Input Size| Bits| Total Bits|
+    +----------------------+----+-----------+-----+-----------+
+    |ap_done_int           |   9|          2|    1|          2|
+    |ap_sig_allocacmp_k_1  |   9|          2|    4|          8|
+    |k_fu_98               |   9|          2|    4|          8|
+    +----------------------+----+-----------+-----+-----------+
+    |Total                 |  27|          6|    9|         18|
+    +----------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------+---+----+-----+-----------+
+    |     Name    | FF| LUT| Bits| Const Bits|
+    +-------------+---+----+-----+-----------+
+    |ap_CS_fsm    |  1|   0|    1|          0|
+    |ap_done_reg  |  1|   0|    1|          0|
+    |k_fu_98      |  4|   0|    4|          0|
+    +-------------+---+----+-----+-----------+
+    |Total        |  6|   0|    6|          0|
+    +-------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++----------------------+-----+-----+------------+------------------------------------------------+--------------+
+|       RTL Ports      | Dir | Bits|  Protocol  |                  Source Object                 |    C Type    |
++----------------------+-----+-----+------------+------------------------------------------------+--------------+
+|ap_clk                |   in|    1|  ap_ctrl_hs|  qgpu_ga_engine_parallel_Pipeline_AAMF_STAGE_IN|  return value|
+|ap_rst                |   in|    1|  ap_ctrl_hs|  qgpu_ga_engine_parallel_Pipeline_AAMF_STAGE_IN|  return value|
+|ap_start              |   in|    1|  ap_ctrl_hs|  qgpu_ga_engine_parallel_Pipeline_AAMF_STAGE_IN|  return value|
+|ap_done               |  out|    1|  ap_ctrl_hs|  qgpu_ga_engine_parallel_Pipeline_AAMF_STAGE_IN|  return value|
+|ap_idle               |  out|    1|  ap_ctrl_hs|  qgpu_ga_engine_parallel_Pipeline_AAMF_STAGE_IN|  return value|
+|ap_ready              |  out|    1|  ap_ctrl_hs|  qgpu_ga_engine_parallel_Pipeline_AAMF_STAGE_IN|  return value|
+|a_0_val               |   in|   32|     ap_none|                                         a_0_val|        scalar|
+|a_1_val               |   in|   32|     ap_none|                                         a_1_val|        scalar|
+|a_2_val               |   in|   32|     ap_none|                                         a_2_val|        scalar|
+|a_3_val               |   in|   32|     ap_none|                                         a_3_val|        scalar|
+|a_4_val               |   in|   32|     ap_none|                                         a_4_val|        scalar|
+|a_5_val               |   in|   32|     ap_none|                                         a_5_val|        scalar|
+|a_6_val               |   in|   32|     ap_none|                                         a_6_val|        scalar|
+|a_7_val               |   in|   32|     ap_none|                                         a_7_val|        scalar|
+|base_addr             |   in|    9|     ap_none|                                       base_addr|        scalar|
+|b_0_val               |   in|   32|     ap_none|                                         b_0_val|        scalar|
+|b_1_val               |   in|   32|     ap_none|                                         b_1_val|        scalar|
+|b_2_val               |   in|   32|     ap_none|                                         b_2_val|        scalar|
+|b_3_val               |   in|   32|     ap_none|                                         b_3_val|        scalar|
+|b_4_val               |   in|   32|     ap_none|                                         b_4_val|        scalar|
+|b_5_val               |   in|   32|     ap_none|                                         b_5_val|        scalar|
+|b_6_val               |   in|   32|     ap_none|                                         b_6_val|        scalar|
+|b_7_val               |   in|   32|     ap_none|                                         b_7_val|        scalar|
+|aamf_bank_a_address1  |  out|    9|   ap_memory|                                     aamf_bank_a|         array|
+|aamf_bank_a_ce1       |  out|    1|   ap_memory|                                     aamf_bank_a|         array|
+|aamf_bank_a_we1       |  out|    1|   ap_memory|                                     aamf_bank_a|         array|
+|aamf_bank_a_d1        |  out|   32|   ap_memory|                                     aamf_bank_a|         array|
+|aamf_bank_b_address1  |  out|    9|   ap_memory|                                     aamf_bank_b|         array|
+|aamf_bank_b_ce1       |  out|    1|   ap_memory|                                     aamf_bank_b|         array|
+|aamf_bank_b_we1       |  out|    1|   ap_memory|                                     aamf_bank_b|         array|
+|aamf_bank_b_d1        |  out|   32|   ap_memory|                                     aamf_bank_b|         array|
++----------------------+-----+-----+------------+------------------------------------------------+--------------+
+

@@ -1,0 +1,171 @@
+
+
+================================================================
+== Vitis HLS Report for 'compute_gp_shared'
+================================================================
+* Date:           Tue Oct 27 05:02:16 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Project:        qgpu_ga_sequential
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.077 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       85|       85|  0.850 us|  0.850 us|   85|   85|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 5
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.56>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%opcode_read = read i2 @_ssdm_op_Read.ap_auto.i2, i2 %opcode"   --->   Operation 6 'read' 'opcode_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%overflow_0_loc = alloca i64 1"   --->   Operation 7 'alloca' 'overflow_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%write_flag_0_loc = alloca i64 1"   --->   Operation 8 'alloca' 'write_flag_0_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%accum_7_load_loc = alloca i64 1"   --->   Operation 9 'alloca' 'accum_7_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%accum_6_load_loc = alloca i64 1"   --->   Operation 10 'alloca' 'accum_6_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%accum_5_load_loc = alloca i64 1"   --->   Operation 11 'alloca' 'accum_5_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%accum_4_load_loc = alloca i64 1"   --->   Operation 12 'alloca' 'accum_4_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%accum_3_load_loc = alloca i64 1"   --->   Operation 13 'alloca' 'accum_3_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%accum_2_load_loc = alloca i64 1"   --->   Operation 14 'alloca' 'accum_2_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%accum_1_load_loc = alloca i64 1"   --->   Operation 15 'alloca' 'accum_1_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%accum_load_loc = alloca i64 1"   --->   Operation 16 'alloca' 'accum_load_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [2/2] (1.56ns)   --->   "%call_ln0 = call void @compute_gp_shared_Pipeline_SHARED_OUTER_LOOP_SHARED_INNER_LOOP, i32 %a, i32 %b, i2 %opcode_read, i67 %accum_load_loc, i67 %accum_1_load_loc, i67 %accum_2_load_loc, i67 %accum_3_load_loc, i67 %accum_4_load_loc, i67 %accum_5_load_loc, i67 %accum_6_load_loc, i67 %accum_7_load_loc, i3 %BASIS_MASKS"   --->   Operation 17 'call' 'call_ln0' <Predicate = true> <Delay = 1.56> <CoreType = "Generic">   --->   Generic Core
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 18 [1/2] (0.00ns)   --->   "%call_ln0 = call void @compute_gp_shared_Pipeline_SHARED_OUTER_LOOP_SHARED_INNER_LOOP, i32 %a, i32 %b, i2 %opcode_read, i67 %accum_load_loc, i67 %accum_1_load_loc, i67 %accum_2_load_loc, i67 %accum_3_load_loc, i67 %accum_4_load_loc, i67 %accum_5_load_loc, i67 %accum_6_load_loc, i67 %accum_7_load_loc, i3 %BASIS_MASKS"   --->   Operation 18 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 3 <SV = 2> <Delay = 5.48>
+ST_3 : Operation 19 [1/1] (0.00ns)   --->   "%accum_load = load i67 %accum_load_loc"   --->   Operation 19 'load' 'accum_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 20 [1/1] (0.00ns)   --->   "%accum_1_load = load i67 %accum_1_load_loc"   --->   Operation 20 'load' 'accum_1_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 21 [1/1] (0.00ns)   --->   "%accum_2_load = load i67 %accum_2_load_loc"   --->   Operation 21 'load' 'accum_2_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 22 [1/1] (0.00ns)   --->   "%accum_3_load = load i67 %accum_3_load_loc"   --->   Operation 22 'load' 'accum_3_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 23 [1/1] (0.00ns)   --->   "%accum_4_load = load i67 %accum_4_load_loc"   --->   Operation 23 'load' 'accum_4_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 24 [1/1] (0.00ns)   --->   "%accum_5_load = load i67 %accum_5_load_loc"   --->   Operation 24 'load' 'accum_5_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 25 [1/1] (0.00ns)   --->   "%accum_6_load = load i67 %accum_6_load_loc"   --->   Operation 25 'load' 'accum_6_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 26 [1/1] (0.00ns)   --->   "%accum_7_load = load i67 %accum_7_load_loc"   --->   Operation 26 'load' 'accum_7_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 27 [2/2] (5.48ns)   --->   "%call_ln0 = call void @compute_gp_shared_Pipeline_RESCALE_LOOP, i67 %accum_load, i67 %accum_1_load, i67 %accum_2_load, i67 %accum_3_load, i67 %accum_4_load, i67 %accum_5_load, i67 %accum_6_load, i67 %accum_7_load, i32 %c, i1 %write_flag_0_loc, i1 %overflow_0_loc"   --->   Operation 27 'call' 'call_ln0' <Predicate = true> <Delay = 5.48> <CoreType = "Generic">   --->   Generic Core
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 28 [1/2] (0.00ns)   --->   "%call_ln0 = call void @compute_gp_shared_Pipeline_RESCALE_LOOP, i67 %accum_load, i67 %accum_1_load, i67 %accum_2_load, i67 %accum_3_load, i67 %accum_4_load, i67 %accum_5_load, i67 %accum_6_load, i67 %accum_7_load, i32 %c, i1 %write_flag_0_loc, i1 %overflow_0_loc"   --->   Operation 28 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 5 <SV = 4> <Delay = 0.99>
+ST_5 : Operation 29 [1/1] (0.00ns)   --->   "%overflow_read_1 = read i1 @_ssdm_op_Read.ap_auto.i1, i1 %overflow_read"   --->   Operation 29 'read' 'overflow_read_1' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 30 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %a, i64 666, i64 207, i64 1, i1 0"   --->   Operation 30 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 31 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %b, i64 666, i64 207, i64 1, i1 0"   --->   Operation 31 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 32 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %c, i64 666, i64 207, i64 1, i1 0"   --->   Operation 32 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 33 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %a, void @empty_3, i32 0, i32 0, void @empty_0, i32 1, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 33 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 34 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %b, void @empty_3, i32 0, i32 0, void @empty_0, i32 1, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 34 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 35 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %c, void @empty_3, i32 0, i32 0, void @empty_0, i32 1, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 35 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 36 [1/1] (0.00ns)   --->   "%write_flag_0_loc_load = load i1 %write_flag_0_loc"   --->   Operation 36 'load' 'write_flag_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 37 [1/1] (0.00ns)   --->   "%overflow_0_loc_load = load i1 %overflow_0_loc"   --->   Operation 37 'load' 'overflow_0_loc_load' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 38 [1/1] (0.99ns)   --->   "%select_ln79 = select i1 %write_flag_0_loc_load, i1 %overflow_0_loc_load, i1 %overflow_read_1" [../ga_engine/src/qgpu_ga_engine_shared.cpp:79]   --->   Operation 38 'select' 'select_ln79' <Predicate = true> <Delay = 0.99> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_5 : Operation 39 [1/1] (0.00ns)   --->   "%ret_ln79 = ret i1 %select_ln79" [../ga_engine/src/qgpu_ga_engine_shared.cpp:79]   --->   Operation 39 'ret' 'ret_ln79' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 1.565ns
+The critical path consists of the following:
+	wire read operation ('opcode_read') on port 'opcode' [8]  (0.000 ns)
+	'call' operation ('call_ln0') to 'compute_gp_shared_Pipeline_SHARED_OUTER_LOOP_SHARED_INNER_LOOP' [25]  (1.565 ns)
+
+ <State 2>: 0.000ns
+The critical path consists of the following:
+
+ <State 3>: 5.489ns
+The critical path consists of the following:
+	'load' operation 67 bit ('accum_load') on local variable 'accum_load_loc' [26]  (0.000 ns)
+	'call' operation ('call_ln0') to 'compute_gp_shared_Pipeline_RESCALE_LOOP' [34]  (5.489 ns)
+
+ <State 4>: 0.000ns
+The critical path consists of the following:
+
+ <State 5>: 0.993ns
+The critical path consists of the following:
+	wire read operation ('overflow') on port 'overflow_read' [7]  (0.000 ns)
+	'select' operation 1 bit ('overflow', ../ga_engine/src/qgpu_ga_engine_shared.cpp:79) [37]  (0.993 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

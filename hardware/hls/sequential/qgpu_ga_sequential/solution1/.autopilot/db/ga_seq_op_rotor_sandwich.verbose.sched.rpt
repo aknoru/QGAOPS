@@ -1,0 +1,152 @@
+
+
+================================================================
+== Vitis HLS Report for 'ga_seq_op_rotor_sandwich'
+================================================================
+* Date:           Tue Oct 27 05:17:43 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Project:        qgpu_ga_sequential
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.137 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |      186|      186|  1.860 us|  1.860 us|  186|  186|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 6
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.56>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%t = alloca i64 1" [../ga_engine/src/qgpu_ga_engine_shared.cpp:235]   --->   Operation 7 'alloca' 't' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%a_rev = alloca i64 1" [../ga_engine/src/qgpu_ga_engine_shared.cpp:236]   --->   Operation 8 'alloca' 'a_rev' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [2/2] (1.56ns)   --->   "%overflow_assign_1 = call i1 @compute_gp_seq_core, i32 %a, i32 %b, i32 %t, i2 1, i1 0, i3 %BASIS_MASKS" [../ga_engine/src/qgpu_ga_engine_shared.cpp:239]   --->   Operation 9 'call' 'overflow_assign_1' <Predicate = true> <Delay = 1.56> <CoreType = "Generic">   --->   Generic Core
+
+State 2 <SV = 1> <Delay = 0.99>
+ST_2 : Operation 10 [1/2] (0.99ns)   --->   "%overflow_assign_1 = call i1 @compute_gp_seq_core, i32 %a, i32 %b, i32 %t, i2 1, i1 0, i3 %BASIS_MASKS" [../ga_engine/src/qgpu_ga_engine_shared.cpp:239]   --->   Operation 10 'call' 'overflow_assign_1' <Predicate = true> <Delay = 0.99> <CoreType = "Generic">   --->   Generic Core
+
+State 3 <SV = 2> <Delay = 0.00>
+ST_3 : Operation 11 [2/2] (0.00ns)   --->   "%overflow_assign_3 = call i1 @ga_seq_op_reverse, i32 %a, i32 %a_rev, i1 %overflow_assign_1" [../ga_engine/src/qgpu_ga_engine_shared.cpp:242]   --->   Operation 11 'call' 'overflow_assign_3' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 4 <SV = 3> <Delay = 0.00>
+ST_4 : Operation 12 [1/2] (0.00ns)   --->   "%overflow_assign_3 = call i1 @ga_seq_op_reverse, i32 %a, i32 %a_rev, i1 %overflow_assign_1" [../ga_engine/src/qgpu_ga_engine_shared.cpp:242]   --->   Operation 12 'call' 'overflow_assign_3' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 5 <SV = 4> <Delay = 1.56>
+ST_5 : Operation 13 [2/2] (1.56ns)   --->   "%overflow = call i1 @compute_gp_seq_core, i32 %t, i32 %a_rev, i32 %c, i2 1, i1 %overflow_assign_3, i3 %BASIS_MASKS" [../ga_engine/src/qgpu_ga_engine_shared.cpp:245]   --->   Operation 13 'call' 'overflow' <Predicate = true> <Delay = 1.56> <CoreType = "Generic">   --->   Generic Core
+
+State 6 <SV = 5> <Delay = 0.99>
+ST_6 : Operation 14 [1/2] (0.99ns)   --->   "%overflow = call i1 @compute_gp_seq_core, i32 %t, i32 %a_rev, i32 %c, i2 1, i1 %overflow_assign_3, i3 %BASIS_MASKS" [../ga_engine/src/qgpu_ga_engine_shared.cpp:245]   --->   Operation 14 'call' 'overflow' <Predicate = true> <Delay = 0.99> <CoreType = "Generic">   --->   Generic Core
+ST_6 : Operation 15 [1/1] (0.00ns)   --->   "%ret_ln246 = ret i1 %overflow" [../ga_engine/src/qgpu_ga_engine_shared.cpp:246]   --->   Operation 15 'ret' 'ret_ln246' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 1.565ns
+The critical path consists of the following:
+	'alloca' operation 32 bit ('t', ../ga_engine/src/qgpu_ga_engine_shared.cpp:235) [5]  (0.000 ns)
+	'call' operation 1 bit ('overflow_assign_1', ../ga_engine/src/qgpu_ga_engine_shared.cpp:239) to 'compute_gp_seq_core' [7]  (1.565 ns)
+
+ <State 2>: 0.993ns
+The critical path consists of the following:
+	'call' operation 1 bit ('overflow_assign_1', ../ga_engine/src/qgpu_ga_engine_shared.cpp:239) to 'compute_gp_seq_core' [7]  (0.993 ns)
+
+ <State 3>: 0.000ns
+The critical path consists of the following:
+
+ <State 4>: 0.000ns
+The critical path consists of the following:
+
+ <State 5>: 1.565ns
+The critical path consists of the following:
+	'call' operation 1 bit ('overflow', ../ga_engine/src/qgpu_ga_engine_shared.cpp:245) to 'compute_gp_seq_core' [9]  (1.565 ns)
+
+ <State 6>: 0.993ns
+The critical path consists of the following:
+	'call' operation 1 bit ('overflow', ../ga_engine/src/qgpu_ga_engine_shared.cpp:245) to 'compute_gp_seq_core' [9]  (0.993 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

@@ -1,0 +1,164 @@
+<profile>
+
+<section name = "Vitis HLS Report for 'ga_op_rotor_norm'" level="0">
+<item name = "Date">Tue Oct 27 05:13:17 2026
+</item>
+<item name = "Version">2025.2 (Build 6295257 on Nov 14 2025)</item>
+<item name = "Project">qgpu_ga_parallel</item>
+<item name = "Solution">solution1 (Vivado IP Flow Target)</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg400-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 7.069 ns, 2.70 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">4, 4, 40.000 ns, 40.000 ns, 4, 4, no</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 874, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">-, 28, 1155, 359, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, 0, 31, -</column>
+<column name="Register">-, -, 789, -, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 12, 1, 2, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP, FF, LUT, URAM</keys>
+<column name="mul_32s_32s_64_2_1_U44">mul_32s_32s_64_2_1, 0, 4, 165, 50, 0</column>
+<column name="mul_32s_32s_64_2_1_U45">mul_32s_32s_64_2_1, 0, 4, 165, 50, 0</column>
+<column name="mul_32s_32s_64_2_1_U46">mul_32s_32s_64_2_1, 0, 4, 165, 50, 0</column>
+<column name="mul_32s_32s_64_2_1_U47">mul_32s_32s_64_2_1, 0, 4, 165, 50, 0</column>
+<column name="mul_32s_32s_64_2_1_U48">mul_32s_32s_64_2_1, 0, 4, 165, 50, 0</column>
+<column name="mul_32s_32s_64_2_1_U49">mul_32s_32s_64_2_1, 0, 4, 165, 50, 0</column>
+<column name="mul_32s_32s_64_2_1_U50">mul_32s_32s_64_2_1, 0, 4, 165, 50, 0</column>
+<column name="sparsemux_7_2_52_1_1_U51">sparsemux_7_2_52_1_1, 0, 0, 0, 9, 0</column>
+</table>
+</item>
+<item name = "DSP"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="add_ln300_1_fu_222_p2">+, 0, 0, 72, 65, 65</column>
+<column name="add_ln300_2_fu_238_p2">+, 0, 0, 73, 66, 66</column>
+<column name="add_ln300_3_fu_248_p2">+, 0, 0, 72, 65, 65</column>
+<column name="add_ln300_4_fu_258_p2">+, 0, 0, 72, 65, 65</column>
+<column name="add_ln300_5_fu_274_p2">+, 0, 0, 73, 66, 66</column>
+<column name="add_ln300_6_fu_290_p2">+, 0, 0, 24, 17, 17</column>
+<column name="add_ln300_7_fu_232_p2">+, 0, 0, 72, 65, 65</column>
+<column name="add_ln300_8_fu_268_p2">+, 0, 0, 72, 65, 65</column>
+<column name="add_ln300_fu_212_p2">+, 0, 0, 72, 65, 65</column>
+<column name="add_ln77_fu_344_p2">+, 0, 0, 59, 52, 1</column>
+<column name="norm_accum_fu_298_p2">+, 0, 0, 74, 67, 67</column>
+<column name="and_ln76_fu_360_p2">and, 0, 0, 2, 1, 1</column>
+<column name="icmp_ln76_fu_338_p2">icmp, 0, 0, 24, 16, 17</column>
+<column name="icmp_ln90_fu_400_p2">icmp, 0, 0, 28, 21, 1</column>
+<column name="rounded_3_fu_372_p6">select, 0, 0, 52, 1, 52</column>
+<column name="select_ln90_fu_410_p3">select, 0, 0, 31, 1, 2</column>
+<column name="xor_ln74_fu_350_p2">xor, 0, 0, 2, 1, 2</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="ap_NS_fsm">31, 6, 1, 6</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="add_ln300_2_reg_522">66, 0, 66, 0</column>
+<column name="add_ln300_5_reg_532">66, 0, 66, 0</column>
+<column name="add_ln77_reg_564">52, 0, 52, 0</column>
+<column name="ap_CS_fsm">5, 0, 5, 0</column>
+<column name="icmp_ln76_reg_559">1, 0, 1, 0</column>
+<column name="p_15_reg_492">64, 0, 64, 0</column>
+<column name="p_16_reg_497">64, 0, 64, 0</column>
+<column name="p_17_reg_502">64, 0, 64, 0</column>
+<column name="p_18_reg_507">64, 0, 64, 0</column>
+<column name="p_19_reg_512">64, 0, 64, 0</column>
+<column name="p_20_reg_517">64, 0, 64, 0</column>
+<column name="p_21_reg_482">64, 0, 64, 0</column>
+<column name="p_reg_487">64, 0, 64, 0</column>
+<column name="tmp_12_reg_542">1, 0, 1, 0</column>
+<column name="tmp_13_reg_553">1, 0, 1, 0</column>
+<column name="trunc_ln300_1_reg_537">17, 0, 17, 0</column>
+<column name="trunc_ln300_reg_527">17, 0, 17, 0</column>
+<column name="zext_ln70_reg_547">51, 0, 52, 1</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="ap_clk">in, 1, ap_ctrl_hs, ga_op_rotor_norm, return value</column>
+<column name="ap_rst">in, 1, ap_ctrl_hs, ga_op_rotor_norm, return value</column>
+<column name="ap_start">in, 1, ap_ctrl_hs, ga_op_rotor_norm, return value</column>
+<column name="ap_done">out, 1, ap_ctrl_hs, ga_op_rotor_norm, return value</column>
+<column name="ap_idle">out, 1, ap_ctrl_hs, ga_op_rotor_norm, return value</column>
+<column name="ap_ready">out, 1, ap_ctrl_hs, ga_op_rotor_norm, return value</column>
+<column name="ap_return_0">out, 32, ap_ctrl_hs, ga_op_rotor_norm, return value</column>
+<column name="ap_return_1">out, 1, ap_ctrl_hs, ga_op_rotor_norm, return value</column>
+<column name="grp_fu_2387_p_din0">out, 32, ap_ctrl_hs, ga_op_rotor_norm, return value</column>
+<column name="grp_fu_2387_p_din1">out, 32, ap_ctrl_hs, ga_op_rotor_norm, return value</column>
+<column name="grp_fu_2387_p_dout0">in, 64, ap_ctrl_hs, ga_op_rotor_norm, return value</column>
+<column name="grp_fu_2387_p_ce">out, 1, ap_ctrl_hs, ga_op_rotor_norm, return value</column>
+<column name="a_0_val">in, 32, ap_none, a_0_val, scalar</column>
+<column name="a_1_val">in, 32, ap_none, a_1_val, scalar</column>
+<column name="a_2_val">in, 32, ap_none, a_2_val, scalar</column>
+<column name="a_3_val">in, 32, ap_none, a_3_val, scalar</column>
+<column name="a_4_val">in, 32, ap_none, a_4_val, scalar</column>
+<column name="a_5_val">in, 32, ap_none, a_5_val, scalar</column>
+<column name="a_6_val">in, 32, ap_none, a_6_val, scalar</column>
+<column name="a_7_val">in, 32, ap_none, a_7_val, scalar</column>
+</table>
+</item>
+</section>
+</profile>

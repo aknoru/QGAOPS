@@ -1,0 +1,35 @@
+# Performance & Measurement Configuration for QGAOPS-QGPU Demonstrator
+# [IMPLEMENTED] Research-grade measurement specifications
+
+benchmark:
+  warmup_iterations: 1000
+  measurement_iterations: 10000
+  microbenchmark_iterations: 50000
+  duration_seconds: 5.0
+
+sampling:
+  fps_window_frames: 30
+  history_buffer_seconds: 60
+  waterfall_stages:
+    - "camera_acquisition"
+    - "hand_detection"
+    - "landmark_normalization"
+    - "feature_extraction"
+    - "expression_classification"
+    - "ga_encoding"
+    - "algebra_analysis"
+    - "ga_computation"
+    - "visualization"
+
+memory_model:
+  enabled: true
+  baseline: "B0"
+  levels: ["B0", "B1", "B2", "B3", "B4", "B5"]
+  tile_buffer_capacity_bytes: 4096
+  scratchpad_capacity_bytes: 1024
+  coefficients_per_multivector: 8
+  bytes_per_coefficient: 4  # float32 = 4, fix16 = 2
+
+hardware_interface:
+  fpga_connected: false
+  status_string: "N/A — FPGA not connected"

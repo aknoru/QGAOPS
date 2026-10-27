@@ -1,0 +1,16 @@
+{
+  "n_frames": 200,
+  "mean_latency_ms": 0.7868575016618706,
+  "p95_latency_ms": 1.3250999909359962,
+  "p99_latency_ms": 1.958400011062622,
+  "throughput_fps": 1270.8781407269892,
+  "schedule_summary": {
+    "total_ops": 200,
+    "peak_live": 2,
+    "memory_b0": 19200,
+    "memory_b4": 15360,
+    "memory_b5": 15360,
+    "fused": 0
+  },
+  "note": "[IMPLEMENTED] [SOFTWARE MODEL] Deterministic experiment results."
+}

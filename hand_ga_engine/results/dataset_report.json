@@ -1,0 +1,90 @@
+{
+  "dataset_path": "LeapGestRecog_1/LeapGestRecog_1",
+  "total_images": 1200,
+  "classes": {
+    "PALM": {
+      "count": 200,
+      "folder": "01_palm"
+    },
+    "L_GESTURE": {
+      "count": 200,
+      "folder": "02_l"
+    },
+    "FIST": {
+      "count": 200,
+      "folder": "03_fist"
+    },
+    "THUMB": {
+      "count": 200,
+      "folder": "05_thumb"
+    },
+    "INDEX": {
+      "count": 200,
+      "folder": "06_index"
+    },
+    "OK": {
+      "count": 200,
+      "folder": "07_ok"
+    }
+  },
+  "class_distribution": {
+    "PALM": 200,
+    "L_GESTURE": 200,
+    "FIST": 200,
+    "THUMB": 200,
+    "INDEX": 200,
+    "OK": 200
+  },
+  "dimensions": [
+    "640x240"
+  ],
+  "channels": [
+    1
+  ],
+  "corrupted_count": 0,
+  "corrupted_files": [],
+  "duplicate_count": 134,
+  "duplicates": [
+    {
+      "original": "LeapGestRecog_1/LeapGestRecog_1\\01_palm\\frame_00_01_0002.png",
+      "duplicate": "LeapGestRecog_1/LeapGestRecog_1\\01_palm\\frame_00_01_0003.png"
+    },
+    {
+      "original": "LeapGestRecog_1/LeapGestRecog_1\\01_palm\\frame_00_01_0004.png",
+      "duplicate": "LeapGestRecog_1/LeapGestRecog_1\\01_palm\\frame_00_01_0005.png"
+    },
+    {
+      "original": "LeapGestRecog_1/LeapGestRecog_1\\01_palm\\frame_00_01_0006.png",
+      "duplicate": "LeapGestRecog_1/LeapGestRecog_1\\01_palm\\frame_00_01_0007.png"
+    },
+    {
+      "original": "LeapGestRecog_1/LeapGestRecog_1\\01_palm\\frame_00_01_0008.png",
+      "duplicate": "LeapGestRecog_1/LeapGestRecog_1\\01_palm\\frame_00_01_0009.png"
+    },
+    {
+      "original": "LeapGestRecog_1/LeapGestRecog_1\\01_palm\\frame_00_01_0012.png",
+      "duplicate": "LeapGestRecog_1/LeapGestRecog_1\\01_palm\\frame_00_01_0013.png"
+    },
+    {
+      "original": "LeapGestRecog_1/LeapGestRecog_1\\01_palm\\frame_00_01_0014.png",
+      "duplicate": "LeapGestRecog_1/LeapGestRecog_1\\01_palm\\frame_00_01_0015.png"
+    },
+    {
+      "original": "LeapGestRecog_1/LeapGestRecog_1\\01_palm\\frame_00_01_0030.png",
+      "duplicate": "LeapGestRecog_1/LeapGestRecog_1\\01_palm\\frame_00_01_0031.png"
+    },
+    {
+      "original": "LeapGestRecog_1/LeapGestRecog_1\\01_palm\\frame_00_01_0032.png",
+      "duplicate": "LeapGestRecog_1/LeapGestRecog_1\\01_palm\\frame_00_01_0033.png"
+    },
+    {
+      "original": "LeapGestRecog_1/LeapGestRecog_1\\01_palm\\frame_00_01_0036.png",
+      "duplicate": "LeapGestRecog_1/LeapGestRecog_1\\01_palm\\frame_00_01_0037.png"
+    },
+    {
+      "original": "LeapGestRecog_1/LeapGestRecog_1\\01_palm\\frame_00_01_0038.png",
+      "duplicate": "LeapGestRecog_1/LeapGestRecog_1\\01_palm\\frame_00_01_0039.png"
+    }
+  ],
+  "audit_status": "SUCCESS"
+}

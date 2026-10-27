@@ -1,0 +1,132 @@
+
+
+================================================================
+== Vitis HLS Report for 'ga_op_wedge_product'
+================================================================
+* Date:           Tue Oct 27 05:13:14 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Project:        qgpu_ga_parallel
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg400-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  7.192 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       51|       51|  0.510 us|  0.510 us|   51|   51|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 1.56>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%b_7_val16_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %b_7_val16" [../ga_engine/src/qgpu_ga_engine_parallel.cpp:118]   --->   Operation 3 'read' 'b_7_val16_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%b_6_val15_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %b_6_val15" [../ga_engine/src/qgpu_ga_engine_parallel.cpp:118]   --->   Operation 4 'read' 'b_6_val15_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%b_5_val14_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %b_5_val14" [../ga_engine/src/qgpu_ga_engine_parallel.cpp:118]   --->   Operation 5 'read' 'b_5_val14_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [1/1] (0.00ns)   --->   "%b_4_val13_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %b_4_val13" [../ga_engine/src/qgpu_ga_engine_parallel.cpp:118]   --->   Operation 6 'read' 'b_4_val13_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%b_3_val12_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %b_3_val12" [../ga_engine/src/qgpu_ga_engine_parallel.cpp:118]   --->   Operation 7 'read' 'b_3_val12_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%b_2_val11_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %b_2_val11" [../ga_engine/src/qgpu_ga_engine_parallel.cpp:118]   --->   Operation 8 'read' 'b_2_val11_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%b_1_val10_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %b_1_val10" [../ga_engine/src/qgpu_ga_engine_parallel.cpp:118]   --->   Operation 9 'read' 'b_1_val10_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%b_0_val9_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %b_0_val9" [../ga_engine/src/qgpu_ga_engine_parallel.cpp:118]   --->   Operation 10 'read' 'b_0_val9_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%a_7_val8_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %a_7_val8" [../ga_engine/src/qgpu_ga_engine_parallel.cpp:118]   --->   Operation 11 'read' 'a_7_val8_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%a_6_val7_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %a_6_val7" [../ga_engine/src/qgpu_ga_engine_parallel.cpp:118]   --->   Operation 12 'read' 'a_6_val7_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%a_5_val6_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %a_5_val6" [../ga_engine/src/qgpu_ga_engine_parallel.cpp:118]   --->   Operation 13 'read' 'a_5_val6_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%a_4_val5_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %a_4_val5" [../ga_engine/src/qgpu_ga_engine_parallel.cpp:118]   --->   Operation 14 'read' 'a_4_val5_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%a_3_val4_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %a_3_val4" [../ga_engine/src/qgpu_ga_engine_parallel.cpp:118]   --->   Operation 15 'read' 'a_3_val4_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [1/1] (0.00ns)   --->   "%a_2_val3_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %a_2_val3" [../ga_engine/src/qgpu_ga_engine_parallel.cpp:118]   --->   Operation 16 'read' 'a_2_val3_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%a_1_val2_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %a_1_val2" [../ga_engine/src/qgpu_ga_engine_parallel.cpp:118]   --->   Operation 17 'read' 'a_1_val2_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%a_0_val1_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %a_0_val1" [../ga_engine/src/qgpu_ga_engine_parallel.cpp:118]   --->   Operation 18 'read' 'a_0_val1_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [2/2] (1.56ns)   --->   "%call_ret = call i257 @compute_gp_core, i32 %a_0_val1_read, i32 %a_1_val2_read, i32 %a_2_val3_read, i32 %a_3_val4_read, i32 %a_4_val5_read, i32 %a_5_val6_read, i32 %a_6_val7_read, i32 %a_7_val8_read, i32 %b_0_val9_read, i32 %b_1_val10_read, i32 %b_2_val11_read, i32 %b_3_val12_read, i32 %b_4_val13_read, i32 %b_5_val14_read, i32 %b_6_val15_read, i32 %b_7_val16_read, i2 2, i1 0, i3 %BASIS_MASKS" [../ga_engine/src/qgpu_ga_engine_parallel.cpp:122]   --->   Operation 19 'call' 'call_ret' <Predicate = true> <Delay = 1.56> <CoreType = "Generic">   --->   Generic Core
+
+State 2 <SV = 1> <Delay = 6.75>
+ST_2 : Operation 20 [1/2] (6.75ns)   --->   "%call_ret = call i257 @compute_gp_core, i32 %a_0_val1_read, i32 %a_1_val2_read, i32 %a_2_val3_read, i32 %a_3_val4_read, i32 %a_4_val5_read, i32 %a_5_val6_read, i32 %a_6_val7_read, i32 %a_7_val8_read, i32 %b_0_val9_read, i32 %b_1_val10_read, i32 %b_2_val11_read, i32 %b_3_val12_read, i32 %b_4_val13_read, i32 %b_5_val14_read, i32 %b_6_val15_read, i32 %b_7_val16_read, i2 2, i1 0, i3 %BASIS_MASKS" [../ga_engine/src/qgpu_ga_engine_parallel.cpp:122]   --->   Operation 20 'call' 'call_ret' <Predicate = true> <Delay = 6.75> <CoreType = "Generic">   --->   Generic Core
+ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%ret_ln123 = ret i257 %call_ret" [../ga_engine/src/qgpu_ga_engine_parallel.cpp:123]   --->   Operation 21 'ret' 'ret_ln123' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 1.565ns
+The critical path consists of the following:
+	wire read operation ('b_7_val16_read', ../ga_engine/src/qgpu_ga_engine_parallel.cpp:118) on port 'b_7_val16' (../ga_engine/src/qgpu_ga_engine_parallel.cpp:118) [18]  (0.000 ns)
+	'call' operation 257 bit ('call_ret', ../ga_engine/src/qgpu_ga_engine_parallel.cpp:122) to 'compute_gp_core' [34]  (1.565 ns)
+
+ <State 2>: 6.755ns
+The critical path consists of the following:
+	'call' operation 257 bit ('call_ret', ../ga_engine/src/qgpu_ga_engine_parallel.cpp:122) to 'compute_gp_core' [34]  (6.755 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

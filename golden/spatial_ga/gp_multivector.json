@@ -1,0 +1,69 @@
+{
+  "test": "multivector_x_multivector",
+  "description": "Full multivector GP",
+  "input_a": {
+    "metric": "G(3,0,0)",
+    "coefficients": {
+      "0": 1.0,
+      "1": 2.0,
+      "3": 0.5
+    },
+    "num_active": 3,
+    "density": 0.375
+  },
+  "input_b": {
+    "metric": "G(3,0,0)",
+    "coefficients": {
+      "0": 0.5,
+      "2": 1.0,
+      "5": -1.0
+    },
+    "num_active": 3,
+    "density": 0.375
+  },
+  "expected_float32": {
+    "metric": "G(3,0,0)",
+    "coefficients": {
+      "0": 0.5,
+      "1": 1.5,
+      "2": 1.0,
+      "3": 2.25,
+      "4": -2.0,
+      "5": -1.0,
+      "6": 0.5
+    },
+    "num_active": 7,
+    "density": 0.875
+  },
+  "expected_fix16": {
+    "format": "Fix16Format(Q1.14, scale=16384.0)",
+    "fixed_values": {
+      "0": 8192,
+      "1": 24576,
+      "2": 16384,
+      "3": 32767,
+      "4": -32768,
+      "5": -16384,
+      "6": 8192
+    },
+    "dequantized": {
+      "metric": "G(3,0,0)",
+      "coefficients": {
+        "0": 0.5,
+        "1": 1.5,
+        "2": 1.0,
+        "3": 1.99993896484375,
+        "4": -2.0,
+        "5": -1.0,
+        "6": 0.5
+      },
+      "num_active": 7,
+      "density": 0.875
+    },
+    "max_abs_error": 0.25006103515625,
+    "mean_abs_error": 0.03572300502232143,
+    "rms_error": 0.09451418737297387,
+    "norm_error": 0.06728370207526592
+  },
+  "notes": "[GOLDEN] General multivector product"
+}

@@ -1,0 +1,26 @@
+{
+  "test": "bell_state",
+  "description": "|00\u27e9 \u2192 H\u2297I \u2192 CNOT \u2192 Bell state",
+  "circuit": [
+    "|00>",
+    "H on q0",
+    "CNOT(q0,q1)"
+  ],
+  "qubit_0_result": {
+    "metric": "G(3,0,0)",
+    "coefficients": {
+      "1": 0.9999999999999998
+    },
+    "num_active": 1,
+    "density": 0.125
+  },
+  "qubit_1_result": {
+    "metric": "G(3,0,0)",
+    "coefficients": {
+      "4": 1.0
+    },
+    "num_active": 1,
+    "density": 0.125
+  },
+  "notes": "[GOLDEN] Classical GA simulation of Bell state prep. [LIMITATION] Classical threshold-based CNOT model."
+}

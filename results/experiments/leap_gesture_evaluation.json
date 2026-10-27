@@ -1,0 +1,44 @@
+{
+  "dataset": "Leap Hand Gesture Recognition",
+  "data_source": "REAL_DATASET_FEATURES",
+  "features_file": "dataset\\features\\extracted_features.npz",
+  "split": {
+    "train": 286,
+    "val": 61,
+    "test": 62
+  },
+  "landmark_classifier": {
+    "feature_dim": 107,
+    "num_classes": 3,
+    "test_accuracy": 0.9838709677419355,
+    "macro_f1": 0.9574984820886461,
+    "per_class_metrics": {
+      "0": {
+        "precision": 0.967741935483871,
+        "recall": 1.0,
+        "f1_score": 0.9836065573770492,
+        "support": 30
+      },
+      "1": {
+        "precision": 1.0,
+        "recall": 0.8,
+        "f1_score": 0.888888888888889,
+        "support": 5
+      },
+      "5": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 27
+      }
+    },
+    "mean_inference_latency_us": 10.982258132688942,
+    "p95_inference_latency_us": 11.09499717131257
+  },
+  "image_baseline_classifier": {
+    "feature_dim": 384,
+    "num_samples": 1200,
+    "test_accuracy": 0.9861111111111112
+  },
+  "status": "VALIDATED_REAL"
+}
