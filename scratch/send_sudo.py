@@ -18,3 +18,4 @@ out3 = ser.read(ser.in_waiting).decode('utf-8', errors='ignore')
 print("Curl 127.0.0.1:8080:", out3)
 
 ser.close()
+

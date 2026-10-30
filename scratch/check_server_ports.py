@@ -19,3 +19,4 @@ print("curl local status:")
 print(out2)
 
 ser.close()
+

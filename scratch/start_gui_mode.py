@@ -17,3 +17,4 @@ out2 = ser.read(ser.in_waiting).decode('utf-8', errors='ignore')
 print("server.log:", out2)
 
 ser.close()
+

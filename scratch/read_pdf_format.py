@@ -18,3 +18,4 @@ except Exception as e:
             print(doc[i].get_text())
     except Exception as e2:
         print(f"fitz error: {e2}")
+

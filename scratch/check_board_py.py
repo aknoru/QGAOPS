@@ -13,3 +13,4 @@ print("Lines 620-645 on board:")
 print(out)
 
 ser.close()
+

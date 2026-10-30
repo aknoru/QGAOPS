@@ -1,0 +1,9 @@
+{
+  "workspaceRoot": "D:\\QGPU",
+  "mapping": {
+    "HW\\hls\\SEQ_GPU\\testbench\\tb_seq_gpu.cpp": "HW\\vitis\\SEQ_GPU",
+    "HW\\hls\\SEQ_GPU\\src\\seq_gpu.cpp": "HW\\vitis\\SEQ_GPU",
+    "HW\\hls\\PARALLEL_GPU\\testbench\\tb_parallel_gpu.cpp": "HW\\vitis\\PARALLEL_GPU",
+    "HW\\hls\\PARALLEL_GPU\\src\\parallel_gpu.cpp": "HW\\vitis\\PARALLEL_GPU"
+  }
+}

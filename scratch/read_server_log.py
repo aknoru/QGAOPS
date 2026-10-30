@@ -19,3 +19,4 @@ print("ss:")
 print(out2)
 
 ser.close()
+

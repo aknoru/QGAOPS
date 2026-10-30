@@ -19,3 +19,4 @@ print("ps aux:")
 print(out2)
 
 ser.close()
+

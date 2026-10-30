@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-27 01:17:04",
+  "timestamp": "2026-10-30 16:46:18",
   "dataset_statistics": {
     "total_images": 1200,
     "classes": [
@@ -57,68 +57,32 @@
   },
   "landmark_classifier_metrics": {
     "model_type": "random_forest",
-    "accuracy": 0.0161,
-    "precision": 0.0215,
-    "recall": 0.0161,
-    "f1": 0.0184,
-    "inference_latency_us": 777.77,
+    "accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "inference_latency_us": 1349.54,
     "confusion_matrix": [
       [
-        1,
-        0,
-        7,
-        0,
-        20,
-        0
-      ],
-      [
-        1,
-        0,
-        0,
-        0,
-        2,
-        1
-      ],
-      [
-        0,
-        0,
-        0,
-        0,
-        0,
-        0
-      ],
-      [
-        19,
-        0,
-        0,
-        0,
-        11,
-        0
-      ],
-      [
-        0,
-        0,
-        0,
-        0,
+        28,
         0,
         0
       ],
       [
         0,
-        0,
-        0,
-        0,
-        0,
+        4,
         0
+      ],
+      [
+        0,
+        0,
+        30
       ]
     ],
     "target_names": [
       "OPEN_PALM",
       "FIST",
-      "THUMBS_UP",
-      "TWO_FINGER",
-      "OK_SIGN",
-      "ROCK_SIGN"
+      "TWO_FINGER"
     ]
   },
   "image_baseline_metrics": {
@@ -127,28 +91,28 @@
     "precision": 1.0,
     "recall": 1.0,
     "f1": 1.0,
-    "inference_latency_us": 235.62
+    "inference_latency_us": 371.49
   },
   "ga_operation_benchmarks": {
     "GP": {
-      "mean_latency_us": 13.853,
-      "ops_per_second": 72188.5
+      "mean_latency_us": 12.906,
+      "ops_per_second": 77485.9
     },
     "WEDGE": {
-      "mean_latency_us": 18.486,
-      "ops_per_second": 54095.5
+      "mean_latency_us": 21.968,
+      "ops_per_second": 45521.4
     },
     "DOT": {
-      "mean_latency_us": 9.568,
-      "ops_per_second": 104514.3
+      "mean_latency_us": 13.335,
+      "ops_per_second": 74989.2
     },
     "NORM": {
-      "mean_latency_us": 5.928,
-      "ops_per_second": 168693.5
+      "mean_latency_us": 9.266,
+      "ops_per_second": 107920.7
     },
     "DISTANCE": {
-      "mean_latency_us": 9.827,
-      "ops_per_second": 101758.6
+      "mean_latency_us": 13.578,
+      "ops_per_second": 73649.0
     }
   },
   "fix16_numerical_error": {
