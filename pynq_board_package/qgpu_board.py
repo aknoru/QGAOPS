@@ -766,12 +766,13 @@ def run_web_gui():
     print(f"  Open in your laptop browser:  http://<board-ip>:{PORT_HTTP}")
     print(f"  (Example: http://192.168.0.220:{PORT_HTTP})")
     print("=" * 70)
-    server = HTTPServer(("0.0.0.0", PORT_HTTP), DashboardRequestHandler)
     try:
         from http.server import ThreadingHTTPServer
         server_cls = ThreadingHTTPServer
     except ImportError:
         server_cls = HTTPServer
+    
+    server_cls.allow_reuse_address = True
     server = server_cls(("0.0.0.0", PORT_HTTP), DashboardRequestHandler)
     try:
         server.serve_forever()
