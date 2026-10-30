@@ -1,0 +1,225 @@
+
+
+================================================================
+== Vitis HLS Report for 'parallel_op_sandwich'
+================================================================
+* Date:           Fri Oct 30 00:56:48 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Project:        proj_parallel_zed
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.912 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+----------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline |
+    |   min   |   max   |    min   |    max   | min | max |   Type   |
+    +---------+---------+----------+----------+-----+-----+----------+
+    |       19|       19|  0.190 us|  0.190 us|    1|    1|  dataflow|
+    +---------+---------+----------+----------+-----+-----+----------+
+
+    + Detail: 
+        * Instance: 
+        +----------------------------+-------------------------+---------+---------+-----------+-----------+-----+-----+---------+
+        |                            |                         |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+        |          Instance          |          Module         |   min   |   max   |    min    |    max    | min | max |   Type  |
+        +----------------------------+-------------------------+---------+---------+-----------+-----------+-----+-----+---------+
+        |parallel_product_core_U0    |parallel_product_core    |        8|        8|  80.000 ns|  80.000 ns|    1|    1|      yes|
+        |parallel_op_reverse_U0      |parallel_op_reverse      |        0|        0|       0 ns|       0 ns|    1|    1|      yes|
+        |parallel_product_core_3_U0  |parallel_product_core_3  |        9|        9|  90.000 ns|  90.000 ns|    1|    1|      yes|
+        +----------------------------+-------------------------+---------+---------+-----------+-----------+-----+-----+---------+
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|     18|    -|
+|FIFO             |        -|    -|    1782|   1224|    -|
+|Instance         |        -|  512|   39635|  19952|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       0|     27|    -|
+|Register         |        -|    -|       3|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|  512|   41420|  21221|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|  232|      38|     39|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +----------------------------+-------------------------+---------+-----+-------+------+-----+
+    |          Instance          |          Module         | BRAM_18K| DSP |   FF  |  LUT | URAM|
+    +----------------------------+-------------------------+---------+-----+-------+------+-----+
+    |parallel_op_reverse_U0      |parallel_op_reverse      |        0|    0|    259|   428|    0|
+    |parallel_product_core_U0    |parallel_product_core    |        0|  256|  19511|  9688|    0|
+    |parallel_product_core_3_U0  |parallel_product_core_3  |        0|  256|  19865|  9836|    0|
+    +----------------------------+-------------------------+---------+-----+-------+------+-----+
+    |Total                       |                         |        0|  512|  39635| 19952|    0|
+    +----------------------------+-------------------------+---------+-----+-------+------+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    +--------------------------------+---------+----+----+-----+------+-----+---------+
+    |              Name              | BRAM_18K| FF | LUT| URAM| Depth| Bits| Size:D*B|
+    +--------------------------------+---------+----+----+-----+------+-----+---------+
+    |a_rev_1_U                       |        0|  99|   0|    -|     2|   32|       64|
+    |a_rev_2_U                       |        0|  99|   0|    -|     2|   32|       64|
+    |a_rev_3_U                       |        0|  99|   0|    -|     2|   32|       64|
+    |a_rev_4_U                       |        0|  99|   0|    -|     2|   32|       64|
+    |a_rev_5_U                       |        0|  99|   0|    -|     2|   32|       64|
+    |a_rev_6_U                       |        0|  99|   0|    -|     2|   32|       64|
+    |a_rev_7_U                       |        0|  99|   0|    -|     2|   32|       64|
+    |a_rev_U                         |        0|  99|   0|    -|     2|   32|       64|
+    |overflow_in_out_tmp1_channel_U  |        0|  99|   0|    -|     2|    1|        2|
+    |overflow_in_out_tmp_channel_U   |        0|  99|   0|    -|     2|    1|        2|
+    |temp_1_U                        |        0|  99|   0|    -|     3|   32|       96|
+    |temp_2_U                        |        0|  99|   0|    -|     3|   32|       96|
+    |temp_3_U                        |        0|  99|   0|    -|     3|   32|       96|
+    |temp_4_U                        |        0|  99|   0|    -|     3|   32|       96|
+    |temp_5_U                        |        0|  99|   0|    -|     3|   32|       96|
+    |temp_6_U                        |        0|  99|   0|    -|     3|   32|       96|
+    |temp_7_U                        |        0|  99|   0|    -|     3|   32|       96|
+    |temp_U                          |        0|  99|   0|    -|     3|   32|       96|
+    +--------------------------------+---------+----+----+-----+------+-----+---------+
+    |Total                           |        0|1782|   0|    0|    44|  514|     1284|
+    +--------------------------------+---------+----+----+-----+------+-----+---------+
+
+    * Expression: 
+    +----------------------------------------------------+----------+----+---+----+------------+------------+
+    |                    Variable Name                   | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------------------------------+----------+----+---+----+------------+------------+
+    |ap_channel_done_overflow_in_out_tmp1_channel        |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_overflow_in_out_tmp_channel         |       and|   0|  0|   2|           1|           1|
+    |ap_channel_done_temp_7                              |       and|   0|  0|   2|           1|           1|
+    |ap_idle                                             |       and|   0|  0|   2|           1|           1|
+    |parallel_product_core_3_U0_ap_start                 |       and|   0|  0|   2|           1|           1|
+    |parallel_product_core_U0_ap_continue                |       and|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_overflow_in_out_tmp1_channel  |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_overflow_in_out_tmp_channel   |        or|   0|  0|   2|           1|           1|
+    |ap_sync_channel_write_temp_7                        |        or|   0|  0|   2|           1|           1|
+    +----------------------------------------------------+----------+----+---+----+------------+------------+
+    |Total                                               |          |   0|  0|  18|           9|           9|
+    +----------------------------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +--------------------------------------------------------+----+-----------+-----+-----------+
+    |                          Name                          | LUT| Input Size| Bits| Total Bits|
+    +--------------------------------------------------------+----+-----------+-----+-----------+
+    |ap_sync_reg_channel_write_overflow_in_out_tmp1_channel  |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_overflow_in_out_tmp_channel   |   9|          2|    1|          2|
+    |ap_sync_reg_channel_write_temp_7                        |   9|          2|    1|          2|
+    +--------------------------------------------------------+----+-----------+-----+-----------+
+    |Total                                                   |  27|          6|    3|          6|
+    +--------------------------------------------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +--------------------------------------------------------+---+----+-----+-----------+
+    |                          Name                          | FF| LUT| Bits| Const Bits|
+    +--------------------------------------------------------+---+----+-----+-----------+
+    |ap_sync_reg_channel_write_overflow_in_out_tmp1_channel  |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_overflow_in_out_tmp_channel   |  1|   0|    1|          0|
+    |ap_sync_reg_channel_write_temp_7                        |  1|   0|    1|          0|
+    +--------------------------------------------------------+---+----+-----+-----------+
+    |Total                                                   |  3|   0|    3|          0|
+    +--------------------------------------------------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------------+-----+-----+------------+----------------------+--------------+
+|      RTL Ports      | Dir | Bits|  Protocol  |     Source Object    |    C Type    |
++---------------------+-----+-----+------------+----------------------+--------------+
+|a_0_val3             |   in|   32|     ap_none|              a_0_val3|        scalar|
+|a_0_val3_ap_vld      |   in|    1|     ap_none|              a_0_val3|        scalar|
+|a_1_val5             |   in|   32|     ap_none|              a_1_val5|        scalar|
+|a_1_val5_ap_vld      |   in|    1|     ap_none|              a_1_val5|        scalar|
+|a_2_val7             |   in|   32|     ap_none|              a_2_val7|        scalar|
+|a_2_val7_ap_vld      |   in|    1|     ap_none|              a_2_val7|        scalar|
+|a_3_val9             |   in|   32|     ap_none|              a_3_val9|        scalar|
+|a_3_val9_ap_vld      |   in|    1|     ap_none|              a_3_val9|        scalar|
+|a_4_val11            |   in|   32|     ap_none|             a_4_val11|        scalar|
+|a_4_val11_ap_vld     |   in|    1|     ap_none|             a_4_val11|        scalar|
+|a_5_val13            |   in|   32|     ap_none|             a_5_val13|        scalar|
+|a_5_val13_ap_vld     |   in|    1|     ap_none|             a_5_val13|        scalar|
+|a_6_val15            |   in|   32|     ap_none|             a_6_val15|        scalar|
+|a_6_val15_ap_vld     |   in|    1|     ap_none|             a_6_val15|        scalar|
+|a_7_val17            |   in|   32|     ap_none|             a_7_val17|        scalar|
+|a_7_val17_ap_vld     |   in|    1|     ap_none|             a_7_val17|        scalar|
+|b_0_val18            |   in|   32|     ap_none|             b_0_val18|        scalar|
+|b_0_val18_ap_vld     |   in|    1|     ap_none|             b_0_val18|        scalar|
+|b_1_val19            |   in|   32|     ap_none|             b_1_val19|        scalar|
+|b_1_val19_ap_vld     |   in|    1|     ap_none|             b_1_val19|        scalar|
+|b_2_val20            |   in|   32|     ap_none|             b_2_val20|        scalar|
+|b_2_val20_ap_vld     |   in|    1|     ap_none|             b_2_val20|        scalar|
+|b_3_val21            |   in|   32|     ap_none|             b_3_val21|        scalar|
+|b_3_val21_ap_vld     |   in|    1|     ap_none|             b_3_val21|        scalar|
+|b_4_val22            |   in|   32|     ap_none|             b_4_val22|        scalar|
+|b_4_val22_ap_vld     |   in|    1|     ap_none|             b_4_val22|        scalar|
+|b_5_val23            |   in|   32|     ap_none|             b_5_val23|        scalar|
+|b_5_val23_ap_vld     |   in|    1|     ap_none|             b_5_val23|        scalar|
+|b_6_val24            |   in|   32|     ap_none|             b_6_val24|        scalar|
+|b_6_val24_ap_vld     |   in|    1|     ap_none|             b_6_val24|        scalar|
+|b_7_val25            |   in|   32|     ap_none|             b_7_val25|        scalar|
+|b_7_val25_ap_vld     |   in|    1|     ap_none|             b_7_val25|        scalar|
+|c_0                  |  out|   32|      ap_vld|                   c_0|       pointer|
+|c_0_ap_vld           |  out|    1|      ap_vld|                   c_0|       pointer|
+|c_1                  |  out|   32|      ap_vld|                   c_1|       pointer|
+|c_1_ap_vld           |  out|    1|      ap_vld|                   c_1|       pointer|
+|c_2                  |  out|   32|      ap_vld|                   c_2|       pointer|
+|c_2_ap_vld           |  out|    1|      ap_vld|                   c_2|       pointer|
+|c_3                  |  out|   32|      ap_vld|                   c_3|       pointer|
+|c_3_ap_vld           |  out|    1|      ap_vld|                   c_3|       pointer|
+|c_4                  |  out|   32|      ap_vld|                   c_4|       pointer|
+|c_4_ap_vld           |  out|    1|      ap_vld|                   c_4|       pointer|
+|c_5                  |  out|   32|      ap_vld|                   c_5|       pointer|
+|c_5_ap_vld           |  out|    1|      ap_vld|                   c_5|       pointer|
+|c_6                  |  out|   32|      ap_vld|                   c_6|       pointer|
+|c_6_ap_vld           |  out|    1|      ap_vld|                   c_6|       pointer|
+|c_7                  |  out|   32|      ap_vld|                   c_7|       pointer|
+|c_7_ap_vld           |  out|    1|      ap_vld|                   c_7|       pointer|
+|overflow_in          |   in|    1|     ap_none|           overflow_in|       pointer|
+|overflow_in_ap_vld   |   in|    1|     ap_none|           overflow_in|       pointer|
+|overflow_out         |  out|    1|      ap_vld|          overflow_out|       pointer|
+|overflow_out_ap_vld  |  out|    1|      ap_vld|          overflow_out|       pointer|
+|ap_clk               |   in|    1|  ap_ctrl_hs|  parallel_op_sandwich|  return value|
+|ap_rst               |   in|    1|  ap_ctrl_hs|  parallel_op_sandwich|  return value|
+|ap_start             |   in|    1|  ap_ctrl_hs|  parallel_op_sandwich|  return value|
+|ap_done              |  out|    1|  ap_ctrl_hs|  parallel_op_sandwich|  return value|
+|ap_ready             |  out|    1|  ap_ctrl_hs|  parallel_op_sandwich|  return value|
+|ap_idle              |  out|    1|  ap_ctrl_hs|  parallel_op_sandwich|  return value|
+|ap_continue          |   in|    1|  ap_ctrl_hs|  parallel_op_sandwich|  return value|
++---------------------+-----+-----+------------+----------------------+--------------+
+

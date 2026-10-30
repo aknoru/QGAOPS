@@ -1,0 +1,11212 @@
+[
+  {
+    "id": 1,
+    "category": "EXHAUSTIVE_GP",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "GP basis pair 1 * 1"
+  },
+  {
+    "id": 2,
+    "category": "EXHAUSTIVE_GP",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "GP basis pair 1 * e1"
+  },
+  {
+    "id": 3,
+    "category": "EXHAUSTIVE_GP",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "GP basis pair 1 * e2"
+  },
+  {
+    "id": 4,
+    "category": "EXHAUSTIVE_GP",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "GP basis pair 1 * e3"
+  },
+  {
+    "id": 5,
+    "category": "EXHAUSTIVE_GP",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "GP basis pair 1 * e12"
+  },
+  {
+    "id": 6,
+    "category": "EXHAUSTIVE_GP",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "GP basis pair 1 * e13"
+  },
+  {
+    "id": 7,
+    "category": "EXHAUSTIVE_GP",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0
+    ],
+    "expected_status": 0,
+    "description": "GP basis pair 1 * e23"
+  },
+  {
+    "id": 8,
+    "category": "EXHAUSTIVE_GP",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536
+    ],
+    "expected_status": 0,
+    "description": "GP basis pair 1 * e123"
+  },
+  {
+    "id": 9,
+    "category": "EXHAUSTIVE_GP",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "GP basis pair e1 * 1"
+  },
+  {
+    "id": 10,
+    "category": "EXHAUSTIVE_GP",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "GP basis pair e1 * e1"
+  },
+  {
+    "id": 11,
+    "category": "EXHAUSTIVE_GP",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "GP basis pair e1 * e2"
+  },
+  {
+    "id": 12,
+    "category": "EXHAUSTIVE_GP",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "GP basis pair e1 * e3"
+  },
+  {
+    "id": 13,
+    "category": "EXHAUSTIVE_GP",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "GP basis pair e1 * e12"
+  },
+  {
+    "id": 14,
+    "category": "EXHAUSTIVE_GP",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "GP basis pair e1 * e13"
+  },
+  {
+    "id": 15,
+    "category": "EXHAUSTIVE_GP",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536
+    ],
+    "expected_status": 0,
+    "description": "GP basis pair e1 * e23"
+  },
+  {
+    "id": 16,
+    "category": "EXHAUSTIVE_GP",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0
+    ],
+    "expected_status": 0,
+    "description": "GP basis pair e1 * e123"
+  },
+  {
+    "id": 17,
+    "category": "EXHAUSTIVE_GP",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "GP basis pair e2 * 1"
+  },
+  {
+    "id": 18,
+    "category": "EXHAUSTIVE_GP",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      -65536,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "GP basis pair e2 * e1"
+  },
+  {
+    "id": 19,
+    "category": "EXHAUSTIVE_GP",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "GP basis pair e2 * e2"
+  },
+  {
+    "id": 20,
+    "category": "EXHAUSTIVE_GP",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0
+    ],
+    "expected_status": 0,
+    "description": "GP basis pair e2 * e3"
+  },
+  {
+    "id": 21,
+    "category": "EXHAUSTIVE_GP",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      -65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "GP basis pair e2 * e12"
+  },
+  {
+    "id": 22,
+    "category": "EXHAUSTIVE_GP",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      -65536
+    ],
+    "expected_status": 0,
+    "description": "GP basis pair e2 * e13"
+  },
+  {
+    "id": 23,
+    "category": "EXHAUSTIVE_GP",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "GP basis pair e2 * e23"
+  },
+  {
+    "id": 24,
+    "category": "EXHAUSTIVE_GP",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      -65536,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "GP basis pair e2 * e123"
+  },
+  {
+    "id": 25,
+    "category": "EXHAUSTIVE_GP",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "GP basis pair e3 * 1"
+  },
+  {
+    "id": 26,
+    "category": "EXHAUSTIVE_GP",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      -65536,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "GP basis pair e3 * e1"
+  },
+  {
+    "id": 27,
+    "category": "EXHAUSTIVE_GP",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      -65536,
+      0
+    ],
+    "expected_status": 0,
+    "description": "GP basis pair e3 * e2"
+  },
+  {
+    "id": 28,
+    "category": "EXHAUSTIVE_GP",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "GP basis pair e3 * e3"
+  },
+  {
+    "id": 29,
+    "category": "EXHAUSTIVE_GP",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536
+    ],
+    "expected_status": 0,
+    "description": "GP basis pair e3 * e12"
+  },
+  {
+    "id": 30,
+    "category": "EXHAUSTIVE_GP",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      -65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "GP basis pair e3 * e13"
+  },
+  {
+    "id": 31,
+    "category": "EXHAUSTIVE_GP",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      -65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "GP basis pair e3 * e23"
+  },
+  {
+    "id": 32,
+    "category": "EXHAUSTIVE_GP",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "GP basis pair e3 * e123"
+  },
+  {
+    "id": 33,
+    "category": "EXHAUSTIVE_GP",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "GP basis pair e12 * 1"
+  },
+  {
+    "id": 34,
+    "category": "EXHAUSTIVE_GP",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      -65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "GP basis pair e12 * e1"
+  },
+  {
+    "id": 35,
+    "category": "EXHAUSTIVE_GP",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "GP basis pair e12 * e2"
+  },
+  {
+    "id": 36,
+    "category": "EXHAUSTIVE_GP",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536
+    ],
+    "expected_status": 0,
+    "description": "GP basis pair e12 * e3"
+  },
+  {
+    "id": 37,
+    "category": "EXHAUSTIVE_GP",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      -65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "GP basis pair e12 * e12"
+  },
+  {
+    "id": 38,
+    "category": "EXHAUSTIVE_GP",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      -65536,
+      0
+    ],
+    "expected_status": 0,
+    "description": "GP basis pair e12 * e13"
+  },
+  {
+    "id": 39,
+    "category": "EXHAUSTIVE_GP",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "GP basis pair e12 * e23"
+  },
+  {
+    "id": 40,
+    "category": "EXHAUSTIVE_GP",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      -65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "GP basis pair e12 * e123"
+  },
+  {
+    "id": 41,
+    "category": "EXHAUSTIVE_GP",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0
+    ],
+    "b": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "GP basis pair e13 * 1"
+  },
+  {
+    "id": 42,
+    "category": "EXHAUSTIVE_GP",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      -65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "GP basis pair e13 * e1"
+  },
+  {
+    "id": 43,
+    "category": "EXHAUSTIVE_GP",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      -65536
+    ],
+    "expected_status": 0,
+    "description": "GP basis pair e13 * e2"
+  },
+  {
+    "id": 44,
+    "category": "EXHAUSTIVE_GP",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "GP basis pair e13 * e3"
+  },
+  {
+    "id": 45,
+    "category": "EXHAUSTIVE_GP",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0
+    ],
+    "expected_status": 0,
+    "description": "GP basis pair e13 * e12"
+  },
+  {
+    "id": 46,
+    "category": "EXHAUSTIVE_GP",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0
+    ],
+    "expected": [
+      -65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "GP basis pair e13 * e13"
+  },
+  {
+    "id": 47,
+    "category": "EXHAUSTIVE_GP",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      -65536,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "GP basis pair e13 * e23"
+  },
+  {
+    "id": 48,
+    "category": "EXHAUSTIVE_GP",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536
+    ],
+    "expected": [
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "GP basis pair e13 * e123"
+  },
+  {
+    "id": 49,
+    "category": "EXHAUSTIVE_GP",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0
+    ],
+    "b": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0
+    ],
+    "expected_status": 0,
+    "description": "GP basis pair e23 * 1"
+  },
+  {
+    "id": 50,
+    "category": "EXHAUSTIVE_GP",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0
+    ],
+    "b": [
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536
+    ],
+    "expected_status": 0,
+    "description": "GP basis pair e23 * e1"
+  },
+  {
+    "id": 51,
+    "category": "EXHAUSTIVE_GP",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      -65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "GP basis pair e23 * e2"
+  },
+  {
+    "id": 52,
+    "category": "EXHAUSTIVE_GP",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "GP basis pair e23 * e3"
+  },
+  {
+    "id": 53,
+    "category": "EXHAUSTIVE_GP",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      -65536,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "GP basis pair e23 * e12"
+  },
+  {
+    "id": 54,
+    "category": "EXHAUSTIVE_GP",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "GP basis pair e23 * e13"
+  },
+  {
+    "id": 55,
+    "category": "EXHAUSTIVE_GP",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0
+    ],
+    "expected": [
+      -65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "GP basis pair e23 * e23"
+  },
+  {
+    "id": 56,
+    "category": "EXHAUSTIVE_GP",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536
+    ],
+    "expected": [
+      0,
+      -65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "GP basis pair e23 * e123"
+  },
+  {
+    "id": 57,
+    "category": "EXHAUSTIVE_GP",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536
+    ],
+    "b": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536
+    ],
+    "expected_status": 0,
+    "description": "GP basis pair e123 * 1"
+  },
+  {
+    "id": 58,
+    "category": "EXHAUSTIVE_GP",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536
+    ],
+    "b": [
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0
+    ],
+    "expected_status": 0,
+    "description": "GP basis pair e123 * e1"
+  },
+  {
+    "id": 59,
+    "category": "EXHAUSTIVE_GP",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536
+    ],
+    "b": [
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      -65536,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "GP basis pair e123 * e2"
+  },
+  {
+    "id": 60,
+    "category": "EXHAUSTIVE_GP",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "GP basis pair e123 * e3"
+  },
+  {
+    "id": 61,
+    "category": "EXHAUSTIVE_GP",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      -65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "GP basis pair e123 * e12"
+  },
+  {
+    "id": 62,
+    "category": "EXHAUSTIVE_GP",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "GP basis pair e123 * e13"
+  },
+  {
+    "id": 63,
+    "category": "EXHAUSTIVE_GP",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0
+    ],
+    "expected": [
+      0,
+      -65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "GP basis pair e123 * e23"
+  },
+  {
+    "id": 64,
+    "category": "EXHAUSTIVE_GP",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536
+    ],
+    "expected": [
+      -65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "GP basis pair e123 * e123"
+  },
+  {
+    "id": 65,
+    "category": "EXHAUSTIVE_WEDGE",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Wedge basis pair 1 ^ 1"
+  },
+  {
+    "id": 66,
+    "category": "EXHAUSTIVE_WEDGE",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Wedge basis pair 1 ^ e1"
+  },
+  {
+    "id": 67,
+    "category": "EXHAUSTIVE_WEDGE",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Wedge basis pair 1 ^ e2"
+  },
+  {
+    "id": 68,
+    "category": "EXHAUSTIVE_WEDGE",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Wedge basis pair 1 ^ e3"
+  },
+  {
+    "id": 69,
+    "category": "EXHAUSTIVE_WEDGE",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Wedge basis pair 1 ^ e12"
+  },
+  {
+    "id": 70,
+    "category": "EXHAUSTIVE_WEDGE",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Wedge basis pair 1 ^ e13"
+  },
+  {
+    "id": 71,
+    "category": "EXHAUSTIVE_WEDGE",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Wedge basis pair 1 ^ e23"
+  },
+  {
+    "id": 72,
+    "category": "EXHAUSTIVE_WEDGE",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536
+    ],
+    "expected_status": 0,
+    "description": "Wedge basis pair 1 ^ e123"
+  },
+  {
+    "id": 73,
+    "category": "EXHAUSTIVE_WEDGE",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Wedge basis pair e1 ^ 1"
+  },
+  {
+    "id": 74,
+    "category": "EXHAUSTIVE_WEDGE",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Wedge basis pair e1 ^ e1"
+  },
+  {
+    "id": 75,
+    "category": "EXHAUSTIVE_WEDGE",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Wedge basis pair e1 ^ e2"
+  },
+  {
+    "id": 76,
+    "category": "EXHAUSTIVE_WEDGE",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Wedge basis pair e1 ^ e3"
+  },
+  {
+    "id": 77,
+    "category": "EXHAUSTIVE_WEDGE",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Wedge basis pair e1 ^ e12"
+  },
+  {
+    "id": 78,
+    "category": "EXHAUSTIVE_WEDGE",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Wedge basis pair e1 ^ e13"
+  },
+  {
+    "id": 79,
+    "category": "EXHAUSTIVE_WEDGE",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536
+    ],
+    "expected_status": 0,
+    "description": "Wedge basis pair e1 ^ e23"
+  },
+  {
+    "id": 80,
+    "category": "EXHAUSTIVE_WEDGE",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Wedge basis pair e1 ^ e123"
+  },
+  {
+    "id": 81,
+    "category": "EXHAUSTIVE_WEDGE",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Wedge basis pair e2 ^ 1"
+  },
+  {
+    "id": 82,
+    "category": "EXHAUSTIVE_WEDGE",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      -65536,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Wedge basis pair e2 ^ e1"
+  },
+  {
+    "id": 83,
+    "category": "EXHAUSTIVE_WEDGE",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Wedge basis pair e2 ^ e2"
+  },
+  {
+    "id": 84,
+    "category": "EXHAUSTIVE_WEDGE",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Wedge basis pair e2 ^ e3"
+  },
+  {
+    "id": 85,
+    "category": "EXHAUSTIVE_WEDGE",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Wedge basis pair e2 ^ e12"
+  },
+  {
+    "id": 86,
+    "category": "EXHAUSTIVE_WEDGE",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      -65536
+    ],
+    "expected_status": 0,
+    "description": "Wedge basis pair e2 ^ e13"
+  },
+  {
+    "id": 87,
+    "category": "EXHAUSTIVE_WEDGE",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Wedge basis pair e2 ^ e23"
+  },
+  {
+    "id": 88,
+    "category": "EXHAUSTIVE_WEDGE",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Wedge basis pair e2 ^ e123"
+  },
+  {
+    "id": 89,
+    "category": "EXHAUSTIVE_WEDGE",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Wedge basis pair e3 ^ 1"
+  },
+  {
+    "id": 90,
+    "category": "EXHAUSTIVE_WEDGE",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      -65536,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Wedge basis pair e3 ^ e1"
+  },
+  {
+    "id": 91,
+    "category": "EXHAUSTIVE_WEDGE",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      -65536,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Wedge basis pair e3 ^ e2"
+  },
+  {
+    "id": 92,
+    "category": "EXHAUSTIVE_WEDGE",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Wedge basis pair e3 ^ e3"
+  },
+  {
+    "id": 93,
+    "category": "EXHAUSTIVE_WEDGE",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536
+    ],
+    "expected_status": 0,
+    "description": "Wedge basis pair e3 ^ e12"
+  },
+  {
+    "id": 94,
+    "category": "EXHAUSTIVE_WEDGE",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Wedge basis pair e3 ^ e13"
+  },
+  {
+    "id": 95,
+    "category": "EXHAUSTIVE_WEDGE",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Wedge basis pair e3 ^ e23"
+  },
+  {
+    "id": 96,
+    "category": "EXHAUSTIVE_WEDGE",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Wedge basis pair e3 ^ e123"
+  },
+  {
+    "id": 97,
+    "category": "EXHAUSTIVE_WEDGE",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Wedge basis pair e12 ^ 1"
+  },
+  {
+    "id": 98,
+    "category": "EXHAUSTIVE_WEDGE",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Wedge basis pair e12 ^ e1"
+  },
+  {
+    "id": 99,
+    "category": "EXHAUSTIVE_WEDGE",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Wedge basis pair e12 ^ e2"
+  },
+  {
+    "id": 100,
+    "category": "EXHAUSTIVE_WEDGE",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536
+    ],
+    "expected_status": 0,
+    "description": "Wedge basis pair e12 ^ e3"
+  },
+  {
+    "id": 101,
+    "category": "EXHAUSTIVE_WEDGE",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Wedge basis pair e12 ^ e12"
+  },
+  {
+    "id": 102,
+    "category": "EXHAUSTIVE_WEDGE",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Wedge basis pair e12 ^ e13"
+  },
+  {
+    "id": 103,
+    "category": "EXHAUSTIVE_WEDGE",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Wedge basis pair e12 ^ e23"
+  },
+  {
+    "id": 104,
+    "category": "EXHAUSTIVE_WEDGE",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Wedge basis pair e12 ^ e123"
+  },
+  {
+    "id": 105,
+    "category": "EXHAUSTIVE_WEDGE",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0
+    ],
+    "b": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Wedge basis pair e13 ^ 1"
+  },
+  {
+    "id": 106,
+    "category": "EXHAUSTIVE_WEDGE",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Wedge basis pair e13 ^ e1"
+  },
+  {
+    "id": 107,
+    "category": "EXHAUSTIVE_WEDGE",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      -65536
+    ],
+    "expected_status": 0,
+    "description": "Wedge basis pair e13 ^ e2"
+  },
+  {
+    "id": 108,
+    "category": "EXHAUSTIVE_WEDGE",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Wedge basis pair e13 ^ e3"
+  },
+  {
+    "id": 109,
+    "category": "EXHAUSTIVE_WEDGE",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Wedge basis pair e13 ^ e12"
+  },
+  {
+    "id": 110,
+    "category": "EXHAUSTIVE_WEDGE",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Wedge basis pair e13 ^ e13"
+  },
+  {
+    "id": 111,
+    "category": "EXHAUSTIVE_WEDGE",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Wedge basis pair e13 ^ e23"
+  },
+  {
+    "id": 112,
+    "category": "EXHAUSTIVE_WEDGE",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Wedge basis pair e13 ^ e123"
+  },
+  {
+    "id": 113,
+    "category": "EXHAUSTIVE_WEDGE",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0
+    ],
+    "b": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Wedge basis pair e23 ^ 1"
+  },
+  {
+    "id": 114,
+    "category": "EXHAUSTIVE_WEDGE",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0
+    ],
+    "b": [
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536
+    ],
+    "expected_status": 0,
+    "description": "Wedge basis pair e23 ^ e1"
+  },
+  {
+    "id": 115,
+    "category": "EXHAUSTIVE_WEDGE",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Wedge basis pair e23 ^ e2"
+  },
+  {
+    "id": 116,
+    "category": "EXHAUSTIVE_WEDGE",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Wedge basis pair e23 ^ e3"
+  },
+  {
+    "id": 117,
+    "category": "EXHAUSTIVE_WEDGE",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Wedge basis pair e23 ^ e12"
+  },
+  {
+    "id": 118,
+    "category": "EXHAUSTIVE_WEDGE",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Wedge basis pair e23 ^ e13"
+  },
+  {
+    "id": 119,
+    "category": "EXHAUSTIVE_WEDGE",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Wedge basis pair e23 ^ e23"
+  },
+  {
+    "id": 120,
+    "category": "EXHAUSTIVE_WEDGE",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Wedge basis pair e23 ^ e123"
+  },
+  {
+    "id": 121,
+    "category": "EXHAUSTIVE_WEDGE",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536
+    ],
+    "b": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536
+    ],
+    "expected_status": 0,
+    "description": "Wedge basis pair e123 ^ 1"
+  },
+  {
+    "id": 122,
+    "category": "EXHAUSTIVE_WEDGE",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536
+    ],
+    "b": [
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Wedge basis pair e123 ^ e1"
+  },
+  {
+    "id": 123,
+    "category": "EXHAUSTIVE_WEDGE",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536
+    ],
+    "b": [
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Wedge basis pair e123 ^ e2"
+  },
+  {
+    "id": 124,
+    "category": "EXHAUSTIVE_WEDGE",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Wedge basis pair e123 ^ e3"
+  },
+  {
+    "id": 125,
+    "category": "EXHAUSTIVE_WEDGE",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Wedge basis pair e123 ^ e12"
+  },
+  {
+    "id": 126,
+    "category": "EXHAUSTIVE_WEDGE",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Wedge basis pair e123 ^ e13"
+  },
+  {
+    "id": 127,
+    "category": "EXHAUSTIVE_WEDGE",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Wedge basis pair e123 ^ e23"
+  },
+  {
+    "id": 128,
+    "category": "EXHAUSTIVE_WEDGE",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Wedge basis pair e123 ^ e123"
+  },
+  {
+    "id": 129,
+    "category": "EXHAUSTIVE_INNER",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Hestenes inner basis pair 1 . 1"
+  },
+  {
+    "id": 130,
+    "category": "EXHAUSTIVE_INNER",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Hestenes inner basis pair 1 . e1"
+  },
+  {
+    "id": 131,
+    "category": "EXHAUSTIVE_INNER",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Hestenes inner basis pair 1 . e2"
+  },
+  {
+    "id": 132,
+    "category": "EXHAUSTIVE_INNER",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Hestenes inner basis pair 1 . e3"
+  },
+  {
+    "id": 133,
+    "category": "EXHAUSTIVE_INNER",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Hestenes inner basis pair 1 . e12"
+  },
+  {
+    "id": 134,
+    "category": "EXHAUSTIVE_INNER",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Hestenes inner basis pair 1 . e13"
+  },
+  {
+    "id": 135,
+    "category": "EXHAUSTIVE_INNER",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Hestenes inner basis pair 1 . e23"
+  },
+  {
+    "id": 136,
+    "category": "EXHAUSTIVE_INNER",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536
+    ],
+    "expected_status": 0,
+    "description": "Hestenes inner basis pair 1 . e123"
+  },
+  {
+    "id": 137,
+    "category": "EXHAUSTIVE_INNER",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Hestenes inner basis pair e1 . 1"
+  },
+  {
+    "id": 138,
+    "category": "EXHAUSTIVE_INNER",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Hestenes inner basis pair e1 . e1"
+  },
+  {
+    "id": 139,
+    "category": "EXHAUSTIVE_INNER",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Hestenes inner basis pair e1 . e2"
+  },
+  {
+    "id": 140,
+    "category": "EXHAUSTIVE_INNER",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Hestenes inner basis pair e1 . e3"
+  },
+  {
+    "id": 141,
+    "category": "EXHAUSTIVE_INNER",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Hestenes inner basis pair e1 . e12"
+  },
+  {
+    "id": 142,
+    "category": "EXHAUSTIVE_INNER",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Hestenes inner basis pair e1 . e13"
+  },
+  {
+    "id": 143,
+    "category": "EXHAUSTIVE_INNER",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Hestenes inner basis pair e1 . e23"
+  },
+  {
+    "id": 144,
+    "category": "EXHAUSTIVE_INNER",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Hestenes inner basis pair e1 . e123"
+  },
+  {
+    "id": 145,
+    "category": "EXHAUSTIVE_INNER",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Hestenes inner basis pair e2 . 1"
+  },
+  {
+    "id": 146,
+    "category": "EXHAUSTIVE_INNER",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Hestenes inner basis pair e2 . e1"
+  },
+  {
+    "id": 147,
+    "category": "EXHAUSTIVE_INNER",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Hestenes inner basis pair e2 . e2"
+  },
+  {
+    "id": 148,
+    "category": "EXHAUSTIVE_INNER",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Hestenes inner basis pair e2 . e3"
+  },
+  {
+    "id": 149,
+    "category": "EXHAUSTIVE_INNER",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      -65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Hestenes inner basis pair e2 . e12"
+  },
+  {
+    "id": 150,
+    "category": "EXHAUSTIVE_INNER",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Hestenes inner basis pair e2 . e13"
+  },
+  {
+    "id": 151,
+    "category": "EXHAUSTIVE_INNER",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Hestenes inner basis pair e2 . e23"
+  },
+  {
+    "id": 152,
+    "category": "EXHAUSTIVE_INNER",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      -65536,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Hestenes inner basis pair e2 . e123"
+  },
+  {
+    "id": 153,
+    "category": "EXHAUSTIVE_INNER",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Hestenes inner basis pair e3 . 1"
+  },
+  {
+    "id": 154,
+    "category": "EXHAUSTIVE_INNER",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Hestenes inner basis pair e3 . e1"
+  },
+  {
+    "id": 155,
+    "category": "EXHAUSTIVE_INNER",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Hestenes inner basis pair e3 . e2"
+  },
+  {
+    "id": 156,
+    "category": "EXHAUSTIVE_INNER",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Hestenes inner basis pair e3 . e3"
+  },
+  {
+    "id": 157,
+    "category": "EXHAUSTIVE_INNER",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Hestenes inner basis pair e3 . e12"
+  },
+  {
+    "id": 158,
+    "category": "EXHAUSTIVE_INNER",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      -65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Hestenes inner basis pair e3 . e13"
+  },
+  {
+    "id": 159,
+    "category": "EXHAUSTIVE_INNER",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      -65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Hestenes inner basis pair e3 . e23"
+  },
+  {
+    "id": 160,
+    "category": "EXHAUSTIVE_INNER",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Hestenes inner basis pair e3 . e123"
+  },
+  {
+    "id": 161,
+    "category": "EXHAUSTIVE_INNER",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Hestenes inner basis pair e12 . 1"
+  },
+  {
+    "id": 162,
+    "category": "EXHAUSTIVE_INNER",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Hestenes inner basis pair e12 . e1"
+  },
+  {
+    "id": 163,
+    "category": "EXHAUSTIVE_INNER",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Hestenes inner basis pair e12 . e2"
+  },
+  {
+    "id": 164,
+    "category": "EXHAUSTIVE_INNER",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Hestenes inner basis pair e12 . e3"
+  },
+  {
+    "id": 165,
+    "category": "EXHAUSTIVE_INNER",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      -65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Hestenes inner basis pair e12 . e12"
+  },
+  {
+    "id": 166,
+    "category": "EXHAUSTIVE_INNER",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Hestenes inner basis pair e12 . e13"
+  },
+  {
+    "id": 167,
+    "category": "EXHAUSTIVE_INNER",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Hestenes inner basis pair e12 . e23"
+  },
+  {
+    "id": 168,
+    "category": "EXHAUSTIVE_INNER",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      -65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Hestenes inner basis pair e12 . e123"
+  },
+  {
+    "id": 169,
+    "category": "EXHAUSTIVE_INNER",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0
+    ],
+    "b": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Hestenes inner basis pair e13 . 1"
+  },
+  {
+    "id": 170,
+    "category": "EXHAUSTIVE_INNER",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Hestenes inner basis pair e13 . e1"
+  },
+  {
+    "id": 171,
+    "category": "EXHAUSTIVE_INNER",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Hestenes inner basis pair e13 . e2"
+  },
+  {
+    "id": 172,
+    "category": "EXHAUSTIVE_INNER",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Hestenes inner basis pair e13 . e3"
+  },
+  {
+    "id": 173,
+    "category": "EXHAUSTIVE_INNER",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Hestenes inner basis pair e13 . e12"
+  },
+  {
+    "id": 174,
+    "category": "EXHAUSTIVE_INNER",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0
+    ],
+    "expected": [
+      -65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Hestenes inner basis pair e13 . e13"
+  },
+  {
+    "id": 175,
+    "category": "EXHAUSTIVE_INNER",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Hestenes inner basis pair e13 . e23"
+  },
+  {
+    "id": 176,
+    "category": "EXHAUSTIVE_INNER",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536
+    ],
+    "expected": [
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Hestenes inner basis pair e13 . e123"
+  },
+  {
+    "id": 177,
+    "category": "EXHAUSTIVE_INNER",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0
+    ],
+    "b": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Hestenes inner basis pair e23 . 1"
+  },
+  {
+    "id": 178,
+    "category": "EXHAUSTIVE_INNER",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0
+    ],
+    "b": [
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Hestenes inner basis pair e23 . e1"
+  },
+  {
+    "id": 179,
+    "category": "EXHAUSTIVE_INNER",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Hestenes inner basis pair e23 . e2"
+  },
+  {
+    "id": 180,
+    "category": "EXHAUSTIVE_INNER",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Hestenes inner basis pair e23 . e3"
+  },
+  {
+    "id": 181,
+    "category": "EXHAUSTIVE_INNER",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Hestenes inner basis pair e23 . e12"
+  },
+  {
+    "id": 182,
+    "category": "EXHAUSTIVE_INNER",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Hestenes inner basis pair e23 . e13"
+  },
+  {
+    "id": 183,
+    "category": "EXHAUSTIVE_INNER",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0
+    ],
+    "expected": [
+      -65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Hestenes inner basis pair e23 . e23"
+  },
+  {
+    "id": 184,
+    "category": "EXHAUSTIVE_INNER",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536
+    ],
+    "expected": [
+      0,
+      -65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Hestenes inner basis pair e23 . e123"
+  },
+  {
+    "id": 185,
+    "category": "EXHAUSTIVE_INNER",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536
+    ],
+    "b": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Hestenes inner basis pair e123 . 1"
+  },
+  {
+    "id": 186,
+    "category": "EXHAUSTIVE_INNER",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536
+    ],
+    "b": [
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Hestenes inner basis pair e123 . e1"
+  },
+  {
+    "id": 187,
+    "category": "EXHAUSTIVE_INNER",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536
+    ],
+    "b": [
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Hestenes inner basis pair e123 . e2"
+  },
+  {
+    "id": 188,
+    "category": "EXHAUSTIVE_INNER",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Hestenes inner basis pair e123 . e3"
+  },
+  {
+    "id": 189,
+    "category": "EXHAUSTIVE_INNER",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Hestenes inner basis pair e123 . e12"
+  },
+  {
+    "id": 190,
+    "category": "EXHAUSTIVE_INNER",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Hestenes inner basis pair e123 . e13"
+  },
+  {
+    "id": 191,
+    "category": "EXHAUSTIVE_INNER",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Hestenes inner basis pair e123 . e23"
+  },
+  {
+    "id": 192,
+    "category": "EXHAUSTIVE_INNER",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536
+    ],
+    "expected": [
+      -65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Hestenes inner basis pair e123 . e123"
+  },
+  {
+    "id": 193,
+    "category": "ARITHMETIC_ADD",
+    "opcode": 4,
+    "op_name": "add",
+    "a": [
+      65536,
+      65536,
+      65536,
+      65536,
+      65536,
+      65536,
+      65536,
+      65536
+    ],
+    "b": [
+      131072,
+      131072,
+      131072,
+      131072,
+      131072,
+      131072,
+      131072,
+      131072
+    ],
+    "expected": [
+      196608,
+      196608,
+      196608,
+      196608,
+      196608,
+      196608,
+      196608,
+      196608
+    ],
+    "expected_status": 0,
+    "description": "Add uniform_positive"
+  },
+  {
+    "id": 194,
+    "category": "ARITHMETIC_SUB",
+    "opcode": 5,
+    "op_name": "subtract",
+    "a": [
+      65536,
+      65536,
+      65536,
+      65536,
+      65536,
+      65536,
+      65536,
+      65536
+    ],
+    "b": [
+      131072,
+      131072,
+      131072,
+      131072,
+      131072,
+      131072,
+      131072,
+      131072
+    ],
+    "expected": [
+      -65536,
+      -65536,
+      -65536,
+      -65536,
+      -65536,
+      -65536,
+      -65536,
+      -65536
+    ],
+    "expected_status": 0,
+    "description": "Subtract uniform_positive"
+  },
+  {
+    "id": 195,
+    "category": "ARITHMETIC_ADD",
+    "opcode": 4,
+    "op_name": "add",
+    "a": [
+      -65536,
+      -65536,
+      -65536,
+      -65536,
+      -65536,
+      -65536,
+      -65536,
+      -65536
+    ],
+    "b": [
+      65536,
+      65536,
+      65536,
+      65536,
+      65536,
+      65536,
+      65536,
+      65536
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Add cancellation_to_zero"
+  },
+  {
+    "id": 196,
+    "category": "ARITHMETIC_SUB",
+    "opcode": 5,
+    "op_name": "subtract",
+    "a": [
+      -65536,
+      -65536,
+      -65536,
+      -65536,
+      -65536,
+      -65536,
+      -65536,
+      -65536
+    ],
+    "b": [
+      65536,
+      65536,
+      65536,
+      65536,
+      65536,
+      65536,
+      65536,
+      65536
+    ],
+    "expected": [
+      -131072,
+      -131072,
+      -131072,
+      -131072,
+      -131072,
+      -131072,
+      -131072,
+      -131072
+    ],
+    "expected_status": 0,
+    "description": "Subtract cancellation_to_zero"
+  },
+  {
+    "id": 197,
+    "category": "ARITHMETIC_ADD",
+    "opcode": 4,
+    "op_name": "add",
+    "a": [
+      2147418112,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      2147483647,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 4,
+    "description": "Add near_max_scalar"
+  },
+  {
+    "id": 198,
+    "category": "ARITHMETIC_SUB",
+    "opcode": 5,
+    "op_name": "subtract",
+    "a": [
+      2147418112,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      2147352576,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Subtract near_max_scalar"
+  },
+  {
+    "id": 199,
+    "category": "ARITHMETIC_ADD",
+    "opcode": 4,
+    "op_name": "add",
+    "a": [
+      -2147418112,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      -2147352576,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Add near_min_scalar"
+  },
+  {
+    "id": 200,
+    "category": "ARITHMETIC_SUB",
+    "opcode": 5,
+    "op_name": "subtract",
+    "a": [
+      -2147418112,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      -2147483648,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Subtract near_min_scalar"
+  },
+  {
+    "id": 201,
+    "category": "ARITHMETIC_ADD",
+    "opcode": 4,
+    "op_name": "add",
+    "a": [
+      32768,
+      -16384,
+      98304,
+      -131072,
+      8192,
+      -4096,
+      196608,
+      -81920
+    ],
+    "b": [
+      32768,
+      16384,
+      -98304,
+      131072,
+      -8192,
+      4096,
+      -196608,
+      81920
+    ],
+    "expected": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Add mixed_grade_cancellation"
+  },
+  {
+    "id": 202,
+    "category": "ARITHMETIC_SUB",
+    "opcode": 5,
+    "op_name": "subtract",
+    "a": [
+      32768,
+      -16384,
+      98304,
+      -131072,
+      8192,
+      -4096,
+      196608,
+      -81920
+    ],
+    "b": [
+      32768,
+      16384,
+      -98304,
+      131072,
+      -8192,
+      4096,
+      -196608,
+      81920
+    ],
+    "expected": [
+      0,
+      -32768,
+      196608,
+      -262144,
+      16384,
+      -8192,
+      393216,
+      -163840
+    ],
+    "expected_status": 0,
+    "description": "Subtract mixed_grade_cancellation"
+  },
+  {
+    "id": 203,
+    "category": "SCALAR_MUL",
+    "opcode": 6,
+    "op_name": "scalar_mul",
+    "a": [
+      65536,
+      131072,
+      -196608,
+      262144,
+      -32768,
+      98304,
+      -163840,
+      49152
+    ],
+    "b": [
+      131072,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      131072,
+      262144,
+      -393216,
+      524288,
+      -65536,
+      196608,
+      -327680,
+      98304
+    ],
+    "expected_status": 0,
+    "description": "Scalar mul scale_by_positive_2"
+  },
+  {
+    "id": 204,
+    "category": "SCALAR_MUL",
+    "opcode": 6,
+    "op_name": "scalar_mul",
+    "a": [
+      65536,
+      131072,
+      -196608,
+      262144,
+      -32768,
+      98304,
+      -163840,
+      49152
+    ],
+    "b": [
+      -65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      -65536,
+      -131072,
+      196608,
+      -262144,
+      32768,
+      -98304,
+      163840,
+      -49152
+    ],
+    "expected_status": 0,
+    "description": "Scalar mul scale_by_negative_1"
+  },
+  {
+    "id": 205,
+    "category": "SCALAR_MUL",
+    "opcode": 6,
+    "op_name": "scalar_mul",
+    "a": [
+      65536,
+      131072,
+      -196608,
+      262144,
+      -32768,
+      98304,
+      -163840,
+      49152
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Scalar mul scale_by_zero"
+  },
+  {
+    "id": 206,
+    "category": "SCALAR_MUL",
+    "opcode": 6,
+    "op_name": "scalar_mul",
+    "a": [
+      65536,
+      131072,
+      -196608,
+      262144,
+      -32768,
+      98304,
+      -163840,
+      49152
+    ],
+    "b": [
+      16384,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      16384,
+      32768,
+      -49152,
+      65536,
+      -8192,
+      24576,
+      -40960,
+      12288
+    ],
+    "expected_status": 0,
+    "description": "Scalar mul scale_by_fraction_quarter"
+  },
+  {
+    "id": 207,
+    "category": "SCALAR_MUL",
+    "opcode": 6,
+    "op_name": "scalar_mul",
+    "a": [
+      65536000,
+      65536000,
+      65536000,
+      65536000,
+      65536000,
+      65536000,
+      65536000,
+      65536000
+    ],
+    "b": [
+      65536000,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      2147483647,
+      2147483647,
+      2147483647,
+      2147483647,
+      2147483647,
+      2147483647,
+      2147483647,
+      2147483647
+    ],
+    "expected_status": 4,
+    "description": "Scalar mul scale_large_overflow"
+  },
+  {
+    "id": 208,
+    "category": "GRADE_PROJECTION",
+    "opcode": 7,
+    "op_name": "grade_proj",
+    "a": [
+      65536,
+      131072,
+      196608,
+      262144,
+      327680,
+      393216,
+      458752,
+      524288
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Project onto grade 0"
+  },
+  {
+    "id": 209,
+    "category": "GRADE_PROJECTION",
+    "opcode": 7,
+    "op_name": "grade_proj",
+    "a": [
+      65536,
+      131072,
+      196608,
+      262144,
+      327680,
+      393216,
+      458752,
+      524288
+    ],
+    "b": [
+      1,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      131072,
+      196608,
+      262144,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Project onto grade 1"
+  },
+  {
+    "id": 210,
+    "category": "GRADE_PROJECTION",
+    "opcode": 7,
+    "op_name": "grade_proj",
+    "a": [
+      65536,
+      131072,
+      196608,
+      262144,
+      327680,
+      393216,
+      458752,
+      524288
+    ],
+    "b": [
+      2,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      327680,
+      393216,
+      458752,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Project onto grade 2"
+  },
+  {
+    "id": 211,
+    "category": "GRADE_PROJECTION",
+    "opcode": 7,
+    "op_name": "grade_proj",
+    "a": [
+      65536,
+      131072,
+      196608,
+      262144,
+      327680,
+      393216,
+      458752,
+      524288
+    ],
+    "b": [
+      3,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      524288
+    ],
+    "expected_status": 0,
+    "description": "Project onto grade 3"
+  },
+  {
+    "id": 212,
+    "category": "REVERSION",
+    "opcode": 8,
+    "op_name": "reverse",
+    "a": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Reversion of basis blade 1"
+  },
+  {
+    "id": 213,
+    "category": "REVERSION",
+    "opcode": 8,
+    "op_name": "reverse",
+    "a": [
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Reversion of basis blade e1"
+  },
+  {
+    "id": 214,
+    "category": "REVERSION",
+    "opcode": 8,
+    "op_name": "reverse",
+    "a": [
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Reversion of basis blade e2"
+  },
+  {
+    "id": 215,
+    "category": "REVERSION",
+    "opcode": 8,
+    "op_name": "reverse",
+    "a": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Reversion of basis blade e3"
+  },
+  {
+    "id": 216,
+    "category": "REVERSION",
+    "opcode": 8,
+    "op_name": "reverse",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      -65536,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Reversion of basis blade e12"
+  },
+  {
+    "id": 217,
+    "category": "REVERSION",
+    "opcode": 8,
+    "op_name": "reverse",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      -65536,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Reversion of basis blade e13"
+  },
+  {
+    "id": 218,
+    "category": "REVERSION",
+    "opcode": 8,
+    "op_name": "reverse",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      -65536,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Reversion of basis blade e23"
+  },
+  {
+    "id": 219,
+    "category": "REVERSION",
+    "opcode": 8,
+    "op_name": "reverse",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      -65536
+    ],
+    "expected_status": 0,
+    "description": "Reversion of basis blade e123"
+  },
+  {
+    "id": 220,
+    "category": "REVERSION",
+    "opcode": 8,
+    "op_name": "reverse",
+    "a": [
+      98304,
+      -131072,
+      212992,
+      -294912,
+      49152,
+      -81920,
+      163840,
+      -32768
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      98304,
+      -131072,
+      212992,
+      -294912,
+      -49152,
+      81920,
+      -163840,
+      32768
+    ],
+    "expected_status": 0,
+    "description": "Reversion of mixed multivector"
+  },
+  {
+    "id": 221,
+    "category": "GRADE_INVOLUTION",
+    "opcode": 9,
+    "op_name": "grade_involution",
+    "a": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Grade involution of basis blade 1"
+  },
+  {
+    "id": 222,
+    "category": "GRADE_INVOLUTION",
+    "opcode": 9,
+    "op_name": "grade_involution",
+    "a": [
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      -65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Grade involution of basis blade e1"
+  },
+  {
+    "id": 223,
+    "category": "GRADE_INVOLUTION",
+    "opcode": 9,
+    "op_name": "grade_involution",
+    "a": [
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      -65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Grade involution of basis blade e2"
+  },
+  {
+    "id": 224,
+    "category": "GRADE_INVOLUTION",
+    "opcode": 9,
+    "op_name": "grade_involution",
+    "a": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      -65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Grade involution of basis blade e3"
+  },
+  {
+    "id": 225,
+    "category": "GRADE_INVOLUTION",
+    "opcode": 9,
+    "op_name": "grade_involution",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Grade involution of basis blade e12"
+  },
+  {
+    "id": 226,
+    "category": "GRADE_INVOLUTION",
+    "opcode": 9,
+    "op_name": "grade_involution",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Grade involution of basis blade e13"
+  },
+  {
+    "id": 227,
+    "category": "GRADE_INVOLUTION",
+    "opcode": 9,
+    "op_name": "grade_involution",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Grade involution of basis blade e23"
+  },
+  {
+    "id": 228,
+    "category": "GRADE_INVOLUTION",
+    "opcode": 9,
+    "op_name": "grade_involution",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      -65536
+    ],
+    "expected_status": 0,
+    "description": "Grade involution of basis blade e123"
+  },
+  {
+    "id": 229,
+    "category": "GRADE_INVOLUTION",
+    "opcode": 9,
+    "op_name": "grade_involution",
+    "a": [
+      98304,
+      -131072,
+      212992,
+      -294912,
+      49152,
+      -81920,
+      163840,
+      -32768
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      98304,
+      131072,
+      -212992,
+      294912,
+      49152,
+      -81920,
+      163840,
+      32768
+    ],
+    "expected_status": 0,
+    "description": "Grade involution of mixed multivector"
+  },
+  {
+    "id": 230,
+    "category": "CLIFFORD_CONJUGATION",
+    "opcode": 10,
+    "op_name": "clifford_conj",
+    "a": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Clifford conjugation of basis blade 1"
+  },
+  {
+    "id": 231,
+    "category": "CLIFFORD_CONJUGATION",
+    "opcode": 10,
+    "op_name": "clifford_conj",
+    "a": [
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      -65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Clifford conjugation of basis blade e1"
+  },
+  {
+    "id": 232,
+    "category": "CLIFFORD_CONJUGATION",
+    "opcode": 10,
+    "op_name": "clifford_conj",
+    "a": [
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      -65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Clifford conjugation of basis blade e2"
+  },
+  {
+    "id": 233,
+    "category": "CLIFFORD_CONJUGATION",
+    "opcode": 10,
+    "op_name": "clifford_conj",
+    "a": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      -65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Clifford conjugation of basis blade e3"
+  },
+  {
+    "id": 234,
+    "category": "CLIFFORD_CONJUGATION",
+    "opcode": 10,
+    "op_name": "clifford_conj",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      -65536,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Clifford conjugation of basis blade e12"
+  },
+  {
+    "id": 235,
+    "category": "CLIFFORD_CONJUGATION",
+    "opcode": 10,
+    "op_name": "clifford_conj",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      -65536,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Clifford conjugation of basis blade e13"
+  },
+  {
+    "id": 236,
+    "category": "CLIFFORD_CONJUGATION",
+    "opcode": 10,
+    "op_name": "clifford_conj",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      -65536,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Clifford conjugation of basis blade e23"
+  },
+  {
+    "id": 237,
+    "category": "CLIFFORD_CONJUGATION",
+    "opcode": 10,
+    "op_name": "clifford_conj",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536
+    ],
+    "expected_status": 0,
+    "description": "Clifford conjugation of basis blade e123"
+  },
+  {
+    "id": 238,
+    "category": "CLIFFORD_CONJUGATION",
+    "opcode": 10,
+    "op_name": "clifford_conj",
+    "a": [
+      98304,
+      -131072,
+      212992,
+      -294912,
+      49152,
+      -81920,
+      163840,
+      -32768
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      98304,
+      131072,
+      -212992,
+      294912,
+      -49152,
+      81920,
+      -163840,
+      -32768
+    ],
+    "expected_status": 0,
+    "description": "Clifford conjugation of mixed multivector"
+  },
+  {
+    "id": 239,
+    "category": "ROTOR_SANDWICH",
+    "opcode": 11,
+    "op_name": "sandwich",
+    "a": [
+      46341,
+      0,
+      0,
+      0,
+      -46341,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Rotor 90 deg rotation of e1 in xy-plane -> e2"
+  },
+  {
+    "id": 240,
+    "category": "ROTOR_SANDWICH",
+    "opcode": 11,
+    "op_name": "sandwich",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      -65536,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      -65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Rotor 180 deg rotation of e1 -> -e1"
+  },
+  {
+    "id": 241,
+    "category": "ROTOR_SANDWICH",
+    "opcode": 11,
+    "op_name": "sandwich",
+    "a": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      98304,
+      -131072,
+      229376,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      98304,
+      -131072,
+      229376,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Identity rotor rotation R=1"
+  },
+  {
+    "id": 242,
+    "category": "ROTOR_NORM",
+    "opcode": 12,
+    "op_name": "rotor_norm",
+    "a": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Rotor norm squared unit_scalar"
+  },
+  {
+    "id": 243,
+    "category": "ROTOR_NORM",
+    "opcode": 12,
+    "op_name": "rotor_norm",
+    "a": [
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Rotor norm squared basis_e1"
+  },
+  {
+    "id": 244,
+    "category": "ROTOR_NORM",
+    "opcode": 12,
+    "op_name": "rotor_norm",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Rotor norm squared basis_e12"
+  },
+  {
+    "id": 245,
+    "category": "ROTOR_NORM",
+    "opcode": 12,
+    "op_name": "rotor_norm",
+    "a": [
+      32768,
+      32768,
+      32768,
+      32768,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Rotor norm squared four_halves_norm_1"
+  },
+  {
+    "id": 246,
+    "category": "ROTOR_NORM",
+    "opcode": 12,
+    "op_name": "rotor_norm",
+    "a": [
+      65536,
+      -131072,
+      196608,
+      -262144,
+      32768,
+      -98304,
+      131072,
+      -32768
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      2408448,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Rotor norm squared mixed_multivector_norm"
+  },
+  {
+    "id": 247,
+    "category": "FIXED_POINT_ROUNDING",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "rounding_tie_down_to_even_0"
+  },
+  {
+    "id": 248,
+    "category": "FIXED_POINT_ROUNDING",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      196608,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "rounding_tie_up_to_even_2"
+  },
+  {
+    "id": 249,
+    "category": "FIXED_POINT_SATURATION",
+    "opcode": 4,
+    "op_name": "add",
+    "a": [
+      2147483647,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      2147483647,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 4,
+    "description": "Addition positive overflow saturating to MAX"
+  },
+  {
+    "id": 250,
+    "category": "FIXED_POINT_SATURATION",
+    "opcode": 5,
+    "op_name": "subtract",
+    "a": [
+      -2147483648,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      -2147483648,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 4,
+    "description": "Subtraction negative underflow saturating to MIN"
+  },
+  {
+    "id": 251,
+    "category": "FIXED_POINT_ACCUMULATOR_STRESS",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      65536000,
+      65536000,
+      65536000,
+      65536000,
+      65536000,
+      65536000,
+      65536000,
+      65536000
+    ],
+    "b": [
+      65536000,
+      65536000,
+      65536000,
+      65536000,
+      65536000,
+      65536000,
+      65536000,
+      65536000
+    ],
+    "expected": [
+      0,
+      0,
+      2147483647,
+      0,
+      2147483647,
+      0,
+      2147483647,
+      2147483647
+    ],
+    "expected_status": 4,
+    "description": "Large multivector product stress testing 67-bit accumulator"
+  },
+  {
+    "id": 252,
+    "category": "RANDOMIZED_VERIFICATION",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      237536,
+      -55251,
+      -309034,
+      -71917,
+      -117317,
+      -206497,
+      -4161,
+      205569
+    ],
+    "b": [
+      -224538,
+      48360,
+      112670,
+      -249102,
+      -244595,
+      -234571,
+      -106893,
+      -215324
+    ],
+    "expected": [
+      -1620883,
+      -141388,
+      1601150,
+      586643,
+      -1218528,
+      -1072584,
+      1609106,
+      -1434486
+    ],
+    "expected_status": 0,
+    "description": "Randomized geometric_product seed 4242 rep 0"
+  },
+  {
+    "id": 253,
+    "category": "RANDOMIZED_VERIFICATION",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      237536,
+      -55251,
+      -309034,
+      -71917,
+      -117317,
+      -206497,
+      -4161,
+      205569
+    ],
+    "b": [
+      -224538,
+      48360,
+      112670,
+      -249102,
+      -244595,
+      -234571,
+      -106893,
+      -215324
+    ],
+    "expected": [
+      -813841,
+      364581,
+      1467179,
+      -656473,
+      -351536,
+      120368,
+      925098,
+      -1434486
+    ],
+    "expected_status": 0,
+    "description": "Randomized wedge seed 4242 rep 0"
+  },
+  {
+    "id": 254,
+    "category": "RANDOMIZED_VERIFICATION",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      237536,
+      -55251,
+      -309034,
+      -71917,
+      -117317,
+      -206497,
+      -4161,
+      205569
+    ],
+    "b": [
+      -224538,
+      48360,
+      112670,
+      -249102,
+      -244595,
+      -234571,
+      -106893,
+      -215324
+    ],
+    "expected": [
+      -1620883,
+      -1249184,
+      1175745,
+      -586517,
+      -650248,
+      -1865562,
+      -205903,
+      -780444
+    ],
+    "expected_status": 0,
+    "description": "Randomized hestenes_inner seed 4242 rep 0"
+  },
+  {
+    "id": 255,
+    "category": "RANDOMIZED_VERIFICATION",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      -171884,
+      123568,
+      110334,
+      -174518,
+      -35672,
+      270444,
+      -107178,
+      -118641
+    ],
+    "b": [
+      -217427,
+      -107328,
+      -94665,
+      -69122,
+      -117426,
+      -126457,
+      -217740,
+      66404
+    ],
+    "expected": [
+      614627,
+      -786813,
+      -361428,
+      266924,
+      1482177,
+      -1338407,
+      324294,
+      938297
+    ],
+    "expected_status": 0,
+    "description": "Randomized geometric_product seed 4242 rep 1"
+  },
+  {
+    "id": 256,
+    "category": "RANDOMIZED_VERIFICATION",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      -171884,
+      123568,
+      110334,
+      -174518,
+      -35672,
+      270444,
+      -107178,
+      -118641
+    ],
+    "b": [
+      -217427,
+      -107328,
+      -94665,
+      -69122,
+      -117426,
+      -126457,
+      -217740,
+      66404
+    ],
+    "expected": [
+      570255,
+      -128465,
+      -117770,
+      760283,
+      428529,
+      -981717,
+      558199,
+      938297
+    ],
+    "expected_status": 0,
+    "description": "Randomized wedge seed 4242 rep 1"
+  },
+  {
+    "id": 257,
+    "category": "RANDOMIZED_VERIFICATION",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      -171884,
+      123568,
+      110334,
+      -174518,
+      -35672,
+      270444,
+      -107178,
+      -118641
+    ],
+    "b": [
+      -217427,
+      -107328,
+      -94665,
+      -69122,
+      -117426,
+      -126457,
+      -217740,
+      66404
+    ],
+    "expected": [
+      614627,
+      251039,
+      -278926,
+      -387580,
+      131149,
+      219869,
+      696280,
+      -174161
+    ],
+    "expected_status": 0,
+    "description": "Randomized hestenes_inner seed 4242 rep 1"
+  },
+  {
+    "id": 258,
+    "category": "RANDOMIZED_VERIFICATION",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      -9908,
+      -38895,
+      202842,
+      146516,
+      -14265,
+      -218205,
+      72923,
+      269208
+    ],
+    "b": [
+      -12743,
+      274842,
+      251050,
+      148967,
+      214254,
+      108735,
+      -22004,
+      -177719
+    ],
+    "expected": [
+      2112070,
+      -1202724,
+      1108605,
+      -466691,
+      -766950,
+      -1391686,
+      433724,
+      1239310
+    ],
+    "expected_status": 0,
+    "description": "Randomized geometric_product seed 4242 rep 2"
+  },
+  {
+    "id": 259,
+    "category": "RANDOMIZED_VERIFICATION",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      -9908,
+      -38895,
+      202842,
+      146516,
+      -14265,
+      -218205,
+      72923,
+      269208
+    ],
+    "b": [
+      -12743,
+      274842,
+      251050,
+      148967,
+      214254,
+      108735,
+      -22004,
+      -177719
+    ],
+    "expected": [
+      1927,
+      -33989,
+      -77396,
+      -51010,
+      -1029284,
+      -676874,
+      -111043,
+      1239310
+    ],
+    "expected_status": 0,
+    "description": "Randomized wedge seed 4242 rep 2"
+  },
+  {
+    "id": 260,
+    "category": "RANDOMIZED_VERIFICATION",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      -9908,
+      -38895,
+      202842,
+      146516,
+      -14265,
+      -218205,
+      72923,
+      269208
+    ],
+    "b": [
+      -12743,
+      274842,
+      251050,
+      148967,
+      214254,
+      108735,
+      -22004,
+      -177719
+    ],
+    "expected": [
+      2112070,
+      -750038,
+      475804,
+      -193843,
+      -429710,
+      533623,
+      108801,
+      26868
+    ],
+    "expected_status": 0,
+    "description": "Randomized hestenes_inner seed 4242 rep 2"
+  },
+  {
+    "id": 261,
+    "category": "RANDOMIZED_VERIFICATION",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      -180833,
+      79036,
+      -55781,
+      240216,
+      -182525,
+      -165040,
+      140319,
+      18834
+    ],
+    "b": [
+      -272397,
+      -124801,
+      188200,
+      22580,
+      -261296,
+      -322033,
+      -312295,
+      36101
+    ],
+    "expected": [
+      -356746,
+      405264,
+      59419,
+      -1724915,
+      263245,
+      3465119,
+      -661765,
+      -1642529
+    ],
+    "expected_status": 0,
+    "description": "Randomized geometric_product seed 4242 rep 3"
+  },
+  {
+    "id": 262,
+    "category": "RANDOMIZED_VERIFICATION",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      -180833,
+      79036,
+      -55781,
+      240216,
+      -182525,
+      -165040,
+      140319,
+      18834
+    ],
+    "b": [
+      -272397,
+      -124801,
+      188200,
+      22580,
+      -261296,
+      -322033,
+      -312295,
+      36101
+    ],
+    "expected": [
+      751623,
+      15853,
+      -287448,
+      -1060750,
+      1600391,
+      2059241,
+      -430564,
+      -1642529
+    ],
+    "expected_status": 0,
+    "description": "Randomized wedge seed 4242 rep 3"
+  },
+  {
+    "id": 263,
+    "category": "RANDOMIZED_VERIFICATION",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      -180833,
+      79036,
+      -55781,
+      240216,
+      -182525,
+      -165040,
+      140319,
+      18834
+    ],
+    "b": [
+      -272397,
+      -124801,
+      188200,
+      22580,
+      -261296,
+      -322033,
+      -312295,
+      36101
+    ],
+    "expected": [
+      -356746,
+      1225046,
+      219354,
+      -84319,
+      853317,
+      919311,
+      905251,
+      -99613
+    ],
+    "expected_status": 0,
+    "description": "Randomized hestenes_inner seed 4242 rep 3"
+  },
+  {
+    "id": 264,
+    "category": "RANDOMIZED_VERIFICATION",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      63565,
+      50695,
+      192187,
+      -162208,
+      207468,
+      -8891,
+      -185310,
+      -50647
+    ],
+    "b": [
+      -167593,
+      198374,
+      216586,
+      198530,
+      318067,
+      3248,
+      -79316,
+      -254691
+    ],
+    "expected": [
+      -1292905,
+      -984685,
+      -1388994,
+      2068700,
+      -179237,
+      2233002,
+      1111472,
+      -878691
+    ],
+    "expected_status": 0,
+    "description": "Randomized geometric_product seed 4242 rep 4"
+  },
+  {
+    "id": 265,
+    "category": "RANDOMIZED_VERIFICATION",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      63565,
+      50695,
+      192187,
+      -162208,
+      207468,
+      -8891,
+      -185310,
+      -50647
+    ],
+    "b": [
+      -167593,
+      198374,
+      216586,
+      198530,
+      318067,
+      3248,
+      -79316,
+      -254691
+    ],
+    "expected": [
+      -162553,
+      62767,
+      -281401,
+      607368,
+      -636251,
+      670454,
+      1515225,
+      -878691
+    ],
+    "expected_status": 0,
+    "description": "Randomized wedge seed 4242 rep 4"
+  },
+  {
+    "id": 266,
+    "category": "RANDOMIZED_VERIFICATION",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      63565,
+      50695,
+      192187,
+      -162208,
+      207468,
+      -8891,
+      -185310,
+      -50647
+    ],
+    "b": [
+      -167593,
+      198374,
+      216586,
+      198530,
+      318067,
+      3248,
+      -79316,
+      -254691
+    ],
+    "expected": [
+      -1292905,
+      -1452463,
+      294349,
+      768752,
+      938886,
+      750042,
+      -273945,
+      -247031
+    ],
+    "expected_status": 0,
+    "description": "Randomized hestenes_inner seed 4242 rep 4"
+  },
+  {
+    "id": 267,
+    "category": "RANDOMIZED_VERIFICATION",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      -10171,
+      298943,
+      -181791,
+      -82584,
+      -133279,
+      21057,
+      126795,
+      237374
+    ],
+    "b": [
+      -311032,
+      269332,
+      233611,
+      -295215,
+      -22828,
+      -191609,
+      -116265,
+      202300
+    ],
+    "expected": [
+      508169,
+      -2305574,
+      -76565,
+      -158177,
+      791241,
+      -1081805,
+      2030878,
+      -1144652
+    ],
+    "expected_status": 0,
+    "description": "Randomized geometric_product seed 4242 rep 5"
+  },
+  {
+    "id": 268,
+    "category": "RANDOMIZED_VERIFICATION",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      -10171,
+      298943,
+      -181791,
+      -82584,
+      -133279,
+      21057,
+      126795,
+      237374
+    ],
+    "b": [
+      -311032,
+      269332,
+      233611,
+      -295215,
+      -22828,
+      -191609,
+      -116265,
+      202300
+    ],
+    "expected": [
+      48271,
+      -1460575,
+      826519,
+      437758,
+      2448803,
+      -1077431,
+      529559,
+      -1144652
+    ],
+    "expected_status": 0,
+    "description": "Randomized wedge seed 4242 rep 5"
+  },
+  {
+    "id": 269,
+    "category": "RANDOMIZED_VERIFICATION",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      -10171,
+      298943,
+      -181791,
+      -82584,
+      -133279,
+      21057,
+      126795,
+      237374
+    ],
+    "b": [
+      -311032,
+      269332,
+      233611,
+      -295215,
+      -22828,
+      -191609,
+      -116265,
+      202300
+    ],
+    "expected": [
+      508169,
+      -737973,
+      -221895,
+      -94288,
+      -251382,
+      590899,
+      940837,
+      -31396
+    ],
+    "expected_status": 0,
+    "description": "Randomized hestenes_inner seed 4242 rep 5"
+  },
+  {
+    "id": 270,
+    "category": "RANDOMIZED_VERIFICATION",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      -121532,
+      -194075,
+      -27870,
+      257347,
+      76363,
+      264158,
+      321273,
+      -166029
+    ],
+    "b": [
+      306447,
+      -264949,
+      110283,
+      114071,
+      51323,
+      -237223,
+      -280583,
+      -277580
+    ],
+    "expected": [
+      2186000,
+      1775412,
+      965031,
+      2794407,
+      -1588319,
+      1960530,
+      3517545,
+      -940490
+    ],
+    "expected_status": 0,
+    "description": "Randomized geometric_product seed 4242 rep 6"
+  },
+  {
+    "id": 271,
+    "category": "RANDOMIZED_VERIFICATION",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      -121532,
+      -194075,
+      -27870,
+      257347,
+      76363,
+      264158,
+      321273,
+      -166029
+    ],
+    "b": [
+      306447,
+      -264949,
+      110283,
+      114071,
+      51323,
+      -237223,
+      -280583,
+      -277580
+    ],
+    "expected": [
+      -568285,
+      -416167,
+      -334833,
+      991820,
+      -177360,
+      2377718,
+      1541028,
+      -940490
+    ],
+    "expected_status": 0,
+    "description": "Randomized wedge seed 4242 rep 6"
+  },
+  {
+    "id": 272,
+    "category": "RANDOMIZED_VERIFICATION",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      -121532,
+      -194075,
+      -27870,
+      257347,
+      76363,
+      264158,
+      321273,
+      -166029
+    ],
+    "b": [
+      306447,
+      -264949,
+      110283,
+      114071,
+      51323,
+      -237223,
+      -280583,
+      -277580
+    ],
+    "expected": [
+      2186000,
+      2805446,
+      -373554,
+      933723,
+      -1185177,
+      321869,
+      1342333,
+      514753
+    ],
+    "expected_status": 0,
+    "description": "Randomized hestenes_inner seed 4242 rep 6"
+  },
+  {
+    "id": 273,
+    "category": "RANDOMIZED_VERIFICATION",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      -83111,
+      -261174,
+      163377,
+      237162,
+      -148602,
+      -196619,
+      36225,
+      -215861
+    ],
+    "b": [
+      218859,
+      25382,
+      315913,
+      -63496,
+      232630,
+      -261650,
+      -254764,
+      -170011
+    ],
+    "expected": [
+      -497599,
+      -1808449,
+      1534168,
+      1562412,
+      -3428583,
+      1749857,
+      -1554752,
+      3109933
+    ],
+    "expected_status": 0,
+    "description": "Randomized geometric_product seed 4242 rep 7"
+  },
+  {
+    "id": 274,
+    "category": "RANDOMIZED_VERIFICATION",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      -83111,
+      -261174,
+      163377,
+      237162,
+      -148602,
+      -196619,
+      36225,
+      -215861
+    ],
+    "b": [
+      218859,
+      25382,
+      315913,
+      -63496,
+      232630,
+      -261650,
+      -254764,
+      -170011
+    ],
+    "expected": [
+      -277551,
+      -904385,
+      144969,
+      872532,
+      -2113527,
+      -163605,
+      -857460,
+      3109933
+    ],
+    "expected_status": 0,
+    "description": "Randomized wedge seed 4242 rep 7"
+  },
+  {
+    "id": 275,
+    "category": "RANDOMIZED_VERIFICATION",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      -83111,
+      -261174,
+      163377,
+      237162,
+      -148602,
+      -196619,
+      36225,
+      -215861
+    ],
+    "b": [
+      218859,
+      25382,
+      315913,
+      -63496,
+      232630,
+      -261650,
+      -254764,
+      -170011
+    ],
+    "expected": [
+      -497599,
+      428714,
+      104294,
+      102643,
+      -910252,
+      755644,
+      1000613,
+      215603
+    ],
+    "expected_status": 0,
+    "description": "Randomized hestenes_inner seed 4242 rep 7"
+  },
+  {
+    "id": 276,
+    "category": "RANDOMIZED_VERIFICATION",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      249191,
+      88,
+      133672,
+      -288232,
+      -126484,
+      -72438,
+      290104,
+      -48692
+    ],
+    "b": [
+      239207,
+      169858,
+      -162092,
+      -242616,
+      188918,
+      97533,
+      -300563,
+      283980
+    ],
+    "expected": [
+      3660095,
+      -209577,
+      -2582572,
+      -993769,
+      -1059187,
+      -102667,
+      -1438110,
+      912836
+    ],
+    "expected_status": 0,
+    "description": "Randomized geometric_product seed 4242 rep 8"
+  },
+  {
+    "id": 277,
+    "category": "RANDOMIZED_VERIFICATION",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      249191,
+      88,
+      133672,
+      -288232,
+      -126484,
+      -72438,
+      290104,
+      -48692
+    ],
+    "b": [
+      239207,
+      169858,
+      -162092,
+      -242616,
+      188918,
+      97533,
+      -300563,
+      283980
+    ],
+    "expected": [
+      909549,
+      646181,
+      -128427,
+      -1974561,
+      -90007,
+      853177,
+      -1291714,
+      912836
+    ],
+    "expected_status": 0,
+    "description": "Randomized wedge seed 4242 rep 8"
+  },
+  {
+    "id": 278,
+    "category": "RANDOMIZED_VERIFICATION",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      249191,
+      88,
+      133672,
+      -288232,
+      -126484,
+      -72438,
+      290104,
+      -48692
+    ],
+    "b": [
+      239207,
+      169858,
+      -162092,
+      -242616,
+      188918,
+      97533,
+      -300563,
+      283980
+    ],
+    "expected": [
+      3660095,
+      -567590,
+      -2251862,
+      -987352,
+      -530631,
+      -208371,
+      -1142465,
+      1079792
+    ],
+    "expected_status": 0,
+    "description": "Randomized hestenes_inner seed 4242 rep 8"
+  },
+  {
+    "id": 279,
+    "category": "RANDOMIZED_VERIFICATION",
+    "opcode": 1,
+    "op_name": "geometric_product",
+    "a": [
+      38138,
+      -219726,
+      -241347,
+      -234135,
+      267166,
+      319037,
+      -183448,
+      -182916
+    ],
+    "b": [
+      -4147,
+      -138555,
+      313638,
+      115269,
+      220451,
+      -171508,
+      255916,
+      155861
+    ],
+    "expected": [
+      -17105,
+      3122683,
+      1852581,
+      1246811,
+      -3094720,
+      2108263,
+      2493058,
+      -2844015
+    ],
+    "expected_status": 0,
+    "description": "Randomized geometric_product seed 4242 rep 9"
+  },
+  {
+    "id": 280,
+    "category": "RANDOMIZED_VERIFICATION",
+    "opcode": 2,
+    "op_name": "wedge",
+    "a": [
+      38138,
+      -219726,
+      -241347,
+      -234135,
+      267166,
+      319037,
+      -183448,
+      -182916
+    ],
+    "b": [
+      -4147,
+      -138555,
+      313638,
+      115269,
+      220451,
+      -171508,
+      255916,
+      155861
+    ],
+    "expected": [
+      -2413,
+      -66727,
+      197790,
+      81895,
+      -1450419,
+      -1001468,
+      856547,
+      -2844015
+    ],
+    "expected_status": 0,
+    "description": "Randomized wedge seed 4242 rep 9"
+  },
+  {
+    "id": 281,
+    "category": "RANDOMIZED_VERIFICATION",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      38138,
+      -219726,
+      -241347,
+      -234135,
+      267166,
+      319037,
+      -183448,
+      -182916
+    ],
+    "b": [
+      -4147,
+      -138555,
+      313638,
+      115269,
+      220451,
+      -171508,
+      255916,
+      155861
+    ],
+    "expected": [
+      -17105,
+      554769,
+      1116440,
+      -935736,
+      -428542,
+      474176,
+      -373636,
+      90702
+    ],
+    "expected_status": 0,
+    "description": "Randomized hestenes_inner seed 4242 rep 9"
+  },
+  {
+    "id": 282,
+    "category": "INVALID_OPCODE",
+    "opcode": 0,
+    "op_name": "INVALID_0",
+    "a": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 1,
+    "description": "Invalid opcode 0 expected to trigger STATUS_ERR_OP"
+  },
+  {
+    "id": 283,
+    "category": "INVALID_OPCODE",
+    "opcode": 13,
+    "op_name": "INVALID_13",
+    "a": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 1,
+    "description": "Invalid opcode 13 expected to trigger STATUS_ERR_OP"
+  },
+  {
+    "id": 284,
+    "category": "INVALID_OPCODE",
+    "opcode": 99,
+    "op_name": "INVALID_99",
+    "a": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 1,
+    "description": "Invalid opcode 99 expected to trigger STATUS_ERR_OP"
+  },
+  {
+    "id": 285,
+    "category": "INVALID_OPCODE",
+    "opcode": 255,
+    "op_name": "INVALID_255",
+    "a": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 1,
+    "description": "Invalid opcode 255 expected to trigger STATUS_ERR_OP"
+  },
+  {
+    "id": 286,
+    "category": "QGAOPS_QUANTUM",
+    "opcode": 11,
+    "op_name": "sandwich",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      -65536,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      -65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Pauli-X Gate (|0> -> |1>): Quantum bit flip: R_X = -e23 sandwich on ground state |0> (+e3) yields excited state |1> (-e3)"
+  },
+  {
+    "id": 287,
+    "category": "QGAOPS_QUANTUM",
+    "opcode": 11,
+    "op_name": "sandwich",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      -65536,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      -65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Pauli-X Gate (|1> -> |0>): Quantum bit flip: R_X = -e23 sandwich on excited state |1> (-e3) yields ground state |0> (+e3)"
+  },
+  {
+    "id": 288,
+    "category": "QGAOPS_QUANTUM",
+    "opcode": 11,
+    "op_name": "sandwich",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      -65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Pauli-Y Gate (|0> -> |1>): Quantum bit & phase flip: R_Y = +e13 sandwich on |0> (+e3) yields |1> (-e3)"
+  },
+  {
+    "id": 289,
+    "category": "QGAOPS_QUANTUM",
+    "opcode": 11,
+    "op_name": "sandwich",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      -65536,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Pauli-Z Gate on |0> (Invariant): Quantum phase flip on eigenstate: R_Z = -e12 leaves |0> (+e3) invariant"
+  },
+  {
+    "id": 290,
+    "category": "QGAOPS_QUANTUM",
+    "opcode": 11,
+    "op_name": "sandwich",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      -65536,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      -65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Pauli-Z Gate on |+> (Phase Flip): Quantum phase flip on superposition: R_Z = -e12 rotates |+> (+e1) to |-> (-e1)"
+  },
+  {
+    "id": 291,
+    "category": "QGAOPS_QUANTUM",
+    "opcode": 11,
+    "op_name": "sandwich",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      46341,
+      0,
+      46341,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Hadamard Gate (|0> -> |+>): Quantum superposition creation: R_H = (e12 + e23)/sqrt(2) transforms |0> to equal superposition |+> (+e1)"
+  },
+  {
+    "id": 292,
+    "category": "QGAOPS_QUANTUM",
+    "opcode": 11,
+    "op_name": "sandwich",
+    "a": [
+      0,
+      0,
+      0,
+      0,
+      46341,
+      0,
+      46341,
+      0
+    ],
+    "b": [
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Hadamard Self-Inverse (H^2 = I): Quantum reversibility: R_H transforms |+> (+e1) back into ground state |0> (+e3)"
+  },
+  {
+    "id": 293,
+    "category": "QGAOPS_QUANTUM",
+    "opcode": 11,
+    "op_name": "sandwich",
+    "a": [
+      46341,
+      0,
+      0,
+      0,
+      -46341,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Phase Gate S (|+> -> |+i>): pi/2 rotation around z-axis: R_S transforms |+> (+e1) into imaginary phase state |+i> (+e2)"
+  },
+  {
+    "id": 294,
+    "category": "QGAOPS_QUANTUM",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      -65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      -65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Quantum State Fidelity (<0|1> = 0): Hestenes inner product: |0> . |1> = e3 . (-e3) = -1.0 (corresponds to zero overlap fidelity)"
+  },
+  {
+    "id": 295,
+    "category": "QGAOPS_QUANTUM",
+    "opcode": 3,
+    "op_name": "hestenes_inner",
+    "a": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "b": [
+      0,
+      0,
+      0,
+      65536,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected": [
+      65536,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    "expected_status": 0,
+    "description": "Quantum State Fidelity (<0|0> = 1): Hestenes inner product: |0> . |0> = e3 . e3 = +1.0 (corresponds to unity overlap fidelity)"
+  }
+]

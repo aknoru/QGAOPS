@@ -1,0 +1,1695 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 81, 
+                   Column: 16 }
+Function:        _ZL16seq_product_corePKiS0_PijPb
+Args:            
+  - Callee:          'rescale_and_saturate(ap_int<67>, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 35, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'seq_product_core(int const*, int const*, int*, unsigned int, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 22, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 59, 
+                   Column: 46 }
+Function:        _ZL16seq_product_corePKiS0_PijPb
+Args:            
+  - Callee:          'mask_to_index(unsigned char)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_types.h', 
+                       Line: 30, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'seq_product_core(int const*, int const*, int*, unsigned int, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 22, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 67, 
+                   Column: 28 }
+Function:        _ZL16seq_product_corePKiS0_PijPb
+Args:            
+  - Callee:          'blade_product_sign(unsigned char, unsigned char)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_types.h', 
+                       Line: 46, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'seq_product_core(int const*, int const*, int*, unsigned int, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 22, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 95, 
+                   Column: 16 }
+Function:        _ZL10seq_op_addPKiS0_PiPb
+Args:            
+  - Callee:          'sat_add(int, int, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 71, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'seq_op_add(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 91, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 109, 
+                   Column: 16 }
+Function:        _ZL10seq_op_subPKiS0_PiPb
+Args:            
+  - Callee:          'sat_sub(int, int, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 86, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'seq_op_sub(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 105, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 124, 
+                   Column: 16 }
+Function:        _ZL17seq_op_scalar_mulPKiiPiPb
+Args:            
+  - Callee:          'rescale_and_saturate(ap_int<67>, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 35, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'seq_op_scalar_mul(int const*, int, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 119, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 155, 
+                   Column: 20 }
+Function:        _ZL14seq_op_reversePKiPiPb
+Args:            
+  - Callee:          'sat_sub(int, int, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 86, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'seq_op_reverse(int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 150, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 172, 
+                   Column: 20 }
+Function:        _ZL23seq_op_grade_involutionPKiPiPb
+Args:            
+  - Callee:          'sat_sub(int, int, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 86, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'seq_op_grade_involution(int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 167, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 189, 
+                   Column: 20 }
+Function:        _ZL20seq_op_clifford_conjPKiPiPb
+Args:            
+  - Callee:          'sat_sub(int, int, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 86, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'seq_op_clifford_conj(int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 184, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 228, 
+                   Column: 5 }
+Function:        _ZL15seq_op_sandwichPKiS0_PiPb
+Args:            
+  - Callee:          'seq_product_core(int const*, int const*, int*, unsigned int, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 22, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'seq_op_sandwich(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 222, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 231, 
+                   Column: 5 }
+Function:        _ZL15seq_op_sandwichPKiS0_PiPb
+Args:            
+  - Callee:          'seq_op_reverse(int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 150, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'seq_op_sandwich(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 222, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 209, 
+                   Column: 12 }
+Function:        _ZL17seq_op_rotor_normPKiPiPb
+Args:            
+  - Callee:          'rescale_and_saturate(ap_int<67>, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 35, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'seq_op_rotor_norm(int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 201, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 261, 
+                   Column: 13 }
+Function:        seq_gpu
+Args:            
+  - Callee:          'seq_product_core(int const*, int const*, int*, unsigned int, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 22, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          seq_gpu
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 246, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 265, 
+                   Column: 13 }
+Function:        seq_gpu
+Args:            
+  - Callee:          'seq_op_add(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 91, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          seq_gpu
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 246, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 269, 
+                   Column: 13 }
+Function:        seq_gpu
+Args:            
+  - Callee:          'seq_op_sub(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 105, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          seq_gpu
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 246, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 273, 
+                   Column: 13 }
+Function:        seq_gpu
+Args:            
+  - Callee:          'seq_op_scalar_mul(int const*, int, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 119, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          seq_gpu
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 246, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 277, 
+                   Column: 13 }
+Function:        seq_gpu
+Args:            
+  - Callee:          'seq_op_grade_proj(int const*, int, int*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 133, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          seq_gpu
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 246, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 281, 
+                   Column: 13 }
+Function:        seq_gpu
+Args:            
+  - Callee:          'seq_op_reverse(int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 150, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          seq_gpu
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 246, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 285, 
+                   Column: 13 }
+Function:        seq_gpu
+Args:            
+  - Callee:          'seq_op_grade_involution(int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 167, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          seq_gpu
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 246, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 289, 
+                   Column: 13 }
+Function:        seq_gpu
+Args:            
+  - Callee:          'seq_op_clifford_conj(int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 184, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          seq_gpu
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 246, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 293, 
+                   Column: 13 }
+Function:        seq_gpu
+Args:            
+  - Callee:          'seq_op_sandwich(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 222, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          seq_gpu
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 246, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 297, 
+                   Column: 13 }
+Function:        seq_gpu
+Args:            
+  - Callee:          'seq_op_rotor_norm(int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 201, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          seq_gpu
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 246, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_types.h', 
+                   Line: 48, Column: 22 }
+Function:        _ZL18blade_product_signhh
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_48_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_types.h', 
+                   Line: 50, Column: 30 }
+Function:        _ZL18blade_product_signhh
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_50_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 22, 
+                   Column: 0 }
+Function:        _ZL16seq_product_corePKiS0_PijPb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        INIT_ACCUM
+  - String:          ''' ('
+  - LoopLoc:         'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:29:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          seq_product_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_types.h', 
+                   Line: 46, Column: 0 }
+Function:        _ZL18blade_product_signhh
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_48_1
+  - String:          ''' ('
+  - LoopLoc:         'D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_types.h:48:22'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          blade_product_sign
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_types.h', 
+                   Line: 46, Column: 0 }
+Function:        _ZL18blade_product_signhh
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_50_2
+  - String:          ''' ('
+  - LoopLoc:         'D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_types.h:50:30'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          blade_product_sign
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_types.h', 
+                   Line: 46, Column: 0 }
+Function:        _ZL18blade_product_signhh
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_50_2
+  - String:          ''' ('
+  - LoopLoc:         'D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_types.h:50:30'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          blade_product_sign
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_types.h', 
+                   Line: 46, Column: 0 }
+Function:        _ZL18blade_product_signhh
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_50_2
+  - String:          ''' ('
+  - LoopLoc:         'D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_types.h:50:30'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          blade_product_sign
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 59, 
+                   Column: 46 }
+Function:        _ZL16seq_product_corePKiS0_PijPb
+Args:            
+  - Callee:          'mask_to_index(unsigned char)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_types.h', 
+                       Line: 30, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'seq_product_core(int const*, int const*, int*, unsigned int, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 22, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 67, 
+                   Column: 28 }
+Function:        _ZL16seq_product_corePKiS0_PijPb
+Args:            
+  - Callee:          'blade_product_sign(unsigned char, unsigned char)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_types.h', 
+                       Line: 46, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'seq_product_core(int const*, int const*, int*, unsigned int, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 22, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 81, 
+                   Column: 16 }
+Function:        _ZL16seq_product_corePKiS0_PijPb
+Args:            
+  - Callee:          'rescale_and_saturate(ap_int<67>, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 35, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'seq_product_core(int const*, int const*, int*, unsigned int, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 22, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 95, 
+                   Column: 16 }
+Function:        _ZL10seq_op_addPKiS0_PiPb
+Args:            
+  - Callee:          'sat_add(int, int, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 71, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'seq_op_add(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 91, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 109, 
+                   Column: 16 }
+Function:        _ZL10seq_op_subPKiS0_PiPb
+Args:            
+  - Callee:          'sat_sub(int, int, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 86, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'seq_op_sub(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 105, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 124, 
+                   Column: 16 }
+Function:        _ZL17seq_op_scalar_mulPKiiPiPb
+Args:            
+  - Callee:          'rescale_and_saturate(ap_int<67>, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 35, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'seq_op_scalar_mul(int const*, int, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 119, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 155, 
+                   Column: 20 }
+Function:        _ZL14seq_op_reversePKiPiPb
+Args:            
+  - Callee:          'sat_sub(int, int, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 86, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'seq_op_reverse(int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 150, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 172, 
+                   Column: 20 }
+Function:        _ZL23seq_op_grade_involutionPKiPiPb
+Args:            
+  - Callee:          'sat_sub(int, int, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 86, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'seq_op_grade_involution(int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 167, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 189, 
+                   Column: 20 }
+Function:        _ZL20seq_op_clifford_conjPKiPiPb
+Args:            
+  - Callee:          'sat_sub(int, int, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 86, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'seq_op_clifford_conj(int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 184, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 228, 
+                   Column: 5 }
+Function:        _ZL15seq_op_sandwichPKiS0_PiPb
+Args:            
+  - Callee:          'seq_product_core(int const*, int const*, int*, unsigned int, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 22, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'seq_op_sandwich(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 222, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 231, 
+                   Column: 5 }
+Function:        _ZL15seq_op_sandwichPKiS0_PiPb
+Args:            
+  - Callee:          'seq_op_reverse(int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 150, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'seq_op_sandwich(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 222, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 209, 
+                   Column: 12 }
+Function:        _ZL17seq_op_rotor_normPKiPiPb
+Args:            
+  - Callee:          'rescale_and_saturate(ap_int<67>, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 35, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'seq_op_rotor_norm(int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 201, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 261, 
+                   Column: 13 }
+Function:        seq_gpu
+Args:            
+  - Callee:          'seq_product_core(int const*, int const*, int*, unsigned int, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 22, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          seq_gpu
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 246, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 265, 
+                   Column: 13 }
+Function:        seq_gpu
+Args:            
+  - Callee:          'seq_op_add(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 91, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          seq_gpu
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 246, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 269, 
+                   Column: 13 }
+Function:        seq_gpu
+Args:            
+  - Callee:          'seq_op_sub(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 105, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          seq_gpu
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 246, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 273, 
+                   Column: 13 }
+Function:        seq_gpu
+Args:            
+  - Callee:          'seq_op_scalar_mul(int const*, int, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 119, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          seq_gpu
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 246, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 277, 
+                   Column: 13 }
+Function:        seq_gpu
+Args:            
+  - Callee:          'seq_op_grade_proj(int const*, int, int*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 133, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          seq_gpu
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 246, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 281, 
+                   Column: 13 }
+Function:        seq_gpu
+Args:            
+  - Callee:          'seq_op_reverse(int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 150, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          seq_gpu
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 246, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 285, 
+                   Column: 13 }
+Function:        seq_gpu
+Args:            
+  - Callee:          'seq_op_grade_involution(int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 167, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          seq_gpu
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 246, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 289, 
+                   Column: 13 }
+Function:        seq_gpu
+Args:            
+  - Callee:          'seq_op_clifford_conj(int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 184, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          seq_gpu
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 246, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 293, 
+                   Column: 13 }
+Function:        seq_gpu
+Args:            
+  - Callee:          'seq_op_sandwich(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 222, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          seq_gpu
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 246, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 297, 
+                   Column: 13 }
+Function:        seq_gpu
+Args:            
+  - Callee:          'seq_op_rotor_norm(int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 201, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          seq_gpu
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 246, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_seq_gpu_ir
+Args:            
+  - Callee:          seq_gpu
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 246, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_seq_gpu_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 22, 
+                   Column: 0 }
+Function:        _ZL16seq_product_corePKiS0_PijPb
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'mask_to_index(unsigned char)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_types.h', 
+                       Line: 30, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'seq_product_core(int const*, int const*, int*, unsigned int, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 22, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 22, 
+                   Column: 0 }
+Function:        _ZL16seq_product_corePKiS0_PijPb
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'blade_product_sign(unsigned char, unsigned char)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_types.h', 
+                       Line: 46, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'seq_product_core(int const*, int const*, int*, unsigned int, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 22, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 22, 
+                   Column: 0 }
+Function:        _ZL16seq_product_corePKiS0_PijPb
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'rescale_and_saturate(ap_int<67>, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 35, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'seq_product_core(int const*, int const*, int*, unsigned int, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 22, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 91, 
+                   Column: 0 }
+Function:        _ZL10seq_op_addPKiS0_PiPb
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'sat_add(int, int, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 71, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'seq_op_add(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 91, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 105, 
+                   Column: 0 }
+Function:        _ZL10seq_op_subPKiS0_PiPb
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'sat_sub(int, int, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 86, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'seq_op_sub(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 105, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 119, 
+                   Column: 0 }
+Function:        _ZL17seq_op_scalar_mulPKiiPiPb
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'rescale_and_saturate(ap_int<67>, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 35, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'seq_op_scalar_mul(int const*, int, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 119, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 150, 
+                   Column: 0 }
+Function:        _ZL14seq_op_reversePKiPiPb
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'sat_sub(int, int, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 86, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'seq_op_reverse(int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 150, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 167, 
+                   Column: 0 }
+Function:        _ZL23seq_op_grade_involutionPKiPiPb
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'sat_sub(int, int, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 86, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'seq_op_grade_involution(int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 167, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 184, 
+                   Column: 0 }
+Function:        _ZL20seq_op_clifford_conjPKiPiPb
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'sat_sub(int, int, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 86, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'seq_op_clifford_conj(int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 184, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 201, 
+                   Column: 0 }
+Function:        _ZL17seq_op_rotor_normPKiPiPb
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'rescale_and_saturate(ap_int<67>, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 35, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'seq_op_rotor_norm(int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 201, Column: 0 }
+  - String:          ''''
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 222, 
+                   Column: 0 }
+Function:        _ZL15seq_op_sandwichPKiS0_PiPb
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       overflow
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 222, 
+                   Column: 0 }
+Function:        _ZL15seq_op_sandwichPKiS0_PiPb
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       overflow
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 222, 
+                   Column: 0 }
+Function:        _ZL15seq_op_sandwichPKiS0_PiPb
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       overflow
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 222, 
+                   Column: 0 }
+Function:        _ZL15seq_op_sandwichPKiS0_PiPb.clone
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       overflow
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 222, 
+                   Column: 0 }
+Function:        _ZL15seq_op_sandwichPKiS0_PiPb.clone
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       overflow
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 222, 
+                   Column: 0 }
+Function:        _ZL15seq_op_sandwichPKiS0_PiPb.clone
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       overflow
+  - String:          '''.'
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 24, 
+                   Column: 13 }
+Function:        _ZL16seq_product_corePKiS0_PijPb
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          accum
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !HLSReportInfo
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'Pipelining loop< '
+  - LoopName:        NORM_LOOP
+  - String:          '> at '
+  - LoopLoc:         'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:205:5'
+  - String:          ' due to pipeline_loops threshold'
+...
+--- !Passed
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 205, 
+                   Column: 5 }
+Function:        _ZL17seq_op_rotor_normPKiPiPb
+Args:            
+  - PragmaType:      pipeline
+  - String:          ' '
+  - PragmaOptions:   ' '
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  seq_op_rotor_norm
+  - String:          ' '
+  - PragmaInferReason: config_compile -pipeline_loops 64
+  - LoopName:        NORM_LOOP
+  - String:          ' '
+  - LoopLoc:         'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:205:5'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 205, Column: 5 }
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'Pipelining loop< '
+  - LoopName:        CLEAR_REMAINING
+  - String:          '> at '
+  - LoopLoc:         'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:211:5'
+  - String:          ' due to pipeline_loops threshold'
+...
+--- !Passed
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 211, 
+                   Column: 5 }
+Function:        _ZL17seq_op_rotor_normPKiPiPb
+Args:            
+  - PragmaType:      pipeline
+  - String:          ' '
+  - PragmaOptions:   ' '
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  seq_op_rotor_norm
+  - String:          ' '
+  - PragmaInferReason: config_compile -pipeline_loops 64
+  - LoopName:        CLEAR_REMAINING
+  - String:          ' '
+  - LoopLoc:         'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:211:5'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 211, Column: 5 }
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'Pipelining loop< '
+  - LoopName:        CONJ_LOOP
+  - String:          '> at '
+  - LoopLoc:         'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:187:5'
+  - String:          ' due to pipeline_loops threshold'
+...
+--- !Passed
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 187, 
+                   Column: 5 }
+Function:        _ZL20seq_op_clifford_conjPKiPiPb
+Args:            
+  - PragmaType:      pipeline
+  - String:          ' '
+  - PragmaOptions:   ' '
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  seq_op_clifford_conj
+  - String:          ' '
+  - PragmaInferReason: config_compile -pipeline_loops 64
+  - LoopName:        CONJ_LOOP
+  - String:          ' '
+  - LoopLoc:         'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:187:5'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 187, Column: 5 }
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'Pipelining loop< '
+  - LoopName:        INVOLUTION_LOOP
+  - String:          '> at '
+  - LoopLoc:         'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:170:5'
+  - String:          ' due to pipeline_loops threshold'
+...
+--- !Passed
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 170, 
+                   Column: 5 }
+Function:        _ZL23seq_op_grade_involutionPKiPiPb
+Args:            
+  - PragmaType:      pipeline
+  - String:          ' '
+  - PragmaOptions:   ' '
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  seq_op_grade_involution
+  - String:          ' '
+  - PragmaInferReason: config_compile -pipeline_loops 64
+  - LoopName:        INVOLUTION_LOOP
+  - String:          ' '
+  - LoopLoc:         'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:170:5'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 170, Column: 5 }
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'Pipelining loop< '
+  - LoopName:        REVERSE_LOOP
+  - String:          '> at '
+  - LoopLoc:         'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:153:5'
+  - String:          ' due to pipeline_loops threshold'
+...
+--- !Passed
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 153, 
+                   Column: 5 }
+Function:        _ZL14seq_op_reversePKiPiPb
+Args:            
+  - PragmaType:      pipeline
+  - String:          ' '
+  - PragmaOptions:   ' '
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  seq_op_reverse
+  - String:          ' '
+  - PragmaInferReason: config_compile -pipeline_loops 64
+  - LoopName:        REVERSE_LOOP
+  - String:          ' '
+  - LoopLoc:         'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:153:5'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 153, Column: 5 }
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'Pipelining loop< '
+  - LoopName:        GRADE_LOOP
+  - String:          '> at '
+  - LoopLoc:         'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:136:5'
+  - String:          ' due to pipeline_loops threshold'
+...
+--- !Passed
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 136, 
+                   Column: 5 }
+Function:        _ZL17seq_op_grade_projPKiiPi
+Args:            
+  - PragmaType:      pipeline
+  - String:          ' '
+  - PragmaOptions:   ' '
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  seq_op_grade_proj
+  - String:          ' '
+  - PragmaInferReason: config_compile -pipeline_loops 64
+  - LoopName:        GRADE_LOOP
+  - String:          ' '
+  - LoopLoc:         'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:136:5'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 136, Column: 5 }
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'Pipelining loop< '
+  - LoopName:        SCALAR_LOOP
+  - String:          '> at '
+  - LoopLoc:         'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:122:5'
+  - String:          ' due to pipeline_loops threshold'
+...
+--- !Passed
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 122, 
+                   Column: 5 }
+Function:        _ZL17seq_op_scalar_mulPKiiPiPb
+Args:            
+  - PragmaType:      pipeline
+  - String:          ' '
+  - PragmaOptions:   ' '
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  seq_op_scalar_mul
+  - String:          ' '
+  - PragmaInferReason: config_compile -pipeline_loops 64
+  - LoopName:        SCALAR_LOOP
+  - String:          ' '
+  - LoopLoc:         'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:122:5'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 122, Column: 5 }
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'Pipelining loop< '
+  - LoopName:        SUB_LOOP
+  - String:          '> at '
+  - LoopLoc:         'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:108:5'
+  - String:          ' due to pipeline_loops threshold'
+...
+--- !Passed
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 108, 
+                   Column: 5 }
+Function:        _ZL10seq_op_subPKiS0_PiPb
+Args:            
+  - PragmaType:      pipeline
+  - String:          ' '
+  - PragmaOptions:   ' '
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  seq_op_sub
+  - String:          ' '
+  - PragmaInferReason: config_compile -pipeline_loops 64
+  - LoopName:        SUB_LOOP
+  - String:          ' '
+  - LoopLoc:         'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:108:5'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 108, Column: 5 }
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'Pipelining loop< '
+  - LoopName:        ADD_LOOP
+  - String:          '> at '
+  - LoopLoc:         'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:94:5'
+  - String:          ' due to pipeline_loops threshold'
+...
+--- !Passed
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 94, 
+                   Column: 5 }
+Function:        _ZL10seq_op_addPKiS0_PiPb
+Args:            
+  - PragmaType:      pipeline
+  - String:          ' '
+  - PragmaOptions:   ' '
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  seq_op_add
+  - String:          ' '
+  - PragmaInferReason: config_compile -pipeline_loops 64
+  - LoopName:        ADD_LOOP
+  - String:          ' '
+  - LoopLoc:         'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:94:5'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 94, Column: 5 }
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'Pipelining loop< '
+  - LoopName:        RESCALE_LOOP
+  - String:          '> at '
+  - LoopLoc:         'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:80:5'
+  - String:          ' due to pipeline_loops threshold'
+...
+--- !Passed
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 80, 
+                   Column: 5 }
+Function:        _ZL16seq_product_corePKiS0_PijPb
+Args:            
+  - PragmaType:      pipeline
+  - String:          ' '
+  - PragmaOptions:   ' '
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  seq_product_core
+  - String:          ' '
+  - PragmaInferReason: config_compile -pipeline_loops 64
+  - LoopName:        RESCALE_LOOP
+  - String:          ' '
+  - LoopLoc:         'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:80:5'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 80, Column: 5 }
+  - String:          ' '
+...
+--- !HLSReportInfo
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoLoopPipeline
+Args:            
+  - String:          'Pipelining loop< '
+  - LoopName:        CLEAR_ERR
+  - String:          '> at '
+  - LoopLoc:         'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:303:13'
+  - String:          ' due to pipeline_loops threshold'
+...
+--- !Passed
+Pass:            reflow-auto-loop-pipeline
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 303, 
+                   Column: 13 }
+Function:        seq_gpu
+Args:            
+  - PragmaType:      pipeline
+  - String:          ' '
+  - PragmaOptions:   ' '
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  seq_gpu
+  - String:          ' '
+  - PragmaInferReason: config_compile -pipeline_loops 64
+  - LoopName:        CLEAR_ERR
+  - String:          ' '
+  - LoopLoc:         'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:303:13'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 303, Column: 13 }
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoParallelPerformanceDrivenVerbosePassed
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_types.h', 
+                   Line: 27, Column: 0 }
+Function:        seq_gpu
+Args:            
+  - PragmaType:      array_partition
+  - String:          ' '
+  - PragmaOptions:   'dim=1 type=complete  variable=BASIS_GRADES'
+  - String:          ' '
+  - PragmaIsAuto:    '1'
+  - String:          ' '
+  - PragmaFunction:  seq_gpu
+  - String:          ' '
+  - VarLoc:          'D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_types.h:27:0'
+  - String:          ' '
+  - PragmaSrcLoc:    'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:43:1'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 43, Column: 1 }
+  - VarName:         BASIS_GRADES
+  - String:          ' '
+...
+--- !Passed
+Pass:            reflow-auto-array-partition
+Name:            AutoArrayXform
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 43, 
+                   Column: 1 }
+Function:        seq_gpu
+Args:            
+  - String:          'Inferring pragma '''
+  - PragmaType:      array_partition
+  - String:          ' type='
+  - Mode:            complete
+  - String:          ' dim='
+  - Dim:             '1'
+  - String:          ''' for array '''
+  - Name:            BASIS_GRADES
+  - String:          ''''
+  - String:          ' due to '
+  - String:          pipeline
+  - String:          ' pragma'
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_types.h', 
+                   Line: 27, Column: 0 }
+Function:        seq_gpu
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          _ZL12BASIS_GRADES
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 228, 
+                   Column: 5 }
+Function:        _ZL15seq_op_sandwichPKiS0_PiPb
+Args:            
+  - Callee:          'seq_product_core(int const*, int const*, int*, unsigned int, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 22, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'seq_op_sandwich(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 222, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 231, 
+                   Column: 5 }
+Function:        _ZL15seq_op_sandwichPKiS0_PiPb
+Args:            
+  - Callee:          'seq_op_reverse(int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 150, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'seq_op_sandwich(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 222, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 261, 
+                   Column: 13 }
+Function:        seq_gpu
+Args:            
+  - Callee:          'seq_product_core(int const*, int const*, int*, unsigned int, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 22, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          seq_gpu
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 246, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 265, 
+                   Column: 13 }
+Function:        seq_gpu
+Args:            
+  - Callee:          'seq_op_add(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 91, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          seq_gpu
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 246, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 269, 
+                   Column: 13 }
+Function:        seq_gpu
+Args:            
+  - Callee:          'seq_op_sub(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 105, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          seq_gpu
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 246, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 273, 
+                   Column: 13 }
+Function:        seq_gpu
+Args:            
+  - Callee:          'seq_op_scalar_mul(int const*, int, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 119, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          seq_gpu
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 246, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 277, 
+                   Column: 13 }
+Function:        seq_gpu
+Args:            
+  - Callee:          'seq_op_grade_proj(int const*, int, int*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 133, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          seq_gpu
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 246, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 281, 
+                   Column: 13 }
+Function:        seq_gpu
+Args:            
+  - Callee:          'seq_op_reverse(int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 150, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          seq_gpu
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 246, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 285, 
+                   Column: 13 }
+Function:        seq_gpu
+Args:            
+  - Callee:          'seq_op_grade_involution(int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 167, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          seq_gpu
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 246, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 289, 
+                   Column: 13 }
+Function:        seq_gpu
+Args:            
+  - Callee:          'seq_op_clifford_conj(int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 184, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          seq_gpu
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 246, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 293, 
+                   Column: 13 }
+Function:        seq_gpu
+Args:            
+  - Callee:          'seq_op_sandwich(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 222, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          seq_gpu
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 246, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', Line: 297, 
+                   Column: 13 }
+Function:        seq_gpu
+Args:            
+  - Callee:          'seq_op_rotor_norm(int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 201, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          seq_gpu
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp', 
+                       Line: 246, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...

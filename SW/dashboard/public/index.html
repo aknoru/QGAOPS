@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QGAOPS-QGPU: Geometric Algebra Accelerator Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Header -->
+    <header class="app-header">
+      <div class="header-branding">
+        <div class="logo-badge">Cl(3,0)</div>
+        <div>
+          <h1>QGAOPS-QGPU <span>Hardware Telemetry & Vision</span></h1>
+          <p class="subtitle">AMD PYNQ-ZU Rev B &bull; Zynq UltraScale+ XCZU5EG &bull; Vivado 2025.2</p>
+        </div>
+      </div>
+      <div class="header-status">
+        <div class="status-indicator live">
+          <span class="pulse-dot"></span>
+          <span>HARDWARE ONLINE</span>
+        </div>
+        <div class="telemetry-pill">
+          <span class="label">PL CLOCK</span>
+          <span class="val">100.000 MHz</span>
+        </div>
+        <div class="telemetry-pill">
+          <span class="label">TIMING SLACK</span>
+          <span class="val success">+1.410 ns WNS</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- Navigation / Mode Tabs -->
+    <div class="toolbar">
+      <div class="arch-selector">
+        <span class="selector-label">ACTIVE ACCELERATOR:</span>
+        <button id="btn-arch-sw" class="arch-btn" onclick="setArchitecture('SOFTWARE_ONLY')">Software Model</button>
+        <button id="btn-arch-seq" class="arch-btn" onclick="setArchitecture('SEQ_GPU')">SEQ_GPU (16 DSP)</button>
+        <button id="btn-arch-par" class="arch-btn active" onclick="setArchitecture('PARALLEL_GPU')">PARALLEL_GPU (832 DSP)</button>
+      </div>
+      <div class="toolbar-actions">
+        <button id="btn-run-bench" class="action-btn" onclick="triggerBenchmark()">⚡ Run Live Benchmark</button>
+        <a href="/api/download/csv" class="action-btn outline">📥 Download CSV</a>
+      </div>
+    </div>
+
+    <!-- Main Grid -->
+    <main class="dashboard-grid">
+      <!-- Left Column: Video & Landmark Stream -->
+      <section class="card video-card">
+        <div class="card-header">
+          <h2>Live Vision & Landmark Stream</h2>
+          <span class="badge" id="camera-badge">WEBCAM 640x480</span>
+        </div>
+        <div class="video-wrapper">
+          <img id="live-stream-img" src="/api/stream" alt="Live GA Stream" onerror="this.src='/api/frame_fallback'">
+          <div class="video-overlay" id="video-overlay">
+            <div class="hud-pill" id="hud-fps">FPS: --</div>
+            <div class="hud-pill" id="hud-e2e">E2E: -- ms</div>
+          </div>
+        </div>
+        <div class="video-controls">
+          <button class="toggle-btn active" id="btn-toggle-hud" onclick="toggleOverlay()">Toggle HUD Overlay</button>
+          <span class="timestamp" id="stream-timestamp">Frames: 0</span>
+        </div>
+      </section>
+
+      <!-- Right Column: 3D GA Visualizer & Classification -->
+      <section class="card visualizer-card">
+        <div class="card-header">
+          <h2>Geometric Algebra 3D Multivector</h2>
+          <span class="badge blue">Rotor Plane R&bull;v&bull;R~</span>
+        </div>
+        <div class="canvas-wrapper">
+          <canvas id="ga-canvas" width="480" height="300"></canvas>
+          <div class="axis-legend">
+            <span class="leg-x">e1 (X)</span>
+            <span class="leg-y">e2 (Y)</span>
+            <span class="leg-z">e3 (Z)</span>
+            <span class="leg-b">B_palm (Bivector)</span>
+          </div>
+        </div>
+
+        <!-- Gesture Recognition Badge -->
+        <div class="gesture-result-panel">
+          <div class="gesture-info">
+            <span class="gesture-label">DETECTED GESTURE</span>
+            <h3 id="gesture-title" class="gesture-title">INITIALIZING</h3>
+            <div class="confidence-bar-bg">
+              <div id="confidence-fill" class="confidence-bar-fill" style="width: 0%"></div>
+            </div>
+            <span class="confidence-text" id="confidence-text">Confidence: --%</span>
+          </div>
+          <div class="finger-status-grid">
+            <div class="finger-badge" id="f-thumb">Thumb: -</div>
+            <div class="finger-badge" id="f-index">Index: -</div>
+            <div class="finger-badge" id="f-middle">Middle: -</div>
+            <div class="finger-badge" id="f-ring">Ring: -</div>
+            <div class="finger-badge" id="f-pinky">Pinky: -</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Lower Left: Latency Telemetry Breakdown -->
+      <section class="card latency-card">
+        <div class="card-header">
+          <h2>11-Stage Pipeline Latency Breakdown</h2>
+          <span class="badge green">Monotonic Timers</span>
+        </div>
+        <div class="latency-bars">
+          <div class="lat-row">
+            <span class="lat-name">1. Frame Acquisition</span>
+            <div class="lat-bar-bg"><div id="bar-acq" class="lat-bar" style="width: 25%"></div></div>
+            <span class="lat-val" id="val-acq">-- µs</span>
+          </div>
+          <div class="lat-row">
+            <span class="lat-name">2. Preprocessing & Detection</span>
+            <div class="lat-bar-bg"><div id="bar-det" class="lat-bar" style="width: 40%"></div></div>
+            <span class="lat-val" id="val-det">-- µs</span>
+          </div>
+          <div class="lat-row">
+            <span class="lat-name">3. GA Fixed-Point Encoding</span>
+            <div class="lat-bar-bg"><div id="bar-enc" class="lat-bar" style="width: 15%"></div></div>
+            <span class="lat-val" id="val-enc">-- µs</span>
+          </div>
+          <div class="lat-row">
+            <span class="lat-name">4. FPGA PL Hardware Kernel</span>
+            <div class="lat-bar-bg"><div id="bar-pl" class="lat-bar accent" style="width: 20%"></div></div>
+            <span class="lat-val" id="val-pl">-- µs</span>
+          </div>
+          <div class="lat-row">
+            <span class="lat-name">5. Gesture Classification</span>
+            <div class="lat-bar-bg"><div id="bar-cls" class="lat-bar" style="width: 10%"></div></div>
+            <span class="lat-val" id="val-cls">-- µs</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Lower Right: FPGA Hardware Resources & Validation -->
+      <section class="card telemetry-card">
+        <div class="card-header">
+          <h2>AMD Zynq UltraScale+ XCZU5EG Telemetry</h2>
+          <span class="badge gold">JTAG Active</span>
+        </div>
+        <div class="telemetry-grid">
+          <div class="telemetry-item">
+            <span class="t-label">DSP48E2 Slices</span>
+            <span class="t-val" id="dsp-util">832 / 1,248</span>
+            <span class="t-sub" id="dsp-sub">66.7% (Parallel Engine)</span>
+          </div>
+          <div class="telemetry-item">
+            <span class="t-label">CLB LUTs</span>
+            <span class="t-val">39,809 / 117,120</span>
+            <span class="t-sub">34.0% Logic Utilization</span>
+          </div>
+          <div class="telemetry-item">
+            <span class="t-label">Worst Negative Slack</span>
+            <span class="t-val success">+1.410 ns</span>
+            <span class="t-sub">Target: 10.000 ns (100 MHz)</span>
+          </div>
+          <div class="telemetry-item">
+            <span class="t-label">Total Negative Slack</span>
+            <span class="t-val success">0.000 ns</span>
+            <span class="t-sub">0 Failing Endpoints</span>
+          </div>
+        </div>
+        <div class="checksum-bar">
+          <span class="cs-label">Bitstream SHA-256:</span>
+          <code id="bit-hash">4E17A691195FF37CB56DB83AA993ACE6999BEDA8FFE73676A55193368A8119F7</code>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="app-footer">
+      <p>QGAOPS-QGPU &bull; Algebra-Aware Memory-Centric Geometric Algebra FPGA Architecture &bull; PYNQ-ZU Rev B</p>
+    </footer>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

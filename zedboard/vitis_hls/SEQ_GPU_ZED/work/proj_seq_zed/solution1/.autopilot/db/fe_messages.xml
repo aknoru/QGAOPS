@@ -1,0 +1,161 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:23:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="seq_product_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:25:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="seq_product_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=accum complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:30:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="seq_product_core" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:43:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="seq_product_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:44:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="seq_product_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=accum type=inter direction=RAW dependent=false" ARG_PragmaType="dependence" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:45:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="seq_product_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=accum type=inter direction=WAR dependent=false" ARG_PragmaType="dependence" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:92:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="seq_op_add" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:106:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="seq_op_sub" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:120:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="seq_op_scalar_mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:134:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="seq_op_grade_proj" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:151:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="seq_op_reverse" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:168:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="seq_op_grade_involution" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:185:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="seq_op_clifford_conj" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:202:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="seq_op_rotor_norm" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:223:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="seq_op_sandwich" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="D:/QGPU/zedboard/vitis_hls/SEQ_GPU_ZED/run_hls_zed.tcl:18:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="seq_gpu" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=seq_gpu" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:247:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="seq_gpu" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:248:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="seq_gpu" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=opcode bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:249:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="seq_gpu" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=status bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:250:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="seq_gpu" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=a bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:251:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="seq_gpu" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=b bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:252:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="seq_gpu" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=c bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_types.h:48:22" msg_body="Loop 'VITIS_LOOP_48_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_48_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_types.h:50:30" msg_body="Loop 'VITIS_LOOP_50_2' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_50_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:22:0" msg_body="Unrolling loop 'INIT_ACCUM' (D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:29:5) in function 'seq_product_core' completely with a factor of 8">
+        <args Factor="8" LoopLoc="D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:29:5" LoopName="INIT_ACCUM"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_types.h:46:0" msg_body="Unrolling loop 'VITIS_LOOP_48_1' (D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_types.h:48:22) in function 'blade_product_sign' completely with a factor of 3">
+        <args Factor="3" LoopLoc="D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_types.h:48:22" LoopName="VITIS_LOOP_48_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_types.h:46:0" msg_body="Unrolling loop 'VITIS_LOOP_50_2' (D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_types.h:50:30) in function 'blade_product_sign' completely with a factor of 3">
+        <args Factor="3" LoopLoc="D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_types.h:50:30" LoopName="VITIS_LOOP_50_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:22:0" msg_body="Inlining function 'mask_to_index(unsigned char)' into 'seq_product_core(int const*, int const*, int*, unsigned int, bool*)'">
+        <args Callee="mask_to_index(unsigned char)" Callee-DebugLoc="File D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_types.h Line 30 Column 0" Caller="seq_product_core(int const*, int const*, int*, unsigned int, bool*)" Caller-DebugLoc="File D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp Line 22 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:22:0" msg_body="Inlining function 'blade_product_sign(unsigned char, unsigned char)' into 'seq_product_core(int const*, int const*, int*, unsigned int, bool*)'">
+        <args Callee="blade_product_sign(unsigned char, unsigned char)" Callee-DebugLoc="File D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_types.h Line 46 Column 0" Caller="seq_product_core(int const*, int const*, int*, unsigned int, bool*)" Caller-DebugLoc="File D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp Line 22 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:22:0" msg_body="Inlining function 'rescale_and_saturate(ap_int&lt;67&gt;, bool*)' into 'seq_product_core(int const*, int const*, int*, unsigned int, bool*)'">
+        <args Callee="rescale_and_saturate(ap_int&lt;67&gt;, bool*)" Callee-DebugLoc="File D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_fixed_point.h Line 35 Column 0" Caller="seq_product_core(int const*, int const*, int*, unsigned int, bool*)" Caller-DebugLoc="File D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp Line 22 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:91:0" msg_body="Inlining function 'sat_add(int, int, bool*)' into 'seq_op_add(int const*, int const*, int*, bool*)'">
+        <args Callee="sat_add(int, int, bool*)" Callee-DebugLoc="File D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_fixed_point.h Line 71 Column 0" Caller="seq_op_add(int const*, int const*, int*, bool*)" Caller-DebugLoc="File D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp Line 91 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:105:0" msg_body="Inlining function 'sat_sub(int, int, bool*)' into 'seq_op_sub(int const*, int const*, int*, bool*)'">
+        <args Callee="sat_sub(int, int, bool*)" Callee-DebugLoc="File D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_fixed_point.h Line 86 Column 0" Caller="seq_op_sub(int const*, int const*, int*, bool*)" Caller-DebugLoc="File D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp Line 105 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:119:0" msg_body="Inlining function 'rescale_and_saturate(ap_int&lt;67&gt;, bool*)' into 'seq_op_scalar_mul(int const*, int, int*, bool*)'">
+        <args Callee="rescale_and_saturate(ap_int&lt;67&gt;, bool*)" Callee-DebugLoc="File D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_fixed_point.h Line 35 Column 0" Caller="seq_op_scalar_mul(int const*, int, int*, bool*)" Caller-DebugLoc="File D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp Line 119 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:150:0" msg_body="Inlining function 'sat_sub(int, int, bool*)' into 'seq_op_reverse(int const*, int*, bool*)'">
+        <args Callee="sat_sub(int, int, bool*)" Callee-DebugLoc="File D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_fixed_point.h Line 86 Column 0" Caller="seq_op_reverse(int const*, int*, bool*)" Caller-DebugLoc="File D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp Line 150 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:167:0" msg_body="Inlining function 'sat_sub(int, int, bool*)' into 'seq_op_grade_involution(int const*, int*, bool*)'">
+        <args Callee="sat_sub(int, int, bool*)" Callee-DebugLoc="File D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_fixed_point.h Line 86 Column 0" Caller="seq_op_grade_involution(int const*, int*, bool*)" Caller-DebugLoc="File D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp Line 167 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:184:0" msg_body="Inlining function 'sat_sub(int, int, bool*)' into 'seq_op_clifford_conj(int const*, int*, bool*)'">
+        <args Callee="sat_sub(int, int, bool*)" Callee-DebugLoc="File D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_fixed_point.h Line 86 Column 0" Caller="seq_op_clifford_conj(int const*, int*, bool*)" Caller-DebugLoc="File D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp Line 184 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:201:0" msg_body="Inlining function 'rescale_and_saturate(ap_int&lt;67&gt;, bool*)' into 'seq_op_rotor_norm(int const*, int*, bool*)'">
+        <args Callee="rescale_and_saturate(ap_int&lt;67&gt;, bool*)" Callee-DebugLoc="File D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_fixed_point.h Line 35 Column 0" Caller="seq_op_rotor_norm(int const*, int*, bool*)" Caller-DebugLoc="File D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp Line 201 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-464" msg_severity="WARNING" msg_loc="D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:222:0" msg_body="Skipping array undecay on variable length array 'overflow'.">
+        <args ArrayName="overflow"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:24:13" msg_body="Applying array_partition to 'accum': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="accum"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:205:5" msg_body="pipeline   1 seq_op_rotor_norm config_compile -pipeline_loops 64NORM_LOOP D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:205:5">
+        <args LoopLoc="D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:205:5" LoopLoc-DebugLoc="File D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp Line 205 Column 5" LoopName="NORM_LOOP" PragmaFunction="seq_op_rotor_norm" PragmaInferReason="config_compile -pipeline_loops 64" PragmaIsAuto="1" PragmaType="pipeline"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:211:5" msg_body="pipeline   1 seq_op_rotor_norm config_compile -pipeline_loops 64CLEAR_REMAINING D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:211:5">
+        <args LoopLoc="D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:211:5" LoopLoc-DebugLoc="File D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp Line 211 Column 5" LoopName="CLEAR_REMAINING" PragmaFunction="seq_op_rotor_norm" PragmaInferReason="config_compile -pipeline_loops 64" PragmaIsAuto="1" PragmaType="pipeline"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:187:5" msg_body="pipeline   1 seq_op_clifford_conj config_compile -pipeline_loops 64CONJ_LOOP D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:187:5">
+        <args LoopLoc="D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:187:5" LoopLoc-DebugLoc="File D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp Line 187 Column 5" LoopName="CONJ_LOOP" PragmaFunction="seq_op_clifford_conj" PragmaInferReason="config_compile -pipeline_loops 64" PragmaIsAuto="1" PragmaType="pipeline"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:170:5" msg_body="pipeline   1 seq_op_grade_involution config_compile -pipeline_loops 64INVOLUTION_LOOP D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:170:5">
+        <args LoopLoc="D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:170:5" LoopLoc-DebugLoc="File D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp Line 170 Column 5" LoopName="INVOLUTION_LOOP" PragmaFunction="seq_op_grade_involution" PragmaInferReason="config_compile -pipeline_loops 64" PragmaIsAuto="1" PragmaType="pipeline"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:153:5" msg_body="pipeline   1 seq_op_reverse config_compile -pipeline_loops 64REVERSE_LOOP D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:153:5">
+        <args LoopLoc="D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:153:5" LoopLoc-DebugLoc="File D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp Line 153 Column 5" LoopName="REVERSE_LOOP" PragmaFunction="seq_op_reverse" PragmaInferReason="config_compile -pipeline_loops 64" PragmaIsAuto="1" PragmaType="pipeline"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:136:5" msg_body="pipeline   1 seq_op_grade_proj config_compile -pipeline_loops 64GRADE_LOOP D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:136:5">
+        <args LoopLoc="D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:136:5" LoopLoc-DebugLoc="File D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp Line 136 Column 5" LoopName="GRADE_LOOP" PragmaFunction="seq_op_grade_proj" PragmaInferReason="config_compile -pipeline_loops 64" PragmaIsAuto="1" PragmaType="pipeline"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:122:5" msg_body="pipeline   1 seq_op_scalar_mul config_compile -pipeline_loops 64SCALAR_LOOP D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:122:5">
+        <args LoopLoc="D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:122:5" LoopLoc-DebugLoc="File D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp Line 122 Column 5" LoopName="SCALAR_LOOP" PragmaFunction="seq_op_scalar_mul" PragmaInferReason="config_compile -pipeline_loops 64" PragmaIsAuto="1" PragmaType="pipeline"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:108:5" msg_body="pipeline   1 seq_op_sub config_compile -pipeline_loops 64SUB_LOOP D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:108:5">
+        <args LoopLoc="D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:108:5" LoopLoc-DebugLoc="File D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp Line 108 Column 5" LoopName="SUB_LOOP" PragmaFunction="seq_op_sub" PragmaInferReason="config_compile -pipeline_loops 64" PragmaIsAuto="1" PragmaType="pipeline"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:94:5" msg_body="pipeline   1 seq_op_add config_compile -pipeline_loops 64ADD_LOOP D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:94:5">
+        <args LoopLoc="D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:94:5" LoopLoc-DebugLoc="File D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp Line 94 Column 5" LoopName="ADD_LOOP" PragmaFunction="seq_op_add" PragmaInferReason="config_compile -pipeline_loops 64" PragmaIsAuto="1" PragmaType="pipeline"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:80:5" msg_body="pipeline   1 seq_product_core config_compile -pipeline_loops 64RESCALE_LOOP D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:80:5">
+        <args LoopLoc="D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:80:5" LoopLoc-DebugLoc="File D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp Line 80 Column 5" LoopName="RESCALE_LOOP" PragmaFunction="seq_product_core" PragmaInferReason="config_compile -pipeline_loops 64" PragmaIsAuto="1" PragmaType="pipeline"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:303:13" msg_body="pipeline   1 seq_gpu config_compile -pipeline_loops 64CLEAR_ERR D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:303:13">
+        <args LoopLoc="D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:303:13" LoopLoc-DebugLoc="File D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp Line 303 Column 13" LoopName="CLEAR_ERR" PragmaFunction="seq_gpu" PragmaInferReason="config_compile -pipeline_loops 64" PragmaIsAuto="1" PragmaType="pipeline"/>
+    </msg>
+    <msg msg_groups="AUTOMATION_VERBOSE_PASSED" msg_id="214-335" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_types.h:27:0" msg_body="array_partition dim=1 type=complete  variable=BASIS_GRADES 1 seq_gpu D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_types.h:27:0 D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:43:1BASIS_GRADES">
+        <args PragmaFunction="seq_gpu" PragmaIsAuto="1" PragmaOptions="dim=1 type=complete  variable=BASIS_GRADES" PragmaSrcLoc="D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:43:1" PragmaSrcLoc-DebugLoc="File D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp Line 43 Column 1" PragmaType="array_partition" VarLoc="D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_types.h:27:0" VarName="BASIS_GRADES"/>
+    </msg>
+    <msg msg_groups="AUTOMATION PRAGMA_MISC" msg_id="214-270" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:43:1" msg_body="Inferring pragma 'array_partition type=complete dim=1' for array 'BASIS_GRADES' due to pipeline pragma">
+        <args Dim="1" Mode="complete" Name="BASIS_GRADES" PragmaType="array_partition"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_types.h:27:0" msg_body="Applying array_partition to '_ZL12BASIS_GRADES': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="_ZL12BASIS_GRADES"/>
+    </msg>
+</xilinx:hls_fe_msgs>

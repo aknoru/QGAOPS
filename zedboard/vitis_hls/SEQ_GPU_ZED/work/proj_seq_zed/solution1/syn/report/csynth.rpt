@@ -1,0 +1,425 @@
+
+
+================================================================
+== Synthesis Summary Report of 'seq_gpu'
+================================================================
++ General Information: 
+    * Date:           Fri Oct 30 00:55:02 2026
+    * Version:        2025.2 (Build 6295257 on Nov 14 2025)
+    * Project:        proj_seq_zed
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynq
+    * Target device:  xc7z020-clg484-1
+    
+
+* Performance & Resource Estimates: 
++------------------------------------------------------+------+---------------+----------+---------+------+----------+---------+-----------+------+------+---------+-----------+------------+-----+
+|                        Modules                       | Issue|               | Iteration|         | Trip |          |       Latency       |      |      |         |           |            |     |
+|                        & Loops                       | Type | Violation Type|  Latency | Interval| Count| Pipelined| (cycles)|    (ns)   | Slack| BRAM |   DSP   |     FF    |     LUT    | URAM|
++------------------------------------------------------+------+---------------+----------+---------+------+----------+---------+-----------+------+------+---------+-----------+------------+-----+
+|+ seq_gpu                                             |     -|              -|         -|      189|     -|        no|      188|  1.880e+03|  0.22|     -|  12 (5%)|  4027 (3%)|  6832 (12%)|    -|
+| + seq_op_rotor_norm                                  |     -|              -|         -|       27|     -|        no|       27|    270.000|  0.39|     -|        -|  213 (~0%)|   507 (~0%)|    -|
+|  + seq_op_rotor_norm_Pipeline_NORM_LOOP              |     -|              -|         -|        -|     -|       yes|       12|    120.000|  0.39|     -|        -|  144 (~0%)|   147 (~0%)|    -|
+|   o NORM_LOOP                                        |     -|              -|         4|        1|     8|       yes|       10|    100.000|  7.30|     -|        -|          -|           -|    -|
+|  + seq_op_rotor_norm_Pipeline_CLEAR_REMAINING        |     -|              -|         -|        -|     -|       yes|        9|     90.000|  2.39|     -|        -|    7 (~0%)|    64 (~0%)|    -|
+|   o CLEAR_REMAINING                                  |     -|              -|         2|        1|     7|       yes|        7|     70.000|  7.30|     -|        -|          -|           -|    -|
+| + seq_op_sandwich                                    |     -|              -|         -|      186|     -|        no|      186|  1.860e+03|  0.22|     -|   4 (1%)|  1313 (1%)|   1873 (3%)|    -|
+|  + seq_product_core                                  |     -|              -|         -|       85|     -|        no|       85|    850.000|  0.22|     -|   4 (1%)|  1222 (1%)|   1397 (2%)|    -|
+|   + seq_product_core_Pipeline_OUTER_LOOP_INNER_LOOP  |     -|              -|         -|        -|     -|       yes|       70|    700.000|  0.39|     -|   4 (1%)|  1091 (1%)|    928 (1%)|    -|
+|    o OUTER_LOOP_INNER_LOOP                           |     -|              -|         6|        1|    64|       yes|       68|    680.000|  7.30|     -|        -|          -|           -|    -|
+|   + seq_product_core_Pipeline_RESCALE_LOOP           |     -|              -|         -|        -|     -|       yes|       11|    110.000|  0.22|     -|        -|  123 (~0%)|   427 (~0%)|    -|
+|    o RESCALE_LOOP                                    |     -|              -|         3|        1|     8|       yes|        9|     90.000|  7.30|     -|        -|          -|           -|    -|
+|  + seq_op_reverse                                    |     -|              -|         -|        -|     -|       yes|       11|    110.000|  0.62|     -|        -|   16 (~0%)|   251 (~0%)|    -|
+|   o REVERSE_LOOP                                     |     -|              -|         3|        1|     8|       yes|        9|     90.000|  7.30|     -|        -|          -|           -|    -|
+| + seq_op_clifford_conj                               |     -|              -|         -|        -|     -|       yes|       11|    110.000|  0.62|     -|        -|   16 (~0%)|   272 (~0%)|    -|
+|  o CONJ_LOOP                                         |     -|              -|         3|        1|     8|       yes|        9|     90.000|  7.30|     -|        -|          -|           -|    -|
+| + seq_op_grade_involution                            |     -|              -|         -|        -|     -|       yes|       11|    110.000|  0.62|     -|        -|   16 (~0%)|   251 (~0%)|    -|
+|  o INVOLUTION_LOOP                                   |     -|              -|         3|        1|     8|       yes|        9|     90.000|  7.30|     -|        -|          -|           -|    -|
+| + seq_op_reverse                                     |     -|              -|         -|        -|     -|       yes|       11|    110.000|  0.62|     -|        -|   16 (~0%)|   251 (~0%)|    -|
+|  o REVERSE_LOOP                                      |     -|              -|         3|        1|     8|       yes|        9|     90.000|  7.30|     -|        -|          -|           -|    -|
+| + seq_op_sub                                         |     -|              -|         -|        -|     -|       yes|       11|    110.000|  1.18|     -|        -|   17 (~0%)|   251 (~0%)|    -|
+|  o SUB_LOOP                                          |     -|              -|         3|        1|     8|       yes|        9|     90.000|  7.30|     -|        -|          -|           -|    -|
+| + seq_op_add                                         |     -|              -|         -|        -|     -|       yes|       11|    110.000|  1.18|     -|        -|   17 (~0%)|   290 (~0%)|    -|
+|  o ADD_LOOP                                          |     -|              -|         3|        1|     8|       yes|        9|     90.000|  7.30|     -|        -|          -|           -|    -|
+| + seq_product_core                                   |     -|              -|         -|       85|     -|        no|       85|    850.000|  0.22|     -|   4 (1%)|  1222 (1%)|   1397 (2%)|    -|
+|  + seq_product_core_Pipeline_OUTER_LOOP_INNER_LOOP   |     -|              -|         -|        -|     -|       yes|       70|    700.000|  0.39|     -|   4 (1%)|  1091 (1%)|    928 (1%)|    -|
+|   o OUTER_LOOP_INNER_LOOP                            |     -|              -|         6|        1|    64|       yes|       68|    680.000|  7.30|     -|        -|          -|           -|    -|
+|  + seq_product_core_Pipeline_RESCALE_LOOP            |     -|              -|         -|        -|     -|       yes|       11|    110.000|  0.22|     -|        -|  123 (~0%)|   427 (~0%)|    -|
+|   o RESCALE_LOOP                                     |     -|              -|         3|        1|     8|       yes|        9|     90.000|  7.30|     -|        -|          -|           -|    -|
+| + seq_gpu_Pipeline_CLEAR_ERR                         |     -|              -|         -|        -|     -|       yes|       10|    100.000|  2.39|     -|        -|    7 (~0%)|    64 (~0%)|    -|
+|  o CLEAR_ERR                                         |     -|              -|         2|        1|     8|       yes|        8|     80.000|  7.30|     -|        -|          -|           -|    -|
+| + seq_op_grade_proj                                  |     -|              -|         -|        -|     -|       yes|       11|    110.000|  2.39|     -|        -|   14 (~0%)|   177 (~0%)|    -|
+|  o GRADE_LOOP                                        |     -|              -|         3|        1|     8|       yes|        9|     90.000|  7.30|     -|        -|          -|           -|    -|
+| + seq_op_scalar_mul                                  |     -|              -|         -|        -|     -|       yes|       14|    140.000|  0.39|     -|        -|  382 (~0%)|   446 (~0%)|    -|
+|  o SCALAR_LOOP                                       |     -|              -|         6|        1|     8|       yes|       12|    120.000|  7.30|     -|        -|          -|           -|    -|
++------------------------------------------------------+------+---------------+----------+---------+------+----------+---------+-----------+------+------+---------+-----------+------------+-----+
+    Name Prefix: '+' for module, 'o' for loop, '*' for dataflow
+
+
+================================================================
+== HW Interfaces
+================================================================
+* S_AXILITE Interfaces
++---------------+------------+---------------+--------+----------+
+| Interface     | Data Width | Address Width | Offset | Register |
++---------------+------------+---------------+--------+----------+
+| s_axi_control | 32         | 8             | 32     | 0        |
++---------------+------------+---------------+--------+----------+
+
+* S_AXILITE Registers
++---------------+-------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| Interface     | Register    | Offset | Width | Access | Description                      | Bit Fields                                                           |
++---------------+-------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+| s_axi_control | CTRL        | 0x00   | 32    | RW     | Control signals                  | 0=AP_START 1=AP_DONE 2=AP_IDLE 3=AP_READY 7=AUTO_RESTART 9=INTERRUPT |
+| s_axi_control | GIER        | 0x04   | 32    | RW     | Global Interrupt Enable Register | 0=Enable                                                             |
+| s_axi_control | IP_IER      | 0x08   | 32    | RW     | IP Interrupt Enable Register     | 0=CHAN0_INT_EN 1=CHAN1_INT_EN                                        |
+| s_axi_control | IP_ISR      | 0x0c   | 32    | RW     | IP Interrupt Status Register     | 0=CHAN0_INT_ST 1=CHAN1_INT_ST                                        |
+| s_axi_control | opcode      | 0x10   | 32    | W      | Data signal of opcode            |                                                                      |
+| s_axi_control | status      | 0x80   | 32    | R      | Data signal of status            |                                                                      |
+| s_axi_control | status_ctrl | 0x84   | 32    | R      | Control signal of status         | 0=status_ap_vld                                                      |
++---------------+-------------+--------+-------+--------+----------------------------------+----------------------------------------------------------------------+
+
+* TOP LEVEL CONTROL
++-----------+------------+-----------+
+| Interface | Type       | Ports     |
++-----------+------------+-----------+
+| ap_clk    | clock      | ap_clk    |
+| ap_rst_n  | reset      | ap_rst_n  |
+| interrupt | interrupt  | interrupt |
+| ap_ctrl   | ap_ctrl_hs |           |
++-----------+------------+-----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+---------------+
+| Argument | Direction | Datatype      |
++----------+-----------+---------------+
+| a        | in        | int const *   |
+| b        | in        | int const *   |
+| c        | out       | int*          |
+| opcode   | in        | unsigned int  |
+| status   | out       | unsigned int* |
++----------+-----------+---------------+
+
+* SW-to-HW Mapping
++----------+---------------+----------+---------------------------------------+
+| Argument | HW Interface  | HW Type  | HW Info                               |
++----------+---------------+----------+---------------------------------------+
+| a        | s_axi_control | memory   | name=a offset=32 range=32             |
+| b        | s_axi_control | memory   | name=b offset=64 range=32             |
+| c        | s_axi_control | memory   | name=c offset=96 range=32             |
+| opcode   | s_axi_control | register | name=opcode offset=0x10 range=32      |
+| status   | s_axi_control | register | name=status offset=0x80 range=32      |
+| status   | s_axi_control | register | name=status_ctrl offset=0x84 range=32 |
++----------+---------------+----------+---------------------------------------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++-----------------------------------------------------------------------------------------------------------------+-----+--------+-----------------+-----------+--------------------------+---------+
+| Name                                                                                                            | DSP | Pragma | Variable        | Op        | Impl                     | Latency |
++-----------------------------------------------------------------------------------------------------------------+-----+--------+-----------------+-----------+--------------------------+---------+
+| + seq_gpu                                                                                                       | 12  |        |                 |           |                          |         |
+|   local_status_1_fu_377_p3                                                                                      |     |        | local_status_1  | select    | auto_sel                 | 0       |
+|  + seq_op_rotor_norm                                                                                            | 0   |        |                 |           |                          |         |
+|    xor_ln42_fu_138_p2                                                                                           |     |        | xor_ln42        | xor       | auto                     | 0       |
+|    icmp_ln44_fu_144_p2                                                                                          |     |        | icmp_ln44       | setgt     | auto                     | 0       |
+|    add_ln45_fu_150_p2                                                                                           |     |        | add_ln45        | add       | fabric                   | 0       |
+|    rounded_5_fu_178_p6                                                                                          |     |        | rounded         | select    | auto_sel                 | 0       |
+|    and_ln44_fu_164_p2                                                                                           |     |        | and_ln44        | and       | auto                     | 0       |
+|    sparsemux_7_2_52_1_1_U5                                                                                      |     |        | rounded_5       | sparsemux | onehotencoding_realdef   | 0       |
+|    icmp_ln57_fu_212_p2                                                                                          |     |        | icmp_ln57       | setne     | auto                     | 0       |
+|    select_ln57_fu_217_p3                                                                                        |     |        | select_ln57     | select    | auto_sel                 | 0       |
+|   + seq_op_rotor_norm_Pipeline_NORM_LOOP                                                                        | 0   |        |                 |           |                          |         |
+|     icmp_ln205_fu_93_p2                                                                                         |     |        | icmp_ln205      | seteq     | auto                     | 0       |
+|     add_ln205_fu_99_p2                                                                                          |     |        | add_ln205       | add       | fabric                   | 0       |
+|     sum_sq_1_fu_127_p2                                                                                          |     |        | sum_sq_1        | add       | fabric                   | 0       |
+|   + seq_op_rotor_norm_Pipeline_CLEAR_REMAINING                                                                  | 0   |        |                 |           |                          |         |
+|     icmp_ln211_fu_66_p2                                                                                         |     |        | icmp_ln211      | seteq     | auto                     | 0       |
+|     add_ln211_fu_77_p2                                                                                          |     |        | add_ln211       | add       | fabric                   | 0       |
+|  + seq_op_sandwich                                                                                              | 4   |        |                 |           |                          |         |
+|   + seq_product_core (grp_seq_product_core_fu_44)                                                               | 4   |        |                 |           |                          |         |
+|     select_ln83_fu_168_p3                                                                                       |     |        | select_ln83     | select    | auto_sel                 | 0       |
+|   + seq_product_core_Pipeline_OUTER_LOOP_INNER_LOOP (grp_seq_product_core_Pipeline_OUTER_LOOP_INNER_LOOP_fu_94) | 4   |        |                 |           |                          |         |
+|     icmp_ln36_fu_345_p2                                                                                         |     |        | icmp_ln36       | seteq     | auto                     | 0       |
+|     add_ln36_fu_351_p2                                                                                          |     |        | add_ln36        | add       | fabric                   | 0       |
+|     icmp_ln42_fu_376_p2                                                                                         |     |        | icmp_ln42       | seteq     | auto                     | 0       |
+|     select_ln36_fu_382_p3                                                                                       |     |        | select_ln36     | select    | auto_sel                 | 0       |
+|     add_ln36_1_fu_390_p2                                                                                        |     |        | add_ln36_1      | add       | fabric                   | 0       |
+|     select_ln36_1_fu_396_p3                                                                                     |     |        | select_ln36_1   | select    | auto_sel                 | 0       |
+|     sparsemux_17_3_2_1_1_U11                                                                                    |     |        | left_grade      | sparsemux | compactencoding_dontcare | 0       |
+|     sparsemux_17_3_2_1_1_U12                                                                                    |     |        | right_grade     | sparsemux | compactencoding_dontcare | 0       |
+|     out_mask_fu_571_p2                                                                                          |     |        | out_mask        | xor       | auto                     | 0       |
+|     icmp_ln31_fu_575_p2                                                                                         |     |        | icmp_ln31       | seteq     | auto                     | 0       |
+|     icmp_ln31_1_fu_581_p2                                                                                       |     |        | icmp_ln31_1     | seteq     | auto                     | 0       |
+|     sparsemux_7_2_3_1_1_U13                                                                                     |     |        | retval_0_i      | sparsemux | onehotencoding_realdef   | 0       |
+|     sparsemux_17_3_2_1_1_U14                                                                                    |     |        | out_grade       | sparsemux | compactencoding_dontcare | 0       |
+|     icmp_ln60_fu_506_p2                                                                                         |     |        | icmp_ln60       | setgt     | auto                     | 0       |
+|     sub_ln60_fu_516_p2                                                                                          |     |        | sub_ln60        | sub       | fabric                   | 0       |
+|     icmp_ln60_1_fu_659_p2                                                                                       |     |        | icmp_ln60_1     | seteq     | auto                     | 0       |
+|     and_ln53_fu_554_p2                                                                                          |     |        | and_ln53        | and       | auto                     | 0       |
+|     include_term_fu_560_p2                                                                                      |     |        | include_term    | seteq     | auto                     | 0       |
+|     xor_ln66_fu_664_p2                                                                                          |     |        | xor_ln66        | xor       | auto                     | 0       |
+|     sparsemux_5_8_3_1_1_U15                                                                                     |     |        | out_idx         | sparsemux | compactencoding_realdef  | 0       |
+|     swaps_1_fu_671_p2                                                                                           |     |        | swaps_1         | and       | auto                     | 0       |
+|     swaps_2_fu_676_p2                                                                                           |     |        | swaps_2         | xor       | auto                     | 0       |
+|     swaps_3_fu_682_p3                                                                                           |     |        | swaps_3         | select    | auto_sel                 | 0       |
+|     swaps_4_fu_697_p2                                                                                           |     |        | swaps_4         | xor       | auto                     | 0       |
+|     swaps_5_fu_703_p3                                                                                           |     |        | swaps_5         | select    | auto_sel                 | 0       |
+|     swaps_6_fu_711_p3                                                                                           |     |        | swaps_6         | select    | auto_sel                 | 0       |
+|     mul_32s_32s_64_2_1_U10                                                                                      | 4   |        | p               | mul       | auto                     | 1       |
+|     sparsemux_17_3_67_1_1_U16                                                                                   |     |        | tmp_1           | sparsemux | compactencoding_dontcare | 0       |
+|     add_ln72_fu_826_p2                                                                                          |     |        | add_ln72        | add       | fabric                   | 0       |
+|     sub_ln70_fu_831_p2                                                                                          |     |        | sub_ln70        | sub       | fabric                   | 0       |
+|     accum_8_fu_836_p3                                                                                           |     |        | accum_8         | select    | auto_sel                 | 0       |
+|     add_ln42_fu_522_p2                                                                                          |     |        | add_ln42        | add       | fabric                   | 0       |
+|   + seq_product_core_Pipeline_RESCALE_LOOP (grp_seq_product_core_Pipeline_RESCALE_LOOP_fu_114)                  | 0   |        |                 |           |                          |         |
+|     icmp_ln80_fu_231_p2                                                                                         |     |        | icmp_ln80       | seteq     | auto                     | 0       |
+|     add_ln80_fu_237_p2                                                                                          |     |        | add_ln80        | add       | fabric                   | 0       |
+|     sparsemux_17_3_67_1_1_U33                                                                                   |     |        | sum_val         | sparsemux | compactencoding_dontcare | 0       |
+|     xor_ln42_fu_345_p2                                                                                          |     |        | xor_ln42        | xor       | auto                     | 0       |
+|     icmp_ln44_fu_321_p2                                                                                         |     |        | icmp_ln44       | setgt     | auto                     | 0       |
+|     add_ln45_fu_327_p2                                                                                          |     |        | add_ln45        | add       | fabric                   | 0       |
+|     rounded_2_fu_367_p6                                                                                         |     |        | rounded_1       | select    | auto_sel                 | 0       |
+|     and_ln44_fu_355_p2                                                                                          |     |        | and_ln44        | and       | auto                     | 0       |
+|     sparsemux_7_2_52_1_1_x_U34                                                                                  |     |        | rounded_2       | sparsemux | onehotencoding_realdef   | 0       |
+|     icmp_ln57_fu_395_p2                                                                                         |     |        | icmp_ln57       | setgt     | auto                     | 0       |
+|     icmp_ln60_fu_401_p2                                                                                         |     |        | icmp_ln60       | setlt     | auto                     | 0       |
+|     or_ln60_fu_411_p2                                                                                           |     |        | or_ln60         | or        | auto                     | 0       |
+|     or_ln60_1_fu_417_p2                                                                                         |     |        | or_ln60_1       | or        | auto                     | 0       |
+|     write_flag_1_fu_423_p2                                                                                      |     |        | write_flag_1    | or        | auto                     | 0       |
+|     overflow_1_fu_429_p2                                                                                        |     |        | overflow_1      | or        | auto                     | 0       |
+|     select_ln60_fu_435_p3                                                                                       |     |        | select_ln60     | select    | auto_sel                 | 0       |
+|     empty_fu_443_p2                                                                                             |     |        | empty           | or        | auto                     | 0       |
+|     retval_0_i110_fu_449_p3                                                                                     |     |        | retval_0_i110   | select    | auto_sel                 | 0       |
+|   + seq_op_reverse (grp_seq_op_reverse_fu_61)                                                                   | 0   |        |                 |           |                          |         |
+|     icmp_ln153_fu_154_p2                                                                                        |     |        | icmp_ln153      | seteq     | auto                     | 0       |
+|     add_ln153_fu_160_p2                                                                                         |     |        | add_ln153       | add       | fabric                   | 0       |
+|     sparsemux_17_3_2_1_1_U52                                                                                    |     |        | tmp             | sparsemux | compactencoding_dontcare | 0       |
+|     diff_fu_238_p2                                                                                              |     |        | diff            | sub       | fabric                   | 0       |
+|     icmp_ln88_fu_254_p2                                                                                         |     |        | icmp_ln88       | seteq     | auto                     | 0       |
+|     or_ln88_fu_264_p2                                                                                           |     |        | or_ln88         | or        | auto                     | 0       |
+|     or_ln88_1_fu_270_p2                                                                                         |     |        | or_ln88_1       | or        | auto                     | 0       |
+|     select_ln88_fu_276_p3                                                                                       |     |        | select_ln88     | select    | auto_sel                 | 0       |
+|     ap_return                                                                                                   |     |        | select_ln160    | select    | auto_sel                 | 0       |
+|  + seq_op_clifford_conj                                                                                         | 0   |        |                 |           |                          |         |
+|    icmp_ln187_fu_146_p2                                                                                         |     |        | icmp_ln187      | seteq     | auto                     | 0       |
+|    add_ln187_fu_152_p2                                                                                          |     |        | add_ln187       | add       | fabric                   | 0       |
+|    sparsemux_17_3_2_1_1_U60                                                                                     |     |        | zext_ln188_cast | sparsemux | compactencoding_dontcare | 0       |
+|    add_ln188_fu_211_p2                                                                                          |     |        | add_ln188       | add       | fabric                   | 0       |
+|    icmp_ln188_fu_227_p2                                                                                         |     |        | icmp_ln188      | seteq     | auto                     | 0       |
+|    diff_fu_248_p2                                                                                               |     |        | diff            | sub       | fabric                   | 0       |
+|    icmp_ln88_fu_264_p2                                                                                          |     |        | icmp_ln88       | seteq     | auto                     | 0       |
+|    or_ln88_fu_274_p2                                                                                            |     |        | or_ln88         | or        | auto                     | 0       |
+|    or_ln88_3_fu_280_p2                                                                                          |     |        | or_ln88_3       | or        | auto                     | 0       |
+|    select_ln88_fu_286_p3                                                                                        |     |        | select_ln88     | select    | auto_sel                 | 0       |
+|    ap_return                                                                                                    |     |        | and_ln194       | and       | auto                     | 0       |
+|  + seq_op_grade_involution                                                                                      | 0   |        |                 |           |                          |         |
+|    icmp_ln170_fu_138_p2                                                                                         |     |        | icmp_ln170      | seteq     | auto                     | 0       |
+|    add_ln170_fu_144_p2                                                                                          |     |        | add_ln170       | add       | fabric                   | 0       |
+|    sparsemux_17_3_1_1_1_U63                                                                                     |     |        | tmp             | sparsemux | compactencoding_dontcare | 0       |
+|    diff_fu_214_p2                                                                                               |     |        | diff            | sub       | fabric                   | 0       |
+|    icmp_ln88_fu_230_p2                                                                                          |     |        | icmp_ln88       | seteq     | auto                     | 0       |
+|    or_ln88_fu_240_p2                                                                                            |     |        | or_ln88         | or        | auto                     | 0       |
+|    or_ln88_2_fu_246_p2                                                                                          |     |        | or_ln88_2       | or        | auto                     | 0       |
+|    select_ln88_fu_252_p3                                                                                        |     |        | select_ln88     | select    | auto_sel                 | 0       |
+|    ap_return                                                                                                    |     |        | and_ln177       | and       | auto                     | 0       |
+|  + seq_op_reverse (grp_seq_op_reverse_fu_250)                                                                   | 0   |        |                 |           |                          |         |
+|    icmp_ln153_fu_154_p2                                                                                         |     |        | icmp_ln153      | seteq     | auto                     | 0       |
+|    add_ln153_fu_160_p2                                                                                          |     |        | add_ln153       | add       | fabric                   | 0       |
+|    sparsemux_17_3_2_1_1_U52                                                                                     |     |        | tmp             | sparsemux | compactencoding_dontcare | 0       |
+|    diff_fu_238_p2                                                                                               |     |        | diff            | sub       | fabric                   | 0       |
+|    icmp_ln88_fu_254_p2                                                                                          |     |        | icmp_ln88       | seteq     | auto                     | 0       |
+|    or_ln88_fu_264_p2                                                                                            |     |        | or_ln88         | or        | auto                     | 0       |
+|    or_ln88_1_fu_270_p2                                                                                          |     |        | or_ln88_1       | or        | auto                     | 0       |
+|    select_ln88_fu_276_p3                                                                                        |     |        | select_ln88     | select    | auto_sel                 | 0       |
+|    ap_return                                                                                                    |     |        | select_ln160    | select    | auto_sel                 | 0       |
+|  + seq_op_sub                                                                                                   | 0   |        |                 |           |                          |         |
+|    icmp_ln108_fu_135_p2                                                                                         |     |        | icmp_ln108      | seteq     | auto                     | 0       |
+|    add_ln108_fu_141_p2                                                                                          |     |        | add_ln108       | add       | fabric                   | 0       |
+|    diff_fu_166_p2                                                                                               |     |        | diff            | sub       | fabric                   | 0       |
+|    icmp_ln88_fu_182_p2                                                                                          |     |        | icmp_ln88       | seteq     | auto                     | 0       |
+|    icmp_ln91_fu_188_p2                                                                                          |     |        | icmp_ln91       | setlt     | auto                     | 0       |
+|    or_ln91_fu_198_p2                                                                                            |     |        | or_ln91         | or        | auto                     | 0       |
+|    or_ln91_1_fu_204_p2                                                                                          |     |        | or_ln91_1       | or        | auto                     | 0       |
+|    write_flag_1_fu_210_p2                                                                                       |     |        | write_flag_1    | or        | auto                     | 0       |
+|    overflow_1_fu_216_p2                                                                                         |     |        | overflow_1      | or        | auto                     | 0       |
+|    select_ln91_fu_222_p3                                                                                        |     |        | select_ln91     | select    | auto_sel                 | 0       |
+|    empty_fu_230_p2                                                                                              |     |        | empty           | or        | auto                     | 0       |
+|    retval_0_i_fu_236_p3                                                                                         |     |        | retval_0_i      | select    | auto_sel                 | 0       |
+|    and_ln111_fu_245_p2                                                                                          |     |        | and_ln111       | and       | auto                     | 0       |
+|  + seq_op_add                                                                                                   | 0   |        |                 |           |                          |         |
+|    icmp_ln94_fu_135_p2                                                                                          |     |        | icmp_ln94       | seteq     | auto                     | 0       |
+|    add_ln94_fu_141_p2                                                                                           |     |        | add_ln94        | add       | fabric                   | 0       |
+|    add_ln72_fu_166_p2                                                                                           |     |        | add_ln72        | add       | fabric                   | 0       |
+|    sum_fu_172_p2                                                                                                |     |        | sum             | add       | fabric                   | 0       |
+|    icmp_ln73_fu_188_p2                                                                                          |     |        | icmp_ln73       | seteq     | auto                     | 0       |
+|    icmp_ln76_fu_194_p2                                                                                          |     |        | icmp_ln76       | setlt     | auto                     | 0       |
+|    or_ln76_fu_200_p2                                                                                            |     |        | or_ln76         | or        | auto                     | 0       |
+|    or_ln76_1_fu_206_p2                                                                                          |     |        | or_ln76_1       | or        | auto                     | 0       |
+|    write_flag_1_fu_212_p2                                                                                       |     |        | write_flag_1    | or        | auto                     | 0       |
+|    overflow_1_fu_218_p2                                                                                         |     |        | overflow_1      | or        | auto                     | 0       |
+|    select_ln76_fu_224_p3                                                                                        |     |        | select_ln76     | select    | auto_sel                 | 0       |
+|    empty_fu_232_p2                                                                                              |     |        | empty           | or        | auto                     | 0       |
+|    retval_0_i_fu_238_p3                                                                                         |     |        | retval_0_i      | select    | auto_sel                 | 0       |
+|    and_ln97_fu_247_p2                                                                                           |     |        | and_ln97        | and       | auto                     | 0       |
+|  + seq_product_core (grp_seq_product_core_fu_280)                                                               | 4   |        |                 |           |                          |         |
+|    select_ln83_fu_168_p3                                                                                        |     |        | select_ln83     | select    | auto_sel                 | 0       |
+|   + seq_product_core_Pipeline_OUTER_LOOP_INNER_LOOP (grp_seq_product_core_Pipeline_OUTER_LOOP_INNER_LOOP_fu_94) | 4   |        |                 |           |                          |         |
+|     icmp_ln36_fu_345_p2                                                                                         |     |        | icmp_ln36       | seteq     | auto                     | 0       |
+|     add_ln36_fu_351_p2                                                                                          |     |        | add_ln36        | add       | fabric                   | 0       |
+|     icmp_ln42_fu_376_p2                                                                                         |     |        | icmp_ln42       | seteq     | auto                     | 0       |
+|     select_ln36_fu_382_p3                                                                                       |     |        | select_ln36     | select    | auto_sel                 | 0       |
+|     add_ln36_1_fu_390_p2                                                                                        |     |        | add_ln36_1      | add       | fabric                   | 0       |
+|     select_ln36_1_fu_396_p3                                                                                     |     |        | select_ln36_1   | select    | auto_sel                 | 0       |
+|     sparsemux_17_3_2_1_1_U11                                                                                    |     |        | left_grade      | sparsemux | compactencoding_dontcare | 0       |
+|     sparsemux_17_3_2_1_1_U12                                                                                    |     |        | right_grade     | sparsemux | compactencoding_dontcare | 0       |
+|     out_mask_fu_571_p2                                                                                          |     |        | out_mask        | xor       | auto                     | 0       |
+|     icmp_ln31_fu_575_p2                                                                                         |     |        | icmp_ln31       | seteq     | auto                     | 0       |
+|     icmp_ln31_1_fu_581_p2                                                                                       |     |        | icmp_ln31_1     | seteq     | auto                     | 0       |
+|     sparsemux_7_2_3_1_1_U13                                                                                     |     |        | retval_0_i      | sparsemux | onehotencoding_realdef   | 0       |
+|     sparsemux_17_3_2_1_1_U14                                                                                    |     |        | out_grade       | sparsemux | compactencoding_dontcare | 0       |
+|     icmp_ln60_fu_506_p2                                                                                         |     |        | icmp_ln60       | setgt     | auto                     | 0       |
+|     sub_ln60_fu_516_p2                                                                                          |     |        | sub_ln60        | sub       | fabric                   | 0       |
+|     icmp_ln60_1_fu_659_p2                                                                                       |     |        | icmp_ln60_1     | seteq     | auto                     | 0       |
+|     and_ln53_fu_554_p2                                                                                          |     |        | and_ln53        | and       | auto                     | 0       |
+|     include_term_fu_560_p2                                                                                      |     |        | include_term    | seteq     | auto                     | 0       |
+|     xor_ln66_fu_664_p2                                                                                          |     |        | xor_ln66        | xor       | auto                     | 0       |
+|     sparsemux_5_8_3_1_1_U15                                                                                     |     |        | out_idx         | sparsemux | compactencoding_realdef  | 0       |
+|     swaps_1_fu_671_p2                                                                                           |     |        | swaps_1         | and       | auto                     | 0       |
+|     swaps_2_fu_676_p2                                                                                           |     |        | swaps_2         | xor       | auto                     | 0       |
+|     swaps_3_fu_682_p3                                                                                           |     |        | swaps_3         | select    | auto_sel                 | 0       |
+|     swaps_4_fu_697_p2                                                                                           |     |        | swaps_4         | xor       | auto                     | 0       |
+|     swaps_5_fu_703_p3                                                                                           |     |        | swaps_5         | select    | auto_sel                 | 0       |
+|     swaps_6_fu_711_p3                                                                                           |     |        | swaps_6         | select    | auto_sel                 | 0       |
+|     mul_32s_32s_64_2_1_U10                                                                                      | 4   |        | p               | mul       | auto                     | 1       |
+|     sparsemux_17_3_67_1_1_U16                                                                                   |     |        | tmp_1           | sparsemux | compactencoding_dontcare | 0       |
+|     add_ln72_fu_826_p2                                                                                          |     |        | add_ln72        | add       | fabric                   | 0       |
+|     sub_ln70_fu_831_p2                                                                                          |     |        | sub_ln70        | sub       | fabric                   | 0       |
+|     accum_8_fu_836_p3                                                                                           |     |        | accum_8         | select    | auto_sel                 | 0       |
+|     add_ln42_fu_522_p2                                                                                          |     |        | add_ln42        | add       | fabric                   | 0       |
+|   + seq_product_core_Pipeline_RESCALE_LOOP (grp_seq_product_core_Pipeline_RESCALE_LOOP_fu_114)                  | 0   |        |                 |           |                          |         |
+|     icmp_ln80_fu_231_p2                                                                                         |     |        | icmp_ln80       | seteq     | auto                     | 0       |
+|     add_ln80_fu_237_p2                                                                                          |     |        | add_ln80        | add       | fabric                   | 0       |
+|     sparsemux_17_3_67_1_1_U33                                                                                   |     |        | sum_val         | sparsemux | compactencoding_dontcare | 0       |
+|     xor_ln42_fu_345_p2                                                                                          |     |        | xor_ln42        | xor       | auto                     | 0       |
+|     icmp_ln44_fu_321_p2                                                                                         |     |        | icmp_ln44       | setgt     | auto                     | 0       |
+|     add_ln45_fu_327_p2                                                                                          |     |        | add_ln45        | add       | fabric                   | 0       |
+|     rounded_2_fu_367_p6                                                                                         |     |        | rounded_1       | select    | auto_sel                 | 0       |
+|     and_ln44_fu_355_p2                                                                                          |     |        | and_ln44        | and       | auto                     | 0       |
+|     sparsemux_7_2_52_1_1_x_U34                                                                                  |     |        | rounded_2       | sparsemux | onehotencoding_realdef   | 0       |
+|     icmp_ln57_fu_395_p2                                                                                         |     |        | icmp_ln57       | setgt     | auto                     | 0       |
+|     icmp_ln60_fu_401_p2                                                                                         |     |        | icmp_ln60       | setlt     | auto                     | 0       |
+|     or_ln60_fu_411_p2                                                                                           |     |        | or_ln60         | or        | auto                     | 0       |
+|     or_ln60_1_fu_417_p2                                                                                         |     |        | or_ln60_1       | or        | auto                     | 0       |
+|     write_flag_1_fu_423_p2                                                                                      |     |        | write_flag_1    | or        | auto                     | 0       |
+|     overflow_1_fu_429_p2                                                                                        |     |        | overflow_1      | or        | auto                     | 0       |
+|     select_ln60_fu_435_p3                                                                                       |     |        | select_ln60     | select    | auto_sel                 | 0       |
+|     empty_fu_443_p2                                                                                             |     |        | empty           | or        | auto                     | 0       |
+|     retval_0_i110_fu_449_p3                                                                                     |     |        | retval_0_i110   | select    | auto_sel                 | 0       |
+|  + seq_gpu_Pipeline_CLEAR_ERR                                                                                   | 0   |        |                 |           |                          |         |
+|    icmp_ln303_fu_68_p2                                                                                          |     |        | icmp_ln303      | seteq     | auto                     | 0       |
+|    add_ln303_fu_74_p2                                                                                           |     |        | add_ln303       | add       | fabric                   | 0       |
+|  + seq_op_grade_proj                                                                                            | 0   |        |                 |           |                          |         |
+|    icmp_ln136_fu_120_p2                                                                                         |     |        | icmp_ln136      | seteq     | auto                     | 0       |
+|    add_ln136_fu_126_p2                                                                                          |     |        | add_ln136       | add       | fabric                   | 0       |
+|    sparsemux_17_3_2_1_1_U67                                                                                     |     |        | zext_ln137_cast | sparsemux | compactencoding_dontcare | 0       |
+|    icmp_ln137_fu_185_p2                                                                                         |     |        | icmp_ln137      | seteq     | auto                     | 0       |
+|    storemerge_fu_196_p3                                                                                         |     |        | storemerge      | select    | auto_sel                 | 0       |
+|  + seq_op_scalar_mul                                                                                            | 0   |        |                 |           |                          |         |
+|    icmp_ln122_fu_166_p2                                                                                         |     |        | icmp_ln122      | seteq     | auto                     | 0       |
+|    add_ln122_fu_172_p2                                                                                          |     |        | add_ln122       | add       | fabric                   | 0       |
+|    xor_ln42_fu_237_p2                                                                                           |     |        | xor_ln42        | xor       | auto                     | 0       |
+|    icmp_ln44_fu_226_p2                                                                                          |     |        | icmp_ln44       | setgt     | auto                     | 0       |
+|    add_ln45_fu_231_p2                                                                                           |     |        | add_ln45        | add       | fabric                   | 0       |
+|    rounded_4_fu_259_p6                                                                                          |     |        | rounded_3       | select    | auto_sel                 | 0       |
+|    and_ln44_fu_247_p2                                                                                           |     |        | and_ln44        | and       | auto                     | 0       |
+|    sparsemux_7_2_49_1_1_U72                                                                                     |     |        | rounded_4       | sparsemux | onehotencoding_realdef   | 0       |
+|    icmp_ln57_fu_287_p2                                                                                          |     |        | icmp_ln57       | setgt     | auto                     | 0       |
+|    icmp_ln60_fu_293_p2                                                                                          |     |        | icmp_ln60       | setlt     | auto                     | 0       |
+|    or_ln60_fu_303_p2                                                                                            |     |        | or_ln60         | or        | auto                     | 0       |
+|    or_ln60_2_fu_309_p2                                                                                          |     |        | or_ln60_2       | or        | auto                     | 0       |
+|    write_flag_1_fu_315_p2                                                                                       |     |        | write_flag_1    | or        | auto                     | 0       |
+|    overflow_1_fu_321_p2                                                                                         |     |        | overflow_1      | or        | auto                     | 0       |
+|    select_ln60_fu_327_p3                                                                                        |     |        | select_ln60     | select    | auto_sel                 | 0       |
+|    empty_fu_335_p2                                                                                              |     |        | empty           | or        | auto                     | 0       |
+|    retval_0_i_fu_341_p3                                                                                         |     |        | retval_0_i      | select    | auto_sel                 | 0       |
+|    and_ln126_fu_350_p2                                                                                          |     |        | and_ln126       | and       | auto                     | 0       |
++-----------------------------------------------------------------------------------------------------------------+-----+--------+-----------------+-----------+--------------------------+---------+
+
+
+================================================================
+== Storage Report
+================================================================
++-----------------------------------------------------------------------------------------------------------------+--------------+-----------+------+------+--------+-------------+------+---------+------------------+
+| Name                                                                                                            | Usage        | Type      | BRAM | URAM | Pragma | Variable    | Impl | Latency | Bitwidth, Depth, |
+|                                                                                                                 |              |           |      |      |        |             |      |         | Banks            |
++-----------------------------------------------------------------------------------------------------------------+--------------+-----------+------+------+--------+-------------+------+---------+------------------+
+| + seq_gpu                                                                                                       |              |           | 0    | 0    |        |             |      |         |                  |
+|   control_s_axi_U                                                                                               | interface    | s_axilite |      |      |        |             |      |         |                  |
+|  + seq_op_sandwich                                                                                              |              |           | 0    | 0    |        |             |      |         |                  |
+|    temp_U                                                                                                       | ram_1p array |           |      |      | yes    | temp        | auto | 1       | 32, 8, 1         |
+|    a_rev_U                                                                                                      | ram_1p array |           |      |      | yes    | a_rev       | auto | 1       | 32, 8, 1         |
+|   + seq_product_core (grp_seq_product_core_fu_44)                                                               |              |           | 0    | 0    |        |             |      |         |                  |
+|   + seq_product_core_Pipeline_OUTER_LOOP_INNER_LOOP (grp_seq_product_core_Pipeline_OUTER_LOOP_INNER_LOOP_fu_94) |              |           | 0    | 0    |        |             |      |         |                  |
+|     BASIS_MASKS_U                                                                                               | rom_2p       |           |      |      |        | BASIS_MASKS | auto | 1       | 3, 8, 1          |
+|  + seq_product_core (grp_seq_product_core_fu_280)                                                               |              |           | 0    | 0    |        |             |      |         |                  |
+|   + seq_product_core_Pipeline_OUTER_LOOP_INNER_LOOP (grp_seq_product_core_Pipeline_OUTER_LOOP_INNER_LOOP_fu_94) |              |           | 0    | 0    |        |             |      |         |                  |
+|     BASIS_MASKS_U                                                                                               | rom_2p       |           |      |      |        | BASIS_MASKS | auto | 1       | 3, 8, 1          |
++-----------------------------------------------------------------------------------------------------------------+--------------+-----------+------+------+--------+-------------+------+---------+------------------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Inferred Pragmas
++-----------------+-------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------+
+| Type            | Options                                   | Location                                                                                                                                        | Inferred From                                          |
++-----------------+-------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------+
+| ARRAY_PARTITION | dim=1 type=complete variable=BASIS_GRADES | variable BASIS_GRADES in seq_gpu (../../../../HW/hls/common/include/qgpu_types.h:27)                                                            | pipeline ../../../../HW/hls/SEQ_GPU/src/seq_gpu.cpp:43 |
+| LOOP_FLATTEN    |                                           | loop OUTER_LOOP (D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:36:5) in seq_product_core (../../../../HW/hls/SEQ_GPU/src/seq_gpu.cpp:36)               | pipeline ../../../../HW/hls/SEQ_GPU/src/seq_gpu.cpp:43 |
+| PIPELINE        |                                           | loop NORM_LOOP (D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:205:5) in seq_op_rotor_norm (../../../../HW/hls/SEQ_GPU/src/seq_gpu.cpp:205)             | syn.compile.pipeline_loops=64                          |
+| PIPELINE        |                                           | loop CLEAR_REMAINING (D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:211:5) in seq_op_rotor_norm (../../../../HW/hls/SEQ_GPU/src/seq_gpu.cpp:211)       | syn.compile.pipeline_loops=64                          |
+| PIPELINE        |                                           | loop CONJ_LOOP (D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:187:5) in seq_op_clifford_conj (../../../../HW/hls/SEQ_GPU/src/seq_gpu.cpp:187)          | syn.compile.pipeline_loops=64                          |
+| PIPELINE        |                                           | loop INVOLUTION_LOOP (D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:170:5) in seq_op_grade_involution (../../../../HW/hls/SEQ_GPU/src/seq_gpu.cpp:170) | syn.compile.pipeline_loops=64                          |
+| PIPELINE        |                                           | loop REVERSE_LOOP (D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:153:5) in seq_op_reverse (../../../../HW/hls/SEQ_GPU/src/seq_gpu.cpp:153)             | syn.compile.pipeline_loops=64                          |
+| PIPELINE        |                                           | loop GRADE_LOOP (D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:136:5) in seq_op_grade_proj (../../../../HW/hls/SEQ_GPU/src/seq_gpu.cpp:136)            | syn.compile.pipeline_loops=64                          |
+| PIPELINE        |                                           | loop SCALAR_LOOP (D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:122:5) in seq_op_scalar_mul (../../../../HW/hls/SEQ_GPU/src/seq_gpu.cpp:122)           | syn.compile.pipeline_loops=64                          |
+| PIPELINE        |                                           | loop SUB_LOOP (D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:108:5) in seq_op_sub (../../../../HW/hls/SEQ_GPU/src/seq_gpu.cpp:108)                     | syn.compile.pipeline_loops=64                          |
+| PIPELINE        |                                           | loop ADD_LOOP (D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:94:5) in seq_op_add (../../../../HW/hls/SEQ_GPU/src/seq_gpu.cpp:94)                       | syn.compile.pipeline_loops=64                          |
+| PIPELINE        |                                           | loop RESCALE_LOOP (D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:80:5) in seq_product_core (../../../../HW/hls/SEQ_GPU/src/seq_gpu.cpp:80)             | syn.compile.pipeline_loops=64                          |
+| PIPELINE        |                                           | loop CLEAR_ERR (D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:303:13) in seq_gpu (../../../../HW/hls/SEQ_GPU/src/seq_gpu.cpp:303)                      | syn.compile.pipeline_loops=64                          |
++-----------------+-------------------------------------------+-------------------------------------------------------------------------------------------------------------------------------------------------+--------------------------------------------------------+
+
+* Valid Pragma Syntax
++-----------------+---------------------------------------------------------+-----------------------------------------------------------------------------+
+| Type            | Options                                                 | Location                                                                    |
++-----------------+---------------------------------------------------------+-----------------------------------------------------------------------------+
+| INLINE          | off                                                     | in seq_product_core (../../../../HW/hls/SEQ_GPU/src/seq_gpu.cpp:23)         |
+| ARRAY_PARTITION | variable=accum complete dim=1                           | in seq_product_core (../../../../HW/hls/SEQ_GPU/src/seq_gpu.cpp:25)         |
+| UNROLL          |                                                         | in seq_product_core (../../../../HW/hls/SEQ_GPU/src/seq_gpu.cpp:30)         |
+| PIPELINE        | ii=1                                                    | in seq_product_core (../../../../HW/hls/SEQ_GPU/src/seq_gpu.cpp:43)         |
+| DEPENDENCE      | variable=accum type=inter direction=RAW dependent=false | in seq_product_core (../../../../HW/hls/SEQ_GPU/src/seq_gpu.cpp:44)         |
+| DEPENDENCE      | variable=accum type=inter direction=WAR dependent=false | in seq_product_core (../../../../HW/hls/SEQ_GPU/src/seq_gpu.cpp:45)         |
+| INLINE          | off                                                     | in seq_op_add (../../../../HW/hls/SEQ_GPU/src/seq_gpu.cpp:92)               |
+| INLINE          | off                                                     | in seq_op_sub (../../../../HW/hls/SEQ_GPU/src/seq_gpu.cpp:106)              |
+| INLINE          | off                                                     | in seq_op_scalar_mul (../../../../HW/hls/SEQ_GPU/src/seq_gpu.cpp:120)       |
+| INLINE          | off                                                     | in seq_op_grade_proj (../../../../HW/hls/SEQ_GPU/src/seq_gpu.cpp:134)       |
+| INLINE          | off                                                     | in seq_op_reverse (../../../../HW/hls/SEQ_GPU/src/seq_gpu.cpp:151)          |
+| INLINE          | off                                                     | in seq_op_grade_involution (../../../../HW/hls/SEQ_GPU/src/seq_gpu.cpp:168) |
+| INLINE          | off                                                     | in seq_op_clifford_conj (../../../../HW/hls/SEQ_GPU/src/seq_gpu.cpp:185)    |
+| INLINE          | off                                                     | in seq_op_rotor_norm (../../../../HW/hls/SEQ_GPU/src/seq_gpu.cpp:202)       |
+| INLINE          | off                                                     | in seq_op_sandwich (../../../../HW/hls/SEQ_GPU/src/seq_gpu.cpp:223)         |
+| INTERFACE       | s_axilite port=return bundle=control                    | in seq_gpu (../../../../HW/hls/SEQ_GPU/src/seq_gpu.cpp:247)                 |
+| INTERFACE       | s_axilite port=opcode bundle=control                    | in seq_gpu (../../../../HW/hls/SEQ_GPU/src/seq_gpu.cpp:248)                 |
+| INTERFACE       | s_axilite port=status bundle=control                    | in seq_gpu (../../../../HW/hls/SEQ_GPU/src/seq_gpu.cpp:249)                 |
+| INTERFACE       | s_axilite port=a bundle=control                         | in seq_gpu (../../../../HW/hls/SEQ_GPU/src/seq_gpu.cpp:250)                 |
+| INTERFACE       | s_axilite port=b bundle=control                         | in seq_gpu (../../../../HW/hls/SEQ_GPU/src/seq_gpu.cpp:251)                 |
+| INTERFACE       | s_axilite port=c bundle=control                         | in seq_gpu (../../../../HW/hls/SEQ_GPU/src/seq_gpu.cpp:252)                 |
++-----------------+---------------------------------------------------------+-----------------------------------------------------------------------------+
+
+

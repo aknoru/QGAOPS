@@ -1,0 +1,224 @@
+
+
+================================================================
+== Vitis HLS Report for 'parallel_op_rotor_norm'
+================================================================
+* Date:           Fri Oct 30 00:56:37 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Project:        proj_parallel_zed
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.912 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |        5|        5|  50.000 ns|  50.000 ns|    1|    1|      yes|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 2
+HasVarLatency: 0
+IsPipeline: 1
+IsRtlPipelined: 1
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
++ Individual pipeline summary: 
+  * Pipeline-0: initiation interval (II) = 1, depth = 6
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 6
+* Pipeline : 1
+  Pipeline-0 : II = 1, D = 6, States = { 1 2 3 4 5 6 }
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 6.91>
+ST_1 : Operation 7 [1/1] (0.00ns)   --->   "%a_7_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %a_7_val" [D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:203]   --->   Operation 7 'read' 'a_7_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%a_6_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %a_6_val" [D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:203]   --->   Operation 8 'read' 'a_6_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%a_5_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %a_5_val" [D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:203]   --->   Operation 9 'read' 'a_5_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 10 [1/1] (0.00ns)   --->   "%a_4_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %a_4_val" [D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:203]   --->   Operation 10 'read' 'a_4_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "%a_3_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %a_3_val" [D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:203]   --->   Operation 11 'read' 'a_3_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "%a_2_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %a_2_val" [D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:203]   --->   Operation 12 'read' 'a_2_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "%a_1_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %a_1_val" [D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:203]   --->   Operation 13 'read' 'a_1_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "%a_0_val_read = read i32 @_ssdm_op_Read.ap_auto.i32, i32 %a_0_val" [D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:203]   --->   Operation 14 'read' 'a_0_val_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "%sext_ln208 = sext i32 %a_0_val_read" [D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:208]   --->   Operation 15 'sext' 'sext_ln208' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 16 [2/2] (6.91ns)   --->   "%p_234 = mul i64 %sext_ln208, i64 %sext_ln208" [D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:208]   --->   Operation 16 'mul' 'p_234' <Predicate = true> <Delay = 6.91> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 1> <II = 1> <Delay = 6.91> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%sext_ln208_1 = sext i32 %a_1_val_read" [D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:208]   --->   Operation 17 'sext' 'sext_ln208_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [2/2] (6.91ns)   --->   "%p = mul i64 %sext_ln208_1, i64 %sext_ln208_1" [D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:208]   --->   Operation 18 'mul' 'p' <Predicate = true> <Delay = 6.91> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 1> <II = 1> <Delay = 6.91> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "%sext_ln208_2 = sext i32 %a_2_val_read" [D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:208]   --->   Operation 19 'sext' 'sext_ln208_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [2/2] (6.91ns)   --->   "%p_228 = mul i64 %sext_ln208_2, i64 %sext_ln208_2" [D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:208]   --->   Operation 20 'mul' 'p_228' <Predicate = true> <Delay = 6.91> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 1> <II = 1> <Delay = 6.91> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%sext_ln208_4 = sext i32 %a_4_val_read" [D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:208]   --->   Operation 21 'sext' 'sext_ln208_4' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [2/2] (6.91ns)   --->   "%p_230 = mul i64 %sext_ln208_4, i64 %sext_ln208_4" [D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:208]   --->   Operation 22 'mul' 'p_230' <Predicate = true> <Delay = 6.91> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 1> <II = 1> <Delay = 6.91> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "%sext_ln208_5 = sext i32 %a_5_val_read" [D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:208]   --->   Operation 23 'sext' 'sext_ln208_5' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [2/2] (6.91ns)   --->   "%p_231 = mul i64 %sext_ln208_5, i64 %sext_ln208_5" [D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:208]   --->   Operation 24 'mul' 'p_231' <Predicate = true> <Delay = 6.91> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 1> <II = 1> <Delay = 6.91> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_1 : Operation 25 [1/1] (0.00ns)   --->   "%sext_ln208_6 = sext i32 %a_6_val_read" [D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:208]   --->   Operation 25 'sext' 'sext_ln208_6' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 26 [2/2] (6.91ns)   --->   "%p_232 = mul i64 %sext_ln208_6, i64 %sext_ln208_6" [D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:208]   --->   Operation 26 'mul' 'p_232' <Predicate = true> <Delay = 6.91> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 1> <II = 1> <Delay = 6.91> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 2 <SV = 1> <Delay = 6.91>
+ST_2 : Operation 27 [1/2] (6.91ns)   --->   "%p_234 = mul i64 %sext_ln208, i64 %sext_ln208" [D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:208]   --->   Operation 27 'mul' 'p_234' <Predicate = true> <Delay = 6.91> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 1> <II = 1> <Delay = 6.91> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 28 [1/2] (6.91ns)   --->   "%p = mul i64 %sext_ln208_1, i64 %sext_ln208_1" [D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:208]   --->   Operation 28 'mul' 'p' <Predicate = true> <Delay = 6.91> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 1> <II = 1> <Delay = 6.91> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 29 [1/2] (6.91ns)   --->   "%p_228 = mul i64 %sext_ln208_2, i64 %sext_ln208_2" [D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:208]   --->   Operation 29 'mul' 'p_228' <Predicate = true> <Delay = 6.91> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 1> <II = 1> <Delay = 6.91> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 30 [1/1] (0.00ns)   --->   "%sext_ln208_3 = sext i32 %a_3_val_read" [D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:208]   --->   Operation 30 'sext' 'sext_ln208_3' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 31 [2/2] (6.91ns)   --->   "%p_229 = mul i64 %sext_ln208_3, i64 %sext_ln208_3" [D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:208]   --->   Operation 31 'mul' 'p_229' <Predicate = true> <Delay = 6.91> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 1> <II = 1> <Delay = 6.91> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 32 [1/2] (6.91ns)   --->   "%p_230 = mul i64 %sext_ln208_4, i64 %sext_ln208_4" [D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:208]   --->   Operation 32 'mul' 'p_230' <Predicate = true> <Delay = 6.91> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 1> <II = 1> <Delay = 6.91> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 33 [1/2] (6.91ns)   --->   "%p_231 = mul i64 %sext_ln208_5, i64 %sext_ln208_5" [D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:208]   --->   Operation 33 'mul' 'p_231' <Predicate = true> <Delay = 6.91> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 1> <II = 1> <Delay = 6.91> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_2 : Operation 34 [1/2] (6.91ns)   --->   "%p_232 = mul i64 %sext_ln208_6, i64 %sext_ln208_6" [D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:208]   --->   Operation 34 'mul' 'p_232' <Predicate = true> <Delay = 6.91> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 1> <II = 1> <Delay = 6.91> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+
+State 3 <SV = 2> <Delay = 6.91>
+ST_3 : Operation 35 [1/1] (0.00ns)   --->   "%sext_ln204 = sext i64 %p_234" [D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:204]   --->   Operation 35 'sext' 'sext_ln204' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 36 [1/1] (0.00ns)   --->   "%sext_ln208_8 = sext i64 %p" [D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:208]   --->   Operation 36 'sext' 'sext_ln208_8' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 37 [1/1] (0.00ns)   --->   "%sext_ln208_9 = sext i64 %p_228" [D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:208]   --->   Operation 37 'sext' 'sext_ln208_9' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 38 [1/2] (6.91ns)   --->   "%p_229 = mul i64 %sext_ln208_3, i64 %sext_ln208_3" [D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:208]   --->   Operation 38 'mul' 'p_229' <Predicate = true> <Delay = 6.91> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 1> <II = 1> <Delay = 6.91> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 39 [1/1] (0.00ns)   --->   "%sext_ln208_11 = sext i64 %p_230" [D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:208]   --->   Operation 39 'sext' 'sext_ln208_11' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 40 [1/1] (0.00ns)   --->   "%sext_ln208_12 = sext i64 %p_231" [D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:208]   --->   Operation 40 'sext' 'sext_ln208_12' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 41 [1/1] (0.00ns)   --->   "%sext_ln208_13 = sext i64 %p_232" [D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:208]   --->   Operation 41 'sext' 'sext_ln208_13' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 42 [1/1] (0.00ns)   --->   "%sext_ln208_7 = sext i32 %a_7_val_read" [D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:208]   --->   Operation 42 'sext' 'sext_ln208_7' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 43 [2/2] (6.91ns)   --->   "%p_233 = mul i64 %sext_ln208_7, i64 %sext_ln208_7" [D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:208]   --->   Operation 43 'mul' 'p_233' <Predicate = true> <Delay = 6.91> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 1> <II = 1> <Delay = 6.91> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 44 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln209 = add i65 %sext_ln204, i65 %sext_ln208_9" [D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:209]   --->   Operation 44 'add' 'add_ln209' <Predicate = true> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 2.68> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_3 : Operation 45 [1/1] (5.33ns) (root node of TernaryAdder)   --->   "%add_ln209_1 = add i65 %add_ln209, i65 %sext_ln208_8" [D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:209]   --->   Operation 45 'add' 'add_ln209_1' <Predicate = true> <Delay = 5.33> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 2.68> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_3 : Operation 46 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln209_3 = add i65 %sext_ln208_12, i65 %sext_ln208_13" [D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:209]   --->   Operation 46 'add' 'add_ln209_3' <Predicate = true> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 2.68> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_3 : Operation 47 [1/1] (5.33ns) (root node of TernaryAdder)   --->   "%add_ln209_4 = add i65 %add_ln209_3, i65 %sext_ln208_11" [D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:209]   --->   Operation 47 'add' 'add_ln209_4' <Predicate = true> <Delay = 5.33> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 2.68> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+
+State 4 <SV = 3> <Delay = 6.91>
+ST_4 : Operation 48 [1/1] (0.00ns)   --->   "%sext_ln208_10 = sext i64 %p_229" [D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:208]   --->   Operation 48 'sext' 'sext_ln208_10' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 49 [1/2] (6.91ns)   --->   "%p_233 = mul i64 %sext_ln208_7, i64 %sext_ln208_7" [D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:208]   --->   Operation 49 'mul' 'p_233' <Predicate = true> <Delay = 6.91> <CoreInst = "Multiplier">   --->   Core 3 'Multiplier' <Latency = 1> <II = 1> <Delay = 6.91> <FuncUnit> <Opcode : 'mul'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 50 [1/1] (0.00ns)   --->   "%sext_ln209_1 = sext i65 %add_ln209_1" [D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:209]   --->   Operation 50 'sext' 'sext_ln209_1' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 51 [1/1] (0.00ns) (grouped into TernaryAdder)   --->   "%add_ln209_2 = add i66 %sext_ln209_1, i66 %sext_ln208_10" [D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:209]   --->   Operation 51 'add' 'add_ln209_2' <Predicate = true> <Delay = 0.00> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 2.68> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+ST_4 : Operation 52 [1/1] (0.00ns)   --->   "%sext_ln209_3 = sext i65 %add_ln209_4" [D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:209]   --->   Operation 52 'sext' 'sext_ln209_3' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 53 [1/1] (5.36ns) (root node of TernaryAdder)   --->   "%add_ln209_5 = add i66 %sext_ln209_3, i66 %add_ln209_2" [D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:209]   --->   Operation 53 'add' 'add_ln209_5' <Predicate = true> <Delay = 5.36> <CoreInst = "TAddSub">   --->   Core 10 'TAddSub' <Latency = 0> <II = 1> <Delay = 2.68> <IPBlock> <Opcode : 'add' 'sub'> <InPorts = 3> <OutPorts = 1> <Sync> <CReg>
+
+State 5 <SV = 4> <Delay = 6.76>
+ST_5 : Operation 54 [1/1] (0.00ns)   --->   "%sext_ln209 = sext i64 %p_233" [D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:209]   --->   Operation 54 'sext' 'sext_ln209' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 55 [1/1] (0.00ns)   --->   "%sext_ln209_2 = sext i66 %add_ln209_5" [D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:209]   --->   Operation 55 'sext' 'sext_ln209_2' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 56 [1/1] (3.57ns)   --->   "%sum_sq = add i67 %sext_ln209_2, i67 %sext_ln209" [D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:209]   --->   Operation 56 'add' 'sum_sq' <Predicate = true> <Delay = 3.57> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 3.57> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 57 [1/1] (0.00ns)   --->   "%r = trunc i67 %sum_sq" [D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:204]   --->   Operation 57 'trunc' 'r' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 58 [1/1] (0.00ns)   --->   "%tmp_120 = bitselect i1 @_ssdm_op_BitSelect.i1.i67.i32, i67 %sum_sq, i32 16" [D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h:38->D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:211]   --->   Operation 58 'bitselect' 'tmp_120' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 59 [1/1] (0.00ns)   --->   "%tmp = partselect i51 @_ssdm_op_PartSelect.i51.i67.i32.i32, i67 %sum_sq, i32 16, i32 66" [D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h:38->D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:211]   --->   Operation 59 'partselect' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 60 [1/1] (0.00ns)   --->   "%zext_ln38 = zext i51 %tmp" [D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h:38->D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:211]   --->   Operation 60 'zext' 'zext_ln38' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 61 [1/1] (0.00ns)   --->   "%tmp_121 = bitselect i1 @_ssdm_op_BitSelect.i1.i67.i32, i67 %sum_sq, i32 15" [D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h:42->D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:211]   --->   Operation 61 'bitselect' 'tmp_121' <Predicate = true> <Delay = 0.00>
+ST_5 : Operation 62 [1/1] (2.07ns)   --->   "%icmp_ln44 = icmp_ugt  i16 %r, i16 32768" [D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h:44->D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:211]   --->   Operation 62 'icmp' 'icmp_ln44' <Predicate = true> <Delay = 2.07> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 63 [1/1] (3.18ns)   --->   "%add_ln45 = add i52 %zext_ln38, i52 1" [D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h:45->D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:211]   --->   Operation 63 'add' 'add_ln45' <Predicate = true> <Delay = 3.18> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 3.18> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_5 : Operation 64 [1/1] (0.97ns)   --->   "%and_ln44 = and i1 %icmp_ln44, i1 %tmp_121" [D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h:44->D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:211]   --->   Operation 64 'and' 'and_ln44' <Predicate = true> <Delay = 0.97> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+
+State 6 <SV = 5> <Delay = 5.52>
+ST_6 : Operation 65 [1/1] (0.00ns)   --->   "%specpipeline_ln203 = specpipeline void @_ssdm_op_SpecPipeline, i32 1, i32 0, i32 0, i32 0, i32 4294967295, void @empty_27" [D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:203]   --->   Operation 65 'specpipeline' 'specpipeline_ln203' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 66 [1/1] (0.97ns)   --->   "%xor_ln42 = xor i1 %tmp_121, i1 1" [D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h:42->D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:211]   --->   Operation 66 'xor' 'xor_ln42' <Predicate = true> <Delay = 0.97> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 67 [1/1] (0.95ns)   --->   "%rounded = select i1 %tmp_120, i52 %add_ln45, i52 %zext_ln38" [D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h:49->D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:211]   --->   Operation 67 'select' 'rounded' <Predicate = true> <Delay = 0.95> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_6 : Operation 68 [1/1] (0.00ns)   --->   "%sel_tmp2 = bitconcatenate i2 @_ssdm_op_BitConcatenate.i2.i1.i1, i1 %xor_ln42, i1 %and_ln44" [D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h:42->D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:211]   --->   Operation 68 'bitconcatenate' 'sel_tmp2' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 69 [1/1] (1.58ns)   --->   "%rounded_69 = sparsemux i52 @_ssdm_op_SparseMux.ap_auto.3i52.i52.i2, i2 2, i52 %zext_ln38, i2 1, i52 %add_ln45, i2 0, i52 %rounded, i52 0, i2 %sel_tmp2" [D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h:38->D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:211]   --->   Operation 69 'sparsemux' 'rounded_69' <Predicate = true> <Delay = 1.58> <CoreInst = "OneHotSparseMux_HasDef">   --->   Core 140 'OneHotSparseMux_HasDef' <Latency = 0> <II = 1> <Delay = 1.58> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 70 [1/1] (0.00ns)   --->   "%tmp_122 = partselect i21 @_ssdm_op_PartSelect.i21.i52.i32.i32, i52 %rounded_69, i32 31, i32 51" [D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h:57->D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:211]   --->   Operation 70 'partselect' 'tmp_122' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 71 [1/1] (2.22ns)   --->   "%icmp_ln57 = icmp_ne  i21 %tmp_122, i21 0" [D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h:57->D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:211]   --->   Operation 71 'icmp' 'icmp_ln57' <Predicate = true> <Delay = 2.22> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.22> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 72 [1/1] (0.00ns)   --->   "%trunc_ln64 = trunc i52 %rounded_69" [D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h:64->D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:211]   --->   Operation 72 'trunc' 'trunc_ln64' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 73 [1/1] (0.73ns)   --->   "%select_ln57 = select i1 %icmp_ln57, i31 2147483647, i31 %trunc_ln64" [D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h:57->D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:211]   --->   Operation 73 'select' 'select_ln57' <Predicate = true> <Delay = 0.73> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.73> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_6 : Operation 74 [1/1] (0.00ns)   --->   "%zext_ln199 = zext i31 %select_ln57" [D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:199]   --->   Operation 74 'zext' 'zext_ln199' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 75 [1/1] (0.00ns)   --->   "%newret = insertvalue i33 <undef>, i32 %zext_ln199" [D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:199]   --->   Operation 75 'insertvalue' 'newret' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 76 [1/1] (0.00ns)   --->   "%newret2 = insertvalue i33 %newret, i1 %icmp_ln57" [D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:199]   --->   Operation 76 'insertvalue' 'newret2' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 77 [1/1] (0.00ns)   --->   "%ret_ln199 = ret i33 %newret2" [D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:199]   --->   Operation 77 'ret' 'ret_ln199' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 6.912ns
+The critical path consists of the following:
+	wire read operation ('a_0_val_read', D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:203) on port 'a_0_val' (D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:203) [16]  (0.000 ns)
+	'mul' operation 64 bit ('p', D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:208) [19]  (6.912 ns)
+
+ <State 2>: 6.912ns
+The critical path consists of the following:
+	'mul' operation 64 bit ('p', D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:208) [19]  (6.912 ns)
+
+ <State 3>: 6.912ns
+The critical path consists of the following:
+	'mul' operation 64 bit ('p', D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:208) [28]  (6.912 ns)
+
+ <State 4>: 6.912ns
+The critical path consists of the following:
+	'mul' operation 64 bit ('p', D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:208) [40]  (6.912 ns)
+
+ <State 5>: 6.762ns
+The critical path consists of the following:
+	'add' operation 67 bit ('sum_sq', D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:209) [51]  (3.577 ns)
+	'add' operation 52 bit ('add_ln45', D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h:45->D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:211) [59]  (3.185 ns)
+
+ <State 6>: 5.525ns
+The critical path consists of the following:
+	'xor' operation 1 bit ('xor_ln42', D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h:42->D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:211) [57]  (0.978 ns)
+	'sparsemux' operation 52 bit ('rounded', D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h:38->D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:211) [63]  (1.588 ns)
+	'icmp' operation 1 bit ('overflow', D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h:57->D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:211) [65]  (2.225 ns)
+	'select' operation 31 bit ('c', D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h:57->D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:211) [67]  (0.733 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

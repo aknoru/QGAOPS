@@ -1,0 +1,35 @@
+{
+  "test": "h_on_zero",
+  "description": "|0\u27e9 \u2192 H \u2192 |+\u27e9",
+  "circuit": [
+    "|0>",
+    "H"
+  ],
+  "input_state": {
+    "metric": "G(3,0,0)",
+    "coefficients": {
+      "4": 1.0
+    },
+    "num_active": 1,
+    "density": 0.125
+  },
+  "expected_float32": {
+    "metric": "G(3,0,0)",
+    "coefficients": {
+      "1": 0.9999999999999998
+    },
+    "num_active": 1,
+    "density": 0.125
+  },
+  "expected_state_plus": {
+    "metric": "G(3,0,0)",
+    "coefficients": {
+      "1": 1.0
+    },
+    "num_active": 1,
+    "density": 0.125
+  },
+  "norm_error_vs_expected": 0.0,
+  "passed": true,
+  "notes": "[GOLDEN] H gate on ground state. Error vs |+\u27e9."
+}

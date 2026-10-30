@@ -1,0 +1,24 @@
+[
+  {
+    "csim": false,
+    "functionLabel": "",
+    "functionName": "seq_gpu",
+    "id": 0,
+    "ifcond": "",
+    "insert_position": "",
+    "label": "",
+    "pragma": {
+      "name": "TOP",
+      "option": [
+        {
+          "name": "name",
+          "value": "seq_gpu"
+        }
+      ]
+    },
+    "slx": false,
+    "sourceFile": "D:/QGPU/zedboard/vitis_hls/SEQ_GPU_ZED/run_hls_zed.tcl",
+    "sourceLine": 18,
+    "success": true
+  }
+]

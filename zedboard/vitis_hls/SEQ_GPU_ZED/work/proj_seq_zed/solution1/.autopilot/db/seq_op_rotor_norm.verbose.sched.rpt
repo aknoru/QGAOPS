@@ -1,0 +1,183 @@
+
+
+================================================================
+== Vitis HLS Report for 'seq_op_rotor_norm'
+================================================================
+* Date:           Fri Oct 30 00:54:50 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Project:        proj_seq_zed
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.912 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |       27|       27|  0.270 us|  0.270 us|   27|   27|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 0
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 7
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 8 [1/1] (0.00ns)   --->   "%sum_sq_loc = alloca i64 1"   --->   Operation 8 'alloca' 'sum_sq_loc' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 9 [2/2] (0.00ns)   --->   "%call_ln0 = call void @seq_op_rotor_norm_Pipeline_NORM_LOOP, i32 %a, i67 %sum_sq_loc"   --->   Operation 9 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 10 [1/2] (0.00ns)   --->   "%call_ln0 = call void @seq_op_rotor_norm_Pipeline_NORM_LOOP, i32 %a, i67 %sum_sq_loc"   --->   Operation 10 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 3 <SV = 2> <Delay = 5.72>
+ST_3 : Operation 11 [1/1] (0.00ns)   --->   "%sum_sq_loc_load = load i67 %sum_sq_loc"   --->   Operation 11 'load' 'sum_sq_loc_load' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 12 [1/1] (0.00ns)   --->   "%r = trunc i67 %sum_sq_loc_load" [D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:205]   --->   Operation 12 'trunc' 'r' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 13 [1/1] (0.00ns)   --->   "%tmp_7 = bitselect i1 @_ssdm_op_BitSelect.i1.i67.i32, i67 %sum_sq_loc_load, i32 16" [D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_fixed_point.h:38->D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:209]   --->   Operation 13 'bitselect' 'tmp_7' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 14 [1/1] (0.00ns)   --->   "%tmp = partselect i51 @_ssdm_op_PartSelect.i51.i67.i32.i32, i67 %sum_sq_loc_load, i32 16, i32 66" [D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_fixed_point.h:38->D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:209]   --->   Operation 14 'partselect' 'tmp' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 15 [1/1] (0.00ns)   --->   "%zext_ln38 = zext i51 %tmp" [D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_fixed_point.h:38->D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:209]   --->   Operation 15 'zext' 'zext_ln38' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 16 [1/1] (0.00ns)   --->   "%tmp_8 = bitselect i1 @_ssdm_op_BitSelect.i1.i67.i32, i67 %sum_sq_loc_load, i32 15" [D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_fixed_point.h:42->D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:209]   --->   Operation 16 'bitselect' 'tmp_8' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 17 [1/1] (0.97ns)   --->   "%xor_ln42 = xor i1 %tmp_8, i1 1" [D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_fixed_point.h:42->D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:209]   --->   Operation 17 'xor' 'xor_ln42' <Predicate = true> <Delay = 0.97> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 18 [1/1] (2.07ns)   --->   "%icmp_ln44 = icmp_ugt  i16 %r, i16 32768" [D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_fixed_point.h:44->D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:209]   --->   Operation 18 'icmp' 'icmp_ln44' <Predicate = true> <Delay = 2.07> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.07> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 19 [1/1] (3.18ns)   --->   "%add_ln45 = add i52 %zext_ln38, i52 1" [D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_fixed_point.h:45->D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:209]   --->   Operation 19 'add' 'add_ln45' <Predicate = true> <Delay = 3.18> <CoreInst = "Adder">   --->   Core 1 'Adder' <Latency = 0> <II = 1> <Delay = 3.18> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 20 [1/1] (0.95ns)   --->   "%rounded = select i1 %tmp_7, i52 %add_ln45, i52 %zext_ln38" [D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_fixed_point.h:49->D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:209]   --->   Operation 20 'select' 'rounded' <Predicate = true> <Delay = 0.95> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.95> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_3 : Operation 21 [1/1] (0.97ns)   --->   "%and_ln44 = and i1 %icmp_ln44, i1 %tmp_8" [D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_fixed_point.h:44->D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:209]   --->   Operation 21 'and' 'and_ln44' <Predicate = true> <Delay = 0.97> <CoreInst = "LogicGate">   --->   Core 74 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.97> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 22 [1/1] (0.00ns)   --->   "%sel_tmp2 = bitconcatenate i2 @_ssdm_op_BitConcatenate.i2.i1.i1, i1 %xor_ln42, i1 %and_ln44" [D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_fixed_point.h:42->D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:209]   --->   Operation 22 'bitconcatenate' 'sel_tmp2' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 23 [1/1] (1.58ns)   --->   "%rounded_5 = sparsemux i52 @_ssdm_op_SparseMux.ap_auto.3i52.i52.i2, i2 2, i52 %zext_ln38, i2 1, i52 %add_ln45, i2 0, i52 %rounded, i52 0, i2 %sel_tmp2" [D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_fixed_point.h:38->D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:209]   --->   Operation 23 'sparsemux' 'rounded_5' <Predicate = true> <Delay = 1.58> <CoreInst = "OneHotSparseMux_HasDef">   --->   Core 140 'OneHotSparseMux_HasDef' <Latency = 0> <II = 1> <Delay = 1.58> <FuncUnit> <Opcode : 'sparsemux'> <InPorts = 2> <OutPorts = 1>
+ST_3 : Operation 24 [1/1] (0.00ns)   --->   "%tmp_9 = partselect i21 @_ssdm_op_PartSelect.i21.i52.i32.i32, i52 %rounded_5, i32 31, i32 51" [D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_fixed_point.h:57->D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:209]   --->   Operation 24 'partselect' 'tmp_9' <Predicate = true> <Delay = 0.00>
+ST_3 : Operation 25 [1/1] (0.00ns)   --->   "%trunc_ln64 = trunc i52 %rounded_5" [D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_fixed_point.h:64->D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:209]   --->   Operation 25 'trunc' 'trunc_ln64' <Predicate = true> <Delay = 0.00>
+
+State 4 <SV = 3> <Delay = 2.95>
+ST_4 : Operation 26 [1/1] (2.22ns)   --->   "%icmp_ln57 = icmp_ne  i21 %tmp_9, i21 0" [D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_fixed_point.h:57->D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:209]   --->   Operation 26 'icmp' 'icmp_ln57' <Predicate = true> <Delay = 2.22> <CoreInst = "Cmp">   --->   Core 9 'Cmp' <Latency = 0> <II = 1> <Delay = 2.22> <FuncUnit> <Opcode : 'seteq' 'setne' 'setle' 'setge' 'setlt' 'setgt'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 27 [1/1] (0.73ns)   --->   "%select_ln57 = select i1 %icmp_ln57, i31 2147483647, i31 %trunc_ln64" [D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_fixed_point.h:57->D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:209]   --->   Operation 27 'select' 'select_ln57' <Predicate = true> <Delay = 0.73> <CoreInst = "Sel">   --->   Core 73 'Sel' <Latency = 0> <II = 1> <Delay = 0.73> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_4 : Operation 28 [1/1] (0.00ns)   --->   "%zext_ln209 = zext i31 %select_ln57" [D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:209]   --->   Operation 28 'zext' 'zext_ln209' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 29 [1/1] (0.00ns)   --->   "%c_addr = getelementptr i32 %c, i64 0, i64 0" [D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:209]   --->   Operation 29 'getelementptr' 'c_addr' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 30 [2/2] (0.00ns)   --->   "%store_ln209 = store i32 %zext_ln209, i3 %c_addr" [D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:209]   --->   Operation 30 'store' 'store_ln209' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P">   --->   Core 85 'RAM_1P' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 32> <Depth = 8> <RAM>
+
+State 5 <SV = 4> <Delay = 0.00>
+ST_5 : Operation 31 [1/2] ( I:0.00ns O:0.00ns )   --->   "%store_ln209 = store i32 %zext_ln209, i3 %c_addr" [D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:209]   --->   Operation 31 'store' 'store_ln209' <Predicate = true> <Delay = 0.00> <CoreInst = "RAM_1P">   --->   Core 85 'RAM_1P' <Latency = 1> <II = 1> <Delay = 2.32> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 32> <Depth = 8> <RAM>
+
+State 6 <SV = 5> <Delay = 0.00>
+ST_6 : Operation 32 [2/2] (0.00ns)   --->   "%call_ln0 = call void @seq_op_rotor_norm_Pipeline_CLEAR_REMAINING, i32 %c"   --->   Operation 32 'call' 'call_ln0' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Generic Core
+
+State 7 <SV = 6> <Delay = 4.91>
+ST_7 : Operation 33 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %c, i64 666, i64 207, i64 1, i1 0"   --->   Operation 33 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 34 [1/1] (0.00ns)   --->   "%specmemcore_ln0 = specmemcore void @_ssdm_op_SpecMemCore, i32 %a, i64 666, i64 207, i64 1, i1 0"   --->   Operation 34 'specmemcore' 'specmemcore_ln0' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 35 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %c, void @empty_3, i32 0, i32 0, void @empty_0, i32 1, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 35 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 36 [1/1] (0.00ns)   --->   "%specinterface_ln0 = specinterface void @_ssdm_op_SpecInterface, i32 %a, void @empty_3, i32 0, i32 0, void @empty_0, i32 1, i32 0, void @empty_0, void @empty_0, void @empty_0, i32 0, i32 0, i32 0, i32 0, void @empty_0, void @empty_0, i32 4294967295, i32 0, i32 0, i32 0"   --->   Operation 36 'specinterface' 'specinterface_ln0' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 37 [1/2] (4.91ns)   --->   "%call_ln0 = call void @seq_op_rotor_norm_Pipeline_CLEAR_REMAINING, i32 %c"   --->   Operation 37 'call' 'call_ln0' <Predicate = true> <Delay = 4.91> <CoreType = "Generic">   --->   Generic Core
+ST_7 : Operation 38 [1/1] (0.00ns)   --->   "%ret_ln214 = ret i1 %icmp_ln57" [D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:214]   --->   Operation 38 'ret' 'ret_ln214' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10.000ns, clock uncertainty: 2.700ns.
+
+ <State 1>: 0.000ns
+The critical path consists of the following:
+
+ <State 2>: 0.000ns
+The critical path consists of the following:
+
+ <State 3>: 5.727ns
+The critical path consists of the following:
+	'load' operation 67 bit ('sum_sq_loc_load') on local variable 'sum_sq_loc' [9]  (0.000 ns)
+	'add' operation 52 bit ('add_ln45', D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_fixed_point.h:45->D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:209) [17]  (3.185 ns)
+	'select' operation 52 bit ('rounded', D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_fixed_point.h:49->D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:209) [18]  (0.954 ns)
+	'sparsemux' operation 52 bit ('rounded', D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_fixed_point.h:38->D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:209) [21]  (1.588 ns)
+
+ <State 4>: 2.959ns
+The critical path consists of the following:
+	'icmp' operation 1 bit ('overflow', D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_fixed_point.h:57->D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:209) [23]  (2.225 ns)
+	'select' operation 31 bit ('select_ln57', D:/QGPU/HW/hls/SEQ_GPU/include/../../common/include/qgpu_fixed_point.h:57->D:/QGPU/HW/hls/SEQ_GPU/src/seq_gpu.cpp:209) [25]  (0.733 ns)
+
+ <State 5>: 0.000ns
+The critical path consists of the following:
+
+ <State 6>: 0.000ns
+The critical path consists of the following:
+
+ <State 7>: 4.911ns
+The critical path consists of the following:
+	'call' operation ('call_ln0') to 'seq_op_rotor_norm_Pipeline_CLEAR_REMAINING' [29]  (4.911 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

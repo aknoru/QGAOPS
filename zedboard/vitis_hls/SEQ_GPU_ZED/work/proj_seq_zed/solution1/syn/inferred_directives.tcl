@@ -1,0 +1,15 @@
+# Inferred from syn.compile.pipeline_loops=64
+set_directive_pipeline seq_op_rotor_norm/NORM_LOOP
+set_directive_pipeline seq_op_rotor_norm/CLEAR_REMAINING
+set_directive_pipeline seq_op_clifford_conj/CONJ_LOOP
+set_directive_pipeline seq_op_grade_involution/INVOLUTION_LOOP
+set_directive_pipeline seq_op_reverse/REVERSE_LOOP
+set_directive_pipeline seq_op_grade_proj/GRADE_LOOP
+set_directive_pipeline seq_op_scalar_mul/SCALAR_LOOP
+set_directive_pipeline seq_op_sub/SUB_LOOP
+set_directive_pipeline seq_op_add/ADD_LOOP
+set_directive_pipeline seq_product_core/RESCALE_LOOP
+set_directive_pipeline seq_gpu/CLEAR_ERR
+# Inferred from performance & pipeline pragmas/directives
+set_directive_array_partition seq_gpu/BASIS_GRADES -dim=1 -type=complete BASIS_GRADES
+set_directive_loop_flatten seq_product_core/OUTER_LOOP

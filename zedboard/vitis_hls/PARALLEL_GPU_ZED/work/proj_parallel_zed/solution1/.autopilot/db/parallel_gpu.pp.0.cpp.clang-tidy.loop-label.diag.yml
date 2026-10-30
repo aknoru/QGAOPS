@@ -1,0 +1,76 @@
+---
+MainSourceFile:  'D:/QGPU/zedboard/vitis_hls/PARALLEL_GPU_ZED/work/proj_parallel_zed/solution1/.autopilot/db/parallel_gpu.pp.0.cpp'
+Diagnostics:
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_48_1:  '
+      FilePath:        'D:\QGPU\HW\hls\common\include\qgpu_types.h'
+      FileOffset:      48
+      Replacements:
+        - FilePath:        'D:\QGPU\zedboard\vitis_hls\PARALLEL_GPU_ZED\work\proj_parallel_zed\solution1\.autopilot\db\parallel_gpu.pp.0.cpp'
+          Offset:          18253
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_48_1: '
+    Level:           Remark
+    BuildDirectory:  'D:\QGPU\zedboard\vitis_hls\PARALLEL_GPU_ZED\work'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_50_2:  '
+      FilePath:        'D:\QGPU\HW\hls\common\include\qgpu_types.h'
+      FileOffset:      50
+      Replacements:
+        - FilePath:        'D:\QGPU\zedboard\vitis_hls\PARALLEL_GPU_ZED\work\proj_parallel_zed\solution1\.autopilot\db\parallel_gpu.pp.0.cpp'
+          Offset:          18359
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_50_2: '
+    Level:           Remark
+    BuildDirectory:  'D:\QGPU\zedboard\vitis_hls\PARALLEL_GPU_ZED\work'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_676_1:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\ap_int_ref.h'
+      FileOffset:      676
+      Replacements:
+        - FilePath:        'D:\QGPU\zedboard\vitis_hls\PARALLEL_GPU_ZED\work\proj_parallel_zed\solution1\.autopilot\db\parallel_gpu.pp.0.cpp'
+          Offset:          290322
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_676_1: '
+    Level:           Remark
+    BuildDirectory:  'D:\QGPU\zedboard\vitis_hls\PARALLEL_GPU_ZED\work'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_690_1:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\ap_int_ref.h'
+      FileOffset:      690
+      Replacements:
+        - FilePath:        'D:\QGPU\zedboard\vitis_hls\PARALLEL_GPU_ZED\work\proj_parallel_zed\solution1\.autopilot\db\parallel_gpu.pp.0.cpp'
+          Offset:          290797
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_690_1: '
+    Level:           Remark
+    BuildDirectory:  'D:\QGPU\zedboard\vitis_hls\PARALLEL_GPU_ZED\work'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_704_1:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\ap_int_ref.h'
+      FileOffset:      704
+      Replacements:
+        - FilePath:        'D:\QGPU\zedboard\vitis_hls\PARALLEL_GPU_ZED\work\proj_parallel_zed\solution1\.autopilot\db\parallel_gpu.pp.0.cpp'
+          Offset:          291273
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_704_1: '
+    Level:           Remark
+    BuildDirectory:  'D:\QGPU\zedboard\vitis_hls\PARALLEL_GPU_ZED\work'
+  - DiagnosticName:  xilinx-label-all-loops
+    DiagnosticMessage:
+      Message:         'Added loop label VITIS_LOOP_1251_1:  '
+      FilePath:        'C:\AMDDesignTools\2025.2\Vitis\common\technology\autopilot\etc\ap_fixed_base.h'
+      FileOffset:      1251
+      Replacements:
+        - FilePath:        'D:\QGPU\zedboard\vitis_hls\PARALLEL_GPU_ZED\work\proj_parallel_zed\solution1\.autopilot\db\parallel_gpu.pp.0.cpp'
+          Offset:          633197
+          Length:          0
+          ReplacementText: 'VITIS_LOOP_1251_1: '
+    Level:           Remark
+    BuildDirectory:  'D:\QGPU\zedboard\vitis_hls\PARALLEL_GPU_ZED\work'
+...

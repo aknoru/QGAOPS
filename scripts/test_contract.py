@@ -1,3 +1,8 @@
+import sys
+from pathlib import Path
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
+
 from software.hardware_interface.contract import OperationRequest, deserialize, serialize
 from software.reference_model.qgaops_reference import FixedPointMultivector
 

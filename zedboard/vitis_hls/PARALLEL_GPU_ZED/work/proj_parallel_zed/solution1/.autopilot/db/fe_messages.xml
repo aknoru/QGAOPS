@@ -1,0 +1,266 @@
+<xilinx:hls_fe_msgs>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:24:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="parallel_product_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:25:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="parallel_product_core" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:30:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="parallel_product_core" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:37:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="parallel_product_core" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:78:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="parallel_op_add" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:79:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="parallel_op_add" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:82:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="parallel_op_add" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:94:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="parallel_op_sub" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:95:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="parallel_op_sub" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:98:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="parallel_op_sub" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:110:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="parallel_op_scalar_mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:111:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="parallel_op_scalar_mul" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:114:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="parallel_op_scalar_mul" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:126:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="parallel_op_grade_proj" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:127:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="parallel_op_grade_proj" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:130:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="parallel_op_grade_proj" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:145:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="parallel_op_reverse" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:146:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="parallel_op_reverse" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:149:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="parallel_op_reverse" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:164:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="parallel_op_grade_involution" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:165:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="parallel_op_grade_involution" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:168:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="parallel_op_grade_involution" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:183:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="parallel_op_clifford_conj" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:184:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="parallel_op_clifford_conj" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:187:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="parallel_op_clifford_conj" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:202:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="parallel_op_rotor_norm" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:203:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="parallel_op_rotor_norm" ARG_PragmaIsValid="1" ARG_PragmaOptions="II=1" ARG_PragmaType="pipeline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:207:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="parallel_op_rotor_norm" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:214:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="parallel_op_rotor_norm" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:226:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="parallel_op_sandwich" ARG_PragmaIsValid="1" ARG_PragmaOptions="off" ARG_PragmaType="inline" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:227:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="parallel_op_sandwich" ARG_PragmaIsValid="1" ARG_PragmaType="dataflow" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:230:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="parallel_op_sandwich" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=temp complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:231:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="parallel_op_sandwich" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=a_rev complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="D:/QGPU/zedboard/vitis_hls/PARALLEL_GPU_ZED/run_hls_zed.tcl:18:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="directive" ARG_PragmaFunction="parallel_gpu" ARG_PragmaIsValid="1" ARG_PragmaOptions="name=parallel_gpu" ARG_PragmaType="top" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:251:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="parallel_gpu" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=return bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:252:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="parallel_gpu" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=opcode bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:253:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="parallel_gpu" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=status bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:254:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="parallel_gpu" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=a bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:255:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="parallel_gpu" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=b bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:256:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="parallel_gpu" ARG_PragmaIsValid="1" ARG_PragmaOptions="s_axilite port=c bundle=control" ARG_PragmaType="interface" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:258:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="parallel_gpu" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=a complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:259:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="parallel_gpu" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=b complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:260:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="parallel_gpu" ARG_PragmaIsValid="1" ARG_PragmaOptions="variable=c complete dim=1" ARG_PragmaType="array_partition" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_VERBOSE_DUMP" msg_id="207-6999" msg_severity="WARNING" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:312:1" msg_body="HLS pragma dump">
+        <args ARG_PragmaContext="hls" ARG_PragmaFunction="parallel_gpu" ARG_PragmaIsValid="1" ARG_PragmaType="unroll" ClangWarningOption="dump-hls-pragmas"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:213:5" msg_body="Loop 'PARALLEL_CLEAR_NORM' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="PARALLEL_CLEAR_NORM"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:206:5" msg_body="Loop 'PARALLEL_NORM_LOOP' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="PARALLEL_NORM_LOOP"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:186:5" msg_body="Loop 'PARALLEL_CONJ_LOOP' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="PARALLEL_CONJ_LOOP"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:167:5" msg_body="Loop 'PARALLEL_INVOLUTION_LOOP' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="PARALLEL_INVOLUTION_LOOP"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:148:5" msg_body="Loop 'PARALLEL_REVERSE_LOOP' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="PARALLEL_REVERSE_LOOP"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:129:5" msg_body="Loop 'PARALLEL_GRADE_LOOP' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="PARALLEL_GRADE_LOOP"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:113:5" msg_body="Loop 'PARALLEL_SCALAR_LOOP' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="PARALLEL_SCALAR_LOOP"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:97:5" msg_body="Loop 'PARALLEL_SUB_LOOP' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="PARALLEL_SUB_LOOP"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:81:5" msg_body="Loop 'PARALLEL_ADD_LOOP' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="PARALLEL_ADD_LOOP"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:29:5" msg_body="Loop 'PARALLEL_BLADE_LOOP' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="PARALLEL_BLADE_LOOP"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:36:9" msg_body="Loop 'PARALLEL_SUM_TREE' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="PARALLEL_SUM_TREE"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_types.h:48:22" msg_body="Loop 'VITIS_LOOP_48_1' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_48_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-291" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_types.h:50:30" msg_body="Loop 'VITIS_LOOP_50_2' is marked as complete unroll implied by the pipeline pragma">
+        <args LoopName="VITIS_LOOP_50_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:250:0" msg_body="Unrolling loop 'PARALLEL_CLEAR_ERR' (D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:311:13) in function 'parallel_gpu' completely with a factor of 8">
+        <args Factor="8" LoopLoc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:311:13" LoopName="PARALLEL_CLEAR_ERR"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:201:0" msg_body="Unrolling loop 'PARALLEL_CLEAR_NORM' (D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:213:5) in function 'parallel_op_rotor_norm' completely with a factor of 7">
+        <args Factor="7" LoopLoc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:213:5" LoopName="PARALLEL_CLEAR_NORM"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:201:0" msg_body="Unrolling loop 'PARALLEL_NORM_LOOP' (D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:206:5) in function 'parallel_op_rotor_norm' completely with a factor of 8">
+        <args Factor="8" LoopLoc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:206:5" LoopName="PARALLEL_NORM_LOOP"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:182:0" msg_body="Unrolling loop 'PARALLEL_CONJ_LOOP' (D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:186:5) in function 'parallel_op_clifford_conj' completely with a factor of 8">
+        <args Factor="8" LoopLoc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:186:5" LoopName="PARALLEL_CONJ_LOOP"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:163:0" msg_body="Unrolling loop 'PARALLEL_INVOLUTION_LOOP' (D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:167:5) in function 'parallel_op_grade_involution' completely with a factor of 8">
+        <args Factor="8" LoopLoc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:167:5" LoopName="PARALLEL_INVOLUTION_LOOP"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:144:0" msg_body="Unrolling loop 'PARALLEL_REVERSE_LOOP' (D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:148:5) in function 'parallel_op_reverse' completely with a factor of 8">
+        <args Factor="8" LoopLoc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:148:5" LoopName="PARALLEL_REVERSE_LOOP"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:125:0" msg_body="Unrolling loop 'PARALLEL_GRADE_LOOP' (D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:129:5) in function 'parallel_op_grade_proj' completely with a factor of 8">
+        <args Factor="8" LoopLoc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:129:5" LoopName="PARALLEL_GRADE_LOOP"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:109:0" msg_body="Unrolling loop 'PARALLEL_SCALAR_LOOP' (D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:113:5) in function 'parallel_op_scalar_mul' completely with a factor of 8">
+        <args Factor="8" LoopLoc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:113:5" LoopName="PARALLEL_SCALAR_LOOP"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:93:0" msg_body="Unrolling loop 'PARALLEL_SUB_LOOP' (D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:97:5) in function 'parallel_op_sub' completely with a factor of 8">
+        <args Factor="8" LoopLoc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:97:5" LoopName="PARALLEL_SUB_LOOP"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:77:0" msg_body="Unrolling loop 'PARALLEL_ADD_LOOP' (D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:81:5) in function 'parallel_op_add' completely with a factor of 8">
+        <args Factor="8" LoopLoc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:81:5" LoopName="PARALLEL_ADD_LOOP"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:23:0" msg_body="Unrolling loop 'PARALLEL_BLADE_LOOP' (D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:29:5) in function 'parallel_product_core' completely with a factor of 8">
+        <args Factor="8" LoopLoc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:29:5" LoopName="PARALLEL_BLADE_LOOP"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:23:0" msg_body="Unrolling loop 'PARALLEL_SUM_TREE' (D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:36:9) in function 'parallel_product_core' completely with a factor of 8">
+        <args Factor="8" LoopLoc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:36:9" LoopName="PARALLEL_SUM_TREE"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_types.h:46:0" msg_body="Unrolling loop 'VITIS_LOOP_48_1' (D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_types.h:48:22) in function 'blade_product_sign' completely with a factor of 3">
+        <args Factor="3" LoopLoc="D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_types.h:48:22" LoopName="VITIS_LOOP_48_1"/>
+    </msg>
+    <msg msg_groups="PRAGMA_UNROLL" msg_id="214-186" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_types.h:46:0" msg_body="Unrolling loop 'VITIS_LOOP_50_2' (D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_types.h:50:30) in function 'blade_product_sign' completely with a factor of 3">
+        <args Factor="3" LoopLoc="D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_types.h:50:30" LoopName="VITIS_LOOP_50_2"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:23:0" msg_body="Inlining function 'mask_to_index(unsigned char)' into 'parallel_product_core(int const*, int const*, int*, unsigned int, bool*)'">
+        <args Callee="mask_to_index(unsigned char)" Callee-DebugLoc="File D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_types.h Line 30 Column 0" Caller="parallel_product_core(int const*, int const*, int*, unsigned int, bool*)" Caller-DebugLoc="File D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp Line 23 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:77:0" msg_body="Inlining function 'sat_add(int, int, bool*)' into 'parallel_op_add(int const*, int const*, int*, bool*)'">
+        <args Callee="sat_add(int, int, bool*)" Callee-DebugLoc="File D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h Line 71 Column 0" Caller="parallel_op_add(int const*, int const*, int*, bool*)" Caller-DebugLoc="File D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp Line 77 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:93:0" msg_body="Inlining function 'sat_sub(int, int, bool*)' into 'parallel_op_sub(int const*, int const*, int*, bool*)'">
+        <args Callee="sat_sub(int, int, bool*)" Callee-DebugLoc="File D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h Line 86 Column 0" Caller="parallel_op_sub(int const*, int const*, int*, bool*)" Caller-DebugLoc="File D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp Line 93 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:144:0" msg_body="Inlining function 'sat_sub(int, int, bool*)' into 'parallel_op_reverse(int const*, int*, bool*)'">
+        <args Callee="sat_sub(int, int, bool*)" Callee-DebugLoc="File D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h Line 86 Column 0" Caller="parallel_op_reverse(int const*, int*, bool*)" Caller-DebugLoc="File D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp Line 144 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:163:0" msg_body="Inlining function 'sat_sub(int, int, bool*)' into 'parallel_op_grade_involution(int const*, int*, bool*)'">
+        <args Callee="sat_sub(int, int, bool*)" Callee-DebugLoc="File D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h Line 86 Column 0" Caller="parallel_op_grade_involution(int const*, int*, bool*)" Caller-DebugLoc="File D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp Line 163 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:182:0" msg_body="Inlining function 'sat_sub(int, int, bool*)' into 'parallel_op_clifford_conj(int const*, int*, bool*)'">
+        <args Callee="sat_sub(int, int, bool*)" Callee-DebugLoc="File D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h Line 86 Column 0" Caller="parallel_op_clifford_conj(int const*, int*, bool*)" Caller-DebugLoc="File D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp Line 182 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_INLINE" msg_id="214-178" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:201:0" msg_body="Inlining function 'rescale_and_saturate(ap_int&lt;67&gt;, bool*)' into 'parallel_op_rotor_norm(int const*, int*, bool*)'">
+        <args Callee="rescale_and_saturate(ap_int&lt;67&gt;, bool*)" Callee-DebugLoc="File D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h Line 35 Column 0" Caller="parallel_op_rotor_norm(int const*, int*, bool*)" Caller-DebugLoc="File D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp Line 201 Column 0"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-464" msg_severity="WARNING" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:225:0" msg_body="Skipping array undecay on variable length array 'overflow'.">
+        <args ArrayName="overflow"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:228:13" msg_body="Applying array_partition to 'temp': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="temp"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:229:13" msg_body="Applying array_partition to 'a_rev': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="a_rev"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:250:0" msg_body="Applying array_partition to 'a': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="a"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:250:0" msg_body="Applying array_partition to 'b': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="b"/>
+    </msg>
+    <msg msg_groups="PRAGMA_MISC" msg_id="214-248" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:250:0" msg_body="Applying array_partition to 'c': Complete partitioning on dimension 1.">
+        <args Dim="1" Mode="Complete" UOName="c"/>
+    </msg>
+    <msg msg_groups="AUTOMATION" msg_id="214-364" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:116:16" msg_body="Automatically inlining function 'rescale_and_saturate(ap_int&lt;67&gt;, bool*)' to improve effectiveness of pipeline pragma in function 'parallel_op_scalar_mul(int const*, int, int*, bool*)'">
+        <args Callee="rescale_and_saturate(ap_int&lt;67&gt;, bool*)" Callee-DebugLoc="File D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h Line 35 Column 0" Caller="parallel_op_scalar_mul(int const*, int, int*, bool*)" Caller-DebugLoc="File D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp Line 109 Column 0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION" msg_id="214-364" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:67:16" msg_body="Automatically inlining function 'rescale_and_saturate(ap_int&lt;67&gt;, bool*)' to improve effectiveness of pipeline pragma in function 'parallel_product_core(int const*, int const*, int*, unsigned int, bool*)'">
+        <args Callee="rescale_and_saturate(ap_int&lt;67&gt;, bool*)" Callee-DebugLoc="File D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h Line 35 Column 0" Caller="parallel_product_core(int const*, int const*, int*, unsigned int, bool*)" Caller-DebugLoc="File D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp Line 23 Column 0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION" msg_id="214-364" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:67:16" msg_body="Automatically inlining function 'rescale_and_saturate(ap_int&lt;67&gt;, bool*)' to improve effectiveness of pipeline pragma in function 'parallel_product_core(int const*, int const*, int*, unsigned int, bool*) (.7.40.41)'">
+        <args Callee="rescale_and_saturate(ap_int&lt;67&gt;, bool*)" Callee-DebugLoc="File D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h Line 35 Column 0" Caller="parallel_product_core(int const*, int const*, int*, unsigned int, bool*) (.7.40.41)" Caller-DebugLoc="File D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp Line 23 Column 0"/>
+    </msg>
+    <msg msg_groups="AUTOMATION" msg_id="214-364" msg_severity="INFO" msg_loc="D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:67:16" msg_body="Automatically inlining function 'rescale_and_saturate(ap_int&lt;67&gt;, bool*)' to improve effectiveness of pipeline pragma in function 'parallel_product_core(int const*, int const*, int*, unsigned int, bool*) (.9.44.45)'">
+        <args Callee="rescale_and_saturate(ap_int&lt;67&gt;, bool*)" Callee-DebugLoc="File D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h Line 35 Column 0" Caller="parallel_product_core(int const*, int const*, int*, unsigned int, bool*) (.9.44.45)" Caller-DebugLoc="File D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp Line 23 Column 0"/>
+    </msg>
+</xilinx:hls_fe_msgs>

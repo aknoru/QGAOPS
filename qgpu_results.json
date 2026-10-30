@@ -1,0 +1,11 @@
+{
+  "stage": 15,
+  "total_tests": 295,
+  "passed": 295,
+  "blade_matches": 2360,
+  "total_blades": 2360,
+  "accuracy_pct": 100.0,
+  "blade_accuracy_pct": 100.0,
+  "mean_latency_us": 246.0469254237288,
+  "failures": []
+}

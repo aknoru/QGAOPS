@@ -1,0 +1,201 @@
+{
+  "0": {
+    "basicblocks": 14,
+    "calls": "10 9 7 3 1 6 4 8 2 5",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "seq_gpu.cpp",
+    "fileloc": 240,
+    "instructions": 47,
+    "loads": {
+      "L": 1,
+      "T": 2
+    },
+    "memory_accesses": 1,
+    "name": "seq_gpu",
+    "stores": {
+      "L": 1,
+      "T": 2
+    },
+    "total_instructions": 908
+  },
+  "1": {
+    "basicblocks": 11,
+    "calls": "",
+    "control_depth": 3,
+    "def_use_depth": 4,
+    "file": "seq_gpu.cpp",
+    "fileloc": 146,
+    "instructions": 32,
+    "loads": {
+      "G": 1,
+      "L": 1
+    },
+    "memory_accesses": 6,
+    "name": "seq_op_reverse",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 32
+  },
+  "10": {
+    "basicblocks": 11,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "seq_gpu.cpp",
+    "fileloc": 197,
+    "instructions": 41,
+    "loads": {
+      "L": 1
+    },
+    "memory_accesses": 2,
+    "name": "seq_op_rotor_norm",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 41
+  },
+  "2": {
+    "basicblocks": 8,
+    "calls": "",
+    "control_depth": 3,
+    "def_use_depth": 4,
+    "file": "seq_gpu.cpp",
+    "fileloc": 86,
+    "instructions": 26,
+    "loads": {
+      "L": 2
+    },
+    "memory_accesses": 5,
+    "name": "seq_op_add",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 26
+  },
+  "3": {
+    "basicblocks": 11,
+    "calls": "",
+    "control_depth": 3,
+    "def_use_depth": 4,
+    "file": "seq_gpu.cpp",
+    "fileloc": 163,
+    "instructions": 33,
+    "loads": {
+      "G": 1,
+      "L": 1
+    },
+    "memory_accesses": 6,
+    "name": "seq_op_grade_involution",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 33
+  },
+  "4": {
+    "basicblocks": 11,
+    "calls": "",
+    "control_depth": 6,
+    "def_use_depth": 9,
+    "file": "seq_gpu.cpp",
+    "fileloc": 114,
+    "instructions": 37,
+    "loads": {
+      "L": 1
+    },
+    "memory_accesses": 4,
+    "name": "seq_op_scalar_mul",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 37
+  },
+  "5": {
+    "basicblocks": 50,
+    "calls": "",
+    "control_depth": 6,
+    "def_use_depth": 14,
+    "file": "seq_gpu.cpp",
+    "fileloc": 16,
+    "instructions": 193,
+    "loads": {
+      "G": 5,
+      "L": 18
+    },
+    "memory_accesses": 32,
+    "name": "seq_product_core",
+    "stores": {
+      "L": 19
+    },
+    "total_instructions": 193
+  },
+  "6": {
+    "basicblocks": 5,
+    "calls": "",
+    "control_depth": 2,
+    "def_use_depth": 3,
+    "file": "seq_gpu.cpp",
+    "fileloc": 129,
+    "instructions": 17,
+    "loads": {
+      "G": 1,
+      "L": 1
+    },
+    "memory_accesses": 3,
+    "name": "seq_op_grade_proj",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 17
+  },
+  "7": {
+    "basicblocks": 11,
+    "calls": "",
+    "control_depth": 3,
+    "def_use_depth": 4,
+    "file": "seq_gpu.cpp",
+    "fileloc": 180,
+    "instructions": 32,
+    "loads": {
+      "G": 1,
+      "L": 1
+    },
+    "memory_accesses": 6,
+    "name": "seq_op_clifford_conj",
+    "stores": {
+      "L": 4
+    },
+    "total_instructions": 32
+  },
+  "8": {
+    "basicblocks": 8,
+    "calls": "",
+    "control_depth": 3,
+    "def_use_depth": 4,
+    "file": "seq_gpu.cpp",
+    "fileloc": 100,
+    "instructions": 26,
+    "loads": {
+      "L": 2
+    },
+    "memory_accesses": 5,
+    "name": "seq_op_sub",
+    "stores": {
+      "L": 3
+    },
+    "total_instructions": 26
+  },
+  "9": {
+    "basicblocks": 1,
+    "calls": "5 1 5",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "seq_gpu.cpp",
+    "fileloc": 217,
+    "instructions": 6,
+    "memory_accesses": 0,
+    "name": "seq_op_sandwich",
+    "total_instructions": 424
+  }
+}

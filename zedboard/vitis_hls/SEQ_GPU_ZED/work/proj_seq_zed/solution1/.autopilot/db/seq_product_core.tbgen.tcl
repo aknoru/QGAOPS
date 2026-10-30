@@ -1,0 +1,136 @@
+set moduleName seq_product_core
+set isTopModule 0
+set isCombinational 0
+set isDatapathOnly 0
+set isPipelined 0
+set isPipelined_legacy 0
+set pipeline_type none
+set FunctionProtocol ap_ctrl_hs
+set restart_counter_num 0
+set isOneStateSeq 0
+set ProfileFlag 0
+set StallSigGenFlag 0
+set isEnableWaveformDebug 1
+set hasInterrupt 0
+set DLRegFirstOffset 0
+set DLRegItemOffset 0
+set svuvm_can_support 1
+set cdfgNum 18
+set C_modelName {seq_product_core}
+set C_modelType { int 1 }
+set ap_memory_interface_dict [dict create]
+dict set ap_memory_interface_dict a { MEM_WIDTH 32 MEM_SIZE 32 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
+dict set ap_memory_interface_dict b { MEM_WIDTH 32 MEM_SIZE 32 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
+dict set ap_memory_interface_dict c { MEM_WIDTH 32 MEM_SIZE 32 MASTER_TYPE BRAM_CTRL MEM_ADDRESS_MODE WORD_ADDRESS PACKAGE_IO port READ_LATENCY 1 }
+set C_modelArgList {
+	{ a int 32 regular {array 8 { 1 } 1 1 }  }
+	{ b int 32 regular {array 8 { 1 } 1 1 }  }
+	{ c int 32 regular {array 8 { 0 } 1 1 }  }
+	{ opcode int 2 regular  }
+	{ overflow_read int 1 regular  }
+}
+set hasAXIMCache 0
+set l_AXIML2Cache [list]
+set AXIMCacheInstDict [dict create]
+set C_modelArgMapList {[ 
+	{ "Name" : "a", "interface" : "memory", "bitwidth" : 32, "direction" : "READONLY"} , 
+ 	{ "Name" : "b", "interface" : "memory", "bitwidth" : 32, "direction" : "READONLY"} , 
+ 	{ "Name" : "c", "interface" : "memory", "bitwidth" : 32, "direction" : "WRITEONLY"} , 
+ 	{ "Name" : "opcode", "interface" : "wire", "bitwidth" : 2, "direction" : "READONLY"} , 
+ 	{ "Name" : "overflow_read", "interface" : "wire", "bitwidth" : 1, "direction" : "READONLY"} , 
+ 	{ "Name" : "ap_return", "interface" : "wire", "bitwidth" : 1} ]}
+# RTL Port declarations: 
+set portNum 19
+set portList { 
+	{ ap_clk sc_in sc_logic 1 clock -1 } 
+	{ ap_rst sc_in sc_logic 1 reset -1 active_high_sync } 
+	{ ap_start sc_in sc_logic 1 start -1 } 
+	{ ap_done sc_out sc_logic 1 predone -1 } 
+	{ ap_idle sc_out sc_logic 1 done -1 } 
+	{ ap_ready sc_out sc_logic 1 ready -1 } 
+	{ a_address0 sc_out sc_lv 3 signal 0 } 
+	{ a_ce0 sc_out sc_logic 1 signal 0 } 
+	{ a_q0 sc_in sc_lv 32 signal 0 } 
+	{ b_address0 sc_out sc_lv 3 signal 1 } 
+	{ b_ce0 sc_out sc_logic 1 signal 1 } 
+	{ b_q0 sc_in sc_lv 32 signal 1 } 
+	{ c_address0 sc_out sc_lv 3 signal 2 } 
+	{ c_ce0 sc_out sc_logic 1 signal 2 } 
+	{ c_we0 sc_out sc_logic 1 signal 2 } 
+	{ c_d0 sc_out sc_lv 32 signal 2 } 
+	{ opcode sc_in sc_lv 2 signal 3 } 
+	{ overflow_read sc_in sc_lv 1 signal 4 } 
+	{ ap_return sc_out sc_lv 1 signal -1 } 
+}
+set NewPortList {[ 
+	{ "name": "ap_clk", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "clock", "bundle":{"name": "ap_clk", "role": "default" }} , 
+ 	{ "name": "ap_rst", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "reset", "bundle":{"name": "ap_rst", "role": "default" }} , 
+ 	{ "name": "ap_start", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "start", "bundle":{"name": "ap_start", "role": "default" }} , 
+ 	{ "name": "ap_done", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "predone", "bundle":{"name": "ap_done", "role": "default" }} , 
+ 	{ "name": "ap_idle", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "done", "bundle":{"name": "ap_idle", "role": "default" }} , 
+ 	{ "name": "ap_ready", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "ready", "bundle":{"name": "ap_ready", "role": "default" }} , 
+ 	{ "name": "a_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":3, "type": "signal", "bundle":{"name": "a", "role": "address0" }} , 
+ 	{ "name": "a_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "a", "role": "ce0" }} , 
+ 	{ "name": "a_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "a", "role": "q0" }} , 
+ 	{ "name": "b_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":3, "type": "signal", "bundle":{"name": "b", "role": "address0" }} , 
+ 	{ "name": "b_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "b", "role": "ce0" }} , 
+ 	{ "name": "b_q0", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "b", "role": "q0" }} , 
+ 	{ "name": "c_address0", "direction": "out", "datatype": "sc_lv", "bitwidth":3, "type": "signal", "bundle":{"name": "c", "role": "address0" }} , 
+ 	{ "name": "c_ce0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "c", "role": "ce0" }} , 
+ 	{ "name": "c_we0", "direction": "out", "datatype": "sc_logic", "bitwidth":1, "type": "signal", "bundle":{"name": "c", "role": "we0" }} , 
+ 	{ "name": "c_d0", "direction": "out", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "c", "role": "d0" }} , 
+ 	{ "name": "opcode", "direction": "in", "datatype": "sc_lv", "bitwidth":2, "type": "signal", "bundle":{"name": "opcode", "role": "default" }} , 
+ 	{ "name": "overflow_read", "direction": "in", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "overflow_read", "role": "default" }} , 
+ 	{ "name": "ap_return", "direction": "out", "datatype": "sc_lv", "bitwidth":1, "type": "signal", "bundle":{"name": "ap_return", "role": "default" }}  ]}
+
+set ArgLastReadFirstWriteLatency {
+	seq_product_core {
+		a {Type I LastRead 2 FirstWrite -1}
+		b {Type I LastRead 2 FirstWrite -1}
+		c {Type O LastRead -1 FirstWrite 1}
+		opcode {Type I LastRead 0 FirstWrite -1}
+		overflow_read {Type I LastRead 4 FirstWrite -1}
+		BASIS_MASKS {Type I LastRead -1 FirstWrite -1}}
+	seq_product_core_Pipeline_OUTER_LOOP_INNER_LOOP {
+		a {Type I LastRead 2 FirstWrite -1}
+		b {Type I LastRead 2 FirstWrite -1}
+		opcode {Type I LastRead 0 FirstWrite -1}
+		accum_load_out {Type O LastRead -1 FirstWrite 4}
+		accum_1_load_out {Type O LastRead -1 FirstWrite 4}
+		accum_2_load_out {Type O LastRead -1 FirstWrite 4}
+		accum_3_load_out {Type O LastRead -1 FirstWrite 4}
+		accum_4_load_out {Type O LastRead -1 FirstWrite 4}
+		accum_5_load_out {Type O LastRead -1 FirstWrite 4}
+		accum_6_load_out {Type O LastRead -1 FirstWrite 4}
+		accum_7_load_out {Type O LastRead -1 FirstWrite 4}
+		BASIS_MASKS {Type I LastRead -1 FirstWrite -1}}
+	seq_product_core_Pipeline_RESCALE_LOOP {
+		accum_load_reload {Type I LastRead 0 FirstWrite -1}
+		accum_1_load_reload {Type I LastRead 0 FirstWrite -1}
+		accum_2_load_reload {Type I LastRead 0 FirstWrite -1}
+		accum_3_load_reload {Type I LastRead 0 FirstWrite -1}
+		accum_4_load_reload {Type I LastRead 0 FirstWrite -1}
+		accum_5_load_reload {Type I LastRead 0 FirstWrite -1}
+		accum_6_load_reload {Type I LastRead 0 FirstWrite -1}
+		accum_7_load_reload {Type I LastRead 0 FirstWrite -1}
+		c {Type O LastRead -1 FirstWrite 1}
+		write_flag_0_out {Type O LastRead -1 FirstWrite 1}
+		overflow_0_out {Type O LastRead -1 FirstWrite 1}}}
+
+set hasDtUnsupportedChannel 0
+
+set PerformanceInfo {[
+	{"Name" : "Latency", "Min" : "85", "Max" : "85"}
+	, {"Name" : "Interval", "Min" : "85", "Max" : "85"}
+]}
+
+set PipelineEnableSignalInfo {[
+]}
+
+set Spec2ImplPortList { 
+	a { ap_memory {  { a_address0 mem_address 1 3 }  { a_ce0 mem_ce 1 1 }  { a_q0 mem_dout 0 32 } } }
+	b { ap_memory {  { b_address0 mem_address 1 3 }  { b_ce0 mem_ce 1 1 }  { b_q0 mem_dout 0 32 } } }
+	c { ap_memory {  { c_address0 mem_address 1 3 }  { c_ce0 mem_ce 1 1 }  { c_we0 mem_we 1 1 }  { c_d0 mem_din 1 32 } } }
+	opcode { ap_none {  { opcode in_data 0 2 } } }
+	overflow_read { ap_none {  { overflow_read in_data 0 1 } } }
+}

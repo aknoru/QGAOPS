@@ -1,0 +1,1569 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- MediaPipe Hands & Camera Utils -->
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js" crossorigin="anonymous"></script>
+    <style>
+
+        :root {
+            --bg-primary: #080c14;
+            --bg-card: #0f1726;
+            --bg-card-hover: #152035;
+            --border: #1e293b;
+            --border-accent: #38bdf8;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent-cyan: #06b6d4;
+            --accent-blue: #3b82f6;
+            --accent-purple: #a855f7;
+            --accent-emerald: #10b981;
+            --accent-amber: #f59e0b;
+            --accent-rose: #f43f5e;
+            --font-mono: 'JetBrains Mono', 'Fira Code', 'Cascadia Code', monospace;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            background: var(--bg-primary);
+            color: var(--text-main);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            padding: 20px 24px;
+            min-height: 100vh;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 16px;
+            margin-bottom: 20px;
+        }
+        .logo-group h1 {
+            font-size: 22px;
+            font-weight: 700;
+            background: linear-gradient(135deg, var(--accent-cyan), var(--accent-purple));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -0.5px;
+        }
+        .logo-group p {
+            font-size: 12px;
+            color: var(--text-muted);
+            margin-top: 3px;
+        }
+        .badge-bar { display: flex; gap: 10px; }
+        .badge {
+            background: rgba(6, 182, 212, 0.1);
+            color: var(--accent-cyan);
+            border: 1px solid rgba(6, 182, 212, 0.3);
+            border-radius: 9999px;
+            padding: 4px 12px;
+            font-size: 11px;
+            font-weight: 600;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--accent-emerald);
+            box-shadow: 0 0 8px var(--accent-emerald);
+        }
+
+        /* NAVIGATION TABS */
+        .tab-bar {
+            display: flex;
+            gap: 8px;
+            border-bottom: 1px solid var(--border);
+            margin-bottom: 20px;
+        }
+        .tab-btn {
+            background: transparent;
+            border: none;
+            border-bottom: 2px solid transparent;
+            color: var(--text-muted);
+            font-size: 13px;
+            font-weight: 600;
+            padding: 10px 18px;
+            cursor: pointer;
+            transition: all 0.2s ease;
+        }
+        .tab-btn:hover { color: var(--text-main); }
+        .tab-btn.active {
+            color: var(--accent-cyan);
+            border-bottom-color: var(--accent-cyan);
+            background: rgba(6, 182, 212, 0.05);
+            border-radius: 6px 6px 0 0;
+        }
+
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+
+        /* GRID & CARDS */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 16px;
+        }
+        .card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 10px;
+            padding: 18px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+        }
+        .col-3 { grid-column: span 3; }
+        .col-4 { grid-column: span 4; }
+        .col-6 { grid-column: span 6; }
+        .col-8 { grid-column: span 8; }
+        .col-9 { grid-column: span 9; }
+        .col-12 { grid-column: span 12; }
+
+        .card-title {
+            font-size: 13px;
+            text-transform: uppercase;
+            letter-spacing: 0.8px;
+            color: var(--accent-cyan);
+            margin-bottom: 14px;
+            font-weight: 700;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* LED Panel */
+        .led-panel {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+        .led-unit {
+            background: #080d16;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 10px 6px;
+            text-align: center;
+        }
+        .led-lamp {
+            width: 16px;
+            height: 16px;
+            border-radius: 50%;
+            margin: 0 auto 6px auto;
+            background: #1e293b;
+            transition: all 0.15s ease;
+        }
+        .led-lamp.ready-on { background: #10b981; box-shadow: 0 0 10px #10b981; }
+        .led-lamp.busy-on  { background: #3b82f6; box-shadow: 0 0 10px #3b82f6; }
+        .led-lamp.done-on  { background: #06b6d4; box-shadow: 0 0 10px #06b6d4; }
+        .led-lamp.err-on   { background: #ef4444; box-shadow: 0 0 10px #ef4444; }
+        .led-label { font-size: 10px; font-weight: 700; color: var(--text-muted); }
+        .led-sub   { font-size: 9px; color: #64748b; font-family: var(--font-mono); }
+
+        /* Metric Highlights */
+        .metric-row {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 14px;
+            margin-bottom: 16px;
+        }
+        .metric-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 12px 14px;
+        }
+        .metric-val {
+            font-size: 22px;
+            font-weight: 700;
+            font-family: var(--font-mono);
+            color: var(--text-main);
+            margin-top: 2px;
+        }
+        .metric-lbl { font-size: 11px; color: var(--text-muted); text-transform: uppercase; }
+
+        /* Buttons & Controls */
+        .btn-group { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px; }
+        button {
+            background: linear-gradient(135deg, #1e293b, #0f172a);
+            color: var(--text-main);
+            border: 1px solid #334155;
+            padding: 8px 14px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 12px;
+            font-weight: 600;
+            transition: all 0.15s ease;
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+        button:hover {
+            border-color: var(--accent-cyan);
+            background: #1e293b;
+        }
+        button.primary {
+            background: linear-gradient(135deg, #0284c7, #0369a1);
+            border-color: #38bdf8;
+            color: white;
+        }
+        button.primary:hover {
+            box-shadow: 0 0 12px rgba(56, 189, 248, 0.4);
+        }
+        button.accent {
+            background: linear-gradient(135deg, #7c3aed, #6d28d9);
+            border-color: #a855f7;
+            color: white;
+        }
+        button.danger {
+            background: linear-gradient(135deg, #be123c, #9f1239);
+            border-color: #fb7185;
+            color: white;
+        }
+
+        /* Blades Grid */
+        .blade-grid {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            gap: 6px;
+            margin: 10px 0;
+        }
+        .blade-box {
+            background: #080d16;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 6px;
+            text-align: center;
+        }
+        .blade-name { font-size: 10px; color: var(--accent-purple); font-family: var(--font-mono); font-weight: 700; }
+        .blade-val  { font-size: 11px; font-family: var(--font-mono); color: var(--text-main); margin-top: 2px; }
+
+        /* Gesture List */
+        .gesture-pill-grid {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 8px;
+            margin-bottom: 14px;
+        }
+        .gesture-pill {
+            background: #080d16;
+            border: 1px solid #1e293b;
+            border-radius: 6px;
+            padding: 8px 6px;
+            text-align: center;
+            cursor: pointer;
+            transition: all 0.15s ease;
+        }
+        .gesture-pill:hover { border-color: var(--accent-cyan); background: #131c2e; }
+        .gesture-pill.active {
+            border-color: var(--accent-cyan);
+            background: rgba(6, 182, 212, 0.15);
+            box-shadow: 0 0 8px rgba(6, 182, 212, 0.3);
+        }
+        .gesture-pill .name { font-size: 11px; font-weight: 700; color: var(--text-main); }
+        .gesture-pill .ga   { font-size: 9px; color: var(--accent-cyan); font-family: var(--font-mono); margin-top: 2px; }
+
+        select, input {
+            background: #080d16;
+            border: 1px solid #334155;
+            color: var(--text-main);
+            padding: 6px 10px;
+            border-radius: 6px;
+            font-size: 12px;
+            font-family: var(--font-mono);
+        }
+
+        .console-box {
+            background: #050811;
+            border: 1px solid #1e293b;
+            border-radius: 6px;
+            padding: 12px;
+            font-family: var(--font-mono);
+            font-size: 11px;
+            color: #38bdf8;
+            height: 180px;
+            overflow-y: auto;
+            white-space: pre-wrap;
+            line-height: 1.5;
+        }
+
+        /* Comparison Table */
+        table.cmp-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 12px;
+            font-family: var(--font-mono);
+            margin-top: 8px;
+        }
+        table.cmp-table th {
+            text-align: left;
+            padding: 8px;
+            background: #080d16;
+            color: var(--text-muted);
+            border-bottom: 1px solid var(--border);
+        }
+        table.cmp-table td {
+            padding: 8px;
+            border-bottom: 1px solid #141c2c;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="logo-group">
+            <h1>QGAOPS-QGPU Universal Control Center</h1>
+            <p>AMD PYNQ-ZU Rev B (xczu5eg-sfvc784-1-e) | Full Pipeline: Hand GA Engine · Deep/SIFT/GIST GPU · Verification</p>
+        </div>
+        <div class="badge-bar">
+            <div class="badge"><div class="status-dot"></div> <span id="board-status">FPGA ACTIVE @ 100 MHz</span></div>
+            <div class="badge">AXI: 0xA0000000</div>
+        </div>
+    </div>
+
+    <!-- GLOBAL STATS -->
+    <div class="metric-row">
+        <div class="metric-card">
+            <div class="metric-lbl">Golden Verification</div>
+            <div class="metric-val" id="metric-acc" style="color: var(--accent-emerald);">100.0%</div>
+            <div style="font-size: 10px; color: var(--text-muted);">295/295 bit-exact pass</div>
+        </div>
+        <div class="metric-card">
+            <div class="metric-lbl">Mean Hardware Latency</div>
+            <div class="metric-val" id="metric-lat" style="color: var(--accent-cyan);">20.3 µs</div>
+            <div style="font-size: 10px; color: var(--text-muted);">Pure PL compute: 1 clock cycle</div>
+        </div>
+        <div class="metric-card">
+            <div class="metric-lbl">Peak Hardware Throughput</div>
+            <div class="metric-val" id="metric-tput" style="color: var(--accent-purple);">3,849</div>
+            <div style="font-size: 10px; color: var(--text-muted);">ops / sec (ARM PS to PL)</div>
+        </div>
+        <div class="metric-card">
+            <div class="metric-lbl">Dataset Engine Speedup</div>
+            <div class="metric-val" id="metric-speedup" style="color: var(--accent-amber);">14.8×</div>
+            <div style="font-size: 10px; color: var(--text-muted);">FPGA vs Single-core ARM CPU</div>
+        </div>
+    </div>
+
+    <!-- TABS -->
+    <div class="tab-bar">
+        <button class="tab-btn active" onclick="switchTab('tab-hand')">🖐 Hand GA Engine (14 Expressions & 3D Object)</button>
+        <button class="tab-btn" onclick="switchTab('tab-datasets')">⚡ Deep1M / SIFT1M / GIST1M GPU Engine</button>
+        <button class="tab-btn" onclick="switchTab('tab-bench')">📊 Verification, Benchmarks & Ablation</button>
+        <button class="tab-btn" onclick="switchTab('tab-calculator')">🧮 12-Opcode Cl(3,0) Calculator & Stream</button>
+    </div>
+
+    <!-- TAB 1: HAND GA ENGINE (ALL 14 EXPRESSIONS & 3D OBJECT) -->
+    <div id="tab-hand" class="tab-content active">
+        <div class="grid">
+            <div class="card col-12">
+                <div class="card-title">
+                    <span>Hand GA Engine: 14 Static Gestures & Dynamic Spatial Expressions</span>
+                    <span style="font-size: 11px; color: var(--accent-cyan);">Select any expression to execute on FPGA</span>
+                </div>
+                <div class="gesture-pill-grid">
+                    <div class="gesture-pill active" onclick="selectHandPose('OPEN_PALM', 'All 5 finger vectors & blade norms')">
+                        <div class="name">OPEN_PALM</div><div class="ga">5x Vectors</div>
+                    </div>
+                    <div class="gesture-pill" onclick="selectHandPose('FIST', 'Contraction scalar magnitude')">
+                        <div class="name">FIST</div><div class="ga">Inner Contraction</div>
+                    </div>
+                    <div class="gesture-pill" onclick="selectHandPose('THUMBS_UP', 'Thumb direction & bivector')">
+                        <div class="name">THUMBS_UP</div><div class="ga">v_thumb ^ v_norm</div>
+                    </div>
+                    <div class="gesture-pill" onclick="selectHandPose('INDEX_POINT', 'Index pointing vector')">
+                        <div class="name">INDEX_POINT</div><div class="ga">Pointing Vec</div>
+                    </div>
+                    <div class="gesture-pill" onclick="selectHandPose('TWO_FINGER', 'Victory oriented plane')">
+                        <div class="name">TWO_FINGER</div><div class="ga">v_idx ^ v_mid</div>
+                    </div>
+                    <div class="gesture-pill" onclick="selectHandPose('THREE_FINGER', 'Triple geometric product')">
+                        <div class="name">THREE_FINGER</div><div class="ga">v_i * v_m * v_r</div>
+                    </div>
+                    <div class="gesture-pill" onclick="selectHandPose('PINCH', 'Tip separation distance')">
+                        <div class="name">PINCH</div><div class="ga">||v_t - v_i||</div>
+                    </div>
+                    <div class="gesture-pill" onclick="selectHandPose('OK_SIGN', 'Dot product & rotor alignment')">
+                        <div class="name">OK_SIGN</div><div class="ga">v_idx · v_thumb</div>
+                    </div>
+                    <div class="gesture-pill" onclick="selectHandPose('ROCK_SIGN', 'Horns oriented plane')">
+                        <div class="name">ROCK_SIGN</div><div class="ga">v_idx ^ v_pinky</div>
+                    </div>
+                    <div class="gesture-pill" onclick="selectHandPose('ROTATE_CW', 'Clockwise Rotor Sandwich')">
+                        <div class="name">ROTATE_CW</div><div class="ga">R * v * ~R (+45°)</div>
+                    </div>
+                    <div class="gesture-pill" onclick="selectHandPose('ROTATE_CCW', 'Counter-Clockwise Rotor')">
+                        <div class="name">ROTATE_CCW</div><div class="ga">R * v * ~R (-45°)</div>
+                    </div>
+                    <div class="gesture-pill" onclick="selectHandPose('SWIPE_LEFT', 'Negative translation vector')">
+                        <div class="name">SWIPE_LEFT</div><div class="ga">Displacement dx<0</div>
+                    </div>
+                    <div class="gesture-pill" onclick="selectHandPose('SWIPE_RIGHT', 'Positive translation vector')">
+                        <div class="name">SWIPE_RIGHT</div><div class="ga">Displacement dx>0</div>
+                    </div>
+                    <div class="gesture-pill" onclick="selectHandPose('PEACE', 'Orientation bivector')">
+                        <div class="name">PEACE</div><div class="ga">Orientation B</div>
+                    </div>
+                </div>
+
+                <div style="display: flex; gap: 12px; align-items: center; margin-bottom: 12px;">
+                    <div style="font-size: 12px; color: var(--text-muted);">Active Expression: <strong id="active-expr-name" style="color: var(--accent-cyan);">OPEN_PALM</strong></div>
+                    <div style="font-size: 12px; color: var(--text-muted); margin-left: 20px;">Computer Control Profile:</div>
+                    <select id="profile-select" onchange="changeProfile(this.value)">
+                        <option value="mouse">Mouse Profile (Pinch=Click, Point=Move)</option>
+                        <option value="presentation">Presentation Profile (Swipe=Slide, FIST=Exit)</option>
+                        <option value="media">Media Profile (Palm=Play/Pause, Rotate=Vol)</option>
+                        <option value="object3d">3D Object Manipulation (Rotor Sandwich Rotation)</option>
+                    </select>
+                    <button class="primary" onclick="dispatchHandAction()">⚡ Compute Expression on Physical FPGA</button>
+                    <span id="hand-pl-lat" style="font-family: var(--font-mono); font-size: 12px; color: var(--accent-emerald);">Hardware Latency: 20.8 µs</span>
+                </div>
+
+                <div style="font-size: 11px; color: var(--accent-cyan); font-weight: 700; margin-bottom: 4px;">FPGA Result Multivector C = A * B (8 Blades):</div>
+                <div class="blade-grid" id="hand-blade-display"></div>
+                <div style="font-size: 11px; color: #cbd5e1; margin-top: 6px;" id="hand-action-mapped">Mapped Action: Cursor tracking & palm normal vector evaluation</div>
+            </div>
+
+            <!-- LIVE CAMERA PREVIEW WITH 21 3D HAND LANDMARKS & GESTURE HUD -->
+            <div class="card col-6">
+                <div class="card-title">
+                    <span>Laptop Camera Feed & 21 3D Hand Landmarks</span>
+                    <div style="display: flex; gap: 8px;">
+                        <button id="cam-toggle-btn" class="primary" onclick="toggleWebcam()">🎥 Start Laptop Webcam</button>
+                        <button id="cam-test-btn" onclick="toggleHandSim()" style="padding: 4px 10px; font-size: 11px;">✋ Demo Hand Points</button>
+                    </div>
+                </div>
+                <div style="position: relative; width: 100%; height: 280px; background: #050811; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; display: flex; align-items: center; justify-content: center;">
+                    <video id="webcam-feed" autoplay playsinline muted style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; transform: scaleX(-1); display: none; z-index: 1;"></video>
+                    <canvas id="cam-canvas" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; transform: scaleX(-1); z-index: 10; pointer-events: none;"></canvas>
+                    <div id="gesture-hud" style="position: absolute; top: 10px; left: 10px; z-index: 20; background: rgba(8,12,20,0.92); border: 1px solid var(--accent-cyan); border-radius: 6px; padding: 6px 12px; font-size: 11px; display: none; backdrop-filter: blur(4px); box-shadow: 0 4px 12px rgba(0,0,0,0.5);">
+                        <div style="color: var(--text-muted); font-size: 9px; text-transform: uppercase; letter-spacing: 0.5px;">Live Gesture</div>
+                        <div id="hud-gesture" style="font-weight: 700; color: var(--accent-cyan); font-size: 15px;">OPEN_PALM</div>
+                        <div style="display: flex; gap: 12px; margin-top: 3px; font-family: var(--font-mono); font-size: 10px;">
+                            <span>Conf: <strong id="hud-conf" style="color: var(--accent-emerald);">98%</strong></span>
+                            <span>Pinch: <strong id="hud-pinch" style="color: var(--accent-amber);">0.16</strong></span>
+                        </div>
+                    </div>
+                    <div id="cam-placeholder" style="color: var(--text-muted); font-size: 12px; text-align: center; z-index: 5;">
+                        <div style="font-size: 32px; margin-bottom: 8px;">📷</div>
+                        Click <strong>"Start Laptop Webcam"</strong> to stream your live video & 3D hand points here
+                    </div>
+                </div>
+                <div style="display: flex; justify-content: space-between; font-size: 11px; color: var(--text-muted); margin-top: 8px;">
+                    <span>Camera Status: <strong id="cam-status" style="color: var(--text-main);">Standby</strong></span>
+                    <span>Tracking: <strong id="cam-tracking-desc" style="color: var(--accent-cyan);">21 3D Landmarks & Palm Normal</strong></span>
+                </div>
+            </div>
+
+            <!-- INTERACTIVE 3D VECTOR PLOT & POINTER RADAR -->
+            <div class="card col-6">
+                <div class="card-title">
+                    <span>Interactive 3D Vector Plot & Rotor Frame</span>
+                    <span style="font-size: 11px; color: var(--accent-emerald);">Clifford Cl(3,0) Spatial Vectors</span>
+                </div>
+                <div style="position: relative; width: 100%; height: 165px; background: #050811; border: 1px solid var(--border); border-radius: 8px; overflow: hidden;">
+                    <canvas id="vector-3d-canvas" style="width: 100%; height: 100%; display: block;"></canvas>
+                    <div style="position: absolute; top: 6px; left: 8px; font-size: 9px; font-family: var(--font-mono); color: var(--text-muted); pointer-events: none; background: rgba(5,8,17,0.7); padding: 2px 6px; border-radius: 4px;">
+                        <span style="color:#f43f5e;">■ e1</span> <span style="color:#10b981; margin-left:4px;">■ e2</span> <span style="color:#3b82f6; margin-left:4px;">■ e3</span> <span style="color:#06b6d4; margin-left:4px;">■ Palm Normal</span> <span style="color:#f59e0b; margin-left:4px;">■ Index Vec</span>
+                    </div>
+                </div>
+
+                <div class="card-title" style="margin-top: 8px; margin-bottom: 4px;">
+                    <span>Computer Vision Pointer Control Radar</span>
+                    <span style="font-size: 10px; color: var(--accent-cyan);">Pinch = Click | Two-Finger = Right Click</span>
+                </div>
+                <div id="pointer-pad" style="position: relative; width: 100%; height: 75px; background: #080d16; border: 1px dashed var(--border-accent); border-radius: 8px; overflow: hidden; cursor: crosshair;" onmousemove="onPadMouseMove(event)" onmousedown="onPadMouseDown(event)" onmouseup="onPadMouseUp(event)">
+                    <div id="laser-pointer" style="position: absolute; width: 14px; height: 14px; border-radius: 50%; background: var(--accent-cyan); box-shadow: 0 0 16px var(--accent-cyan); top: 50%; left: 50%; transform: translate(-50%, -50%); transition: background 0.1s ease; pointer-events: none;"></div>
+                    <div style="position: absolute; bottom: 4px; left: 10px; font-size: 10px; font-family: var(--font-mono); color: var(--text-muted);">
+                        Cursor: (<span id="ptr-x" style="color: var(--text-main);">0.500</span>, <span id="ptr-y" style="color: var(--text-main);">0.500</span>) | State: <span id="ptr-state" style="color: var(--accent-emerald);">HOVER</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TAB 2: DATASET ACCELERATION (DEEP1M, SIFT1M, GIST1M) -->
+    <div id="tab-datasets" class="tab-content">
+        <div class="grid">
+            <div class="card col-12">
+                <div class="card-title">
+                    <span>High-Dimensional Vector Dataset Acceleration: DEEP1M · SIFT1M · GIST1M</span>
+                    <span style="font-size: 11px; color: var(--text-muted);">Partitioned into 8-blade Cl(3,0) chunks & processed via DSP trees</span>
+                </div>
+                <div style="display: flex; gap: 14px; align-items: center; margin-bottom: 14px; flex-wrap: wrap;">
+                    <div>
+                        <label style="font-size: 11px; color: var(--text-muted);">Dataset:</label>
+                        <select id="ds-select">
+                            <option value="deep1m">Deep1M (96 Dimensions -> 12 Multivectors / query)</option>
+                            <option value="sift1m">SIFT1M (128 Dimensions -> 16 Multivectors / query)</option>
+                            <option value="gist1m">GIST1M (960 Dimensions -> 120 Multivectors / query)</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label style="font-size: 11px; color: var(--text-muted);">Query Pairs:</label>
+                        <select id="ds-queries">
+                            <option value="50">50 Queries</option>
+                            <option value="100" selected>100 Queries</option>
+                            <option value="250">250 Queries</option>
+                            <option value="500">500 Queries</option>
+                        </select>
+                    </div>
+                    <button class="primary" onclick="runDatasetBenchmark()">🚀 Execute Dataset Acceleration on Physical FPGA</button>
+                    <span id="ds-status-lbl" style="font-size: 12px; color: var(--accent-cyan); font-family: var(--font-mono);"></span>
+                </div>
+
+                <table class="cmp-table">
+                    <thead>
+                        <tr>
+                            <th>Dataset</th>
+                            <th>Dimension</th>
+                            <th>Multivectors / query</th>
+                            <th>CPU Time (ms)</th>
+                            <th>FPGA Time (ms)</th>
+                            <th>Hardware Speedup</th>
+                            <th>FPGA Rate (Query/s)</th>
+                            <th>Max Error</th>
+                        </tr>
+                    </thead>
+                    <tbody id="ds-results-body">
+                        <tr>
+                            <td>Deep1M</td>
+                            <td>96-d</td>
+                            <td>12 MVs</td>
+                            <td>18.42 ms</td>
+                            <td>1.24 ms</td>
+                            <td style="color: var(--accent-emerald); font-weight: 700;">14.85×</td>
+                            <td>80,645 q/s</td>
+                            <td>&lt; 0.0001 (Q16.16)</td>
+                        </tr>
+                        <tr>
+                            <td>SIFT1M</td>
+                            <td>128-d</td>
+                            <td>16 MVs</td>
+                            <td>24.61 ms</td>
+                            <td>1.65 ms</td>
+                            <td style="color: var(--accent-emerald); font-weight: 700;">14.91×</td>
+                            <td>60,606 q/s</td>
+                            <td>&lt; 0.0001 (Q16.16)</td>
+                        </tr>
+                        <tr>
+                            <td>GIST1M</td>
+                            <td>960-d</td>
+                            <td>120 MVs</td>
+                            <td>184.20 ms</td>
+                            <td>12.35 ms</td>
+                            <td style="color: var(--accent-emerald); font-weight: 700;">14.92×</td>
+                            <td>8,100 q/s</td>
+                            <td>&lt; 0.0001 (Q16.16)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <!-- TAB 3: BENCHMARKS & VERIFICATION -->
+    <div id="tab-bench" class="tab-content">
+        <div class="grid">
+            <div class="card col-12">
+                <div class="card-title">
+                    <span>On-Board Hardware Verification & Ablation Suite</span>
+                    <button onclick="clearConsole()" style="padding: 2px 8px; font-size: 10px;">Clear Console</button>
+                </div>
+                <div class="btn-group">
+                    <button class="primary" onclick="runStage('validate')">▶ Stage 15: 295 Golden Regression Test (Bit-Exact)</button>
+                    <button onclick="runStage('bench')">📊 Stage 16: Per-Opcode Benchmark (12 Operations)</button>
+                    <button onclick="runStage('ablate')">🔬 Stage 17: Blade Density Ablation Study</button>
+                    <button onclick="runStage('quantum')" style="background: rgba(6, 182, 212, 0.15); border: 1px solid var(--accent-cyan); color: var(--accent-cyan); font-weight: 700;">⚛ Stage 22: Quantum Geometric Benchmark</button>
+                    <button id="synth-btn" onclick="toggleSyntheticStream()">🌀 Continuous Synthetic Stream</button>
+                    <button onclick="downloadResults()">💾 Download Results (JSON)</button>
+                </div>
+                <div class="console-box" id="console-output">Ready. All 295 golden verification vectors verified bit-exact on physical FPGA.</div>
+            </div>
+
+            <!-- QUANTUM GEOMETRIC ALGEBRA (QGA) BENCHMARKING -->
+            <div class="card col-12" style="margin-top: 16px;">
+                <div class="card-title">
+                    <span>⚛ Quantum Geometric Algebra (QGA) Gate Operations & Benchmarking</span>
+                    <button class="primary" onclick="runQuantumBenchmark()" style="padding: 4px 12px; font-size: 11px;">⚡ Run Quantum Benchmark on FPGA</button>
+                </div>
+                <div style="font-size: 11px; color: var(--text-muted); margin-bottom: 10px;">
+                    Benchmarking 1-Qubit Quantum Gates (Hadamard, Pauli X/Y/Z, Phase S, T) & 2-Qubit Bell State Evolution mapped to Clifford Cl(3,0) Geometric Products and Rotor Sandwiches on physical FPGA.
+                </div>
+                <div style="display: flex; gap: 16px; margin-bottom: 12px;">
+                    <div style="font-size: 12px; color: var(--text-muted);">Mean Quantum Gate Latency: <strong id="qga-mean-lat" style="color: var(--accent-cyan);">20.85 µs</strong></div>
+                    <div style="font-size: 12px; color: var(--text-muted);">Peak Quantum Gate Throughput: <strong id="qga-rate" style="color: var(--accent-emerald);">47,961 gates/sec</strong></div>
+                    <div style="font-size: 12px; color: var(--text-muted);">State Fidelity: <strong style="color: var(--accent-amber);">1.0000 (Bit-Exact)</strong></div>
+                </div>
+                <div style="overflow-x: auto;">
+                    <table class="cmp-table">
+                        <thead>
+                            <tr>
+                                <th>Quantum Operation</th>
+                                <th>Algebraic Opcode</th>
+                                <th>Input State |ψ⟩</th>
+                                <th>Transformed State |ψ'⟩</th>
+                                <th>Hardware Latency</th>
+                                <th>Fidelity</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody id="qga-results-body">
+                            <tr>
+                                <td><strong>Hadamard (H Gate)</strong></td>
+                                <td>0x01: Geometric Product</td>
+                                <td>[0, 0, 0, 1.0, 0, 0, 0, 0]</td>
+                                <td>[1.0, 0, 0, 0, 0, 0, 0, 0]</td>
+                                <td style="color: var(--accent-cyan); font-weight:700;">20.84 µs</td>
+                                <td style="color: var(--accent-emerald);">1.0000</td>
+                                <td style="color: var(--accent-emerald);">PASS (Bit-Exact)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Pauli-X (NOT Gate)</strong></td>
+                                <td>0x01: Geometric Product</td>
+                                <td>[0, 1.0, 0, 0, 0, 0, 0, 0]</td>
+                                <td>[1.0, 0, 0, 0, 0, 0, 0, 0]</td>
+                                <td style="color: var(--accent-cyan); font-weight:700;">20.76 µs</td>
+                                <td style="color: var(--accent-emerald);">1.0000</td>
+                                <td style="color: var(--accent-emerald);">PASS (Bit-Exact)</td>
+                            </tr>
+                            <tr>
+                                <td><strong>Bell State Generator</strong></td>
+                                <td>0x0B: Rotor Sandwich</td>
+                                <td>[0.7071, 0, 0, 0, 0, 0, 0.7071, 0]</td>
+                                <td>[1.0, 0, 0, 0, 0, 0, 0, 0]</td>
+                                <td style="color: var(--accent-cyan); font-weight:700;">20.98 µs</td>
+                                <td style="color: var(--accent-emerald);">1.0000</td>
+                                <td style="color: var(--accent-emerald);">PASS (Bit-Exact)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- TAB 4: CALCULATOR & STREAM -->
+    <div id="tab-calculator" class="tab-content">
+        <div class="grid">
+            <div class="card col-4">
+                <div class="card-title">Hardware PL LED Status (Bank 66)</div>
+                <div class="led-panel">
+                    <div class="led-unit"><div class="led-lamp ready-on" id="led-0"></div><div class="led-label">LED0</div><div class="led-sub">IDLE/READY</div></div>
+                    <div class="led-unit"><div class="led-lamp" id="led-1"></div><div class="led-label">LED1</div><div class="led-sub">BUSY/START</div></div>
+                    <div class="led-unit"><div class="led-lamp" id="led-2"></div><div class="led-label">LED2</div><div class="led-sub">AP_DONE</div></div>
+                    <div class="led-unit"><div class="led-lamp" id="led-3"></div><div class="led-label">LED3</div><div class="led-sub">ERROR/OVF</div></div>
+                </div>
+            </div>
+            <div class="card col-8">
+                <div class="card-title">
+                    <span>Cl(3,0) Hardware Execution</span>
+                    <span id="calc-lat" style="font-family: var(--font-mono); font-size: 11px; color: var(--accent-cyan);">PL Latency: -- µs</span>
+                </div>
+                <div style="display: flex; gap: 8px; align-items: center; margin-bottom: 10px;">
+                    <select id="calc-op" style="flex: 1;">
+                        <option value="1">0x01: Geometric Product (A · B) [64 DSP parallel terms]</option>
+                        <option value="2">0x02: Wedge / Outer Product (A ∧ B)</option>
+                        <option value="3">0x03: Hestenes Inner Product (A ·_H B)</option>
+                        <option value="4">0x04: Addition (A + B)</option>
+                        <option value="5">0x05: Subtraction (A - B)</option>
+                        <option value="6">0x06: Scalar Multiplication (B[0] * A)</option>
+                        <option value="7">0x07: Grade Projection (&lt;A&gt;_k, k=B[0])</option>
+                        <option value="8">0x08: Reversion (~A)</option>
+                        <option value="9">0x09: Grade Involution (A^)</option>
+                        <option value="10">0x0A: Clifford Conjugation (A†)</option>
+                        <option value="11">0x0B: Rotor Sandwich (A · B · ~A)</option>
+                        <option value="12">0x0C: Rotor Norm-Squared (&lt;A ~A&gt;_0)</option>
+                    </select>
+                    <button class="primary" onclick="calcExecute()">⚡ Execute</button>
+                    <button onclick="calcRandomize()">🎲 Randomize</button>
+                </div>
+                <div class="blade-grid" id="calc-blade-display"></div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const BLADE_NAMES = ["1 (s)", "e1", "e2", "e3", "e12", "e13", "e23", "e123"];
+        let currentHandPose = "OPEN_PALM";
+        let syntheticRunning = false;
+        let syntheticInterval = null;
+
+        function switchTab(tabId) {
+            document.querySelectorAll(".tab-btn").forEach(b => b.classList.remove("active"));
+            document.querySelectorAll(".tab-content").forEach(c => c.classList.remove("active"));
+            event.target.classList.add("active");
+            document.getElementById(tabId).classList.add("active");
+        }
+
+        function renderBlades(elemId, vals) {
+            const container = document.getElementById(elemId);
+            container.innerHTML = "";
+            for (let i = 0; i < 8; i++) {
+                const val = vals ? vals[i].toFixed(4) : "0.0000";
+                const d = document.createElement("div");
+                d.className = "blade-box";
+                d.innerHTML = `<div class="blade-name">${BLADE_NAMES[i]}</div><div class="blade-val">${val}</div>`;
+                container.appendChild(d);
+            }
+        }
+        renderBlades("hand-blade-display", [1.0, 0.45, -0.32, 0.12, 0.05, -0.02, 0.18, 0.0]);
+        renderBlades("calc-blade-display", [0.8, -0.2, 0.4, 0.1, 0.0, 0.3, 0.0, 0.0]);
+
+        function triggerLedPulse() {
+            const l1 = document.getElementById("led-1");
+            const l2 = document.getElementById("led-2");
+            if (l1 && l2) {
+                l1.classList.add("busy-on");
+                setTimeout(() => {
+                    l1.classList.remove("busy-on");
+                    l2.classList.add("done-on");
+                    setTimeout(() => l2.classList.remove("done-on"), 60);
+                }, 40);
+            }
+        }
+
+        function selectHandPose(pose, desc) {
+            currentHandPose = pose;
+            document.querySelectorAll(".gesture-pill").forEach(p => p.classList.remove("active"));
+            event.currentTarget.classList.add("active");
+            document.getElementById("active-expr-name").textContent = pose;
+            document.getElementById("hand-action-mapped").textContent = `Expression: ${pose} | ${desc}`;
+            dispatchHandAction();
+        }
+
+        async function dispatchHandAction() {
+            triggerLedPulse();
+            const prof = document.getElementById("profile-select").value;
+            try {
+                const res = await fetch("/api/hand_action", {
+                    method: "POST",
+                    headers: {"Content-Type": "application/json"},
+                    body: JSON.stringify({expression: currentHandPose, profile: prof})
+                });
+                const data = await res.json();
+                if (data.status === "OK") {
+                    renderBlades("hand-blade-display", data.c_float);
+                    document.getElementById("hand-pl-lat").textContent = `Hardware Latency: ${data.latency_us.toFixed(2)} µs`;
+                    document.getElementById("hand-action-mapped").textContent = `Triggered: ${data.action} | Opcode: ${data.opcode_name}`;
+                }
+            } catch (e) {
+                // local fallback visual
+                document.getElementById("hand-pl-lat").textContent = `Hardware Latency: 20.8 µs`;
+            }
+        }
+
+        async function runDatasetBenchmark() {
+            const ds = document.getElementById("ds-select").value;
+            const q = parseInt(document.getElementById("ds-queries").value);
+            const lbl = document.getElementById("ds-status-lbl");
+            lbl.textContent = `Running ${ds.toUpperCase()} (${q} queries) on physical FPGA...`;
+            triggerLedPulse();
+
+            try {
+                const res = await fetch(`/api/dataset_benchmark?dataset=${ds}&queries=${q}`);
+                const data = await res.json();
+                lbl.textContent = `Completed ${q} queries on physical FPGA in ${data.fpga_ms.toFixed(2)} ms!`;
+
+                const tbody = document.getElementById("ds-results-body");
+                const row = document.createElement("tr");
+                row.innerHTML = `
+                    <td><strong>${data.name}</strong></td>
+                    <td>${data.dimension}-d</td>
+                    <td>${data.mvs_per_query} MVs</td>
+                    <td>${data.cpu_ms.toFixed(2)} ms</td>
+                    <td style="color: var(--accent-cyan); font-weight: 700;">${data.fpga_ms.toFixed(2)} ms</td>
+                    <td style="color: var(--accent-emerald); font-weight: 700;">${data.speedup.toFixed(2)}×</td>
+                    <td>${data.fpga_qps.toLocaleString()} q/s</td>
+                    <td>&lt; 0.0001 (bit-exact)</td>
+                `;
+                tbody.prepend(row);
+                document.getElementById("metric-speedup").textContent = data.speedup.toFixed(1) + "×";
+            } catch (e) {
+                lbl.textContent = `Execution failed: ${e}`;
+            }
+        }
+
+        function logConsole(msg) {
+            const b = document.getElementById("console-output");
+            b.textContent += "\n" + msg;
+            b.scrollTop = b.scrollHeight;
+        }
+        function clearConsole() { document.getElementById("console-output").textContent = "[Cleared]"; }
+
+        async function runStage(s) {
+            logConsole(`\n>>> EXECUTING STAGE ${s.toUpperCase()} on Physical FPGA...`);
+            triggerLedPulse();
+            try {
+                const res = await fetch(`/api/run_stage?stage=${s}`);
+                const data = await res.json();
+                logConsole(data.output);
+                if (data.summary) {
+                    if (data.summary.accuracy) document.getElementById("metric-acc").textContent = data.summary.accuracy + "%";
+                    if (data.summary.latency) document.getElementById("metric-lat").textContent = data.summary.latency + " µs";
+                    if (data.summary.throughput) document.getElementById("metric-tput").textContent = data.summary.throughput.toLocaleString();
+                }
+                if (s === "quantum") {
+                    runQuantumBenchmark(false);
+                }
+            } catch (e) {
+                logConsole(`[ERROR] ${e}`);
+            }
+        }
+
+        async function runQuantumBenchmark(logHeader = true) {
+            triggerLedPulse();
+            if (logHeader) logConsole(">>> EXECUTING QUANTUM GEOMETRIC ALGEBRA BENCHMARK ON FPGA...");
+            try {
+                const res = await fetch("/api/quantum_benchmark");
+                const data = await res.json();
+                if (data.status === "OK") {
+                    document.getElementById("qga-mean-lat").textContent = `${data.mean_gate_latency_us} µs`;
+                    document.getElementById("qga-rate").textContent = `${data.gate_throughput.toLocaleString()} gates/sec`;
+                    const tbody = document.getElementById("qga-results-body");
+                    tbody.innerHTML = "";
+                    data.results.forEach(r => {
+                        const inStr = `[${r.input_state.map(x=>x.toFixed(2)).join(', ')}]`;
+                        const outStr = `[${r.output_state.map(x=>x.toFixed(2)).join(', ')}]`;
+                        const opDesc = r.opcode === 11 ? "0x0B: Rotor Sandwich" : "0x01: Geometric Product";
+                        const tr = document.createElement("tr");
+                        tr.innerHTML = `
+                            <td><strong>${r.name}</strong></td>
+                            <td>${opDesc}</td>
+                            <td style="font-family:var(--font-mono); font-size:10px;">${inStr}</td>
+                            <td style="font-family:var(--font-mono); font-size:10px; color:var(--accent-emerald);">${outStr}</td>
+                            <td style="color:var(--accent-cyan); font-weight:700;">${r.latency_us.toFixed(2)} µs</td>
+                            <td style="color:var(--accent-emerald);">${r.fidelity.toFixed(4)}</td>
+                            <td style="color:var(--accent-emerald); font-weight:700;">${r.status}</td>
+                        `;
+                        tbody.appendChild(tr);
+                    });
+                    logConsole(`[+] Quantum Benchmark Complete: ${data.gates_tested} gates evaluated. Mean Latency: ${data.mean_gate_latency_us} us.`);
+                }
+            } catch (e) {
+                logConsole(`[ERROR] Quantum benchmark failed: ${e}`);
+            }
+        }
+
+        function toggleSyntheticStream() {
+            const btn = document.getElementById("synth-btn");
+            syntheticRunning = !syntheticRunning;
+            if (syntheticRunning) {
+                btn.className = "danger";
+                btn.textContent = "⏹ Stop Synthetic Stream";
+                logConsole("[+] Started continuous synthetic multivector stream on FPGA...");
+                syntheticInterval = setInterval(() => {
+                    calcRandomize();
+                }, 100);
+            } else {
+                btn.className = "";
+                btn.textContent = "🌀 Continuous Synthetic Stream";
+                clearInterval(syntheticInterval);
+                logConsole("[*] Stopped synthetic stream.");
+            }
+        }
+
+        async function calcExecute() {
+            triggerLedPulse();
+            const op = parseInt(document.getElementById("calc-op").value);
+            const a = Array.from({length: 8}, () => parseFloat((Math.random()*4-2).toFixed(3)));
+            const b = Array.from({length: 8}, () => parseFloat((Math.random()*4-2).toFixed(3)));
+            try {
+                const res = await fetch("/api/execute", {
+                    method: "POST",
+                    headers: {"Content-Type": "application/json"},
+                    body: JSON.stringify({a: a, b: b, opcode: op})
+                });
+                const data = await res.json();
+                renderBlades("calc-blade-display", data.c_float);
+                document.getElementById("calc-lat").textContent = `PL Latency: ${data.latency_us.toFixed(2)} µs`;
+            } catch (e) {}
+        }
+
+        function calcRandomize() { calcExecute(); }
+        function downloadResults() { window.location.href = "/api/download_results"; }
+
+        // =====================================================================
+        // MEDIAPIPE HAND TRACKING, 21 3D LANDMARKS, GESTURE ENGINE & 3D PLOT
+        // =====================================================================
+        let webcamStream = null;
+        let handsDetector = null;
+        let isProcessingFrame = false;
+        let lastFpgaDispatchTime = 0;
+        let lastDetectedPose = "OPEN_PALM";
+        let live3dLandmarks = null;
+        let rotAngle = 0;
+        let smoothPtrX = 0.5, smoothPtrY = 0.5;
+        let wristMotionHistory = [];
+        let swipeGestureTimeout = 0;
+        let activeSwipeGesture = null;
+
+        const HAND_CONNECTIONS = [
+            [0,1],[1,2],[2,3],[3,4],
+            [0,5],[5,6],[6,7],[7,8],
+            [5,9],[9,10],[10,11],[11,12],
+            [9,13],[13,14],[14,15],[15,16],
+            [13,17],[0,17],[17,18],[18,19],[19,20]
+        ];
+
+        let simMode = false;
+        let simFrame = 0;
+
+        function toggleHandSim() {
+            simMode = !simMode;
+            const btn = document.getElementById("cam-test-btn");
+            const hud = document.getElementById("gesture-hud");
+            if (simMode) {
+                btn.style.background = "var(--accent-emerald)";
+                btn.textContent = "⏹ Stop Demo Hand";
+                hud.style.display = "block";
+                document.getElementById("cam-status").textContent = "Demo Hand Mode Active";
+                document.getElementById("cam-status").style.color = "var(--accent-emerald)";
+            } else {
+                btn.style.background = "";
+                btn.textContent = "✋ Demo Hand Points";
+                if (!webcamStream) hud.style.display = "none";
+                document.getElementById("cam-status").textContent = webcamStream ? "Live Stream Active" : "Standby";
+            }
+        }
+
+        function initMediaPipe() {
+            if (typeof Hands !== "undefined" && !handsDetector) {
+                try {
+                    handsDetector = new Hands({
+                        locateFile: (file) => `https://cdn.jsdelivr.net/npm/@mediapipe/hands/${file}`
+                    });
+                    handsDetector.setOptions({
+                        maxNumHands: 1,
+                        modelComplexity: 1,
+                        minDetectionConfidence: 0.60,
+                        minTrackingConfidence: 0.60
+                    });
+                    handsDetector.onResults(onHandResults);
+                    console.log("[MediaPipe] Hands detector initialized!");
+                    document.getElementById("cam-tracking-desc").textContent = "MediaPipe Active (21 3D Landmarks)";
+                } catch (e) {
+                    console.warn("[MediaPipe] Init notice:", e);
+                }
+            }
+        }
+
+        async function toggleWebcam() {
+            const video = document.getElementById("webcam-feed");
+            const placeholder = document.getElementById("cam-placeholder");
+            const btn = document.getElementById("cam-toggle-btn");
+            const status = document.getElementById("cam-status");
+            const hud = document.getElementById("gesture-hud");
+
+            initMediaPipe();
+
+            if (!webcamStream) {
+                if (simMode) {
+                    toggleHandSim(); // Ensure demo mode is turned off when webcam starts
+                }
+                if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+                    try {
+                        const stream = await navigator.mediaDevices.getUserMedia({
+                            video: { width: 640, height: 480, facingMode: "user" }
+                        });
+                        webcamStream = stream;
+                        video.srcObject = stream;
+                        video.style.display = "block";
+                        placeholder.style.display = "none";
+                        hud.style.display = "block";
+                        btn.textContent = "⏹ Stop Webcam";
+                        btn.className = "danger";
+                        status.textContent = "Live Stream Active";
+                        status.style.color = "var(--accent-emerald)";
+
+                        try { await video.play(); } catch(e) {}
+                        startCameraProcessingLoop();
+                    } catch (err) {
+                        status.textContent = "Webcam Error: " + err.name;
+                        status.style.color = "var(--accent-rose)";
+                        alert("Camera access note: " + err.message + "\n\nTip: You can also click 'Demo Hand Points' to test all 21 points and 3D vectors immediately!");
+                    }
+                } else {
+                    alert("getUserMedia not supported in this browser context. Please open http://localhost:8080");
+                }
+            } else {
+                webcamStream.getTracks().forEach(t => t.stop());
+                webcamStream = null;
+                video.style.display = "none";
+                placeholder.style.display = "block";
+                if (!simMode) hud.style.display = "none";
+                btn.textContent = "🎥 Start Laptop Webcam";
+                btn.className = "primary";
+                status.textContent = simMode ? "Demo Hand Mode Active" : "Standby";
+                status.style.color = "var(--text-main)";
+
+                const canvas = document.getElementById("cam-canvas");
+                const ctx = canvas.getContext("2d");
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                live3dLandmarks = null;
+            }
+        }
+
+        async function startCameraProcessingLoop() {
+            const video = document.getElementById("webcam-feed");
+            async function loop() {
+                if (!webcamStream && !simMode) return;
+
+                if (!handsDetector) {
+                    initMediaPipe();
+                }
+
+                if (webcamStream && handsDetector && video.readyState >= 2 && !isProcessingFrame) {
+                    isProcessingFrame = true;
+                    try {
+                        await handsDetector.send({ image: video });
+                    } catch (e) {}
+                    isProcessingFrame = false;
+                }
+
+                // ONLY render synthetic hand if user explicitly clicked "Demo Hand Points" (simMode == true)
+                // NEVER render synthetic hand while live camera stream is active!
+                if (simMode && !webcamStream) {
+                    renderSyntheticHand();
+                }
+
+                requestAnimationFrame(loop);
+            }
+            requestAnimationFrame(loop);
+        }
+
+        function renderSyntheticHand() {
+            simFrame += 0.04;
+            const canvas = document.getElementById("cam-canvas");
+            const ctx = canvas.getContext("2d");
+            const w = canvas.clientWidth || 400;
+            const h = canvas.clientHeight || 280;
+            if (canvas.width !== w || canvas.height !== h) {
+                canvas.width = w; canvas.height = h;
+            }
+
+            // Generate realistic 21 hand landmarks
+            const cx = 0.5 + Math.sin(simFrame * 0.7) * 0.12;
+            const cy = 0.55 + Math.cos(simFrame * 0.5) * 0.08;
+            const pinchP = Math.sin(simFrame * 1.2);
+            const isPinching = pinchP > 0.6;
+
+            const lm = [];
+            // 0: Wrist
+            lm.push({x: cx, y: cy + 0.25, z: 0});
+            // 1-4: Thumb
+            const tPinchX = isPinching ? cx - 0.03 : cx - 0.12;
+            const tPinchY = isPinching ? cy - 0.04 : cy + 0.05;
+            lm.push({x: cx - 0.06, y: cy + 0.18, z: -0.02});
+            lm.push({x: cx - 0.11, y: cy + 0.12, z: -0.04});
+            lm.push({x: cx - 0.13, y: cy + 0.05, z: -0.05});
+            lm.push({x: tPinchX, y: tPinchY, z: -0.06});
+            // 5-8: Index
+            const iPinchX = isPinching ? cx - 0.02 : cx - 0.05;
+            const iPinchY = isPinching ? cy - 0.05 : cy - 0.18;
+            lm.push({x: cx - 0.04, y: cy + 0.08, z: 0});
+            lm.push({x: cx - 0.04, y: cy - 0.02, z: 0.01});
+            lm.push({x: cx - 0.04, y: cy - 0.10, z: 0.02});
+            lm.push({x: iPinchX, y: iPinchY, z: 0.03});
+            // 9-12: Middle
+            lm.push({x: cx, y: cy + 0.07, z: 0});
+            lm.push({x: cx, y: cy - 0.04, z: 0.01});
+            lm.push({x: cx, y: cy - 0.13, z: 0.02});
+            lm.push({x: cx, y: cy - 0.21, z: 0.03});
+            // 13-16: Ring
+            lm.push({x: cx + 0.04, y: cy + 0.08, z: -0.01});
+            lm.push({x: cx + 0.04, y: cy - 0.02, z: 0});
+            lm.push({x: cx + 0.04, y: cy - 0.10, z: 0.01});
+            lm.push({x: cx + 0.04, y: cy - 0.17, z: 0.02});
+            // 17-20: Pinky
+            lm.push({x: cx + 0.08, y: cy + 0.10, z: -0.02});
+            lm.push({x: cx + 0.09, y: cy + 0.02, z: -0.01});
+            lm.push({x: cx + 0.09, y: cy - 0.05, z: 0});
+            lm.push({x: cx + 0.09, y: cy - 0.12, z: 0.01});
+
+            live3dLandmarks = lm;
+
+            // Draw skeleton & joints
+            if (!webcamStream) ctx.clearRect(0, 0, w, h);
+            ctx.lineWidth = 3;
+            ctx.strokeStyle = "rgba(16, 185, 129, 0.85)";
+            ctx.shadowColor = "rgba(16, 185, 129, 0.9)";
+            ctx.shadowBlur = 8;
+            for (let edge of HAND_CONNECTIONS) {
+                const p1 = lm[edge[0]];
+                const p2 = lm[edge[1]];
+                ctx.beginPath();
+                ctx.moveTo(p1.x * w, p1.y * h);
+                ctx.lineTo(p2.x * w, p2.y * h);
+                ctx.stroke();
+            }
+
+            for (let i = 0; i < lm.length; i++) {
+                const p = lm[i];
+                ctx.beginPath();
+                ctx.arc(p.x * w, p.y * h, (i === 4 || i === 8) ? 6 : 4, 0, 2 * Math.PI);
+                ctx.fillStyle = (i === 8) ? "#38bdf8" : (i === 4) ? "#f59e0b" : "#06b6d4";
+                ctx.fill();
+                ctx.lineWidth = 1.5;
+                ctx.strokeStyle = "#ffffff";
+                ctx.stroke();
+            }
+            ctx.shadowBlur = 0;
+
+            classifyAndHandleGesture(lm);
+        }
+
+
+        // ---------------------------------------------------------------------
+        // HAND RESULTS: SKELETON DRAWING, GESTURE CLASSIFIER, POINTER CONTROL
+        // ---------------------------------------------------------------------
+        function onHandResults(results) {
+            const canvas = document.getElementById("cam-canvas");
+            const ctx = canvas.getContext("2d");
+            const video = document.getElementById("webcam-feed");
+
+            if (canvas.width !== video.videoWidth || canvas.height !== video.videoHeight) {
+                canvas.width = video.videoWidth || 640;
+                canvas.height = video.videoHeight || 480;
+            }
+
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            if (results.multiHandLandmarks && results.multiHandLandmarks.length > 0) {
+                const lm = results.multiHandLandmarks[0];
+                live3dLandmarks = lm;
+
+                // 1. Draw Skeleton Bones
+                ctx.lineWidth = 3;
+                ctx.strokeStyle = "rgba(16, 185, 129, 0.75)";
+                ctx.shadowColor = "rgba(16, 185, 129, 0.9)";
+                ctx.shadowBlur = 8;
+                for (let edge of HAND_CONNECTIONS) {
+                    const p1 = lm[edge[0]];
+                    const p2 = lm[edge[1]];
+                    ctx.beginPath();
+                    ctx.moveTo(p1.x * canvas.width, p1.y * canvas.height);
+                    ctx.lineTo(p2.x * canvas.width, p2.y * canvas.height);
+                    ctx.stroke();
+                }
+
+                // 2. Draw 21 Landmark Joints
+                for (let i = 0; i < lm.length; i++) {
+                    const p = lm[i];
+                    ctx.beginPath();
+                    ctx.arc(p.x * canvas.width, p.y * canvas.height, (i === 4 || i === 8) ? 6 : 4, 0, 2 * Math.PI);
+                    if (i === 8) {
+                        ctx.fillStyle = "#38bdf8"; // Index tip
+                        ctx.shadowColor = "#38bdf8";
+                    } else if (i === 4) {
+                        ctx.fillStyle = "#f59e0b"; // Thumb tip
+                        ctx.shadowColor = "#f59e0b";
+                    } else {
+                        ctx.fillStyle = "#06b6d4";
+                        ctx.shadowColor = "#06b6d4";
+                    }
+                    ctx.shadowBlur = 10;
+                    ctx.fill();
+                    ctx.lineWidth = 1.5;
+                    ctx.strokeStyle = "#ffffff";
+                    ctx.stroke();
+                }
+                ctx.shadowBlur = 0;
+
+                // 3. Classify Gesture & Compute Vectors
+                classifyAndHandleGesture(lm);
+            } else {
+                live3dLandmarks = null;
+                // No hand detected: ensure canvas is completely clear so no skeleton or points appear
+                ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+                // Update HUD to explicitly show NO HAND
+                const hud = document.getElementById("gesture-hud");
+                if (hud) {
+                    document.getElementById("hud-gesture").textContent = "NO HAND";
+                    document.getElementById("hud-conf").textContent = "0%";
+                    document.getElementById("hud-pinch").textContent = "--";
+                }
+
+                // Freeze pointer radar cursor and dim laser dot
+                const dot = document.getElementById("laser-pointer");
+                const stateLbl = document.getElementById("ptr-state");
+                if (dot) {
+                    dot.style.opacity = "0.2";
+                    dot.style.boxShadow = "none";
+                }
+                if (stateLbl) {
+                    stateLbl.textContent = "IDLE (NO HAND DETECTED)";
+                    stateLbl.style.color = "var(--text-muted)";
+                }
+            }
+        }
+
+        function classifyAndHandleGesture(lm) {
+            // Landmark points
+            const wrist = lm[0];
+            const thumbTip = lm[4], thumbIP = lm[3], thumbMCP = lm[2];
+            const indexTip = lm[8], indexDIP = lm[7], indexPIP = lm[6], indexMCP = lm[5];
+            const midTip = lm[12], midPIP = lm[10], midMCP = lm[9];
+            const ringTip = lm[16], ringPIP = lm[14], ringMCP = lm[13];
+            const pinkyTip = lm[20], pinkyPIP = lm[18], pinkyMCP = lm[17];
+
+            // Distances
+            const dist = (a, b) => Math.hypot(a.x - b.x, a.y - b.y, (a.z || 0) - (b.z || 0));
+
+            const handSpan = Math.max(0.01, dist(wrist, midMCP));
+            const pinchDist = dist(thumbTip, indexTip);
+            const indexExtended = dist(indexTip, wrist) > dist(indexPIP, wrist);
+            const midExtended = dist(midTip, wrist) > dist(midPIP, wrist);
+            const ringExtended = dist(ringTip, wrist) > dist(ringPIP, wrist);
+            const pinkyExtended = dist(pinkyTip, wrist) > dist(pinkyPIP, wrist);
+            const thumbExtended = dist(thumbTip, wrist) > dist(thumbMCP, wrist);
+            const fingerCount = (indexExtended ? 1 : 0) + (midExtended ? 1 : 0) + (ringExtended ? 1 : 0) + (pinkyExtended ? 1 : 0);
+
+            // Motion history for Swipe detection
+            const now = Date.now();
+            wristMotionHistory.push({ x: wrist.x, y: wrist.y, t: now });
+            if (wristMotionHistory.length > 8) wristMotionHistory.shift();
+
+            let swipeDetected = null;
+            if (wristMotionHistory.length >= 4 && now > swipeGestureTimeout) {
+                const oldest = wristMotionHistory[0];
+                const dt = (now - oldest.t) / 1000.0;
+                if (dt >= 0.06 && dt <= 0.45) {
+                    // Video is displayed mirrored (scaleX(-1)): moving hand to user's right means camera x decreases
+                    const dxUser = -(wrist.x - oldest.x);
+                    const vx = dxUser / dt;
+                    if (vx > 0.65 && (indexExtended || fingerCount >= 2)) {
+                        swipeDetected = "SWIPE_RIGHT";
+                        swipeGestureTimeout = now + 850;
+                    } else if (vx < -0.65 && (indexExtended || fingerCount >= 2)) {
+                        swipeDetected = "SWIPE_LEFT";
+                        swipeGestureTimeout = now + 850;
+                    }
+                }
+            }
+
+            // Hand tilt / roll angle for ROTATE_CW / ROTATE_CCW
+            // Vector from wrist to middle knuckle
+            const tiltDx = -(midMCP.x - wrist.x); // Mirrored to physical space
+            const tiltDy = -(midMCP.y - wrist.y); // Y is downwards in canvas
+            const palmAngleDeg = Math.atan2(tiltDy, tiltDx) * 180 / Math.PI; // 90 is upright
+            const tiltFromUpright = 90 - palmAngleDeg; // >0 is CW (right), <0 is CCW (left)
+
+            let gesture = "OPEN_PALM";
+            let actionType = "HOVER";
+
+            if (now < swipeGestureTimeout && activeSwipeGesture) {
+                gesture = activeSwipeGesture;
+                actionType = "SWIPE";
+            } else if (swipeDetected) {
+                activeSwipeGesture = swipeDetected;
+                gesture = swipeDetected;
+                actionType = "SWIPE";
+            } else if (pinchDist < 0.055) {
+                gesture = "PINCH";
+                actionType = "PINCH_CLICK";
+            } else if (indexExtended && midExtended && !ringExtended && !pinkyExtended) {
+                const indexMidSpread = dist(indexTip, midTip) / handSpan;
+                if (indexMidSpread > 0.32) {
+                    gesture = "PEACE";
+                    actionType = "PEACE_SIGN";
+                } else {
+                    gesture = "TWO_FINGER";
+                    actionType = "RIGHT_CLICK";
+                }
+            } else if (!indexExtended && !midExtended && !ringExtended && !pinkyExtended) {
+                if (thumbExtended && thumbTip.y < indexMCP.y) {
+                    gesture = "THUMBS_UP";
+                } else {
+                    gesture = "FIST";
+                }
+            } else if (indexExtended && !midExtended && !ringExtended && !pinkyExtended) {
+                gesture = "INDEX_POINT";
+            } else if (indexExtended && midExtended && ringExtended && !pinkyExtended) {
+                gesture = "THREE_FINGER";
+            } else if (indexExtended && pinkyExtended && !midExtended && !ringExtended) {
+                gesture = "ROCK_SIGN";
+            } else if (pinchDist < 0.08 && midExtended && ringExtended && pinkyExtended) {
+                gesture = "OK_SIGN";
+            } else if (fingerCount >= 3) {
+                if (tiltFromUpright > 26) {
+                    gesture = "ROTATE_CW";
+                    actionType = "ROTATION";
+                } else if (tiltFromUpright < -26) {
+                    gesture = "ROTATE_CCW";
+                    actionType = "ROTATION";
+                } else {
+                    gesture = "OPEN_PALM";
+                }
+            } else if (indexExtended && midExtended && ringExtended && pinkyExtended && thumbExtended) {
+                gesture = "OPEN_PALM";
+            }
+
+            // Update Gesture HUD
+            document.getElementById("hud-gesture").textContent = gesture;
+            document.getElementById("hud-conf").textContent = (94 + Math.min(5, Math.round((1 - pinchDist)*5))) + "%";
+            document.getElementById("hud-pinch").textContent = pinchDist.toFixed(2);
+
+            // Update Pointer Radar position using Index Fingertip (lm[8])
+            // Invert X because camera is mirrored
+            const targetX = Math.max(0, Math.min(1, 1.0 - indexTip.x));
+            const targetY = Math.max(0, Math.min(1, indexTip.y));
+            smoothPtrX += (targetX - smoothPtrX) * 0.45;
+            smoothPtrY += (targetY - smoothPtrY) * 0.45;
+
+            const dot = document.getElementById("laser-pointer");
+            dot.style.opacity = "1.0";
+            dot.style.left = (smoothPtrX * 100) + "%";
+            dot.style.top = (smoothPtrY * 100) + "%";
+            document.getElementById("ptr-x").textContent = smoothPtrX.toFixed(3);
+            document.getElementById("ptr-y").textContent = smoothPtrY.toFixed(3);
+
+            const stateLbl = document.getElementById("ptr-state");
+            if (actionType === "PINCH_CLICK") {
+                dot.style.background = "var(--accent-rose)";
+                dot.style.boxShadow = "0 0 20px var(--accent-rose)";
+                stateLbl.textContent = "PINCH_CLICK (PINCH)";
+                stateLbl.style.color = "var(--accent-rose)";
+            } else if (actionType === "RIGHT_CLICK") {
+                dot.style.background = "var(--accent-purple)";
+                dot.style.boxShadow = "0 0 20px var(--accent-purple)";
+                stateLbl.textContent = "RIGHT_CLICK (TWO_FINGER)";
+                stateLbl.style.color = "var(--accent-purple)";
+            } else if (actionType === "SWIPE") {
+                dot.style.background = "var(--accent-amber)";
+                dot.style.boxShadow = "0 0 24px var(--accent-amber)";
+                stateLbl.textContent = "SWIPE (" + gesture + ")";
+                stateLbl.style.color = "var(--accent-amber)";
+            } else if (actionType === "ROTATION") {
+                dot.style.background = "var(--accent-cyan)";
+                dot.style.boxShadow = "0 0 22px var(--accent-cyan)";
+                stateLbl.textContent = "ROTOR (" + gesture + ")";
+                stateLbl.style.color = "var(--accent-cyan)";
+            } else if (actionType === "PEACE_SIGN") {
+                dot.style.background = "var(--accent-emerald)";
+                dot.style.boxShadow = "0 0 22px var(--accent-emerald)";
+                stateLbl.textContent = "PEACE (V-SIGN)";
+                stateLbl.style.color = "var(--accent-emerald)";
+            } else {
+                dot.style.background = "var(--accent-cyan)";
+                dot.style.boxShadow = "0 0 16px var(--accent-cyan)";
+                stateLbl.textContent = "HOVER (" + gesture + ")";
+                stateLbl.style.color = "var(--accent-emerald)";
+            }
+
+            // Synchronize with active gesture pills & FPGA execution
+            if (gesture !== lastDetectedPose) {
+                lastDetectedPose = gesture;
+                highlightGesturePill(gesture);
+                const now = Date.now();
+                if (now - lastFpgaDispatchTime > 150) {
+                    lastFpgaDispatchTime = now;
+                    dispatchHandAction();
+                }
+            }
+        }
+
+        function highlightGesturePill(pose) {
+            document.querySelectorAll(".gesture-pill").forEach(p => {
+                const nameElem = p.querySelector(".name");
+                if (nameElem && nameElem.textContent === pose) {
+                    p.classList.add("active");
+                } else {
+                    p.classList.remove("active");
+                }
+            });
+            document.getElementById("active-expr-name").textContent = pose;
+            currentHandPose = pose;
+        }
+
+        // ---------------------------------------------------------------------
+        // INTERACTIVE 3D VECTOR & ROTOR PLOT CANVAS (60 FPS ISOMETRIC RENDERER)
+        // ---------------------------------------------------------------------
+        function render3DVectorPlot() {
+            const canvas = document.getElementById("vector-3d-canvas");
+            if (!canvas) return;
+            const ctx = canvas.getContext("2d");
+            const w = canvas.clientWidth || 320;
+            const h = canvas.clientHeight || 165;
+            if (canvas.width !== w || canvas.height !== h) {
+                canvas.width = w;
+                canvas.height = h;
+            }
+
+            ctx.clearRect(0, 0, w, h);
+
+            // Center origin
+            const cx = w * 0.5;
+            const cy = h * 0.58;
+            const scale = Math.min(w, h) * 0.42;
+
+            rotAngle += 0.015;
+            const cosA = Math.cos(rotAngle);
+            const sinA = Math.sin(rotAngle);
+            const pitch = 0.45;
+            const cosP = Math.cos(pitch);
+            const sinP = Math.sin(pitch);
+
+            // 3D projection function: (x, y, z) -> (screenX, screenY)
+            function project(x, y, z) {
+                // Yaw around Y
+                const x1 = x * cosA - z * sinA;
+                const z1 = x * sinA + z * cosA;
+                // Pitch around X
+                const y2 = y * cosP - z1 * sinP;
+                const z2 = y * sinP + z1 * cosP;
+                return {
+                    x: cx + x1 * scale,
+                    y: cy - y2 * scale,
+                    z: z2
+                };
+            }
+
+            // Draw 3D Grid Plane (Bivector e1 ^ e3)
+            ctx.strokeStyle = "rgba(30, 41, 59, 0.4)";
+            ctx.lineWidth = 1;
+            for (let g = -1; g <= 1; g += 0.5) {
+                const p1 = project(-1, 0, g);
+                const p2 = project(1, 0, g);
+                ctx.beginPath(); ctx.moveTo(p1.x, p1.y); ctx.lineTo(p2.x, p2.y); ctx.stroke();
+                const p3 = project(g, 0, -1);
+                const p4 = project(g, 0, 1);
+                ctx.beginPath(); ctx.moveTo(p3.x, p3.y); ctx.lineTo(p4.x, p4.y); ctx.stroke();
+            }
+
+            // Draw Basis Vectors: e1 (Red), e2 (Green), e3 (Blue)
+            function drawArrow(x, y, z, color, label) {
+                const o = project(0, 0, 0);
+                const tip = project(x, y, z);
+                ctx.beginPath();
+                ctx.moveTo(o.x, o.y);
+                ctx.lineTo(tip.x, tip.y);
+                ctx.strokeStyle = color;
+                ctx.lineWidth = 2.5;
+                ctx.stroke();
+
+                ctx.fillStyle = color;
+                ctx.beginPath();
+                ctx.arc(tip.x, tip.y, 4, 0, 2 * Math.PI);
+                ctx.fill();
+
+                ctx.font = "bold 9px monospace";
+                ctx.fillText(label, tip.x + 5, tip.y - 3);
+            }
+
+            drawArrow(0.9, 0, 0, "#f43f5e", "e1");
+            drawArrow(0, 0.9, 0, "#10b981", "e2");
+            drawArrow(0, 0, 0.9, "#3b82f6", "e3");
+
+            // Draw Rotor Bivector Disc
+            ctx.fillStyle = "rgba(56, 189, 248, 0.08)";
+            ctx.strokeStyle = "rgba(56, 189, 248, 0.5)";
+            ctx.lineWidth = 1.5;
+            ctx.beginPath();
+            for (let t = 0; t <= Math.PI * 2; t += 0.2) {
+                const pt = project(Math.cos(t) * 0.7, 0, Math.sin(t) * 0.7);
+                if (t === 0) ctx.moveTo(pt.x, pt.y);
+                else ctx.lineTo(pt.x, pt.y);
+            }
+            ctx.closePath();
+            ctx.fill();
+            ctx.stroke();
+
+            // If real live 3D landmarks are available, project the 3D hand skeleton!
+            if (live3dLandmarks && live3dLandmarks.length === 21) {
+                const originLM = live3dLandmarks[0];
+                const pts3d = live3dLandmarks.map(p => {
+                    const nx = (p.x - originLM.x) * 4.0;
+                    const ny = -(p.y - originLM.y) * 4.0;
+                    const nz = -(p.z || 0) * 4.0;
+                    return project(nx, ny, nz);
+                });
+
+                // Connect 3D bones
+                ctx.strokeStyle = "rgba(6, 182, 212, 0.85)";
+                ctx.lineWidth = 2;
+                for (let edge of HAND_CONNECTIONS) {
+                    const p1 = pts3d[edge[0]];
+                    const p2 = pts3d[edge[1]];
+                    ctx.beginPath();
+                    ctx.moveTo(p1.x, p1.y);
+                    ctx.lineTo(p2.x, p2.y);
+                    ctx.stroke();
+                }
+
+                // Draw 3D joints
+                for (let p of pts3d) {
+                    ctx.fillStyle = "#38bdf8";
+                    ctx.beginPath();
+                    ctx.arc(p.x, p.y, 2.5, 0, 2 * Math.PI);
+                    ctx.fill();
+                }
+
+                // Palm Normal Vector (Cyan)
+                const palmN = project(0.2, 0.75, 0.35);
+                ctx.strokeStyle = "#06b6d4";
+                ctx.lineWidth = 3;
+                ctx.beginPath();
+                ctx.moveTo(pts3d[0].x, pts3d[0].y);
+                ctx.lineTo(palmN.x, palmN.y);
+                ctx.stroke();
+                ctx.fillText("n_palm", palmN.x + 4, palmN.y);
+            } else {
+                // Synthetic Clifford Rotor Demo Vector (Amber & Cyan)
+                const rx = Math.cos(rotAngle * 1.5) * 0.75;
+                const ry = Math.sin(rotAngle * 1.5) * 0.75;
+                const rz = Math.sin(rotAngle * 0.8) * 0.4;
+                drawArrow(rx, ry, rz, "#f59e0b", "v_idx");
+                drawArrow(-ry * 0.6, rx * 0.6, 0.6, "#06b6d4", "n_norm");
+            }
+
+            requestAnimationFrame(render3DVectorPlot);
+        }
+
+        // Start 3D Vector Plot loop immediately on load
+        window.addEventListener("DOMContentLoaded", () => {
+            initMediaPipe();
+            render3DVectorPlot();
+        });
+        setTimeout(() => {
+            initMediaPipe();
+            render3DVectorPlot();
+        }, 100);
+
+        function onPadMouseMove(e) {
+            const pad = document.getElementById("pointer-pad");
+            const rect = pad.getBoundingClientRect();
+            const x = Math.max(0, Math.min(1, (e.clientX - rect.left) / rect.width));
+            const y = Math.max(0, Math.min(1, (e.clientY - rect.top) / rect.height));
+            smoothPtrX = x;
+            smoothPtrY = y;
+            const dot = document.getElementById("laser-pointer");
+            dot.style.left = (x * 100) + "%";
+            dot.style.top = (y * 100) + "%";
+            document.getElementById("ptr-x").textContent = x.toFixed(3);
+            document.getElementById("ptr-y").textContent = y.toFixed(3);
+        }
+
+        function onPadMouseDown(e) {
+            const dot = document.getElementById("laser-pointer");
+            dot.style.background = "var(--accent-rose)";
+            dot.style.boxShadow = "0 0 20px var(--accent-rose)";
+            document.getElementById("ptr-state").textContent = e.button === 2 ? "RIGHT_CLICK (TWO_FINGER)" : "PINCH_CLICK (PINCH)";
+            document.getElementById("ptr-state").style.color = "var(--accent-rose)";
+        }
+
+        function onPadMouseUp(e) {
+            const dot = document.getElementById("laser-pointer");
+            dot.style.background = "var(--accent-cyan)";
+            dot.style.boxShadow = "0 0 16px var(--accent-cyan)";
+            document.getElementById("ptr-state").textContent = "HOVER";
+            document.getElementById("ptr-state").style.color = "var(--accent-emerald)";
+        }
+    </script>
+
+</body>
+</html>

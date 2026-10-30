@@ -1,0 +1,134 @@
+
+
+================================================================
+== Vitis HLS Report for 'parallel_op_grade_proj'
+================================================================
+* Date:           Fri Oct 30 00:56:49 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Project:        proj_parallel_zed
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  3.250 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        0|        0|      0 ns|      0 ns|    1|    1|      yes|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|    412|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|       -|      -|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|      -|    -|
+|Register         |        -|    -|       -|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|       0|    412|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|       0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +--------------------------+----------+----+---+----+------------+------------+
+    |       Variable Name      | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------------------+----------+----+---+----+------------+------------+
+    |icmp_ln131_1_fu_104_p2    |      icmp|   0|  0|  39|          32|           1|
+    |icmp_ln131_2_fu_134_p2    |      icmp|   0|  0|  39|          32|           2|
+    |icmp_ln131_3_fu_164_p2    |      icmp|   0|  0|  39|          32|           2|
+    |icmp_ln131_fu_90_p2       |      icmp|   0|  0|  39|          32|           1|
+    |select_ln131_1_fu_110_p3  |    select|   0|  0|  32|           1|          32|
+    |select_ln131_2_fu_118_p3  |    select|   0|  0|  32|           1|          32|
+    |select_ln131_3_fu_126_p3  |    select|   0|  0|  32|           1|          32|
+    |select_ln131_4_fu_140_p3  |    select|   0|  0|  32|           1|          32|
+    |select_ln131_5_fu_148_p3  |    select|   0|  0|  32|           1|          32|
+    |select_ln131_6_fu_156_p3  |    select|   0|  0|  32|           1|          32|
+    |select_ln131_7_fu_170_p3  |    select|   0|  0|  32|           1|          32|
+    |select_ln131_fu_96_p3     |    select|   0|  0|  32|           1|          32|
+    +--------------------------+----------+----+---+----+------------+------------+
+    |Total                     |          |   0|  0| 412|         136|         262|
+    +--------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++--------------+-----+-----+------------+------------------------+--------------+
+|   RTL Ports  | Dir | Bits|  Protocol  |      Source Object     |    C Type    |
++--------------+-----+-----+------------+------------------------+--------------+
+|ap_ready      |  out|    1|  ap_ctrl_hs|  parallel_op_grade_proj|  return value|
+|ap_return_0   |  out|   32|  ap_ctrl_hs|  parallel_op_grade_proj|  return value|
+|ap_return_1   |  out|   32|  ap_ctrl_hs|  parallel_op_grade_proj|  return value|
+|ap_return_2   |  out|   32|  ap_ctrl_hs|  parallel_op_grade_proj|  return value|
+|ap_return_3   |  out|   32|  ap_ctrl_hs|  parallel_op_grade_proj|  return value|
+|ap_return_4   |  out|   32|  ap_ctrl_hs|  parallel_op_grade_proj|  return value|
+|ap_return_5   |  out|   32|  ap_ctrl_hs|  parallel_op_grade_proj|  return value|
+|ap_return_6   |  out|   32|  ap_ctrl_hs|  parallel_op_grade_proj|  return value|
+|ap_return_7   |  out|   32|  ap_ctrl_hs|  parallel_op_grade_proj|  return value|
+|ap_rst        |   in|    1|  ap_ctrl_hs|  parallel_op_grade_proj|  return value|
+|a_0_val       |   in|   32|     ap_none|                 a_0_val|        scalar|
+|a_1_val       |   in|   32|     ap_none|                 a_1_val|        scalar|
+|a_2_val       |   in|   32|     ap_none|                 a_2_val|        scalar|
+|a_3_val       |   in|   32|     ap_none|                 a_3_val|        scalar|
+|a_4_val       |   in|   32|     ap_none|                 a_4_val|        scalar|
+|a_5_val       |   in|   32|     ap_none|                 a_5_val|        scalar|
+|a_6_val       |   in|   32|     ap_none|                 a_6_val|        scalar|
+|a_7_val       |   in|   32|     ap_none|                 a_7_val|        scalar|
+|grade_target  |   in|   32|     ap_none|            grade_target|        scalar|
++--------------+-----+-----+------------+------------------------+--------------+
+

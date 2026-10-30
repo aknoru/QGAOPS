@@ -32,8 +32,8 @@
         "support": 27
       }
     },
-    "mean_inference_latency_us": 10.982258132688942,
-    "p95_inference_latency_us": 11.09499717131257
+    "mean_inference_latency_us": 10.648386969771837,
+    "p95_inference_latency_us": 11.184999311808495
   },
   "image_baseline_classifier": {
     "feature_dim": 384,

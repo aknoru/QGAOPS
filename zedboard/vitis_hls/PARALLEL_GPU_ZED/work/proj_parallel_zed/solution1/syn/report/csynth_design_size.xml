@@ -1,0 +1,84 @@
+<design_size title="Design Size Report">
+    <item name="Total Instructions per Compilation Phase">
+        <table>
+            <keys size="4">Phase, Step, Instructions, Description</keys>
+            <column name="Compile/Link">,  7324, After all functions are compiled and linked into a single design</column>
+            <column name="">, , </column>
+            <column name="Unroll/Inline">, , After user unroll and inline pragmas are applied</column>
+            <column name="">(1) unroll, 30478, user unroll pragmas are applied</column>
+            <column name="">(2) simplification, 12055, simplification of applied user unroll pragmas</column>
+            <column name="">(3) inline, 10862, user inline pragmas are applied</column>
+            <column name="">(4) simplification,  8874, simplification of applied user inline pragmas</column>
+            <column name="">, , </column>
+            <column name="Array/Struct">, , After user array partition and struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(1) array partition,  7722, user array partition pragmas are applied</column>
+            <column name="">(2) simplification,  7722, simplification of applied user array partition &amp; struct aggregate/disaggregate pragmas</column>
+            <column name="">(3) aggregate/disaggregate,  7722, user struct aggregate/disaggregate pragmas are applied</column>
+            <column name="">(4) array reshape,  7722, apply array reshape pragmas</column>
+            <column name="">(5) access patterns,  7722, array access pattern optmizations</column>
+            <column name="">, , </column>
+            <column name="Performance">, , After transformations are applied to meet performance pragma targets</column>
+            <column name="">(1) loop simplification,  7637, loop and instruction simplification</column>
+            <column name="">(2) parallelization,  7565, loops are unrolled or pipelined to meet performance targets</column>
+            <column name="">(3) array partition,  7565, arrays are partitioned to meet performance targets</column>
+            <column name="">(4) simplification,  7565, simplification of design after performance transformations</column>
+            <column name="">, , </column>
+            <column name="HW Transforms">, , After hardware transfomations</column>
+            <column name="">(1) lowering,  7617, initial conversion to HW specific instructions</column>
+            <column name="">(2) optimizations,  7644, high level synthesis optimizations</column>
+        </table>
+    </item>
+    <item name="Instructions per Function for each Compilation Phase">
+        <hiertable>
+            <header size="7" col0="Function" col1="Location" col2="Compile/Link" col3="Unroll/Inline" col4="Array/Struct" col5="Performance" col6="HW Transforms"/>
+            <rows>
+                <row id="0" col0="parallel_gpu" col1="parallel_gpu.cpp:244" col2="7324" col3="8874" col4="7722" col5="7565" col6="7644">
+                    <row id="5" col0="parallel_op_rotor_norm" col1="parallel_gpu.cpp:197" col2="1002" col3="85" col4="71" col5="59" col6="61">
+                        <row id="15" col0="rescale_and_saturate" col1="qgpu_fixed_point.h:35" col2="710" col3="" col4="" col5="" col6=""/>
+                    </row>
+                    <row id="11" col0="parallel_op_sandwich" col1="parallel_gpu.cpp:220" col2="2655" col3="5251" col4="4395" col5="4339" col6="4347">
+                        <row id="3" col0="parallel_product_core" col1="parallel_gpu.cpp:17" col2="2334" col2_disp="2,334 (2 calls)" col3="5158" col3_disp="5,158 (2 calls)" col4="4306" col4_disp="4,306 (2 calls)" col5="4242" col5_disp="4,242 (2 calls)" col6="2123">
+                            <row id="2" col0="mask_to_index" col1="qgpu_types.h:30" col2="26" col2_disp="  26 (2 calls)" col3="" col4="" col5="" col6=""/>
+                            <row id="13" col0="blade_product_sign" col1="qgpu_types.h:46" col2="84" col2_disp="  84 (2 calls)" col3="2944" col3_disp="2,944 (128 calls)" col4="2944" col4_disp="2,944 (128 calls)" col5="2944" col5_disp="2,944 (128 calls)" col6="1472" col6_disp="1,472 (64 calls)"/>
+                            <row id="15" col0="rescale_and_saturate" col1="qgpu_fixed_point.h:35" col2="1420" col2_disp="1,420 (2 calls)" col3="384" col3_disp=" 384 (16 calls)" col4="384" col4_disp=" 384 (16 calls)" col5="" col6=""/>
+                        </row>
+                        <row id="12" col0="parallel_op_reverse" col1="parallel_gpu.cpp:140" col2="301" col3="83" col4="69" col5="61" col6="63">
+                            <row id="1" col0="sat_sub" col1="qgpu_fixed_point.h:86" col2="264" col3="" col4="" col5="" col6=""/>
+                        </row>
+                    </row>
+                    <row id="9" col0="parallel_op_clifford_conj" col1="parallel_gpu.cpp:178" col2="301" col3="109" col4="95" col5="87" col6="89">
+                        <row id="1" col0="sat_sub" col1="qgpu_fixed_point.h:86" col2="264" col3="" col4="" col5="" col6=""/>
+                    </row>
+                    <row id="6" col0="parallel_op_grade_involution" col1="parallel_gpu.cpp:159" col2="296" col3="83" col4="69" col5="61" col6="63">
+                        <row id="1" col0="sat_sub" col1="qgpu_fixed_point.h:86" col2="264" col3="" col4="" col5="" col6=""/>
+                    </row>
+                    <row id="12" col0="parallel_op_reverse" col1="parallel_gpu.cpp:140" col2="301" col3="83" col4="69" col5="61" col6="63">
+                        <row id="1" col0="sat_sub" col1="qgpu_fixed_point.h:86" col2="264" col3="" col4="" col5="" col6=""/>
+                    </row>
+                    <row id="14" col0="parallel_op_grade_proj" col1="parallel_gpu.cpp:121" col2="27" col3="59" col4="33" col5="21" col6="23"/>
+                    <row id="8" col0="parallel_op_scalar_mul" col1="parallel_gpu.cpp:104" col2="946" col3="256" col4="242" col5="218" col6="220">
+                        <row id="15" col0="rescale_and_saturate" col1="qgpu_fixed_point.h:35" col2="710" col3="192" col3_disp=" 192 (8 calls)" col4="192" col4_disp=" 192 (8 calls)" col5="" col6=""/>
+                    </row>
+                    <row id="4" col0="parallel_op_sub" col1="parallel_gpu.cpp:88" col2="284" col3="158" col4="137" col5="121" col6="123">
+                        <row id="1" col0="sat_sub" col1="qgpu_fixed_point.h:86" col2="264" col3="" col4="" col5="" col6=""/>
+                    </row>
+                    <row id="7" col0="parallel_op_add" col1="parallel_gpu.cpp:72" col2="284" col3="158" col4="137" col5="121" col6="123">
+                        <row id="10" col0="sat_add" col1="qgpu_fixed_point.h:71" col2="264" col3="" col4="" col5="" col6=""/>
+                    </row>
+                    <row id="3" col0="parallel_product_core" col1="parallel_gpu.cpp:17" col2="1167" col3="2579" col4="2407" col5="2298" col6="2300">
+                        <row id="2" col0="mask_to_index" col1="qgpu_types.h:30" col2="13" col3="" col4="" col5="" col6=""/>
+                        <row id="13" col0="blade_product_sign" col1="qgpu_types.h:46" col2="42" col3="1472" col3_disp="1,472 (64 calls)" col4="1472" col4_disp="1,472 (64 calls)" col5="1472" col5_disp="1,472 (64 calls)" col6="1472" col6_disp="1,472 (64 calls)"/>
+                        <row id="15" col0="rescale_and_saturate" col1="qgpu_fixed_point.h:35" col2="710" col3="192" col3_disp=" 192 (8 calls)" col4="192" col4_disp=" 192 (8 calls)" col5="" col6=""/>
+                    </row>
+                </row>
+            </rows>
+            <notes/>
+        </hiertable>
+    </item>
+    <item name="Design Size Message Settings">
+        <table>
+            <keys size="3">Message Setting, Value, Description</keys>
+            <column name="config_compile -design_size_maximum_warning">100000, Show a warning when total design instructions exceeds this value</column>
+        </table>
+    </item>
+</design_size>

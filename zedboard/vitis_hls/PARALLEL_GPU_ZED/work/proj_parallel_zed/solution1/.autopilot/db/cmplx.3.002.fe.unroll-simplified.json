@@ -1,0 +1,266 @@
+{
+  "0": {
+    "basicblocks": 13,
+    "calls": "9 10 5 11 8 13 2 4 14 3",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "parallel_gpu.cpp",
+    "fileloc": 244,
+    "instructions": 53,
+    "loads": {
+      "L": 1,
+      "T": 2
+    },
+    "memory_accesses": 0,
+    "name": "parallel_gpu",
+    "stores": {
+      "L": 1,
+      "T": 9
+    },
+    "total_instructions": 12055
+  },
+  "1": {
+    "basicblocks": 6,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "qgpu_fixed_point.h",
+    "fileloc": 86,
+    "instructions": 15,
+    "memory_accesses": 0,
+    "name": "sat_sub",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 15
+  },
+  "10": {
+    "basicblocks": 1,
+    "calls": "3 8 3",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "parallel_gpu.cpp",
+    "fileloc": 220,
+    "instructions": 10,
+    "memory_accesses": 0,
+    "name": "parallel_op_sandwich",
+    "total_instructions": 7303
+  },
+  "11": {
+    "basicblocks": 1,
+    "calls": "1 1 1 1",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "parallel_gpu.cpp",
+    "fileloc": 159,
+    "instructions": 35,
+    "loads": {
+      "L": 8
+    },
+    "memory_accesses": 20,
+    "name": "parallel_op_grade_involution",
+    "stores": {
+      "L": 8
+    },
+    "total_instructions": 95
+  },
+  "12": {
+    "basicblocks": 5,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 4,
+    "file": "qgpu_types.h",
+    "fileloc": 46,
+    "instructions": 27,
+    "memory_accesses": 0,
+    "name": "blade_product_sign",
+    "total_instructions": 27
+  },
+  "13": {
+    "basicblocks": 25,
+    "calls": "",
+    "control_depth": 1,
+    "def_use_depth": 2,
+    "file": "parallel_gpu.cpp",
+    "fileloc": 121,
+    "instructions": 74,
+    "loads": {
+      "L": 8
+    },
+    "memory_accesses": 24,
+    "name": "parallel_op_grade_proj",
+    "stores": {
+      "L": 16
+    },
+    "total_instructions": 74
+  },
+  "14": {
+    "basicblocks": 1,
+    "calls": "6 6 6 6 6 6 6 6",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "parallel_gpu.cpp",
+    "fileloc": 72,
+    "instructions": 54,
+    "loads": {
+      "L": 16
+    },
+    "memory_accesses": 32,
+    "name": "parallel_op_add",
+    "stores": {
+      "L": 8
+    },
+    "total_instructions": 174
+  },
+  "15": {
+    "basicblocks": 10,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 1,
+    "file": "qgpu_types.h",
+    "fileloc": 30,
+    "instructions": 12,
+    "memory_accesses": 0,
+    "name": "mask_to_index",
+    "total_instructions": 12
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "7 7 7 7 7 7 7 7",
+    "control_depth": 0,
+    "def_use_depth": 4,
+    "file": "parallel_gpu.cpp",
+    "fileloc": 104,
+    "instructions": 64,
+    "loads": {
+      "L": 8
+    },
+    "memory_accesses": 24,
+    "name": "parallel_op_scalar_mul",
+    "stores": {
+      "L": 8
+    },
+    "total_instructions": 272
+  },
+  "3": {
+    "basicblocks": 380,
+    "calls": "15 12 15 12 15 12 15 12 15 12 15 12 15 12 15 12 7 12 12 12 12 12 12 12 12 7 12 12 12 12 12 12 12 12 7 12 12 12 12 12 12 12 12 7 12 12 12 12 12 12 12 12 7 12 12 12 12 12 12 12 12 7 12 12 12 12 12 12 12 12 7 12 12 12 12 12 12 12 12 7",
+    "control_depth": 5,
+    "def_use_depth": 28,
+    "file": "parallel_gpu.cpp",
+    "fileloc": 17,
+    "instructions": 1567,
+    "loads": {
+      "G": 8,
+      "L": 128
+    },
+    "memory_accesses": 152,
+    "name": "parallel_product_core",
+    "stores": {
+      "L": 8
+    },
+    "total_instructions": 3599
+  },
+  "4": {
+    "basicblocks": 1,
+    "calls": "1 1 1 1 1 1 1 1",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "parallel_gpu.cpp",
+    "fileloc": 88,
+    "instructions": 54,
+    "loads": {
+      "L": 16
+    },
+    "memory_accesses": 32,
+    "name": "parallel_op_sub",
+    "stores": {
+      "L": 8
+    },
+    "total_instructions": 174
+  },
+  "5": {
+    "basicblocks": 1,
+    "calls": "1 1 1 1 1 1",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "parallel_gpu.cpp",
+    "fileloc": 178,
+    "instructions": 37,
+    "loads": {
+      "L": 8
+    },
+    "memory_accesses": 22,
+    "name": "parallel_op_clifford_conj",
+    "stores": {
+      "L": 8
+    },
+    "total_instructions": 127
+  },
+  "6": {
+    "basicblocks": 6,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "qgpu_fixed_point.h",
+    "fileloc": 71,
+    "instructions": 15,
+    "memory_accesses": 0,
+    "name": "sat_add",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 15
+  },
+  "7": {
+    "basicblocks": 10,
+    "calls": "",
+    "control_depth": 0,
+    "def_use_depth": 2,
+    "file": "qgpu_fixed_point.h",
+    "fileloc": 35,
+    "instructions": 26,
+    "memory_accesses": 0,
+    "name": "rescale_and_saturate",
+    "stores": {
+      "L": 2
+    },
+    "total_instructions": 26
+  },
+  "8": {
+    "basicblocks": 1,
+    "calls": "1 1 1 1",
+    "control_depth": 0,
+    "def_use_depth": 3,
+    "file": "parallel_gpu.cpp",
+    "fileloc": 140,
+    "instructions": 35,
+    "loads": {
+      "L": 8
+    },
+    "memory_accesses": 20,
+    "name": "parallel_op_reverse",
+    "stores": {
+      "L": 8
+    },
+    "total_instructions": 95
+  },
+  "9": {
+    "basicblocks": 1,
+    "calls": "7",
+    "control_depth": 0,
+    "def_use_depth": 11,
+    "file": "parallel_gpu.cpp",
+    "fileloc": 197,
+    "instructions": 63,
+    "loads": {
+      "L": 8
+    },
+    "memory_accesses": 17,
+    "name": "parallel_op_rotor_norm",
+    "stores": {
+      "L": 8
+    },
+    "total_instructions": 89
+  }
+}

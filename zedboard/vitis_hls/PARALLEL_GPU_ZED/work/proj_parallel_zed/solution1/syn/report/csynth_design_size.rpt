@@ -1,0 +1,75 @@
+================================================================
+== Design Size Report
+================================================================
+
+* Total Instructions per Compilation Phase
++---------------+----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Phase         | Step                       | Instructions | Description                                                                            |
++---------------+----------------------------+--------------+----------------------------------------------------------------------------------------+
+| Compile/Link  |                            |  7,324       | After all functions are compiled and linked into a single design                       |
+|               |                            |              |                                                                                        |
+| Unroll/Inline |                            |              | After user unroll and inline pragmas are applied                                       |
+|               | (1) unroll                 | 30,478       | user unroll pragmas are applied                                                        |
+|               | (2) simplification         | 12,055       | simplification of applied user unroll pragmas                                          |
+|               | (3) inline                 | 10,862       | user inline pragmas are applied                                                        |
+|               | (4) simplification         |  8,874       | simplification of applied user inline pragmas                                          |
+|               |                            |              |                                                                                        |
+| Array/Struct  |                            |              | After user array partition and struct aggregate/disaggregate pragmas are applied       |
+|               | (1) array partition        |  7,722       | user array partition pragmas are applied                                               |
+|               | (2) simplification         |  7,722       | simplification of applied user array partition & struct aggregate/disaggregate pragmas |
+|               | (3) aggregate/disaggregate |  7,722       | user struct aggregate/disaggregate pragmas are applied                                 |
+|               | (4) array reshape          |  7,722       | apply array reshape pragmas                                                            |
+|               | (5) access patterns        |  7,722       | array access pattern optmizations                                                      |
+|               |                            |              |                                                                                        |
+| Performance   |                            |              | After transformations are applied to meet performance pragma targets                   |
+|               | (1) loop simplification    |  7,637       | loop and instruction simplification                                                    |
+|               | (2) parallelization        |  7,565       | loops are unrolled or pipelined to meet performance targets                            |
+|               | (3) array partition        |  7,565       | arrays are partitioned to meet performance targets                                     |
+|               | (4) simplification         |  7,565       | simplification of design after performance transformations                             |
+|               |                            |              |                                                                                        |
+| HW Transforms |                            |              | After hardware transfomations                                                          |
+|               | (1) lowering               |  7,617       | initial conversion to HW specific instructions                                         |
+|               | (2) optimizations          |  7,644       | high level synthesis optimizations                                                     |
++---------------+----------------------------+--------------+----------------------------------------------------------------------------------------+
+
+* Instructions per Function for each Compilation Phase
++------------------------------------+-----------------------+-----------------+-------------------+-------------------+-------------------+------------------+
+| Function                           | Location              | Compile/Link    | Unroll/Inline     | Array/Struct      | Performance       | HW Transforms    |
++------------------------------------+-----------------------+-----------------+-------------------+-------------------+-------------------+------------------+
+| + parallel_gpu                     | parallel_gpu.cpp:244  | 7,324           | 8,874             | 7,722             | 7,565             | 7,644            |
+|  + parallel_op_rotor_norm          | parallel_gpu.cpp:197  | 1,002           |   85              |   71              |   59              |   61             |
+|     rescale_and_saturate           | qgpu_fixed_point.h:35 |  710            |                   |                   |                   |                  |
+|  + parallel_op_sandwich            | parallel_gpu.cpp:220  | 2,655           | 5,251             | 4,395             | 4,339             | 4,347            |
+|   + parallel_product_core          | parallel_gpu.cpp:17   | 2,334 (2 calls) | 5,158 (2 calls)   | 4,306 (2 calls)   | 4,242 (2 calls)   | 2,123            |
+|      mask_to_index                 | qgpu_types.h:30       |   26 (2 calls)  |                   |                   |                   |                  |
+|      blade_product_sign            | qgpu_types.h:46       |   84 (2 calls)  | 2,944 (128 calls) | 2,944 (128 calls) | 2,944 (128 calls) | 1,472 (64 calls) |
+|      rescale_and_saturate          | qgpu_fixed_point.h:35 | 1,420 (2 calls) |  384 (16 calls)   |  384 (16 calls)   |                   |                  |
+|   + parallel_op_reverse            | parallel_gpu.cpp:140  |  301            |   83              |   69              |   61              |   63             |
+|      sat_sub                       | qgpu_fixed_point.h:86 |  264            |                   |                   |                   |                  |
+|  + parallel_op_clifford_conj       | parallel_gpu.cpp:178  |  301            |  109              |   95              |   87              |   89             |
+|     sat_sub                        | qgpu_fixed_point.h:86 |  264            |                   |                   |                   |                  |
+|  + parallel_op_grade_involution... | parallel_gpu.cpp:159  |  296            |   83              |   69              |   61              |   63             |
+|     sat_sub                        | qgpu_fixed_point.h:86 |  264            |                   |                   |                   |                  |
+|  + parallel_op_reverse             | parallel_gpu.cpp:140  |  301            |   83              |   69              |   61              |   63             |
+|     sat_sub                        | qgpu_fixed_point.h:86 |  264            |                   |                   |                   |                  |
+|    parallel_op_grade_proj          | parallel_gpu.cpp:121  |   27            |   59              |   33              |   21              |   23             |
+|  + parallel_op_scalar_mul          | parallel_gpu.cpp:104  |  946            |  256              |  242              |  218              |  220             |
+|     rescale_and_saturate           | qgpu_fixed_point.h:35 |  710            |  192 (8 calls)    |  192 (8 calls)    |                   |                  |
+|  + parallel_op_sub                 | parallel_gpu.cpp:88   |  284            |  158              |  137              |  121              |  123             |
+|     sat_sub                        | qgpu_fixed_point.h:86 |  264            |                   |                   |                   |                  |
+|  + parallel_op_add                 | parallel_gpu.cpp:72   |  284            |  158              |  137              |  121              |  123             |
+|     sat_add                        | qgpu_fixed_point.h:71 |  264            |                   |                   |                   |                  |
+|  + parallel_product_core           | parallel_gpu.cpp:17   | 1,167           | 2,579             | 2,407             | 2,298             | 2,300            |
+|     mask_to_index                  | qgpu_types.h:30       |   13            |                   |                   |                   |                  |
+|     blade_product_sign             | qgpu_types.h:46       |   42            | 1,472 (64 calls)  | 1,472 (64 calls)  | 1,472 (64 calls)  | 1,472 (64 calls) |
+|     rescale_and_saturate           | qgpu_fixed_point.h:35 |  710            |  192 (8 calls)    |  192 (8 calls)    |                   |                  |
++------------------------------------+-----------------------+-----------------+-------------------+-------------------+-------------------+------------------+
+
+* Design Size Message Settings
++---------------------------------------------+--------+------------------------------------------------------------------+
+| Message Setting                             | Value  | Description                                                      |
++---------------------------------------------+--------+------------------------------------------------------------------+
+| config_compile -design_size_maximum_warning | 100000 | Show a warning when total design instructions exceeds this value |
++---------------------------------------------+--------+------------------------------------------------------------------+
+
+

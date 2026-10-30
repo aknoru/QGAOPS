@@ -1,0 +1,2330 @@
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 67, Column: 16 }
+Function:        _ZL21parallel_product_corePKiS0_PijPb
+Args:            
+  - Callee:          'rescale_and_saturate(ap_int<67>, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 35, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'parallel_product_core(int const*, int const*, int*, unsigned int, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 23, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 41, Column: 25 }
+Function:        _ZL21parallel_product_corePKiS0_PijPb
+Args:            
+  - Callee:          'mask_to_index(unsigned char)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_types.h', 
+                       Line: 30, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'parallel_product_core(int const*, int const*, int*, unsigned int, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 23, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 57, Column: 28 }
+Function:        _ZL21parallel_product_corePKiS0_PijPb
+Args:            
+  - Callee:          'blade_product_sign(unsigned char, unsigned char)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_types.h', 
+                       Line: 46, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'parallel_product_core(int const*, int const*, int*, unsigned int, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 23, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 83, Column: 16 }
+Function:        _ZL15parallel_op_addPKiS0_PiPb
+Args:            
+  - Callee:          'sat_add(int, int, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 71, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'parallel_op_add(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 77, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 99, Column: 16 }
+Function:        _ZL15parallel_op_subPKiS0_PiPb
+Args:            
+  - Callee:          'sat_sub(int, int, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 86, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'parallel_op_sub(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 93, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 116, Column: 16 }
+Function:        _ZL22parallel_op_scalar_mulPKiiPiPb
+Args:            
+  - Callee:          'rescale_and_saturate(ap_int<67>, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 35, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'parallel_op_scalar_mul(int const*, int, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 109, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 151, Column: 20 }
+Function:        _ZL19parallel_op_reversePKiPiPb
+Args:            
+  - Callee:          'sat_sub(int, int, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 86, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'parallel_op_reverse(int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 144, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 170, Column: 20 }
+Function:        _ZL28parallel_op_grade_involutionPKiPiPb
+Args:            
+  - Callee:          'sat_sub(int, int, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 86, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'parallel_op_grade_involution(int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 163, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 189, Column: 20 }
+Function:        _ZL25parallel_op_clifford_conjPKiPiPb
+Args:            
+  - Callee:          'sat_sub(int, int, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 86, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'parallel_op_clifford_conj(int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 182, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 234, Column: 5 }
+Function:        _ZL20parallel_op_sandwichPKiS0_PiPb
+Args:            
+  - Callee:          'parallel_product_core(int const*, int const*, int*, unsigned int, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 23, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'parallel_op_sandwich(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 225, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 235, Column: 5 }
+Function:        _ZL20parallel_op_sandwichPKiS0_PiPb
+Args:            
+  - Callee:          'parallel_op_reverse(int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 144, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'parallel_op_sandwich(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 225, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 211, Column: 12 }
+Function:        _ZL22parallel_op_rotor_normPKiPiPb
+Args:            
+  - Callee:          'rescale_and_saturate(ap_int<67>, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 35, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'parallel_op_rotor_norm(int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 201, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 269, Column: 13 }
+Function:        parallel_gpu
+Args:            
+  - Callee:          'parallel_product_core(int const*, int const*, int*, unsigned int, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 23, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          parallel_gpu
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 250, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 273, Column: 13 }
+Function:        parallel_gpu
+Args:            
+  - Callee:          'parallel_op_add(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 77, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          parallel_gpu
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 250, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 277, Column: 13 }
+Function:        parallel_gpu
+Args:            
+  - Callee:          'parallel_op_sub(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 93, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          parallel_gpu
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 250, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 281, Column: 13 }
+Function:        parallel_gpu
+Args:            
+  - Callee:          'parallel_op_scalar_mul(int const*, int, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 109, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          parallel_gpu
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 250, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 285, Column: 13 }
+Function:        parallel_gpu
+Args:            
+  - Callee:          'parallel_op_grade_proj(int const*, int, int*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 125, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          parallel_gpu
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 250, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 289, Column: 13 }
+Function:        parallel_gpu
+Args:            
+  - Callee:          'parallel_op_reverse(int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 144, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          parallel_gpu
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 250, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 293, Column: 13 }
+Function:        parallel_gpu
+Args:            
+  - Callee:          'parallel_op_grade_involution(int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 163, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          parallel_gpu
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 250, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 297, Column: 13 }
+Function:        parallel_gpu
+Args:            
+  - Callee:          'parallel_op_clifford_conj(int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 182, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          parallel_gpu
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 250, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 301, Column: 13 }
+Function:        parallel_gpu
+Args:            
+  - Callee:          'parallel_op_sandwich(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 225, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          parallel_gpu
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 250, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 305, Column: 13 }
+Function:        parallel_gpu
+Args:            
+  - Callee:          'parallel_op_rotor_norm(int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 201, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          parallel_gpu
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 250, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 213, Column: 5 }
+Function:        _ZL22parallel_op_rotor_normPKiPiPb
+Args:            
+  - String:          'Loop '''
+  - LoopName:        PARALLEL_CLEAR_NORM
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 206, Column: 5 }
+Function:        _ZL22parallel_op_rotor_normPKiPiPb
+Args:            
+  - String:          'Loop '''
+  - LoopName:        PARALLEL_NORM_LOOP
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 186, Column: 5 }
+Function:        _ZL25parallel_op_clifford_conjPKiPiPb
+Args:            
+  - String:          'Loop '''
+  - LoopName:        PARALLEL_CONJ_LOOP
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 167, Column: 5 }
+Function:        _ZL28parallel_op_grade_involutionPKiPiPb
+Args:            
+  - String:          'Loop '''
+  - LoopName:        PARALLEL_INVOLUTION_LOOP
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 148, Column: 5 }
+Function:        _ZL19parallel_op_reversePKiPiPb
+Args:            
+  - String:          'Loop '''
+  - LoopName:        PARALLEL_REVERSE_LOOP
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 129, Column: 5 }
+Function:        _ZL22parallel_op_grade_projPKiiPi
+Args:            
+  - String:          'Loop '''
+  - LoopName:        PARALLEL_GRADE_LOOP
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 113, Column: 5 }
+Function:        _ZL22parallel_op_scalar_mulPKiiPiPb
+Args:            
+  - String:          'Loop '''
+  - LoopName:        PARALLEL_SCALAR_LOOP
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 97, Column: 5 }
+Function:        _ZL15parallel_op_subPKiS0_PiPb
+Args:            
+  - String:          'Loop '''
+  - LoopName:        PARALLEL_SUB_LOOP
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 81, Column: 5 }
+Function:        _ZL15parallel_op_addPKiS0_PiPb
+Args:            
+  - String:          'Loop '''
+  - LoopName:        PARALLEL_ADD_LOOP
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 29, Column: 5 }
+Function:        _ZL21parallel_product_corePKiS0_PijPb
+Args:            
+  - String:          'Loop '''
+  - LoopName:        PARALLEL_BLADE_LOOP
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 36, Column: 9 }
+Function:        _ZL21parallel_product_corePKiS0_PijPb
+Args:            
+  - String:          'Loop '''
+  - LoopName:        PARALLEL_SUM_TREE
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_types.h', 
+                   Line: 48, Column: 22 }
+Function:        _ZL18blade_product_signhh
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_48_1
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-infer-unroll
+Name:            ImplicitUnroll
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_types.h', 
+                   Line: 50, Column: 30 }
+Function:        _ZL18blade_product_signhh
+Args:            
+  - String:          'Loop '''
+  - LoopName:        VITIS_LOOP_50_2
+  - String:          ''' is marked as complete unroll implied by the pipeline pragma'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 250, Column: 0 }
+Function:        parallel_gpu
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        PARALLEL_CLEAR_ERR
+  - String:          ''' ('
+  - LoopLoc:         'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:311:13'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          parallel_gpu
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 201, Column: 0 }
+Function:        _ZL22parallel_op_rotor_normPKiPiPb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        PARALLEL_CLEAR_NORM
+  - String:          ''' ('
+  - LoopLoc:         'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:213:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          parallel_op_rotor_norm
+  - String:          ''' completely with a factor of '
+  - Factor:          '7'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 201, Column: 0 }
+Function:        _ZL22parallel_op_rotor_normPKiPiPb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        PARALLEL_NORM_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:206:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          parallel_op_rotor_norm
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 182, Column: 0 }
+Function:        _ZL25parallel_op_clifford_conjPKiPiPb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        PARALLEL_CONJ_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:186:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          parallel_op_clifford_conj
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 163, Column: 0 }
+Function:        _ZL28parallel_op_grade_involutionPKiPiPb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        PARALLEL_INVOLUTION_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:167:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          parallel_op_grade_involution
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 144, Column: 0 }
+Function:        _ZL19parallel_op_reversePKiPiPb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        PARALLEL_REVERSE_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:148:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          parallel_op_reverse
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 125, Column: 0 }
+Function:        _ZL22parallel_op_grade_projPKiiPi
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        PARALLEL_GRADE_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:129:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          parallel_op_grade_proj
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 109, Column: 0 }
+Function:        _ZL22parallel_op_scalar_mulPKiiPiPb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        PARALLEL_SCALAR_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:113:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          parallel_op_scalar_mul
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 93, Column: 0 }
+Function:        _ZL15parallel_op_subPKiS0_PiPb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        PARALLEL_SUB_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:97:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          parallel_op_sub
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 77, Column: 0 }
+Function:        _ZL15parallel_op_addPKiS0_PiPb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        PARALLEL_ADD_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:81:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          parallel_op_add
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 23, Column: 0 }
+Function:        _ZL21parallel_product_corePKiS0_PijPb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        PARALLEL_BLADE_LOOP
+  - String:          ''' ('
+  - LoopLoc:         'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:29:5'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          parallel_product_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 23, Column: 0 }
+Function:        _ZL21parallel_product_corePKiS0_PijPb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        PARALLEL_SUM_TREE
+  - String:          ''' ('
+  - LoopLoc:         'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:36:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          parallel_product_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 23, Column: 0 }
+Function:        _ZL21parallel_product_corePKiS0_PijPb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        PARALLEL_SUM_TREE
+  - String:          ''' ('
+  - LoopLoc:         'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:36:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          parallel_product_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 23, Column: 0 }
+Function:        _ZL21parallel_product_corePKiS0_PijPb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        PARALLEL_SUM_TREE
+  - String:          ''' ('
+  - LoopLoc:         'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:36:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          parallel_product_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 23, Column: 0 }
+Function:        _ZL21parallel_product_corePKiS0_PijPb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        PARALLEL_SUM_TREE
+  - String:          ''' ('
+  - LoopLoc:         'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:36:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          parallel_product_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 23, Column: 0 }
+Function:        _ZL21parallel_product_corePKiS0_PijPb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        PARALLEL_SUM_TREE
+  - String:          ''' ('
+  - LoopLoc:         'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:36:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          parallel_product_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 23, Column: 0 }
+Function:        _ZL21parallel_product_corePKiS0_PijPb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        PARALLEL_SUM_TREE
+  - String:          ''' ('
+  - LoopLoc:         'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:36:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          parallel_product_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 23, Column: 0 }
+Function:        _ZL21parallel_product_corePKiS0_PijPb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        PARALLEL_SUM_TREE
+  - String:          ''' ('
+  - LoopLoc:         'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:36:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          parallel_product_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 23, Column: 0 }
+Function:        _ZL21parallel_product_corePKiS0_PijPb
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        PARALLEL_SUM_TREE
+  - String:          ''' ('
+  - LoopLoc:         'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp:36:9'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          parallel_product_core
+  - String:          ''' completely with a factor of '
+  - Factor:          '8'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_types.h', 
+                   Line: 46, Column: 0 }
+Function:        _ZL18blade_product_signhh
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_48_1
+  - String:          ''' ('
+  - LoopLoc:         'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_types.h:48:22'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          blade_product_sign
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_types.h', 
+                   Line: 46, Column: 0 }
+Function:        _ZL18blade_product_signhh
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_50_2
+  - String:          ''' ('
+  - LoopLoc:         'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_types.h:50:30'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          blade_product_sign
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_types.h', 
+                   Line: 46, Column: 0 }
+Function:        _ZL18blade_product_signhh
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_50_2
+  - String:          ''' ('
+  - LoopLoc:         'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_types.h:50:30'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          blade_product_sign
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Passed
+Pass:            reflow-pragma-loop-unroll
+Name:            PragmaFullyUnroll
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_types.h', 
+                   Line: 46, Column: 0 }
+Function:        _ZL18blade_product_signhh
+Args:            
+  - String:          'Unrolling loop '''
+  - LoopName:        VITIS_LOOP_50_2
+  - String:          ''' ('
+  - LoopLoc:         'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_types.h:50:30'
+  - String:          ') '
+  - String:          'in function '''
+  - String:          blade_product_sign
+  - String:          ''' completely with a factor of '
+  - Factor:          '3'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 41, Column: 25 }
+Function:        _ZL21parallel_product_corePKiS0_PijPb
+Args:            
+  - Callee:          'mask_to_index(unsigned char)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_types.h', 
+                       Line: 30, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'parallel_product_core(int const*, int const*, int*, unsigned int, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 23, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 57, Column: 28 }
+Function:        _ZL21parallel_product_corePKiS0_PijPb
+Args:            
+  - Callee:          'blade_product_sign(unsigned char, unsigned char)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_types.h', 
+                       Line: 46, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'parallel_product_core(int const*, int const*, int*, unsigned int, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 23, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 67, Column: 16 }
+Function:        _ZL21parallel_product_corePKiS0_PijPb
+Args:            
+  - Callee:          'rescale_and_saturate(ap_int<67>, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 35, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'parallel_product_core(int const*, int const*, int*, unsigned int, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 23, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 83, Column: 16 }
+Function:        _ZL15parallel_op_addPKiS0_PiPb
+Args:            
+  - Callee:          'sat_add(int, int, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 71, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'parallel_op_add(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 77, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 99, Column: 16 }
+Function:        _ZL15parallel_op_subPKiS0_PiPb
+Args:            
+  - Callee:          'sat_sub(int, int, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 86, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'parallel_op_sub(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 93, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 116, Column: 16 }
+Function:        _ZL22parallel_op_scalar_mulPKiiPiPb
+Args:            
+  - Callee:          'rescale_and_saturate(ap_int<67>, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 35, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'parallel_op_scalar_mul(int const*, int, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 109, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 151, Column: 20 }
+Function:        _ZL19parallel_op_reversePKiPiPb
+Args:            
+  - Callee:          'sat_sub(int, int, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 86, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'parallel_op_reverse(int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 144, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 170, Column: 20 }
+Function:        _ZL28parallel_op_grade_involutionPKiPiPb
+Args:            
+  - Callee:          'sat_sub(int, int, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 86, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'parallel_op_grade_involution(int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 163, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 189, Column: 20 }
+Function:        _ZL25parallel_op_clifford_conjPKiPiPb
+Args:            
+  - Callee:          'sat_sub(int, int, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 86, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'parallel_op_clifford_conj(int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 182, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 234, Column: 5 }
+Function:        _ZL20parallel_op_sandwichPKiS0_PiPb
+Args:            
+  - Callee:          'parallel_product_core(int const*, int const*, int*, unsigned int, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 23, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'parallel_op_sandwich(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 225, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 235, Column: 5 }
+Function:        _ZL20parallel_op_sandwichPKiS0_PiPb
+Args:            
+  - Callee:          'parallel_op_reverse(int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 144, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'parallel_op_sandwich(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 225, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 211, Column: 12 }
+Function:        _ZL22parallel_op_rotor_normPKiPiPb
+Args:            
+  - Callee:          'rescale_and_saturate(ap_int<67>, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 35, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'parallel_op_rotor_norm(int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 201, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 269, Column: 13 }
+Function:        parallel_gpu
+Args:            
+  - Callee:          'parallel_product_core(int const*, int const*, int*, unsigned int, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 23, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          parallel_gpu
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 250, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 273, Column: 13 }
+Function:        parallel_gpu
+Args:            
+  - Callee:          'parallel_op_add(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 77, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          parallel_gpu
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 250, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 277, Column: 13 }
+Function:        parallel_gpu
+Args:            
+  - Callee:          'parallel_op_sub(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 93, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          parallel_gpu
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 250, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 281, Column: 13 }
+Function:        parallel_gpu
+Args:            
+  - Callee:          'parallel_op_scalar_mul(int const*, int, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 109, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          parallel_gpu
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 250, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 285, Column: 13 }
+Function:        parallel_gpu
+Args:            
+  - Callee:          'parallel_op_grade_proj(int const*, int, int*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 125, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          parallel_gpu
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 250, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 289, Column: 13 }
+Function:        parallel_gpu
+Args:            
+  - Callee:          'parallel_op_reverse(int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 144, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          parallel_gpu
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 250, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 293, Column: 13 }
+Function:        parallel_gpu
+Args:            
+  - Callee:          'parallel_op_grade_involution(int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 163, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          parallel_gpu
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 250, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 297, Column: 13 }
+Function:        parallel_gpu
+Args:            
+  - Callee:          'parallel_op_clifford_conj(int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 182, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          parallel_gpu
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 250, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 301, Column: 13 }
+Function:        parallel_gpu
+Args:            
+  - Callee:          'parallel_op_sandwich(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 225, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          parallel_gpu
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 250, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 305, Column: 13 }
+Function:        parallel_gpu
+Args:            
+  - Callee:          'parallel_op_rotor_norm(int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 201, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          parallel_gpu
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 250, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+Function:        apatb_parallel_gpu_ir
+Args:            
+  - Callee:          parallel_gpu
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 250, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          apatb_parallel_gpu_ir
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 23, Column: 0 }
+Function:        _ZL21parallel_product_corePKiS0_PijPb
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'mask_to_index(unsigned char)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_types.h', 
+                       Line: 30, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'parallel_product_core(int const*, int const*, int*, unsigned int, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 23, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 77, Column: 0 }
+Function:        _ZL15parallel_op_addPKiS0_PiPb
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'sat_add(int, int, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 71, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'parallel_op_add(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 77, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 93, Column: 0 }
+Function:        _ZL15parallel_op_subPKiS0_PiPb
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'sat_sub(int, int, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 86, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'parallel_op_sub(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 93, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 144, Column: 0 }
+Function:        _ZL19parallel_op_reversePKiPiPb
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'sat_sub(int, int, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 86, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'parallel_op_reverse(int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 144, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 163, Column: 0 }
+Function:        _ZL28parallel_op_grade_involutionPKiPiPb
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'sat_sub(int, int, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 86, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'parallel_op_grade_involution(int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 163, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 182, Column: 0 }
+Function:        _ZL25parallel_op_clifford_conjPKiPiPb
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'sat_sub(int, int, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 86, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'parallel_op_clifford_conj(int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 182, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            Inline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 201, Column: 0 }
+Function:        _ZL22parallel_op_rotor_normPKiPiPb
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'rescale_and_saturate(ap_int<67>, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 35, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'parallel_op_rotor_norm(int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 201, Column: 0 }
+  - String:          ''''
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 225, Column: 0 }
+Function:        _ZL20parallel_op_sandwichPKiS0_PiPb
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       overflow
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 225, Column: 0 }
+Function:        _ZL20parallel_op_sandwichPKiS0_PiPb
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       overflow
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 225, Column: 0 }
+Function:        _ZL20parallel_op_sandwichPKiS0_PiPb
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       overflow
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 225, Column: 0 }
+Function:        _ZL20parallel_op_sandwichPKiS0_PiPb.clone
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       overflow
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 225, Column: 0 }
+Function:        _ZL20parallel_op_sandwichPKiS0_PiPb.clone
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       overflow
+  - String:          '''.'
+...
+--- !Failure
+Pass:            reflow-array-undecay
+Name:            WarnOnUnsupportedVLAUnDecay
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 225, Column: 0 }
+Function:        _ZL20parallel_op_sandwichPKiS0_PiPb.clone
+Args:            
+  - String:          'Skipping array undecay on variable length array '''
+  - ArrayName:       overflow
+  - String:          '''.'
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 228, Column: 13 }
+Function:        _ZL20parallel_op_sandwichPKiS0_PiPb
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          temp
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 229, Column: 13 }
+Function:        _ZL20parallel_op_sandwichPKiS0_PiPb
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          a_rev
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 250, Column: 0 }
+Function:        parallel_gpu
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          a
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 250, Column: 0 }
+Function:        parallel_gpu
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          b
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-array-partition
+Name:            ArrayXform
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 250, Column: 0 }
+Function:        parallel_gpu
+Args:            
+  - String:          'Applying '
+  - String:          array_partition
+  - String:          ' to '''
+  - UOName:          c
+  - String:          ''':'
+  - String:          ' '
+  - Mode:            Complete
+  - String:          ' partitioning'
+  - String:          ' on dimension '
+  - Dim:             '1'
+  - String:          .
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 116, Column: 16 }
+Function:        _ZL22parallel_op_scalar_mulPKiiPiPb
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'rescale_and_saturate(ap_int<67>, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 35, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'parallel_op_scalar_mul(int const*, int, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 109, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 116, Column: 16 }
+Function:        _ZL22parallel_op_scalar_mulPKiiPiPb
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'rescale_and_saturate(ap_int<67>, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 35, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'parallel_op_scalar_mul(int const*, int, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 109, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 116, Column: 16 }
+Function:        _ZL22parallel_op_scalar_mulPKiiPiPb
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'rescale_and_saturate(ap_int<67>, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 35, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'parallel_op_scalar_mul(int const*, int, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 109, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 116, Column: 16 }
+Function:        _ZL22parallel_op_scalar_mulPKiiPiPb
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'rescale_and_saturate(ap_int<67>, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 35, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'parallel_op_scalar_mul(int const*, int, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 109, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 116, Column: 16 }
+Function:        _ZL22parallel_op_scalar_mulPKiiPiPb
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'rescale_and_saturate(ap_int<67>, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 35, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'parallel_op_scalar_mul(int const*, int, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 109, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 116, Column: 16 }
+Function:        _ZL22parallel_op_scalar_mulPKiiPiPb
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'rescale_and_saturate(ap_int<67>, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 35, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'parallel_op_scalar_mul(int const*, int, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 109, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 116, Column: 16 }
+Function:        _ZL22parallel_op_scalar_mulPKiiPiPb
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'rescale_and_saturate(ap_int<67>, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 35, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'parallel_op_scalar_mul(int const*, int, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 109, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 116, Column: 16 }
+Function:        _ZL22parallel_op_scalar_mulPKiiPiPb
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'rescale_and_saturate(ap_int<67>, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 35, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'parallel_op_scalar_mul(int const*, int, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 109, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 67, Column: 16 }
+Function:        _ZL21parallel_product_corePKiS0_PijPb
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'rescale_and_saturate(ap_int<67>, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 35, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'parallel_product_core(int const*, int const*, int*, unsigned int, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 23, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 67, Column: 16 }
+Function:        _ZL21parallel_product_corePKiS0_PijPb
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'rescale_and_saturate(ap_int<67>, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 35, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'parallel_product_core(int const*, int const*, int*, unsigned int, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 23, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 67, Column: 16 }
+Function:        _ZL21parallel_product_corePKiS0_PijPb
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'rescale_and_saturate(ap_int<67>, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 35, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'parallel_product_core(int const*, int const*, int*, unsigned int, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 23, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 67, Column: 16 }
+Function:        _ZL21parallel_product_corePKiS0_PijPb
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'rescale_and_saturate(ap_int<67>, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 35, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'parallel_product_core(int const*, int const*, int*, unsigned int, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 23, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 67, Column: 16 }
+Function:        _ZL21parallel_product_corePKiS0_PijPb
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'rescale_and_saturate(ap_int<67>, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 35, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'parallel_product_core(int const*, int const*, int*, unsigned int, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 23, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 67, Column: 16 }
+Function:        _ZL21parallel_product_corePKiS0_PijPb
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'rescale_and_saturate(ap_int<67>, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 35, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'parallel_product_core(int const*, int const*, int*, unsigned int, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 23, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 67, Column: 16 }
+Function:        _ZL21parallel_product_corePKiS0_PijPb
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'rescale_and_saturate(ap_int<67>, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 35, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'parallel_product_core(int const*, int const*, int*, unsigned int, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 23, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 67, Column: 16 }
+Function:        _ZL21parallel_product_corePKiS0_PijPb
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'rescale_and_saturate(ap_int<67>, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 35, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'parallel_product_core(int const*, int const*, int*, unsigned int, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 23, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 67, Column: 16 }
+Function:        _ZL21parallel_product_corePKiS0_PijPb.7.40.41
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'rescale_and_saturate(ap_int<67>, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 35, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'parallel_product_core(int const*, int const*, int*, unsigned int, bool*) (.7.40.41)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 23, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 67, Column: 16 }
+Function:        _ZL21parallel_product_corePKiS0_PijPb.7.40.41
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'rescale_and_saturate(ap_int<67>, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 35, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'parallel_product_core(int const*, int const*, int*, unsigned int, bool*) (.7.40.41)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 23, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 67, Column: 16 }
+Function:        _ZL21parallel_product_corePKiS0_PijPb.7.40.41
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'rescale_and_saturate(ap_int<67>, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 35, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'parallel_product_core(int const*, int const*, int*, unsigned int, bool*) (.7.40.41)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 23, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 67, Column: 16 }
+Function:        _ZL21parallel_product_corePKiS0_PijPb.7.40.41
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'rescale_and_saturate(ap_int<67>, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 35, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'parallel_product_core(int const*, int const*, int*, unsigned int, bool*) (.7.40.41)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 23, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 67, Column: 16 }
+Function:        _ZL21parallel_product_corePKiS0_PijPb.7.40.41
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'rescale_and_saturate(ap_int<67>, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 35, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'parallel_product_core(int const*, int const*, int*, unsigned int, bool*) (.7.40.41)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 23, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 67, Column: 16 }
+Function:        _ZL21parallel_product_corePKiS0_PijPb.7.40.41
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'rescale_and_saturate(ap_int<67>, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 35, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'parallel_product_core(int const*, int const*, int*, unsigned int, bool*) (.7.40.41)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 23, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 67, Column: 16 }
+Function:        _ZL21parallel_product_corePKiS0_PijPb.7.40.41
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'rescale_and_saturate(ap_int<67>, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 35, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'parallel_product_core(int const*, int const*, int*, unsigned int, bool*) (.7.40.41)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 23, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 67, Column: 16 }
+Function:        _ZL21parallel_product_corePKiS0_PijPb.7.40.41
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'rescale_and_saturate(ap_int<67>, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 35, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'parallel_product_core(int const*, int const*, int*, unsigned int, bool*) (.7.40.41)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 23, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 67, Column: 16 }
+Function:        _ZL21parallel_product_corePKiS0_PijPb.9.44.45
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'rescale_and_saturate(ap_int<67>, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 35, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'parallel_product_core(int const*, int const*, int*, unsigned int, bool*) (.9.44.45)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 23, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 67, Column: 16 }
+Function:        _ZL21parallel_product_corePKiS0_PijPb.9.44.45
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'rescale_and_saturate(ap_int<67>, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 35, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'parallel_product_core(int const*, int const*, int*, unsigned int, bool*) (.9.44.45)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 23, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 67, Column: 16 }
+Function:        _ZL21parallel_product_corePKiS0_PijPb.9.44.45
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'rescale_and_saturate(ap_int<67>, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 35, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'parallel_product_core(int const*, int const*, int*, unsigned int, bool*) (.9.44.45)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 23, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 67, Column: 16 }
+Function:        _ZL21parallel_product_corePKiS0_PijPb.9.44.45
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'rescale_and_saturate(ap_int<67>, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 35, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'parallel_product_core(int const*, int const*, int*, unsigned int, bool*) (.9.44.45)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 23, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 67, Column: 16 }
+Function:        _ZL21parallel_product_corePKiS0_PijPb.9.44.45
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'rescale_and_saturate(ap_int<67>, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 35, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'parallel_product_core(int const*, int const*, int*, unsigned int, bool*) (.9.44.45)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 23, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 67, Column: 16 }
+Function:        _ZL21parallel_product_corePKiS0_PijPb.9.44.45
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'rescale_and_saturate(ap_int<67>, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 35, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'parallel_product_core(int const*, int const*, int*, unsigned int, bool*) (.9.44.45)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 23, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 67, Column: 16 }
+Function:        _ZL21parallel_product_corePKiS0_PijPb.9.44.45
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'rescale_and_saturate(ap_int<67>, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 35, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'parallel_product_core(int const*, int const*, int*, unsigned int, bool*) (.9.44.45)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 23, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-auto-inline-performance-driven
+Name:            AutoInlinePerf
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 67, Column: 16 }
+Function:        _ZL21parallel_product_corePKiS0_PijPb.9.44.45
+Args:            
+  - String:          'Automatically inlining function '''
+  - Callee:          'rescale_and_saturate(ap_int<67>, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_fixed_point.h', 
+                       Line: 35, Column: 0 }
+  - String:          ''' to improve effectiveness of pipeline pragma in function '''
+  - Caller:          'parallel_product_core(int const*, int const*, int*, unsigned int, bool*) (.9.44.45)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 23, Column: 0 }
+  - String:          ''''
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 57, Column: 28 }
+Function:        _ZL21parallel_product_corePKiS0_PijPb
+Args:            
+  - Callee:          'blade_product_sign(unsigned char, unsigned char)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_types.h', 
+                       Line: 46, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'parallel_product_core(int const*, int const*, int*, unsigned int, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 23, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 57, Column: 28 }
+Function:        _ZL21parallel_product_corePKiS0_PijPb.7.40.41
+Args:            
+  - Callee:          'blade_product_sign(unsigned char, unsigned char)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_types.h', 
+                       Line: 46, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'parallel_product_core(int const*, int const*, int*, unsigned int, bool*) (.7.40.41)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 23, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 57, Column: 28 }
+Function:        _ZL21parallel_product_corePKiS0_PijPb.9.44.45
+Args:            
+  - Callee:          'blade_product_sign(unsigned char, unsigned char)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/include/../../common/include/qgpu_types.h', 
+                       Line: 46, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'parallel_product_core(int const*, int const*, int*, unsigned int, bool*) (.9.44.45)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 0, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 234, Column: 5 }
+Function:        _ZL20parallel_op_sandwichPKiS0_PiPb
+Args:            
+  - Callee:          'parallel_product_core(int const*, int const*, int*, unsigned int, bool*) (.7.40.41)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 23, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'parallel_op_sandwich(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 225, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 235, Column: 5 }
+Function:        _ZL20parallel_op_sandwichPKiS0_PiPb
+Args:            
+  - Callee:          'parallel_op_reverse(int const*, int*, bool*) (.8.42.43)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 144, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'parallel_op_sandwich(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 225, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 238, Column: 5 }
+Function:        _ZL20parallel_op_sandwichPKiS0_PiPb
+Args:            
+  - Callee:          'parallel_product_core(int const*, int const*, int*, unsigned int, bool*) (.9.44.45)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 0, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          'parallel_op_sandwich(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 225, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 269, Column: 13 }
+Function:        parallel_gpu
+Args:            
+  - Callee:          'parallel_product_core(int const*, int const*, int*, unsigned int, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 23, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          parallel_gpu
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 250, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 273, Column: 13 }
+Function:        parallel_gpu
+Args:            
+  - Callee:          'parallel_op_add(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 77, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          parallel_gpu
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 250, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 277, Column: 13 }
+Function:        parallel_gpu
+Args:            
+  - Callee:          'parallel_op_sub(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 93, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          parallel_gpu
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 250, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 281, Column: 13 }
+Function:        parallel_gpu
+Args:            
+  - Callee:          'parallel_op_scalar_mul(int const*, int, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 109, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          parallel_gpu
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 250, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 285, Column: 13 }
+Function:        parallel_gpu
+Args:            
+  - Callee:          'parallel_op_grade_proj(int const*, int, int*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 125, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          parallel_gpu
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 250, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 289, Column: 13 }
+Function:        parallel_gpu
+Args:            
+  - Callee:          'parallel_op_reverse(int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 144, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          parallel_gpu
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 250, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 293, Column: 13 }
+Function:        parallel_gpu
+Args:            
+  - Callee:          'parallel_op_grade_involution(int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 163, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          parallel_gpu
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 250, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 297, Column: 13 }
+Function:        parallel_gpu
+Args:            
+  - Callee:          'parallel_op_clifford_conj(int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 182, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          parallel_gpu
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 250, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 301, Column: 13 }
+Function:        parallel_gpu
+Args:            
+  - Callee:          'parallel_op_sandwich(int const*, int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 225, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          parallel_gpu
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 250, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...
+--- !Missed
+Pass:            inline
+Name:            NeverInline
+DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                   Line: 305, Column: 13 }
+Function:        parallel_gpu
+Args:            
+  - Callee:          'parallel_op_rotor_norm(int const*, int*, bool*)'
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 201, Column: 0 }
+  - String:          ' not inlined into '
+  - Caller:          parallel_gpu
+    DebugLoc:        { File: 'D:/QGPU/HW/hls/PARALLEL_GPU/src/parallel_gpu.cpp', 
+                       Line: 250, Column: 0 }
+  - String:          ' because it should never be inlined (cost=never)'
+...

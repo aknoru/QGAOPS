@@ -1,0 +1,199 @@
+
+
+================================================================
+== Vitis HLS Report for 'parallel_op_rotor_norm'
+================================================================
+* Date:           Fri Oct 30 00:56:45 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Project:        proj_parallel_zed
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  6.912 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |  Latency (cycles) |   Latency (absolute)  |  Interval | Pipeline|
+    |   min   |   max   |    min    |    max    | min | max |   Type  |
+    +---------+---------+-----------+-----------+-----+-----+---------+
+    |        5|        5|  50.000 ns|  50.000 ns|    1|    1|      yes|
+    +---------+---------+-----------+-----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|    664|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|       0|      9|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|      -|    -|
+|Register         |        -|    -|    1166|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|    1166|    673|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|       1|      1|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    +-------------------------+----------------------+---------+----+---+----+-----+
+    |         Instance        |        Module        | BRAM_18K| DSP| FF| LUT| URAM|
+    +-------------------------+----------------------+---------+----+---+----+-----+
+    |sparsemux_7_2_52_1_1_U9  |sparsemux_7_2_52_1_1  |        0|   0|  0|   9|    0|
+    +-------------------------+----------------------+---------+----+---+----+-----+
+    |Total                    |                      |        0|   0|  0|   9|    0|
+    +-------------------------+----------------------+---------+----+---+----+-----+
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +-----------------------+----------+----+---+----+------------+------------+
+    |     Variable Name     | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +-----------------------+----------+----+---+----+------------+------------+
+    |add_ln209_1_fu_218_p2  |         +|   0|  0|  65|          65|          65|
+    |add_ln209_2_fu_242_p2  |         +|   0|  0|  66|          66|          66|
+    |add_ln209_3_fu_224_p2  |         +|   0|  0|  65|          65|          65|
+    |add_ln209_4_fu_230_p2  |         +|   0|  0|  65|          65|          65|
+    |add_ln209_5_fu_251_p2  |         +|   0|  0|  66|          66|          66|
+    |add_ln209_fu_212_p2    |         +|   0|  0|  65|          65|          65|
+    |add_ln45_fu_309_p2     |         +|   0|  0|  59|          52|           1|
+    |sum_sq_fu_263_p2       |         +|   0|  0|  74|          67|          67|
+    |and_ln44_fu_315_p2     |       and|   0|  0|   2|           1|           1|
+    |icmp_ln44_fu_303_p2    |      icmp|   0|  0|  24|          16|          17|
+    |icmp_ln57_fu_366_p2    |      icmp|   0|  0|  28|          21|           1|
+    |rounded_69_fu_338_p6   |    select|   0|  0|  52|           1|          52|
+    |select_ln57_fu_376_p3  |    select|   0|  0|  31|           1|           2|
+    |xor_ln42_fu_321_p2     |       xor|   0|  0|   2|           1|           2|
+    +-----------------------+----------+----+---+----+------------+------------+
+    |Total                  |          |   0|  0| 664|         552|         535|
+    +-----------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    +------------------------------------+----+----+-----+-----------+
+    |                Name                | FF | LUT| Bits| Const Bits|
+    +------------------------------------+----+----+-----+-----------+
+    |a_0_val_int_reg                     |  32|   0|   32|          0|
+    |a_1_val_int_reg                     |  32|   0|   32|          0|
+    |a_2_val_int_reg                     |  32|   0|   32|          0|
+    |a_3_val_int_reg                     |  32|   0|   32|          0|
+    |a_3_val_read_reg_405                |  32|   0|   32|          0|
+    |a_4_val_int_reg                     |  32|   0|   32|          0|
+    |a_5_val_int_reg                     |  32|   0|   32|          0|
+    |a_6_val_int_reg                     |  32|   0|   32|          0|
+    |a_7_val_int_reg                     |  32|   0|   32|          0|
+    |a_7_val_read_reg_400                |  32|   0|   32|          0|
+    |a_7_val_read_reg_400_pp0_iter1_reg  |  32|   0|   32|          0|
+    |add_ln209_1_reg_493                 |  65|   0|   65|          0|
+    |add_ln209_4_reg_498                 |  65|   0|   65|          0|
+    |add_ln209_5_reg_508                 |  66|   0|   66|          0|
+    |add_ln45_reg_529                    |  52|   0|   52|          0|
+    |and_ln44_reg_535                    |   1|   0|    1|          0|
+    |p_228_reg_456                       |  64|   0|   64|          0|
+    |p_229_reg_482                       |  64|   0|   64|          0|
+    |p_230_reg_467                       |  64|   0|   64|          0|
+    |p_231_reg_472                       |  64|   0|   64|          0|
+    |p_232_reg_477                       |  64|   0|   64|          0|
+    |p_233_reg_503                       |  64|   0|   64|          0|
+    |p_234_reg_446                       |  64|   0|   64|          0|
+    |p_reg_451                           |  64|   0|   64|          0|
+    |tmp_120_reg_513                     |   1|   0|    1|          0|
+    |tmp_121_reg_524                     |   1|   0|    1|          0|
+    |zext_ln38_reg_518                   |  51|   0|   52|          1|
+    +------------------------------------+----+----+-----+-----------+
+    |Total                               |1166|   0| 1167|          1|
+    +------------------------------------+----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++---------------------+-----+-----+------------+------------------------+--------------+
+|      RTL Ports      | Dir | Bits|  Protocol  |      Source Object     |    C Type    |
++---------------------+-----+-----+------------+------------------------+--------------+
+|ap_clk               |   in|    1|  ap_ctrl_hs|  parallel_op_rotor_norm|  return value|
+|ap_rst               |   in|    1|  ap_ctrl_hs|  parallel_op_rotor_norm|  return value|
+|ap_return_0          |  out|   32|  ap_ctrl_hs|  parallel_op_rotor_norm|  return value|
+|ap_return_1          |  out|    1|  ap_ctrl_hs|  parallel_op_rotor_norm|  return value|
+|grp_fu_1360_p_din0   |  out|   32|  ap_ctrl_hs|  parallel_op_rotor_norm|  return value|
+|grp_fu_1360_p_din1   |  out|   32|  ap_ctrl_hs|  parallel_op_rotor_norm|  return value|
+|grp_fu_1360_p_dout0  |   in|   64|  ap_ctrl_hs|  parallel_op_rotor_norm|  return value|
+|grp_fu_1360_p_ce     |  out|    1|  ap_ctrl_hs|  parallel_op_rotor_norm|  return value|
+|grp_fu_1364_p_din0   |  out|   32|  ap_ctrl_hs|  parallel_op_rotor_norm|  return value|
+|grp_fu_1364_p_din1   |  out|   32|  ap_ctrl_hs|  parallel_op_rotor_norm|  return value|
+|grp_fu_1364_p_dout0  |   in|   64|  ap_ctrl_hs|  parallel_op_rotor_norm|  return value|
+|grp_fu_1364_p_ce     |  out|    1|  ap_ctrl_hs|  parallel_op_rotor_norm|  return value|
+|grp_fu_1368_p_din0   |  out|   32|  ap_ctrl_hs|  parallel_op_rotor_norm|  return value|
+|grp_fu_1368_p_din1   |  out|   32|  ap_ctrl_hs|  parallel_op_rotor_norm|  return value|
+|grp_fu_1368_p_dout0  |   in|   64|  ap_ctrl_hs|  parallel_op_rotor_norm|  return value|
+|grp_fu_1368_p_ce     |  out|    1|  ap_ctrl_hs|  parallel_op_rotor_norm|  return value|
+|grp_fu_1372_p_din0   |  out|   32|  ap_ctrl_hs|  parallel_op_rotor_norm|  return value|
+|grp_fu_1372_p_din1   |  out|   32|  ap_ctrl_hs|  parallel_op_rotor_norm|  return value|
+|grp_fu_1372_p_dout0  |   in|   64|  ap_ctrl_hs|  parallel_op_rotor_norm|  return value|
+|grp_fu_1372_p_ce     |  out|    1|  ap_ctrl_hs|  parallel_op_rotor_norm|  return value|
+|grp_fu_1376_p_din0   |  out|   32|  ap_ctrl_hs|  parallel_op_rotor_norm|  return value|
+|grp_fu_1376_p_din1   |  out|   32|  ap_ctrl_hs|  parallel_op_rotor_norm|  return value|
+|grp_fu_1376_p_dout0  |   in|   64|  ap_ctrl_hs|  parallel_op_rotor_norm|  return value|
+|grp_fu_1376_p_ce     |  out|    1|  ap_ctrl_hs|  parallel_op_rotor_norm|  return value|
+|grp_fu_1380_p_din0   |  out|   32|  ap_ctrl_hs|  parallel_op_rotor_norm|  return value|
+|grp_fu_1380_p_din1   |  out|   32|  ap_ctrl_hs|  parallel_op_rotor_norm|  return value|
+|grp_fu_1380_p_dout0  |   in|   64|  ap_ctrl_hs|  parallel_op_rotor_norm|  return value|
+|grp_fu_1380_p_ce     |  out|    1|  ap_ctrl_hs|  parallel_op_rotor_norm|  return value|
+|grp_fu_1384_p_din0   |  out|   32|  ap_ctrl_hs|  parallel_op_rotor_norm|  return value|
+|grp_fu_1384_p_din1   |  out|   32|  ap_ctrl_hs|  parallel_op_rotor_norm|  return value|
+|grp_fu_1384_p_dout0  |   in|   64|  ap_ctrl_hs|  parallel_op_rotor_norm|  return value|
+|grp_fu_1384_p_ce     |  out|    1|  ap_ctrl_hs|  parallel_op_rotor_norm|  return value|
+|grp_fu_1388_p_din0   |  out|   32|  ap_ctrl_hs|  parallel_op_rotor_norm|  return value|
+|grp_fu_1388_p_din1   |  out|   32|  ap_ctrl_hs|  parallel_op_rotor_norm|  return value|
+|grp_fu_1388_p_dout0  |   in|   64|  ap_ctrl_hs|  parallel_op_rotor_norm|  return value|
+|grp_fu_1388_p_ce     |  out|    1|  ap_ctrl_hs|  parallel_op_rotor_norm|  return value|
+|a_0_val              |   in|   32|     ap_none|                 a_0_val|        scalar|
+|a_1_val              |   in|   32|     ap_none|                 a_1_val|        scalar|
+|a_2_val              |   in|   32|     ap_none|                 a_2_val|        scalar|
+|a_3_val              |   in|   32|     ap_none|                 a_3_val|        scalar|
+|a_4_val              |   in|   32|     ap_none|                 a_4_val|        scalar|
+|a_5_val              |   in|   32|     ap_none|                 a_5_val|        scalar|
+|a_6_val              |   in|   32|     ap_none|                 a_6_val|        scalar|
+|a_7_val              |   in|   32|     ap_none|                 a_7_val|        scalar|
++---------------------+-----+-----+------------+------------------------+--------------+
+

@@ -10,11 +10,11 @@ Write-Host "==================================================" -ForegroundColor
 $TotalPassed = 0
 $TotalFailed = 0
 
-# 1. Reference model tests
-Write-Host "`n[1/2] Running Reference Model & Accumulator Tests..." -ForegroundColor Yellow
-python -m pytest software/reference_model/tests -v
+# 1. Software tests (benchmarks, dashboard, datasets, reference model)
+Write-Host "`n[1/2] Running Software Test Suite (Reference Model, Datasets, Bounds, Dashboard)..." -ForegroundColor Yellow
+python -m pytest software -v
 if ($LASTEXITCODE -ne 0) {
-    Write-Error "Reference model tests failed!"
+    Write-Error "Software tests failed!"
     exit $LASTEXITCODE
 }
 

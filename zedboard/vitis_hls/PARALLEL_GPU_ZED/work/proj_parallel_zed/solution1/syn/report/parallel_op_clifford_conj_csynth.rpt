@@ -1,0 +1,145 @@
+
+
+================================================================
+== Vitis HLS Report for 'parallel_op_clifford_conj'
+================================================================
+* Date:           Fri Oct 30 00:56:48 2026
+
+* Version:        2025.2 (Build 6295257 on Nov 14 2025)
+* Project:        proj_parallel_zed
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  5.095 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |        0|        0|      0 ns|      0 ns|    1|    1|      yes|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-----+--------+-------+-----+
+|       Name      | BRAM_18K| DSP |   FF   |  LUT  | URAM|
++-----------------+---------+-----+--------+-------+-----+
+|DSP              |        -|    -|       -|      -|    -|
+|Expression       |        -|    -|       0|    502|    -|
+|FIFO             |        -|    -|       -|      -|    -|
+|Instance         |        -|    -|       -|      -|    -|
+|Memory           |        -|    -|       -|      -|    -|
+|Multiplexer      |        -|    -|       -|      -|    -|
+|Register         |        -|    -|       -|      -|    -|
++-----------------+---------+-----+--------+-------+-----+
+|Total            |        0|    0|       0|    502|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Available        |      280|  220|  106400|  53200|    0|
++-----------------+---------+-----+--------+-------+-----+
+|Utilization (%)  |        0|    0|       0|     ~0|    0|
++-----------------+---------+-----+--------+-------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +--------------------------+----------+----+---+----+------------+------------+
+    |       Variable Name      | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +--------------------------+----------+----+---+----+------------+------------+
+    |diff_17_fu_132_p2         |         -|   0|  0|  40|           1|          33|
+    |diff_18_fu_170_p2         |         -|   0|  0|  40|           1|          33|
+    |diff_19_fu_208_p2         |         -|   0|  0|  40|           1|          33|
+    |diff_20_fu_246_p2         |         -|   0|  0|  40|           1|          33|
+    |diff_21_fu_284_p2         |         -|   0|  0|  40|           1|          33|
+    |diff_fu_94_p2             |         -|   0|  0|  40|           1|          33|
+    |icmp_ln88_17_fu_148_p2    |      icmp|   0|  0|  10|           2|           1|
+    |icmp_ln88_18_fu_186_p2    |      icmp|   0|  0|  10|           2|           1|
+    |icmp_ln88_19_fu_224_p2    |      icmp|   0|  0|  10|           2|           1|
+    |icmp_ln88_20_fu_262_p2    |      icmp|   0|  0|  10|           2|           1|
+    |icmp_ln88_21_fu_300_p2    |      icmp|   0|  0|  10|           2|           1|
+    |icmp_ln88_fu_110_p2       |      icmp|   0|  0|  10|           2|           1|
+    |or_ln88_5_fu_316_p2       |        or|   0|  0|   2|           1|           1|
+    |or_ln88_6_fu_322_p2       |        or|   0|  0|   2|           1|           1|
+    |or_ln88_7_fu_328_p2       |        or|   0|  0|   2|           1|           1|
+    |or_ln88_8_fu_334_p2       |        or|   0|  0|   2|           1|           1|
+    |or_ln88_fu_310_p2         |        or|   0|  0|   2|           1|           1|
+    |select_ln88_10_fu_158_p3  |    select|   0|  0|  32|           1|          31|
+    |select_ln88_11_fu_196_p3  |    select|   0|  0|  32|           1|          31|
+    |select_ln88_12_fu_234_p3  |    select|   0|  0|  32|           1|          31|
+    |select_ln88_13_fu_272_p3  |    select|   0|  0|  32|           1|          31|
+    |select_ln88_14_fu_340_p3  |    select|   0|  0|  32|           1|          31|
+    |select_ln88_fu_120_p3     |    select|   0|  0|  32|           1|          31|
+    +--------------------------+----------+----+---+----+------------+------------+
+    |Total                     |          |   0|  0| 502|          29|         395|
+    +--------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    N/A
+
+    * Register: 
+    N/A
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-------------+-----+-----+------------+---------------------------+--------------+
+|  RTL Ports  | Dir | Bits|  Protocol  |       Source Object       |    C Type    |
++-------------+-----+-----+------------+---------------------------+--------------+
+|ap_ready     |  out|    1|  ap_ctrl_hs|  parallel_op_clifford_conj|  return value|
+|ap_return_0  |  out|   32|  ap_ctrl_hs|  parallel_op_clifford_conj|  return value|
+|ap_return_1  |  out|   32|  ap_ctrl_hs|  parallel_op_clifford_conj|  return value|
+|ap_return_2  |  out|   32|  ap_ctrl_hs|  parallel_op_clifford_conj|  return value|
+|ap_return_3  |  out|   32|  ap_ctrl_hs|  parallel_op_clifford_conj|  return value|
+|ap_return_4  |  out|   32|  ap_ctrl_hs|  parallel_op_clifford_conj|  return value|
+|ap_return_5  |  out|   32|  ap_ctrl_hs|  parallel_op_clifford_conj|  return value|
+|ap_return_6  |  out|   32|  ap_ctrl_hs|  parallel_op_clifford_conj|  return value|
+|ap_return_7  |  out|   32|  ap_ctrl_hs|  parallel_op_clifford_conj|  return value|
+|ap_return_8  |  out|    1|  ap_ctrl_hs|  parallel_op_clifford_conj|  return value|
+|ap_rst       |   in|    1|  ap_ctrl_hs|  parallel_op_clifford_conj|  return value|
+|c_write      |   in|   32|     ap_none|                    c_write|        scalar|
+|a_1_val      |   in|   32|     ap_none|                    a_1_val|        scalar|
+|a_2_val      |   in|   32|     ap_none|                    a_2_val|        scalar|
+|a_3_val      |   in|   32|     ap_none|                    a_3_val|        scalar|
+|a_4_val      |   in|   32|     ap_none|                    a_4_val|        scalar|
+|a_5_val      |   in|   32|     ap_none|                    a_5_val|        scalar|
+|a_6_val      |   in|   32|     ap_none|                    a_6_val|        scalar|
+|c_write_20   |   in|   32|     ap_none|                 c_write_20|        scalar|
++-------------+-----+-----+------------+---------------------------+--------------+
+
